@@ -76,7 +76,7 @@ export default function Home() {
           </section>
 
           {/* Right: Product name + slogan + path entries */}
-          <section className="flex w-full flex-col lg:h-full lg:max-w-[440px] lg:flex-none lg:pt-10 lg:pb-6">
+          <section className="flex w-full flex-col lg:h-full lg:max-w-[440px] lg:flex-none lg:pt-16 lg:pb-6">
             <div className="shrink-0">
               {/* Badge */}
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1.5 text-xs font-semibold text-blue-700 sm:px-3.5 sm:py-1.5 sm:text-sm">
