@@ -75,27 +75,29 @@ npm run preview
 
 ```
 city-subsidy-radar/
-├── src/
-│   ├── pages/              # 页面组件
-│   │   ├── Home/           # 首页（中国地图）
-│   │   ├── Input/          # 条件输入页
-│   │   ├── Result/         # 结果分析页
-│   │   ├── Compare/        # 城市对比页
-│   │   └── Policies/       # 政策库页
-│   ├── components/         # 通用组件
-│   │   ├── Map/            # 地图组件
-│   │   ├── Form/           # 表单组件
-│   │   └── PolicyCard.tsx  # 政策卡片
-│   ├── data/               # 静态数据
-│   │   ├── subsidies/      # 各城市补贴规则 JSON
-│   │   ├── schools.json    # 院校数据
-│   │   └── major_catalog.json # 专业目录
-│   ├── hooks/              # 自定义 Hooks
-│   ├── stores/             # Zustand 状态管理
-│   ├── utils/              # 工具函数
-│   └── types/              # TypeScript 类型定义
-├── policy/                 # 政策原文文档
-└── public/                 # 静态资源
+├── city-subsidy-radar/          # 前端项目
+│   ├── src/
+│   │   ├── pages/              # 页面组件
+│   │   │   ├── Home/           # 首页（中国地图）
+│   │   │   ├── Input/          # 条件输入页
+│   │   │   ├── Result/         # 结果分析页
+│   │   │   ├── Compare/        # 城市对比页
+│   │   │   └── Policies/       # 政策库页
+│   │   ├── components/         # 通用组件
+│   │   │   ├── Map/            # 地图组件
+│   │   │   ├── Form/           # 表单组件
+│   │   │   └── PolicyCard.tsx  # 政策卡片
+│   │   ├── data/               # 静态数据
+│   │   │   ├── subsidies/      # 各城市补贴规则 JSON
+│   │   │   ├── schools.json    # 院校数据
+│   │   │   └── major_catalog.json # 专业目录
+│   │   ├── hooks/              # 自定义 Hooks
+│   │   ├── stores/             # Zustand 状态管理
+│   │   ├── utils/              # 工具函数
+│   │   └── types/              # TypeScript 类型定义
+│   └── public/                 # 静态资源
+├── policy/                     # 政策原文文档
+└── README.md
 ```
 
 ## 部署
