@@ -134,16 +134,16 @@ export default function Result() {
     <div className="min-h-screen bg-slate-50">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
           <div className="flex items-center gap-1">
             <button
               onClick={() => navigate('/input?mode=single')}
-              className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800"
+              className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 sm:px-3"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              重新查询
+              <span className="hidden sm:inline">重新查询</span>
             </button>
             <button
               onClick={handleShare}
@@ -175,18 +175,18 @@ export default function Result() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-6 py-8">
+      <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
         {/* Total Amount Hero */}
-        <div className="relative overflow-visible rounded-3xl bg-gradient-to-br from-blue-600 to-blue-700 p-8 text-center text-white shadow-lg shadow-blue-600/20">
+        <div className="relative overflow-visible rounded-3xl bg-gradient-to-br from-blue-600 to-blue-700 px-6 py-6 text-center text-white shadow-lg shadow-blue-600/20 sm:p-8">
           <p className="text-sm font-medium text-blue-100">预估可申领总金额</p>
           <button
             type="button"
             onClick={() => setShowBreakdown((v) => !v)}
             className="mt-3 block w-full cursor-pointer text-center focus:outline-none"
           >
-            <div className="text-6xl font-extrabold tracking-tight transition-opacity hover:opacity-90">
+            <div className="text-5xl font-extrabold tracking-tight transition-opacity hover:opacity-90 sm:text-6xl">
               {result.totalAmount.toLocaleString()}
-              <span className="ml-1 text-2xl font-medium">元</span>
+              <span className="ml-1 text-xl font-medium sm:text-2xl">元</span>
             </div>
             <div className="mt-1 text-xs text-blue-200">
               {showBreakdown ? '点击收起明细' : '点击查看计算明细'}

@@ -421,7 +421,7 @@ export default function Input() {
     <div className="min-h-screen bg-slate-50">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-2xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
           <button
             onClick={() => navigate('/')}
             className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800"
@@ -451,7 +451,7 @@ export default function Input() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-2xl px-6 py-10">
+      <main className="mx-auto max-w-2xl px-5 py-6 sm:px-6 sm:py-10">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-slate-900">
             {mode === 'compare' ? '城市补贴对比' : '查询可申领补贴'}
@@ -463,7 +463,7 @@ export default function Input() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-8">
+        <div className="mt-8 space-y-6 sm:mt-10 sm:space-y-8">
           {/* City Selection */}
           {mode === 'single' && (
             <section>
@@ -502,7 +502,7 @@ export default function Input() {
 
           {/* 未选城市时的引导提示 */}
           {!citySelected && (
-            <div className="relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-cyan-50 px-8 py-14 text-center shadow-sm">
+            <div className="relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-cyan-50 px-6 py-10 text-center shadow-sm sm:px-8 sm:py-14">
               <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-blue-100/40 blur-2xl" />
               <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-cyan-100/40 blur-2xl" />
               <div className="relative">
