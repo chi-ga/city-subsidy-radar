@@ -9,6 +9,21 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/chi-ga/city-subsidy-radar/stargazers">
+    <img src="https://img.shields.io/github/stars/chi-ga/city-subsidy-radar" alt="Stars">
+  </a>
+  <a href="https://github.com/chi-ga/city-subsidy-radar/network/members">
+    <img src="https://img.shields.io/github/forks/chi-ga/city-subsidy-radar" alt="Forks">
+  </a>
+  <a href="https://github.com/chi-ga/city-subsidy-radar/issues">
+    <img src="https://img.shields.io/github/issues/chi-ga/city-subsidy-radar" alt="Issues">
+  </a>
+  <a href="https://github.com/chi-ga/city-subsidy-radar/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/chi-ga/city-subsidy-radar" alt="License">
+  </a>
+</p>
+
+<p align="center">
   <a href="#功能特性">功能特性</a> •
   <a href="#快速开始">快速开始</a> •
   <a href="#项目结构">项目结构</a> •
@@ -165,6 +180,12 @@ city-subsidy-radar/
 - [ ] 添加政策更新提醒
 
 ---
+
+## 相关文档
+
+- [更新日志](./CHANGELOG.md) — 版本更新记录
+- [贡献指南](./CONTRIBUTING.md) — 如何参与贡献
+- [许可证](./LICENSE) — MIT License
 
 ## 许可
 
