@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Main: 桌面端分屏，移动端纯内容 */}
       <main className="relative flex-1 lg:overflow-hidden">
-        <div className="mx-auto flex h-full w-full max-w-[1440px] items-start gap-8 px-5 pt-4 lg:px-10 lg:pt-6 lg:gap-12">
+        <div className="mx-auto flex h-full w-full max-w-[1440px] items-start gap-8 px-5 lg:px-10 lg:gap-12">
           {/* Left: Map — 仅桌面端显示 */}
           <section className="hidden h-full flex-1 overflow-hidden lg:block">
             <div className="relative h-full w-full overflow-hidden">
@@ -76,7 +76,7 @@ export default function Home() {
           </section>
 
           {/* Right: Product name + slogan + path entries */}
-          <section className="flex w-full flex-col justify-start lg:max-w-[440px] lg:flex-none">
+          <section className="flex w-full flex-col lg:h-full lg:max-w-[440px] lg:flex-none lg:py-6">
             <div className="shrink-0">
               {/* Badge */}
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1.5 text-xs font-semibold text-blue-700 sm:px-3.5 sm:py-1.5 sm:text-sm">
@@ -96,14 +96,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Path entries */}
-            <div className="mt-8 shrink-0 space-y-4 sm:mt-6 lg:mt-8">
+            {/* Path entries — flex-1 撑满剩余高度，卡片在其中垂直居中 */}
+            <div className="mt-8 flex shrink-0 flex-1 flex-col justify-center space-y-4 lg:mt-6 lg:space-y-5">
               <button
                 onClick={handlePathA}
-                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/5 sm:gap-4 sm:p-4"
+                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/5 sm:gap-4 lg:p-5"
               >
                 <div className="absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-blue-50 opacity-60 transition-transform group-hover:scale-150" />
-                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600 shadow-md shadow-blue-600/20 sm:h-11 sm:w-11">
+                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600 shadow-md shadow-blue-600/20 sm:h-11 sm:w-11 lg:h-12 lg:w-12">
                   <svg className="h-5 w-5 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
@@ -121,10 +121,10 @@ export default function Home() {
 
               <button
                 onClick={handlePathB}
-                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-emerald-300 hover:shadow-md hover:shadow-emerald-500/5 sm:gap-4 sm:p-4"
+                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-emerald-300 hover:shadow-md hover:shadow-emerald-500/5 sm:gap-4 lg:p-5"
               >
                 <div className="absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-emerald-50 opacity-60 transition-transform group-hover:scale-150" />
-                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-emerald-600 shadow-md shadow-emerald-600/20 sm:h-11 sm:w-11">
+                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-emerald-600 shadow-md shadow-emerald-600/20 sm:h-11 sm:w-11 lg:h-12 lg:w-12">
                   <svg className="h-5 w-5 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
@@ -142,10 +142,10 @@ export default function Home() {
 
               <button
                 onClick={handlePathC}
-                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-amber-300 hover:shadow-md hover:shadow-amber-500/5 sm:gap-4 sm:p-4"
+                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-amber-300 hover:shadow-md hover:shadow-amber-500/5 sm:gap-4 lg:p-5"
               >
                 <div className="absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-amber-50 opacity-60 transition-transform group-hover:scale-150" />
-                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-500 shadow-md shadow-amber-500/20 sm:h-11 sm:w-11">
+                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-500 shadow-md shadow-amber-500/20 sm:h-11 sm:w-11 lg:h-12 lg:w-12">
                   <svg className="h-5 w-5 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                   </svg>
