@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 import { MAP_CACHE_KEY, MAP_CACHE_EXPIRY } from '../../constants';
-import CityListFallback from './CityListFallback';
 
 interface ChinaMapProps {
   onCityClick?: (cityCode: string) => void;
@@ -77,7 +76,6 @@ function setCachedMapData(data: unknown[]): void {
 
 export default function ChinaMap({ onCityClick }: ChinaMapProps) {
   const chartRef = useRef<HTMLDivElement>(null);
-  const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
     if (!chartRef.current) return;
@@ -252,17 +250,15 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
       })
       .catch((err) => {
         console.error('地图加载失败:', err);
-        setLoadError(true);
+        if (chartRef.current) {
+          chartRef.current.innerHTML = `
+            <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#94a3b8">
+              地图加载失败，请刷新重试
+            </div>
+          `;
+        }
       });
   }, [onCityClick]);
-
-  if (loadError) {
-    return (
-      <div className="flex h-full w-full items-center justify-center p-8">
-        <CityListFallback onCityClick={onCityClick} />
-      </div>
-    );
-  }
 
   return (
     <div
