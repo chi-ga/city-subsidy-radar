@@ -8,19 +8,8 @@ interface StaticChinaMapProps {
 const COVERED_CITIES = [
   { name: '北京市', code: 'beijing', adcode: '110000', count: 11 },
   { name: '上海市', code: 'shanghai', adcode: '310000', count: 14 },
-  { name: '深圳市', code: 'shenzhen', adcode: '440300', count: 14 },
+  { name: '广东省', code: 'shenzhen', adcode: '440000', count: 20 },
   { name: '广州市', code: 'guangzhou', adcode: '440100', count: 6 },
-];
-
-// 全国34个省级行政区的adcode
-const PROVINCE_ADCODES = [
-  '110000', '120000', '130000', '140000', '150000',
-  '210000', '220000', '230000',
-  '310000', '320000', '330000', '340000', '350000', '360000', '370000',
-  '410000', '420000', '430000', '440000', '450000', '460000',
-  '500000', '510000', '520000', '530000', '540000',
-  '610000', '620000', '630000', '640000', '650000',
-  '710000', '810000', '820000',
 ];
 
 export default function StaticChinaMap(_props: StaticChinaMapProps) {
@@ -33,45 +22,21 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
       renderer: 'canvas',
     });
 
-    // 加载全国省级地图 + 各省级下属城市地图
-    const nationPromise = fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json')
-      .then((res) => res.json().catch(() => null))
-      .catch(() => null);
-
-    const provincePromises = PROVINCE_ADCODES.map((adcode) =>
-      fetch(`https://geo.datav.aliyun.com/areas_v3/bound/${adcode}_full.json`)
-        .then((res) => res.json().catch(() => null))
-        .catch(() => null)
-    );
-
-    Promise.all([nationPromise, ...provincePromises])
-      .then(([nationGeo, ...provinceGeos]) => {
-        if (nationGeo && nationGeo.features) {
-          echarts.registerMap('china_provinces', nationGeo as never);
+    // 从本地加载地图数据
+    fetch('/geo/china.json')
+      .then((res) => {
+        if (!res.ok) throw new Error('加载地图数据失败');
+        return res.json();
+      })
+      .then((geoData) => {
+        if (!geoData || !geoData.features) {
+          throw new Error('地图数据格式错误');
         }
 
-        // 收集所有城市级 feature
-        const allCityFeatures: { type: string; properties: { name: string; adcode: string }; geometry: unknown }[] = [];
-        provinceGeos.forEach((geo) => {
-          if (geo && geo.features) {
-            geo.features.forEach((feature: { type: string; properties: { name: string; adcode: string }; geometry: unknown }) => {
-              if (feature.properties && feature.properties.adcode) {
-                allCityFeatures.push(feature);
-              }
-            });
-          }
-        });
-
-        // 构建城市级 GeoJSON
-        const cityGeoJson = {
-          type: 'FeatureCollection',
-          features: allCityFeatures,
-        };
-
-        echarts.registerMap('china_cities', cityGeoJson as never);
+        echarts.registerMap('china', geoData as never);
 
         // 构建所有城市数据 - 已覆盖的城市强制设置蓝色
-        const allCities = allCityFeatures.map((f) => {
+        const allCities = geoData.features.map((f: { properties: { name: string; adcode: string } }) => {
           const cityInfo = COVERED_CITIES.find((c) => c.adcode === f.properties.adcode);
           const isCovered = !!cityInfo;
           return {
@@ -87,33 +52,8 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
           tooltip: { show: false },
           series: [
             {
-              name: 'province',
               type: 'map',
-              map: 'china_provinces',
-              roam: false,
-              layoutCenter: ['50%', '50%'],
-              layoutSize: '92%',
-              aspectScale: 0.72,
-              zoom: 1.32,
-              center: [104, 36.5],
-              label: { show: false },
-              itemStyle: {
-                areaColor: 'transparent',
-                borderColor: '#334155',
-                borderWidth: 1.5,
-              },
-              emphasis: {
-                disabled: true,
-              },
-              select: {
-                disabled: true,
-              },
-              silent: true,
-            },
-            {
-              name: 'city',
-              type: 'map',
-              map: 'china_cities',
+              map: 'china',
               roam: false,
               layoutCenter: ['50%', '50%'],
               layoutSize: '92%',
