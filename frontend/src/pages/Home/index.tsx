@@ -60,9 +60,9 @@ export default function Home() {
 
       {/* Main: 桌面端分屏，移动端纯内容 */}
       <main className="relative flex-1 lg:overflow-hidden">
-        <div className="mx-auto flex h-full w-full max-w-[1440px] items-start gap-6 px-5 pt-2 pb-6 lg:px-10 lg:pt-2 lg:pb-4 lg:gap-10">
+        <div className="mx-auto flex h-full w-full max-w-[1440px] items-center gap-8 px-5 lg:px-10 lg:gap-12">
           {/* Left: Map — 仅桌面端显示 */}
-          <section className="hidden h-full flex-1 overflow-hidden lg:block lg:basis-[60%]">
+          <section className="hidden h-full flex-1 overflow-hidden lg:block">
             <div className="relative h-full w-full overflow-hidden">
               <ChinaMap onCityClick={handleCityClick} />
               {/* 底部提示 */}
@@ -76,7 +76,7 @@ export default function Home() {
           </section>
 
           {/* Right: Product name + slogan + path entries */}
-          <section className="flex w-full flex-col justify-start lg:max-w-[380px] lg:flex-none lg:justify-center lg:pr-4">
+          <section className="flex w-full flex-col justify-center lg:max-w-[440px] lg:flex-none lg:py-4">
             <div className="shrink-0">
               {/* Badge */}
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1 text-xs font-semibold text-blue-700 sm:px-3.5 sm:py-1.5 sm:text-sm">
@@ -88,18 +88,16 @@ export default function Home() {
               </div>
 
               {/* Title */}
-              <h1 className="mt-2 text-3xl font-extrabold leading-relaxed text-slate-900 sm:mt-3 sm:text-4xl lg:mt-4 lg:text-[3.25rem]">
-                找到属于你的
-                <br />
-                <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                  城市补贴
-                </span>
-              </h1>
-
+              <div className="mt-2">
+                <div className="text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-[3.25rem]">找到属于你的</div>
+                <div className="mt-1 text-3xl font-extrabold sm:text-4xl lg:mt-1.5 lg:text-[3.25rem]">
+                  <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">城市补贴</span>
+                </div>
+              </div>
             </div>
 
             {/* Path entries */}
-            <div className="mt-5 shrink-0 space-y-2 sm:mt-6 sm:space-y-3">
+            <div className="mt-5 shrink-0 space-y-3 sm:mt-6">
               <button
                 onClick={handlePathA}
                 className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm transition-all hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/5 sm:gap-4 sm:p-4"
