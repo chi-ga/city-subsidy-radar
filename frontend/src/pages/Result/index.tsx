@@ -165,11 +165,11 @@ export default function Result() {
             </button>
           </div>
           <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 shadow-sm shadow-blue-600/30">
-              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
+            <img
+              src="/logo-new.jpg"
+              alt="城市补贴雷达"
+              className="h-8 w-8 rounded-lg object-cover shadow-sm shadow-blue-600/30"
+            />
             <span className="text-sm font-bold text-slate-800">补贴结果</span>
           </div>
         </div>

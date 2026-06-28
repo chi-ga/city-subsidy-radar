@@ -45,12 +45,11 @@ export default function Home() {
       <header className="shrink-0 border-b border-slate-200/60 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 shadow-sm shadow-blue-600/30">
-              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
+            <img
+              src="/logo-new.jpg"
+              alt="城市补贴雷达"
+              className="h-8 w-8 rounded-lg object-cover shadow-sm shadow-blue-600/30"
+            />
             <span className="text-lg font-bold tracking-tight text-slate-900">城市补贴雷达</span>
           </div>
           {/* AI 服务商设置入口 — Demo 阶段隐藏，后续迭代开放
