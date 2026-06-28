@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "city-subsidy-radar",
+  "compatibility_date": "2026-06-28",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "city-subsidy-radar"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}

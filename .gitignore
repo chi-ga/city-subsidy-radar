@@ -37,3 +37,10 @@ PRD.md
 项目计划书.md
 报名帖.md
 上线前审查报告.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
