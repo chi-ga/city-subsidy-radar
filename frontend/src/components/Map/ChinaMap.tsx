@@ -13,6 +13,14 @@ const COVERED_CITIES = [
   { name: '广州市', code: 'guangzhou', adcode: '440100', count: 6 },
 ];
 
+// adcode 到 name 的映射
+const ADCODE_TO_NAME: Record<string, string> = {
+  '110000': '北京市',
+  '310000': '上海市',
+  '440300': '深圳市',
+  '440100': '广州市',
+};
+
 
 // 地图缓存接口
 interface MapCache {
@@ -122,9 +130,9 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
         echarts.registerMap('china_cities', cityGeoJson as never);
 
         // 构建所有城市数据 - 已覆盖的城市强制设置蓝色
-        const allCities = (allCityFeatures as { properties: { name: string; adcode: string | number } }[]).map((f) => {
-          const featureAdcode = String(f.properties.adcode);
-          const cityInfo = COVERED_CITIES.find((c) => c.adcode === featureAdcode);
+        const allCities = (allCityFeatures as { properties: { name: string; code: string } }[]).map((f) => {
+          const featureCode = String(f.properties.code);
+          const cityInfo = COVERED_CITIES.find((c) => c.adcode === featureCode);
           const isCovered = !!cityInfo;
           return {
             name: f.properties.name,

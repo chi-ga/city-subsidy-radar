@@ -36,8 +36,8 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
         echarts.registerMap('china', geoData as never);
 
         // 构建所有城市数据 - 已覆盖的城市强制设置蓝色
-        const allCities = geoData.features.map((f: { properties: { name: string; adcode: string } }) => {
-          const cityInfo = COVERED_CITIES.find((c) => c.adcode === f.properties.adcode);
+        const allCities = geoData.features.map((f: { properties: { name: string; code: string } }) => {
+          const cityInfo = COVERED_CITIES.find((c) => c.adcode === f.properties.code);
           const isCovered = !!cityInfo;
           return {
             name: f.properties.name,
