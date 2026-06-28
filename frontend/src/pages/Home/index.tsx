@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Main: 桌面端分屏，移动端纯内容 */}
       <main className="relative flex-1 lg:overflow-hidden">
-        <div className="mx-auto flex h-full w-full max-w-[1440px] items-center gap-6 px-5 py-6 lg:px-10 lg:py-4 lg:gap-10">
+        <div className="mx-auto flex h-full w-full max-w-[1440px] items-start gap-6 px-5 pt-4 pb-6 lg:px-10 lg:pt-2 lg:pb-4 lg:gap-10">
           {/* Left: Map — 仅桌面端显示 */}
           <section className="hidden h-full flex-1 overflow-hidden lg:block lg:basis-[60%]">
             <div className="relative h-full w-full overflow-hidden">
@@ -76,7 +76,7 @@ export default function Home() {
           </section>
 
           {/* Right: Product name + slogan + path entries */}
-          <section className="flex w-full flex-col justify-start pt-2 lg:justify-center lg:basis-[40%] lg:pr-4 lg:pt-0">
+          <section className="flex w-full flex-col justify-start lg:justify-center lg:basis-[40%] lg:pr-4">
             <div className="shrink-0">
               {/* Badge */}
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1 text-xs font-semibold text-blue-700 sm:px-3.5 sm:py-1.5 sm:text-sm">
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
 
               {/* Title */}
-              <h1 className="mt-4 text-3xl font-extrabold leading-snug text-slate-900 sm:mt-5 sm:text-4xl lg:text-[3.25rem]">
+              <h1 className="mt-3 text-3xl font-extrabold leading-snug text-slate-900 sm:mt-4 sm:text-4xl lg:text-[3.25rem]">
                 找到属于你的
                 <br />
                 <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
