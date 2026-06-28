@@ -126,6 +126,10 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
           const featureCode = String(f.properties.code);
           const cityInfo = COVERED_CITIES.find((c) => c.adcode === featureCode);
           const isCovered = !!cityInfo;
+          // 调试日志
+          if (['110000', '310000', '440300', '440100'].includes(featureCode)) {
+            console.log(`城市: ${f.properties.name}, code: ${featureCode}, 匹配: ${isCovered}`);
+          }
           return {
             name: f.properties.name,
             value: isCovered ? 1 : 0,
