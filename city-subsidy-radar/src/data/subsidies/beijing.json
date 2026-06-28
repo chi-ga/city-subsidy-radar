@@ -1,0 +1,455 @@
+[
+  {
+    "id": "beijing-jifenluohuguanlibanfa",
+    "city": "beijing",
+    "name": "北京市积分落户管理办法",
+    "category": "settlement",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "每年4月申报",
+      "channel": "http://rsj.beijing.gov.cn/ywsite/jflh/",
+      "materials": [
+        "身份证",
+        "北京市居住证",
+        "社保缴纳证明",
+        "合法住所证明",
+        "学历学位证书（加分项）",
+        "纳税证明（加分项）",
+        "其他加分项证明材料"
+      ],
+      "process": [
+        "每年4月在线申报",
+        "部门审核",
+        "积分排名",
+        "公示",
+        "办理落户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.beijing.gov.cn/ywsite/jflh/"
+    },
+    "policySource": "京政办发〔2020〕9号",
+    "effectiveDate": "2020-07-14",
+    "notes": "现行有效（2026年4月16日启动申报，规模6000人，同分同落）。无直接补贴，提供落户资格。需在京连续缴纳社保7年及以上，持有北京市居住证，不超过法定退休年龄。学历加分：博士37分、硕士26分、本科15分、专科10.5分。",
+    "location": "北京市",
+    "tier": 3
+  },
+  {
+    "id": "beijing-boshihouzugongzuojingfei",
+    "city": "beijing",
+    "name": "北京市博士后工作经费资助管理办法",
+    "category": "talent",
+    "amount": {
+      "min": 80000,
+      "max": 150000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "年度申报，具体以当年通知为准",
+      "channel": "https://zhengce.beijing.gov.cn",
+      "materials": [
+        "各类资助申报表",
+        "相关证明材料（具体以当年申报通知为准）"
+      ],
+      "process": [
+        "单位/个人申报",
+        "网上申报（北京市人民政府门户网站\"政策兑现\"频道）",
+        "纸质材料报送",
+        "评审"
+      ],
+      "location": "市级",
+      "url": "https://rsj.beijing.gov.cn/xxgk/2024qt/202602/t20260209_4503788.html"
+    },
+    "policySource": "京人社专技字〔2026〕8号",
+    "effectiveDate": "2017-01-01",
+    "notes": "现行有效（2026年京人社专技字〔2026〕8号）。日常经费资助一次性8万元/人；科研活动A类最高15万元、B类最高4万元、C类最高3万元。国际化交流培养派出资助年龄一般不超过35周岁。",
+    "location": "北京市",
+    "tier": 3
+  },
+  {
+    "id": "beijing-gaocengciliuxuehuiguiguoj",
+    "city": "beijing",
+    "name": "北京市高层次留学人才回国资助",
+    "category": "talent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "年度申报（2026年截止3月26日）",
+      "channel": "区级人才工作部门或留创园",
+      "materials": [
+        "具体以当年申报通知为准"
+      ],
+      "process": [
+        "通过用人单位向注册地区级人才工作部门申报",
+        "北京市人才工作局会同北京海外学人中心组织专家评审"
+      ],
+      "location": "市级",
+      "url": "https://www.bjnews.com.cn/detail/1773115791019465.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效（2026年申报要求：出生不早于1976年1月1日，2021年1月1日后回国，已在国/境外获得博士学位，现已全职到岗，未获得中央和本市重大人才工程资助）。具体金额以当年申报通知为准。",
+    "location": "北京市",
+    "tier": 3
+  },
+  {
+    "id": "beijing-liuxuechuangyeqidongzhichi",
+    "city": "beijing",
+    "name": "北京市留学人员回国创业启动支持计划",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "年度申报（2026年截止3月26日）",
+      "channel": "区级人才工作部门或留创园",
+      "materials": [
+        "具体以当年申报通知为准"
+      ],
+      "process": [
+        "通过用人单位向注册地区级人才工作部门申报",
+        "专家评审"
+      ],
+      "location": "市级",
+      "url": "https://www.bjnews.com.cn/detail/1773115791019465.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效（2026年申报要求：企业注册时间不早于2023年1月1日，申报人须为法定代表人，出资额占注册资本50%以上，已全职回国）。在国/境外获得硕士或博士学位，或具有一年以上博士后经历。具体金额以当年通知为准。",
+    "location": "北京市",
+    "tier": 3
+  },
+  {
+    "id": "beijing-rencaizhufangzhichizhengce",
+    "city": "beijing",
+    "name": "北京市人才住房支持政策",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见各区申报通知",
+      "channel": "各区住房保障部门",
+      "materials": [
+        "具体以各区申报通知为准"
+      ],
+      "process": [
+        "向所在单位或区住房保障部门申请",
+        "资格审核",
+        "配租/配售/补贴"
+      ],
+      "location": "市级",
+      "url": "http://bj.bendibao.com/news/2018723/251049.shtm"
+    },
+    "policySource": "京建法〔2018〕13号",
+    "effectiveDate": "2018-01-01",
+    "notes": "现行有效。以配租公共租赁住房为主，配售共有产权住房、发放人才租房补贴为辅。经市级人才主管部门备案引进的非京籍优秀人才，家庭成员在本市均无住房的，可购买普通商品房或申请一套共有产权住房。各区结合实际制定具体标准。",
+    "location": "北京市",
+    "tier": 3
+  },
+  {
+    "id": "beijing-haidianquhaiqinganju",
+    "city": "beijing",
+    "name": "海淀区\"海青安居\"青年人才安居补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每月1日至10日线上申请",
+      "channel": "https://zhengce.beijing.gov.cn",
+      "materials": [
+        "营业执照（用人单位）",
+        "纳税材料（用人单位）",
+        "拟申请人员信息表（用人单位）",
+        "社保缴费记录（用人单位）",
+        "学历学位证书",
+        "教育部学历认证",
+        "社保缴纳证明",
+        "个人及家庭成员在京不动产登记信息查询结果",
+        "海淀北部租房的提供租赁合同备案证明"
+      ],
+      "process": [
+        "用人单位登录北京市人民政府门户网站\"政策兑现\"栏目搜索\"海淀区安居补贴申请\"进行法人登录申报",
+        "用人单位审核通过后，平台向拟申请人发送短信",
+        "申请人登录同一平台进行个人登录申报",
+        "相关部门完成资格审核",
+        "平台短信告知审核结果"
+      ],
+      "location": "海淀区",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202602/t20260228_4806627.shtml"
+    },
+    "policySource": "海住保办字〔2026〕1号",
+    "effectiveDate": "2026-02-28",
+    "notes": "现行有效（海住保办字〔2026〕1号，有效期至2028年12月31日）。45周岁及以下、全日制本科及以上学历青年人才。应届毕业生安居补贴每月1000元最长2年；海淀北部租房增加每月500元安居奖励。创业人才安居补贴每月2000元最长2年；海淀北部租房增加每月1000元安居奖励。用人单位须属于海淀区\"1+X+1\"现代化产业体系。",
+    "location": "北京市·海淀区",
+    "tier": 1,
+    "exclusiveGroup": "beijing-rent"
+  },
+  {
+    "id": "beijing-shijingshanqu2025zhi2027",
+    "city": "beijing",
+    "name": "石景山区2025至2027年度促进就业优惠政策",
+    "category": "living",
+    "amount": {
+      "min": 880,
+      "max": 880,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://qyfw.bjsjs.gov.cn",
+      "materials": [
+        "具体以各政策条款的附件通知为准"
+      ],
+      "process": [
+        "单位/个人在线申报",
+        "材料审核",
+        "政策兑现"
+      ],
+      "location": "石景山区",
+      "url": "https://www.bjsjs.gov.cn/gongkai/zcwj/202503/t20250313_490881.shtml"
+    },
+    "policySource": "石人社发〔2025〕1号",
+    "effectiveDate": "2025-07-15",
+    "notes": "现行有效（2025-2027年度；石人社发〔2025〕1号）。未就业青年见习补贴每月880元；零工就业介绍补贴每人次20元；用人单位招用技能人才补贴等七大板块17项措施。失效时间2027年12月31日。",
+    "location": "北京市·石景山区",
+    "tier": 3
+  },
+  {
+    "id": "beijing-beijingchengshifuzhongxi",
+    "city": "beijing",
+    "name": "北京城市副中心促进人才发展若干措施 / \"运河英才计划\"2.0版",
+    "category": "talent",
+    "amount": {
+      "min": 0,
+      "max": 1000000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://ycjh.iguopin.com/",
+      "materials": [
+        "申报推荐证明（单位出具、本人签字、单位盖章）",
+        "个人申报材料电子版扫描件（具体以申报系统要求为准）"
+      ],
+      "process": [
+        "登录申报系统阅读申报指南",
+        "获取单位出具的申报推荐证明",
+        "线上系统填报并上传材料",
+        "单位提交推荐名单",
+        "主管部门线上初审",
+        "进入评审环节"
+      ],
+      "location": "通州区",
+      "url": "https://open.bjtzh.gov.cn/kftzh/c110062/202506/1758811.shtml"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-06-01",
+    "notes": "现行有效（2025年6月发布2.0版，新增青年后备人才类别，储备4000余套人才公寓）。人才资金奖励最高100万元；购房补助最高150万元；青年后备人才第一年免租，后两年实行房租阶梯优惠；优先为\"运河英才\"申办落户。需签订3年及以上劳动合同。",
+    "location": "北京市·通州区",
+    "tier": 3
+  },
+  {
+    "id": "beijing-shunyiqu-qingchuang",
+    "city": "beijing",
+    "name": "顺义区\"青创7条\"入区奖励",
+    "category": "living",
+    "amount": {
+      "min": 20000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://zhengce.beijing.gov.cn",
+      "materials": [
+        "具体以申报通知为准"
+      ],
+      "process": [
+        "通过\"顺义人社\"公众号或\"顺e就业\"公众号了解政策",
+        "住房申报系统预计2026年5月上线",
+        "入区奖励2026年11月启动申请"
+      ],
+      "location": "顺义区",
+      "url": "https://m.bjnews.com.cn/detail/1776920186129091.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2026-04-01",
+    "notes": "现行有效（2026年4月正式发布，5个配套实施细则已发布，首批青年人才公寓已交付）。35周岁（含）以下青年人才；入区奖励本科2万、硕士3万、博士5万（一次性，签订不少于3年劳动合同，工作满1年后申请）。住房保障：就业类首年5折、次年6折、第三年7折；创业类最长连续3年每年租金5折。",
+    "location": "北京市·顺义区",
+    "tier": 1,
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "exclusiveGroup": "beijing-shunyi-qingchuang"
+  },
+  {
+    "id": "beijing-changpingquqingnianrenca",
+    "city": "beijing",
+    "name": "昌平区青年人才创新创业支持政策 / \"昌聚工程\"创业赛道",
+    "category": "living",
+    "amount": {
+      "min": 0,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "degree": ["本科", "硕士", "博士"]
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://cjrc.bjchp.gov.cn/",
+      "materials": [
+        "具体以申报系统要求为准"
+      ],
+      "process": [
+        "通过\"昌平青年人才在线\"小程序或\"昌聚工程\"申报系统提交申请",
+        "材料审核",
+        "评审认定",
+        "政策兑现"
+      ],
+      "location": "昌平区",
+      "url": "https://cjrc.bjchp.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-01-01",
+    "notes": "现行有效（2025年发布，\"昌聚工程\"已升级，增设青年人才专项赛道）。35周岁及以下青年人才；创业补贴2万元起步，最高10万元；硕士生活补贴1000元/月最长1年；博士2000元/月最长1年；\"昌聚工程\"创业赛道50万-100万元；免费工位1年。入选\"昌聚工程\"可获\"昌聚英才卡\"，连续两年每年不超过5万元服务保障资金。",
+    "location": "北京市·昌平区",
+    "tier": 2
+  },
+  {
+    "id": "beijing-huairouqurencaizhufangba",
+    "city": "beijing",
+    "name": "怀柔区人才住房保障（综合性政策）",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.bjhr.gov.cn/",
+      "materials": [
+        "学生证扫描件（未毕业大学生提供）/毕业证扫描件（已毕业大学生提供，海外留学生需同步提供教留服认证报告）",
+        "个人有效身份证件扫描件（如身份证、护照等）"
+      ],
+      "process": [
+        "微信搜索\"雁栖云客厅\"小程序",
+        "进入\"雁栖青创无忧十条\"专栏-\"安居无忧\"栏目",
+        "填报基本信息并提出申请",
+        "2个工作日后查询审核结果",
+        "签约入住"
+      ],
+      "location": "怀柔区",
+      "url": "https://www.bjhr.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效（2026年已启动配租工作，提供300套保障性租赁住房）。35岁以下青年人才，全日制本科及以上学历。求职7天免费住房，就业创业起步期3个月免费周转住房，期满后可享最长6年长租补贴（按实际应付租金的50%给予长达3年补贴；3年补贴期满后，按实际应付租金的25%再给予3年补贴）。雁栖国际人才社区一期889套已投用。",
+    "location": "北京市·怀柔区",
+    "tier": 3,
+    "exclusiveGroup": "beijing-rent"
+  }
+]

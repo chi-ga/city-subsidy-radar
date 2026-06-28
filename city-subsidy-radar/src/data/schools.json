@@ -1,0 +1,8065 @@
+[
+  {
+    "id": "adelaide",
+    "name": "阿德莱德大学",
+    "pinyin": "adelaideuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Adelaide University",
+      "University of Adelaide",
+      "Adelaide",
+      "The University of Adelaide"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "USNews前100",
+      "软科前200"
+    ],
+    "city": "阿德莱德",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "universityofalbe",
+    "name": "阿尔伯塔大学",
+    "pinyin": "universityofalberta",
+    "abbreviation": "",
+    "aliases": [
+      "University of Alberta",
+      "Alberta"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "软科前150",
+      "USNews前200"
+    ],
+    "city": "埃德蒙顿",
+    "province": "加拿大"
+  },
+  {
+    "id": "aalto",
+    "name": "阿尔托大学",
+    "pinyin": "aaltouniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Aalto University",
+      "Aalto"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "USNews前300"
+    ],
+    "city": "埃斯波",
+    "province": "芬兰"
+  },
+  {
+    "id": "theuniversityofa",
+    "name": "阿姆斯特丹大学",
+    "pinyin": "theuniversityofamsterdam",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Amsterdam",
+      "University of Amsterdam",
+      "UvA"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "阿姆斯特丹",
+    "province": "荷兰"
+  },
+  {
+    "id": "eindhovenunivers",
+    "name": "埃因霍温理工大学",
+    "pinyin": "eindhovenuniversityoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Eindhoven University of Technology",
+      "TU Eindhoven"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200"
+    ],
+    "city": "埃因霍温",
+    "province": "荷兰"
+  },
+  {
+    "id": "universityofedin",
+    "name": "爱丁堡大学",
+    "pinyin": "universityofedinburgh",
+    "abbreviation": "",
+    "aliases": [
+      "University of Edinburgh",
+      "Edinburgh",
+      "The University of Edinburgh"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "爱丁堡",
+    "province": "英国"
+  },
+  {
+    "id": "anhui",
+    "name": "安徽大学",
+    "pinyin": "anhuidaxue",
+    "abbreviation": "安大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "合肥",
+    "province": "安徽"
+  },
+  {
+    "id": "aarhus",
+    "name": "奥胡斯大学",
+    "pinyin": "aarhusuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Aarhus University",
+      "Aarhus"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "奥胡斯",
+    "province": "丹麦"
+  },
+  {
+    "id": "theuniversityo2",
+    "name": "奥克兰大学",
+    "pinyin": "theuniversityofauckland",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Auckland",
+      "University of Auckland",
+      "Auckland"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "奥克兰",
+    "province": "新西兰"
+  },
+  {
+    "id": "universityofoslo",
+    "name": "奥斯陆大学",
+    "pinyin": "universityofoslo",
+    "abbreviation": "",
+    "aliases": [
+      "University of Oslo",
+      "Oslo"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "奥斯陆",
+    "province": "挪威"
+  },
+  {
+    "id": "australiannation",
+    "name": "澳大利亚国立大学",
+    "pinyin": "australiannationaluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Australian National University",
+      "ANU",
+      "The Australian National University"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "堪培拉",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "institutpolytech",
+    "name": "巴黎理工学院",
+    "pinyin": "institutpolytechniquedeparis",
+    "abbreviation": "",
+    "aliases": [
+      "Institut Polytechnique de Paris",
+      "IP Paris"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前300"
+    ],
+    "city": "巴黎",
+    "province": "法国"
+  },
+  {
+    "id": "universitparissa",
+    "name": "巴黎萨克雷大学",
+    "pinyin": "universitparissaclay",
+    "abbreviation": "",
+    "aliases": [
+      "Université Paris-Saclay",
+      "Paris-Saclay University",
+      "Universite Paris-Saclay"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "巴黎",
+    "province": "法国"
+  },
+  {
+    "id": "psl",
+    "name": "巴黎文理研究大学",
+    "pinyin": "psluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "PSL University",
+      "PSL",
+      "Université PSL",
+      "Paris Sciences et Lettres - PSL Research University Paris",
+      "Universite de Paris (Paris Sciences et Lettres)"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "巴黎",
+    "province": "法国"
+  },
+  {
+    "id": "pariscit",
+    "name": "巴黎西岱大学",
+    "pinyin": "pariscituniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Paris Cité University",
+      "Université Paris Cité",
+      "Universite Paris Cite"
+    ],
+    "levels": [
+      "THE前200",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "巴黎",
+    "province": "法国"
+  },
+  {
+    "id": "universityofbase",
+    "name": "巴塞尔大学",
+    "pinyin": "universityofbasel",
+    "abbreviation": "",
+    "aliases": [
+      "University of Basel",
+      "Basel"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "USNews前200",
+      "软科前100"
+    ],
+    "city": "巴塞尔",
+    "province": "瑞士"
+  },
+  {
+    "id": "humboldtuniversi",
+    "name": "柏林洪堡大学",
+    "pinyin": "humboldtuniversittzuberlin",
+    "abbreviation": "",
+    "aliases": [
+      "Humboldt-Universität zu Berlin",
+      "Humboldt University of Berlin"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100"
+    ],
+    "city": "柏林",
+    "province": "德国"
+  },
+  {
+    "id": "freieuniversittb",
+    "name": "柏林自由大学",
+    "pinyin": "freieuniversittberlin",
+    "abbreviation": "",
+    "aliases": [
+      "Freie Universität Berlin",
+      "Free University of Berlin"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "USNews前100"
+    ],
+    "city": "柏林",
+    "province": "德国"
+  },
+  {
+    "id": "beijing",
+    "name": "北京大学",
+    "pinyin": "beijingdaxue",
+    "abbreviation": "北大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "北京",
+    "province": "北京",
+    "aliases": [
+      "Peking University",
+      "PKU",
+      "Beijing University"
+    ]
+  },
+  {
+    "id": "beijinggongshang",
+    "name": "北京工商大学",
+    "pinyin": "beijinggongshangdaxue",
+    "abbreviation": "北工商",
+    "levels": [],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijinggongye",
+    "name": "北京工业大学",
+    "pinyin": "beijinggongyedaxue",
+    "abbreviation": "",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijinghangkongh",
+    "name": "北京航空航天大学",
+    "pinyin": "beijinghangkonghangtiandaxue",
+    "abbreviation": "北航",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "软科前150",
+      "USNews前200"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijinghuagong",
+    "name": "北京化工大学",
+    "pinyin": "beijinghuagongdaxue",
+    "abbreviation": "北化工",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingjianzhu",
+    "name": "北京建筑大学",
+    "pinyin": "beijingjianzhudaxue",
+    "abbreviation": "北建大",
+    "levels": [],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingjiaotong",
+    "name": "北京交通大学",
+    "pinyin": "beijingjiaotongdaxue",
+    "abbreviation": "北交",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingkeji",
+    "name": "北京科技大学",
+    "pinyin": "beijingkejidaxue",
+    "abbreviation": "",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingligong",
+    "name": "北京理工大学",
+    "pinyin": "beijingligongdaxue",
+    "abbreviation": "北理工",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijinglinye",
+    "name": "北京林业大学",
+    "pinyin": "beijinglinyedaxue",
+    "abbreviation": "北林",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingshifan",
+    "name": "北京师范大学",
+    "pinyin": "beijingshifandaxue",
+    "abbreviation": "北师大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前300",
+      "THE前150",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingtiyu",
+    "name": "北京体育大学",
+    "pinyin": "beijingtiyudaxue",
+    "abbreviation": "",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingwaiguoyu",
+    "name": "北京外国语大学",
+    "pinyin": "beijingwaiguoyudaxue",
+    "abbreviation": "北外",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingxieheyi",
+    "name": "北京协和医学院",
+    "pinyin": "beijingxieheyixueyuan",
+    "abbreviation": "协和",
+    "levels": [
+      "双一流",
+      "软科前200"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingyoudian",
+    "name": "北京邮电大学",
+    "pinyin": "beijingyoudiandaxue",
+    "abbreviation": "北邮",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "beijingzhongyiya",
+    "name": "北京中医药大学",
+    "pinyin": "beijingzhongyiyaodaxue",
+    "abbreviation": "北中医",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "universityofnort",
+    "name": "北卡罗来纳大学教堂山分校",
+    "pinyin": "universityofnorthcarolinaatchapelhill",
+    "abbreviation": "",
+    "aliases": [
+      "University of North Carolina at Chapel Hill",
+      "UNC Chapel Hill"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "教堂山",
+    "province": "美国"
+  },
+  {
+    "id": "universityofpenn",
+    "name": "宾夕法尼亚大学",
+    "pinyin": "universityofpennsylvania",
+    "abbreviation": "",
+    "aliases": [
+      "University of Pennsylvania",
+      "UPenn",
+      "Penn"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "费城",
+    "province": "美国"
+  },
+  {
+    "id": "pennsylvaniastat",
+    "name": "宾夕法尼亚州立大学",
+    "pinyin": "pennsylvaniastateuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Pennsylvania State University",
+      "Penn State"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "大学公园",
+    "province": "美国"
+  },
+  {
+    "id": "universityofbonn",
+    "name": "波恩大学",
+    "pinyin": "universityofbonn",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bonn",
+      "Bonn"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前100",
+      "USNews前200",
+      "软科前100"
+    ],
+    "city": "波恩",
+    "province": "德国"
+  },
+  {
+    "id": "boston",
+    "name": "波士顿大学",
+    "pinyin": "bostonuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Boston University",
+      "BU"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "波士顿",
+    "province": "美国"
+  },
+  {
+    "id": "universityofbern",
+    "name": "伯尔尼大学",
+    "pinyin": "universityofbern",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bern",
+      "Bern"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "USNews前150",
+      "软科前200"
+    ],
+    "city": "伯尔尼",
+    "province": "瑞士"
+  },
+  {
+    "id": "universityofbirm",
+    "name": "伯明翰大学",
+    "pinyin": "universityofbirmingham",
+    "abbreviation": "",
+    "aliases": [
+      "University of Birmingham",
+      "Birmingham"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前200"
+    ],
+    "city": "伯明翰",
+    "province": "英国"
+  },
+  {
+    "id": "universityofbrit",
+    "name": "不列颠哥伦比亚大学",
+    "pinyin": "universityofbritishcolumbia",
+    "abbreviation": "",
+    "aliases": [
+      "University of British Columbia",
+      "UBC"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "温哥华",
+    "province": "加拿大"
+  },
+  {
+    "id": "brown",
+    "name": "布朗大学",
+    "pinyin": "brownuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Brown University",
+      "Brown"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "普罗维登斯",
+    "province": "美国"
+  },
+  {
+    "id": "universityofbris",
+    "name": "布里斯托大学",
+    "pinyin": "universityofbristol",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bristol",
+      "Bristol"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "布里斯托",
+    "province": "英国"
+  },
+  {
+    "id": "universidaddebue",
+    "name": "布宜诺斯艾利斯大学",
+    "pinyin": "universidaddebuenosaires",
+    "abbreviation": "",
+    "aliases": [
+      "Universidad de Buenos Aires",
+      "University of Buenos Aires",
+      "UBA"
+    ],
+    "levels": [
+      "QS前100",
+      "软科前300"
+    ],
+    "city": "布宜诺斯艾利斯",
+    "province": "阿根廷"
+  },
+  {
+    "id": "chalmersuniversi",
+    "name": "查尔姆斯理工大学",
+    "pinyin": "chalmersuniversityoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Chalmers University of Technology",
+      "Chalmers"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300"
+    ],
+    "city": "哥德堡",
+    "province": "瑞典"
+  },
+  {
+    "id": "chengduligong",
+    "name": "成都理工大学",
+    "pinyin": "chengduligongdaxue",
+    "abbreviation": "成理",
+    "levels": [
+      "双一流"
+    ],
+    "city": "成都",
+    "province": "四川"
+  },
+  {
+    "id": "chengduzhongyiya",
+    "name": "成都中医药大学",
+    "pinyin": "chengduzhongyiyaodaxue",
+    "abbreviation": "成中医",
+    "levels": [
+      "双一流"
+    ],
+    "city": "成都",
+    "province": "四川"
+  },
+  {
+    "id": "zhongqing",
+    "name": "重庆大学",
+    "pinyin": "zhongqingdaxue",
+    "abbreviation": "重大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前200"
+    ],
+    "city": "重庆",
+    "province": "重庆"
+  },
+  {
+    "id": "dalianhaishi",
+    "name": "大连海事大学",
+    "pinyin": "dalianhaishidaxue",
+    "abbreviation": "大连海事",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "大连",
+    "province": "辽宁"
+  },
+  {
+    "id": "dalianligong",
+    "name": "大连理工大学",
+    "pinyin": "dalianligongdaxue",
+    "abbreviation": "大工",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前200"
+    ],
+    "city": "大连",
+    "province": "辽宁"
+  },
+  {
+    "id": "delftuniversityo",
+    "name": "代尔夫特理工大学",
+    "pinyin": "delftuniversityoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Delft University of Technology",
+      "TU Delft"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "代尔夫特",
+    "province": "荷兰"
+  },
+  {
+    "id": "universityoftexa",
+    "name": "德克萨斯大学奥斯汀分校",
+    "pinyin": "universityoftexasataustin",
+    "abbreviation": "",
+    "aliases": [
+      "University of Texas at Austin",
+      "UT Austin",
+      "The University of Texas at Austin"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "奥斯汀",
+    "province": "美国"
+  },
+  {
+    "id": "universityofte3",
+    "name": "德克萨斯大学西南医学中心",
+    "pinyin": "universityoftexassouthwesternmedicalcenter",
+    "abbreviation": "",
+    "aliases": [
+      "University of Texas Southwestern Medical Center",
+      "UT Southwestern"
+    ],
+    "levels": [
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "达拉斯",
+    "province": "美国"
+  },
+  {
+    "id": "universityofte2",
+    "name": "德克萨斯大学MD安德森癌症中心",
+    "pinyin": "universityoftexasmdandersoncancercenter",
+    "abbreviation": "",
+    "aliases": [
+      "University of Texas MD Anderson Cancer Center",
+      "MD Anderson",
+      "The University of Texas MD Anderson Cancer Center"
+    ],
+    "levels": [
+      "软科前100"
+    ],
+    "city": "休斯顿",
+    "province": "美国"
+  },
+  {
+    "id": "imperialcollegel",
+    "name": "帝国理工学院",
+    "pinyin": "imperialcollegelondon",
+    "abbreviation": "",
+    "aliases": [
+      "Imperial College London",
+      "Imperial"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "伦敦",
+    "province": "英国"
+  },
+  {
+    "id": "dianzikeji",
+    "name": "电子科技大学",
+    "pinyin": "dianzikejidaxue",
+    "abbreviation": "电子科大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "软科前200",
+      "USNews前200"
+    ],
+    "city": "成都",
+    "province": "四川"
+  },
+  {
+    "id": "dongbei",
+    "name": "东北大学",
+    "pinyin": "dongbeidaxue",
+    "abbreviation": "东大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "沈阳",
+    "province": "辽宁",
+    "aliases": [
+      "Tohoku University"
+    ]
+  },
+  {
+    "id": "dongbeilinye",
+    "name": "东北林业大学",
+    "pinyin": "dongbeilinyedaxue",
+    "abbreviation": "东北林大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "哈尔滨",
+    "province": "黑龙江"
+  },
+  {
+    "id": "东北农业大学",
+    "name": "东北农业大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Northeast Agricultural University"
+    ],
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "哈尔滨",
+    "province": "黑龙江"
+  },
+  {
+    "id": "dongbeishifan",
+    "name": "东北师范大学",
+    "pinyin": "dongbeishifandaxue",
+    "abbreviation": "东北师大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "长春",
+    "province": "吉林"
+  },
+  {
+    "id": "donghua",
+    "name": "东华大学",
+    "pinyin": "donghuadaxue",
+    "abbreviation": "东华",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "theuniversityoft",
+    "name": "东京大学",
+    "pinyin": "theuniversityoftokyo",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Tokyo",
+      "University of Tokyo",
+      "Todai"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "东京",
+    "province": "日本"
+  },
+  {
+    "id": "tokyoinstituteof",
+    "name": "东京工业大学",
+    "pinyin": "tokyoinstituteoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Tokyo Institute of Technology",
+      "Tokyo Tech"
+    ],
+    "levels": [
+      "QS前100",
+      "软科前200"
+    ],
+    "city": "东京",
+    "province": "日本"
+  },
+  {
+    "id": "dongnan",
+    "name": "东南大学",
+    "pinyin": "dongnandaxue",
+    "abbreviation": "东大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "trinitycollegedu",
+    "name": "都柏林圣三一学院",
+    "pinyin": "trinitycollegedublin",
+    "abbreviation": "",
+    "aliases": [
+      "Trinity College Dublin",
+      "Trinity College",
+      "TCD"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "都柏林",
+    "province": "爱尔兰"
+  },
+  {
+    "id": "duke",
+    "name": "杜克大学",
+    "pinyin": "dukeuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Duke University",
+      "Duke"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "达勒姆",
+    "province": "美国"
+  },
+  {
+    "id": "duiwaijingjimaoy",
+    "name": "对外经济贸易大学",
+    "pinyin": "duiwaijingjimaoyidaxue",
+    "abbreviation": "对外经贸",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "universityoftoro",
+    "name": "多伦多大学",
+    "pinyin": "universityoftoronto",
+    "abbreviation": "",
+    "aliases": [
+      "University of Toronto",
+      "Toronto",
+      "U of T"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "多伦多",
+    "province": "加拿大"
+  },
+  {
+    "id": "theohiostate",
+    "name": "俄亥俄州立大学",
+    "pinyin": "theohiostateuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "The Ohio State University",
+      "Ohio State",
+      "OSU",
+      "Ohio State University (Main campus)",
+      "Ohio State University-Columbus",
+      "The Ohio State University, Columbus"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "哥伦布",
+    "province": "美国"
+  },
+  {
+    "id": "kingfahduniversi",
+    "name": "法赫德国王石油与矿业大学",
+    "pinyin": "kingfahduniversityofpetroleumminerals",
+    "abbreviation": "",
+    "aliases": [
+      "King Fahd University of Petroleum & Minerals",
+      "KFUPM"
+    ],
+    "levels": [
+      "QS前100"
+    ],
+    "city": "达曼",
+    "province": "沙特阿拉伯"
+  },
+  {
+    "id": "vanderbilt",
+    "name": "范德堡大学",
+    "pinyin": "vanderbiltuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Vanderbilt University",
+      "Vanderbilt"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "纳什维尔",
+    "province": "美国"
+  },
+  {
+    "id": "fuzhou",
+    "name": "福州大学",
+    "pinyin": "fuzhoudaxue",
+    "abbreviation": "福大",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "福州",
+    "province": "福建"
+  },
+  {
+    "id": "fudan",
+    "name": "复旦大学",
+    "pinyin": "fudandaxue",
+    "abbreviation": "复旦",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "上海",
+    "province": "上海",
+    "aliases": [
+      "Fudan University",
+      "Fudan"
+    ]
+  },
+  {
+    "id": "korea",
+    "name": "高丽大学",
+    "pinyin": "koreauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Korea University"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "首尔",
+    "province": "韩国"
+  },
+  {
+    "id": "universityofcope",
+    "name": "哥本哈根大学",
+    "pinyin": "universityofcopenhagen",
+    "abbreviation": "",
+    "aliases": [
+      "University of Copenhagen",
+      "Copenhagen"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "哥本哈根",
+    "province": "丹麦"
+  },
+  {
+    "id": "columbia",
+    "name": "哥伦比亚大学",
+    "pinyin": "columbiauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Columbia University",
+      "Columbia"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "纽约",
+    "province": "美国"
+  },
+  {
+    "id": "universityofglas",
+    "name": "格拉斯哥大学",
+    "pinyin": "universityofglasgow",
+    "abbreviation": "",
+    "aliases": [
+      "University of Glasgow",
+      "Glasgow"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "格拉斯哥",
+    "province": "英国"
+  },
+  {
+    "id": "universityofgron",
+    "name": "格罗宁根大学",
+    "pinyin": "universityofgroningen",
+    "abbreviation": "",
+    "aliases": [
+      "University of Groningen",
+      "Groningen University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "格罗宁根",
+    "province": "荷兰"
+  },
+  {
+    "id": "ghent",
+    "name": "根特大学",
+    "pinyin": "ghentuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Ghent University",
+      "Ghent"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "根特",
+    "province": "比利时"
+  },
+  {
+    "id": "guangdonggongye",
+    "name": "广东工业大学",
+    "pinyin": "guangdonggongyedaxue",
+    "abbreviation": "广工",
+    "levels": [],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "guangdongwaiyuwa",
+    "name": "广东外语外贸大学",
+    "pinyin": "guangdongwaiyuwaimaodaxue",
+    "abbreviation": "广外",
+    "levels": [],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "guangxi",
+    "name": "广西大学",
+    "pinyin": "guangxidaxue",
+    "abbreviation": "西大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "南宁",
+    "province": "广西"
+  },
+  {
+    "id": "guangzhou",
+    "name": "广州大学",
+    "pinyin": "guangzhoudaxue",
+    "abbreviation": "广大",
+    "levels": [],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "guangzhouyike",
+    "name": "广州医科大学",
+    "pinyin": "guangzhouyikedaxue",
+    "abbreviation": "广医",
+    "levels": [
+      "双一流"
+    ],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "guangzhouzhongyi",
+    "name": "广州中医药大学",
+    "pinyin": "guangzhouzhongyiyaodaxue",
+    "abbreviation": "广中医",
+    "levels": [
+      "双一流"
+    ],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "guizhou",
+    "name": "贵州大学",
+    "pinyin": "guizhoudaxue",
+    "abbreviation": "贵大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "贵阳",
+    "province": "贵州"
+  },
+  {
+    "id": "guofangkeji",
+    "name": "国防科技大学",
+    "pinyin": "guofangkejidaxue",
+    "abbreviation": "国防科大",
+    "levels": [
+      "985",
+      "211",
+      "双一流"
+    ],
+    "city": "长沙",
+    "province": "湖南"
+  },
+  {
+    "id": "haerbingongcheng",
+    "name": "哈尔滨工程大学",
+    "pinyin": "haerbingongchengdaxue",
+    "abbreviation": "哈工程",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "哈尔滨",
+    "province": "黑龙江"
+  },
+  {
+    "id": "haerbingongye",
+    "name": "哈尔滨工业大学",
+    "pinyin": "haerbingongyedaxue",
+    "abbreviation": "哈工大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前300",
+      "THE前150",
+      "USNews前150",
+      "软科前150"
+    ],
+    "city": "哈尔滨",
+    "province": "黑龙江"
+  },
+  {
+    "id": "harvard",
+    "name": "哈佛大学",
+    "pinyin": "harvarduniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Harvard University",
+      "Harvard"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "剑桥",
+    "province": "美国"
+  },
+  {
+    "id": "ruprechtkarlsuni",
+    "name": "海德堡大学",
+    "pinyin": "ruprechtkarlsuniversittheidelberg",
+    "abbreviation": "",
+    "aliases": [
+      "Ruprecht-Karls-Universität Heidelberg",
+      "Heidelberg University",
+      "Heidelberg",
+      "Universitat Heidelberg"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "海德堡",
+    "province": "德国"
+  },
+  {
+    "id": "海军军医大学",
+    "name": "海军军医大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Naval Medical University"
+    ],
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "hainan",
+    "name": "海南大学",
+    "pinyin": "hainandaxue",
+    "abbreviation": "海大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "海口",
+    "province": "海南"
+  },
+  {
+    "id": "hangzhoudianzike",
+    "name": "杭州电子科技大学",
+    "pinyin": "hangzhoudianzikejidaxue",
+    "abbreviation": "杭电",
+    "levels": [],
+    "city": "杭州",
+    "province": "浙江"
+  },
+  {
+    "id": "hefeigongye",
+    "name": "合肥工业大学",
+    "pinyin": "hefeigongyedaxue",
+    "abbreviation": "合工大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "合肥",
+    "province": "安徽"
+  },
+  {
+    "id": "hebeigongye",
+    "name": "河北工业大学",
+    "pinyin": "hebeigongyedaxue",
+    "abbreviation": "河工大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "天津",
+    "province": "河北"
+  },
+  {
+    "id": "hehai",
+    "name": "河海大学",
+    "pinyin": "hehaidaxue",
+    "abbreviation": "河海",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "henan",
+    "name": "河南大学",
+    "pinyin": "henandaxue",
+    "abbreviation": "河大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "开封",
+    "province": "河南"
+  },
+  {
+    "id": "universityofhels",
+    "name": "赫尔辛基大学",
+    "pinyin": "universityofhelsinki",
+    "abbreviation": "",
+    "aliases": [
+      "University of Helsinki",
+      "Helsinki"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "赫尔辛基",
+    "province": "芬兰"
+  },
+  {
+    "id": "hunan",
+    "name": "湖南大学",
+    "pinyin": "hunandaxue",
+    "abbreviation": "湖大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前150",
+      "软科前200"
+    ],
+    "city": "长沙",
+    "province": "湖南"
+  },
+  {
+    "id": "hunanshifan",
+    "name": "湖南师范大学",
+    "pinyin": "hunanshifandaxue",
+    "abbreviation": "湖南师大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "长沙",
+    "province": "湖南"
+  },
+  {
+    "id": "huabeidianli",
+    "name": "华北电力大学",
+    "pinyin": "huabeidianlidaxue",
+    "abbreviation": "",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "huadongjiaotong",
+    "name": "华东交通大学",
+    "pinyin": "huadongjiaotongdaxue",
+    "abbreviation": "华东交大",
+    "levels": [],
+    "city": "南昌",
+    "province": "江西"
+  },
+  {
+    "id": "huadongligong",
+    "name": "华东理工大学",
+    "pinyin": "huadongligongdaxue",
+    "abbreviation": "华理",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "huadongshifan",
+    "name": "华东师范大学",
+    "pinyin": "huadongshifandaxue",
+    "abbreviation": "华东师大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "huadongzhengfa",
+    "name": "华东政法大学",
+    "pinyin": "huadongzhengfadaxue",
+    "abbreviation": "华政",
+    "levels": [],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "huananligong",
+    "name": "华南理工大学",
+    "pinyin": "huananligongdaxue",
+    "abbreviation": "华工",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "huanannongye",
+    "name": "华南农业大学",
+    "pinyin": "huanannongyedaxue",
+    "abbreviation": "华农",
+    "levels": [
+      "双一流"
+    ],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "huananshifan",
+    "name": "华南师范大学",
+    "pinyin": "huananshifandaxue",
+    "abbreviation": "华师",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "huaqiao",
+    "name": "华侨大学",
+    "pinyin": "huaqiaodaxue",
+    "abbreviation": "华大",
+    "levels": [],
+    "city": "泉州",
+    "province": "福建"
+  },
+  {
+    "id": "universityofwash",
+    "name": "华盛顿大学",
+    "pinyin": "universityofwashington",
+    "abbreviation": "",
+    "aliases": [
+      "University of Washington",
+      "UW",
+      "Washington",
+      "University of Washington, Seattle"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "西雅图",
+    "province": "美国"
+  },
+  {
+    "id": "theuniversityofw",
+    "name": "华威大学",
+    "pinyin": "theuniversityofwarwick",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Warwick",
+      "University of Warwick",
+      "Warwick"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "考文垂",
+    "province": "英国"
+  },
+  {
+    "id": "huazhongkeji",
+    "name": "华中科技大学",
+    "pinyin": "huazhongkejidaxue",
+    "abbreviation": "华科",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前200",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "武汉",
+    "province": "湖北",
+    "aliases": [
+      "Huazhong University of Science and Technology",
+      "HUST"
+    ]
+  },
+  {
+    "id": "huazhongnongye",
+    "name": "华中农业大学",
+    "pinyin": "huazhongnongyedaxue",
+    "abbreviation": "华中农大",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "武汉",
+    "province": "湖北"
+  },
+  {
+    "id": "huazhongshifan",
+    "name": "华中师范大学",
+    "pinyin": "huazhongshifandaxue",
+    "abbreviation": "华中师大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "武汉",
+    "province": "湖北"
+  },
+  {
+    "id": "jilin",
+    "name": "吉林大学",
+    "pinyin": "jilindaxue",
+    "abbreviation": "吉大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前150"
+    ],
+    "city": "长春",
+    "province": "吉林"
+  },
+  {
+    "id": "jinan",
+    "name": "暨南大学",
+    "pinyin": "jinandaxue",
+    "abbreviation": "暨大",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "广州",
+    "province": "广东"
+  },
+  {
+    "id": "universityofcali",
+    "name": "加州大学伯克利分校",
+    "pinyin": "universityofcaliforniaberkeley",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Berkeley",
+      "UC Berkeley",
+      "UCB",
+      "Berkeley"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "伯克利",
+    "province": "美国"
+  },
+  {
+    "id": "universityofca2",
+    "name": "加州大学戴维斯分校",
+    "pinyin": "universityofcaliforniadavis",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Davis",
+      "UC Davis"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "戴维斯",
+    "province": "美国"
+  },
+  {
+    "id": "universityofca6",
+    "name": "加州大学旧金山分校",
+    "pinyin": "universityofcaliforniasanfrancisco",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, San Francisco",
+      "UCSF"
+    ],
+    "levels": [
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "旧金山",
+    "province": "美国"
+  },
+  {
+    "id": "universityofca4",
+    "name": "加州大学洛杉矶分校",
+    "pinyin": "universityofcalifornialosangeles",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Los Angeles",
+      "UCLA"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "洛杉矶",
+    "province": "美国"
+  },
+  {
+    "id": "universityofca3",
+    "name": "加州大学欧文分校",
+    "pinyin": "universityofcaliforniairvine",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Irvine",
+      "UC Irvine",
+      "UCI"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "欧文",
+    "province": "美国"
+  },
+  {
+    "id": "universityofca5",
+    "name": "加州大学圣地亚哥分校",
+    "pinyin": "universityofcaliforniasandiego",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, San Diego",
+      "UC San Diego",
+      "UCSD"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "圣地亚哥",
+    "province": "美国"
+  },
+  {
+    "id": "universityofca7",
+    "name": "加州大学圣塔芭芭拉分校",
+    "pinyin": "universityofcaliforniasantabarbara",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Santa Barbara",
+      "UC Santa Barbara",
+      "UCSB"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "圣塔芭芭拉",
+    "province": "美国"
+  },
+  {
+    "id": "californiainstit",
+    "name": "加州理工学院",
+    "pinyin": "californiainstituteoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "California Institute of Technology",
+      "Caltech"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "帕萨迪纳",
+    "province": "美国"
+  },
+  {
+    "id": "universityofcamb",
+    "name": "剑桥大学",
+    "pinyin": "universityofcambridge",
+    "abbreviation": "",
+    "aliases": [
+      "University of Cambridge",
+      "Cambridge"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "剑桥",
+    "province": "英国"
+  },
+  {
+    "id": "jiangnan",
+    "name": "江南大学",
+    "pinyin": "jiangnandaxue",
+    "abbreviation": "江大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "无锡",
+    "province": "江苏"
+  },
+  {
+    "id": "kyoto",
+    "name": "京都大学",
+    "pinyin": "kyotouniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Kyoto University",
+      "Kyoto"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前200",
+      "软科前100"
+    ],
+    "city": "京都",
+    "province": "日本"
+  },
+  {
+    "id": "karolinska",
+    "name": "卡罗林斯卡学院",
+    "pinyin": "karolinskainstitute",
+    "abbreviation": "",
+    "aliases": [
+      "Karolinska Institute",
+      "Karolinska Institutet"
+    ],
+    "levels": [
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "斯德哥尔摩",
+    "province": "瑞典"
+  },
+  {
+    "id": "carnegiemellon",
+    "name": "卡内基梅隆大学",
+    "pinyin": "carnegiemellonuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Carnegie Mellon University",
+      "CMU",
+      "Carnegie Mellon"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "匹兹堡",
+    "province": "美国"
+  },
+  {
+    "id": "casewesternreser",
+    "name": "凯斯西储大学",
+    "pinyin": "casewesternreserveuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Case Western Reserve University",
+      "CWRU"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "克利夫兰",
+    "province": "美国"
+  },
+  {
+    "id": "cornell",
+    "name": "康奈尔大学",
+    "pinyin": "cornelluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Cornell University",
+      "Cornell"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "伊萨卡",
+    "province": "美国"
+  },
+  {
+    "id": "universityofcolo",
+    "name": "科罗拉多大学博尔德分校",
+    "pinyin": "universityofcoloradoboulder",
+    "abbreviation": "",
+    "aliases": [
+      "University of Colorado Boulder",
+      "CU Boulder",
+      "University of Colorado at Boulder"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "博尔德",
+    "province": "美国"
+  },
+  {
+    "id": "空军军医大学",
+    "name": "空军军医大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Air Force Medical University"
+    ],
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "西安",
+    "province": "陕西"
+  },
+  {
+    "id": "theuniversityofq",
+    "name": "昆士兰大学",
+    "pinyin": "theuniversityofqueensland",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Queensland",
+      "University of Queensland",
+      "UQ"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "布里斯班",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "rice",
+    "name": "莱斯大学",
+    "pinyin": "riceuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Rice University",
+      "Rice"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "软科前150",
+      "USNews前300"
+    ],
+    "city": "休斯顿",
+    "province": "美国"
+  },
+  {
+    "id": "lanzhou",
+    "name": "兰州大学",
+    "pinyin": "lanzhoudaxue",
+    "abbreviation": "兰大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "兰州",
+    "province": "甘肃"
+  },
+  {
+    "id": "universityofleed",
+    "name": "利兹大学",
+    "pinyin": "universityofleeds",
+    "abbreviation": "",
+    "aliases": [
+      "University of Leeds",
+      "Leeds"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "利兹",
+    "province": "英国"
+  },
+  {
+    "id": "liaoning",
+    "name": "辽宁大学",
+    "pinyin": "liaoningdaxue",
+    "abbreviation": "辽大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "沈阳",
+    "province": "辽宁"
+  },
+  {
+    "id": "lund",
+    "name": "隆德大学",
+    "pinyin": "lunduniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Lund University",
+      "Lund"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "隆德",
+    "province": "瑞典"
+  },
+  {
+    "id": "kuleuven",
+    "name": "鲁汶大学",
+    "pinyin": "kuleuven",
+    "abbreviation": "",
+    "aliases": [
+      "KU Leuven",
+      "Katholieke Universiteit Leuven",
+      "Universite Catholique de Louvain (UCLouvain)"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "鲁汶",
+    "province": "比利时"
+  },
+  {
+    "id": "ucl",
+    "name": "伦敦大学学院",
+    "pinyin": "ucl",
+    "abbreviation": "",
+    "aliases": [
+      "UCL",
+      "University College London"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "伦敦",
+    "province": "英国"
+  },
+  {
+    "id": "kingscollegelond",
+    "name": "伦敦国王学院",
+    "pinyin": "kingscollegelondon",
+    "abbreviation": "",
+    "aliases": [
+      "King's College London",
+      "KCL",
+      "King's College"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "伦敦",
+    "province": "英国"
+  },
+  {
+    "id": "londonschoolofec",
+    "name": "伦敦政治经济学院",
+    "pinyin": "londonschoolofeconomicsandpoliticalscience",
+    "abbreviation": "",
+    "aliases": [
+      "London School of Economics and Political Science",
+      "LSE",
+      "London School of Economics"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "伦敦",
+    "province": "英国"
+  },
+  {
+    "id": "rockefeller",
+    "name": "洛克菲勒大学",
+    "pinyin": "rockefelleruniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Rockefeller University",
+      "Rockefeller"
+    ],
+    "levels": [
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "纽约",
+    "province": "美国"
+  },
+  {
+    "id": "colepolytechniqu",
+    "name": "洛桑联邦理工学院",
+    "pinyin": "colepolytechniquefdraledelausanne",
+    "abbreviation": "",
+    "aliases": [
+      "École Polytechnique Fédérale de Lausanne",
+      "EPFL",
+      "Ecole Polytechnique Federale de Lausanne (EPFL)",
+      "EPFL - Ecole Polytechnique Federale de Lausanne"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "洛桑",
+    "province": "瑞士"
+  },
+  {
+    "id": "massachusettsins",
+    "name": "麻省理工学院",
+    "pinyin": "massachusettsinstituteoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Massachusetts Institute of Technology",
+      "MIT"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "剑桥",
+    "province": "美国"
+  },
+  {
+    "id": "universitimalaya",
+    "name": "马来亚大学",
+    "pinyin": "universitimalaya",
+    "abbreviation": "",
+    "aliases": [
+      "Universiti Malaya",
+      "University of Malaya",
+      "UM"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前300"
+    ],
+    "city": "吉隆坡",
+    "province": "马来西亚"
+  },
+  {
+    "id": "universityofmary",
+    "name": "马里兰大学学院公园分校",
+    "pinyin": "universityofmarylandcollegepark",
+    "abbreviation": "",
+    "aliases": [
+      "University of Maryland, College Park",
+      "UMD",
+      "University of Maryland"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "学院公园",
+    "province": "美国"
+  },
+  {
+    "id": "mcgill",
+    "name": "麦吉尔大学",
+    "pinyin": "mcgilluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "McGill University",
+      "McGill"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "蒙特利尔",
+    "province": "加拿大"
+  },
+  {
+    "id": "theuniversityofm",
+    "name": "曼彻斯特大学",
+    "pinyin": "theuniversityofmanchester",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Manchester",
+      "University of Manchester",
+      "Manchester"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "曼彻斯特",
+    "province": "英国"
+  },
+  {
+    "id": "universityofmich",
+    "name": "密歇根大学安娜堡分校",
+    "pinyin": "universityofmichiganannarbor",
+    "abbreviation": "",
+    "aliases": [
+      "University of Michigan-Ann Arbor",
+      "University of Michigan",
+      "UMich",
+      "University of Michigan, Ann Arbor"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "安娜堡",
+    "province": "美国"
+  },
+  {
+    "id": "universityofminn",
+    "name": "明尼苏达大学双城分校",
+    "pinyin": "universityofminnesotatwincities",
+    "abbreviation": "",
+    "aliases": [
+      "University of Minnesota, Twin Cities",
+      "University of Minnesota"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "明尼阿波利斯",
+    "province": "美国"
+  },
+  {
+    "id": "monash",
+    "name": "莫纳什大学",
+    "pinyin": "monashuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Monash University",
+      "Monash"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "墨尔本",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "theuniversityo3",
+    "name": "墨尔本大学",
+    "pinyin": "theuniversityofmelbourne",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Melbourne",
+      "University of Melbourne",
+      "Melbourne"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "墨尔本",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "ludwigmaximilian",
+    "name": "慕尼黑大学",
+    "pinyin": "ludwigmaximiliansuniversittmnchen",
+    "abbreviation": "",
+    "aliases": [
+      "Ludwig-Maximilians-Universität München",
+      "LMU Munich",
+      "University of Munich",
+      "LMU",
+      "Ludwig Maximilian University of Munich",
+      "Ludwig-Maximilians-Universitat Munchen (LMU Munich)"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "慕尼黑",
+    "province": "德国"
+  },
+  {
+    "id": "technicalunivers",
+    "name": "慕尼黑工业大学",
+    "pinyin": "technicaluniversityofmunich",
+    "abbreviation": "",
+    "aliases": [
+      "Technical University of Munich",
+      "TUM",
+      "TU Munich"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "慕尼黑",
+    "province": "德国"
+  },
+  {
+    "id": "universityofsout",
+    "name": "南安普顿大学",
+    "pinyin": "universityofsouthampton",
+    "abbreviation": "",
+    "aliases": [
+      "University of Southampton",
+      "Southampton"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "南安普顿",
+    "province": "英国"
+  },
+  {
+    "id": "nanchang",
+    "name": "南昌大学",
+    "pinyin": "nanchangdaxue",
+    "abbreviation": "昌大",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "南昌",
+    "province": "江西"
+  },
+  {
+    "id": "nanfangkeji",
+    "name": "南方科技大学",
+    "pinyin": "nanfangkejidaxue",
+    "abbreviation": "南科大",
+    "levels": [
+      "双一流",
+      "THE前200",
+      "USNews前150",
+      "软科前150"
+    ],
+    "city": "深圳",
+    "province": "广东"
+  },
+  {
+    "id": "universityofso2",
+    "name": "南加州大学",
+    "pinyin": "universityofsoutherncalifornia",
+    "abbreviation": "",
+    "aliases": [
+      "University of Southern California",
+      "USC"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "洛杉矶",
+    "province": "美国"
+  },
+  {
+    "id": "nanjing",
+    "name": "南京大学",
+    "pinyin": "nanjingdaxue",
+    "abbreviation": "南大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "南京",
+    "province": "江苏",
+    "aliases": [
+      "Nanjing University",
+      "NJU"
+    ]
+  },
+  {
+    "id": "nanjinggongye",
+    "name": "南京工业大学",
+    "pinyin": "nanjinggongyedaxue",
+    "abbreviation": "南工大",
+    "levels": [],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjinghangkongh",
+    "name": "南京航空航天大学",
+    "pinyin": "nanjinghangkonghangtiandaxue",
+    "abbreviation": "南航",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjingligong",
+    "name": "南京理工大学",
+    "pinyin": "nanjingligongdaxue",
+    "abbreviation": "南理工",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjinglinye",
+    "name": "南京林业大学",
+    "pinyin": "nanjinglinyedaxue",
+    "abbreviation": "南林",
+    "levels": [
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjingnongye",
+    "name": "南京农业大学",
+    "pinyin": "nanjingnongyedaxue",
+    "abbreviation": "南农",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjingshifan",
+    "name": "南京师范大学",
+    "pinyin": "nanjingshifandaxue",
+    "abbreviation": "南师大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjingxinxigong",
+    "name": "南京信息工程大学",
+    "pinyin": "nanjingxinxigongchengdaxue",
+    "abbreviation": "南信大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "南京医科大学",
+    "name": "南京医科大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Nanjing Medical University"
+    ],
+    "levels": [
+      "双一流",
+      "软科前300"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjingyoudian",
+    "name": "南京邮电大学",
+    "pinyin": "nanjingyoudiandaxue",
+    "abbreviation": "南邮",
+    "levels": [
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nanjingzhongyiya",
+    "name": "南京中医药大学",
+    "pinyin": "nanjingzhongyiyaodaxue",
+    "abbreviation": "南中医",
+    "levels": [
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "nankai",
+    "name": "南开大学",
+    "pinyin": "nankaidaxue",
+    "abbreviation": "南开",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "天津",
+    "province": "天津"
+  },
+  {
+    "id": "nanyangtechnolog",
+    "name": "南洋理工大学",
+    "pinyin": "nanyangtechnologicaluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Nanyang Technological University",
+      "NTU",
+      "NTU Singapore"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "新加坡",
+    "province": "新加坡"
+  },
+  {
+    "id": "neimenggu",
+    "name": "内蒙古大学",
+    "pinyin": "neimenggudaxue",
+    "abbreviation": "内大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "呼和浩特",
+    "province": "内蒙古"
+  },
+  {
+    "id": "ningbo",
+    "name": "宁波大学",
+    "pinyin": "ningbodaxue",
+    "abbreviation": "宁大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "宁波",
+    "province": "浙江"
+  },
+  {
+    "id": "ningxia",
+    "name": "宁夏大学",
+    "pinyin": "ningxiadaxue",
+    "abbreviation": "宁大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "银川",
+    "province": "宁夏"
+  },
+  {
+    "id": "universityofoxfo",
+    "name": "牛津大学",
+    "pinyin": "universityofoxford",
+    "abbreviation": "",
+    "aliases": [
+      "University of Oxford",
+      "Oxford"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "牛津",
+    "province": "英国"
+  },
+  {
+    "id": "newyork",
+    "name": "纽约大学",
+    "pinyin": "newyorkuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "New York University",
+      "NYU"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "纽约",
+    "province": "美国"
+  },
+  {
+    "id": "universityofnott",
+    "name": "诺丁汉大学",
+    "pinyin": "universityofnottingham",
+    "abbreviation": "",
+    "aliases": [
+      "University of Nottingham",
+      "Nottingham"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "诺丁汉",
+    "province": "英国"
+  },
+  {
+    "id": "universityofpitt",
+    "name": "匹兹堡大学",
+    "pinyin": "universityofpittsburgh",
+    "abbreviation": "",
+    "aliases": [
+      "University of Pittsburgh",
+      "Pittsburgh",
+      "University of Pittsburgh-Pittsburgh campus"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "匹兹堡",
+    "province": "美国"
+  },
+  {
+    "id": "purdue",
+    "name": "普渡大学",
+    "pinyin": "purdueuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Purdue University",
+      "Purdue",
+      "Purdue University West Lafayette",
+      "Purdue University-West Lafayette"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "西拉法叶",
+    "province": "美国"
+  },
+  {
+    "id": "princeton",
+    "name": "普林斯顿大学",
+    "pinyin": "princetonuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Princeton University",
+      "Princeton"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "普林斯顿",
+    "province": "美国"
+  },
+  {
+    "id": "georgetown",
+    "name": "乔治城大学",
+    "pinyin": "georgetownuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Georgetown University",
+      "Georgetown"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "USNews前300"
+    ],
+    "city": "华盛顿",
+    "province": "美国"
+  },
+  {
+    "id": "qinghai",
+    "name": "青海大学",
+    "pinyin": "qinghaidaxue",
+    "abbreviation": "青大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "西宁",
+    "province": "青海"
+  },
+  {
+    "id": "qinghua",
+    "name": "清华大学",
+    "pinyin": "qinghuadaxue",
+    "abbreviation": "清华",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "北京",
+    "province": "北京",
+    "aliases": [
+      "Tsinghua University",
+      "THU",
+      "National Tsing Hua University"
+    ]
+  },
+  {
+    "id": "universityofgene",
+    "name": "日内瓦大学",
+    "pinyin": "universityofgeneva",
+    "abbreviation": "",
+    "aliases": [
+      "University of Geneva",
+      "Geneva"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "日内瓦",
+    "province": "瑞士"
+  },
+  {
+    "id": "kthroyalinstitut",
+    "name": "瑞典皇家理工学院",
+    "pinyin": "kthroyalinstituteoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "KTH Royal Institute of Technology",
+      "KTH"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "斯德哥尔摩",
+    "province": "瑞典"
+  },
+  {
+    "id": "kingsaud",
+    "name": "沙特国王大学",
+    "pinyin": "kingsauduniversity",
+    "abbreviation": "",
+    "aliases": [
+      "King Saud University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前300",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "利雅得",
+    "province": "沙特阿拉伯"
+  },
+  {
+    "id": "shamen",
+    "name": "厦门大学",
+    "pinyin": "shamendaxue",
+    "abbreviation": "厦大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "厦门",
+    "province": "福建"
+  },
+  {
+    "id": "shandong",
+    "name": "山东大学",
+    "pinyin": "shandongdaxue",
+    "abbreviation": "山大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前300",
+      "软科前150"
+    ],
+    "city": "济南",
+    "province": "山东"
+  },
+  {
+    "id": "shanxi",
+    "name": "山西大学",
+    "pinyin": "shanxidaxue",
+    "abbreviation": "山大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "太原",
+    "province": "山西"
+  },
+  {
+    "id": "shanxishifan",
+    "name": "陕西师范大学",
+    "pinyin": "shanxishifandaxue",
+    "abbreviation": "陕师大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "西安",
+    "province": "陕西"
+  },
+  {
+    "id": "shanghaicaijing",
+    "name": "上海财经大学",
+    "pinyin": "shanghaicaijingdaxue",
+    "abbreviation": "上财",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghai",
+    "name": "上海大学",
+    "pinyin": "shanghaidaxue",
+    "abbreviation": "上大",
+    "levels": [
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaihaiyang",
+    "name": "上海海洋大学",
+    "pinyin": "shanghaihaiyangdaxue",
+    "abbreviation": "上海海大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaijiaotong",
+    "name": "上海交通大学",
+    "pinyin": "shanghaijiaotongdaxue",
+    "abbreviation": "上交",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "上海",
+    "province": "上海",
+    "aliases": [
+      "Shanghai Jiao Tong University",
+      "SJTU",
+      "Jiao Tong"
+    ]
+  },
+  {
+    "id": "上海科技大学",
+    "name": "上海科技大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "ShanghaiTech University"
+    ],
+    "levels": [
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghailigong",
+    "name": "上海理工大学",
+    "pinyin": "shanghailigongdaxue",
+    "abbreviation": "上理",
+    "levels": [],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaishifan",
+    "name": "上海师范大学",
+    "pinyin": "shanghaishifandaxue",
+    "abbreviation": "上海师大",
+    "levels": [],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "上海体育大学",
+    "name": "上海体育大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Shanghai University of Sport"
+    ],
+    "levels": [
+      "双一流",
+      "USNews前300"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaitiyu",
+    "name": "上海体育学院",
+    "pinyin": "shanghaitiyuxueyuan",
+    "abbreviation": "",
+    "levels": [
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaiwaiguoyu",
+    "name": "上海外国语大学",
+    "pinyin": "shanghaiwaiguoyudaxue",
+    "abbreviation": "上外",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaiyinle",
+    "name": "上海音乐学院",
+    "pinyin": "shanghaiyinlexueyuan",
+    "abbreviation": "",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shanghaizhongyiy",
+    "name": "上海中医药大学",
+    "pinyin": "shanghaizhongyiyaodaxue",
+    "abbreviation": "上中医",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "shenzhen",
+    "name": "深圳大学",
+    "pinyin": "shenzhendaxue",
+    "abbreviation": "深大",
+    "levels": [
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "深圳",
+    "province": "广东",
+    "aliases": [
+      "Shenzhen University"
+    ]
+  },
+  {
+    "id": "universityofstan",
+    "name": "圣安德鲁斯大学",
+    "pinyin": "universityofstandrews",
+    "abbreviation": "",
+    "aliases": [
+      "University of St Andrews",
+      "St Andrews"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200"
+    ],
+    "city": "圣安德鲁斯",
+    "province": "英国"
+  },
+  {
+    "id": "washingtonuniver",
+    "name": "圣路易斯华盛顿大学",
+    "pinyin": "washingtonuniversityinstlouis",
+    "abbreviation": "",
+    "aliases": [
+      "Washington University in St. Louis",
+      "WUSTL"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "圣路易斯",
+    "province": "美国"
+  },
+  {
+    "id": "shihezi",
+    "name": "石河子大学",
+    "pinyin": "shihezidaxue",
+    "abbreviation": "石大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "石河子",
+    "province": "新疆"
+  },
+  {
+    "id": "shoudujingjimaoy",
+    "name": "首都经济贸易大学",
+    "pinyin": "shoudujingjimaoyidaxue",
+    "abbreviation": "首经贸",
+    "levels": [],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "shoudushifan",
+    "name": "首都师范大学",
+    "pinyin": "shoudushifandaxue",
+    "abbreviation": "首师大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "seoulnational",
+    "name": "首尔国立大学",
+    "pinyin": "seoulnationaluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Seoul National University",
+      "SNU"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "首尔",
+    "province": "韩国"
+  },
+  {
+    "id": "stockholm",
+    "name": "斯德哥尔摩大学",
+    "pinyin": "stockholmuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Stockholm University",
+      "Stockholm"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前300",
+      "USNews前200",
+      "软科前100"
+    ],
+    "city": "斯德哥尔摩",
+    "province": "瑞典"
+  },
+  {
+    "id": "stanford",
+    "name": "斯坦福大学",
+    "pinyin": "stanforduniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Stanford University",
+      "Stanford"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "斯坦福",
+    "province": "美国"
+  },
+  {
+    "id": "sichuan",
+    "name": "四川大学",
+    "pinyin": "sichuandaxue",
+    "abbreviation": "川大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "成都",
+    "province": "四川",
+    "aliases": [
+      "Sichuan University",
+      "SCU"
+    ]
+  },
+  {
+    "id": "sichuannongye",
+    "name": "四川农业大学",
+    "pinyin": "sichuannongyedaxue",
+    "abbreviation": "川农",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "雅安",
+    "province": "四川"
+  },
+  {
+    "id": "universityofzuri",
+    "name": "苏黎世大学",
+    "pinyin": "universityofzurich",
+    "abbreviation": "",
+    "aliases": [
+      "University of Zurich",
+      "Zurich"
+    ],
+    "levels": [
+      "QS前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "苏黎世",
+    "province": "瑞士"
+  },
+  {
+    "id": "ethzurich",
+    "name": "苏黎世联邦理工学院",
+    "pinyin": "ethzurich",
+    "abbreviation": "",
+    "aliases": [
+      "ETH Zurich",
+      "ETH Zurich",
+      "Swiss Federal Institute of Technology",
+      "ETH"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "苏黎世",
+    "province": "瑞士"
+  },
+  {
+    "id": "suzhou",
+    "name": "苏州大学",
+    "pinyin": "suzhoudaxue",
+    "abbreviation": "苏大",
+    "levels": [
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前150"
+    ],
+    "city": "苏州",
+    "province": "江苏"
+  },
+  {
+    "id": "sorbonne",
+    "name": "索邦大学",
+    "pinyin": "sorbonneuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Sorbonne University",
+      "Sorbonne",
+      "Sorbonne Universite"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "巴黎",
+    "province": "法国"
+  },
+  {
+    "id": "nationaltaiwan",
+    "name": "台湾大学",
+    "pinyin": "nationaltaiwanuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "National Taiwan University",
+      "NTU",
+      "Taiwan University"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "台北",
+    "province": "中国台湾"
+  },
+  {
+    "id": "taiyuanligong",
+    "name": "太原理工大学",
+    "pinyin": "taiyuanligongdaxue",
+    "abbreviation": "太原理工",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "太原",
+    "province": "山西"
+  },
+  {
+    "id": "tianjin",
+    "name": "天津大学",
+    "pinyin": "tianjindaxue",
+    "abbreviation": "天大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "天津",
+    "province": "天津"
+  },
+  {
+    "id": "tianjingongye",
+    "name": "天津工业大学",
+    "pinyin": "tianjingongyedaxue",
+    "abbreviation": "天工大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "天津",
+    "province": "天津"
+  },
+  {
+    "id": "tianjinyike",
+    "name": "天津医科大学",
+    "pinyin": "tianjinyikedaxue",
+    "abbreviation": "天医",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "天津",
+    "province": "天津"
+  },
+  {
+    "id": "tianjinzhongyiya",
+    "name": "天津中医药大学",
+    "pinyin": "tianjinzhongyiyaodaxue",
+    "abbreviation": "天中医",
+    "levels": [
+      "双一流"
+    ],
+    "city": "天津",
+    "province": "天津"
+  },
+  {
+    "id": "tongji",
+    "name": "同济大学",
+    "pinyin": "tongjidaxue",
+    "abbreviation": "同济",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前200",
+      "THE前150",
+      "USNews前150",
+      "软科前150"
+    ],
+    "city": "上海",
+    "province": "上海"
+  },
+  {
+    "id": "waijiao",
+    "name": "外交学院",
+    "pinyin": "waijiaoxueyuan",
+    "abbreviation": "外院",
+    "levels": [
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "universityofwisc",
+    "name": "威斯康星大学麦迪逊分校",
+    "pinyin": "universityofwisconsinmadison",
+    "abbreviation": "",
+    "aliases": [
+      "University of Wisconsin-Madison",
+      "UW Madison",
+      "Wisconsin"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "麦迪逊",
+    "province": "美国"
+  },
+  {
+    "id": "weizmanninstitut",
+    "name": "魏茨曼科学研究院",
+    "pinyin": "weizmanninstituteofscience",
+    "abbreviation": "",
+    "aliases": [
+      "Weizmann Institute of Science",
+      "Weizmann"
+    ],
+    "levels": [
+      "USNews前200",
+      "软科前100"
+    ],
+    "city": "雷霍沃特",
+    "province": "以色列"
+  },
+  {
+    "id": "utrecht",
+    "name": "乌得勒支大学",
+    "pinyin": "utrechtuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Utrecht University",
+      "Utrecht"
+    ],
+    "levels": [
+      "QS前150",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "乌得勒支",
+    "province": "荷兰"
+  },
+  {
+    "id": "uppsala",
+    "name": "乌普萨拉大学",
+    "pinyin": "uppsalauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Uppsala University",
+      "Uppsala"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "乌普萨拉",
+    "province": "瑞典"
+  },
+  {
+    "id": "wuhan",
+    "name": "武汉大学",
+    "pinyin": "wuhandaxue",
+    "abbreviation": "武大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前200",
+      "THE前150",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "武汉",
+    "province": "湖北",
+    "aliases": [
+      "Wuhan University",
+      "WHU"
+    ]
+  },
+  {
+    "id": "wuhanligong",
+    "name": "武汉理工大学",
+    "pinyin": "wuhanligongdaxue",
+    "abbreviation": "武理工",
+    "levels": [
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "武汉",
+    "province": "湖北"
+  },
+  {
+    "id": "xiandianzikeji",
+    "name": "西安电子科技大学",
+    "pinyin": "xiandianzikejidaxue",
+    "abbreviation": "西电",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "西安",
+    "province": "陕西"
+  },
+  {
+    "id": "xianjiaotong",
+    "name": "西安交通大学",
+    "pinyin": "xianjiaotongdaxue",
+    "abbreviation": "西交",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "软科前100",
+      "USNews前150"
+    ],
+    "city": "西安",
+    "province": "陕西",
+    "aliases": [
+      "Xi'an Jiaotong University",
+      "XJTU"
+    ]
+  },
+  {
+    "id": "theuniversityo4",
+    "name": "西澳大学",
+    "pinyin": "theuniversityofwesternaustralia",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Western Australia",
+      "University of Western Australia",
+      "UWA"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "珀斯",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "xibei",
+    "name": "西北大学",
+    "pinyin": "xibeidaxue",
+    "abbreviation": "西大",
+    "levels": [
+      "211",
+      "双一流",
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "西安",
+    "province": "陕西",
+    "aliases": [
+      "Northwestern University",
+      "Northwestern"
+    ]
+  },
+  {
+    "id": "xibeigongye",
+    "name": "西北工业大学",
+    "pinyin": "xibeigongyedaxue",
+    "abbreviation": "西工大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前300",
+      "软科前150"
+    ],
+    "city": "西安",
+    "province": "陕西"
+  },
+  {
+    "id": "xibeinonglinkeji",
+    "name": "西北农林科技大学",
+    "pinyin": "xibeinonglinkejidaxue",
+    "abbreviation": "西北农大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "杨凌",
+    "province": "陕西"
+  },
+  {
+    "id": "xicang",
+    "name": "西藏大学",
+    "pinyin": "xicangdaxue",
+    "abbreviation": "藏大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "拉萨",
+    "province": "西藏"
+  },
+  {
+    "id": "xinancaijing",
+    "name": "西南财经大学",
+    "pinyin": "xinancaijingdaxue",
+    "abbreviation": "西南财大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "成都",
+    "province": "四川"
+  },
+  {
+    "id": "西南大学",
+    "name": "西南大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Southwest University"
+    ],
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "重庆",
+    "province": "重庆"
+  },
+  {
+    "id": "xinanjiaotong",
+    "name": "西南交通大学",
+    "pinyin": "xinanjiaotongdaxue",
+    "abbreviation": "西南交大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "成都",
+    "province": "四川"
+  },
+  {
+    "id": "xinanshiyou",
+    "name": "西南石油大学",
+    "pinyin": "xinanshiyoudaxue",
+    "abbreviation": "西南石大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "成都",
+    "province": "四川"
+  },
+  {
+    "id": "theuniversityofs",
+    "name": "悉尼大学",
+    "pinyin": "theuniversityofsydney",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Sydney",
+      "University of Sydney",
+      "Sydney"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "悉尼",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "universityoftech",
+    "name": "悉尼科技大学",
+    "pinyin": "universityoftechnologysydney",
+    "abbreviation": "",
+    "aliases": [
+      "University of Technology Sydney",
+      "UTS"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "USNews前100",
+      "软科前300"
+    ],
+    "city": "悉尼",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "cityuniversityof",
+    "name": "香港城市大学",
+    "pinyin": "cityuniversityofhongkong",
+    "abbreviation": "",
+    "aliases": [
+      "City University of Hong Kong",
+      "CityU",
+      "CityU HK"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "香港",
+    "province": "中国香港"
+  },
+  {
+    "id": "theuniversityofh",
+    "name": "香港大学",
+    "pinyin": "theuniversityofhongkong",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Hong Kong",
+      "HKU",
+      "University of Hong Kong"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "香港",
+    "province": "中国香港"
+  },
+  {
+    "id": "thehongkongunive",
+    "name": "香港科技大学",
+    "pinyin": "thehongkonguniversityofscienceandtechnology",
+    "abbreviation": "",
+    "aliases": [
+      "The Hong Kong University of Science and Technology",
+      "HKUST"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前300",
+      "USNews前100"
+    ],
+    "city": "香港",
+    "province": "中国香港"
+  },
+  {
+    "id": "thehongkongpolyt",
+    "name": "香港理工大学",
+    "pinyin": "thehongkongpolytechnicuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "The Hong Kong Polytechnic University",
+      "PolyU",
+      "Polytechnic University"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前200"
+    ],
+    "city": "香港",
+    "province": "中国香港"
+  },
+  {
+    "id": "thechineseuniver",
+    "name": "香港中文大学",
+    "pinyin": "thechineseuniversityofhongkong",
+    "abbreviation": "",
+    "aliases": [
+      "The Chinese University of Hong Kong",
+      "CUHK",
+      "Chinese University of Hong Kong"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "香港",
+    "province": "中国香港"
+  },
+  {
+    "id": "湘潭大学",
+    "name": "湘潭大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Xiangtan University"
+    ],
+    "levels": [
+      "双一流"
+    ],
+    "city": "湘潭",
+    "province": "湖南"
+  },
+  {
+    "id": "universityofshef",
+    "name": "谢菲尔德大学",
+    "pinyin": "universityofsheffield",
+    "abbreviation": "",
+    "aliases": [
+      "University of Sheffield",
+      "Sheffield",
+      "The University of Sheffield"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前150",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "谢菲尔德",
+    "province": "英国"
+  },
+  {
+    "id": "nationaluniversi",
+    "name": "新加坡国立大学",
+    "pinyin": "nationaluniversityofsingapore",
+    "abbreviation": "",
+    "aliases": [
+      "National University of Singapore",
+      "NUS"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "新加坡",
+    "province": "新加坡"
+  },
+  {
+    "id": "xinjiang",
+    "name": "新疆大学",
+    "pinyin": "xinjiangdaxue",
+    "abbreviation": "新大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "乌鲁木齐",
+    "province": "新疆"
+  },
+  {
+    "id": "theuniversityofn",
+    "name": "新南威尔士大学",
+    "pinyin": "theuniversityofnewsouthwales",
+    "abbreviation": "",
+    "aliases": [
+      "The University of New South Wales",
+      "UNSW",
+      "UNSW Sydney",
+      "University of New South Wales (UNSW)"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "悉尼",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "yanbian",
+    "name": "延边大学",
+    "pinyin": "yanbiandaxue",
+    "abbreviation": "延大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "延边",
+    "province": "吉林"
+  },
+  {
+    "id": "yonsei",
+    "name": "延世大学",
+    "pinyin": "yonseiuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Yonsei University",
+      "Yonsei"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "首尔",
+    "province": "韩国"
+  },
+  {
+    "id": "yale",
+    "name": "耶鲁大学",
+    "pinyin": "yaleuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Yale University",
+      "Yale"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "纽黑文",
+    "province": "美国"
+  },
+  {
+    "id": "hebrewuniversity",
+    "name": "耶路撒冷希伯来大学",
+    "pinyin": "hebrewuniversityofjerusalem",
+    "abbreviation": "",
+    "aliases": [
+      "Hebrew University of Jerusalem"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "软科前100",
+      "USNews前300"
+    ],
+    "city": "耶路撒冷",
+    "province": "以色列"
+  },
+  {
+    "id": "universityofilli",
+    "name": "伊利诺伊大学厄巴纳-香槟分校",
+    "pinyin": "universityofillinoisaturbanachampaign",
+    "abbreviation": "",
+    "aliases": [
+      "University of Illinois at Urbana-Champaign",
+      "UIUC",
+      "Illinois"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "厄巴纳-香槟",
+    "province": "美国"
+  },
+  {
+    "id": "technionisraelin",
+    "name": "以色列理工学院",
+    "pinyin": "technionisraelinstituteoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Technion-Israel Institute of Technology",
+      "Technion"
+    ],
+    "levels": [
+      "软科前100"
+    ],
+    "city": "海法",
+    "province": "以色列"
+  },
+  {
+    "id": "johnshopkins",
+    "name": "约翰斯·霍普金斯大学",
+    "pinyin": "johnshopkinsuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Johns Hopkins University",
+      "Johns Hopkins",
+      "JHU"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "巴尔的摩",
+    "province": "美国"
+  },
+  {
+    "id": "yunnan",
+    "name": "云南大学",
+    "pinyin": "yunnandaxue",
+    "abbreviation": "云大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "昆明",
+    "province": "云南"
+  },
+  {
+    "id": "changan",
+    "name": "长安大学",
+    "pinyin": "changandaxue",
+    "abbreviation": "长大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "西安",
+    "province": "陕西"
+  },
+  {
+    "id": "zhejiang",
+    "name": "浙江大学",
+    "pinyin": "zhejiangdaxue",
+    "abbreviation": "浙大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "杭州",
+    "province": "浙江",
+    "aliases": [
+      "Zhejiang University",
+      "ZJU",
+      "Zhejiang"
+    ]
+  },
+  {
+    "id": "zhejianggongshan",
+    "name": "浙江工商大学",
+    "pinyin": "zhejianggongshangdaxue",
+    "abbreviation": "浙商大",
+    "levels": [],
+    "city": "杭州",
+    "province": "浙江"
+  },
+  {
+    "id": "zhejianggongye",
+    "name": "浙江工业大学",
+    "pinyin": "zhejianggongyedaxue",
+    "abbreviation": "浙工大",
+    "levels": [],
+    "city": "杭州",
+    "province": "浙江"
+  },
+  {
+    "id": "zhengzhou",
+    "name": "郑州大学",
+    "pinyin": "zhengzhoudaxue",
+    "abbreviation": "郑大",
+    "levels": [
+      "211",
+      "双一流",
+      "USNews前300",
+      "软科前200"
+    ],
+    "city": "郑州",
+    "province": "河南"
+  },
+  {
+    "id": "universityofchic",
+    "name": "芝加哥大学",
+    "pinyin": "universityofchicago",
+    "abbreviation": "",
+    "aliases": [
+      "University of Chicago",
+      "Chicago",
+      "The University of Chicago"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "芝加哥",
+    "province": "美国"
+  },
+  {
+    "id": "zhongguochuanmei",
+    "name": "中国传媒大学",
+    "pinyin": "zhongguochuanmeidaxue",
+    "abbreviation": "中传",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguodizhidax",
+    "name": "中国地质大学（北京）",
+    "pinyin": "zhongguodizhidaxuebeijing",
+    "abbreviation": "地大北京",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguodizhid2",
+    "name": "中国地质大学（武汉）",
+    "pinyin": "zhongguodizhidaxuewuhan",
+    "abbreviation": "地大武汉",
+    "levels": [
+      "211",
+      "双一流",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "武汉",
+    "province": "湖北"
+  },
+  {
+    "id": "zhongguohaiyang",
+    "name": "中国海洋大学",
+    "pinyin": "zhongguohaiyangdaxue",
+    "abbreviation": "中国海大",
+    "levels": [
+      "985",
+      "211",
+      "双一流"
+    ],
+    "city": "青岛",
+    "province": "山东"
+  },
+  {
+    "id": "zhongguokexuejis",
+    "name": "中国科学技术大学",
+    "pinyin": "zhongguokexuejishudaxue",
+    "abbreviation": "中科大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "合肥",
+    "province": "安徽",
+    "aliases": [
+      "University of Science and Technology of China",
+      "USTC"
+    ]
+  },
+  {
+    "id": "zhongguokexueyua",
+    "name": "中国科学院大学",
+    "pinyin": "zhongguokexueyuandaxue",
+    "abbreviation": "国科大",
+    "levels": [
+      "双一流",
+      "USNews前100"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguokuangye",
+    "name": "中国矿业大学",
+    "pinyin": "zhongguokuangyedaxue",
+    "abbreviation": "矿大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "徐州",
+    "province": "江苏"
+  },
+  {
+    "id": "zhongguokuangyed",
+    "name": "中国矿业大学（北京）",
+    "pinyin": "zhongguokuangyedaxuebeijing",
+    "abbreviation": "中矿大北京",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguomeishu",
+    "name": "中国美术学院",
+    "pinyin": "zhongguomeishuxueyuan",
+    "abbreviation": "国美",
+    "levels": [
+      "双一流"
+    ],
+    "city": "杭州",
+    "province": "浙江"
+  },
+  {
+    "id": "zhongguonongye",
+    "name": "中国农业大学",
+    "pinyin": "zhongguonongyedaxue",
+    "abbreviation": "中农大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "软科前200",
+      "USNews前200"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguorenmin",
+    "name": "中国人民大学",
+    "pinyin": "zhongguorenmindaxue",
+    "abbreviation": "人大",
+    "levels": [
+      "985",
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguorenmingo",
+    "name": "中国人民公安大学",
+    "pinyin": "zhongguorenmingongandaxue",
+    "abbreviation": "公大",
+    "levels": [
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguoshiyouda",
+    "name": "中国石油大学（北京）",
+    "pinyin": "zhongguoshiyoudaxuebeijing",
+    "abbreviation": "中石油北京",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguoshiyou2",
+    "name": "中国石油大学（华东）",
+    "pinyin": "zhongguoshiyoudaxuehuadong",
+    "abbreviation": "中石油华东",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "青岛",
+    "province": "山东"
+  },
+  {
+    "id": "zhongguoyaoke",
+    "name": "中国药科大学",
+    "pinyin": "zhongguoyaokedaxue",
+    "abbreviation": "药大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "南京",
+    "province": "江苏"
+  },
+  {
+    "id": "zhongguoyinle",
+    "name": "中国音乐学院",
+    "pinyin": "zhongguoyinlexueyuan",
+    "abbreviation": "",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguozhengfa",
+    "name": "中国政法大学",
+    "pinyin": "zhongguozhengfadaxue",
+    "abbreviation": "法大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongnancaijingz",
+    "name": "中南财经政法大学",
+    "pinyin": "zhongnancaijingzhengfadaxue",
+    "abbreviation": "中南财大",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "武汉",
+    "province": "湖北"
+  },
+  {
+    "id": "zhongnan",
+    "name": "中南大学",
+    "pinyin": "zhongnandaxue",
+    "abbreviation": "中南",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "THE前300",
+      "USNews前150",
+      "软科前100"
+    ],
+    "city": "长沙",
+    "province": "湖南",
+    "aliases": [
+      "Central South University",
+      "CSU"
+    ]
+  },
+  {
+    "id": "zhongshan",
+    "name": "中山大学",
+    "pinyin": "zhongshandaxue",
+    "abbreviation": "中大",
+    "levels": [
+      "985",
+      "211",
+      "双一流",
+      "QS前300",
+      "THE前300",
+      "USNews前100",
+      "软科前100"
+    ],
+    "city": "广州",
+    "province": "广东",
+    "aliases": [
+      "Sun Yat-sen University",
+      "Zhongshan University",
+      "SYSU"
+    ]
+  },
+  {
+    "id": "zhongyangcaijing",
+    "name": "中央财经大学",
+    "pinyin": "zhongyangcaijingdaxue",
+    "abbreviation": "中财",
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongyangmeishu",
+    "name": "中央美术学院",
+    "pinyin": "zhongyangmeishuxueyuan",
+    "abbreviation": "",
+    "levels": [
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongyangminzu",
+    "name": "中央民族大学",
+    "pinyin": "zhongyangminzudaxue",
+    "abbreviation": "中央民大",
+    "levels": [
+      "985",
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongyangxiju",
+    "name": "中央戏剧学院",
+    "pinyin": "zhongyangxijuxueyuan",
+    "abbreviation": "",
+    "levels": [
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "中央音乐学院",
+    "name": "中央音乐学院",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Central Conservatory of Music"
+    ],
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "aixmarseilleuniversi",
+    "name": "艾克斯-马赛大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Aix-Marseille University"
+    ],
+    "levels": [
+      "USNews前300",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "arizonastateuniversi",
+    "name": "亚利桑那州立大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Arizona State University"
+    ],
+    "levels": [
+      "QS前200",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "autonomousuniversity",
+    "name": "巴塞罗那自治大学",
+    "pinyin": "autonomousuniversityofbarcelona",
+    "abbreviation": "",
+    "aliases": [
+      "Autonomous University of Barcelona",
+      "Universitat Autonoma de Barcelona (UAB)"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "西班牙"
+  },
+  {
+    "id": "baylorcollegeofmedic",
+    "name": "贝勒医学院",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Baylor College of Medicine"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "cardiffuniversity",
+    "name": "卡迪夫大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Cardiff University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "chariteuniversitatsm",
+    "name": "夏里特医学院",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Charite - Universitatsmedizin Berlin"
+    ],
+    "levels": [
+      "THE前100"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "curtinuniversity",
+    "name": "科廷大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Curtin University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "dartmouthcollege",
+    "name": "达特茅斯学院",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Dartmouth College"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "deakinuniversity",
+    "name": "迪肯大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Deakin University"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "durhamuniversity",
+    "name": "杜伦大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Durham University"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "eberhardkarlsunivers",
+    "name": "图宾根大学",
+    "pinyin": "eberhardkarlsuniversitattubingen",
+    "abbreviation": "",
+    "aliases": [
+      "Eberhard Karls Universitat Tubingen",
+      "University of Tubingen"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前100",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "emoryuniversity",
+    "name": "埃默里大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Emory University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "erasmusuniversityrot",
+    "name": "伊拉斯姆斯大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Erasmus University Rotterdam"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "georgiainstituteofte",
+    "name": "佐治亚理工学院",
+    "pinyin": "georgiainstituteoftechnologygeorgiatech",
+    "abbreviation": "",
+    "aliases": [
+      "Georgia Institute of Technology",
+      "Georgia Institute of Technology (Georgia Tech)"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "goetheuniversityfran",
+    "name": "法兰克福大学",
+    "pinyin": "goetheuniversityfrankfurt",
+    "abbreviation": "",
+    "aliases": [
+      "Goethe University Frankfurt"
+    ],
+    "levels": [
+      "THE前300",
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "hanyanguniversity",
+    "name": "汉阳大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Hanyang University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "韩国"
+  },
+  {
+    "id": "hokkaidouniversity",
+    "name": "北海道大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Hokkaido University"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "日本"
+  },
+  {
+    "id": "icahnschoolofmedicin",
+    "name": "西奈山伊坎医学院",
+    "pinyin": "icahnschoolofmedicineatmountsinai",
+    "abbreviation": "",
+    "aliases": [
+      "Icahn School of Medicine at Mount Sinai"
+    ],
+    "levels": [
+      "THE前300",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "indianinstituteoftec",
+    "name": "孟买印度理工学院",
+    "pinyin": "indianinstituteoftechnologybombayiitb",
+    "abbreviation": "",
+    "aliases": [
+      "Indian Institute of Technology Bombay (IITB)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "印度"
+  },
+  {
+    "id": "indianinstituteoftec1",
+    "name": "德里印度理工学院",
+    "pinyin": "indianinstituteoftechnologydelhiiitd",
+    "abbreviation": "",
+    "aliases": [
+      "Indian Institute of Technology Delhi (IITD)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "印度"
+  },
+  {
+    "id": "indianinstituteoftec2",
+    "name": "马德拉斯印度理工学院",
+    "pinyin": "indianinstituteoftechnologymadrasiitm",
+    "abbreviation": "",
+    "aliases": [
+      "Indian Institute of Technology Madras (IITM)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "印度"
+  },
+  {
+    "id": "indianauniversity",
+    "name": "印第安纳大学",
+    "pinyin": "indianauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Indiana University"
+    ],
+    "levels": [
+      "THE前200",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "indianauniversityblo",
+    "name": "印第安纳大学伯明顿分校",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Indiana University Bloomington"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "instituteofscienceto",
+    "name": "东京科学大学",
+    "pinyin": "instituteofsciencetokyo",
+    "abbreviation": "",
+    "aliases": [
+      "Institute of Science Tokyo"
+    ],
+    "levels": [
+      "THE前200",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "日本"
+  },
+  {
+    "id": "johannesgutenberguni",
+    "name": "美因茨大学",
+    "pinyin": "johannesgutenberguniversitymainz",
+    "abbreviation": "",
+    "aliases": [
+      "Johannes Gutenberg University Mainz"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "karlsruheinstituteof",
+    "name": "卡尔斯鲁厄理工学院",
+    "pinyin": "karlsruheinstituteoftechnologykit",
+    "abbreviation": "",
+    "aliases": [
+      "Karlsruhe Institute of Technology (KIT)"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "kazakhnationaluniver",
+    "name": "哈萨克斯坦国立大学",
+    "pinyin": "kazakhnationaluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Kazakh National University"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "哈萨克斯坦"
+  },
+  {
+    "id": "khalifauniversity",
+    "name": "哈利法大学",
+    "pinyin": "khalifauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Khalifa University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300"
+    ],
+    "city": "",
+    "province": "阿联酋"
+  },
+  {
+    "id": "kingabdulazizunivers",
+    "name": "阿卜杜勒阿齐兹国王大学",
+    "pinyin": "kingabdulazizuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "King Abdulaziz University",
+      "King Abdulaziz University (KAU)"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "沙特阿拉伯"
+  },
+  {
+    "id": "kingabdullahuniversi",
+    "name": "阿卜杜拉国王科技大学",
+    "pinyin": "kingabdullahuniversityofscienceandtechnologykaust",
+    "abbreviation": "",
+    "aliases": [
+      "King Abdullah University of Science and Technology (KAUST)"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "沙特阿拉伯"
+  },
+  {
+    "id": "kingfahduniversityof",
+    "name": "法赫德国王石油与矿物大学",
+    "pinyin": "kingfahduniversityofpetroleumandmineralskfupm",
+    "abbreviation": "",
+    "aliases": [
+      "King Fahd University of Petroleum and Minerals (KFUPM)"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200"
+    ],
+    "city": "",
+    "province": "沙特阿拉伯"
+  },
+  {
+    "id": "koreaadvancedinstitu",
+    "name": "韩国科学技术院",
+    "pinyin": "koreaadvancedinstituteofscienceandtechnologykaist",
+    "abbreviation": "",
+    "aliases": [
+      "Korea Advanced Institute of Science and Technology (KAIST)"
+    ],
+    "levels": [
+      "THE前100",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "韩国"
+  },
+  {
+    "id": "kyushuuniversity",
+    "name": "九州大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Kyushu University"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "日本"
+  },
+  {
+    "id": "lancasteruniversity",
+    "name": "兰卡斯特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Lancaster University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "leidenuniversity",
+    "name": "莱顿大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Leiden University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "USNews前100",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "lomonosovmoscowstate",
+    "name": "莫斯科国立大学",
+    "pinyin": "lomonosovmoscowstateuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Lomonosov Moscow State University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "俄罗斯"
+  },
+  {
+    "id": "londonschoolofhygien",
+    "name": "伦敦卫生与热带医学院",
+    "pinyin": "londonschoolofhygieneandtropicalmedicine",
+    "abbreviation": "",
+    "aliases": [
+      "London School of Hygiene and Tropical Medicine"
+    ],
+    "levels": [
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "maastrichtuniversity",
+    "name": "马斯特里赫特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Maastricht University"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "macquarieuniversity",
+    "name": "麦考瑞大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Macquarie University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "mayocliniccollegeofm",
+    "name": "梅奥医学中心",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Mayo Clinic College of Medicine and Science"
+    ],
+    "levels": [
+      "软科前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "mcmasteruniversity",
+    "name": "麦克马斯特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "McMaster University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "medicaluniversityofv",
+    "name": "维也纳医科大学",
+    "pinyin": "medicaluniversityofvienna",
+    "abbreviation": "",
+    "aliases": [
+      "Medical University of Vienna"
+    ],
+    "levels": [
+      "THE前200",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "奥地利"
+  },
+  {
+    "id": "michiganstateunivers",
+    "name": "密歇根州立大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Michigan State University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "nagoyauniversity",
+    "name": "名古屋大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Nagoya University"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "日本"
+  },
+  {
+    "id": "nationalyangmingchia",
+    "name": "阳明交通大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "National Yang Ming Chiao Tung University"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "中国台湾"
+  },
+  {
+    "id": "newcastleuniversity",
+    "name": "纽卡斯尔大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Newcastle University"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "norwegianuniversityo",
+    "name": "挪威科技大学",
+    "pinyin": "norwegianuniversityofscienceandtechnologyntnu",
+    "abbreviation": "",
+    "aliases": [
+      "Norwegian University of Science and Technology (NTNU)"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "挪威"
+  },
+  {
+    "id": "oregonhealthandscien",
+    "name": "俄勒冈健康与科学大学",
+    "pinyin": "oregonhealthandscienceuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Oregon Health and Science University"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "osakauniversity",
+    "name": "大阪大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Osaka University"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "日本"
+  },
+  {
+    "id": "pennstateuniversityp",
+    "name": "宾州州立大学",
+    "pinyin": "pennstateuniversitypark",
+    "abbreviation": "",
+    "aliases": [
+      "Penn State University, Park",
+      "Pennsylvania State University-Park"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "pohanguniversityofsc",
+    "name": "浦项科技大学",
+    "pinyin": "pohanguniversityofscienceandtechnologypostech",
+    "abbreviation": "",
+    "aliases": [
+      "Pohang University of Science and Technology (POSTECH)"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200"
+    ],
+    "city": "",
+    "province": "韩国"
+  },
+  {
+    "id": "politecnicodimilano",
+    "name": "米兰理工大学",
+    "pinyin": "politecnicodimilano",
+    "abbreviation": "",
+    "aliases": [
+      "Politecnico di Milano"
+    ],
+    "levels": [
+      "QS前100",
+      "THE前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "pompeufabrauniversit",
+    "name": "庞培法布拉大学",
+    "pinyin": "pompeufabrauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Pompeu Fabra University"
+    ],
+    "levels": [
+      "THE前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "西班牙"
+  },
+  {
+    "id": "pontificiauniversida",
+    "name": "智利天主教大学",
+    "pinyin": "pontificiauniversidadcatolicadechile",
+    "abbreviation": "",
+    "aliases": [
+      "Pontificia Universidad Catolica de Chile"
+    ],
+    "levels": [
+      "QS前150"
+    ],
+    "city": "",
+    "province": "智利"
+  },
+  {
+    "id": "qataruniversity",
+    "name": "卡塔尔大学",
+    "pinyin": "qataruniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Qatar University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "卡塔尔"
+  },
+  {
+    "id": "queenmaryuniversityo",
+    "name": "伦敦玛丽女王大学",
+    "pinyin": "queenmaryuniversityoflondonqmul",
+    "abbreviation": "",
+    "aliases": [
+      "Queen Mary University of London",
+      "Queen Mary University of London (QMUL)"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "queensuniversity",
+    "name": "女王大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Queen's University"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "queensuniversitybelf",
+    "name": "贝尔法斯特女王大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Queen's University Belfast"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "queenslanduniversity",
+    "name": "昆士兰科技大学",
+    "pinyin": "queenslanduniversityoftechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Queensland University of Technology"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "radbouduniversity",
+    "name": "拉德堡德大学",
+    "pinyin": "radbouduniversitynijmegen",
+    "abbreviation": "",
+    "aliases": [
+      "Radboud University",
+      "Radboud University Nijmegen"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "rmituniversity",
+    "name": "皇家墨尔本理工大学",
+    "pinyin": "royalmelbourneinstituteoftechnologyrmit",
+    "abbreviation": "",
+    "aliases": [
+      "RMIT University",
+      "Royal Melbourne Institute of Technology (RMIT)"
+    ],
+    "levels": [
+      "QS前150",
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "rutgersuniversitynew",
+    "name": "罗格斯大学",
+    "pinyin": "rutgersuniversitynewbrunswick",
+    "abbreviation": "",
+    "aliases": [
+      "Rutgers University-New Brunswick"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "rwthaachenuniversity",
+    "name": "亚琛工业大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "RWTH Aachen University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前100",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "sapienzauniversityof",
+    "name": "罗马第一大学",
+    "pinyin": "sapienzauniversityofrome",
+    "abbreviation": "",
+    "aliases": [
+      "Sapienza University of Rome"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "scuolanormalesuperio",
+    "name": "比萨高等师范学校",
+    "pinyin": "scuolanormalesuperioredipisa",
+    "abbreviation": "",
+    "aliases": [
+      "Scuola Normale Superiore di Pisa"
+    ],
+    "levels": [
+      "THE前200"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "sungkyunkwanuniversi",
+    "name": "成均馆大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Sungkyunkwan University (SKKU)"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "韩国"
+  },
+  {
+    "id": "swinburneuniversityo",
+    "name": "斯威本科技大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Swinburne University of Technology"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "technicaluniversityo",
+    "name": "柏林工业大学",
+    "pinyin": "technicaluniversityofberlin",
+    "abbreviation": "",
+    "aliases": [
+      "Technical University of Berlin"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "technicaluniversityo1",
+    "name": "丹麦技术大学",
+    "pinyin": "technicaluniversityofdenmarkdtu",
+    "abbreviation": "",
+    "aliases": [
+      "Technical University of Denmark",
+      "Technical University of Denmark (DTU)"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "丹麦"
+  },
+  {
+    "id": "tecnologicodemonterr",
+    "name": "蒙特雷理工学院",
+    "pinyin": "tecnologicodemonterrey",
+    "abbreviation": "",
+    "aliases": [
+      "Tecnologico de Monterrey"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "墨西哥"
+  },
+  {
+    "id": "telavivuniversity",
+    "name": "特拉维夫大学",
+    "pinyin": "telavivuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Tel Aviv University"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "以色列"
+  },
+  {
+    "id": "texasamuniversity",
+    "name": "德克萨斯A&M大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Texas A&M University"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "theeducationuniversi",
+    "name": "香港教育大学",
+    "pinyin": "theeducationuniversityofhongkong",
+    "abbreviation": "",
+    "aliases": [
+      "The Education University of Hong Kong"
+    ],
+    "levels": [
+      "THE前200"
+    ],
+    "city": "",
+    "province": "中国香港"
+  },
+  {
+    "id": "theuniversityofarizo",
+    "name": "亚利桑那大学",
+    "pinyin": "theuniversityofarizona",
+    "abbreviation": "",
+    "aliases": [
+      "The University of Arizona",
+      "University of Arizona"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "tudresden",
+    "name": "德累斯顿工业大学",
+    "pinyin": "tudresden",
+    "abbreviation": "",
+    "aliases": [
+      "TU Dresden"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "tuwien",
+    "name": "维也纳工业大学",
+    "pinyin": "tuwien",
+    "abbreviation": "",
+    "aliases": [
+      "TU Wien"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "奥地利"
+  },
+  {
+    "id": "tuftsuniversity",
+    "name": "塔夫茨大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Tufts University"
+    ],
+    "levels": [
+      "THE前200",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universidadcompluten",
+    "name": "马德里康普顿斯大学",
+    "pinyin": "universidadcomplutensedemadriducm",
+    "abbreviation": "",
+    "aliases": [
+      "Universidad Complutense de Madrid (UCM)"
+    ],
+    "levels": [
+      "QS前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "西班牙"
+  },
+  {
+    "id": "universidaddechile",
+    "name": "智利大学",
+    "pinyin": "universidaddechile",
+    "abbreviation": "",
+    "aliases": [
+      "Universidad de Chile"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "智利"
+  },
+  {
+    "id": "universidadnacionala",
+    "name": "墨西哥国立自治大学",
+    "pinyin": "universidadnacionalautonomademexicounam",
+    "abbreviation": "",
+    "aliases": [
+      "Universidad Nacional Autonoma de Mexico (UNAM)"
+    ],
+    "levels": [
+      "QS前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "墨西哥"
+  },
+  {
+    "id": "universidadedesaopau",
+    "name": "圣保罗大学",
+    "pinyin": "universidadedesaopaulo",
+    "abbreviation": "",
+    "aliases": [
+      "Universidade de Sao Paulo",
+      "University of Sao Paulo"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前300",
+      "软科前150",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "巴西"
+  },
+  {
+    "id": "universitasindonesia",
+    "name": "印度尼西亚大学",
+    "pinyin": "universitasindonesia",
+    "abbreviation": "",
+    "aliases": [
+      "Universitas Indonesia"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "印度尼西亚"
+  },
+  {
+    "id": "universitatdebarcelo",
+    "name": "巴塞罗那大学",
+    "pinyin": "universitatdebarcelona",
+    "abbreviation": "",
+    "aliases": [
+      "Universitat de Barcelona",
+      "University of Barcelona"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "软科前200",
+      "USNews前100"
+    ],
+    "city": "",
+    "province": "西班牙"
+  },
+  {
+    "id": "universitathamburg",
+    "name": "汉堡大学",
+    "pinyin": "universitathamburg",
+    "abbreviation": "",
+    "aliases": [
+      "Universitat Hamburg",
+      "University of Hamburg"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "universitedemontreal",
+    "name": "蒙特利尔大学",
+    "pinyin": "universitedemontreal",
+    "abbreviation": "",
+    "aliases": [
+      "Universite de Montreal"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前150",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "universitegrenobleal",
+    "name": "格勒诺布尔大学",
+    "pinyin": "universitegrenoblealpes",
+    "abbreviation": "",
+    "aliases": [
+      "Universite Grenoble Alpes"
+    ],
+    "levels": [
+      "软科前150"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "universitelibredebru",
+    "name": "布鲁塞尔自由大学",
+    "pinyin": "universitelibredebruxelles",
+    "abbreviation": "",
+    "aliases": [
+      "Universite Libre de Bruxelles"
+    ],
+    "levels": [
+      "软科前150"
+    ],
+    "city": "",
+    "province": "比利时"
+  },
+  {
+    "id": "universitikebangsaan",
+    "name": "马来西亚国民大学",
+    "pinyin": "universitikebangsaanmalaysiaukm",
+    "abbreviation": "",
+    "aliases": [
+      "Universiti Kebangsaan Malaysia (UKM)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "马来西亚"
+  },
+  {
+    "id": "universitiputramalay",
+    "name": "马来西亚博特拉大学",
+    "pinyin": "universitiputramalaysiaupm",
+    "abbreviation": "",
+    "aliases": [
+      "Universiti Putra Malaysia (UPM)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "马来西亚"
+  },
+  {
+    "id": "universitisainsmalay",
+    "name": "马来西亚理科大学",
+    "pinyin": "universitisainsmalaysiausm",
+    "abbreviation": "",
+    "aliases": [
+      "Universiti Sains Malaysia (USM)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "马来西亚"
+  },
+  {
+    "id": "universititeknologim",
+    "name": "马来西亚理工大学",
+    "pinyin": "universititeknologimalaysiautm",
+    "abbreviation": "",
+    "aliases": [
+      "Universiti Teknologi Malaysia (UTM)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "马来西亚"
+  },
+  {
+    "id": "universitycollegedub",
+    "name": "都柏林大学",
+    "pinyin": "universitycollegedublin",
+    "abbreviation": "",
+    "aliases": [
+      "University College Dublin"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "爱尔兰"
+  },
+  {
+    "id": "universityofalabamaa",
+    "name": "阿拉巴马大学伯明翰分校",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Alabama at Birmingham"
+    ],
+    "levels": [
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofantwerp",
+    "name": "安特卫普大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Antwerp"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "比利时"
+  },
+  {
+    "id": "universityofbath",
+    "name": "巴斯大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bath"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "universityofbologna",
+    "name": "博洛尼亚大学",
+    "pinyin": "universityofbologna",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bologna"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "universityofcalgary",
+    "name": "卡尔加里大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Calgary"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "universityofcaliforn",
+    "name": "加州大学圣克鲁兹分校",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Santa Cruz"
+    ],
+    "levels": [
+      "THE前200",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofcapetown",
+    "name": "开普敦大学",
+    "pinyin": "universityofcapetown",
+    "abbreviation": "",
+    "aliases": [
+      "University of Cape Town"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "南非"
+  },
+  {
+    "id": "universityofcologne",
+    "name": "科隆大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Cologne"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "universityofcolorado",
+    "name": "科罗拉多大学安舒茨医学中心",
+    "pinyin": "universityofcoloradoanschutzmedicalcampus",
+    "abbreviation": "",
+    "aliases": [
+      "University of Colorado Anschutz Medical Campus"
+    ],
+    "levels": [
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofexeter",
+    "name": "埃克塞特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Exeter"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "universityofflorida",
+    "name": "佛罗里达大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Florida"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前150",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityoffreiburg",
+    "name": "弗莱堡大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Freiburg"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "软科前150",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "universityofgothenbu",
+    "name": "哥德堡大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Gothenburg"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "瑞典"
+  },
+  {
+    "id": "universityofgottinge",
+    "name": "哥廷根大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Gottingen"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "universityoflausanne",
+    "name": "洛桑大学",
+    "pinyin": "universityoflausanne",
+    "abbreviation": "",
+    "aliases": [
+      "University of Lausanne"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "瑞士"
+  },
+  {
+    "id": "universityofleiceste",
+    "name": "莱斯特大学",
+    "pinyin": "universityofleicester",
+    "abbreviation": "",
+    "aliases": [
+      "University of Leicester"
+    ],
+    "levels": [
+      "THE前200",
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "universityofliverpoo",
+    "name": "利物浦大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Liverpool"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前150",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "universityofmacau",
+    "name": "澳门大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Macau"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "中国澳门"
+  },
+  {
+    "id": "universityofmaryland",
+    "name": "马里兰大学",
+    "pinyin": "universityofmarylandcollegepark",
+    "abbreviation": "",
+    "aliases": [
+      "University of Maryland-College Park"
+    ],
+    "levels": [
+      "QS前300",
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofmassachu",
+    "name": "马萨诸塞大学",
+    "pinyin": "universityofmassachusetts",
+    "abbreviation": "",
+    "aliases": [
+      "University of Massachusetts"
+    ],
+    "levels": [
+      "THE前150",
+      "软科前300",
+      "USNews前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofmassachu1",
+    "name": "马萨诸塞大学阿默斯特分校",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Massachusetts Amherst"
+    ],
+    "levels": [
+      "QS前300",
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofmassachu2",
+    "name": "马萨诸塞大学医学院",
+    "pinyin": "universityofmassachusettsmedicalschool",
+    "abbreviation": "",
+    "aliases": [
+      "University of Massachusetts Medical School"
+    ],
+    "levels": [
+      "软科前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofmilan",
+    "name": "米兰大学",
+    "pinyin": "universityofmilan",
+    "abbreviation": "",
+    "aliases": [
+      "University of Milan"
+    ],
+    "levels": [
+      "QS前300",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "universityofminnesot",
+    "name": "明尼苏达大学",
+    "pinyin": "universityofminnesotatwincities",
+    "abbreviation": "",
+    "aliases": [
+      "University of Minnesota-Twin Cities"
+    ],
+    "levels": [
+      "软科前100",
+      "USNews前100"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofmontpell",
+    "name": "蒙彼利埃大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Montpellier"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "universityofmunster",
+    "name": "明斯特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Munster"
+    ],
+    "levels": [
+      "THE前200",
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "universityofnaplesfe",
+    "name": "那不勒斯大学",
+    "pinyin": "universityofnaplesfedericoii",
+    "abbreviation": "",
+    "aliases": [
+      "University of Naples Federico II"
+    ],
+    "levels": [
+      "USNews前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "universityofnotredam",
+    "name": "圣母大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Notre Dame"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofotago",
+    "name": "奥塔哥大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Otago"
+    ],
+    "levels": [
+      "QS前200",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "新西兰"
+  },
+  {
+    "id": "universityofottawa",
+    "name": "渥太华大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Ottawa"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "universityofpadua",
+    "name": "帕多瓦大学",
+    "pinyin": "universityofpadua",
+    "abbreviation": "",
+    "aliases": [
+      "University of Padua"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前300",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "universityofreading",
+    "name": "雷丁大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Reading"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "universityofrocheste",
+    "name": "罗切斯特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Rochester"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前150",
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofstrasbou",
+    "name": "斯特拉斯堡大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Strasbourg"
+    ],
+    "levels": [
+      "软科前150"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "universityoftwente",
+    "name": "特文特大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Twente"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "universityofutah",
+    "name": "犹他大学",
+    "pinyin": "universityofutah",
+    "abbreviation": "",
+    "aliases": [
+      "University of Utah"
+    ],
+    "levels": [
+      "THE前300",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofvienna",
+    "name": "维也纳大学",
+    "pinyin": "universityofvienna",
+    "abbreviation": "",
+    "aliases": [
+      "University of Vienna"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前100",
+      "USNews前200",
+      "软科前150"
+    ],
+    "city": "",
+    "province": "奥地利"
+  },
+  {
+    "id": "universityofvirginia",
+    "name": "弗吉尼亚大学",
+    "pinyin": "universityofvirginiamaincampus",
+    "abbreviation": "",
+    "aliases": [
+      "University of Virginia",
+      "University of Virginia (Main campus)"
+    ],
+    "levels": [
+      "QS前300",
+      "THE前200",
+      "软科前300",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "universityofwaterloo",
+    "name": "滑铁卢大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Waterloo"
+    ],
+    "levels": [
+      "QS前150",
+      "THE前200",
+      "USNews前200",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "universityofwollongo",
+    "name": "卧龙岗大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Wollongong"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "universityofwurzburg",
+    "name": "维尔茨堡大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of Wurzburg"
+    ],
+    "levels": [
+      "THE前200",
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "universityofyork",
+    "name": "约克大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "University of York"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "vrijeuniversiteitams",
+    "name": "阿姆斯特丹自由大学",
+    "pinyin": "",
+    "abbreviation": "",
+    "aliases": [
+      "Vrije Universiteit Amsterdam"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前200",
+      "USNews前100",
+      "软科前200"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "wageningenuniversity",
+    "name": "瓦赫宁根大学",
+    "pinyin": "wageningenuniversityandresearch",
+    "abbreviation": "",
+    "aliases": [
+      "Wageningen University and Research"
+    ],
+    "levels": [
+      "QS前200",
+      "THE前100",
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "wasedauniversity",
+    "name": "早稻田大学",
+    "pinyin": "wasedauniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Waseda University"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "日本"
+  },
+  {
+    "id": "westernuniversityuni",
+    "name": "西部大学",
+    "pinyin": "westernuniversityuniversityofwesternontario",
+    "abbreviation": "",
+    "aliases": [
+      "Western University (University of Western Ontario)"
+    ],
+    "levels": [
+      "QS前200"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "arwu_伦敦大学卫生和热带医学学院",
+    "name": "伦敦大学卫生和热带医学学院",
+    "pinyin": "londonschoolofhygienetropicalmedicine",
+    "abbreviation": "",
+    "aliases": [
+      "London School of Hygiene & Tropical Medicine"
+    ],
+    "levels": [
+      "USNews前150",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "arwu_比萨大学",
+    "name": "比萨大学",
+    "pinyin": "universityofpisa",
+    "abbreviation": "",
+    "aliases": [
+      "University of Pisa"
+    ],
+    "levels": [
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "arwu_瓦格宁根大学",
+    "name": "瓦格宁根大学",
+    "pinyin": "wageningenuniversityresearch",
+    "abbreviation": "",
+    "aliases": [
+      "Wageningen University & Research"
+    ],
+    "levels": [
+      "软科前200",
+      "USNews前150"
+    ],
+    "city": "",
+    "province": "荷兰"
+  },
+  {
+    "id": "arwu_巴黎高等师范学院",
+    "name": "巴黎高等师范学院",
+    "pinyin": "colenormalesuprieureparis",
+    "abbreviation": "",
+    "aliases": [
+      "École Normale Supérieure (Paris)"
+    ],
+    "levels": [
+      "软科前200"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "arwu_首都医科大学",
+    "name": "首都医科大学",
+    "pinyin": "capitalmedicaluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Capital Medical University"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "中国"
+  },
+  {
+    "id": "arwu_科罗拉多州立大学",
+    "name": "科罗拉多州立大学",
+    "pinyin": "coloradostateuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Colorado State University"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_乔治梅森大学",
+    "name": "乔治梅森大学",
+    "pinyin": "georgemasonuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "George Mason University"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_杜塞尔多夫大学",
+    "name": "杜塞尔多夫大学",
+    "pinyin": "heinrichheineuniversitydsseldorf",
+    "abbreviation": "",
+    "aliases": [
+      "Heinrich Heine University Düsseldorf"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "arwu_江苏大学",
+    "name": "江苏大学",
+    "pinyin": "jiangsuuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Jiangsu University"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "中国"
+  },
+  {
+    "id": "arwu_北卡罗来纳州立大学罗利",
+    "name": "北卡罗来纳州立大学-罗利",
+    "pinyin": "northcarolinastateuniversityraleigh",
+    "abbreviation": "",
+    "aliases": [
+      "North Carolina State University-Raleigh"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_俄勒冈卫生科学大学",
+    "name": "俄勒冈卫生科学大学",
+    "pinyin": "oregonhealthscienceuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Oregon Health & Science University"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_俄勒冈州立大学",
+    "name": "俄勒冈州立大学",
+    "pinyin": "oregonstateuniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Oregon State University"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_波鸿大学",
+    "name": "波鸿大学",
+    "pinyin": "ruhruniversitybochum",
+    "abbreviation": "",
+    "aliases": [
+      "Ruhr University Bochum"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "arwu_蔚山国立科技研究所",
+    "name": "蔚山国立科技研究所",
+    "pinyin": "ulsannationalinstituteofscienceandtechnology",
+    "abbreviation": "",
+    "aliases": [
+      "Ulsan National Institute of Science and Technology"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "韩国"
+  },
+  {
+    "id": "arwu_阿伯丁大学",
+    "name": "阿伯丁大学",
+    "pinyin": "universityofaberdeen",
+    "abbreviation": "",
+    "aliases": [
+      "University of Aberdeen"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "arwu_卑尔根大学",
+    "name": "卑尔根大学",
+    "pinyin": "universityofbergen",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bergen"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "挪威"
+  },
+  {
+    "id": "arwu_波尔多大学",
+    "name": "波尔多大学",
+    "pinyin": "universityofbordeaux",
+    "abbreviation": "",
+    "aliases": [
+      "University of Bordeaux"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "arwu_加州大学河滨",
+    "name": "加州大学-河滨",
+    "pinyin": "universityofcaliforniariverside",
+    "abbreviation": "",
+    "aliases": [
+      "University of California, Riverside"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_科罗拉多大学丹佛",
+    "name": "科罗拉多大学-丹佛",
+    "pinyin": "universityofcoloradodenver",
+    "abbreviation": "",
+    "aliases": [
+      "University of Colorado Denver"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_特拉华大学",
+    "name": "特拉华大学",
+    "pinyin": "universityofdelaware",
+    "abbreviation": "",
+    "aliases": [
+      "University of Delaware"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_东英吉利大学",
+    "name": "东英吉利大学",
+    "pinyin": "universityofeastanglia",
+    "abbreviation": "",
+    "aliases": [
+      "University of East Anglia"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "arwu_埃朗根纽伦堡大学",
+    "name": "埃朗根-纽伦堡大学",
+    "pinyin": "friedrichalexanderuniversityerlangennrnberg",
+    "abbreviation": "",
+    "aliases": [
+      "Friedrich-Alexander University Erlangen-Nürnberg"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "arwu_休斯顿大学",
+    "name": "休斯顿大学",
+    "pinyin": "universityofhouston",
+    "abbreviation": "",
+    "aliases": [
+      "University of Houston"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_因斯布鲁克大学",
+    "name": "因斯布鲁克大学",
+    "pinyin": "universityofinnsbruck",
+    "abbreviation": "",
+    "aliases": [
+      "University of Innsbruck"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "奥地利"
+  },
+  {
+    "id": "arwu_莱比锡大学",
+    "name": "莱比锡大学",
+    "pinyin": "universityofleipzig",
+    "abbreviation": "",
+    "aliases": [
+      "University of Leipzig"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "德国"
+  },
+  {
+    "id": "arwu_里斯本大学",
+    "name": "里斯本大学",
+    "pinyin": "universityoflisbon",
+    "abbreviation": "",
+    "aliases": [
+      "University of Lisbon"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "葡萄牙"
+  },
+  {
+    "id": "arwu_洛林大学",
+    "name": "洛林大学",
+    "pinyin": "universityoflorraine",
+    "abbreviation": "",
+    "aliases": [
+      "University of Lorraine"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "法国"
+  },
+  {
+    "id": "arwu_马尼托巴大学",
+    "name": "马尼托巴大学",
+    "pinyin": "universityofmanitoba",
+    "abbreviation": "",
+    "aliases": [
+      "University of Manitoba"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "加拿大"
+  },
+  {
+    "id": "arwu_密苏里大学哥伦比亚",
+    "name": "密苏里大学-哥伦比亚",
+    "pinyin": "universityofmissouri",
+    "abbreviation": "",
+    "aliases": [
+      "University of Missouri"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_波尔图大学",
+    "name": "波尔图大学",
+    "pinyin": "universityofporto",
+    "abbreviation": "",
+    "aliases": [
+      "University of Porto"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "葡萄牙"
+  },
+  {
+    "id": "arwu_苏赛克斯大学",
+    "name": "苏赛克斯大学",
+    "pinyin": "universityofsussex",
+    "abbreviation": "",
+    "aliases": [
+      "University of Sussex"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "英国"
+  },
+  {
+    "id": "arwu_田纳西大学诺克斯维尔",
+    "name": "田纳西大学-诺克斯维尔",
+    "pinyin": "universityoftennesseeknoxville",
+    "abbreviation": "",
+    "aliases": [
+      "University of Tennessee, Knoxville"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_都灵大学",
+    "name": "都灵大学",
+    "pinyin": "universityofturin",
+    "abbreviation": "",
+    "aliases": [
+      "University of Turin"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "意大利"
+  },
+  {
+    "id": "arwu_巴伦西亚大学",
+    "name": "巴伦西亚大学",
+    "pinyin": "universityofvalencia",
+    "abbreviation": "",
+    "aliases": [
+      "University of Valencia"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "西班牙"
+  },
+  {
+    "id": "arwu_弗吉尼亚理工学院",
+    "name": "弗吉尼亚理工学院",
+    "pinyin": "virginiatech",
+    "abbreviation": "",
+    "aliases": [
+      "Virginia Tech"
+    ],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "",
+    "province": "美国"
+  },
+  {
+    "id": "arwu_南方医科大学",
+    "name": "南方医科大学",
+    "pinyin": "southernmedicaluniversity",
+    "abbreviation": "",
+    "aliases": [
+      "Southern Medical University"
+    ],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "",
+    "province": "中国"
+  },
+  {
+    "id": "tohoku",
+    "name": "东北大学（仙台）",
+    "pinyin": "tohoku",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "仙台",
+    "province": "日本"
+  },
+  {
+    "id": "northeastern",
+    "name": "东北大学（波士顿）",
+    "pinyin": "northeastern",
+    "abbreviation": "",
+    "aliases": [
+      "Northeastern University"
+    ],
+    "levels": [
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "波士顿",
+    "province": "美国"
+  },
+  {
+    "id": "ibadan",
+    "name": "伊巴丹大学",
+    "pinyin": "ibadan",
+    "abbreviation": "",
+    "aliases": [
+      "University of Ibadan"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "伊巴丹",
+    "province": "尼日利亚"
+  },
+  {
+    "id": "florence",
+    "name": "佛罗伦萨大学",
+    "pinyin": "florence",
+    "abbreviation": "",
+    "aliases": [
+      "University of Florence"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "佛罗伦萨",
+    "province": "意大利"
+  },
+  {
+    "id": "ucr",
+    "name": "加州大学河滨分校",
+    "pinyin": "ucr",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "河滨",
+    "province": "美国"
+  },
+  {
+    "id": "ncsu",
+    "name": "北卡罗来纳州立大学",
+    "pinyin": "ncsu",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "罗利",
+    "province": "美国"
+  },
+  {
+    "id": "sdu",
+    "name": "南丹麦大学",
+    "pinyin": "sdu",
+    "abbreviation": "",
+    "aliases": [
+      "University of Southern Denmark"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "欧登塞",
+    "province": "丹麦"
+  },
+  {
+    "id": "southampton",
+    "name": "南安普敦大学",
+    "pinyin": "southampton",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前200",
+      "USNews前200"
+    ],
+    "city": "南安普敦",
+    "province": "英国"
+  },
+  {
+    "id": "sanraffaele",
+    "name": "圣拉斐尔大学",
+    "pinyin": "sanraffaele",
+    "abbreviation": "",
+    "aliases": [
+      "Vita-Salute San Raffaele University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "米兰",
+    "province": "意大利"
+  },
+  {
+    "id": "fau",
+    "name": "埃尔朗根-纽伦堡大学",
+    "pinyin": "fau",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "埃尔朗根",
+    "province": "德国"
+  },
+  {
+    "id": "kiel",
+    "name": "基尔大学",
+    "pinyin": "kiel",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "基尔",
+    "province": "德国"
+  },
+  {
+    "id": "tartu",
+    "name": "塔尔图大学",
+    "pinyin": "tartu",
+    "abbreviation": "",
+    "aliases": [
+      "University of Tartu"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "塔尔图",
+    "province": "爱沙尼亚"
+  },
+  {
+    "id": "tasmania",
+    "name": "塔斯马尼亚大学",
+    "pinyin": "tasmania",
+    "abbreviation": "",
+    "aliases": [
+      "University of Tasmania"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "霍巴特",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "aalborg",
+    "name": "奥尔堡大学",
+    "pinyin": "aalborg",
+    "abbreviation": "",
+    "aliases": [
+      "Aalborg University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "奥尔堡",
+    "province": "丹麦"
+  },
+  {
+    "id": "missouri",
+    "name": "密苏里大学",
+    "pinyin": "missouri",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "哥伦比亚",
+    "province": "美国"
+  },
+  {
+    "id": "ulb",
+    "name": "布鲁塞尔自由大学（法语）",
+    "pinyin": "ulb",
+    "abbreviation": "",
+    "aliases": [
+      "Universite Libre de Bruxelles"
+    ],
+    "levels": [
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "布鲁塞尔",
+    "province": "比利时"
+  },
+  {
+    "id": "keio",
+    "name": "庆应义塾大学",
+    "pinyin": "keio",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "东京",
+    "province": "日本"
+  },
+  {
+    "id": "uconn",
+    "name": "康涅狄格大学",
+    "pinyin": "uconn",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "斯托尔斯",
+    "province": "美国"
+  },
+  {
+    "id": "cairo",
+    "name": "开罗大学",
+    "pinyin": "cairo",
+    "abbreviation": "",
+    "aliases": [
+      "Cairo University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "开罗",
+    "province": "埃及"
+  },
+  {
+    "id": "vt",
+    "name": "弗吉尼亚理工大学",
+    "pinyin": "vt",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "布莱克斯堡",
+    "province": "美国"
+  },
+  {
+    "id": "uthouston",
+    "name": "德克萨斯大学休斯顿健康科学中心",
+    "pinyin": "uthouston",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "休斯顿",
+    "province": "美国"
+  },
+  {
+    "id": "tamu",
+    "name": "德州农工大学",
+    "pinyin": "tamu",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前200"
+    ],
+    "city": "大学城",
+    "province": "美国"
+  },
+  {
+    "id": "latrobe",
+    "name": "拉筹伯大学",
+    "pinyin": "latrobe",
+    "abbreviation": "",
+    "aliases": [
+      "La Trobe University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "墨尔本",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "ntnu",
+    "name": "挪威科学技术大学",
+    "pinyin": "ntnu",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前200",
+      "USNews前300"
+    ],
+    "city": "特隆赫姆",
+    "province": "挪威"
+  },
+  {
+    "id": "stellenbosch",
+    "name": "斯坦陵布什大学",
+    "pinyin": "stellenbosch",
+    "abbreviation": "",
+    "aliases": [
+      "Stellenbosch University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "斯坦陵布什",
+    "province": "南非"
+  },
+  {
+    "id": "mansoura",
+    "name": "曼苏尔大学",
+    "pinyin": "mansoura",
+    "abbreviation": "",
+    "aliases": [
+      "Mansoura University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "曼苏尔",
+    "province": "埃及"
+  },
+  {
+    "id": "charlesprague",
+    "name": "查理大学",
+    "pinyin": "charlesprague",
+    "abbreviation": "",
+    "aliases": [
+      "Charles University in Prague"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "布拉格",
+    "province": "捷克"
+  },
+  {
+    "id": "griffith",
+    "name": "格里菲斯大学",
+    "pinyin": "griffith",
+    "abbreviation": "",
+    "aliases": [
+      "Griffith University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "布里斯班",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "mayoclinic",
+    "name": "梅奥诊所",
+    "pinyin": "mayoclinic",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前150"
+    ],
+    "city": "罗切斯特",
+    "province": "美国"
+  },
+  {
+    "id": "sharjah",
+    "name": "沙迦大学",
+    "pinyin": "sharjah",
+    "abbreviation": "",
+    "aliases": [
+      "University of Sharjah"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "沙迦",
+    "province": "阿联酋"
+  },
+  {
+    "id": "rub",
+    "name": "波鸿鲁尔大学",
+    "pinyin": "rub",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "波鸿",
+    "province": "德国"
+  },
+  {
+    "id": "iowa",
+    "name": "爱荷华大学",
+    "pinyin": "iowa",
+    "abbreviation": "",
+    "aliases": [
+      "University of Iowa"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "爱荷华城",
+    "province": "美国"
+  },
+  {
+    "id": "azhar",
+    "name": "爱资哈尔大学",
+    "pinyin": "azhar",
+    "abbreviation": "",
+    "aliases": [
+      "Al Azhar University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "开罗",
+    "province": "埃及"
+  },
+  {
+    "id": "tennessee",
+    "name": "田纳西大学",
+    "pinyin": "tennessee",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "诺克斯维尔",
+    "province": "美国"
+  },
+  {
+    "id": "kth",
+    "name": "皇家理工学院",
+    "pinyin": "kth",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "斯德哥尔摩",
+    "province": "瑞典"
+  },
+  {
+    "id": "stonybrook",
+    "name": "石溪大学",
+    "pinyin": "stonybrook",
+    "abbreviation": "",
+    "aliases": [
+      "Stony Brook University--SUNY"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "石溪",
+    "province": "美国"
+  },
+  {
+    "id": "ucdenver",
+    "name": "科罗拉多大学丹佛分校",
+    "pinyin": "ucdenver",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "丹佛",
+    "province": "美国"
+  },
+  {
+    "id": "tsukuba",
+    "name": "筑波大学",
+    "pinyin": "tsukuba",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "筑波",
+    "province": "日本"
+  },
+  {
+    "id": "newcastleau",
+    "name": "纽卡斯尔大学（澳大利亚）",
+    "pinyin": "newcastleau",
+    "abbreviation": "",
+    "aliases": [
+      "University of Newcastle"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "纽卡斯尔",
+    "province": "澳大利亚"
+  },
+  {
+    "id": "newcastleuk",
+    "name": "纽卡斯尔大学（英国）",
+    "pinyin": "newcastleuk",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "纽卡斯尔",
+    "province": "英国"
+  },
+  {
+    "id": "sapienza",
+    "name": "罗马大学",
+    "pinyin": "sapienza",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前150",
+      "USNews前200"
+    ],
+    "city": "罗马",
+    "province": "意大利"
+  },
+  {
+    "id": "ainshams",
+    "name": "艾因夏姆斯大学",
+    "pinyin": "ainshams",
+    "abbreviation": "",
+    "aliases": [
+      "Ain Shams University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "开罗",
+    "province": "埃及"
+  },
+  {
+    "id": "sussex",
+    "name": "苏塞克斯大学",
+    "pinyin": "sussex",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "布莱顿",
+    "province": "英国"
+  },
+  {
+    "id": "mountsinai",
+    "name": "西奈山医学院",
+    "pinyin": "mountsinai",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前150",
+      "USNews前100"
+    ],
+    "city": "纽约",
+    "province": "美国"
+  },
+  {
+    "id": "westlake",
+    "name": "西湖大学",
+    "pinyin": "westlake",
+    "abbreviation": "",
+    "aliases": [
+      "Westlake University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "杭州",
+    "province": "中国浙江"
+  },
+  {
+    "id": "cincinnati",
+    "name": "辛辛那提大学",
+    "pinyin": "cincinnati",
+    "abbreviation": "",
+    "aliases": [
+      "University of Cincinnati"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "辛辛那提",
+    "province": "美国"
+  },
+  {
+    "id": "miami",
+    "name": "迈阿密大学",
+    "pinyin": "miami",
+    "abbreviation": "",
+    "aliases": [
+      "University of Miami"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "迈阿密",
+    "province": "美国"
+  },
+  {
+    "id": "naples2",
+    "name": "那不勒斯腓特烈二世大学",
+    "pinyin": "naples2",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "那不勒斯",
+    "province": "意大利"
+  },
+  {
+    "id": "lyon1",
+    "name": "里昂第一大学",
+    "pinyin": "lyon1",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300"
+    ],
+    "city": "里昂",
+    "province": "法国"
+  },
+  {
+    "id": "witwatersrand",
+    "name": "金山大学",
+    "pinyin": "witwatersrand",
+    "abbreviation": "",
+    "aliases": [
+      "University of Witwatersrand"
+    ],
+    "levels": [
+      "USNews前300",
+      "软科前300"
+    ],
+    "city": "约翰内斯堡",
+    "province": "南非"
+  },
+  {
+    "id": "uaeu",
+    "name": "阿联酋大学",
+    "pinyin": "uaeu",
+    "abbreviation": "",
+    "aliases": [
+      "United Arab Emirates University"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "艾因",
+    "province": "阿联酋"
+  },
+  {
+    "id": "athens",
+    "name": "雅典大学",
+    "pinyin": "athens",
+    "abbreviation": "",
+    "aliases": [
+      "National and Kapodistrian University of Athens"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "雅典",
+    "province": "希腊"
+  },
+  {
+    "id": "seoul",
+    "name": "首尔大学",
+    "pinyin": "seoul",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前100",
+      "USNews前200"
+    ],
+    "city": "首尔",
+    "province": "韩国"
+  },
+  {
+    "id": "uam",
+    "name": "马德里自治大学",
+    "pinyin": "uam",
+    "abbreviation": "",
+    "aliases": [
+      "Autonomous University of Madrid"
+    ],
+    "levels": [
+      "USNews前300"
+    ],
+    "city": "马德里",
+    "province": "西班牙"
+  },
+  {
+    "id": "weizmann",
+    "name": "魏茨曼科学研究学院",
+    "pinyin": "weizmann",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前100"
+    ],
+    "city": "雷霍沃特",
+    "province": "以色列"
+  },
+  {
+    "id": "uclouvain",
+    "name": "鲁汶大学（法语）",
+    "pinyin": "uclouvain",
+    "abbreviation": "",
+    "aliases": [],
+    "levels": [
+      "软科前300",
+      "USNews前300"
+    ],
+    "city": "新鲁汶",
+    "province": "比利时"
+  },
+  {
+    "id": "suat",
+    "name": "深圳理工大学",
+    "pinyin": "shenzhenligongdaxue",
+    "abbreviation": "深理工",
+    "aliases": [
+      "Shenzhen University of Technology",
+      "SUAT",
+      "深圳理工"
+    ],
+    "levels": [
+      "辖区高校"
+    ],
+    "city": "深圳",
+    "province": "广东"
+  }
+]

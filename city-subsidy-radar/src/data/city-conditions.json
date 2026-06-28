@@ -1,0 +1,119 @@
+{
+  "description": "问卷字段显隐配置。base = 市级政策字段；districts = 各区额外字段（OR合并）；locationDependentFields = 选区前不展示的字段（需选定区域后才有意义）。注意：就业状态与落户状态解耦，就业状态通常由市级政策直接决定，应提前展示；落户状态多为区级政策要求，按区显隐。",
+  "cities": {
+    "beijing": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": ["householdRequired"],
+      "districts": {
+        "海淀区": {},
+        "石景山区": {},
+        "通州区": {},
+        "顺义区": {},
+        "昌平区": {},
+        "怀柔区": {}
+      }
+    },
+    "shanghai": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false,
+        "showReturneeStatus": true
+      },
+      "locationDependentFields": ["householdRequired"],
+      "districts": {
+        "徐汇区": {},
+        "长宁区": {
+          "graduationYear": true
+        },
+        "虹口区": {
+          "graduationYear": true
+        },
+        "杨浦区": {
+          "graduationYear": true
+        },
+        "青浦区": {},
+        "奉贤区": {},
+        "浦东新区": {
+          "showFirstLingangEmployment": true
+        }
+      }
+    },
+    "guangzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "黄埔区": {
+          "showFirstGuangzhouHukou": true
+        },
+        "南沙区": {},
+        "花都区": {
+          "showHuaduImportStatus": true
+        }
+      }
+    },
+    "shenzhen": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": true
+      },
+      "locationDependentFields": ["householdRequired"],
+      "districts": {
+        "南山区": {
+          "householdRequired": true
+        },
+        "福田区": {},
+        "罗湖区": {
+          "householdRequired": true
+        },
+        "宝安区": {},
+        "龙岗区": {
+          "householdRequired": true
+        },
+        "龙华区": {
+          "graduationYear": true,
+          "householdRequired": true
+        },
+        "坪山区": {
+          "householdRequired": true,
+          "showIdentityType": true
+        },
+        "大鹏新区": {
+          "graduationYear": true,
+          "householdRequired": true
+        },
+        "光明区": {
+          "graduationYear": true
+        },
+        "前海合作区": {
+          "showIdentityType": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,789 @@
+[
+  {
+    "id": "shanghai-guanyuyouhuabenshiyingji",
+    "city": "shanghai",
+    "name": "《关于优化本市应届高校毕业生落户政策的通知》",
+    "category": "talent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士",
+        "本科"
+      ],
+      "schoolLevel": [
+        "双一流"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "毕业年度内",
+      "channel": "https://rsj.sh.gov.cn/",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "就业报到证",
+        "劳动合同",
+        "用人单位营业执照",
+        "落户申请表"
+      ],
+      "process": [
+        "登录上海市人社局官网「一网通办」应届生落户专区",
+        "由用人单位在线填报申请并上传材料",
+        "市人社部门受理并审核（15个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后办理落户手续"
+      ],
+      "location": "市级",
+      "url": "https://rsj.sh.gov.cn/"
+    },
+    "policySource": "沪府规〔2020〕25号",
+    "effectiveDate": "2020年",
+    "notes": "有效。应届博士直接落户；上海高校应届硕士直接落户；\"双一流\"高校应届硕士直接落户；清华、北大、复旦、交大、同济、华师大应届本科直接落户。2026年申报时间：5月11日至7月3日；标准分72分。",
+    "location": "上海市",
+    "tier": 1
+  },
+  {
+    "id": "shanghai-liuxuehuiguorenyuanluohu",
+    "city": "shanghai",
+    "name": "留学回国人员落户上海政策",
+    "category": "talent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "liuxue-top50",
+          "name": "世界前50院校（直接落户）",
+          "schoolLevel": [
+            "QS前50",
+            "THE前50",
+            "软科前50",
+            "USNews前50"
+          ],
+          "schoolRegion": "overseas",
+          "employmentRequired": true,
+          "householdRequired": false
+        },
+        {
+          "id": "liuxue-top100",
+          "name": "世界前100院校（缴社保满6个月后落户）",
+          "schoolLevel": [
+            "QS前100",
+            "THE前100",
+            "软科前100",
+            "USNews前100"
+          ],
+          "schoolRegion": "overseas",
+          "employmentRequired": true,
+          "householdRequired": false
+        }
+      ],
+      "returneeStatus": "within_2_years",
+      "ageLimit": 55,
+      "ageLimitExclusive": false
+    },
+    "application": {
+      "deadline": "留学回国后两年内来沪工作",
+      "channel": "https://rsj.sh.gov.cn/",
+      "materials": [
+        "身份证",
+        "教育部留学服务中心学历学位认证书",
+        "国（境）外学位证书及成绩单",
+        "护照及签证页",
+        "留学期间出入境记录",
+        "劳动合同",
+        "社保缴纳证明",
+        "个税纳税证明",
+        "《承诺与授权》（新版）",
+        "《为留学回国人员XXX申办上海常住户口的函》（新版）"
+      ],
+      "process": [
+        "登录上海市人社局官网「一网通办」留学人员落户专区",
+        "由用人单位在线填报申请并上传材料",
+        "市人社部门受理并审核（15个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后办理落户手续"
+      ],
+      "location": "市级",
+      "url": "https://rsj.sh.gov.cn/"
+    },
+    "policySource": "沪人社规〔2020〕25号等",
+    "effectiveDate": "2020年",
+    "notes": "有效。世界排名前50院校留学生来沪全职工作后可直接申办落户，无社保缴纳月数要求；前51-100院校留学生需缴纳社保满6个月后可申办落户。均无社保基数要求。落户激励条件中的全球前100高校名单已更新，新增15所大学。",
+    "location": "上海市",
+    "tier": 1
+  },
+  {
+    "id": "shanghai-shanghaishichaojiboshiho",
+    "city": "shanghai",
+    "name": "上海市超级博士后激励计划",
+    "category": "talent",
+    "amount": {
+      "min": 150000,
+      "max": 150000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://rsj.sh.gov.cn/",
+      "materials": [
+        "申请表",
+        "博士学位证书",
+        "进站证明",
+        "研究计划书",
+        "设站单位推荐函",
+        "身份证",
+        "劳动合同或进站协议"
+      ],
+      "process": [
+        "设站单位择优推荐",
+        "登录「一网通办」平台或上海市人社局官网填报",
+        "上传材料",
+        "区人才中心受理",
+        "专家评审",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://rsj.sh.gov.cn/"
+    },
+    "policySource": "沪人社专〔2021〕222号等",
+    "effectiveDate": "2021年",
+    "notes": "有效。在沪博士后科研流动站、工作站、创新实践基地进站从事研究的人员，每人每年15万元资助，资助期2年，共30万元。一般不超过35周岁，需设站单位择优推荐。",
+    "location": "上海市",
+    "tier": 2
+  },
+  {
+    "id": "shanghai-lingangxinpianquqianyanc",
+    "city": "shanghai",
+    "name": "临港新片区前沿产业安家补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 10000,
+      "max": 104000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "isFirstLingangEmployment": true
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.lingang.gov.cn/",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "个税纳税证明",
+        "无房承诺"
+      ],
+      "process": [
+        "登录临港新片区人才服务专区或「一网通办」平台",
+        "在线填报申请信息并上传材料",
+        "临港新片区管委会受理初审（5-10个工作日）",
+        "临港新片区人才部门复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "浦东新区",
+      "url": "https://www.lingang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2026-05-20",
+    "notes": "有效（2026-2030版）。首次在临港新片区就业的前沿产业人才：本科1-1.3万、硕士2-2.6万、博士8-10.4万（一次性）。毕业两年内高校毕业生上浮30%。需经高新产业和科技创新处认定为重点企业人才，承诺继续工作2年以上。",
+    "location": "上海市",
+    "tier": 2,
+    "exclusiveGroup": "shanghai-lingang-anjia",
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 13000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 26000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 80000,
+        "max": 104000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    }
+  },
+  {
+    "id": "shanghai-lingangxinpianquqianyanc-hwbs",
+    "city": "shanghai",
+    "name": "临港新片区新引进海外博士综合补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 500000,
+      "max": 500000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "overseas-phd",
+          "name": "海外博士",
+          "schoolRegion": "overseas"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.lingang.gov.cn/",
+      "materials": [
+        "身份证/护照",
+        "博士学位证书及教育部留服认证",
+        "劳动合同",
+        "在临港新片区工作证明"
+      ],
+      "process": [
+        "登录临港新片区人才服务专区或「一网通办」平台",
+        "在线填报申请信息并上传材料",
+        "临港新片区管委会受理初审（5-10个工作日）",
+        "临港新片区人才部门复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "浦东新区",
+      "url": "https://www.lingang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。新引进海外博士可申请综合补贴50万元（一次性发放）。40周岁及以下。",
+    "location": "上海市",
+    "tier": 3
+  },
+  {
+    "id": "shanghai-shanghaishiyicixingchuangye",
+    "city": "shanghai",
+    "name": "上海市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 8000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": false,
+      "householdRequired": true
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://zwdt.sh.gov.cn/",
+      "materials": [
+        "身份证",
+        "户口本",
+        "学历学位证书",
+        "营业执照",
+        "社保缴纳记录",
+        "无犯罪记录证明"
+      ],
+      "process": [
+        "登录「一网通办」平台提交申请",
+        "上传材料",
+        "区人社部门受理审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://zwdt.sh.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。毕业两年内、具有上海户籍的高校毕业生或就业困难人员，首次创业经营满1年、按规定为至少1人缴纳社保满6个月，可申请一次性8000元。",
+    "location": "上海市",
+    "tier": 1
+  },
+  {
+    "id": "shanghai-xuhuiqurencaizufangbutie",
+    "city": "shanghai",
+    "name": "《徐汇区人才租房补贴实施细则(2021版)》",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士",
+        "本科"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.xuhui.gov.cn/xhrc/",
+      "materials": [
+        "单位申请表",
+        "申请人身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "租房合同及登记备案证明",
+        "无房证明",
+        "单位营业执照"
+      ],
+      "process": [
+        "登录徐汇区人才服务网或「一网通办」平台",
+        "在线填报申请信息并上传材料",
+        "徐汇区人才服务中心受理初审（5-10个工作日）",
+        "徐汇区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后按月拨付至申请人银行账户"
+      ],
+      "location": "徐汇区",
+      "url": "https://www.xuhui.gov.cn/xhrc/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效（2026年度已开放申报）。商务金融、科技创新、文化创意等10类人才分三档1000/1500/2000元/月；海外回国类需世界排名前200高校硕士/博士。累计补贴时限一般不超过36个月。",
+    "location": "上海市·徐汇区",
+    "tier": 2,
+    "exclusiveGroup": "shanghai-rent"
+  },
+  {
+    "id": "shanghai-changningquyouxiurencaiz",
+    "city": "shanghai",
+    "name": "长宁区优秀人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1600,
+      "max": 1600,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年集中办理一次",
+      "channel": "https://www.changning.gov.cn/",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学历学位证书",
+        "劳动合同或录用证明",
+        "租房合同",
+        "单位推荐函"
+      ],
+      "process": [
+        "登录上海「一网通办」平台或长宁区人才服务专区",
+        "在线填报申请信息并上传材料",
+        "长宁区人才服务中心受理初审（5-10个工作日）",
+        "长宁区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后按月拨付至申请人银行账户"
+      ],
+      "location": "长宁区",
+      "url": "https://www.changning.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。符合人才引进落户条件的全日制普通高校应届毕业生和海外留学生，先租后补，每人每月1600元。累计享受补贴时间不超过24个月。",
+    "location": "上海市·长宁区",
+    "tier": 1,
+    "exclusiveGroup": "shanghai-rent"
+  },
+  {
+    "id": "shanghai-liuxuerenyuanhuiguojingg",
+    "city": "shanghai",
+    "name": "长宁区留学人员回国（境）过渡期租住人才公寓专项支持政策",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 45000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "conditions": {
+      "graduationYear": "within_2_years",
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://rsj.sh.gov.cn/ttpxw_17107/20220301/t0035_1406060.html",
+      "materials": [
+        "申请表",
+        "身份证",
+        "国（境）外学历学位证书及认证",
+        "护照及签证页",
+        "出入境记录",
+        "人才公寓申请表"
+      ],
+      "process": [
+        "登录上海市人社局官网或长宁区人才服务专区",
+        "在线填报申请信息并上传材料",
+        "长宁区人才服务中心受理初审（5-10个工作日）",
+        "长宁区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "长宁区",
+      "url": "https://rsj.sh.gov.cn/ttpxw_17107/20220301/t0035_1406060.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。留学回国（境）人员不以就业和地域为前提，租住长宁区指定人才公寓，最长12个月，最高补贴租金总额4.5万元。",
+    "location": "上海市·长宁区",
+    "tier": 2,
+    "exclusiveGroup": "shanghai-rent"
+  },
+  {
+    "id": "shanghai-haineiwaiyouxiubiyesheng",
+    "city": "shanghai",
+    "name": "虹口区海内外优秀毕业生人才驿站租金补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1500,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 1500,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      },
+      "博士": {
+        "min": 2000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      }
+    },
+    "conditions": {
+      "degree": [
+        "硕士",
+        "博士"
+      ],
+      "schoolLevel": [
+        "QS前100",
+        "THE前100",
+        "软科前100",
+        "USNews前100",
+        "双一流"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "取得学位后至申请日累计不超过2年",
+      "channel": "「随申办」APP—虹口区旗舰店—人才服务专区",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学历学位证书",
+        "劳动合同（第二阶段）",
+        "社保缴纳证明（第二阶段）",
+        "无房承诺"
+      ],
+      "process": [
+        "个人通过「随申办」APP—虹口区旗舰店—「人才服务专区」网上申请",
+        "线上提交材料，10个工作日内出审核意见",
+        "资格审核（房源项目运营机构审核在本市有无住房）",
+        "采取「积分+摇号」方式确定租住资格",
+        "签约入住"
+      ],
+      "location": "虹口区",
+      "url": "https://www.shhk.gov.cn/xwzx/002014/20250206/e0beb06f-575b-4e08-8d54-35cf342b28f8.html"
+    },
+    "policySource": "虹口区海内外优秀人才驿站专项支持政策（2025年2月6日发布）",
+    "effectiveDate": "2025-02-06",
+    "notes": "有效。需世界排名前100名高校或「双一流」建设高校及学科的硕士及以上学位，获得学位未满2年。硕士前3个月2000元/月、后3个月1500元/月；博士（博士后）前3个月3000元/月、后3个月2000元/月；第一阶段最长6个月，入职虹口后再延长6个月，最长共1年。采取「积分+摇号」方式确定租住资格。",
+    "location": "上海市·虹口区",
+    "tier": 2,
+    "exclusiveGroup": "shanghai-rent"
+  },
+  {
+    "id": "shanghai-yangpuqu-rencaianju",
+    "city": "shanghai",
+    "name": "《杨浦区人才安居实施办法（试行）》（应届生/留学生）",
+    "category": "rent",
+    "amount": {
+      "min": 600,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.yangpu.gov.cn/",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "个税纳税证明",
+        "无房证明",
+        "单位营业执照"
+      ],
+      "process": [
+        "登录上海「一网通办」平台或杨浦区人才服务专区",
+        "在线填报申请信息并上传材料",
+        "杨浦区人才服务中心受理初审（5-10个工作日）",
+        "杨浦区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后按月拨付至申请人银行账户"
+      ],
+      "location": "杨浦区",
+      "url": "https://www.yangpu.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效（2025年度已开放申请）。本条目仅对应「应届毕业生及海外留学生」档次：本科600元/月、硕士800元/月、博士1000元/月，最长12个月。该政策另有「紧缺急需人才」（社保基数达社平1.5-3倍，1000-2000元/月）和「高层次人才」（年个税15万以上，8000元/月，最长2年）两个档次，需经人才认定。",
+    "location": "上海市·杨浦区",
+    "tier": 1,
+    "exclusiveGroup": "shanghai-rent",
+    "tieredAmount": {
+      "本科": {
+        "min": 600,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      },
+      "硕士": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      },
+      "博士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      }
+    }
+  },
+  {
+    "id": "shanghai-qingpuquqingnianrencaizu",
+    "city": "shanghai",
+    "name": "青浦区青年人才租房补贴（青峰人才政策2.0版）",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士",
+        "本科"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.shqp.gov.cn/",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "租房合同",
+        "无房证明"
+      ],
+      "process": [
+        "登录上海「一网通办」平台或青浦区人才服务专区",
+        "在线填报申请信息并上传材料",
+        "青浦区人才服务中心受理初审（5-10个工作日）",
+        "青浦区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "青浦区",
+      "url": "https://www.shqp.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效（2024年发布）。在青浦区就业的青年人才，按学历层次给予一次性租房补贴支持。毕业三年内在青浦就业创业。",
+    "location": "上海市·青浦区",
+    "tier": 1,
+    "exclusiveGroup": "shanghai-rent"
+  },
+  {
+    "id": "shanghai-fengxianquqingnianrencai",
+    "city": "shanghai",
+    "name": "奉贤区青年人才安居政策（\"一年免费住、三年轻支出\"）",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 800000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.fengxian.gov.cn/",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学历学位证书",
+        "劳动合同或实习证明",
+        "社保缴纳证明（在奉工作）",
+        "无房证明"
+      ],
+      "process": [
+        "登录上海「一网通办」平台或奉贤区人才服务专区，搜索人才安居事项",
+        "在线填报申请信息并上传材料",
+        "奉贤区人才服务中心受理初审（5-10个工作日）",
+        "奉贤区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "奉贤区",
+      "url": "https://www.fengxian.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-05-20",
+    "notes": "有效（2025年5月20日发布）。面向四类青年人才：来奉实习（最长6个月免费住宿）、来奉求职（最长15天免费住宿）、在奉工作（租房补贴最高2000元/月）、购房补贴最高80万元。",
+    "location": "上海市·奉贤区",
+    "tier": 3,
+    "exclusiveGroup": "shanghai-rent"
+  },
+  {
+    "id": "shanghai-fengxianqurencaianju",
+    "city": "shanghai",
+    "name": "奉贤区人才安居",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.fengxian.gov.cn/",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "购房或租房合同",
+        "无房证明"
+      ],
+      "process": [
+        "登录上海「一网通办」平台或奉贤区人才服务专区",
+        "在线填报申请信息并上传材料",
+        "奉贤区人才服务中心受理初审（5-10个工作日）",
+        "奉贤区人社局复核（5个工作日）",
+        "审核通过后公示（5个工作日）",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "奉贤区",
+      "url": "https://www.fengxian.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。在奉贤区工作并缴纳社保满6个月以上的人才，可享受租房补贴最高2000元/月、购房补贴最高80万元。",
+    "location": "上海市·奉贤区",
+    "tier": 1,
+    "exclusiveGroup": "shanghai-rent"
+  }
+]

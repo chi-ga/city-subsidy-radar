@@ -1,0 +1,1390 @@
+[
+  {
+    "id": "shenzhen-guangming-shenghuo",
+    "city": "shenzhen",
+    "name": "光明科学城名校优才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 20000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "双一流",
+        "QS前300",
+        "THE前300",
+        "软科前300",
+        "USNews前300",
+        "辖区高校"
+      ],
+      "ageLimit": 35,
+      "employmentRequired": true,
+      "householdRequired": true
+    },
+    "application": {
+      "deadline": "2024-12-30至2026-09-30",
+      "channel": "https://www.szgm.gov.cn/",
+      "materials": [
+        "光明区名校优才生活和就业补贴申请表",
+        "身份证正反面",
+        "户口簿首页及常住人口登记卡本人页",
+        "首份引进审批文件",
+        "劳动(聘用)合同",
+        "社会保险参保缴纳明细",
+        "个人所得税纳税清单",
+        "毕业证书和学位证书",
+        "学历学位验证证明",
+        "金融社保卡"
+      ],
+      "process": [
+        "登录广东政务服务网搜索「光明区名校优才生活和就业补贴」点击在线办理",
+        "光明区人力资源局收到申请后5个工作日内予以受理",
+        "审核（自受理之日起30个工作日完成）",
+        "公示（5个工作日）",
+        "拨入申请人金融社保卡银行账户"
+      ],
+      "location": "光明区",
+      "url": "https://www.szgm.gov.cn/"
+    },
+    "policySource": "《光明科学城基础性人才集聚行动方案》",
+    "effectiveDate": "2024-12-30",
+    "notes": "有效。仅生活补贴部分：本科2万元、硕士3万元（一次性，税前）。新办理人才引进入户光明区；世界前300/双一流/辖区高校；35周岁以下；签订1年以上劳动合同并连续缴纳社保满6个月。⚠️ 落户光明区（问卷无法区分具体区）；⚠️ 机关事业单位/国企人员不得申报；领取过同类型补贴的不得重复申领。总量控制发完即止。咨询电话：0755-88211317。",
+    "location": "深圳市·光明区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-guangming-jiuye",
+    "city": "shenzhen",
+    "name": "光明科学城名校优才就业补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "schoolLevel": [
+        "双一流",
+        "QS前300",
+        "THE前300",
+        "软科前300",
+        "USNews前300",
+        "辖区高校"
+      ],
+      "ageLimit": 35,
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true
+    },
+    "application": {
+      "deadline": "2024-12-30至2026-09-30",
+      "channel": "https://www.szgm.gov.cn/",
+      "materials": [
+        "光明区名校优才生活和就业补贴申请表",
+        "身份证正反面",
+        "户口簿首页及常住人口登记卡本人页",
+        "首份引进审批文件",
+        "劳动(聘用)合同",
+        "社会保险参保缴纳明细",
+        "个人所得税纳税清单",
+        "毕业证书和学位证书",
+        "学历学位验证证明",
+        "金融社保卡"
+      ],
+      "process": [
+        "登录广东政务服务网搜索「光明区名校优才生活和就业补贴」点击在线办理",
+        "光明区人力资源局收到申请后5个工作日内予以受理",
+        "审核（自受理之日起30个工作日完成）",
+        "公示（5个工作日）",
+        "拨入申请人金融社保卡银行账户"
+      ],
+      "location": "光明区",
+      "url": "https://www.szgm.gov.cn/"
+    },
+    "policySource": "《光明科学城基础性人才集聚行动方案》",
+    "effectiveDate": "2024-12-30",
+    "notes": "有效。就业补贴（在满足生活补贴条件基础上叠加）：本科1万元、硕士2万元、博士3万元（一次性，税前）。注意：博士仅适用于就业补贴，生活补贴仅面向本科和硕士。需毕业2年内且首次在光明区就业。与生活补贴同属互斥组，实际发放取较高者。咨询电话：0755-88211317。",
+    "location": "深圳市·光明区",
+    "tier": 2,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-qianhai-gangaoqingnian",
+    "city": "shenzhen",
+    "name": "前海港澳青年就业创业补贴（就业+居住+生活三项可叠加）",
+    "category": "other",
+    "amount": {
+      "min": 5000,
+      "max": 11000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 11000,
+        "max": 11000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 7000,
+        "max": 7000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 6000,
+        "max": 6000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "专科": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "identityType": [
+        "港澳居民",
+        "台湾居民"
+      ],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "首次在前海就业创业后申请",
+      "channel": "https://qh.sz.gov.cn/sygnan/xxgk/xxgkml/zcfg/gfxwj/content/post_11493190.html",
+      "materials": [
+        "身份证/港澳居民身份证/台湾居民通行证",
+        "学历学位证书",
+        "劳动合同（一年及以上，连续缴纳社保不少于6个月）",
+        "社保证明"
+      ],
+      "process": [
+        "登录前海合作区政务服务平台提交申请",
+        "分别申报就业补贴、居住补贴、生活补贴三项",
+        "上传身份证件、学历证书、劳动合同、社保证明等材料",
+        "前海管理局受理并审核（60个工作日内完成审核）",
+        "公示（5个工作日）",
+        "公示无异议或异议不成立后按月拨付至申请人银行账户"
+      ],
+      "location": "前海合作区",
+      "url": "https://qh.sz.gov.cn/sygnan/xxgk/xxgkml/zcfg/gfxwj/content/post_11493190.html"
+    },
+    "policySource": "深前海规〔2024〕12号",
+    "effectiveDate": "2024-07-01",
+    "notes": "有效（2023年7月20日起实施，有效期3年）。金额为就业+居住+生活三项叠加后的每月合计。⚠️ 居住补贴（1,000元/月）需未在深圳拥有自有住房（问卷无法判断）；三项补贴可分别申报。就业补贴：专科2000/本科3000/硕士4000/博士8000元/月；居住补贴：1000元/月；生活补贴：2000元/月。各项累计不超过3年。⚠️ 2021年7月1日后首次在前海就业创业（问卷无法判断「首次」）。💡 另含创业奖励最高100万元、租金补贴40元/㎡/月。港澳居民（含永久居民及定居港澳已注销内地户籍的中国公民），台湾青年参照执行。就高不重复。",
+    "location": "深圳市·前海合作区",
+    "tier": 2
+  },
+  {
+    "id": "shenzhen-nanshan",
+    "city": "shenzhen",
+    "name": "南山区新引进入户高校毕业生支持行动",
+    "category": "talent",
+    "amount": {
+      "min": 20000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期（首发30%+续发70%，或满12个月一次性申领）"
+    },
+    "baseTieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期（首发30%+续发70%，或满12个月一次性申领）"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期（首发30%+续发70%，或满12个月一次性申领）"
+      }
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期（首发30%+续发70%，或满12个月一次性申领）"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期（首发30%+续发70%，或满12个月一次性申领）"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "双一流",
+        "QS前150",
+        "THE前150",
+        "软科前150",
+        "USNews前150"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "requiresDoubleDegree": true,
+    "application": {
+      "deadline": "2025-03-25至2027-03-25",
+      "channel": "https://www.szns.gov.cn/",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "引进审核文件",
+        "个人银行卡",
+        "首发：社保缴纳证明（连续不少于3个月）",
+        "首发：个人所得税纳税清单（连续不少于3个月）",
+        "续发：社保缴纳证明（连续不少于12个月）",
+        "续发：个人所得税纳税清单（连续不少于12个月）",
+        "企业营业执照"
+      ],
+      "process": [
+        "企业登录南山区产业发展综合服务平台或广东政务服务网注册",
+        "选择对应补贴事项在线填报",
+        "上传材料",
+        "区人力资源局受理审核",
+        "公示",
+        "拨付至企业账户",
+        "企业发放至个人"
+      ],
+      "location": "南山区",
+      "url": "https://www.szns.gov.cn/"
+    },
+    "policySource": "南山区人才政策",
+    "effectiveDate": "2025-03-25",
+    "notes": "有效（2025年3月25日起实施）。非双学位本科20,000元、硕士30,000元；双学位本科30,000元、硕士50,000元；博士按市级政策落实。要求世界前150或双一流高校/学科；35周岁以下；新引进入户；由企业申请并发放至个人。补贴分两次审核发放至个人账户：首次发放金额为补贴标准的30%（须在申报单位连续缴纳社保、申报个税满3个月），续发金额为补贴标准的70%（须在申报单位连续缴纳社保、申报个税满12个月），也可在连续工作满12个月后一次性申领全部补贴。申请人须为全日制本科或硕士毕业生。首发、续发补贴均须在24个月内由同一申报单位提出，申报单位须保持一致。2025年3月25日（不含）之前办理人才引进入户的硕士毕业生适用原政策。咨询电话：0755-86218169。",
+    "location": "深圳市·南山区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-pingshan",
+    "city": "shenzhen",
+    "name": "坪山区聚龙青年人才引进补贴",
+    "category": "talent",
+    "amount": {
+      "min": 30000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期（两次发放）"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期（两次发放）"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期（两次发放）"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "QS前150",
+        "THE前150",
+        "软科前150",
+        "USNews前150"
+      ],
+      "ageLimit": 35,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "pingshan-hukou",
+          "name": "坪山区户籍",
+          "householdRequired": true
+        },
+        {
+          "id": "pingshan-gangaotai",
+          "name": "港澳台籍",
+          "identityType": [
+            "港澳居民",
+            "台湾居民"
+          ],
+          "householdRequired": false
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.szpsq.gov.cn/",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "户口本或港澳台身份证明",
+        "劳动合同",
+        "社保缴纳证明（连续3个月）",
+        "企业推荐函",
+        "银行卡"
+      ],
+      "process": [
+        "企业登录广东政务服务网或坪山区相应申报平台",
+        "选择「聚龙青年人才」事项",
+        "在线填报并上传材料",
+        "区人力资源局受理审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "坪山区",
+      "url": "https://www.szpsq.gov.cn/"
+    },
+    "policySource": "坪山区人才补贴政策",
+    "effectiveDate": "2025-05-10",
+    "notes": "有效。本科3万元、硕士5万元（分两次发放：第一次本科1万元/硕士2万元，第二次本科2万元/硕士3万元）。世界大学排名前150名高校毕业；35岁（含）以下；工作单位须为坪山区五个重点产业领域（软件与信息服务、新一代电子信息、新能源和智能网联汽车、生物医药和医疗器械、人工智能/高端装备与仪器/低空经济与空天）企业/机构；需坪山区户籍或港澳台籍。被推荐人须在坪山区全职工作满3个月。同一人才在同一申请年度内符合多项同类型补贴的，按“从优不重复”原则执行。通过市内迁移落户坪山区的不可申领资助。咨询电话：0755-85208607。",
+    "location": "深圳市·坪山区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-dapeng",
+    "city": "shenzhen",
+    "name": "大鹏新区优秀青年人才引进补贴",
+    "category": "living",
+    "amount": {
+      "min": 20000,
+      "max": 30000,
+      "unit": "元",
+      "period": "分两年等额发放"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分两年等额发放"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分两年等额发放"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "985",
+        "211",
+        "双一流",
+        "QS前300",
+        "THE前300",
+        "软科前300",
+        "USNews前300"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "人才引进后2年内",
+      "channel": "https://www.dpxq.gov.cn/",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "户口本",
+        "劳动合同",
+        "社保缴纳证明（连续12个月）",
+        "企业营业执照",
+        "银行卡"
+      ],
+      "process": [
+        "登录广东政务服务网搜索「大鹏新区优秀青年人才生活补贴」",
+        "在线填报",
+        "上传材料",
+        "区组织人事局/人力资源局审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "大鹏新区",
+      "url": "https://www.dpxq.gov.cn/"
+    },
+    "policySource": "大鹏新区人才补贴政策",
+    "effectiveDate": "2025-07-01",
+    "notes": "有效。学士20,000元、硕士30,000元（分两年等额发放）。毕业不满2年；落户大鹏新区；在大鹏企业全职工作并连续缴纳社保满12个月（首次申请）或累计满24个月（续发申请）。须签订两年及以上劳动合同；两年内不存在人事关系跨辖区调动的情况。被派驻在大鹏新区外工作期间不得申请。申请人应当在取得引进审核文件签发之日起2年内提出申请。本生活补贴仅面向企业新引进人员，机关事业单位、个体工商户、社会团体等不予受理。咨询电话：0755-88158769；地址：大鹏新区管委会办公楼1610室。",
+    "location": "深圳市·大鹏新区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-baoan",
+    "city": "shenzhen",
+    "name": "宝安区新引进人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 15000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 15000,
+        "max": 15000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "QS前300",
+        "THE前300",
+        "软科前300",
+        "USNews前300"
+      ],
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "baoan-benke",
+          "name": "本科（30周岁以下）",
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 30,
+          "ageLimitExclusive": true
+        },
+        {
+          "id": "baoan-shuoshi",
+          "name": "硕士（35周岁以下）",
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 35,
+          "ageLimitExclusive": true
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": true
+    },
+    "application": {
+      "deadline": "引进后按当年申报指南为准",
+      "channel": "https://www.baoan.gov.cn/",
+      "materials": [
+        "新引进人才生活补贴申请表",
+        "劳动合同（劳务派遣人员另需提供宝安区用工单位工作证明）",
+        "身份证",
+        "社保缴纳证明（连续12个月，不含补缴、断缴）",
+        "银行卡（一类账户）",
+        "首份引进审核文件",
+        "毕业证、学位证（留学生另需提供《出国留学人员资格证明》和教育部学历学位认证书）",
+        "户口本首页及本人页"
+      ],
+      "process": [
+        "登录宝安区亲清政企服务直达平台",
+        "选择对应补贴事项在线填报",
+        "上传材料",
+        "区人力资源局资格审查（5个工作日）",
+        "内容审核（10个工作日）",
+        "必要时现场抽查",
+        "公示（5个工作日）",
+        "审议（5个工作日）",
+        "办结及拨付（5个工作日）"
+      ],
+      "location": "宝安区",
+      "url": "https://www.baoan.gov.cn/"
+    },
+    "policySource": "宝安区人才补贴政策",
+    "effectiveDate": "2022-08-24",
+    "notes": "有效。本科15,000元、硕士30,000元（一次性，税后发放）。要求QS/THE/ARWU/U.S.News世界排名前300高校；本科未满30周岁、硕士未满35周岁（年龄以首份引进审核文件签发年度的1月1日为判断时点，问卷无法精确匹配）；⚠️ 宝安户籍（问卷仅区分是否落户深圳，无法区分具体区）；连续缴纳社保满12个月；首份引进审核文件签发之日起24个月内申请。2022年8月24日前曾办理人才引进手续并在2022年8月24日后再次办理引进手续的人员，不适用本办法。⚠️ 首份引进审核文件签发之日起6个月内须由宝安区用人单位缴纳社保且无区外记录（问卷无法判断）；⚠️ 社保须含养老/医疗/失业/生育/工伤5个险种，不含补缴/断缴/个人缴纳；⚠️ 企业须在宝安区注册且有独立法人资格；⚠️ 机关事业单位在编人员不得享受。咨询电话：0755-36654321。",
+    "location": "深圳市·宝安区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-shenzhenshixinyinjinbosh",
+    "city": "shenzhen",
+    "name": "深圳市新引进博士人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 100000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期（首发30%+续发70%）"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "criterionSets": [
+        {
+          "id": "domestic-phd",
+          "name": "国内新引进博士（需深圳户籍）",
+          "minDegree": "博士",
+          "schoolRegion": "domestic",
+          "householdRequired": true
+        },
+        {
+          "id": "overseas-phd",
+          "name": "海外新引进博士（港澳台/外籍，无户籍要求）",
+          "minDegree": "博士",
+          "schoolRegion": "overseas",
+          "householdRequired": false
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "引进后2年内",
+      "channel": "https://hrss.sz.gov.cn/ztfw/yshj/jnpxyjyjs/content/post_9982215.html",
+      "materials": [
+        "身份证（国内博士提供身份证；海外博士按身份类型提供港澳永久性居民身份证及通行证、赴港澳定居通行证、台湾通行证、护照或外国人永久居留证）",
+        "学历学位证书",
+        "学历认证材料（国内学历提供教育部学历证书电子注册备案表；国境外学历提供教育部留学服务中心出具的学历学位认证书）",
+        "社保证明",
+        "个税纳税记录"
+      ],
+      "process": [
+        "登录广东政务服务网搜索「深圳市新引进博士人才生活补贴」",
+        "在线办理并填报信息、上传材料",
+        "提交所在单位审核",
+        "单位审核后提交市人社部门",
+        "受理并审核（15个工作日）",
+        "次月公示5个工作日",
+        "公示结束后20个工作日内拨付至单位账户",
+        "单位30日内发放至个人"
+      ],
+      "location": "市级",
+      "url": "https://hrss.sz.gov.cn/ztfw/yshj/jnpxyjyjs/content/post_9982215.html"
+    },
+    "policySource": "深人社规〔2022〕3号",
+    "effectiveDate": "2022-04-15",
+    "notes": "有效（2022年4月15日起实施，有效期5年，至2027年4月14日）。10万元分两次发放：首发申请时在深圳全职工作且引进后通过本市工作单位缴纳社会保险累计满3个月以上，发放30%；续发申请时仍在深圳全职工作且自首发申请之日起通过本市工作单位连续缴纳社会保险满12个月，发放70%。国内新引进博士需取得深圳户籍（续发申请时仍须具有深圳户籍）；海外新引进博士无户籍要求，须具有以下身份之一：香港、澳门永久性居民；赴港澳定居的内地居民（已注销内地户籍）；台湾地区居民；外国国籍人士。申请人身份信息应当与申报缴纳个人所得税、社会保险所使用的身份信息保持一致。使用多个不同身份信息登记纳税、缴纳社会保险的，须分别在税务部门进行税务并档、在社保部门进行信息变更或合并后申报。",
+    "location": "深圳市",
+    "tier": 1
+  },
+  {
+    "id": "shenzhen-qingnian-rencai-zhufang",
+    "city": "shenzhen",
+    "name": "深圳市青年人才认定与住房支持",
+    "category": "rent",
+    "amount": {
+      "min": 1250,
+      "max": 1250,
+      "unit": "元",
+      "period": "每月（或过渡性住房）",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "ageLimit": 45,
+      "ageLimitExclusive": true,
+      "criterionSets": [
+        {
+          "id": "edu-1",
+          "name": "教育背景-博士",
+          "minDegree": "博士"
+        },
+        {
+          "id": "edu-2",
+          "name": "教育背景-国家高校拔尖创新人才计划",
+          "minDegree": "本科",
+          "inTopStudentPlan": true
+        },
+        {
+          "id": "edu-3",
+          "name": "教育背景-985/211+重点产业",
+          "minDegree": "本科",
+          "schoolLevel": [
+            "985",
+            "211"
+          ],
+          "majorInShenzhenKeyIndustry": true
+        },
+        {
+          "id": "edu-4",
+          "name": "教育背景-双一流学科",
+          "minDegree": "本科",
+          "majorInDoubleFirstClassDiscipline": true
+        },
+        {
+          "id": "edu-5-oversea",
+          "name": "教育背景-四大榜单前200(境外)+STEM",
+          "minDegree": "本科",
+          "schoolLevel": [
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ],
+          "schoolRegion": "overseas",
+          "isStemMajor": true
+        },
+        {
+          "id": "edu-5-domestic",
+          "name": "教育背景-四大榜单前200(境内)+重点产业",
+          "minDegree": "本科",
+          "schoolLevel": [
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ],
+          "schoolRegion": "domestic",
+          "majorInShenzhenKeyIndustry": true
+        },
+        {
+          "id": "innov-ability",
+          "name": "创新能力类",
+          "hasInnovationAbility": true
+        },
+        {
+          "id": "innov-contrib",
+          "name": "创新贡献类",
+          "hasInnovationContribution": true
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "firstShenzhenEmploymentAfter": "2026-01-01"
+    },
+    "application": {
+      "deadline": "首次在深就业创业之日起1年内",
+      "channel": "https://hrss.sz.gov.cn/xxgk/zcfgjjd/zcfg/rcfw/content/post_12550232.html",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "租房合同/住房证明"
+      ],
+      "process": [
+        "第一步：登录「i深圳」平台青年人才服务保障专区，在线填报认定申请并上传材料",
+        "10个工作日内完成审核，通过青年人才认定",
+        "第二步：登录发放系统填报住房支持申请并作出诚信承诺",
+        "经用人单位审核",
+        "向社会保险关系所在区提出申请",
+        "区部门10个工作日内审核",
+        "审核通过后发放至申请人银行账户",
+        "首笔发放后系统自动按月发起续发"
+      ],
+      "location": "市级",
+      "url": "https://hrss.sz.gov.cn/xxgk/zcfgjjd/zcfg/rcfw/content/post_12550232.html"
+    },
+    "policySource": "深人社规〔2025〕7号 / 深建规〔2025〕18号",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效（2026年1月1日起施行，有效期5年）。该政策包含两个环节：①青年人才认定（教育背景/创新能力/创新贡献三方面符合任一标准即可）；②住房支持（需先通过认定）。住房支持二选一：安居补贴每月1,250元（税后1,000元），发放期不超过24个月；过渡性住房租金为市场参考租金的60%左右，最长租住36个月。申请条件：未在本市拥有自有住房且申请日前3年内未转让或分割过自有住房；通过本市工作单位依法缴纳社保；未正在享受住房保障优惠政策/单位住房；未租住过渡性住房；已办理居住登记。",
+    "location": "深圳市",
+    "tier": 1
+  },
+  {
+    "id": "shenzhen-futian",
+    "city": "shenzhen",
+    "name": "福田英才荟新引进优秀青年入户补贴",
+    "category": "talent",
+    "amount": {
+      "min": 20000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "baseTieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "QS前150",
+        "THE前150",
+        "软科前150",
+        "USNews前150"
+      ],
+      "ageLimit": 35,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "requiresDoubleDegree": true,
+    "application": {
+      "deadline": "2025年5月1日起经人才引进后按当年指南",
+      "channel": "https://www.szft.gov.cn/",
+      "materials": [
+        "福田英才荟新引进优秀青年入户补贴申请表",
+        "身份证/户口本（港澳台籍提供通行证）",
+        "学历学位证书及验证证明",
+        "人才引进通知书",
+        "有效劳动合同",
+        "连续缴纳社保证明（12个月以上）",
+        "个人所得税纳税清单",
+        "银行账户信息",
+        "企业营业执照（由申报单位提供）",
+        "港澳台身份材料（如适用）"
+      ],
+      "process": [
+        "登录广东政务服务网搜索对应补贴事项",
+        "在线填报并上传材料",
+        "区人力资源局预审（当季度内决定）",
+        "每季度汇总提交纸质材料",
+        "审核确认",
+        "公示5个工作日",
+        "拨付"
+      ],
+      "location": "福田区",
+      "url": "https://www.szft.gov.cn/"
+    },
+    "policySource": "《关于实施福田英才荟政策的若干措施(2025)》",
+    "effectiveDate": "2025-05-01",
+    "notes": "有效（2025年5月1日起实施）。非双学位本科2万元、硕士3万元；双学位本科3万元、硕士5万元。要求QS/THE/ARWU/U.S.News四大榜单世界前150名高校；35岁（含）以下；2025年5月1日起经市级或福田区办理人才引进；⚠️ 首次入户福田（非市内迁移，问卷无法自动判断）；连续缴纳社保≥12个月；申报时限24个月（自引进通知书签发日起算，问卷无法自动判断）；每季度集中审批；递交地址：福田区中康路136号；咨询电话0755-83456543；有效期至2026年12月31日；税前金额；弄虚作假5年内不得申报；港澳台和外籍青年可同等享受；⚠️ 机关事业单位在编人员不享受（问卷无法自动判断）。",
+    "location": "深圳市·福田区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-luohu",
+    "city": "shenzhen",
+    "name": "罗湖区新引进优秀青年人才补贴",
+    "category": "talent",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "luohu-pubin",
+          "name": "普通新引进（985/前150院校，本科/硕士）",
+          "degree": [
+            "本科",
+            "硕士"
+          ],
+          "schoolLevel": [
+            "985",
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150"
+          ],
+          "ageLimit": 35,
+          "householdRequired": true
+        },
+        {
+          "id": "luohu-chuangxin",
+          "name": "青年创新创业人才（本科/硕士/博士）",
+          "degree": [
+            "本科",
+            "硕士",
+            "博士"
+          ],
+          "ageLimit": 35,
+          "householdRequired": true
+        },
+        {
+          "id": "luohu-waiji",
+          "name": "外籍就业补贴（本科/硕士，外籍身份）",
+          "degree": [
+            "本科",
+            "硕士"
+          ],
+          "schoolLevel": [
+            "985",
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150"
+          ],
+          "ageLimit": 35,
+          "identityType": [
+            "外籍"
+          ],
+          "householdRequired": false
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2024年10月23日起首次落户罗湖区后按当年指南",
+      "channel": "https://lhqf.szlh.org.cn/server",
+      "materials": [
+        "申请表",
+        "身份证",
+        "户口本",
+        "学历学位证书",
+        "引进审核文件",
+        "劳动合同",
+        "社保缴纳证明（连续6个月）",
+        "个税缴纳证明",
+        "银行卡",
+        "创新创业项目证明（创新创业通道需提供）",
+        "外籍身份证明材料",
+        "承诺书"
+      ],
+      "process": [
+        "登录罗湖企业服务平台（https://lhqf.szlh.org.cn/server）",
+        "进入【享政策】版块",
+        "选择对应补贴事项（普通新引进 / 青年创新创业）",
+        "在线填报并上传材料",
+        "区人力资源局审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "罗湖区",
+      "url": "https://lhqf.szlh.org.cn/server"
+    },
+    "policySource": "罗湖区人才补贴政策",
+    "effectiveDate": "2024-10-23",
+    "notes": "有效。含三种补贴：①普通入户补贴（985/前150院校本科2万/硕士3万）②青创人才入户补贴（本科3万/硕士5万/博士10万，需经罗湖区认定）③外籍就业补贴（985/前150院校本科2万/硕士3万）。⚠️ 落户罗湖满6个月且户籍仍在罗湖；⚠️ 1年以上劳动合同；⚠️ 机关事业单位/国企在编人员不得申报；⚠️ 青创人才需经罗湖区认定；⚠️ 每年补贴总额定量，超额纳入下年；全年开放9/12月集中受理；30个工作日审核办结；发放至金融社保卡（一类银行卡）；诚信承诺制；有效期至2025年12月31日；咨询电话0755-25438390。三者同属互斥组只能领一个。",
+    "location": "深圳市·罗湖区",
+    "tier": 2,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-longhua",
+    "city": "shenzhen",
+    "name": "龙华区优秀青年人才补贴（入户补贴/人才集聚工程）",
+    "category": "talent",
+    "amount": {
+      "min": 30000,
+      "max": 80000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "graduationYear": "within_2_years",
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "lg-pubin-global-dom",
+          "name": "普通通道·境内（世界前150，35岁以下，需落户）",
+          "degree": [
+            "本科",
+            "硕士"
+          ],
+          "schoolLevel": [
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150"
+          ],
+          "ageLimit": 35,
+          "householdRequired": true
+        },
+        {
+          "id": "lg-pubin-global-gat",
+          "name": "普通通道·港澳台（世界前150，35岁以下，免落户）",
+          "degree": [
+            "本科",
+            "硕士"
+          ],
+          "schoolLevel": [
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150"
+          ],
+          "ageLimit": 35,
+          "identityType": [
+            "港澳居民",
+            "台湾居民"
+          ],
+          "householdRequired": false
+        },
+        {
+          "id": "lg-pubin-dfd-dom",
+          "name": "普通通道·境内（双一流高校+双一流学科，35岁以下，需落户）",
+          "degree": [
+            "本科",
+            "硕士"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "majorInDoubleFirstClassDiscipline": true,
+          "ageLimit": 35,
+          "householdRequired": true
+        },
+        {
+          "id": "lg-pubin-dfd-gat",
+          "name": "普通通道·港澳台（双一流高校+双一流学科，35岁以下，免落户）",
+          "degree": [
+            "本科",
+            "硕士"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "majorInDoubleFirstClassDiscipline": true,
+          "ageLimit": 35,
+          "identityType": [
+            "港澳居民",
+            "台湾居民"
+          ],
+          "householdRequired": false
+        },
+        {
+          "id": "lg-zhongdian-dom",
+          "name": "重点企业通道·境内（世界前300，40岁以下，需落户）",
+          "schoolLevel": [
+            "QS前300",
+            "THE前300",
+            "软科前300",
+            "USNews前300"
+          ],
+          "ageLimit": 40,
+          "ageLimitExclusive": true,
+          "householdRequired": true
+        },
+        {
+          "id": "lg-zhongdian-gat",
+          "name": "重点企业通道·港澳台（世界前300，40岁以下，免落户）",
+          "schoolLevel": [
+            "QS前300",
+            "THE前300",
+            "软科前300",
+            "USNews前300"
+          ],
+          "ageLimit": 40,
+          "ageLimitExclusive": true,
+          "identityType": [
+            "港澳居民",
+            "台湾居民"
+          ],
+          "householdRequired": false
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "普通通道：每年5月1日—5月31日集中受理；重点企业通道：每年5月至6月集中受理",
+      "channel": "https://www.szlhq.gov.cn/",
+      "materials": [
+        "龙华区优秀青年人才资助申请表",
+        "个人承诺书和授权书",
+        "身份证/户口本（港澳台籍提供通行证）",
+        "学历学位证书及验证证明",
+        "引进审核文件",
+        "有效劳动合同（3年以上）",
+        "连续3个月及以上社保五险参保证明",
+        "连续3个月及以上个人所得税纳税清单",
+        "无犯罪记录证明",
+        "重点企业证明材料（重点企业通道需提供）"
+      ],
+      "process": [
+        "登录广东政务服务网搜索「龙华区优秀青年人才资助」",
+        "在线办理并填报信息、上传材料",
+        "区人力资源局网上预审（10个工作日）",
+        "受理 → 审核（100个工作日）",
+        "征求职能部门意见（10个工作日）",
+        "审批（50个工作日）→ 公示（5个工作日）",
+        "拨付"
+      ],
+      "location": "龙华区",
+      "url": "https://www.szlhq.gov.cn/"
+    },
+    "policySource": "龙华区人才补贴政策 / 深龙华人规〔2025〕2号",
+    "effectiveDate": "2021-11-15",
+    "notes": "有效。含两个通道（同属互斥组只能领一个）：①普通优秀青年人才入户补贴（本科3万/硕士5万，世界前150/双一流高校+双一流建设学科，35周岁以下，毕业2年内，一次性发放）；②重点企业青年人才集聚工程（本科3万/硕士5万/博士8万，世界前300院校，未满40周岁，毕业2年内，一次性发放）。💡 重点通道另含：博士人才津贴20万元（分3年等额发放）+ 薪酬奖励最高10万元。⚠️ 重点企业通道需龙华区重点企业认定（问卷无法判断）；⚠️ 落户龙华区（问卷无法区分具体区）；⚠️ 3年及以上劳动合同（问卷无法判断）；⚠️ 社保五险连续3个月以上/重点通道6个月以上；港澳台籍免落户提供通行证即可；外籍不适用；集中受理每年5月；审核约150个工作日；咨询方式见官网。",
+    "location": "深圳市·龙华区",
+    "tier": 2,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-longgang",
+    "city": "shenzhen",
+    "name": "龙岗区新引进优秀青年人才入户补贴",
+    "category": "living",
+    "amount": {
+      "min": 20000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期（首发50%+续发50%）"
+    },
+    "baseTieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期（首发50%+续发50%）"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期（首发50%+续发50%）"
+      }
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期（首发50%+续发50%）"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期（首发50%+续发50%）"
+      }
+    },
+    "conditions": {
+      "ageLimit": 35,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "lg-dom-benke-global",
+          "name": "境内本科（世界前150/中国学科排名前5）",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150",
+            "中国学科排名前5"
+          ],
+          "householdRequired": true
+        },
+        {
+          "id": "lg-ovs-benke-global",
+          "name": "境外本科（世界前150/中国学科排名前5）",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150",
+            "中国学科排名前5"
+          ],
+          "identityType": [
+            "港澳居民",
+            "台湾居民",
+            "外籍"
+          ],
+          "householdRequired": false
+        },
+        {
+          "id": "lg-dom-benke-dfd",
+          "name": "境内本科（双一流一流学科或中国学科排名前5）",
+          "degree": [
+            "本科"
+          ],
+          "majorInDoubleFirstClassDiscipline": true,
+          "schoolLevel": [
+            "中国学科排名前5"
+          ],
+          "householdRequired": true
+        },
+        {
+          "id": "lg-ovs-benke-dfd",
+          "name": "境外本科（双一流一流学科或中国学科排名前5）",
+          "degree": [
+            "本科"
+          ],
+          "majorInDoubleFirstClassDiscipline": true,
+          "schoolLevel": [
+            "中国学科排名前5"
+          ],
+          "identityType": [
+            "港澳居民",
+            "台湾居民",
+            "外籍"
+          ],
+          "householdRequired": false
+        },
+        {
+          "id": "lg-dom-shuoshi",
+          "name": "境内硕士（双一流/世界前150/中国学科排名前5）",
+          "degree": [
+            "硕士"
+          ],
+          "schoolLevel": [
+            "双一流",
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150",
+            "中国学科排名前5"
+          ],
+          "householdRequired": true
+        },
+        {
+          "id": "lg-ovs-shuoshi",
+          "name": "境外硕士（双一流/世界前150/中国学科排名前5）",
+          "degree": [
+            "硕士"
+          ],
+          "schoolLevel": [
+            "双一流",
+            "QS前150",
+            "THE前150",
+            "软科前150",
+            "USNews前150",
+            "中国学科排名前5"
+          ],
+          "identityType": [
+            "港澳居民",
+            "台湾居民",
+            "外籍"
+          ],
+          "householdRequired": false
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "requiresDoubleDegree": true,
+    "application": {
+      "deadline": "以当年申报指南为准",
+      "channel": "https://www.lg.gov.cn/",
+      "materials": [
+        "龙岗区新引进优秀青年人才入户补贴申请表",
+        "身份证/户口本",
+        "学历学位证书及验证证明",
+        "引进审核文件",
+        "有效劳动合同",
+        "社保缴纳证明（连续12个月以上）",
+        "个人所得税纳税清单",
+        "银行账户信息",
+        "无犯罪记录证明",
+        "个人承诺书"
+      ],
+      "process": [
+        "登录龙岗区企业服务信息平台注册",
+        "在线填报项目申请表",
+        "区人力资源局形式审查",
+        "递交纸质材料",
+        "材料审核或现场考察",
+        "局党组会审议",
+        "公示（5个工作日）",
+        "拨付"
+      ],
+      "location": "龙岗区",
+      "url": "https://www.lg.gov.cn/"
+    },
+    "policySource": "《龙岗区新引进优秀青年人才和在职攻读博士学位人才相关资助申报指南》",
+    "effectiveDate": "2025-05-23",
+    "notes": "有效（2025年5月23日出台）。本科2万元、硕士3万元（双学位本科3万元、硕士5万元）；分期发放（首发50%+续发50%）。💡 岗位奖励：全额领取入户补贴后持续在龙岗全职工作满1年，追加发放1万元岗位奖励（一次性，税前）。院校条件：本科需世界前150/中国学科排名前5/双一流一流学科，硕士需双一流/世界前150/中国学科排名前5。境内人才需龙岗区户籍，港澳台/外籍人才免户籍。35周岁以下（以首次在龙岗全职工作之日为判断时点）；⚠️ 龙岗区户籍（问卷仅区分是否落户深圳，无法区分具体区）；⚠️ 首发申请须在龙岗连续全职工作满1年且距首次全职工作不超过2年（问卷无法判断）；⚠️ 未曾以更高学历办理人才引进；⚠️ 机关事业单位在编人员不得享受；⚠️ 存在龙岗区外缴纳社保/个税/劳务派遣视为不在龙岗全职工作；未享受过市/区级同类补贴；税前金额代扣代缴；从优从宽从高不重复；弄虚作假3年内不再给予资助；咨询电话0755-28943908。",
+    "location": "深圳市·龙岗区",
+    "tier": 1,
+    "exclusiveGroup": "shenzhen-hukou"
+  },
+  {
+    "id": "shenzhen-longgang-zaizhi-boshi",
+    "city": "shenzhen",
+    "name": "龙岗区在职人才攻读博士学位补贴",
+    "category": "talent",
+    "amount": {
+      "min": 100000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "schoolLevel": [
+        "QS前150",
+        "THE前150",
+        "软科前150",
+        "USNews前150",
+        "双一流",
+        "中国学科排名前5"
+      ],
+      "isStemMajor": true,
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "取得博士学位1年内申请",
+      "channel": "https://www.lg.gov.cn/",
+      "materials": [
+        "龙岗区在职人才攻读博士学位补贴申请表",
+        "身份证/户口本",
+        "博士学位证书及验证证明",
+        "学历学位认证书",
+        "有效劳动合同",
+        "社保缴纳证明（攻读期间在龙岗区科技型企业全职工作满1年）",
+        "个人所得税纳税清单",
+        "银行账户信息"
+      ],
+      "process": [
+        "登录龙岗区企业服务信息平台注册",
+        "在线填报项目申请表",
+        "区人力资源局形式审查",
+        "递交纸质材料",
+        "材料审核或现场考察",
+        "局党组会审议",
+        "公示（5个工作日）",
+        "拨付"
+      ],
+      "location": "龙岗区",
+      "url": "https://www.lg.gov.cn/"
+    },
+    "policySource": "《龙岗区新引进优秀青年人才和在职攻读博士学位人才相关资助申报指南》",
+    "effectiveDate": "2025-05-23",
+    "notes": "有效。10万元一次性（税前）。条件：2025年5月23日后在职取得博士学位；世界前150/双一流/中国学科排名前5高校；⚠️ 攻读学科须为STEM（科学/技术/工程/数学，问卷未做STEM判断）；⚠️ 攻读期间在龙岗区科技型企业（高新/专精特新/独角兽/单项冠军/科技型中小企业，≤500人）全职工作满1年（问卷无法判断）；⚠️ 属于科研或工程技术人才（问卷无法判断）；取得博士学位1年内申请；未以同一博士学位领取同类补贴；从优从宽从高不重复；咨询电话0755-28943908。",
+    "location": "深圳市·龙岗区",
+    "tier": 3
+  }
+]

@@ -1,0 +1,385 @@
+[
+  {
+    "id": "guangzhou-guangzhoushiboshianjiafe",
+    "city": "guangzhou",
+    "name": "广州市博士安家费",
+    "category": "settlement",
+    "amount": {
+      "min": 100000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性/分两期"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "gz-doctor-domestic",
+          "name": "境内博士（10万元，一次性）",
+          "degree": [
+            "博士"
+          ],
+          "schoolRegion": "domestic"
+        },
+        {
+          "id": "gz-doctor-overseas",
+          "name": "境外博士（20万元，分两期）",
+          "degree": [
+            "博士"
+          ],
+          "schoolRegion": "overseas"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "引进之日起2年内（境内）/3年内（境外）",
+      "channel": "https://gzrsj.rsj.gz.gov.cn/vsgzhr/login_home.aspx",
+      "materials": [
+        "户口簿",
+        "博士学历学位证书（持港澳台及国外证书的需同时提交相关鉴定材料）",
+        "劳动合同或聘用协议",
+        "法人证书（非企业单位提供）",
+        "获省财政住房补贴或市级同类资助情况说明及佐证材料"
+      ],
+      "process": [
+        "登录「智慧人才家园」广州市博士博士后管理系统（或广东政务服务网/穗好办APP）",
+        "填写个人资料",
+        "提交法人单位审核",
+        "法人单位提交主管部门审核",
+        "主管部门提交市博管办窗口审核",
+        "公示",
+        "拨付至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://gzrsj.rsj.gz.gov.cn/vsgzhr/login_home.aspx"
+    },
+    "policySource": "穗人才领字〔2020〕8号、粤组通〔2017〕46号",
+    "effectiveDate": "2020-01-01",
+    "notes": "有效（2025年9月公示第四批博士安家费拟发放名单）。具有本市户籍；与市属企事业单位签订3年以上劳动合同；签订劳动合同时年龄35岁以下（含35岁）。境内博士一次性10万元，引进之日起2年内申请；国（境）外引进博士20万元（分两期发放，每期10万元），引进之日起3年内申请。已获省财政住房补贴者不享受。",
+    "location": "广州市",
+    "tier": 1
+  },
+  {
+    "id": "guangzhou-guangzhoushiboshihouyanj",
+    "city": "guangzhou",
+    "name": "广州市博士后研究人员安家费",
+    "category": "settlement",
+    "amount": {
+      "min": 100000,
+      "max": 300000,
+      "unit": "元",
+      "period": "分三期"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "出站后1年内到市属单位工作",
+      "channel": "https://gzrsj.rsj.gz.gov.cn/vsgzhr/login_home.aspx",
+      "materials": [
+        "中国博士后网出站备案证明（境内）/ 博士后进修证明附翻译件（境外）",
+        "聘用协议/劳动合同/增人卡",
+        "博士后证书（境内）/ 博士学位证书（境外）",
+        "留学回国人员证明或驻外使馆推荐意见（境外）",
+        "获市级财政同类资助情况说明及佐证材料"
+      ],
+      "process": [
+        "登录「智慧人才家园」广州市博士博士后管理系统发起申请",
+        "法人单位初审",
+        "主管部门复核",
+        "市人力资源社会保障局审核",
+        "公示5个工作日",
+        "拨付至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://gzrsj.rsj.gz.gov.cn/vsgzhr/login_home.aspx"
+    },
+    "policySource": "穗人社规字〔2024〕5号、粤组通〔2017〕46号",
+    "effectiveDate": "2024-12-24",
+    "notes": "有效（2024年12月23日更新实施办法，有效期至2029年12月23日）。博士后出站人员专属，30万元分三期平均发放（每期10万元），在市属单位全职工作满1年/2年/3年后分别申请各期。出站后1年内到市属单位全职工作签订3年以上合同，或出站后1年内在广州自主创业。已获市级财政其他项目安家费的须扣除已申请金额。",
+    "location": "广州市",
+    "tier": 1
+  },
+  {
+    "id": "guangzhou-guangzhoushizaizhanboshihoush",
+    "city": "guangzhou",
+    "name": "广州市在站博士后研究人员生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 80000,
+      "max": 180000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 35,
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "在站满3个月（第一期）/在站满1年（第二期）",
+      "channel": "https://gzrsj.rsj.gz.gov.cn/vsgzhr/login_home.aspx",
+      "materials": [
+        "博士后研究人员进站备案证明",
+        "博士学位证书",
+        "开题通过佐证材料（第一期）",
+        "中期考核佐证材料（第二期）"
+      ],
+      "process": [
+        "登录「智慧人才家园」广州市博士博士后管理系统发起申请",
+        "法人单位初审",
+        "主管部门复核",
+        "市人力资源社会保障局审核",
+        "公示5个工作日",
+        "拨付至设站单位账户"
+      ],
+      "location": "市级",
+      "url": "https://gzrsj.rsj.gz.gov.cn/vsgzhr/login_home.aspx"
+    },
+    "policySource": "穗人社规字〔2024〕5号",
+    "effectiveDate": "2024-12-24",
+    "notes": "有效（有效期至2029年12月23日）。工作站/分站/市级创新实践基地：每人每年18万元，资助2年（共36万元）；流动站：每人每年8万元，资助2年（共16万元）。一般35周岁以下（人文社科/重点专业/临床医学/企业工作站可放宽至40周岁）。另有一次性科研项目资助20万元。",
+    "location": "广州市",
+    "tier": 1
+  },
+  {
+    "id": "guangzhou-huangpuquqingniandaxuesh",
+    "city": "guangzhou",
+    "name": "黄埔区青年大学生新入户奖励",
+    "category": "talent",
+    "amount": {
+      "min": 20000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "isFirstGuangzhouHukou": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "详见官方通知",
+      "channel": "https://www.hp.gov.cn/",
+      "materials": [
+        "申请表",
+        "身份证",
+        "户口本",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明（满1年）",
+        "银行卡"
+      ],
+      "process": [
+        "登录黄埔数字人社综合服务平台",
+        "填报新入户奖励申请",
+        "上传申报材料（原件彩色扫描件）",
+        "提交所在工作单位核查",
+        "单位核查通过后提交区人社部门",
+        "审核通过后进行公示",
+        "公示无异议后拨付至申请人银行账户"
+      ],
+      "location": "黄埔区",
+      "url": "https://www.hp.gov.cn/"
+    },
+    "policySource": "穗埔组通〔2024〕6号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效（2025年度新入户奖励政策兑现申报已启动）。首次入户广州且入户黄埔区：本科2万、硕士3万、博士5万（一次性）。在黄埔区工作满1年。",
+    "location": "广州市·黄埔区",
+    "tier": 1,
+    "exclusiveGroup": "guangzhou-huangpu-hukou",
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    }
+  },
+  {
+    "id": "guangzhou-nanshaquxinyinjinxuelire",
+    "city": "guangzhou",
+    "name": "南沙区新引进学历人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 30
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 30
+      },
+      "硕士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 30
+      },
+      "博士": {
+        "min": 4000,
+        "max": 4000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 30
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "criterionSets": [
+        {
+          "id": "nansha-bk",
+          "name": "本科（30周岁以下）",
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 30,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "nansha-ss",
+          "name": "硕士（35周岁以下）",
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 35,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "nansha-bs",
+          "name": "博士（40周岁以下）",
+          "degree": [
+            "博士"
+          ],
+          "ageLimit": 40,
+          "ageLimitExclusive": false
+        }
+      ],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常年受理",
+      "channel": "http://www.gzns.gov.cn/zwgk/zcwjjjd/zcdx/content/mpost_10596008.html",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "户口本",
+        "劳动合同",
+        "社保缴纳证明",
+        "银行卡"
+      ],
+      "process": [
+        "登录@南沙人才服务平台微信小程序",
+        "线上申报",
+        "系统自动审核或人工审核",
+        "通过后按月发放（首次申请后连续缴纳社保可免申即享）"
+      ],
+      "location": "南沙区",
+      "url": "http://www.gzns.gov.cn/zwgk/zcwjjjd/zcdx/content/mpost_10596008.html"
+    },
+    "policySource": "穗南开人发〔2024〕4号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效（2025年12月发布2025年度集中申报通知，常年受理）。本科1000元/月、硕士2000元/月、博士4000元/月，均分30个月发放（3年等额）。2025年起开通常年受理通道，首次申请后连续缴纳社保可按月免申即享。本科不超过30周岁、硕士不超过35周岁、博士不超过40周岁。",
+    "location": "广州市·南沙区",
+    "tier": 1
+  },
+  {
+    "id": "guangzhou-huaduquyinjinyouxiurenca",
+    "city": "guangzhou",
+    "name": "花都区引进优秀人才住房补贴",
+    "category": "talent",
+    "amount": {
+      "min": 30000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士"
+      ],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "huaduImportStatus": "after_2023"
+    },
+    "application": {
+      "deadline": "2026-06-30",
+      "channel": "花都区政府微信小程序—人才管家系统",
+      "materials": [
+        "广州市花都区引进优秀人才住房补贴申请表",
+        "有效身份证明（身份证/港澳居民身份证/护照）",
+        "劳动合同复印件",
+        "本人境内银行卡复印件（正反面）",
+        "社会保险费缴纳清单（通过粤省事查询）",
+        "花都区居住证明（房产证明/租赁备案证明/单位宿舍证明）",
+        "人才资质证明（高管任职文书/外国人工作许可证A证/专业技术资格证书/学历学位证书）",
+        "授权委托书（非本人申报时提供）"
+      ],
+      "process": [
+        "进入「花都区政府」微信小程序，点击「人才管家」系统",
+        "从「人才管家」首页点击「人才引进」，选择「花都区引进优秀人才住房补贴」栏目的「我要申报」",
+        "如实填写申请表并上传相关证明材料，经所在单位审核后提交",
+        "区人力资源社会保障局审核（材料不符要求的10个工作日内补齐补正）",
+        "审核通过后在花都区人民政府门户网站公示5个工作日",
+        "公示无异议后按年度拨付至个人账户"
+      ],
+      "location": "花都区",
+      "url": "https://www.huadu.gov.cn/zfxxgkml/gzshdqrlzyhshbzj/content/post_10747460.html"
+    },
+    "policySource": "花府办规〔2025〕1号、花人社函〔2025〕269号",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效（2026年3月30日至6月30日受理2023年至2025年新引进优秀人才住房补贴申请）。需满足5类人才之一：①企业家和高级管理人才10万元（分3年，需在区内重点企业担任高管）；②优秀外国专家10万元（分3年，需持外国人工作许可证A证）；③港澳地区优秀人才10万元（分3年，需全球前200高校全日制本科+）；④高级职称人才5万元（分2年，副高级及以上，需新入户花都，≤40周岁）；⑤理工经管类专业博士5万元（分2年，经济学/理学/工学/管理学，需新入户花都，≤40周岁）。引进时间：2023年1月1日至2025年12月31日。需在花都区企业全职工作并连续缴纳社保满6个月。",
+    "location": "广州市·花都区",
+    "tier": 2
+  }
+]
