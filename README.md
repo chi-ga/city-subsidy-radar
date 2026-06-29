@@ -2,7 +2,7 @@
   <img src="frontend/public/logo-new.jpg" alt="城市补贴雷达" width="120">
 </p>
 
-# 城市补贴雷达
+<h1 align="center">城市补贴雷达</h1>
 
 <p align="center">
   <strong>应届毕业生的补贴查询神器</strong>
