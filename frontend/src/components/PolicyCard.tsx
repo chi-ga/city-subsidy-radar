@@ -255,6 +255,13 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
       status: defaultStatus,
     });
   }
+  if (c.employerIndustryRequired) {
+    rows.push({
+      label: '用人单位要求',
+      value: '用人单位须在海淀区注册纳税且属于"1+X+1"现代化产业体系，须先通过审核个人方可申请',
+      status: 'warning',
+    });
+  }
   if (c.huaduImportStatus) {
     rows.push({
       label: '引进时间',
@@ -425,12 +432,19 @@ export function PolicyCard({
                 申请条件
               </h4>
               {conditionRows.map((row, idx) => (
-                <div key={idx} className="flex items-start justify-between gap-3 rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-100">
-                  <span className="text-sm text-slate-700">
-                    <span className="text-slate-400">{row.label}：</span>
-                    <span className="font-medium text-slate-800">{row.value}</span>
+                <div
+                  key={idx}
+                  className={`flex items-start justify-between gap-3 rounded-lg px-3 py-2 shadow-sm ring-1 ${
+                    row.status === 'warning'
+                      ? 'bg-amber-50 ring-amber-200'
+                      : 'bg-white ring-slate-100'
+                  }`}
+                >
+                  <span className={`text-sm ${row.status === 'warning' ? 'text-amber-900' : 'text-slate-700'}`}>
+                    <span className={row.status === 'warning' ? 'text-amber-600' : 'text-slate-400'}>{row.label}：</span>
+                    <span className="font-medium">{row.value}</span>
                   </span>
-                  {showStatusBadges && <StatusBadge status={row.status} />}
+                  {(showStatusBadges || row.status === 'warning') && <StatusBadge status={row.status} />}
                 </div>
               ))}
               {hasCriterionSets && (

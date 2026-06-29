@@ -49,6 +49,11 @@ export interface SubsidyConditions {
   huaduImportStatus?: 'after_2023' | 'before_2023';
   /** 是否要求全日制学历（黄埔入户奖励/南山落户补贴等专用） */
   requiresFullTime?: boolean;
+  /**
+   * 是否要求用人单位属于特定产业体系（仅用于政策卡片展示提醒，不参与匹配逻辑）。
+   * 海淀安居补贴专用：用人单位须属于海淀区"1+X+1"现代化产业体系，且须先通过审核个人方可申请。
+   */
+  employerIndustryRequired?: boolean;
 
   /**
    * "任一集合即匹配"的特殊规则集。

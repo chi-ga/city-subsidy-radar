@@ -203,7 +203,8 @@
       "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": true,
+      "employerIndustryRequired": true
     },
     "application": {
       "deadline": "首次申请：2026年3月1日—3月15日；之后每月1日至10日可线上申请（法定节假日顺延）",
