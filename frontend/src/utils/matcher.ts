@@ -477,9 +477,11 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'shanghai-lingang-anjia': '上海临港安家补贴（只能拿一个学历档次）',
   'shanghai-rent': '上海区级租房补贴（只能在一个区租房）',
   'guangzhou-huangpu-hukou': '广州黄埔入户奖励（只能拿一个学历档次）',
-  'guangzhou-rent': '广州区级租房补贴（只能在一个区租房）',
+  'guangzhou-living': '广州区级生活补贴（只能在一个区享受）',
+  'guangzhou-rent': '广州区级租房/住房补贴（只能在一个区租房）',
   'beijing-rent': '北京区级租房补贴（只能在一个区租房）',
-  'beijing-shunyi-qingchuang': '顺义区"青创7条"入区奖励（只能拿一个学历档次）',
+  'beijing-living': '北京区级生活/入区补贴（只能在一个区享受）',
+  'beijing-talent': '北京区级人才计划（只能入选一个区）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

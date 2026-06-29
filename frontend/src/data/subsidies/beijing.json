@@ -270,7 +270,8 @@
     "effectiveDate": "2025-07-15",
     "notes": "现行有效（2025-2027年度；石人社发〔2025〕1号）。未就业青年见习补贴每月880元；零工就业介绍补贴每人次20元；用人单位招用技能人才补贴等七大板块17项措施。失效时间2027年12月31日。",
     "location": "北京市·石景山区",
-    "tier": 3
+    "tier": 3,
+    "exclusiveGroup": "beijing-living"
   },
   {
     "id": "beijing-beijingchengshifuzhongxi",
@@ -309,7 +310,8 @@
     "effectiveDate": "2025-06-01",
     "notes": "现行有效（2025年6月发布2.0版，新增青年后备人才类别，储备4000余套人才公寓）。人才资金奖励最高100万元；购房补助最高150万元；青年后备人才第一年免租，后两年实行房租阶梯优惠；优先为\"运河英才\"申办落户。需签订3年及以上劳动合同。",
     "location": "北京市·通州区",
-    "tier": 3
+    "tier": 3,
+    "exclusiveGroup": "beijing-talent"
   },
   {
     "id": "beijing-shunyiqu-qingchuang",
@@ -369,7 +371,7 @@
         "period": "一次性"
       }
     },
-    "exclusiveGroup": "beijing-shunyi-qingchuang"
+    "exclusiveGroup": "beijing-living"
   },
   {
     "id": "beijing-changpingquqingnianrenca",
@@ -408,7 +410,8 @@
     "effectiveDate": "2025-01-01",
     "notes": "现行有效（2025年发布，\"昌聚工程\"已升级，增设青年人才专项赛道）。35周岁及以下青年人才；创业补贴2万元起步，最高10万元；硕士生活补贴1000元/月最长1年；博士2000元/月最长1年；\"昌聚工程\"创业赛道50万-100万元；免费工位1年。入选\"昌聚工程\"可获\"昌聚英才卡\"，连续两年每年不超过5万元服务保障资金。",
     "location": "北京市·昌平区",
-    "tier": 2
+    "tier": 2,
+    "exclusiveGroup": "beijing-living"
   },
   {
     "id": "beijing-huairouqurencaizhufangba",
