@@ -114,14 +114,14 @@ export const CITY_NAMES: Record<CityCode, string> = {
 
 // 补贴分类名称映射
 export const CATEGORY_NAMES: Record<SubsidyCategory, string> = {
-  talent: '人才补贴',
+  talent: '人才奖励',
   rent: '租房补贴',
-  buy: '购房补贴',
+  buy: '落户安家',
   living: '生活补贴',
-  employment: '就业补贴',
-  startup: '创业补贴',
-  settlement: '落户补贴',
-  other: '其他补贴',
+  employment: '生活补贴',
+  startup: '创业支持',
+  settlement: '落户安家',
+  other: '生活补贴',
 };
 
 // 地图缓存键名
