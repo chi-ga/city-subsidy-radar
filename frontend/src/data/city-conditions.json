@@ -242,6 +242,21 @@
       "districts": {
         "奉化区": {}
       }
+    },
+    "nanning": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "良庆区": {}
+      }
     }
   }
 }

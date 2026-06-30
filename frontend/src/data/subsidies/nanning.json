@@ -1,0 +1,266 @@
+[
+  {
+    "id": "nanning-shiji-zhuanxiangshenghuobuzhu",
+    "city": "nanning",
+    "name": "大中专院校毕业生专项生活补助",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 10
+    },
+    "conditions": {
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 0,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2022年9月1日—12月31日毕业的申报截止2024年10月31日；2023年、2024年、2025年内毕业的申报截止时间均为2026年10月31日",
+      "channel": "“南宁智慧人社”APP、“南宁人社”微信公众号、“南宁智慧人社”微信小程序、南宁人社网上办事大厅",
+      "materials": [
+        "《南宁市大中专院校毕业生专项生活补助申报表》扫描件或照片",
+        "劳动合同原件扫描件或照片",
+        "毕业证原件扫描件或照片（或《教育部学历证书电子注册备案表》）",
+        "国（境）外院校毕业生需提供教育部留学服务中心学历学位认证书",
+        "社会保障卡原件正反面扫描件或照片"
+      ],
+      "process": [
+        "登录“南宁智慧人社”APP、微信公众号或小程序、网上办事大厅申报",
+        "填写信息并上传材料",
+        "审核通过后按月发放"
+      ],
+      "location": "市级",
+      "url": "https://ggfw.nn12333.com:8081/nnmh/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2023-08-01",
+    "notes": "有效。2022年9月1日—2025年12月31日期间毕业的全日制大专及以上、中专/中职/技校应届毕业生，以及取得国（境）外学士及以上层次学历学位证书的毕业生。毕业一年内新引进至南宁市重点园区重点企业就业，签订1年及以上劳动合同，连续缴纳企业职工基本养老保险3个月及以上，申报时仍在该企业就业。未享受过产业领域急需紧缺青年人才生活补助、2022年度应届高校毕业生万元就业奖励。每月1000元（税前），最长10个月，最高10000元。",
+    "location": "南宁市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanning-shiji-wanyuanjiuyeyingli",
+    "city": "nanning",
+    "name": "高校毕业生万元就业奖励",
+    "category": "employment",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 10
+    },
+    "conditions": {
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 0,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "个人申报截止时间至2023年10月31日，后续不再受理新申请",
+      "channel": "“南宁智慧人社”APP、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
+      "materials": [
+        "劳动合同扫描件或照片",
+        "毕业证扫描件或照片（或《教育部学历证书电子注册备案表》）",
+        "留学回国毕业生提供教育部留学服务中心学历学位认证书"
+      ],
+      "process": [
+        "登录“南宁智慧人社”APP、微信公众号或小程序申报",
+        "县（市、区）、开发区人社部门初审",
+        "南宁市人才服务管理办公室复核、公示5个工作日",
+        "拨付至社会保障卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://m.nn.bendibao.com/live/63843.shtm"
+    },
+    "policySource": "南府规〔2022〕10号",
+    "effectiveDate": "2022-06-09",
+    "notes": "已截止。2022年内毕业的全日制普通高校大专生、本科生、研究生及国家统一下达招生计划的非全日制研究生，以及2022年内取得国（境）外学士以上层次学历学位证书的留学回国毕业生。就业企业在南宁市重点开发区（高新区、经开区、东盟经开区、五象新区）、东部产业新城登记注册，统计关系、纳税关系纳入以上辖区管理。签订1年及以上劳动合同，连续缴纳企业职工基本养老保险3个月及以上。每月1000元，最长10个月，最高10000元；2023年7月31日后未享受满10个月的不再继续发放。仅作为历史政策展示。",
+    "location": "南宁市·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanning-liangqingqingqu-chuangyebuzhu",
+    "city": "nanning",
+    "name": "高校毕业生一次性创业扶持补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 0,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "企业正常运营6个月（含）以上，且注册登记日距申请之日不超过18个月（含）",
+      "channel": "“广西人社服务”微信公众号、“广西人社”APP、南宁市各级人社服务大厅",
+      "materials": [
+        "《高校毕业生一次性创业扶持补贴申请表》",
+        "有效居民身份证或社会保障卡",
+        "高校毕业生提供毕业证书，毕业年度的学生提供《学生证》或学校证明（核原件）",
+        "营业执照（可通过部门内部核查的，无需申请人提供）",
+        "体现企业正常经营6个月（含）以上的材料（企业发放工资银行流水、进销货单据等），如可查询企业社会保险缴费情况的，可免提供生产经营情况佐证材料",
+        "创业者所创企业的银行基本账户或创业者本人社会保障卡金融账户复印件"
+      ],
+      "process": [
+        "准备申请材料",
+        "线上通过“广西人社服务”微信公众号或“广西人社”APP申报，或线下到人社服务大厅窗口提交",
+        "窗口预审",
+        "财政部门复核",
+        "拨付至申请人银行账户"
+      ],
+      "location": "良庆区",
+      "url": "http://www.liangqing.gov.cn/zwfw/bmfw/yjsfw/jycy/cybtsl/"
+    },
+    "policySource": "桂人社规〔2022〕3号",
+    "effectiveDate": "2022",
+    "notes": "有效。广西统一政策，南宁各区均可申领，办理地点为企业注册地所在城区。首次在设区市辖区内创办小微企业，自工商注册登记之日起正常运营6个月（含）以上，注册登记日距申请之日不超过18个月（含），申请时仍在经营。毕业年度和毕业5年内高校毕业生。同一人员创办多个创业实体只享受一次；同一创业地址多个创业实体仅1家享受。与市级生活补助、就业奖励可叠加享受。",
+    "location": "南宁市·良庆区",
+    "tier": 1,
+    "exclusiveGroup": "nanning-district"
+  },
+  {
+    "id": "nanning-shiji-qingnianrencaishenghuobuzhu",
+    "city": "nanning",
+    "name": "产业领域急需紧缺青年人才生活补助",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 12
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "benke",
+          "name": "全日制本科/技师/初级职称",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士/高级技师/中级职称",
+          "degree": [
+            "硕士"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 20000,
+            "max": 20000,
+            "unit": "元",
+            "period": "每年",
+            "durationMonths": 12
+          }
+        },
+        {
+          "id": "boshi",
+          "name": "博士/副高级及以上职称",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "每年",
+            "durationMonths": 12
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "须在符合上述条件之日起6个月内申报",
+      "channel": "南宁人社网上办事大厅、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
+      "materials": [
+        "劳动合同扫描件或照片",
+        "毕业证、学位证扫描件或照片",
+        "专业技术资格证书、职业技能等级证书、任职文件扫描件或照片（如有）",
+        "社会保障卡（需开通金融功能）"
+      ],
+      "process": [
+        "个人登录南宁人社网上办事大厅或微信公众号、微信小程序申报",
+        "首次引才单位网上核验确认",
+        "人社部门审核、公示5个工作日",
+        "拨付至申请人社会保障卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://ggfw.nn12333.com:8081/nnmh/"
+    },
+    "policySource": "南人社发〔2026〕1号",
+    "effectiveDate": "2026-01-12",
+    "notes": "有效。南人社发〔2026〕1号。首次引进到《南宁市产业发展急需紧缺人才企业名录》企业（或名录以外南宁市其他企事业单位的应届博士），签订3年及以上劳动合同，连续缴纳职工基本养老保险6个月及以上，年龄40周岁（含）以下，申报时仍在首次引才单位就业。本科一次性1万元；硕士每年2万元、最高10万元；博士/副高每年5万元、最高25万元。本科/硕士要求全日制（2017年起国家统一下达招生计划的非全日制硕士也可）。已享受青年人才生活补助但同时符合高层次人才首次购房补贴及毕业生专项生活补助条件的，按“就高不重复”原则补足差额。",
+    "location": "南宁市·市级",
+    "tier": 2,
+    "exclusiveGroup": "",
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 12
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 12
+      }
+    }
+  }
+]

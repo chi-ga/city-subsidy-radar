@@ -18,8 +18,9 @@ const COVERED_CITIES = [
   { code: 'changsha', name: '长沙', count: 4 },
   { code: 'chengdu', name: '成都', count: 13 },
   { code: 'jinan', name: '济南', count: 5 },
-  { code: 'shaoxing', name: '绍兴', count: 24 },
-  { code: 'zhuhai', name: '珠海', count: 8 },
+  { code: 'shaoxing', name: '绍兴', count: 73 },
+  { code: 'zhuhai', name: '珠海', count: 9 },
+  { code: 'nanning', name: '南宁', count: 6 },
 ];
 
 export default function CityListFallback({ onCityClick }: CityListFallbackProps) {

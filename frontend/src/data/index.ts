@@ -16,6 +16,7 @@ import chengdu from './subsidies/chengdu.json';
 import jinan from './subsidies/jinan.json';
 import shaoxing from './subsidies/shaoxing.json';
 import zhuhai from './subsidies/zhuhai.json';
+import nanning from './subsidies/nanning.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
@@ -39,6 +40,7 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   jinan: jinan as Subsidy[],
   shaoxing: shaoxing as Subsidy[],
   zhuhai: zhuhai as Subsidy[],
+  nanning: nanning as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -187,6 +189,7 @@ export function getCityLevelLocation(city: string): string {
     jinan: '济南市',
     shaoxing: '绍兴市',
     zhuhai: '珠海市',
+    nanning: '南宁市',
   };
   return map[city] || '';
 }

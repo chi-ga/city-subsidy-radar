@@ -110,6 +110,17 @@ export interface CriterionSet {
   identityType?: IdentityType[];
   /** 首次在深就业创业时间需不早于该日期（用于深圳 2026 青年人才新政），格式 YYYY-MM-DD */
   firstShenzhenEmploymentAfter?: string;
+  /** 是否要求全日制学历（用于集合内区分） */
+  requiresFullTime?: boolean;
+  /**
+   * 该认定标准对应的金额。当同一政策不同认定标准的补贴金额不同时，
+   * 匹配到本集合时使用该金额替代外层 amount/tieredAmount。
+   */
+  amount?: SubsidyAmount;
+  /**
+   * 该认定标准对应的按学历分档金额。与 amount 同时存在时优先使用本字段。
+   */
+  tieredAmount?: Partial<Record<Degree, SubsidyAmount>>;
 }
 
 export interface SubsidyApplication {

@@ -120,7 +120,8 @@ export type CityCode =
   | 'chengdu'
   | 'jinan'
   | 'shaoxing'
-  | 'zhuhai';
+  | 'zhuhai'
+  | 'nanning';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -142,6 +143,7 @@ export const CITY_NAMES: Record<CityCode, string> = {
   jinan: '济南',
   shaoxing: '绍兴',
   zhuhai: '珠海',
+  nanning: '南宁',
 };
 
 // 补贴分类名称映射

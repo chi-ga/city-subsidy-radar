@@ -1,18 +1,40 @@
 [
   {
-    "id": "shaoxing-yuecheng-anjia-博士",
+    "id": "shaoxing-yuecheng-anjia",
     "city": "shaoxing",
-    "name": "越城区高校毕业生安家补贴（博士）",
+    "name": "越城区高校毕业生安家补贴",
     "category": "settlement",
     "amount": {
-      "min": 40000,
+      "min": 6000,
       "max": 40000,
       "unit": "元",
       "period": "每年"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "本科": {
+        "min": 15000,
+        "max": 15000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "博士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "每年"
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
@@ -42,221 +64,56 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制博士每年40000元，补助三年（合计120000元）。首次在越城区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
+    "notes": "有效。全日制博士每年40000元，补助三年（合计120000元）。首次在越城区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。 全日制双一流本科每年30000元；全日制专科每年6000元。",
     "location": "绍兴市·越城区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-yuecheng-anjia-硕士",
+    "id": "shaoxing-yuecheng-zulin",
     "city": "shaoxing",
-    "name": "越城区高校毕业生安家补贴（硕士）",
-    "category": "settlement",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/28056.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制硕士每年30000元，补助三年（合计90000元）。首次在越城区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-anjia-双一流本科",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生安家补贴（“双一流”本科）",
-    "category": "settlement",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/28056.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制双一流本科每年30000元，补助三年（合计90000元）。首次在越城区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-anjia-其他本科",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生安家补贴（其他本科/技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 15000,
-      "max": 15000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/28056.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制其他本科每年15000元，补助三年（合计45000元）。首次在越城区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-anjia-专科",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生安家补贴（专科）",
-    "category": "settlement",
-    "amount": {
-      "min": 6000,
-      "max": 6000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/28056.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制专科每年6000元，补助三年（合计18000元）。首次在越城区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-zulin-本科及以上",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生租赁补贴（本科及以上）",
+    "name": "越城区高校毕业生租赁补贴",
     "category": "rent",
     "amount": {
-      "min": 500,
+      "min": 300,
       "max": 500,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -285,279 +142,91 @@
     },
     "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
     "effectiveDate": "2022-04-13",
-    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在越城区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
+    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在越城区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。 本科及以上500元/月，最长36个月；专科300元/月。",
     "location": "绍兴市·越城区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-yuecheng-zulin-专科",
+    "id": "shaoxing-yuecheng-fangpiao",
     "city": "shaoxing",
-    "name": "越城区高校毕业生租赁补贴（专科）",
-    "category": "rent",
-    "amount": {
-      "min": 300,
-      "max": 300,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "符合条件后随时申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "身份证",
-        "劳动合同",
-        "社保缴纳证明",
-        "婚姻及住房情况由系统数据共享核验"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定",
-        "在“租赁补贴发放”模块填写信息提交申请",
-        "人社、建设部门数据共享比对",
-        "按月拨付至市民卡/社保卡"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/19858.shtm"
-    },
-    "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
-    "effectiveDate": "2022-04-13",
-    "notes": "有效。全日制专科每人每月300元，最长36个月。在越城区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-fangpiao-博士",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生房票/购房补贴（博士）",
-    "category": "buy",
-    "amount": {
-      "min": 500000,
-      "max": 500000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "博士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/22697.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2023-01-01",
-    "notes": "有效。全日制博士一次性500000元房票补贴。首次在越城区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-fangpiao-硕士",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生房票/购房补贴（硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 200000,
-      "max": 200000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/22697.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2023-01-01",
-    "notes": "有效。全日制硕士一次性200000元房票补贴。首次在越城区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-fangpiao-双一流本科",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生房票补贴（“双一流”本科）",
-    "category": "buy",
-    "amount": {
-      "min": 200000,
-      "max": 200000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/22697.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2023-01-01",
-    "notes": "有效。全日制双一流本科一次性200000元房票补贴。首次在越城区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-fangpiao-其他本科",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生房票/购房补贴（其他本科/技师）",
-    "category": "buy",
-    "amount": {
-      "min": 150000,
-      "max": 150000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "越城区",
-      "url": "http://m.sx.bendibao.com/live/22697.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2023-01-01",
-    "notes": "有效。全日制其他本科一次性150000元房票补贴。首次在越城区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·越城区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-yuecheng-fangpiao-专科",
-    "city": "shaoxing",
-    "name": "越城区高校毕业生房票/购房补贴（专科）",
+    "name": "越城区高校毕业生房票/购房补贴",
     "category": "buy",
     "amount": {
       "min": 60000,
-      "max": 60000,
+      "max": 500000,
       "unit": "元",
       "period": "一次性"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "本科": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 500000,
+        "max": 500000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
     "conditions": {
       "degree": [
-        "专科"
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "shuangyiliu-benke",
+          "name": "全日制“双一流”本科",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 200000,
+            "max": 200000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "全日制其他本科",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 150000,
+            "max": 150000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "购房后申请",
@@ -584,25 +253,47 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2023-01-01",
-    "notes": "有效。全日制专科一次性60000元房票补贴。首次在越城区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
+    "notes": "有效；全日制“双一流”本科一次性200000元。全日制博士一次性500000元房票补贴。首次在越城区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。 一次性发放。",
     "location": "绍兴市·越城区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-keqiao-anjia-博士",
+    "id": "shaoxing-keqiao-anjia",
     "city": "shaoxing",
-    "name": "柯桥区高校毕业生安家补贴（博士）",
+    "name": "柯桥区高校毕业生安家补贴",
     "category": "settlement",
     "amount": {
-      "min": 40000,
+      "min": 6000,
       "max": 40000,
       "unit": "元",
       "period": "每年"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "博士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "每年"
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
@@ -632,221 +323,56 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制博士每年40000元，补助三年（合计120000元）。首次在柯桥区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
+    "notes": "有效。全日制博士每年40000元，补助三年（合计120000元）。首次在柯桥区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。 全日制双一流本科每年25000元；全日制专科每年6000元。",
     "location": "绍兴市·柯桥区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-keqiao-anjia-硕士",
+    "id": "shaoxing-keqiao-zulin",
     "city": "shaoxing",
-    "name": "柯桥区高校毕业生安家补贴（硕士）",
-    "category": "settlement",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "柯桥区",
-      "url": "https://m.163.com/local/article/H9VR9V2104099D9R.html"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制硕士每年30000元，补助三年（合计90000元）。首次在柯桥区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-anjia-双一流本科",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生安家补贴（“双一流”本科）",
-    "category": "settlement",
-    "amount": {
-      "min": 25000,
-      "max": 25000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "柯桥区",
-      "url": "https://m.163.com/local/article/H9VR9V2104099D9R.html"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制双一流本科每年25000元，补助三年（合计75000元）。首次在柯桥区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-anjia-其他本科",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生安家补贴（其他本科/技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 10000,
-      "max": 10000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "柯桥区",
-      "url": "https://m.163.com/local/article/H9VR9V2104099D9R.html"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制其他本科每年10000元，补助三年（合计30000元）。首次在柯桥区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-anjia-专科",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生安家补贴（专科）",
-    "category": "settlement",
-    "amount": {
-      "min": 6000,
-      "max": 6000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "柯桥区",
-      "url": "https://m.163.com/local/article/H9VR9V2104099D9R.html"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制专科每年6000元，补助三年（合计18000元）。首次在柯桥区工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-zulin-本科及以上",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生租赁补贴（本科及以上）",
+    "name": "柯桥区高校毕业生租赁补贴",
     "category": "rent",
     "amount": {
-      "min": 500,
+      "min": 300,
       "max": 500,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -875,76 +401,84 @@
     },
     "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
     "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在柯桥区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
+    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在柯桥区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。 本科及以上500元/月，最长36个月；专科300元/月。",
     "location": "绍兴市·柯桥区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-keqiao-zulin-专科",
+    "id": "shaoxing-keqiao-fangpiao",
     "city": "shaoxing",
-    "name": "柯桥区高校毕业生租赁补贴（专科）",
-    "category": "rent",
-    "amount": {
-      "min": 300,
-      "max": 300,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "符合条件后随时申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "身份证",
-        "劳动合同",
-        "社保缴纳证明",
-        "婚姻及住房情况由系统数据共享核验"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定",
-        "在“租赁补贴发放”模块填写信息提交申请",
-        "人社、建设部门数据共享比对",
-        "按月拨付至市民卡/社保卡"
-      ],
-      "location": "柯桥区",
-      "url": "http://m.sx.bendibao.com/live/19960.shtm"
-    },
-    "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制专科每人每月300元，最长36个月。在柯桥区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-fangpiao-博士",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生房票/购房补贴（博士）",
+    "name": "柯桥区高校毕业生房票/购房补贴",
     "category": "buy",
     "amount": {
-      "min": 500000,
+      "min": 50000,
       "max": 500000,
       "unit": "元",
       "period": "一次性"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 500000,
+        "max": 500000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
     "conditions": {
       "degree": [
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "shuangyiliu-benke",
+          "name": "全日制“双一流”本科",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "全日制其他本科",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "购房后申请",
@@ -971,422 +505,54 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制博士一次性500000元房票补贴。首次在柯桥区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
+    "notes": "有效；全日制“双一流”本科一次性100000元。全日制博士一次性500000元房票补贴。首次在柯桥区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。 全日制双一流本科10万元。",
     "location": "绍兴市·柯桥区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-keqiao-fangpiao-硕士",
+    "id": "shaoxing-shangyu-anjia",
     "city": "shaoxing",
-    "name": "柯桥区高校毕业生房票/购房补贴（硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 200000,
-      "max": 200000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "柯桥区",
-      "url": "http://m.sx.bendibao.com/live/22764.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制硕士一次性200000元房票补贴。首次在柯桥区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-fangpiao-双一流本科",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生房票补贴（“双一流”本科）",
-    "category": "buy",
-    "amount": {
-      "min": 100000,
-      "max": 100000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "柯桥区",
-      "url": "http://m.sx.bendibao.com/live/22764.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制双一流本科一次性100000元房票补贴。首次在柯桥区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-keqiao-fangpiao-其他本科",
-    "city": "shaoxing",
-    "name": "柯桥区高校毕业生房票/购房补贴（其他本科/技师）",
-    "category": "buy",
-    "amount": {
-      "min": 50000,
-      "max": 50000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "柯桥区",
-      "url": "http://m.sx.bendibao.com/live/22764.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2022-01-01",
-    "notes": "有效。全日制其他本科一次性50000元房票补贴。首次在柯桥区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·柯桥区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-anjia-博士",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生安家补贴（博士）",
-    "category": "settlement",
-    "amount": {
-      "min": 50000,
-      "max": 50000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "博士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/18951.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制博士每年50000元，补助5年（本科及以上合计250000元，专科合计150000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-anjia-硕士",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生安家补贴（硕士）",
-    "category": "settlement",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/18951.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制硕士每年30000元，补助5年（本科及以上合计150000元，专科合计90000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-anjia-双一流本科",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生安家补贴（“双一流”本科）",
-    "category": "settlement",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/18951.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制双一流本科每年30000元，补助5年（本科及以上合计150000元，专科合计90000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-anjia-其他本科",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生安家补贴（其他本科/技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 20000,
-      "max": 20000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/18951.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制其他本科每年20000元，补助5年（本科及以上合计100000元，专科合计60000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-anjia-技师",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生安家补贴（技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 15000,
-      "max": 15000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/18951.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制技师每年15000元，补助5年（本科及以上合计75000元，专科合计45000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-anjia-专科",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生安家补贴（专科）",
+    "name": "上虞区高校毕业生安家补贴",
     "category": "settlement",
     "amount": {
       "min": 6000,
-      "max": 6000,
+      "max": 50000,
       "unit": "元",
       "period": "每年"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 6000,
+        "max": 6000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "每年"
+      }
+    },
     "conditions": {
       "degree": [
-        "专科"
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
@@ -1415,26 +581,56 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制专科每年6000元，补助3年（本科及以上合计18000元，专科合计18000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。",
+    "notes": "有效。全日制博士每年50000元，补助5年（本科及以上合计250000元，专科合计150000元）。2021年12月31日后首次在上虞工作，签订5年以上劳动合同，承诺在虞工作5年并缴纳社保。 全日制双一流本科每年30000元；技师每年15000元。",
     "location": "绍兴市·上虞区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-shangyu-zulin-本科及以上",
+    "id": "shaoxing-shangyu-zulin",
     "city": "shaoxing",
-    "name": "上虞区高校毕业生租赁补贴（本科及以上）",
+    "name": "上虞区高校毕业生租赁补贴",
     "category": "rent",
     "amount": {
-      "min": 500,
+      "min": 300,
       "max": 500,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -1463,279 +659,92 @@
     },
     "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
     "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在上虞区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
+    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在上虞区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。 本科及以上500元/月，最长36个月；专科300元/月。",
     "location": "绍兴市·上虞区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-shangyu-zulin-专科",
+    "id": "shaoxing-shangyu-fangpiao",
     "city": "shaoxing",
-    "name": "上虞区高校毕业生租赁补贴（专科）",
-    "category": "rent",
-    "amount": {
-      "min": 300,
-      "max": 300,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "符合条件后随时申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "身份证",
-        "劳动合同",
-        "社保缴纳证明",
-        "婚姻及住房情况由系统数据共享核验"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定",
-        "在“租赁补贴发放”模块填写信息提交申请",
-        "人社、建设部门数据共享比对",
-        "按月拨付至市民卡/社保卡"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/26738.shtm"
-    },
-    "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
-    "effectiveDate": "2021-12-31",
-    "notes": "有效。全日制专科每人每月300元，最长36个月。在上虞区企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-fangpiao-博士",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生房票/购房补贴（博士）",
+    "name": "上虞区高校毕业生房票/购房补贴",
     "category": "buy",
     "amount": {
-      "min": 700000,
+      "min": 50000,
       "max": 700000,
       "unit": "元",
       "period": "一次性"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "本科": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 350000,
+        "max": 350000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 700000,
+        "max": 700000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
     "conditions": {
       "degree": [
-        "博士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/28160.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制博士一次性700000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-fangpiao-硕士",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生房票/购房补贴（硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 350000,
-      "max": 350000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/28160.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制硕士一次性350000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-fangpiao-双一流本科",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生房票补贴（“双一流”本科）",
-    "category": "buy",
-    "amount": {
-      "min": 250000,
-      "max": 250000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/28160.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制双一流本科一次性250000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-fangpiao-其他本科",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生房票/购房补贴（其他本科/技师）",
-    "category": "buy",
-    "amount": {
-      "min": 150000,
-      "max": 150000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/28160.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制其他本科一次性150000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shangyu-fangpiao-技师",
-    "city": "shaoxing",
-    "name": "上虞区高校毕业生房票/购房补贴（技师）",
-    "category": "buy",
-    "amount": {
-      "min": 120000,
-      "max": 120000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士",
         "技师"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "shuangyiliu-benke",
+          "name": "全日制“双一流”本科",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 250000,
+            "max": 250000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "全日制其他本科",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 150000,
+            "max": 150000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "购房后申请",
@@ -1762,76 +771,58 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制技师一次性120000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
+    "notes": "有效；全日制“双一流”本科一次性250000元。全日制博士一次性700000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。 技师12万元。",
     "location": "绍兴市·上虞区",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-shangyu-fangpiao-专科",
+    "id": "shaoxing-zhuji-anjia",
     "city": "shaoxing",
-    "name": "上虞区高校毕业生房票/购房补贴（专科）",
-    "category": "buy",
-    "amount": {
-      "min": 50000,
-      "max": 50000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "上虞区",
-      "url": "http://m.sx.bendibao.com/live/28160.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制专科一次性50000元房票补贴。首次在上虞区工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·上虞区",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-anjia-博士",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生安家补贴（博士）",
+    "name": "诸暨市高校毕业生安家补贴",
     "category": "settlement",
     "amount": {
-      "min": 4000,
+      "min": 500,
       "max": 4000,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 2500,
+        "max": 2500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 4000,
+        "max": 4000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
@@ -1861,274 +852,56 @@
     },
     "policySource": "诸暨人才办〔2024〕4号",
     "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制博士每月4000元，为期3年（合计144000元）。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。除博士及选调生、选聘生外，须到企业、科研院所工作；适用范围不包括房地产业、金融、通信、电力、石化、烟草等企业。",
+    "notes": "有效。全日制博士每月4000元，为期3年（合计144000元）。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。除博士及选调生、选聘生外，须到企业、科研院所工作；适用范围不包括房地产业、金融、通信、电力、石化、烟草等企业。 全日制双一流本科2100元/月；7大行业专科800元/月。",
     "location": "绍兴市·诸暨市",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-zhuji-anjia-硕士",
+    "id": "shaoxing-zhuji-zulin",
     "city": "shaoxing",
-    "name": "诸暨市高校毕业生安家补贴（硕士）",
-    "category": "settlement",
-    "amount": {
-      "min": 2500,
-      "max": 2500,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26804.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制硕士每月2500元，为期3年（合计90000元）。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。除博士及选调生、选聘生外，须到企业、科研院所工作；适用范围不包括房地产业、金融、通信、电力、石化、烟草等企业。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-anjia-双一流本科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生安家补贴（“双一流”本科）",
-    "category": "settlement",
-    "amount": {
-      "min": 2100,
-      "max": 2100,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26804.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制双一流本科每月2100元，为期3年（合计75600元）。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。除博士及选调生、选聘生外，须到企业、科研院所工作；适用范围不包括房地产业、金融、通信、电力、石化、烟草等企业。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-anjia-其他本科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生安家补贴（其他本科/技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 1000,
-      "max": 1000,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26804.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制其他本科每月1000元，为期3年（合计36000元）。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。除博士及选调生、选聘生外，须到企业、科研院所工作；适用范围不包括房地产业、金融、通信、电力、石化、烟草等企业。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-anjia-7行业专科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生安家补贴（7大行业专科/高职）",
-    "category": "settlement",
-    "amount": {
-      "min": 800,
-      "max": 800,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26804.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。袜业、珍珠、新材料、生命健康、半导体、智能视觉、航空航天企业工作的全日制专科、高职每月800元，为期3年（合计28,800元）。企业行业属性由市经信局（工业）或市发改局（服务业）认定。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-anjia-其他专科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生安家补贴（其他专科/高职）",
-    "category": "settlement",
-    "amount": {
-      "min": 500,
-      "max": 500,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26804.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。其他全日制专科、高职毕业生每月500元，为期3年（合计18,000元）。2024年1月1日后引进到诸暨工作，承诺在诸工作5年，在诸暨缴纳社保。适用范围不包括房地产业、金融、通信、电力、石化、烟草等企业。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-zulin-本科及以上",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生租赁补贴（本科及以上）",
+    "name": "诸暨市高校毕业生租赁补贴",
     "category": "rent",
     "amount": {
-      "min": 500,
+      "min": 300,
       "max": 500,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -2157,76 +930,91 @@
     },
     "policySource": "《诸暨市公共租赁住房管理办法》、绍市建设〔2020〕84号",
     "effectiveDate": "2024-06-01",
-    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在诸暨市企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
+    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在诸暨市企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。 本科及以上500元/月，最长36个月；专科300元/月。",
     "location": "绍兴市·诸暨市",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-zhuji-zulin-专科",
+    "id": "shaoxing-zhuji-fangpiao",
     "city": "shaoxing",
-    "name": "诸暨市高校毕业生租赁补贴（专科）",
-    "category": "rent",
-    "amount": {
-      "min": 300,
-      "max": 300,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "符合条件后随时申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "身份证",
-        "劳动合同",
-        "社保缴纳证明",
-        "婚姻及住房情况由系统数据共享核验"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定",
-        "在“租赁补贴发放”模块填写信息提交申请",
-        "人社、建设部门数据共享比对",
-        "按月拨付至市民卡/社保卡"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/25751.shtm"
-    },
-    "policySource": "《诸暨市公共租赁住房管理办法》、绍市建设〔2020〕84号",
-    "effectiveDate": "2024-06-01",
-    "notes": "有效。全日制专科每人每月300元，最长36个月。在诸暨市企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-fangpiao-博士",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生房票/购房补贴（博士）",
+    "name": "诸暨市高校毕业生房票/购房补贴",
     "category": "buy",
     "amount": {
-      "min": 500000,
+      "min": 30000,
       "max": 500000,
       "unit": "元",
       "period": "一次性"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "本科": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 250000,
+        "max": 250000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 500000,
+        "max": 500000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "shuangyiliu-benke",
+          "name": "全日制“双一流”本科",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 150000,
+            "max": 150000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "全日制其他本科",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "购房后申请",
@@ -2253,477 +1041,54 @@
     },
     "policySource": "诸暨人才办〔2024〕4号",
     "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制博士一次性500000元房票补贴或购房补贴。2024年1月1日后引进到诸暨企业、科研院所工作，在诸暨缴纳养老保险后购买名下首套住房。在新材料、生命健康、半导体、智能视觉、航空航天企业工作的，博士上浮20%，硕士和“双一流”/QS前100本科上浮10%。",
+    "notes": "有效；全日制“双一流”本科一次性150000元。全日制博士一次性500000元房票补贴或购房补贴。2024年1月1日后引进到诸暨企业、科研院所工作，在诸暨缴纳养老保险后购买名下首套住房。在新材料、生命健康、半导体、智能视觉、航空航天企业工作的，博士上浮20%，硕士和“双一流”/QS前100本科上浮10%。 全日制双一流硕士30万元；全日制双一流本科15万元。",
     "location": "绍兴市·诸暨市",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-zhuji-fangpiao-双一流硕士",
+    "id": "shaoxing-shengzhou-anjia",
     "city": "shaoxing",
-    "name": "诸暨市高校毕业生房票/购房补贴（“双一流”/QS前100硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 300000,
-      "max": 300000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26835.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制双一流硕士一次性300000元房票补贴或购房补贴。2024年1月1日后引进到诸暨企业、科研院所工作，在诸暨缴纳养老保险后购买名下首套住房。在新材料、生命健康、半导体、智能视觉、航空航天企业工作的，博士上浮20%，硕士和“双一流”/QS前100本科上浮10%。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-fangpiao-硕士",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生房票/购房补贴（硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 250000,
-      "max": 250000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26835.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制硕士一次性250000元房票补贴或购房补贴。2024年1月1日后引进到诸暨企业、科研院所工作，在诸暨缴纳养老保险后购买名下首套住房。在新材料、生命健康、半导体、智能视觉、航空航天企业工作的，博士上浮20%，硕士和“双一流”/QS前100本科上浮10%。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-fangpiao-双一流本科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生房票补贴（“双一流”本科）",
-    "category": "buy",
-    "amount": {
-      "min": 150000,
-      "max": 150000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26835.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制双一流本科一次性150000元房票补贴或购房补贴。2024年1月1日后引进到诸暨企业、科研院所工作，在诸暨缴纳养老保险后购买名下首套住房。在新材料、生命健康、半导体、智能视觉、航空航天企业工作的，博士上浮20%，硕士和“双一流”/QS前100本科上浮10%。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-fangpiao-其他本科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生房票/购房补贴（其他本科/技师）",
-    "category": "buy",
-    "amount": {
-      "min": 100000,
-      "max": 100000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26835.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制其他本科一次性100000元房票补贴或购房补贴。2024年1月1日后引进到诸暨企业、科研院所工作，在诸暨缴纳养老保险后购买名下首套住房。在新材料、生命健康、半导体、智能视觉、航空航天企业工作的，博士上浮20%，硕士和“双一流”/QS前100本科上浮10%。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-zhuji-fangpiao-7行业专科",
-    "city": "shaoxing",
-    "name": "诸暨市高校毕业生房票/购房补贴（7大行业专科/高职）",
-    "category": "buy",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "诸暨市",
-      "url": "http://m.sx.bendibao.com/live/26835.shtm"
-    },
-    "policySource": "诸暨人才办〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。袜业、珍珠、新材料、生命健康、半导体、智能视觉、航空航天企业工作的全日制专科、高职一次性3万元房票补贴或购房补贴。企业行业属性由市经信局（工业）或市发改局（服务业）认定。2024年1月1日后引进到诸暨工作。",
-    "location": "绍兴市·诸暨市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-anjia-博士",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生安家补贴（博士）",
-    "category": "settlement",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "博士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/19064.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制博士每年30000元，补助三年（合计90000元）。首次在嵊州市工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-anjia-硕士",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生安家补贴（硕士）",
-    "category": "settlement",
-    "amount": {
-      "min": 20000,
-      "max": 20000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/19064.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制硕士每年20000元，补助三年（合计60000元）。首次在嵊州市工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-anjia-双一流本科",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生安家补贴（“双一流”本科）",
-    "category": "settlement",
-    "amount": {
-      "min": 20000,
-      "max": 20000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/19064.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制双一流本科每年20000元，补助三年（合计60000元）。首次在嵊州市工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-anjia-其他本科",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生安家补贴（其他本科/技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 10000,
-      "max": 10000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/19064.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制其他本科每年10000元，补助三年（合计30000元）。首次在嵊州市工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-anjia-专科",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生安家补贴（专科）",
+    "name": "嵊州市高校毕业生安家补贴",
     "category": "settlement",
     "amount": {
       "min": 6000,
-      "max": 6000,
+      "max": 30000,
       "unit": "元",
       "period": "每年"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 6000,
+        "max": 6000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "博士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "每年"
+      }
+    },
     "conditions": {
       "degree": [
-        "专科"
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
@@ -2752,26 +1117,56 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制专科每年6000元，补助三年（合计18000元）。首次在嵊州市工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
+    "notes": "有效。全日制博士每年30000元，补助三年（合计90000元）。首次在嵊州市工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。 全日制双一流本科每年20000元。",
     "location": "绍兴市·嵊州市",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-shengzhou-zulin-本科及以上",
+    "id": "shaoxing-shengzhou-zulin",
     "city": "shaoxing",
-    "name": "嵊州市高校毕业生租赁补贴（本科及以上）",
+    "name": "嵊州市高校毕业生租赁补贴",
     "category": "rent",
     "amount": {
-      "min": 500,
+      "min": 300,
       "max": 500,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -2800,76 +1195,84 @@
     },
     "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
     "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在嵊州市企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
+    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在嵊州市企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。 本科及以上500元/月，最长36个月；专科300元/月。",
     "location": "绍兴市·嵊州市",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-shengzhou-zulin-专科",
+    "id": "shaoxing-shengzhou-fangpiao",
     "city": "shaoxing",
-    "name": "嵊州市高校毕业生租赁补贴（专科）",
-    "category": "rent",
-    "amount": {
-      "min": 300,
-      "max": 300,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "符合条件后随时申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "身份证",
-        "劳动合同",
-        "社保缴纳证明",
-        "婚姻及住房情况由系统数据共享核验"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定",
-        "在“租赁补贴发放”模块填写信息提交申请",
-        "人社、建设部门数据共享比对",
-        "按月拨付至市民卡/社保卡"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/20008.shtm"
-    },
-    "policySource": "绍市建设〔2020〕84号、绍市建设〔2024〕5号",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制专科每人每月300元，最长36个月。在嵊州市企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-fangpiao-博士",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生房票/购房补贴（博士）",
+    "name": "嵊州市高校毕业生房票/购房补贴",
     "category": "buy",
     "amount": {
-      "min": 350000,
+      "min": 30000,
       "max": 350000,
       "unit": "元",
       "period": "一次性"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 350000,
+        "max": 350000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
     "conditions": {
       "degree": [
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "shuangyiliu-benke",
+          "name": "全日制“双一流”本科",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 150000,
+            "max": 150000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "全日制其他本科",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "购房后申请",
@@ -2896,178 +1299,53 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制博士一次性350000元房票补贴。首次在嵊州市工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
+    "notes": "有效；全日制“双一流”本科一次性150000元。全日制博士一次性350000元房票补贴。首次在嵊州市工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。 全日制双一流本科15万元。",
     "location": "绍兴市·嵊州市",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-shengzhou-fangpiao-硕士",
+    "id": "shaoxing-xinchang-anjia",
     "city": "shaoxing",
-    "name": "嵊州市高校毕业生房票/购房补贴（硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 200000,
-      "max": 200000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/22989.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制硕士一次性200000元房票补贴。首次在嵊州市工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-fangpiao-双一流本科",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生房票补贴（“双一流”本科）",
-    "category": "buy",
-    "amount": {
-      "min": 150000,
-      "max": 150000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/22989.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制双一流本科一次性150000元房票补贴。首次在嵊州市工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-shengzhou-fangpiao-其他本科",
-    "city": "shaoxing",
-    "name": "嵊州市高校毕业生房票/购房补贴（其他本科/技师）",
-    "category": "buy",
-    "amount": {
-      "min": 30000,
-      "max": 30000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "嵊州市",
-      "url": "http://m.sx.bendibao.com/live/22989.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-10-12",
-    "notes": "有效。全日制其他本科一次性30000元房票补贴。首次在嵊州市工作，签订3年（上虞5年）以上劳动合同，承诺在绍工作5年并缴纳社保，未享受经济适用房或房改政策，在工作地首次购房。",
-    "location": "绍兴市·嵊州市",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-anjia-博士",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生安家补贴（博士）",
+    "name": "新昌县高校毕业生安家补贴",
     "category": "settlement",
     "amount": {
-      "min": 20000,
+      "min": 5000,
       "max": 20000,
       "unit": "元",
       "period": "每年"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "硕士": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "博士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "每年"
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
@@ -3097,221 +1375,56 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2021-01-01",
-    "notes": "有效。全日制博士每年20000元，补助三年（合计60000元）。首次在新昌县工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
+    "notes": "有效。全日制博士每年20000元，补助三年（合计60000元）。首次在新昌县工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。 全日制双一流本科每年18000元。",
     "location": "绍兴市·新昌县",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-xinchang-anjia-硕士",
+    "id": "shaoxing-xinchang-zulin",
     "city": "shaoxing",
-    "name": "新昌县高校毕业生安家补贴（硕士）",
-    "category": "settlement",
-    "amount": {
-      "min": 18000,
-      "max": 18000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "新昌县",
-      "url": "http://m.sx.bendibao.com/mip/19198.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-01-01",
-    "notes": "有效。全日制硕士每年18000元，补助三年（合计54000元）。首次在新昌县工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-anjia-双一流本科",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生安家补贴（“双一流”本科）",
-    "category": "settlement",
-    "amount": {
-      "min": 18000,
-      "max": 18000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "新昌县",
-      "url": "http://m.sx.bendibao.com/mip/19198.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-01-01",
-    "notes": "有效。全日制双一流本科每年18000元，补助三年（合计54000元）。首次在新昌县工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-anjia-其他本科",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生安家补贴（其他本科/技师）",
-    "category": "settlement",
-    "amount": {
-      "min": 10000,
-      "max": 10000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "新昌县",
-      "url": "http://m.sx.bendibao.com/mip/19198.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-01-01",
-    "notes": "有效。全日制其他本科每年10000元，补助三年（合计30000元）。首次在新昌县工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-anjia-专科",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生安家补贴（专科）",
-    "category": "settlement",
-    "amount": {
-      "min": 5000,
-      "max": 5000,
-      "unit": "元",
-      "period": "每年"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "社保每满一年后申请当年度补贴",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《高校毕业生安家补贴申请表》",
-        "申请人身份证",
-        "与用人单位签订的劳动合同",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "企业工商营业执照及纳税证明（部分渠道）",
-        "来绍工作5年承诺书（部分渠道）"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定，系统自动无感智兑",
-        "或登录“越快兑”搜索“安家补贴”选择对应地区",
-        "在线申报并上传材料",
-        "人社部门审核",
-        "公示后拨付至市民卡"
-      ],
-      "location": "新昌县",
-      "url": "http://m.sx.bendibao.com/mip/19198.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2021-01-01",
-    "notes": "有效。全日制专科每年5000元，补助三年（合计15000元）。首次在新昌县工作，依法缴纳社保，承诺在绍工作5年。除博士及选调生外，须到企业、科研院所工作；适用范围不包括房地产及金融、通信、电力、石化、烟草等国有企业。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-zulin-本科及以上",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生租赁补贴（本科及以上）",
+    "name": "新昌县高校毕业生租赁补贴",
     "category": "rent",
     "amount": {
-      "min": 500,
+      "min": 300,
       "max": 500,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
     "conditions": {
       "degree": [
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -3340,76 +1453,84 @@
     },
     "policySource": "绍市建设〔2024〕5号",
     "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在新昌县企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
+    "notes": "有效。全日制本科及以上每人每月500元，最长36个月。在新昌县企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。 本科及以上500元/月，最长36个月；专科300元/月。",
     "location": "绍兴市·新昌县",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"
   },
   {
-    "id": "shaoxing-xinchang-zulin-专科",
+    "id": "shaoxing-xinchang-fangpiao",
     "city": "shaoxing",
-    "name": "新昌县高校毕业生租赁补贴（专科）",
-    "category": "rent",
-    "amount": {
-      "min": 300,
-      "max": 300,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "专科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "符合条件后随时申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "身份证",
-        "劳动合同",
-        "社保缴纳证明",
-        "婚姻及住房情况由系统数据共享核验"
-      ],
-      "process": [
-        "申领“绍兴人才码”完成人才认定",
-        "在“租赁补贴发放”模块填写信息提交申请",
-        "人社、建设部门数据共享比对",
-        "按月拨付至市民卡/社保卡"
-      ],
-      "location": "新昌县",
-      "url": "http://m.sx.bendibao.com/live/23793.shtm"
-    },
-    "policySource": "绍市建设〔2024〕5号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效。全日制专科每人每月300元，最长36个月。在新昌县企业工作，签订3年以上劳动合同并缴纳1个月以上企业社保，在工作所在区/县市无自有住房。享受房票/购房补贴后不再发放。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-fangpiao-博士",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生房票/购房补贴（博士）",
+    "name": "新昌县高校毕业生房票/购房补贴",
     "category": "buy",
     "amount": {
-      "min": 500000,
+      "min": 50000,
       "max": 500000,
       "unit": "元",
       "period": "一次性"
     },
-    "tieredAmount": {},
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 500000,
+        "max": 500000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
     "conditions": {
       "degree": [
+        "本科",
+        "硕士",
         "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "criterionSets": [
+        {
+          "id": "shuangyiliu-benke",
+          "name": "全日制“双一流”本科",
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "全日制其他本科",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "购房后申请",
@@ -3436,160 +1557,7 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2025-01-01",
-    "notes": "有效。全日制博士一次性500000元购房补助。2025年1月1日后首次来新昌企业、科研院所工作，引进前在新昌无社保缴纳记录，签订3年以上劳动合同，承诺在新工作5年，缴纳社保满一年，在新首次购买新建商品住房。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-fangpiao-硕士",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生房票/购房补贴（硕士）",
-    "category": "buy",
-    "amount": {
-      "min": 200000,
-      "max": 200000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "硕士"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "新昌县",
-      "url": "http://sx.bendibao.com/live/20251112/33248.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2025-01-01",
-    "notes": "有效。全日制硕士一次性200000元购房补助。2025年1月1日后首次来新昌企业、科研院所工作，引进前在新昌无社保缴纳记录，签订3年以上劳动合同，承诺在新工作5年，缴纳社保满一年，在新首次购买新建商品住房。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-fangpiao-双一流本科",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生房票补贴（“双一流”本科）",
-    "category": "buy",
-    "amount": {
-      "min": 100000,
-      "max": 100000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "schoolLevel": [
-        "双一流"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "新昌县",
-      "url": "http://sx.bendibao.com/live/20251112/33248.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2025-01-01",
-    "notes": "有效。全日制双一流本科一次性100000元购房补助。2025年1月1日后首次来新昌企业、科研院所工作，引进前在新昌无社保缴纳记录，签订3年以上劳动合同，承诺在新工作5年，缴纳社保满一年，在新首次购买新建商品住房。",
-    "location": "绍兴市·新昌县",
-    "tier": 1,
-    "exclusiveGroup": "shaoxing-district"
-  },
-  {
-    "id": "shaoxing-xinchang-fangpiao-其他本科",
-    "city": "shaoxing",
-    "name": "新昌县高校毕业生房票/购房补贴（其他本科/技师）",
-    "category": "buy",
-    "amount": {
-      "min": 50000,
-      "max": 50000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "tieredAmount": {},
-    "conditions": {
-      "degree": [
-        "本科"
-      ],
-      "requiresFullTime": true,
-      "employmentRequired": true,
-      "householdRequired": false
-    },
-    "application": {
-      "deadline": "购房后申请",
-      "channel": "浙里办APP“绍兴人才码”或越快兑 https://reward.sx.gov.cn/",
-      "materials": [
-        "《人才房票补贴申请表》",
-        "申请人及配偶身份证",
-        "毕业证、学位证、学信网学籍/学历在线验证报告",
-        "劳动合同",
-        "企业工商营业执照及纳税证明",
-        "来越工作5年承诺书",
-        "不动产权证或合同备案证明",
-        "结婚证或户口本（有共同购房人的）"
-      ],
-      "process": [
-        "购房后登录浙里办申领“绍兴人才码”完成人才认定",
-        "在“房票补贴申请”模块填写信息提交申请",
-        "系统自动审批或部门审核，公示",
-        "核发人才购房房票凭证或直接拨付购房补贴",
-        "持房票购买商品住房"
-      ],
-      "location": "新昌县",
-      "url": "http://sx.bendibao.com/live/20251112/33248.shtm"
-    },
-    "policySource": "待核实",
-    "effectiveDate": "2025-01-01",
-    "notes": "有效。全日制其他本科一次性50000元购房补助。2025年1月1日后首次来新昌企业、科研院所工作，引进前在新昌无社保缴纳记录，签订3年以上劳动合同，承诺在新工作5年，缴纳社保满一年，在新首次购买新建商品住房。",
+    "notes": "有效；全日制“双一流”本科一次性100000元。全日制博士一次性500000元购房补助。2025年1月1日后首次来新昌企业、科研院所工作，引进前在新昌无社保缴纳记录，签订3年以上劳动合同，承诺在新工作5年，缴纳社保满一年，在新首次购买新建商品住房。 全日制双一流本科10万元。",
     "location": "绍兴市·新昌县",
     "tier": 1,
     "exclusiveGroup": "shaoxing-district"

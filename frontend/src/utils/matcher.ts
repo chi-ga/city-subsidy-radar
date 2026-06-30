@@ -215,6 +215,13 @@ export function matchCriterionSet(
     }
   }
 
+  // 集合内全日制要求
+  if (set.requiresFullTime) {
+    if (user.isFullTime !== true) {
+      missing.push('全日制要求：需为全日制学历');
+    }
+  }
+
   return { matched: missing.length === 0, missing, applicable: true };
 }
 
@@ -227,13 +234,13 @@ export function matchCriterionSet(
 export function matchByCriterionSets(
   user: UserProfile,
   sets: CriterionSet[]
-): { matched: boolean; missing: string[] } {
+): { matched: boolean; missing: string[]; matchedSet?: CriterionSet } {
   const allMissing = new Set<string>();
   for (const set of sets) {
     const r = matchCriterionSet(user, set);
     if (!r.applicable) continue;
     if (r.matched) {
-      return { matched: true, missing: [] };
+      return { matched: true, missing: [], matchedSet: set };
     }
     for (const m of r.missing) {
       allMissing.add(m);
@@ -390,12 +397,21 @@ export function matchSubsidy(user: UserProfile, subsidy: Subsidy): MatchResultIt
   // 第二步：若存在 criterionSets，则在标准条件已满足的基础上，
   //         要求至少有一个集合"适用且全部条件都满足"（取交集）
   if (subsidy.conditions.criterionSets && subsidy.conditions.criterionSets.length > 0) {
-    const { matched, missing } = matchByCriterionSets(user, subsidy.conditions.criterionSets);
+    const { matched, missing, matchedSet } = matchByCriterionSets(user, subsidy.conditions.criterionSets);
+    // 若匹配到的集合自带金额配置，则优先使用该集合的金额
+    let setTotal = total;
+    let setBreakdown = breakdown;
+    if (matched && matchedSet?.amount) {
+      const setTiered = matchedSet.tieredAmount;
+      const r = calculateTotalAmount(matchedSet.amount, user.degree, setTiered);
+      setTotal = r.total;
+      setBreakdown = r.breakdown;
+    }
     return {
       subsidy,
       matched,
-      matchedAmount: matched ? total : 0,
-      amountBreakdown: matched ? breakdown : undefined,
+      matchedAmount: matched ? setTotal : 0,
+      amountBreakdown: matched ? setBreakdown : undefined,
       missingConditions: missing,
     };
   }
@@ -483,6 +499,11 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'wuhan-district': '武汉区级补贴（只能在一个区享受）',
   'wenzhou-district': '温州区级补贴（只能在一个区享受）',
   'ningbo-district': '宁波区级补贴（只能在一个区享受）',
+  'chengdu-district': '成都区级补贴（只能在一个区享受）',
+  'jiaxing-district': '嘉兴区县补贴（只能在一个区县享受）',
+  'shaoxing-district': '绍兴区县补贴（只能在一个区县享受）',
+  'zhuhai-district': '珠海区级补贴（只能在一个区享受）',
+  'nanning-district': '南宁区级补贴（只能在一个区享受）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

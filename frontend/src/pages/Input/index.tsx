@@ -394,6 +394,7 @@ export default function Input() {
           'jinan',
           'shaoxing',
           'zhuhai',
+          'nanning',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

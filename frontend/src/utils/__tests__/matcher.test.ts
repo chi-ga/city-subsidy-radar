@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { calculateTotalAmount, groupExclusiveItems, getExclusiveGroupName } from '../matcher';
-import type { SubsidyAmount, MatchResultItem } from '../../types';
+import { calculateTotalAmount, groupExclusiveItems, getExclusiveGroupName, matchSubsidy } from '../matcher';
+import type { SubsidyAmount, MatchResultItem, Subsidy, UserProfile } from '../../types';
 
 describe('calculateTotalAmount', () => {
   it('一次性补贴：max 即为总额', () => {
@@ -76,6 +76,75 @@ describe('calculateTotalAmount', () => {
     const amount: SubsidyAmount = { min: 0, max: 0, unit: '元', period: '一次性' };
     const result = calculateTotalAmount(amount);
     expect(result.total).toBe(0);
+  });
+});
+
+describe('matchSubsidy criterionSets amount', () => {
+  const baseSubsidy: Subsidy = {
+    id: 'test-criterion-amount',
+    name: '测试按集合金额',
+    city: 'chengdu',
+    category: 'living',
+    conditions: {
+      degree: ['本科', '硕士', '博士'],
+      ageLimit: 35,
+      employmentRequired: true,
+      criterionSets: [
+        {
+          id: 'benke-shuoshi',
+          name: '本科/硕士研究生',
+          degree: ['本科', '硕士'],
+        },
+        {
+          id: 'boshi-premium',
+          name: '博士研究生（高层次）',
+          degree: ['博士'],
+          amount: { min: 100000, max: 100000, unit: '元', period: '一次性' },
+        },
+      ],
+    },
+    amount: { min: 10000, max: 100000, unit: '元', period: '一次性' },
+    tieredAmount: {
+      本科: { min: 10000, max: 10000, unit: '元', period: '一次性' },
+      硕士: { min: 20000, max: 20000, unit: '元', period: '一次性' },
+      博士: { min: 30000, max: 30000, unit: '元', period: '一次性' },
+    },
+    application: { deadline: '', channel: '', materials: [], location: '市级' },
+    policySource: '',
+    effectiveDate: '',
+    notes: '',
+  };
+
+  it('本科/硕士使用 tieredAmount 金额', () => {
+    const user: UserProfile = {
+      city: 'chengdu',
+      degree: '硕士',
+      school: '北京大学',
+      schoolLevel: ['双一流'],
+      major: '计算机科学与技术',
+      householdStatus: '未落户',
+      employmentStatus: '已就业',
+      age: 30,
+    };
+    const result = matchSubsidy(user, baseSubsidy);
+    expect(result.matched).toBe(true);
+    expect(result.matchedAmount).toBe(20000);
+  });
+
+  it('博士使用 criterionSet 指定金额', () => {
+    const user: UserProfile = {
+      city: 'chengdu',
+      degree: '博士',
+      school: '北京大学',
+      schoolLevel: ['双一流'],
+      major: '计算机科学与技术',
+      householdStatus: '未落户',
+      employmentStatus: '已就业',
+      age: 30,
+    };
+    const result = matchSubsidy(user, baseSubsidy);
+    expect(result.matched).toBe(true);
+    expect(result.matchedAmount).toBe(100000);
   });
 });
 

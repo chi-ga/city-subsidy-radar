@@ -23,6 +23,7 @@ const COVERED_CITIES = [
   { name: '济南市', code: 'jinan', adcode: '370100', count: 3 },
   { name: '绍兴市', code: 'shaoxing', adcode: '330600', count: 73 },
   { name: '珠海市', code: 'zhuhai', adcode: '440400', count: 9 },
+  { name: '南宁市', code: 'nanning', adcode: '450100', count: 6 },
 ];
 
 export default function StaticChinaMap(_props: StaticChinaMapProps) {

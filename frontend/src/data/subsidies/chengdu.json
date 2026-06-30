@@ -1,97 +1,5 @@
 [
   {
-    "id": "chengdu-shiji-boshianjiabutie",
-    "city": "chengdu",
-    "name": "成都市新引进急需紧缺人才安家补贴（2000元/月档）",
-    "category": "settlement",
-    "amount": {
-      "min": 2000,
-      "max": 2000,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "conditions": {
-      "degree": ["博士"],
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "每年5月至7月集中申报，受理上一年度补贴；2026年度申报至2026年7月31日前",
-      "channel": "企业通过成都市急需紧缺人才服务管理系统网上申请",
-      "materials": [
-        "《成都市新引进人才安家补贴申请表》",
-        "企业营业执照",
-        "引进人才有效身份证件复印件",
-        "劳动合同",
-        "个人近6个月连续缴纳社保证明",
-        "《承诺书》",
-        "学历学位证书",
-        "6个月有效期学信网学历认证报告（国（境）外高校学历学位证书的，提供教育部留学服务中心认证报告）",
-        "其他根据审核需要须补充提供的材料"
-      ],
-      "process": [
-        "企业登录成都市急需紧缺人才服务管理系统",
-        "填写人才信息并上传材料",
-        "企业按属地原则提交申请",
-        "审核通过后按月发放"
-      ],
-      "location": "市级",
-      "url": "https://m.cd.bendibao.com/fangchan/210204.shtm"
-    },
-    "policySource": "《成都市引进急需紧缺人才实施办法》（2026年1月1日生效）",
-    "effectiveDate": "2026-01-01",
-    "notes": "有效。取得全日制博士学历学位证书后一年内引进到成都市企业工作，或符合引进当年《成都市人才开发指引》紧缺度3星岗位要求的人才，从引进次月起3年内按月发放2000元/人·月，合计7.2万元。须由企业引进，个人不可单独申报；与新引进人才安家补贴不重复享受。",
-    "location": "成都市",
-    "tier": 1
-  },
-  {
-    "id": "chengdu-shiji-gaocengcianjiabutie",
-    "city": "chengdu",
-    "name": "成都市新引进急需紧缺人才安家补贴（3000元/月档）",
-    "category": "talent",
-    "amount": {
-      "min": 3000,
-      "max": 3000,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
-    },
-    "conditions": {
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": false
-    },
-    "application": {
-      "deadline": "每年5月至7月集中申报，受理上一年度补贴",
-      "channel": "企业通过成都市急需紧缺人才服务管理系统网上申请",
-      "materials": [
-        "《成都市新引进人才安家补贴申请表》",
-        "企业营业执照",
-        "引进人才有效身份证件复印件",
-        "劳动合同",
-        "社保证明",
-        "成都市人才认定证书",
-        "《承诺书》",
-        "其他根据审核需要须补充提供的材料"
-      ],
-      "process": [
-        "企业登录成都市急需紧缺人才服务管理系统",
-        "填写人才信息并上传材料",
-        "提交申请并等待审核",
-        "审核通过后按月发放"
-      ],
-      "location": "市级",
-      "url": "https://m.cd.bendibao.com/fangchan/210205.shtm"
-    },
-    "policySource": "《成都市引进急需紧缺人才实施办法》（2026年1月1日生效）",
-    "effectiveDate": "2026-01-01",
-    "notes": "有效。满足《成都市人才分类目录》A、B、C类条件之一的人才，以成都市人才认定证书为准，从引进次月起3年内按月发放3000元/人·月，合计10.8万元。需先取得成都市高层次人才认定，本系统仅作政策展示入口，不参与自动匹配。",
-    "location": "成都市",
-    "tier": 3
-  },
-  {
     "id": "chengdu-shiji-xianchengxincheng",
     "city": "chengdu",
     "name": "成都县市新城新引进人才生活补贴",
@@ -120,8 +28,13 @@
       }
     },
     "conditions": {
-      "degree": ["本科", "硕士"],
-      "schoolLevel": ["软科前150"],
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "schoolLevel": [
+        "软科前150"
+      ],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true
@@ -228,7 +141,11 @@
       }
     },
     "conditions": {
-      "degree": ["本科", "硕士", "博士"],
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true
@@ -294,7 +211,11 @@
       }
     },
     "conditions": {
-      "degree": ["本科", "硕士", "博士"],
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
       "employmentRequired": true,
       "householdRequired": true,
       "requiresFullTime": true
@@ -345,10 +266,12 @@
       "durationMonths": 36
     },
     "conditions": {
-      "degree": ["博士"],
+      "degree": [
+        "博士"
+      ],
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": false
     },
     "application": {
       "deadline": "待核实",
@@ -402,10 +325,13 @@
       }
     },
     "conditions": {
-      "degree": ["硕士", "博士"],
+      "degree": [
+        "硕士",
+        "博士"
+      ],
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": false
     },
     "application": {
       "deadline": "待核实",
@@ -606,5 +532,88 @@
     "location": "成都市·大邑县",
     "tier": 3,
     "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-shiji-xinyinjijinquexianrenrcai-anjiabutie",
+    "city": "chengdu",
+    "name": "成都市新引进急需紧缺人才安家补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 2000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "全日制博士/紧缺度3星岗位",
+          "degree": [
+            "博士"
+          ],
+          "requiresFullTime": true,
+          "employmentRequired": true
+        },
+        {
+          "id": "gaocengci",
+          "name": "A/B/C类高层次人才",
+          "employmentRequired": true,
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年5月至7月集中申报，受理上一年度补贴；2026年度申报至2026年7月31日前",
+      "channel": "企业通过成都市急需紧缺人才服务管理系统网上申请",
+      "materials": [
+        "《成都市新引进人才安家补贴申请表》",
+        "企业营业执照",
+        "引进人才有效身份证件复印件",
+        "劳动合同",
+        "个人近6个月连续缴纳社保证明",
+        "《承诺书》",
+        "学历学位证书",
+        "6个月有效期学信网学历认证报告（国（境）外高校学历学位证书的，提供教育部留学服务中心认证报告）",
+        "其他根据审核需要须补充提供的材料",
+        "社保证明",
+        "成都市人才认定证书"
+      ],
+      "process": [
+        "企业登录成都市急需紧缺人才服务管理系统",
+        "填写人才信息并上传材料",
+        "企业按属地原则提交申请",
+        "审核通过后按月发放"
+      ],
+      "location": "市级",
+      "url": "https://m.cd.bendibao.com/fangchan/210204.shtm"
+    },
+    "policySource": "《成都市引进急需紧缺人才实施办法》（2026年1月1日生效）",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效。《成都市引进急需紧缺人才实施办法》。集合1：取得全日制博士学历学位证书后一年内引进到成都市企业工作，或符合引进当年《成都市人才开发指引》紧缺度3星岗位要求的人才，从引进次月起3年内按月发放2000元/人·月，合计7.2万元。集合2：满足《成都市人才分类目录》A、B、C类条件之一的人才，以成都市人才认定证书为准，从引进次月起3年内按月发放3000元/人·月，合计10.8万元。须由企业引进，个人不可单独申报；与新引进人才安家补贴不重复享受。高层次人才认定属于专业通道。",
+    "location": "成都市",
+    "tier": 3,
+    "tieredAmount": {
+      "博士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    }
   }
 ]

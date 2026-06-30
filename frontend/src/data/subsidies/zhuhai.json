@@ -1,71 +1,46 @@
 [
   {
-    "id": "zhuhai-shiji-benkezufangshenghuobutie",
+    "id": "zhuhai-shiji-qingnianrencaizufangshenghuobutie",
     "city": "zhuhai",
-    "name": "珠海市企业新引进全日制本科青年人才租房和生活补贴",
+    "name": "珠海市企业新引进青年人才租房和生活补贴",
     "category": "rent",
     "amount": {
       "min": 26000,
-      "max": 26000,
-      "unit": "元",
-      "period": "分期",
-      "durationMonths": 24
-    },
-    "conditions": {
-      "degree": ["本科"],
-      "ageLimit": 30,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": true,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "引进之日起2年内（以首次在珠海缴纳社保时间起算），后续新政以官方通告为准",
-      "channel": "珠海市人力资源和社会保障网上服务平台",
-      "materials": [
-        "《个人申请表》",
-        "全日制学历证书（系统自动比对成功则无需上传）",
-        "工资薪金缴纳个税纳税清单",
-        "《在校生实习说明》（来珠海工作前曾在珠海实习者提供）",
-        "《合同单位与参保单位不一致情况说明》（如有）",
-        "国（境）外学历需上传教育部留学服务中心《国（境）外学历学位认证书》及学历学位证书"
-      ],
-      "process": [
-        "登录珠海市人力资源和社会保障网上服务平台注册并填报",
-        "用人单位网上审核",
-        "所在区经办机构初审",
-        "市人才资源和就业服务中心复核",
-        "公示5个工作日",
-        "市人社局印发补贴发放方案，各区拨付至个人账户"
-      ],
-      "location": "市级",
-      "url": "https://wsfw.zhrsj.zhuhai.gov.cn/zhrsClient/login.jsp"
-    },
-    "policySource": "珠人社〔2019〕97号、珠人社规〔2023〕4号",
-    "effectiveDate": "2019-01-01",
-    "notes": "原政策珠人社〔2019〕97号已到期，目前暂停受理新引进申请，续发申领仍按原标准执行，后续新政待定。要求全日制本科、引进时30周岁以下、与珠海市用人单位签订2年以上劳动合同、全职在珠海工作、取得珠海户籍（港澳台及外籍人才除外），用人单位注册地不在横琴粤澳深度合作区范围内。",
-    "location": "珠海·市级",
-    "tier": 1
-  },
-  {
-    "id": "zhuhai-shiji-shuoshizufangshenghuobutie",
-    "city": "zhuhai",
-    "name": "珠海市企业新引进全日制硕士研究生青年人才租房和生活补贴",
-    "category": "rent",
-    "amount": {
-      "min": 38000,
       "max": 38000,
       "unit": "元",
       "period": "分期",
       "durationMonths": 24
     },
     "conditions": {
-      "degree": ["硕士"],
+      "degree": [
+        "本科",
+        "硕士"
+      ],
       "ageLimit": 35,
       "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": true,
-      "requiresFullTime": true
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "benke",
+          "name": "全日制本科",
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 30,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士研究生",
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 35,
+          "ageLimitExclusive": false
+        }
+      ]
     },
     "application": {
       "deadline": "引进之日起2年内（以首次在珠海缴纳社保时间起算），后续新政以官方通告为准",
@@ -91,18 +66,34 @@
     },
     "policySource": "珠人社〔2019〕97号、珠人社规〔2023〕4号",
     "effectiveDate": "2019-01-01",
-    "notes": "原政策珠人社〔2019〕97号已到期，目前暂停受理新引进申请，续发申领仍按原标准执行，后续新政待定。要求全日制硕士研究生、引进时35周岁以下、与珠海市用人单位签订3年以上劳动合同、全职在珠海工作、取得珠海户籍（港澳台及外籍人才、正副高级职称除外），用人单位注册地不在横琴粤澳深度合作区范围内。",
+    "notes": "原政策珠人社〔2019〕97号已到期，目前暂停受理新引进申请，续发申领仍按原标准执行，后续新政待定。要求全日制本科/硕士研究生、与珠海市用人单位签订劳动合同、全职在珠海工作、取得珠海户籍（港澳台及外籍人才、正副高级职称除外），用人单位注册地不在横琴粤澳深度合作区范围内。本科引进时30周岁以下、硕士35周岁以下。",
     "location": "珠海·市级",
-    "tier": 1
+    "tier": 1,
+    "tieredAmount": {
+      "本科": {
+        "min": 26000,
+        "max": 26000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 38000,
+        "max": 38000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 24
+      }
+    }
   },
   {
-    "id": "zhuhai-shiji-fugaojizhufangbutie",
+    "id": "zhuhai-shiji-gaojizhichengzhufangbutie",
     "city": "zhuhai",
-    "name": "珠海市企业新引进副高级职称专业技术人才住房补贴",
+    "name": "珠海市企业新引进高级职称专业技术人才住房补贴",
     "category": "talent",
     "amount": {
       "min": 250000,
-      "max": 250000,
+      "max": 350000,
       "unit": "元",
       "period": "分期",
       "durationMonths": 36
@@ -112,7 +103,35 @@
       "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": false
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "fugao",
+          "name": "副高级职称",
+          "ageLimit": 40,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 250000,
+            "max": 250000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 36
+          }
+        },
+        {
+          "id": "zhengao",
+          "name": "正高级职称",
+          "ageLimit": 45,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 350000,
+            "max": 350000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 36
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "引进之日起按年度申领，后续新政以官方通告为准",
@@ -137,70 +156,27 @@
     },
     "policySource": "珠人社〔2019〕97号、珠人社规〔2023〕4号",
     "effectiveDate": "2019-01-01",
-    "notes": "原政策珠人社〔2019〕97号已到期，目前暂停受理新引进申请，续发申领仍按原标准执行，后续新政待定。要求副高级职称、引进时40周岁以下、与珠海市用人单位签订3年以上劳动合同、全职在珠海工作、年收入18万元以上，无须珠海户籍，用人单位注册地不在横琴粤澳深度合作区范围内。本项需职称认定，属专业通道。",
+    "notes": "原政策珠人社〔2019〕97号已到期，目前暂停受理新引进申请，续发申领仍按原标准执行，后续新政待定。要求正/副高级职称、与珠海市用人单位签订3年以上劳动合同、全职在珠海工作，无须珠海户籍，用人单位注册地不在横琴粤澳深度合作区范围内。副高引进时40周岁以下、年收入18万元以上；正高45周岁以下、年收入20万元以上。本项需职称认定，属专业通道。",
     "location": "珠海·市级",
     "tier": 3
   },
   {
-    "id": "zhuhai-shiji-zhengaojizhufangbutie",
+    "id": "zhuhai-gaoxinqu-qingnianzufangbutie",
     "city": "zhuhai",
-    "name": "珠海市企业新引进正高级职称专业技术人才住房补贴",
-    "category": "talent",
-    "amount": {
-      "min": 350000,
-      "max": 350000,
-      "unit": "元",
-      "period": "分期",
-      "durationMonths": 36
-    },
-    "conditions": {
-      "ageLimit": 45,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": false
-    },
-    "application": {
-      "deadline": "引进之日起按年度申领，后续新政以官方通告为准",
-      "channel": "珠海市人力资源和社会保障网上服务平台",
-      "materials": [
-        "《个人申请表》",
-        "正高级职称证书",
-        "个人所得税纳税记录和纳税申报明细材料（加盖单位公章）",
-        "劳动合同",
-        "工资薪金缴纳个税纳税清单"
-      ],
-      "process": [
-        "登录珠海市人力资源和社会保障网上服务平台注册并填报",
-        "用人单位网上审核",
-        "所在区经办机构初审",
-        "市人才资源和就业服务中心复核",
-        "公示5个工作日",
-        "市人社局印发补贴发放方案，各区拨付至个人账户"
-      ],
-      "location": "市级",
-      "url": "https://wsfw.zhrsj.zhuhai.gov.cn/zhrsClient/login.jsp"
-    },
-    "policySource": "珠人社〔2019〕97号、珠人社规〔2023〕4号",
-    "effectiveDate": "2019-01-01",
-    "notes": "原政策珠人社〔2019〕97号已到期，目前暂停受理新引进申请，续发申领仍按原标准执行，后续新政待定。要求正高级职称、引进时45周岁以下、与珠海市用人单位签订3年以上劳动合同、全职在珠海工作、年收入20万元以上，无须珠海户籍，用人单位注册地不在横琴粤澳深度合作区范围内。本项需职称认定，属专业通道。",
-    "location": "珠海·市级",
-    "tier": 3
-  },
-  {
-    "id": "zhuhai-gaoxinqu-benkezufangbutie",
-    "city": "zhuhai",
-    "name": "珠海高新区新引进青年人才租房（生活）补贴（本科学历）",
+    "name": "珠海高新区新引进青年人才租房（生活）补贴",
     "category": "rent",
     "amount": {
       "min": 800,
-      "max": 800,
+      "max": 1000,
       "unit": "元",
       "period": "每月",
       "durationMonths": 24
     },
     "conditions": {
-      "degree": ["本科"],
+      "degree": [
+        "本科",
+        "硕士"
+      ],
       "ageLimit": 50,
       "ageLimitExclusive": false,
       "employmentRequired": true,
@@ -227,175 +203,79 @@
     },
     "policySource": "珠高党群〔2023〕147号",
     "effectiveDate": "2023-08-01",
-    "notes": "有效。要求2022年1月6日（含）后新引进到高新区主园区企业（不含国有企业），全日制本科及以上学历，首次在高新区缴纳社保，非珠海市户籍，50周岁以下，申报时仍在区内企业正常就职。须在首次缴纳社保后两年内申请。与市、区其他租（住）房补贴及安居类补贴不可重复享受，货币补贴和实物配置不能同时申请。",
+    "notes": "有效。要求2022年1月6日（含）后新引进到高新区主园区企业（不含国有企业），全日制本科及以上学历或中级职称，首次在高新区缴纳社保，非珠海市户籍，50周岁以下，申报时仍在区内企业正常就职。须在首次缴纳社保后两年内申请。本科800元/月、硕士研究生1000元/月，最长24个月。与市、区其他租（住）房补贴及安居类补贴不可重复享受，货币补贴和实物配置不能同时申请。",
     "location": "珠海·高新区",
     "tier": 1,
-    "exclusiveGroup": "zhuhai-district"
+    "exclusiveGroup": "zhuhai-district",
+    "tieredAmount": {
+      "本科": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    }
   },
   {
-    "id": "zhuhai-gaoxinqu-shuoshizufangbutie",
+    "id": "zhuhai-hengqin-xuelixingzhuanyerencaishenghuobutie",
     "city": "zhuhai",
-    "name": "珠海高新区新引进青年人才租房（生活）补贴（硕士研究生/中级职称）",
-    "category": "rent",
-    "amount": {
-      "min": 1000,
-      "max": 1000,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 24
-    },
-    "conditions": {
-      "degree": ["硕士"],
-      "ageLimit": 50,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "常年受理，须在高新区首次购买社保后两年内提交申请",
-      "channel": "珠海高新区人才申报系统",
-      "materials": [
-        "身份证明（国（境）外人士上传有效身份证、通行证或护照，国（境）内人士无需上传）",
-        "国（境）外学历需上传毕业证书及教育部留学服务中心《国（境）外学历学位认证书》，国（境）内学历无需上传",
-        "中级职称证书、职称评审表（或考核认定表）、考试报名表（或成绩查询网页截图）、学历证书（中级职称人才提供）"
-      ],
-      "process": [
-        "高新区发布申报通告",
-        "登录申报系统个人注册并填报",
-        "区党群工作部系统审核+人工审核",
-        "第三方机构全面核实",
-        "公示5个工作日",
-        "区管委会审批后由区财政拨付至个人账户"
-      ],
-      "location": "高新区",
-      "url": "http://www.zhuhai-hitech.gov.cn/dqgzb/gkmlpt/content/3/3560/mpost_3560070.html"
-    },
-    "policySource": "珠高党群〔2023〕147号",
-    "effectiveDate": "2023-08-01",
-    "notes": "有效。要求2022年1月6日（含）后新引进到高新区主园区企业（不含国有企业），全日制硕士研究生及以上学历或中级职称，首次在高新区缴纳社保，非珠海市户籍，50周岁以下，申报时仍在区内企业正常就职。须在首次缴纳社保后两年内申请。与市、区其他租（住）房补贴及安居类补贴不可重复享受，货币补贴和实物配置不能同时申请。",
-    "location": "珠海·高新区",
-    "tier": 1,
-    "exclusiveGroup": "zhuhai-district"
-  },
-  {
-    "id": "zhuhai-hengqin-benkeshenghuobutie",
-    "city": "zhuhai",
-    "name": "横琴粤澳深度合作区引进学历型、专业技术人才生活补贴（本科）",
+    "name": "横琴粤澳深度合作区引进学历型、专业技术人才生活补贴",
     "category": "living",
     "amount": {
       "min": 60000,
-      "max": 60000,
-      "unit": "元",
-      "period": "分期",
-      "durationMonths": 36
-    },
-    "conditions": {
-      "degree": ["本科"],
-      "ageLimit": 40,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "以当年度申报通告为准，2026年度申报期为2026年1月19日至3月6日",
-      "channel": "横琴粤澳深度合作区惠企利民服务平台",
-      "materials": [
-        "身份证正反面扫描件",
-        "学历学位证书（国（境）外学历附教育部认证报告）",
-        "劳动合同",
-        "社保缴纳证明",
-        "个税缴纳证明",
-        "《个人承诺书》《用人单位承诺书》《用人单位实质性运营自评承诺表》"
-      ],
-      "process": [
-        "用人单位登录横琴粤澳深度合作区惠企利民服务平台进行单位资格审核",
-        "申请人登录平台填报个人信息并上传材料",
-        "用人单位审核",
-        "受理机构复核",
-        "公示5个工作日",
-        "财政资金拨付至申请人一类银行账户"
-      ],
-      "location": "横琴粤澳深度合作区",
-      "url": "https://ycfz.hengqin.gov.cn/#/home"
-    },
-    "policySource": "粤澳深合执字〔2024〕19号、粤澳深合经发通〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效（2026年度申报已启动）。要求全日制本科并取得学位、40周岁以下、在合作区实质性运营企业或机构工作、累计签订3年以上劳动合同且申报时仍在岗，首次申请须在合作区连续缴纳社保及个税6个月以上。已申领完毕原横琴新区或珠海市同类政策补贴者不得重复享受，已享受合作区保障性住房或其他同类人才补贴者不得重复申领。",
-    "location": "珠海·横琴粤澳深度合作区",
-    "tier": 1,
-    "exclusiveGroup": "zhuhai-district"
-  },
-  {
-    "id": "zhuhai-hengqin-shuoshishenghuobutie",
-    "city": "zhuhai",
-    "name": "横琴粤澳深度合作区引进学历型、专业技术人才生活补贴（硕士研究生）",
-    "category": "living",
-    "amount": {
-      "min": 90000,
-      "max": 90000,
-      "unit": "元",
-      "period": "分期",
-      "durationMonths": 36
-    },
-    "conditions": {
-      "degree": ["硕士"],
-      "ageLimit": 45,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "以当年度申报通告为准，2026年度申报期为2026年1月19日至3月6日",
-      "channel": "横琴粤澳深度合作区惠企利民服务平台",
-      "materials": [
-        "身份证正反面扫描件",
-        "学历学位证书（国（境）外学历附教育部认证报告）",
-        "专业技术资格证书及评审文件（中级职称人才提供）",
-        "劳动合同",
-        "社保缴纳证明",
-        "个税缴纳证明",
-        "《个人承诺书》《用人单位承诺书》《用人单位实质性运营自评承诺表》"
-      ],
-      "process": [
-        "用人单位登录横琴粤澳深度合作区惠企利民服务平台进行单位资格审核",
-        "申请人登录平台填报个人信息并上传材料",
-        "用人单位审核",
-        "受理机构复核",
-        "公示5个工作日",
-        "财政资金拨付至申请人一类银行账户"
-      ],
-      "location": "横琴粤澳深度合作区",
-      "url": "https://ycfz.hengqin.gov.cn/#/home"
-    },
-    "policySource": "粤澳深合执字〔2024〕19号、粤澳深合经发通〔2024〕4号",
-    "effectiveDate": "2024-01-01",
-    "notes": "有效（2026年度申报已启动）。要求全日制硕士研究生并取得学位、45周岁以下、在合作区实质性运营企业或机构工作、累计签订3年以上劳动合同且申报时仍在岗，首次申请须在合作区连续缴纳社保及个税6个月以上。已申领完毕原横琴新区或珠海市同类政策补贴者不得重复享受，已享受合作区保障性住房或其他同类人才补贴者不得重复申领。",
-    "location": "珠海·横琴粤澳深度合作区",
-    "tier": 1,
-    "exclusiveGroup": "zhuhai-district"
-  },
-  {
-    "id": "zhuhai-hengqin-boshishenghuobutie",
-    "city": "zhuhai",
-    "name": "横琴粤澳深度合作区引进学历型、专业技术人才生活补贴（博士研究生）",
-    "category": "living",
-    "amount": {
-      "min": 270000,
       "max": 270000,
       "unit": "元",
       "period": "分期",
       "durationMonths": 36
     },
     "conditions": {
-      "degree": ["博士"],
-      "ageLimit": 50,
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 45,
       "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "benke",
+          "name": "全日制本科",
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 40,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士研究生/副高级职称",
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 45,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "boshi",
+          "name": "全日制博士研究生/正高级职称",
+          "degree": [
+            "博士"
+          ],
+          "ageLimit": 50,
+          "ageLimitExclusive": false
+        }
+      ]
     },
     "application": {
       "deadline": "以当年度申报通告为准，2026年度申报期为2026年1月19日至3月6日",
@@ -403,7 +283,6 @@
       "materials": [
         "身份证正反面扫描件",
         "学历学位证书（国（境）外学历附教育部认证报告）",
-        "专业技术资格证书及评审文件（副高级及以上职称人才提供）",
         "劳动合同",
         "社保缴纳证明",
         "个税缴纳证明",
@@ -422,9 +301,32 @@
     },
     "policySource": "粤澳深合执字〔2024〕19号、粤澳深合经发通〔2024〕4号",
     "effectiveDate": "2024-01-01",
-    "notes": "有效（2026年度申报已启动）。要求全日制博士研究生并取得学位、50周岁以下、在合作区实质性运营企业或机构工作、累计签订3年以上劳动合同且申报时仍在岗，首次申请须在合作区连续缴纳社保及个税6个月以上。已申领完毕原横琴新区或珠海市同类政策补贴者不得重复享受，已享受合作区保障性住房或其他同类人才补贴者不得重复申领。",
+    "notes": "有效。在横琴粤澳深度合作区用人单位连续缴纳6个月及以上社保，首次引进到合作区工作。本科6万元、硕士9万元、博士27万元，分三年等额发放。年龄：本科40周岁以下，硕士/副高45周岁以下，博士/正高50周岁以下。",
     "location": "珠海·横琴粤澳深度合作区",
     "tier": 1,
-    "exclusiveGroup": "zhuhai-district"
+    "exclusiveGroup": "zhuhai-district",
+    "tieredAmount": {
+      "本科": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 90000,
+        "max": 90000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 270000,
+        "max": 270000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    }
   }
 ]
