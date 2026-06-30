@@ -5,7 +5,7 @@
     "name": "武汉市高校毕业生租住人才租赁房租金减免",
     "category": "rent",
     "amount": {
-      "min": 300,
+      "min": 0,
       "max": 48000,
       "unit": "元",
       "period": "每月",
@@ -13,29 +13,29 @@
     },
     "tieredAmount": {
       "专科": {
-        "min": 300,
-        "max": 10800,
+        "min": 0,
+        "max": 0,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "本科": {
-        "min": 300,
-        "max": 10800,
+        "min": 0,
+        "max": 0,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "硕士": {
         "min": 1500,
-        "max": 18000,
+        "max": 1500,
         "unit": "元",
         "period": "每月",
         "durationMonths": 12
       },
       "博士": {
         "min": 2000,
-        "max": 48000,
+        "max": 2000,
         "unit": "元",
         "period": "每月",
         "durationMonths": 24
@@ -117,11 +117,10 @@
     "name": "武汉经开区春笋行动博士人才生活补贴",
     "category": "living",
     "amount": {
-      "min": 50000,
+      "min": 150000,
       "max": 150000,
       "unit": "元",
-      "period": "每年",
-      "durationMonths": 0
+      "period": "分期"
     },
     "conditions": {
       "degree": ["博士"],
@@ -248,7 +247,7 @@
     "name": "武汉经开区人才租房补贴",
     "category": "rent",
     "amount": {
-      "min": 21600,
+      "min": 0,
       "max": 64800,
       "unit": "元",
       "period": "每月",
@@ -256,22 +255,22 @@
     },
     "tieredAmount": {
       "本科": {
-        "min": 21600,
-        "max": 21600,
+        "min": 0,
+        "max": 0,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "硕士": {
-        "min": 43200,
-        "max": 43200,
+        "min": 0,
+        "max": 0,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "博士": {
-        "min": 64800,
-        "max": 64800,
+        "min": 0,
+        "max": 0,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
@@ -316,33 +315,29 @@
     "name": "新洲区问津英才青年人才生活补贴",
     "category": "living",
     "amount": {
-      "min": 6000,
+      "min": 30000,
       "max": 100000,
       "unit": "元",
-      "period": "每年",
-      "durationMonths": 0
+      "period": "分期"
     },
     "tieredAmount": {
       "本科": {
-        "min": 6000,
+        "min": 30000,
         "max": 30000,
         "unit": "元",
-        "period": "每年",
-        "durationMonths": 0
+        "period": "分期"
       },
       "硕士": {
-        "min": 12000,
+        "min": 60000,
         "max": 60000,
         "unit": "元",
-        "period": "每年",
-        "durationMonths": 0
+        "period": "分期"
       },
       "博士": {
-        "min": 20000,
+        "min": 100000,
         "max": 100000,
         "unit": "元",
-        "period": "每年",
-        "durationMonths": 0
+        "period": "分期"
       }
     },
     "conditions": {
