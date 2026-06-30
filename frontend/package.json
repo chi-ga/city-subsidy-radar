@@ -42,7 +42,9 @@
     "echarts": "^6.1.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-globe.gl": "^2.38.0",
     "react-router-dom": "^7.18.0",
+    "three": "^0.185.0",
     "zustand": "^5.0.14"
   }
 }

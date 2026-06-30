@@ -24,6 +24,26 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
+    --radar-bg: 168 38% 5%;
+    --radar-ink: 170 34% 8%;
+    --radar-panel: 168 28% 12%;
+    --radar-line: 164 22% 24%;
+    --radar-ice: 155 28% 92%;
+    --radar-muted: 158 12% 70%;
+    --radar-jade: 162 64% 55%;
+    --radar-jade-soft: 163 72% 62%;
+    --radar-amber: 36 88% 66%;
+    --radar-coral: 12 100% 68%;
+    --subsidy-cream: 42 58% 96%;
+    --subsidy-paper: 40 48% 99%;
+    --subsidy-ink: 40 12% 12%;
+    --subsidy-muted: 38 10% 42%;
+    --subsidy-green: 132 35% 24%;
+    --subsidy-green-dark: 132 42% 17%;
+    --subsidy-moss: 73 30% 56%;
+    --subsidy-gold: 39 72% 58%;
+    --subsidy-orange: 27 84% 52%;
+    --subsidy-line: 39 26% 84%;
   }
 
   * {
@@ -34,10 +54,85 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
   }
+
+  ::selection {
+    background: hsl(var(--radar-jade) / 0.28);
+    color: hsl(var(--radar-ice));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .globe-city-marker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: max-content;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 10px 6px 7px;
+    color: #fff;
+    background: linear-gradient(135deg, hsl(var(--subsidy-green)) 0%, hsl(var(--subsidy-green-dark)) 100%);
+    box-shadow: 0 14px 32px rgba(26, 65, 35, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+    cursor: pointer;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: opacity 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  .globe-city-marker:hover {
+    transform: translate(-50%, -50%) scale(1.06);
+    box-shadow: 0 18px 40px rgba(26, 65, 35, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  }
+
+  .globe-city-marker:focus-visible {
+    outline: 2px solid hsl(var(--subsidy-gold));
+    outline-offset: 4px;
+  }
+
+  .globe-city-marker__dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 999px;
+    background: hsl(var(--subsidy-orange));
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.24), 0 0 22px rgba(232, 120, 25, 0.72);
+  }
+
+  .globe-city-marker__text {
+    display: grid;
+    gap: 1px;
+    text-align: left;
+  }
+
+  .globe-city-marker__text strong {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .globe-city-marker__text small {
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.68);
   }
 }
