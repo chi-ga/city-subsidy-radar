@@ -8,37 +8,32 @@
       "min": 0,
       "max": 48000,
       "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
+      "period": "分期"
     },
     "tieredAmount": {
       "专科": {
         "min": 0,
         "max": 0,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 36
+        "period": "分期"
       },
       "本科": {
         "min": 0,
         "max": 0,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 36
+        "period": "分期"
       },
       "硕士": {
-        "min": 1500,
-        "max": 1500,
+        "min": 18000,
+        "max": 18000,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 12
+        "period": "一次性"
       },
       "博士": {
-        "min": 2000,
-        "max": 2000,
+        "min": 48000,
+        "max": 48000,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 24
+        "period": "一次性"
       }
     },
     "conditions": {
@@ -248,32 +243,28 @@
     "category": "rent",
     "amount": {
       "min": 0,
-      "max": 64800,
+      "max": 0,
       "unit": "元",
-      "period": "每月",
-      "durationMonths": 36
+      "period": "分期"
     },
     "tieredAmount": {
       "本科": {
         "min": 0,
         "max": 0,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 36
+        "period": "分期"
       },
       "硕士": {
         "min": 0,
         "max": 0,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 36
+        "period": "分期"
       },
       "博士": {
         "min": 0,
         "max": 0,
         "unit": "元",
-        "period": "每月",
-        "durationMonths": 36
+        "period": "分期"
       }
     },
     "conditions": {
@@ -306,7 +297,7 @@
     "effectiveDate": "2022-05-27",
     "notes": "有效。全日制本科及以上、毕业6年以内，在武汉经开区全职工作、缴纳社保且无自有住房的高校毕业生可申请。租住人才公寓期间：博士按实收租金100%、100%、70%补贴；硕士按100%、80%、60%补贴；本科按80%、60%、40%补贴，最长不超过3年。本金额为按参考租金估算，实际补贴以实收租金和审核结果为准。",
     "location": "武汉市·武汉经济技术开发区（汉南区）",
-    "tier": 2,
+    "tier": 3,
     "exclusiveGroup": "wuhan-district"
   },
   {
