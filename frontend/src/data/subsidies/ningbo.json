@@ -1,0 +1,283 @@
+[
+  {
+    "id": "ningbo-shiji-biyeyinianneianjubutie",
+    "city": "ningbo",
+    "name": "毕业一年内来甬人才安居补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 30
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 60
+      },
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 30
+      },
+      "专科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 30
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "政策享受周期期满6个月内，逾期无法申请",
+      "channel": "宁波市企业综合服务平台",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "《教育部学历证书电子注册备案表》（国内高校）或《国（境）外学历学位认证书》（海外高校）",
+        "劳动合同或聘用合同（灵活就业及社保缴纳单位非人力资源企业者可免）",
+        "社保卡（需开通金融功能）"
+      ],
+      "process": [
+        "在甬缴纳社保次月到账后登录宁波市企业综合服务平台",
+        "填写信息并上传材料",
+        "工作单位审核同意（灵活就业人员由社保缴纳地人社部门直接审核）",
+        "市及各区（县、市）人社部门审核",
+        "按月发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://qf.ningbo.gov.cn/qykj/projectDetail/52581"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-12-01",
+    "notes": "有效（2025年12月起实施）。硕士1,000元/月×最长60个月=最高6万元；全日制本科/技师班1,000元/月×最长30个月=最高3万元。毕业一年内来甬工作，首次在甬缴纳社保。已享受青年人才租房补贴、硕士和博士生活补贴、高层次人才安家补助的不重复享受。公务员（含参公人员）不享受。",
+    "location": "宁波市·市级",
+    "tier": 1
+  },
+  {
+    "id": "ningbo-shiji-shuoshishuoshenghuobuzhu",
+    "city": "ningbo",
+    "name": "硕士和博士生活补助",
+    "category": "living",
+    "amount": {
+      "min": 30000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "宁波市人才服务申报系统PC端或宁波\"人才码\"移动端",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "《教育部学历证书电子注册备案表》或《国（境）外学历学位认证书》",
+        "劳动合同或聘用合同（社保缴纳单位为人力资源企业者须提供）",
+        "部省属企业人员需提供《浙江省社会保险参保证明（个人专用）》（查询范围\"历年\"）",
+        "社保卡（需开通金融功能）"
+      ],
+      "process": [
+        "登录宁波市人才服务申报系统PC端或宁波\"人才码\"移动端",
+        "填报信息并上传材料",
+        "市服务总窗或区（县、市）服务联盟窗口初审",
+        "市及各区（县、市）人社部门复核",
+        "发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://hrs.nbrc.com.cn/"
+    },
+    "policySource": "甬人社发〔2022〕23号",
+    "effectiveDate": "2022-07-25",
+    "notes": "有效（常态化受理）。硕士3万元；世界排名前100高校硕士8万元；世界排名前200高校博士10万元。要求新引进35周岁以下硕士或40周岁以下世界排名前200高校博士，在甬累计缴纳社保满6个月，本人及配偶在宁波行政区域内无房。世界前100/200高校指QS、THE、ARWU任一榜单发布的排名前100、200名高校（以申报受理时最新排名为准）。",
+    "location": "宁波市·市级",
+    "tier": 1
+  },
+  {
+    "id": "ningbo-shiji-qingnianrencaizufangbutie",
+    "city": "ningbo",
+    "name": "青年人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "元",
+      "period": "每年"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士"],
+      "ageLimit": 35,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每月21日至月底申报；政策享受周期期满半年内，逾期不再受理",
+      "channel": "宁波市人才服务申报系统PC端或宁波\"人才码\"移动端",
+      "materials": [
+        "租房合同",
+        "《国（境）外学历学位认证书》（海外学历人才提供）",
+        "劳动合同或聘用合同（社保缴纳单位为人力资源企业者须提供）",
+        "职业资格证书或技能等级证书（技能人才提供）",
+        "部省属企业人员需提供《浙江省基本养老保险历年参保证明》及《浙江省社会保险参保证明（个人专用）》（查询范围48个月）",
+        "社保卡（需开通金融功能）"
+      ],
+      "process": [
+        "登录宁波市人才服务申报系统PC端或宁波\"人才码\"移动端",
+        "填报信息并上传材料",
+        "市及区（县、市）高层次人才创业创新服务联盟窗口匡算",
+        "复核通过后发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://hrs.nbrc.com.cn/"
+    },
+    "policySource": "甬人社发〔2021〕17号",
+    "effectiveDate": "2021-04-20",
+    "notes": "有效（每月21日至月底申报）。1万元/年，最长3年，总额最高3万元。面向2021年4月20日起新引进的35周岁以下全日制应届本科/硕士（含非全日制应届硕士）或技师及以上职业资格青年人才。应届毕业生累计缴纳社保满6个月、20个月、30个月后可分别申领；技师累计缴纳社保满10个月、20个月、30个月后可分别申领。本人及配偶在宁波行政区域内无房。",
+    "location": "宁波市·市级",
+    "tier": 1
+  },
+  {
+    "id": "ningbo-shiji-gaoxiaobiyejiuygangweibutie",
+    "city": "ningbo",
+    "name": "高校毕业生就业岗位补贴",
+    "category": "employment",
+    "amount": {
+      "min": 2000,
+      "max": 6000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件后的次月至次年12月底（建议）",
+      "channel": "浙江政务服务网或\"浙里办\"APP，或营业执照住所所在地的区（县、市）公共就业服务机构",
+      "materials": [
+        "《高校毕业生就业岗位补贴申请表》",
+        "居民身份证",
+        "学历证明（首次申请时提供）",
+        "劳动合同",
+        "中小微企业就业相关证明（必要时提供）"
+      ],
+      "process": [
+        "登录浙江政务服务网或\"浙里办\"APP，或向营业执照住所所在地的区（县、市）公共就业服务机构申请",
+        "提交申请材料",
+        "经办机构23个工作日内完成受理、初审和审核",
+        "在宁波就业创业网公示不少于7个工作日",
+        "公示无异议后次月拨付至申请人社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=7c3a8d34-573a-42d8-a416-2f1285676cb0"
+    },
+    "policySource": "甬人社发〔2023〕22号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。每连续缴纳社保满1年补贴2,000元，最长3年，累计最高6,000元。要求毕业2年内高校毕业生，与宁波中小微企业签订1年及以上劳动合同并办理就业登记，连续缴纳养老、医疗、失业三项社保费满1年，且工资低于我市上年度非私营和私营单位就业人员加权平均工资。",
+    "location": "宁波市·市级",
+    "tier": 1
+  },
+  {
+    "id": "ningbo-fenghua-shenghuojintie",
+    "city": "ningbo",
+    "name": "奉化区人才生活津贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 60000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理；政策享受周期期满6个月（含）内，逾期不再受理",
+      "channel": "宁波市奉化区惠企、人才政策兑现\"一键通\"平台",
+      "materials": [
+        "企业聘用合同或劳动合同（3年以上）",
+        "个税缴纳清单",
+        "全日制学历学位证书（海外学位同时提供教育部留学服务中心出具的《国（境）外学历学位认证书》）",
+        "奉化区\"三领人才\"入选证明（三领人才提供）"
+      ],
+      "process": [
+        "登录宁波市奉化区惠企、人才政策兑现\"一键通\"平台",
+        "点击《奉化区人才生活津贴》申报指南",
+        "填写信息并上传附件资料",
+        "审核通过后拨付"
+      ],
+      "location": "奉化区",
+      "url": "https://qf.ningbo.gov.cn/qfpt/index.html"
+    },
+    "policySource": "奉人才发〔2022〕9号",
+    "effectiveDate": "2022-09-01",
+    "notes": "有效（常态化受理）。大专1万元、本科2万元、硕士4万元、博士6万元。参保满6个月发放50%，参保满2年发放50%。要求2022年9月1日（含）后由奉化区企业全职新引进，签订3年以上劳动合同，在奉化缴纳基本养老保险。企业须为在奉化注册登记和纳税的实质性正常运营企业。与宁波市硕士和博士生活补助、奉化中小微企业高校毕业生就业补贴等按\"就高、补差、不重复\"原则执行。",
+    "location": "宁波市·奉化区",
+    "tier": 1,
+    "exclusiveGroup": "ningbo-district"
+  }
+]

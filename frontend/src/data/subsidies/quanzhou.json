@@ -1,0 +1,527 @@
+[
+  {
+    "id": "quanzhou-shiji-xinbatiao-shenghuo",
+    "city": "quanzhou",
+    "name": "泉州市青年人才“新八条”升级性生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "quanzhou-xinbatiao-boshi",
+          "name": "博士研究生（40周岁以下）",
+          "degree": [
+            "博士"
+          ],
+          "ageLimit": 40
+        },
+        {
+          "id": "quanzhou-xinbatiao-shuoshi",
+          "name": "硕士研究生（40周岁以下）",
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 40
+        },
+        {
+          "id": "quanzhou-xinbatiao-benke",
+          "name": "全日制“双一流”高校本科生（40周岁以下）",
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 40,
+          "schoolLevel": [
+            "双一流",
+            "QS前200"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "首次引进到泉州市一年内（以参保缴费记录为准）申报",
+      "channel": "海丝泉州·人才港湾网站或微信小程序",
+      "materials": [
+        "身份证明（身份证或公安部门出具的户籍证明）",
+        "学历证明（毕业证书、带有二维码的《教育部学历证书电子注册备案表》，国境外学历需经教育部留学服务中心认证）",
+        "工作证明（劳动合同或劳动协议等就业证明材料及缴交社保证明；自主创业的提供工商营业执照或公司章程等创业证明材料及缴交社保证明）"
+      ],
+      "process": [
+        "登录“海丝泉州·人才港湾”网站或微信小程序进入“青年人才新八条”模块注册申报",
+        "用人单位系统初审",
+        "各县（市、区）公共就业服务机构会同社保经办机构数据审核",
+        "公示5个工作日",
+        "补贴发放至申请人社会保障卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.qzrcgw.gov.cn"
+    },
+    "policySource": "泉委办发〔2024〕1号",
+    "effectiveDate": "2024-02-06",
+    "notes": "有效。2024年2月6日以后首次新引进到泉州市民营企业和民办非企业单位工作或自主创业。分两次发放：第一年50%、第三年50%。按“从新从优不重复”原则，不重复享受泉委办发〔2022〕5号文规定的每人1万元一次性生活补贴。",
+    "location": "泉州市·市级",
+    "tier": 1
+  },
+  {
+    "id": "quanzhou-shiji-xinbatiao-goufang",
+    "city": "quanzhou",
+    "name": "泉州市青年人才“新八条”购房补助",
+    "category": "buy",
+    "amount": {
+      "min": 10000,
+      "max": 80000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 40000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "首次购买商品住房后一年内申报",
+      "channel": "海丝泉州·人才港湾网站或微信小程序",
+      "materials": [
+        "身份证明（申请人及其配偶、未成年子女身份证、户口簿或公安部门出具的户籍证明、结婚证）",
+        "学历证明（高校毕业证书、带有二维码的《教育部学历证书电子注册备案表》；技工院校毕业证书、全国技工院校毕业证书查询系统验证报告）",
+        "工作证明（劳动合同或劳动协议等就业证明材料及缴交社保证明；自主创业的提供工商营业执照或公司章程等创业证明材料及缴交社保证明）",
+        "购房证明（购房合同登记备案证明或不动产权证）"
+      ],
+      "process": [
+        "登录“海丝泉州·人才港湾”网站或微信小程序进入“青年人才新八条”模块注册申报",
+        "用人单位系统初审",
+        "购房税费受益县（市、区）人社部门资格审核，住建、资源规划部门核查家庭住房情况",
+        "公示5个工作日",
+        "补贴发放至申请人社会保障卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.qzrcgw.gov.cn"
+    },
+    "policySource": "泉委办发〔2024〕1号",
+    "effectiveDate": "2024-02-06",
+    "notes": "有效。2024年2月6日以后首次新引进，在泉州首次购买商品住房。分两次发放：第一年50%、第三年50%。本科档中，全日制“双一流”高校本科生为4万元，普通高校本科生为2万元；技工学院全日制预备技师（技师）班、高级工班毕业生分别按相当于本科、大专学历落实。",
+    "location": "泉州市·市级",
+    "tier": 1
+  },
+  {
+    "id": "quanzhou-jinjiang-anju",
+    "city": "quanzhou",
+    "name": "晋江市高校毕业生安居补助",
+    "category": "rent",
+    "amount": {
+      "min": 14400,
+      "max": 19200,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 19200,
+        "max": 19200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "本科": {
+        "min": 14400,
+        "max": 19200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "ageLimit": 35,
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "2019年3月22日起在晋江市企业就业或自主创业后申报",
+      "channel": "泉房通网站",
+      "materials": [
+        "申请人身份证明",
+        "学历证明",
+        "劳动合同或创业证明",
+        "社保缴纳证明（具体以平台要求为准）"
+      ],
+      "process": [
+        "用人单位登录“泉房通”网站申报",
+        "数据审核",
+        "按月发放"
+      ],
+      "location": "晋江市",
+      "url": "http://www.qft168.com"
+    },
+    "policySource": "晋江市人才政策配套文件（待核实具体文号）",
+    "effectiveDate": "2019-03-22",
+    "notes": "有效。2019年3月22日起在晋江市企业就业或自主创业，35周岁以下本科及以上学历高校毕业生。第一类（硕士和一流大学/一流学科/中科院/社科院/三大排名同时前500大学本科）800元/月，第二类其他本科600元/月，最多24个月。来泉博士按人才“港湾计划”政策执行，不列入本补助范围。",
+    "location": "泉州市·晋江市",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  },
+  {
+    "id": "quanzhou-jinjiang-shebao",
+    "city": "quanzhou",
+    "name": "晋江市高校毕业生社保补助",
+    "category": "living",
+    "amount": {
+      "min": 14400,
+      "max": 14400,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业一年内（以毕业证书签发时间起算）申报",
+      "channel": "泉州人才港湾网站或微信小程序",
+      "materials": [
+        "身份证明",
+        "学历证明（毕业证书、教育部学历证书电子注册备案表）",
+        "工作证明（劳动合同或营业执照）及缴交社保证明"
+      ],
+      "process": [
+        "登录“泉州人才港湾网”涌泉行动专栏或微信小程序",
+        "在线填写信息并上传材料",
+        "数据审核",
+        "公示5个工作日",
+        "按月发放至社会保障卡银行账户"
+      ],
+      "location": "晋江市",
+      "url": "https://www.qzrcgw.gov.cn"
+    },
+    "policySource": "泉人社文〔2022〕164号",
+    "effectiveDate": "2022-06-30",
+    "notes": "有效。2021年2月8日后来泉，首次在晋江市民营企业、民办非企业单位稳定就业或自主创业。按个人缴纳城镇职工养老保险部分全额补助，每月最高600元，最长24个月。与安居补助可叠加。",
+    "location": "泉州市·晋江市",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  },
+  {
+    "id": "quanzhou-shishi-shenghuo",
+    "city": "quanzhou",
+    "name": "石狮市高校毕业生一次性生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业一年内（以毕业证书签发时间起算）申报",
+      "channel": "泉州人才港湾网站或微信小程序",
+      "materials": [
+        "身份证明",
+        "学历证明（毕业证书、教育部学历证书电子注册备案表）",
+        "工作证明（劳动合同或营业执照）及缴交社保证明"
+      ],
+      "process": [
+        "登录“泉州人才港湾网”涌泉行动专栏或微信小程序",
+        "在线填写信息并上传材料",
+        "数据审核",
+        "公示5个工作日",
+        "一次性发放至社会保障卡银行账户"
+      ],
+      "location": "石狮市",
+      "url": "https://www.qzrcgw.gov.cn"
+    },
+    "policySource": "泉人社文〔2022〕164号",
+    "effectiveDate": "2022-06-30",
+    "notes": "有效。2022年及之后毕业的全日制普通高等学校本科及以上应届毕业生和技工院校全日制预备技师（技师）班应届毕业生。已落户石狮（含集体户），首次在石狮市民营企业、民办非企业单位就业或自主创业，同一单位社保连续缴费至少3个月且申请时仍在岗。按“从新从优不重复”原则，不重复享受泉委办发〔2024〕1号文规定的生活补贴。",
+    "location": "泉州市·石狮市",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  },
+  {
+    "id": "quanzhou-shishi-shebao",
+    "city": "quanzhou",
+    "name": "石狮市高校毕业生社保补助",
+    "category": "living",
+    "amount": {
+      "min": 14400,
+      "max": 14400,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业一年内（以毕业证书签发时间起算）申报",
+      "channel": "泉州人才港湾网站或微信小程序",
+      "materials": [
+        "身份证明",
+        "学历证明（毕业证书、教育部学历证书电子注册备案表）",
+        "工作证明（劳动合同或营业执照）及缴交社保证明"
+      ],
+      "process": [
+        "登录“泉州人才港湾网”涌泉行动专栏或微信小程序",
+        "在线填写信息并上传材料",
+        "数据审核",
+        "公示5个工作日",
+        "首月发放至社会保障卡银行账户，后续月份按月统一发放"
+      ],
+      "location": "石狮市",
+      "url": "https://www.qzrcgw.gov.cn"
+    },
+    "policySource": "泉人社文〔2022〕164号",
+    "effectiveDate": "2022-06-30",
+    "notes": "有效。2022年及之后毕业的全日制普通高等学校本科及以上应届毕业生和技工院校全日制预备技师（技师）班应届毕业生。已落户石狮，首次在石狮市民营企业、民办非企业单位就业或自主创业，同一单位社保连续缴费至少3个月且申请时仍在岗。个人缴纳企业职工基本养老保险费部分予以补助，每月最高600元，最长24个月。",
+    "location": "泉州市·石狮市",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  },
+  {
+    "id": "quanzhou-huian-shenghuo",
+    "city": "quanzhou",
+    "name": "惠安县高校毕业生一次性生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 12000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业一年内（以毕业证书签发时间起算）申报",
+      "channel": "泉州市城建集团“泉房通”APP",
+      "materials": [
+        "身份证明",
+        "学历证明（毕业证书、教育部学历证书电子注册备案表）",
+        "工作证明（劳动合同或营业执照）及缴交社保证明"
+      ],
+      "process": [
+        "下载“泉房通”APP",
+        "在线填写信息并上传材料",
+        "数据审核",
+        "公示",
+        "一次性发放"
+      ],
+      "location": "惠安县",
+      "url": "http://www.qft168.com"
+    },
+    "policySource": "泉人社文〔2022〕164号",
+    "effectiveDate": "2022-06-30",
+    "notes": "有效。2022年及以后毕业的全日制本科及以上应届高校毕业生和技工院校预备技师（技师）班及以上毕业生。已落户惠安，在惠安县民营企业、民办非企业单位稳定就业或自主创业，参加城镇职工养老保险连续缴费3个月及以上。每人1万元一次性发放，困难家庭高校毕业生按1.2万元标准发放。",
+    "location": "泉州市·惠安县",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  },
+  {
+    "id": "quanzhou-huian-shebao",
+    "city": "quanzhou",
+    "name": "惠安县高校毕业生社保补助",
+    "category": "living",
+    "amount": {
+      "min": 14400,
+      "max": 14400,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业一年内（以毕业证书签发时间起算）申报",
+      "channel": "泉州市城建集团“泉房通”APP",
+      "materials": [
+        "身份证明",
+        "学历证明（毕业证书、教育部学历证书电子注册备案表）",
+        "工作证明（劳动合同或营业执照）及缴交社保证明"
+      ],
+      "process": [
+        "下载“泉房通”APP",
+        "在线填写信息并上传材料",
+        "数据审核",
+        "公示",
+        "按月发放"
+      ],
+      "location": "惠安县",
+      "url": "http://www.qft168.com"
+    },
+    "policySource": "泉人社文〔2022〕164号",
+    "effectiveDate": "2022-06-30",
+    "notes": "有效。2022年及之后毕业的全日制普通高等学校本科及以上应届毕业生和技工院校全日制预备技师（技师）班应届毕业生。已落户惠安，首次在惠安县民营企业、民办非企业单位就业或自主创业，同一单位社保连续缴费至少3个月且申请时仍在岗。个人缴纳城镇职工养老保险部分予以补助，每月最高600元，最长24个月。",
+    "location": "泉州市·惠安县",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  },
+  {
+    "id": "quanzhou-quangang-renncaijinkou",
+    "city": "quanzhou",
+    "name": "泉港区“涌泉行动·人才进港”生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "专科": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科"
+      ],
+      "employmentRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "具体申报时间以泉港区通知为准",
+      "channel": "泉州人才港湾网站或微信小程序",
+      "materials": [
+        "身份证明",
+        "学历证明",
+        "工作证明及社保证明（具体以平台要求为准）"
+      ],
+      "process": [
+        "登录“泉州人才港湾网”或相关申报平台",
+        "在线填写信息并上传材料",
+        "审核",
+        "公示",
+        "一次性发放"
+      ],
+      "location": "泉港区",
+      "url": "https://www.qzrcgw.gov.cn"
+    },
+    "policySource": "泉港区“涌泉行动·人才进港”系列引才政策（待核实具体文号）",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。首次新引进到泉港区企业就业或自主创业的大专及以上学历毕业生。大专毕业生5000元，本科及以上学历毕业生1万元，一次性发放。具体申报时间以泉港区官方通知为准。",
+    "location": "泉州市·泉港区",
+    "tier": 1,
+    "exclusiveGroup": "quanzhou-district"
+  }
+]

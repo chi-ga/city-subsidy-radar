@@ -102,7 +102,25 @@ export type EmploymentStatus = '已就业' | '未就业';
 export type SubsidyCategory = 'talent' | 'rent' | 'buy' | 'living' | 'employment' | 'startup' | 'settlement' | 'other';
 
 // 城市代码
-export type CityCode = 'beijing' | 'shanghai' | 'shenzhen' | 'guangzhou' | 'hefei' | 'hangzhou';
+export type CityCode =
+  | 'beijing'
+  | 'shanghai'
+  | 'shenzhen'
+  | 'guangzhou'
+  | 'hefei'
+  | 'hangzhou'
+  | 'jiaxing'
+  | 'nanjing'
+  | 'chongqing'
+  | 'quanzhou'
+  | 'wuhan'
+  | 'wenzhou'
+  | 'ningbo'
+  | 'changsha'
+  | 'chengdu'
+  | 'jinan'
+  | 'shaoxing'
+  | 'zhuhai';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -112,6 +130,18 @@ export const CITY_NAMES: Record<CityCode, string> = {
   guangzhou: '广州',
   hefei: '合肥',
   hangzhou: '杭州',
+  jiaxing: '嘉兴',
+  nanjing: '南京',
+  chongqing: '重庆',
+  quanzhou: '泉州',
+  wuhan: '武汉',
+  wenzhou: '温州',
+  ningbo: '宁波',
+  changsha: '长沙',
+  chengdu: '成都',
+  jinan: '济南',
+  shaoxing: '绍兴',
+  zhuhai: '珠海',
 };
 
 // 补贴分类名称映射

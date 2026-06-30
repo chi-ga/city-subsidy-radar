@@ -1,0 +1,223 @@
+[
+  {
+    "id": "changsha-shiji-zufangshenghuo-domestic",
+    "city": "changsha",
+    "name": "长沙市青年人才租房和生活补贴（国内普通高校）",
+    "category": "living",
+    "amount": {
+      "min": 12000,
+      "max": 30000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 12000,
+        "max": 12000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "domestic-all",
+          "name": "国内普通高校",
+          "degree": [
+            "本科",
+            "硕士",
+            "博士"
+          ],
+          "schoolRegion": "domestic"
+        },
+        {
+          "id": "overseas-below-doctor",
+          "name": "境外高校本科/硕士",
+          "degree": [
+            "本科",
+            "硕士"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "常年受理申报，每月集中发放",
+      "channel": "长沙人才智慧导航（http://www.changsha.gov.cn/csrc_portal/）、\"长沙人才\"APP、全市各级人才服务窗口",
+      "materials": [
+        "身份证",
+        "户口页",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "国（境）外学历学位认证书（留学人员）"
+      ],
+      "process": [
+        "登录长沙人才智慧导航或\"长沙人才\"APP",
+        "填写申报信息并上传材料",
+        "也可就近到全市各级人才服务窗口申报",
+        "各级人才服务窗口初审",
+        "市、区县（市）、园区人社部门审核",
+        "市人社局审定、公示",
+        "资金拨付至申请人个人社保卡账户"
+      ],
+      "location": "市级",
+      "url": "http://www.changsha.gov.cn/csrc_portal/"
+    },
+    "policySource": "长人才办发〔2022〕9号",
+    "effectiveDate": "2022-06-24",
+    "notes": "有效。面向35周岁（含）以下、毕业两年内，落户长沙并在长工作的国内普通高校博士、硕士、全日制本科毕业生（机关事业单位在编人员除外）。补贴标准：国内普通高校博士3万元/人、硕士2万元/人、本科1.2万元/人，从申请当月开始按月据实分期发放。市属高校及市、区县（市）属公立医院、中小学校编制内新引进的博士不受毕业两年限制。",
+    "location": "长沙市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "changsha-shiji-zufangshenghuo-overseas",
+    "city": "changsha",
+    "name": "长沙市青年人才租房和生活补贴（境外高校博士）",
+    "category": "living",
+    "amount": {
+      "min": 100000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "overseas-doctor",
+          "name": "境外高校博士",
+          "degree": [
+            "博士"
+          ],
+          "schoolRegion": "overseas"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "常年受理申报，每月集中发放",
+      "channel": "长沙人才智慧导航（http://www.changsha.gov.cn/csrc_portal/）、\"长沙人才\"APP、全市各级人才服务窗口",
+      "materials": [
+        "身份证",
+        "户口页",
+        "国（境）外学历学位证书及认证书",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "登录长沙人才智慧导航或\"长沙人才\"APP",
+        "填写申报信息并上传材料",
+        "也可就近到全市各级人才服务窗口申报",
+        "各级人才服务窗口初审",
+        "市、区县（市）、园区人社部门审核",
+        "市人社局审定、公示",
+        "资金拨付至申请人个人社保卡账户"
+      ],
+      "location": "市级",
+      "url": "http://www.changsha.gov.cn/csrc_portal/"
+    },
+    "policySource": "长人才办发〔2022〕9号",
+    "effectiveDate": "2022-06-24",
+    "notes": "有效。面向落户长沙并在长工作的境外高校博士毕业生，补贴标准提高至10万元/人，从申请当月开始按月据实分期发放。35周岁（含）以下、毕业两年内，在长工作并缴纳社保。与\"国内普通高校\"分支互斥，仅境外高校博士可按本项标准申领。",
+    "location": "长沙市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "changsha-shiji-goufang",
+    "city": "changsha",
+    "name": "长沙市引进博士硕士人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常年受理，按季度集中审批",
+      "channel": "长沙市一体化人才综合信息服务平台、\"长沙人才\"APP、市住建委（市房屋交易管理中心）德政园网点",
+      "materials": [
+        "申报对象本人及家庭成员（配偶及未成年子女）身份证、户口簿等家庭关系材料",
+        "在长工作情况证明及社保参保材料",
+        "毕业证书",
+        "购买商品房期/现房的提交网签合同，购买存量房的提交权属证书（已抵押的提交复印件及不动产登记情况表）",
+        "单位统一社会信用代码证照复印件（加盖公章）",
+        "自主创业的提供工商营业执照复印件",
+        "机关事业单位非在编人员提供非在编职工证明和聘用劳动合同",
+        "委托第三方缴存社保的证明文件（工作单位与社保缴存单位不一致时）"
+      ],
+      "process": [
+        "登录长沙市一体化人才综合信息服务平台或\"长沙人才\"APP自主申报",
+        "市住建局房屋交易管理中心会同市人社局、市公安局等部门审核",
+        "提出建议补贴名单报市委人才办审定",
+        "公示5个工作日",
+        "公示无异议的，由市人力资源社会保障局每季度集中将购房补贴款全额拨付至个人社保卡账户"
+      ],
+      "location": "市级",
+      "url": "http://www.changsha.gov.cn/csrc_portal/"
+    },
+    "policySource": "长人才办发〔2022〕6号",
+    "effectiveDate": "2022-05-01",
+    "notes": "有效。2017年6月21日（含）后来长工作的博士、硕士毕业生，2022年5月1日（含）后在长首次购买商品住房可申请。博士10万元/人、硕士3万元/人。35周岁（含）以下（境外高校博士毕业生不限年龄）。机关事业单位在编人员除外，但市属高校及市、区县（市）属公立医院、中小学校编制内新引进的博士除外。",
+    "location": "长沙市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

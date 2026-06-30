@@ -4,6 +4,18 @@ import shenzhen from './subsidies/shenzhen.json';
 import guangzhou from './subsidies/guangzhou.json';
 import hefei from './subsidies/hefei.json';
 import hangzhou from './subsidies/hangzhou.json';
+import jiaxing from './subsidies/jiaxing.json';
+import nanjing from './subsidies/nanjing.json';
+import chongqing from './subsidies/chongqing.json';
+import quanzhou from './subsidies/quanzhou.json';
+import wuhan from './subsidies/wuhan.json';
+import wenzhou from './subsidies/wenzhou.json';
+import ningbo from './subsidies/ningbo.json';
+import changsha from './subsidies/changsha.json';
+import chengdu from './subsidies/chengdu.json';
+import jinan from './subsidies/jinan.json';
+import shaoxing from './subsidies/shaoxing.json';
+import zhuhai from './subsidies/zhuhai.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
@@ -15,6 +27,18 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   guangzhou: guangzhou as Subsidy[],
   hefei: hefei as Subsidy[],
   hangzhou: hangzhou as Subsidy[],
+  jiaxing: jiaxing as Subsidy[],
+  nanjing: nanjing as Subsidy[],
+  chongqing: chongqing as Subsidy[],
+  quanzhou: quanzhou as Subsidy[],
+  wuhan: wuhan as Subsidy[],
+  wenzhou: wenzhou as Subsidy[],
+  ningbo: ningbo as Subsidy[],
+  changsha: changsha as Subsidy[],
+  chengdu: chengdu as Subsidy[],
+  jinan: jinan as Subsidy[],
+  shaoxing: shaoxing as Subsidy[],
+  zhuhai: zhuhai as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -151,6 +175,18 @@ export function getCityLevelLocation(city: string): string {
     guangzhou: '广州市',
     hefei: '合肥市',
     hangzhou: '杭州市',
+    jiaxing: '嘉兴市',
+    nanjing: '南京市',
+    chongqing: '重庆市',
+    quanzhou: '泉州市',
+    wuhan: '武汉市',
+    wenzhou: '温州市',
+    ningbo: '宁波市',
+    changsha: '长沙市',
+    chengdu: '成都市',
+    jinan: '济南市',
+    shaoxing: '绍兴市',
+    zhuhai: '珠海市',
   };
   return map[city] || '';
 }

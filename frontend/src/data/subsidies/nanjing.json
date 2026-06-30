@@ -1,0 +1,198 @@
+[
+  {
+    "id": "nanjing-shiji-shenghuobutie",
+    "city": "nanjing",
+    "name": "南京市高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "within_2_years"
+    },
+    "application": {
+      "deadline": "连续参保首月应在毕业后1年内，第一笔申领应在毕业后1年半内，第二笔申领应在毕业后2年内",
+      "channel": "\"我的南京\"APP—智慧人社—补贴服务—生活补贴",
+      "materials": [
+        "毕业证书",
+        "学位证书",
+        "国（境）外学历学位认证书（留学人员）",
+        "参保信息由系统数据比对获取"
+      ],
+      "process": [
+        "登录\"我的南京\"APP",
+        "进入智慧人社→补贴服务→生活补贴",
+        "填写学历、户籍、连续参保首月等信息并上传证书",
+        "系统比对参保信息",
+        "审核通过后发放至江苏省社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://m.nj.bendibao.com/live/181782.shtm"
+    },
+    "policySource": "《南京市高校毕业生生活补贴操作办法》",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效。本科1万元、硕士3万元、博士10万元，分两笔发放（每笔50%）。全日制普通高校（含国（境）外）毕业并取得学士及以上学位；首次就业创业的非全日制研究生（就读前及期间均无就业经历）也可申请。需在南京市依法纳税的企业、机关事业单位或在宁部省属单位就业并缴纳企业职工基本养老保险。同一人只能享受一次。",
+    "location": "南京市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanjing-shiji-zufangbutie",
+    "city": "nanjing",
+    "name": "南京市高校毕业生住房租赁补贴",
+    "category": "rent",
+    "amount": {
+      "min": 600,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 600,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "within_2_years"
+    },
+    "application": {
+      "deadline": "首次申请应在毕业之日起2年半内提交；末次申请应在享受补贴首月起5年内提交",
+      "channel": "\"我的南京\"APP—智慧人社—租房补贴",
+      "materials": [
+        "国内全日制普通高校提交学历、学位证书",
+        "全日制高等职业院校提交学历、高级工及以上职业资格证书",
+        "海外留学人员提交教育部留学服务中心国（境）外学历学位认证书",
+        "租房承诺书",
+        "租赁地址及房屋唯一标识（不动产单元号、丘权号或商品房预售合同编号三选一）"
+      ],
+      "process": [
+        "下载并登录\"我的南京\"APP",
+        "进入智慧人社→租房补贴",
+        "签署《租房承诺书》并填写租赁地址及房屋唯一标识",
+        "上传学历学位证书",
+        "每月前10个工作日审核上月申请",
+        "公示5天后发放至江苏省社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanjing.gov.cn/njsrlzyhshbzj/202510/t20251023_5674924.html"
+    },
+    "policySource": "《南京市人力资源和社会保障局等七部门关于优化调整高校毕业生住房租赁补贴政策的通知》",
+    "effectiveDate": "2025-10-01",
+    "notes": "有效。博士2000元/月、硕士800元/月、学士（含高级工及以上）600元/月，补贴期限累计不超过36个月。在宁无自有住房（或与父母共有家庭唯一一套住房）且租房居住。每连续参保缴费6个月可申领一次。南京市重点产业领域企业（集成电路、生物医药类规上企业、国家制造业单项冠军企业、国家专精特新\"小巨人\"企业先行试点）新引进的硕博毕业生，博士2400元/月、硕士960元/月。",
+    "location": "南京市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanjing-yuhuatai-youxiu",
+    "city": "nanjing",
+    "name": "雨花台区优秀高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 20000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "schoolLevel": ["双一流", "QS前200"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "within_2_years",
+      "companyType": ["规模以上工业企业", "国家高新技术企业", "省级以上专精特新企业", "重大创新平台", "高水平新型研发机构", "独角兽企业", "培育独角兽企业", "瞪羚企业", "区级以上重点人才工程入选者创办企业"]
+    },
+    "application": {
+      "deadline": "每年开展一次集中申报，具体时间以申报通知为准",
+      "channel": "\"及时雨政策资金全过程服务平台\"（企业微信扫码登录）",
+      "materials": [
+        "高校毕业生有效身份证明（身份证或护照）",
+        "毕业证书、学位证书及教育部学历证书电子注册备案表",
+        "境外学位需提供教育部留学服务中心学历认证",
+        "入职以来与用人单位签订的劳动合同",
+        "入职以来的《江苏省社会保险权益记录单（参保人员）》"
+      ],
+      "process": [
+        "以企业为单位申报，登录\"及时雨政策资金全过程服务平台\"",
+        "选择\"优秀高校毕业生生活补贴\"",
+        "填写并上传企业信息资料",
+        "新增填写毕业生信息资料",
+        "提交后由软件谷及街道（园区）、区人社局初审、复审",
+        "审核通过并公示后按1:1分两年拨付"
+      ],
+      "location": "雨花台区",
+      "url": "https://m.nj.bendibao.com/mip/175793.shtm"
+    },
+    "policySource": "《雨花台区高质量人口人才政策12条》",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。硕士2万元/人、博士5万元/人，按1:1分两年拨付。要求引进单位为雨花台区现代产业领域规模以上工业企业、国家高新技术企业、省级以上专精特新企业、重大创新平台、高水平新型研发机构、独角兽/培育独角兽/瞪羚企业、区级以上重点人才工程入选者创办企业；毕业生须为世界知名高校（入职当年QS世界大学排名前200）或\"双一流\"建设高校（学科）全日制毕业生；2023年1月1日以后首次来南京在雨花台区就业参保；毕业时间不超过2周年。与南京市其他区级补贴存在互斥。",
+    "location": "南京市·雨花台区",
+    "tier": 2,
+    "exclusiveGroup": "nanjing-district"
+  }
+]

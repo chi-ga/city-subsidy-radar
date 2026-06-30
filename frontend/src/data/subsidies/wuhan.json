@@ -1,0 +1,468 @@
+[
+  {
+    "id": "wuhan-shiji-rencaizulinjianfangzujinjianmian",
+    "city": "wuhan",
+    "name": "武汉市高校毕业生租住人才租赁房租金减免",
+    "category": "rent",
+    "amount": {
+      "min": 300,
+      "max": 48000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 300,
+        "max": 10800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 300,
+        "max": 10800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 18000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      },
+      "博士": {
+        "min": 2000,
+        "max": 48000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业6年内申请，政策累计减免期限不超过3年",
+      "channel": "武汉人才服务网或各区政务服务中心大学生服务窗口",
+      "materials": [
+        "《武汉市人才租赁房申请表》",
+        "毕业证和学历证明（学信网教育部学历证书电子注册备案表或教育部留学服务中心学历学位认证书）",
+        "本人及家庭成员身份证"
+      ],
+      "process": [
+        "登录武汉人才服务网或向意向区政务服务中心大学生服务窗口提交申请",
+        "各区人社部门2个工作日内完成学历资格审核，房管部门2个工作日内完成住房状况核查",
+        "审核通过后查询房源",
+        "选房配租并签订租赁合同",
+        "入住后按市场租金缴交，各区定期给予租金补贴"
+      ],
+      "location": "市级",
+      "url": "https://m.wh.bendibao.com/live/142750.shtm"
+    },
+    "policySource": "武人才通〔2022〕8号等相关文件（待核实）",
+    "effectiveDate": "2022-06-07",
+    "notes": "有效。全日制大专及以上、毕业6年以内、2022年6月7日起在汉就业创业并正常缴纳社保、家庭在汉无自有住房的高校毕业生可申请。租住人才租赁房按不高于市场租金70%缴纳房租，累计不超过3年；博士免缴2年（每月不超过2000元），硕士免缴1年（每月不超过1500元）。本科/专科按市场租金70%缴纳，具体减免金额以实际租金为准。",
+    "location": "武汉市",
+    "tier": 1
+  },
+  {
+    "id": "wuhan-shiji-yicixingchuangyebutie",
+    "city": "wuhan",
+    "name": "武汉市高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 8000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "申请时间和登记注册时间均应在毕业学年起5年以内",
+      "channel": "《营业执照》登记注册地所在区人力资源（社会保障）部门",
+      "materials": [
+        "《武汉市一次性创业补贴申请表》（A4规格、1式2份）",
+        "申请人的《毕业证书》或《学生证》复印件1份",
+        "如统一社会信用代码无法通过系统查验的，还需提供《营业执照》"
+      ],
+      "process": [
+        "填写《武汉市一次性创业补贴申请表》",
+        "向《营业执照》登记注册地所在区人力资源（社会保障）部门申报",
+        "区人社部门5个工作日完成审核后公示7天",
+        "公示无异议送区财政部门拨付补贴资金"
+      ],
+      "location": "市级",
+      "url": "https://rsj.wuhan.gov.cn/zwgk_17/zc/qtzdgkwj/tzgsgg/202106/t20210609_1716587.html"
+    },
+    "policySource": "武人社函〔2020〕149号、《关于做好一次性创业补贴发放工作的通知》",
+    "effectiveDate": "2020-01-01",
+    "notes": "有效。全日制普通高等院校毕业学年在校生或毕业四年内高校毕业生，在毕业学年起5年以内在我市创办小型微型企业或从事个体经营，领取《营业执照》正常经营6个月及以上且申请时处于正常营业状态，可申领8000元一次性创业补贴。",
+    "location": "武汉市",
+    "tier": 1
+  },
+  {
+    "id": "wuhan-jingkai-chunsunxingdongboshi",
+    "city": "wuhan",
+    "name": "武汉经开区春笋行动博士人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 50000,
+      "max": 150000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 0
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年按申报公告时间（2026年为4月14日—4月30日）",
+      "channel": "武汉经开区人才政策申报平台（车谷英才人才政策申报平台）",
+      "materials": [
+        "博士人才生活补贴申报表",
+        "身份证",
+        "学历学位证书",
+        "《教育部学历证书电子注册备案表》",
+        "企业营业执照复印件",
+        "劳动合同",
+        "上年度缴纳社保证明"
+      ],
+      "process": [
+        "以企业为单位登录武汉经开区人才政策申报平台",
+        "选择\"人才申报—春笋行动—生活补贴\"进行网上申报",
+        "提交个人及企业材料",
+        "审核通过后按年度拨付"
+      ],
+      "location": "武汉经济技术开发区（汉南区）",
+      "url": "http://m.toutiao.com/group/7628504360607121971/"
+    },
+    "policySource": "武开〔2025〕9号",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。毕业6年以内或年龄在40周岁以内，具有全日制博士学历学位，2019年6月之后来武汉经开区企业全职工作且社保缴纳一年以上可申请。生活补贴总额15万元，在区工作期间每满1年发放5万元，分3年等额发放。已享受购房补贴的不再重复享受生活补贴。",
+    "location": "武汉市·武汉经济技术开发区（汉南区）",
+    "tier": 2,
+    "exclusiveGroup": "wuhan-district"
+  },
+  {
+    "id": "wuhan-jingkai-chunsunxingdonggoufangbutie",
+    "city": "wuhan",
+    "name": "武汉经开区春笋行动人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 150000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "jingkai-buy-doctor",
+          "name": "博士研究生",
+          "degree": ["博士"]
+        },
+        {
+          "id": "jingkai-buy-master",
+          "name": "硕士研究生",
+          "degree": ["硕士"]
+        },
+        {
+          "id": "jingkai-buy-bachelor",
+          "name": "\"双一流\"高校本科毕业生",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "暂定每年1月和7月各集中汇总一次",
+      "channel": "武汉经开区人才政策申报平台",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "教育部学历证书电子注册备案表或留学服务中心认证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "购房合同及不动产权证书",
+        "用人单位营业执照及纳税证明"
+      ],
+      "process": [
+        "登录武汉经开区人才政策申报平台",
+        "选择\"春笋行动—购房补贴\"进行申报",
+        "提交个人及购房材料",
+        "审核通过后一般分两次等额发放"
+      ],
+      "location": "武汉经济技术开发区（汉南区）",
+      "url": "https://m.wh.bendibao.com/live/141735.shtm"
+    },
+    "policySource": "武开〔2025〕9号",
+    "effectiveDate": "2022-05-27",
+    "notes": "有效。全日制本科以上、毕业6年以内（博士可放宽40周岁以内），首次在武汉经开区企业全职工作、缴纳社保，并在武汉经开区购买首套增量商品住宅的博士、硕士、\"双一流\"高校本科毕业生（含QS前300境外高校本科毕业生）可申请。博士15万元、硕士6万元、双一流本科3万元，一般分两次等额发放。享受生活补贴的博士不再重复享受。",
+    "location": "武汉市·武汉经济技术开发区（汉南区）",
+    "tier": 3,
+    "exclusiveGroup": "wuhan-district"
+  },
+  {
+    "id": "wuhan-jingkai-renciaizufangbutie",
+    "city": "wuhan",
+    "name": "武汉经开区人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 21600,
+      "max": 64800,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 21600,
+        "max": 21600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 43200,
+        "max": 43200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 64800,
+        "max": 64800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业6年内申请，补贴期限最长不超过3年",
+      "channel": "武汉经开区人才政策申报平台或区政务服务中心人才服务窗口",
+      "materials": [
+        "身份证",
+        "学历学位证书及学历证明",
+        "劳动合同",
+        "社保缴纳证明",
+        "无自有住房证明",
+        "人才公寓租赁合同"
+      ],
+      "process": [
+        "登录武汉经开区人才政策申报平台或到指定窗口申请",
+        "提交学历、社保、无房证明等材料",
+        "资格审核通过后选房配租",
+        "按实收租金比例享受租房补贴"
+      ],
+      "location": "武汉经济技术开发区（汉南区）",
+      "url": "https://m.wh.bendibao.com/mip/141786.shtm"
+    },
+    "policySource": "武开〔2025〕9号",
+    "effectiveDate": "2022-05-27",
+    "notes": "有效。全日制本科及以上、毕业6年以内，在武汉经开区全职工作、缴纳社保且无自有住房的高校毕业生可申请。租住人才公寓期间：博士按实收租金100%、100%、70%补贴；硕士按100%、80%、60%补贴；本科按80%、60%、40%补贴，最长不超过3年。本金额为按参考租金估算，实际补贴以实收租金和审核结果为准。",
+    "location": "武汉市·武汉经济技术开发区（汉南区）",
+    "tier": 2,
+    "exclusiveGroup": "wuhan-district"
+  },
+  {
+    "id": "wuhan-xinzhou-wenjinyingcaishenghuobutie",
+    "city": "wuhan",
+    "name": "新洲区问津英才青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 6000,
+      "max": 100000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 6000,
+        "max": 30000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 12000,
+        "max": 60000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 20000,
+        "max": 100000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "xinzhou-bachelor",
+          "name": "本科生（须为重点院校原985、211院校）",
+          "degree": ["本科"],
+          "schoolLevel": ["985", "211"]
+        },
+        {
+          "id": "xinzhou-master",
+          "name": "硕士研究生",
+          "degree": ["硕士"]
+        },
+        {
+          "id": "xinzhou-doctor",
+          "name": "博士研究生",
+          "degree": ["博士"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "毕业五年内申报，全年受理",
+      "channel": "新洲区政府门户网站或新洲党建网",
+      "materials": [
+        "《新洲区问津英才·青年人才生活补贴申报表》",
+        "《新洲区问津英才·青年人才生活补贴汇总表》",
+        "居民身份证",
+        "户口簿（新洲区户籍证明）",
+        "学历学位证书及学历证明",
+        "劳动合同",
+        "社保缴纳证明",
+        "用人单位营业执照及税务登记证明"
+      ],
+      "process": [
+        "登录新洲区政府门户网站或新洲党建网下载申报表",
+        "准备学历、户籍、社保等材料",
+        "向用人单位或区人社部门提交申请",
+        "审核通过后按年度拨付"
+      ],
+      "location": "新洲区",
+      "url": "http://m.yunnanlong.com/c/531986.shtm"
+    },
+    "policySource": "问津英才计划相关文件（待核实）",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业五年内全日制大学本科及以上学历学位毕业生，拥有新洲区户籍并在新洲区缴纳社保，用人单位在新洲区依法注册、税务登记可申请。博士2万元/年、硕士1.2万元/年、重点院校（原985、211）本科0.6万元/年，发放期限不超过5年。本科生须为重点院校（原985、211），系统以985/211层次为参考条件。",
+    "location": "武汉市·新洲区",
+    "tier": 2,
+    "exclusiveGroup": "wuhan-district"
+  },
+  {
+    "id": "wuhan-xinzhou-wenjinyingcaijinganbutie",
+    "city": "wuhan",
+    "name": "新洲区问津英才青年人才安居补贴（购房补贴）",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业五年内购买房屋后申报，全年受理",
+      "channel": "新洲区政府门户网站或新洲党建网",
+      "materials": [
+        "《新洲区问津英才·青年人才安居补贴申报表》",
+        "居民身份证",
+        "户口簿",
+        "学历学位证书及学历证明",
+        "劳动合同",
+        "社保缴纳证明",
+        "购房合同及不动产权证书",
+        "无自有住房证明",
+        "用人单位营业执照及税务登记证明"
+      ],
+      "process": [
+        "登录新洲区政府门户网站或新洲党建网下载申报表",
+        "准备学历、户籍、社保、购房合同等材料",
+        "向区人社部门提交申请",
+        "审核通过后按标准拨付"
+      ],
+      "location": "新洲区",
+      "url": "https://m.wh.bendibao.com/mip/166528.shtm"
+    },
+    "policySource": "问津英才计划相关文件（待核实）",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业五年内全日制大学本科及以上学历学位毕业生，拥有新洲区户籍并在新洲区缴纳社保，购房前本人在新洲区无自有住房，且所购房屋在毕业五年内购买可申请。博士10万元（分3年发放）、硕士6万元（分2年等额发放）、本科3万元（一次性发放）。需在完成购房后申领。",
+    "location": "武汉市·新洲区",
+    "tier": 3,
+    "exclusiveGroup": "wuhan-district"
+  }
+]

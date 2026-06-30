@@ -9,6 +9,17 @@ const COVERED_CITIES = [
   { code: 'guangzhou', name: '广州', count: 6 },
   { code: 'hefei', name: '合肥', count: 2 },
   { code: 'hangzhou', name: '杭州', count: 7 },
+  { code: 'nanjing', name: '南京', count: 3 },
+  { code: 'chongqing', name: '重庆', count: 16 },
+  { code: 'quanzhou', name: '泉州', count: 9 },
+  { code: 'wuhan', name: '武汉', count: 7 },
+  { code: 'wenzhou', name: '温州', count: 5 },
+  { code: 'ningbo', name: '宁波', count: 5 },
+  { code: 'changsha', name: '长沙', count: 4 },
+  { code: 'chengdu', name: '成都', count: 13 },
+  { code: 'jinan', name: '济南', count: 5 },
+  { code: 'shaoxing', name: '绍兴', count: 24 },
+  { code: 'zhuhai', name: '珠海', count: 8 },
 ];
 
 export default function CityListFallback({ onCityClick }: CityListFallbackProps) {

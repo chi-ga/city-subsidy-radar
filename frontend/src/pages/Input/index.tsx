@@ -376,7 +376,25 @@ export default function Input() {
           returneeStatus: isOverseas ? 'within_2_years' : undefined,
         };
 
-        const cities: CityCode[] = ['beijing', 'shanghai', 'shenzhen', 'guangzhou', 'hefei', 'hangzhou'];
+        const cities: CityCode[] = [
+          'beijing',
+          'shanghai',
+          'shenzhen',
+          'guangzhou',
+          'hefei',
+          'hangzhou',
+          'nanjing',
+          'chongqing',
+          'quanzhou',
+          'wuhan',
+          'wenzhou',
+          'ningbo',
+          'changsha',
+          'chengdu',
+          'jinan',
+          'shaoxing',
+          'zhuhai',
+        ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);
         navigate('/compare');

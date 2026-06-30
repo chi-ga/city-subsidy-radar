@@ -1,0 +1,203 @@
+[
+  {
+    "id": "jinan-shiji-zufangbutie",
+    "city": "jinan",
+    "name": "济南市新就业职工租赁住房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 700,
+        "max": 700,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业不超过5年内申请，常态化受理",
+      "channel": "济南人才网租赁住房补贴申报系统或用人单位线下提交至区县住建部门",
+      "materials": [
+        "申请人身份证件",
+        "户口簿本人单页或公安机关出具的户籍证明，或有效期内《济南市居住证》",
+        "毕业证、学位证",
+        "劳动合同或聘用合同",
+        "社会保险缴纳证明",
+        "租赁住房合同或相关居住证明",
+        "授权书和承诺书",
+        "家庭住房情况相关材料（已婚者需提供配偶及未成年子女住房信息）"
+      ],
+      "process": [
+        "申请人向用人单位提出申请并填写《新就业职工租赁住房补贴申请表》",
+        "用人单位核实确认后，提交至单位注册地区县住房城乡建设部门",
+        "区县住建部门会同民政、人社、社保、住房交易、不动产登记等系统信息比对及人工核查",
+        "审核通过后按月或按季度发放至申请人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rc.jinan.gov.cn/"
+    },
+    "policySource": "济建发〔2024〕50号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。博士1500元/月、硕士1000元/月、本科700元/月、专科500元/月，最长3年（36个月）。要求毕业5年内、在济连续缴纳养老保险6个月、在相关区无自有住房且租赁住房居住。与高层次人才生活/购房补贴等政策不同时享受。",
+    "location": "济南市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jinan-shiji-shenghuobutie",
+    "city": "jinan",
+    "name": "济南市高层次人才生活和租房补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "首次提报至区县时毕业不超过3年，常态化申报",
+      "channel": "济南人才网生活和租房补贴申报系统",
+      "materials": [
+        "申请人身份证件",
+        "毕业证、学位证（留学回国人员提供教育部学历学位认证书）",
+        "劳动合同或聘用合同",
+        "社会保险缴纳证明",
+        "用人单位出具的在职证明",
+        "个人承诺书、授权书",
+        "房屋租赁合同（A、B、C、D类人才提供，全日制博士/硕士一般不需要）"
+      ],
+      "process": [
+        "用人单位在济南人才网注册单位账户，为申报人开通申报权限",
+        "申报人通过生活和租房补贴申报系统网上申报，填报个人信息",
+        "用人单位核实确认后，按属地原则提交至区县人社部门",
+        "区县及市级审核，公示后拨付"
+      ],
+      "location": "市级",
+      "url": "https://rc.jinan.gov.cn/"
+    },
+    "policySource": "济人才办发〔2025〕4号",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。博士1500元/月、硕士1000元/月，最长3年（36个月）。要求全日制博士/硕士、毕业3年内、签订3年及以上劳动合同并在济正常缴纳社保。与人才公寓、购房补贴、租赁住房补贴等不同时享受；A-D类高层次人才通道需人才认定，不在自动匹配范围。",
+    "location": "济南市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jinan-shiji-goufangbutie",
+    "city": "jinan",
+    "name": "济南市高层次人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 100000,
+      "max": 150000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "购房网签备案需在2019年9月（含）以后，且在毕业5年内",
+      "channel": "济南人才网购房补贴系统",
+      "materials": [
+        "申请人身份证件",
+        "毕业证、学位证",
+        "劳动合同或聘用合同/任命文件",
+        "社会保险缴纳证明",
+        "购房网签备案材料",
+        "家庭住房情况证明",
+        "个人承诺书、授权书",
+        "社会保障卡金融账户信息"
+      ],
+      "process": [
+        "用人单位通过济南人才网购房补贴系统注册账户",
+        "申请人填报信息并填写个人承诺书、授权书，提交用人单位核实",
+        "用人单位提交至单位注册地区县住房城乡建设部门",
+        "区县住建部门信息比对及人工核查",
+        "市保障性住房服务中心汇总审核通过名单并在济南人才网公示5个工作日",
+        "公示期满无异议后发放至申请人社会保障卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rc.jinan.gov.cn/"
+    },
+    "policySource": "济人才办发〔2025〕4号",
+    "effectiveDate": "2019-09-01",
+    "notes": "有效。博士15万元、硕士10万元一次性发放。需纳入E类人才认定、购房网签备案在毕业5年内且为家庭在济唯一住房。与高层次人才生活补贴不同时享受。本政策需人才认定，仅作政策库展示，不参与自动匹配。",
+    "location": "济南市",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

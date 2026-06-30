@@ -1,0 +1,745 @@
+[
+  {
+    "id": "chongqing-shiji-12gexiandaxueshengjiuye",
+    "city": "chongqing",
+    "name": "重庆市12个县大学生就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "企业参保后1年之内提出申请",
+      "channel": "“渝快办”平台“渝悦·就业”应用",
+      "materials": [
+        "个人身份证明",
+        "劳动合同",
+        "社保缴纳证明",
+        "学历学位证书",
+        "个人社保卡银行账户信息"
+      ],
+      "process": [
+        "在12个县企业就业参保后办理就业登记",
+        "通过“渝快办”平台“渝悦·就业”应用提出个人申请",
+        "街道（乡镇）公共就业服务机构审核实际就业情况",
+        "县公共就业服务机构复审",
+        "公示5个工作日",
+        "财政部门确认后按季度划入申请人个人社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "http://www.cq.gov.cn/zt/zcztclwz/detail.html?policyId=5626"
+    },
+    "policySource": "渝人社规〔2025〕22号",
+    "effectiveDate": "2025-02-01",
+    "notes": "现行有效。限在重庆市12个县（城口、丰都、忠县、垫江、云阳、奉节、巫山、巫溪、石柱、秀山、酉阳、彭水）企业就业。毕业年度高校毕业生和离校5年内高校毕业生可申请；离校5年内高校毕业生须为重庆市首次参保。本科1000元/月、硕士2000元/月、博士3000元/月，最长3年。参保企业和实际就业企业须一致，实际工作地须在12个县内。",
+    "location": "重庆市",
+    "tier": 2
+  },
+  {
+    "id": "chongqing-shiji-yicixingchuangyebutie",
+    "city": "chongqing",
+    "name": "重庆市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false,
+      "graduationYear": "within_2_years"
+    },
+    "application": {
+      "deadline": "正常经营1年以上3年以下期间申报",
+      "channel": "“渝快办”平台【个人创业（人才创新创业）一件事】",
+      "materials": [
+        "《重庆市一次性创业补贴申报表》",
+        "个体经营者或小微企业法定代表人身份证",
+        "带动就业人员的劳动合同",
+        "营业执照",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "准备申报材料",
+        "通过“渝快办”平台线上办理或向注册地街道（乡镇）公共就业服务机构线下申报",
+        "审核通过后拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.cqrb.cn/minshengdongxian/2025-06-27/2332299_pc.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效。离校5年内高校毕业生在重庆市内首次创办小微企业或个体工商户，正常经营1年以上3年以下，吸纳劳动者就业并签订1年以上劳动合同且缴纳社保满3个月。每带动就业1人（含经营者）补贴2000元，最高8000元，以家庭为单位只能享受一次。",
+    "location": "重庆市",
+    "tier": 1
+  },
+  {
+    "id": "chongqing-shiji-zaixiaoqiuzhichuangyebutie",
+    "city": "chongqing",
+    "name": "重庆市在校求职创业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 800,
+      "max": 800,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "毕业学年申请",
+      "channel": "“渝职聘”小程序",
+      "materials": [
+        "个人身份证明",
+        "对应身份类别证明材料（低保证、残疾证、助学贷款合同等）"
+      ],
+      "process": [
+        "每年3月底前高校上传次年毕业符合条件毕业生实名信息",
+        "市人力社保局数据比对形成补贴名单下发各高校",
+        "每年7月至8月通知名单内毕业生登录“渝职聘”小程序完善账户信息",
+        "个人申报后审核发放"
+      ],
+      "location": "市级",
+      "url": "https://m.cq.bendibao.com/live/130817.shtm"
+    },
+    "policySource": "渝人社〔2024〕242号",
+    "effectiveDate": "2024-01-01",
+    "notes": "现行有效。限重庆市高校毕业学年在校生，且属于低保家庭、零就业家庭、防止返贫监测对象家庭、特困人员中的毕业生，或残疾，或获得国家助学贷款的毕业生。800元/人，每人只能享受1次，多重身份不重复享受。",
+    "location": "重庆市",
+    "tier": 2
+  },
+  {
+    "id": "chongqing-shiji-qingnianjiuyeshixibutie",
+    "city": "chongqing",
+    "name": "重庆市青年就业见习补贴",
+    "category": "employment",
+    "amount": {
+      "min": 1300,
+      "max": 1300,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 24,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "见习期间申请",
+      "channel": "各区县公共就业服务机构 / 就业见习基地",
+      "materials": [
+        "个人身份证明",
+        "学历学位证书或学籍证明",
+        "见习协议",
+        "人身意外伤害保险凭证",
+        "留用人员差额补贴另需提供劳动合同、社保缴纳证明等"
+      ],
+      "process": [
+        "向就业见习基地申请见习岗位",
+        "见习基地向区县公共就业服务机构申报见习补贴",
+        "审核通过后拨付至见习基地"
+      ],
+      "location": "市级",
+      "url": "https://rlsbj.cq.gov.cn/zczxwdk/ywfl/jycy/202405/t20240531_13253108.html"
+    },
+    "policySource": "重庆市青年就业见习实施办法",
+    "effectiveDate": "2024-05-01",
+    "notes": "现行有效。见习基地基本生活费补贴1300元/人/月，补贴期限1—12个月；人身意外伤害保险补贴100元/人；留用就业率达50%以上的见习基地另按200元/人/月发放留用差额补贴。确保见习人员实际到手生活费不低于重庆中心城区最低工资标准（2330元/月）。适用对象包括离校2年内未就业高校毕业生、高校毕业学年在校生、16—24岁失业青年等。",
+    "location": "重庆市",
+    "tier": 2
+  },
+  {
+    "id": "chongqing-shiji-boshihouchuangxinrencai",
+    "city": "chongqing",
+    "name": "重庆市博士后创新人才支持计划",
+    "category": "talent",
+    "amount": {
+      "min": 0,
+      "max": 600000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "年度申报，以当年通知为准",
+      "channel": "重庆市人力资源和社会保障局博士后相关系统",
+      "materials": [
+        "博士后研究人员进站备案证明",
+        "博士学位证书",
+        "科研计划书",
+        "代表性科研成果",
+        "其他按当年申报通知要求的材料"
+      ],
+      "process": [
+        "个人通过设站单位申报",
+        "设站单位审核推荐",
+        "市博士后管理办公室组织评审",
+        "公示拟资助名单",
+        "拨付资助经费"
+      ],
+      "location": "市级",
+      "url": "https://rlsbj.cq.gov.cn/zwxx_182/tzgg/202511/t20251117_15168532.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效（2025年度申报已开展）。在重庆市博士后科研流动站、工作站、创新实践基地从事博士后研究工作的人员可申请。市博新计划资助标准为60万元/人·2年（40万元日常经费+20万元科研经费）；博士后研究项目特别资助根据项目情况给予5—30万元项目经费。需经评审择优资助。",
+    "location": "重庆市",
+    "tier": 3
+  },
+  {
+    "id": "chongqing-shiji-shehuibaoxiankuochong",
+    "city": "chongqing",
+    "name": "重庆市扩大社会保险补贴范围及一次性扩岗补助",
+    "category": "employment",
+    "amount": {
+      "min": 0,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "企业提交申请时间最迟为2025-12-31",
+      "channel": "“渝悦·就业”平台",
+      "materials": [
+        "个人社会保险补贴申报表",
+        "企业招用重点群体明细表",
+        "企业与招用重点群体签订的劳动合同",
+        "个人社保卡或银行账户信息"
+      ],
+      "process": [
+        "市人力社保局每月大数据比对并向企业公布名单",
+        "企业在线筛选、完善银行账户信息、确认后发起申请",
+        "注册地区县就业公共服务机构上门核查劳动合同真实性",
+        "公示5个工作日后拨付",
+        "一次性扩岗补助按1000元/人标准发放"
+      ],
+      "location": "市级",
+      "url": "http://www.cq.gov.cn/ykbzt/zcztc/detail.html?policyId=5607"
+    },
+    "policySource": "渝人社规〔2025〕21号",
+    "effectiveDate": "2025-01-01",
+    "notes": "现行有效。重点行业领域（制造业，信息传输/软件和信息技术服务业，批发和零售业，住宿和餐饮业，租赁和商务服务业，居民服务、修理和其他服务业）中小微企业招用2025届高校毕业生、2023届和2024届离校未就业毕业生等群体，签订1年以上劳动合同并缴纳社保的，按社会保险个人缴费额的25%给予补贴，最长12个月。一次性扩岗补助按每招用1人1000元发放给企业或社会组织。社保补贴金额与个人缴费基数挂钩，本卡片的1000元为扩岗补助额度。",
+    "location": "重庆市",
+    "tier": 1
+  },
+  {
+    "id": "chongqing-shiji-linghuojiuyeshebaobutie",
+    "city": "chongqing",
+    "name": "重庆市高校毕业生灵活就业社会保险补贴",
+    "category": "employment",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false,
+      "graduationYear": "within_2_years"
+    },
+    "application": {
+      "deadline": "按季度或年度申请",
+      "channel": "街道（乡镇）公共就业服务机构 / “渝快办”平台",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "灵活就业证明材料",
+        "社保缴费凭证",
+        "个人银行账户信息"
+      ],
+      "process": [
+        "到户籍地或常住地街道（乡镇）公共就业服务机构办理失业登记或灵活就业登记",
+        "提交社保补贴申请",
+        "审核通过后按规定拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.cqrb.cn/fuwuzixun/2025-05-13/2272757_pc.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效。登记失业的离校2年内高校毕业生，从事网络配送、商贩、网约车等灵活就业并按规定缴纳社会保险费的，可享受补贴。养老保险补贴按缴费基数下限的2/3计算，医疗保险补贴按最低档缴费的2/3计算。金额与当年缴费基数挂钩，卡片未显示具体金额。",
+    "location": "重庆市",
+    "tier": 1
+  },
+  {
+    "id": "chongqing-shiji-gongzufangmianzu",
+    "city": "chongqing",
+    "name": "重庆市高校应届毕业生公租房免租优惠",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "入住后符合条件即可申请",
+      "channel": "重庆市公共租赁住房官网",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同或营业执照（申请延长免租时）",
+        "社保缴纳证明（申请延长免租时）"
+      ],
+      "process": [
+        "登录重庆市公共租赁住房官网或“渝快办”平台申请公租房",
+        "入住后符合条件的申请延长免租",
+        "审核通过后享受免租优惠"
+      ],
+      "location": "市级",
+      "url": "https://fwgl.zfcxjw.cq.gov.cn:9090/site/cqgzf/publicEnquiry/studentHousePulic"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效。高校应届毕业生租住重庆中心城区公租房给予1个月免租优惠；过渡期内在中心城区实现就业创业并缴纳社保的，可再申请2个月免租优惠，累计最长3个月。属于住房优惠而非现金补贴，金额依实际租金确定。",
+    "location": "重庆市",
+    "tier": 1
+  },
+  {
+    "id": "chongqing-liangjiangxinqu-yingjieshengzufang",
+    "city": "chongqing",
+    "name": "两江新区重点企业新引进全日制应届毕业生一次性租房补助",
+    "category": "rent",
+    "amount": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "以当年申报通知为准",
+      "channel": "两江新区人才服务窗口或线上申报系统",
+      "materials": [
+        "身份证",
+        "全日制学历学位证书",
+        "教育部学历认证（境外高校）",
+        "劳动合同",
+        "社保缴纳证明",
+        "企业出具的引进证明"
+      ],
+      "process": [
+        "企业通过两江新区人才服务通道申报",
+        "提交员工相关材料",
+        "审核通过后拨付至企业或个人账户"
+      ],
+      "location": "两江新区",
+      "url": "https://m.cq.bendibao.com/live/111024.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效。两江新区重点企业新招聘引进国内36所“双一流大学”和国家承认学历的部分国（境）外高校全日制应届毕业生，毕业两年内首次参加工作且签订3年以上用工合同。本科1万元、硕士2万元、博士3万元一次性租房补助。与两江新区直管区其他政策补助不可重复享受。",
+    "location": "重庆市·两江新区",
+    "tier": 1,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-gaoxinqu-xinfengrencaizufang",
+    "city": "chongqing",
+    "name": "重庆高新区“新凤人才”租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 0,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 0,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "博士": {
+        "min": 0,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年3月、9月集中申请",
+      "channel": "重庆高新区建设局 / 人才住房管理单位",
+      "materials": [
+        "申请人身份信息",
+        "学历学位证明",
+        "劳动合同",
+        "社保缴纳证明",
+        "租赁合同",
+        "租金收取凭证和发票（由人才住房管理单位提供）"
+      ],
+      "process": [
+        "申请人所在单位向高新区申报租房补贴",
+        "审核通过后联系人才住房管理单位",
+        "凭审核凭证按优惠后标准支付租金",
+        "人才住房管理单位每年3月、9月向高新区申请租赁补贴"
+      ],
+      "location": "重庆高新区",
+      "url": "https://m.cq.bendibao.com/live/135375.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效。全日制本科及以上学历，与重庆高新区直管园内企业签订1年以上劳动合同并缴纳社保。博士每月补贴应付租金的50%最高1000元；租住人才住房的急需紧缺专业硕士和“双一流”/QS前100海外高校急需紧缺专业本科每月补贴应付租金的30%最高600元。累计不超过2年。本科不超过25周岁、硕士不超过30周岁、博士不超过35周岁。",
+    "location": "重庆市·重庆高新区",
+    "tier": 1,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-yubeiqu-qingnianrenocaiyizhan",
+    "city": "chongqing",
+    "name": "渝北区青年人才成长驿站",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件即可申请",
+      "channel": "“渝北共青团”微信公众号",
+      "materials": [
+        "身份证",
+        "学生证或学历学位证书",
+        "实习/就业/创业证明材料",
+        "驿站入住申请表"
+      ],
+      "process": [
+        "关注“渝北共青团”微信公众号",
+        "选择下方菜单团青互动，点击“青年人才驿站”链接",
+        "填报入住申请并上传证明材料",
+        "经团区委、区人力社保局审查通过后携身份证办理入住"
+      ],
+      "location": "渝北区",
+      "url": "https://m.cq.bendibao.com/live/128556.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "现行有效。来渝北创业就业的全日制普通高校在校大学生、毕业3年内来渝北创业或就业的大学生等可申请。经确认后提供最长3个月免费住宿；仍未就业或创业初期的毕业生再给予最长3个月半价住宿。位于空港佳园公租房A组团5幢。属于住房优惠，金额依实际住宿标准确定。",
+    "location": "重庆市·渝北区",
+    "tier": 1,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-dadukouqu-rencaigongyu",
+    "city": "chongqing",
+    "name": "大渡口区来渡留渡·人才公寓租金补贴",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 1200,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件即可申请",
+      "channel": "大渡口区城市建设服务中心",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "无房证明"
+      ],
+      "process": [
+        "向大渡口区城市建设服务中心或指定部门申请人才公寓",
+        "提交相关证明材料",
+        "审核通过后按租金补助标准入住"
+      ],
+      "location": "大渡口区",
+      "url": "http://m.toutiao.com/group/7642183489961345546.shtml"
+    },
+    "policySource": "《大渡口区关于支持高校毕业生等青年来渡留渡十条措施》",
+    "effectiveDate": "2025-05-20",
+    "notes": "现行有效。符合条件的新就业无房人才在大渡口区就业并正常缴纳社保，入住人才公寓可享受50%—100%租金补助，每月最高1200元，最长2年。属于住房优惠，补助直接抵扣租金。",
+    "location": "重庆市·大渡口区",
+    "tier": 1,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-dadukouqu-qingnianyizhan",
+    "city": "chongqing",
+    "name": "大渡口区来渡留渡·青年驿站",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件即可申请",
+      "channel": "大渡口区团区委 / 青年驿站运营方",
+      "materials": [
+        "身份证",
+        "学生证或学历学位证书",
+        "求职证明或劳动合同/营业执照",
+        "青年驿站入住申请表"
+      ],
+      "process": [
+        "通过指定渠道申请青年驿站入住",
+        "提交身份、学历、求职/就业证明材料",
+        "审核通过后安排入住"
+      ],
+      "location": "大渡口区",
+      "url": "http://m.toutiao.com/group/7642183489961345546.shtml"
+    },
+    "policySource": "《大渡口区关于支持高校毕业生等青年来渡留渡十条措施》",
+    "effectiveDate": "2025-05-20",
+    "notes": "现行有效。35周岁以下全日制高校在校生及毕业3年内毕业生可申请。求职毕业生可享每年2次、每次最多3晚免费住宿；已就业创业青年可享最长3个月免费、3个月半价住宿。属于住房优惠，金额依实际住宿标准确定。",
+    "location": "重庆市·大渡口区",
+    "tier": 1,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-dadukouqu-jiuyegoufangbutie",
+    "city": "chongqing",
+    "name": "大渡口区来渡留渡·本科及以上学历就业购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2025-12-31前完成购房及契税缴纳",
+      "channel": "大渡口区住建委",
+      "materials": [
+        "身份证",
+        "全日制本科及以上学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "购房合同",
+        "契税缴纳凭证",
+        "银行卡"
+      ],
+      "process": [
+        "购房并完成契税缴纳",
+        "向大渡口区住建委或指定部门提交申请",
+        "提交学历、劳动合同、社保、购房合同、契税缴纳凭证等材料",
+        "审核通过后发放现金补贴"
+      ],
+      "location": "大渡口区",
+      "url": "http://www.cqnews.net/1/detail/1400915107452383232/web/content_1400915107452383232.html"
+    },
+    "policySource": "《2025年大渡口区更好满足住房消费需求购房优惠政策实施细则》",
+    "effectiveDate": "2025-08-01",
+    "notes": "现行有效（政策期至2025-12-31）。首次在大渡口区工作的全日制本科及以上学历毕业生，2025年1月1日至12月31日期间首次在大渡口区全职工作并缴纳社保，在2025年8月1日至12月31日期间购买大渡口区新建商品住房并完成契税缴纳的，可享受实缴总购房款1%的现金补贴。补贴金额与购房总价挂钩，卡片未显示具体金额。",
+    "location": "重庆市·大渡口区",
+    "tier": 2,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-dadukouqu-chuangyechangzu",
+    "city": "chongqing",
+    "name": "大渡口区来渡留渡·创业场租补贴",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 30,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "符合条件即可申请",
+      "channel": "大渡口区创业孵化基地",
+      "materials": [
+        "营业执照",
+        "入驻协议",
+        "租赁合同",
+        "租金发票",
+        "创业实体经营证明材料"
+      ],
+      "process": [
+        "申请入驻大渡口区创业孵化基地",
+        "签订入驻协议",
+        "提交场租补贴申请",
+        "审核通过后按标准补贴"
+      ],
+      "location": "大渡口区",
+      "url": "http://m.toutiao.com/group/7642183489961345546.shtml"
+    },
+    "policySource": "《大渡口区关于支持高校毕业生等青年来渡留渡十条措施》",
+    "effectiveDate": "2025-05-20",
+    "notes": "现行有效。入驻大渡口区孵化基地的创业实体，可享受最高30元/平方米/月、最长36个月的场租补贴。补贴金额与租赁面积挂钩，卡片按单价展示，实际金额需根据场地面积计算。",
+    "location": "重庆市·大渡口区",
+    "tier": 1,
+    "exclusiveGroup": "chongqing-district"
+  },
+  {
+    "id": "chongqing-dadukouqu-chuangyexiangmujiangli",
+    "city": "chongqing",
+    "name": "大渡口区来渡留渡·创业项目奖励",
+    "category": "startup",
+    "amount": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "获奖后申请",
+      "channel": "大渡口区人力社保局",
+      "materials": [
+        "项目获奖证明",
+        "营业执照",
+        "项目负责人身份证明",
+        "学历学位证书"
+      ],
+      "process": [
+        "推送青年创业项目参评市级“渝创渝新”计划",
+        "获得等次后提交奖励申请",
+        "审核通过后拨付"
+      ],
+      "location": "大渡口区",
+      "url": "http://m.toutiao.com/group/7642183489961345546.shtml"
+    },
+    "policySource": "《大渡口区关于支持高校毕业生等青年来渡留渡十条措施》",
+    "effectiveDate": "2025-05-20",
+    "notes": "现行有效。推送青年创业项目参评市级“渝创渝新”计划并获得相应等次的，在大渡口区注册或落地的项目可获3万元、2万元、1万元阶梯奖励。",
+    "location": "重庆市·大渡口区",
+    "tier": 2,
+    "exclusiveGroup": "chongqing-district"
+  }
+]

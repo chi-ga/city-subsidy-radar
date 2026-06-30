@@ -1,0 +1,418 @@
+[
+  {
+    "id": "jiaxing-shiji-shenghuobutie",
+    "city": "jiaxing",
+    "name": "嘉兴市企业人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 6000,
+      "max": 60000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 6000,
+        "max": 6000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "jiaxing-shenghuo-boshi",
+          "name": "博士研究生",
+          "degree": ["博士"]
+        },
+        {
+          "id": "jiaxing-shenghuo-shuoshi",
+          "name": "硕士研究生",
+          "degree": ["硕士"]
+        },
+        {
+          "id": "jiaxing-shenghuo-shuangyiliubenkewai",
+          "name": "双一流/QS前300本科",
+          "degree": ["本科"],
+          "schoolLevel": [
+            "双一流",
+            "QS前100",
+            "QS前150",
+            "QS前200",
+            "QS前300"
+          ]
+        },
+        {
+          "id": "jiaxing-shenghuo-qitabenke",
+          "name": "其他高校本科",
+          "degree": ["本科"]
+        },
+        {
+          "id": "jiaxing-shenghuo-zhuanke",
+          "name": "全日制专科",
+          "degree": ["专科"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "2025年度申报时间为4月28日至5月31日，2026年度拟于9月初启动，具体以官方公告为准",
+      "channel": "嘉兴市人力社保局官网“嘉兴人才在线”或“浙里办”APP“嘉兴人才码”",
+      "materials": [
+        "申请人证件照",
+        "身份证（正反面）或护照（本人页）",
+        "毕业证书",
+        "学位证书",
+        "学信网《教育部学历证书电子注册备案表》",
+        "劳动合同（自主创业的提供营业执照副本）",
+        "社保证明",
+        "国（境）外就读的提供教育部留学服务中心出具的国（境）外学历学位认证书"
+      ],
+      "process": [
+        "登录嘉兴市人社局官网“嘉兴人才在线”或“浙里办”APP“嘉兴人才码”",
+        "完成人才认定",
+        "进入“资金申领”→“个人补贴申请”",
+        "填写信息并上传材料",
+        "初审通过后打印申请表，签字盖章后上传",
+        "审核通过后拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.jx.bendibao.com/cyfw/13599_2.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2020-01-01",
+    "notes": "有效。博士6万元、硕士3万元、双一流/QS前300本科2万元、其他本科1万元、专科0.6万元，一次性发放。要求2020年及以后初次来嘉兴市级（南湖区、秀洲区、嘉兴经济技术开发区）企业工作，连续缴纳社保满6个月且申请时仍在岗。在机关事业单位、国有企业及烟草、电力、通信、石化、邮政、银行、保险等特定行业工作的本科及以下学历人才不纳入。",
+    "location": "嘉兴市",
+    "tier": 1
+  },
+  {
+    "id": "jiaxing-shiji-goufangbutie",
+    "city": "jiaxing",
+    "name": "嘉兴市企业人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 350000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 350000,
+        "max": 350000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "jiaxing-goufang-boshi",
+          "name": "博士研究生",
+          "degree": ["博士"]
+        },
+        {
+          "id": "jiaxing-goufang-shuoshi",
+          "name": "硕士研究生",
+          "degree": ["硕士"]
+        },
+        {
+          "id": "jiaxing-goufang-shuangyiliubenkewai",
+          "name": "双一流/QS前300本科",
+          "degree": ["本科"],
+          "schoolLevel": [
+            "双一流",
+            "QS前100",
+            "QS前150",
+            "QS前200",
+            "QS前300"
+          ]
+        },
+        {
+          "id": "jiaxing-goufang-qitabenke",
+          "name": "其他高校本科",
+          "degree": ["本科"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "2025年度申报时间为4月28日至5月31日，具体以官方公告为准",
+      "channel": "嘉兴市人力社保局官网“嘉兴人才在线”或“浙里办”APP“嘉兴人才码”",
+      "materials": [
+        "申请人证件照",
+        "身份证或护照",
+        "毕业证书",
+        "学位证书",
+        "学信网《教育部学历证书电子注册备案表》或国（境）外学历学位认证书",
+        "劳动合同或营业执照",
+        "社保证明",
+        "不动产权证书",
+        "结婚证（已婚的需提供）",
+        "重大人才工程证明材料（如有）"
+      ],
+      "process": [
+        "登录“嘉兴人才在线”或“浙里办”APP“嘉兴人才码”",
+        "完成人才认定",
+        "进入“资金申领”→“个人补贴申请”",
+        "填写购房补贴申请并上传不动产权证书等材料",
+        "审核通过后拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.jx.bendibao.com/cyfw/13599.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2017-01-01",
+    "notes": "有效。博士35万元、硕士15万元、双一流/QS前300本科10万元、其他本科5万元。须取得嘉兴市本级商品房不动产权证书且用途为住宅，连续缴纳社保6个月及以上。一般分两次申请，首次50%，满3年发剩余50%；首次申请时已工作满3年可全额。本科毕业时间距离初次来嘉工作时间不超过5年。机关事业单位、国有企业及特定行业本科人才不纳入。首次申请购房补贴5年内房产不得上市交易。",
+    "location": "嘉兴市",
+    "tier": 3
+  },
+  {
+    "id": "jiaxing-shiji-jiuyebutie",
+    "city": "jiaxing",
+    "name": "嘉兴市高校毕业生到中小微企业就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 3000,
+      "max": 9000,
+      "unit": "元",
+      "period": "每年"
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "符合条件后的次月至次年12月底",
+      "channel": "浙江政务服务网或“浙里办”APP",
+      "materials": [
+        "居民身份证或社会保障卡",
+        "高校毕业生就业补贴申请表",
+        "相关学历证明（毕业证书或教育部学籍在线验证报告，国外学历学位认证书等）"
+      ],
+      "process": [
+        "登录“浙江政务服务网”或“浙里办”APP",
+        "搜索“高校毕业生就业补贴申领”",
+        "选择嘉兴市及企业注册地所在区",
+        "在线填写并上传材料",
+        "经办机构审核、公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.jiaxing.gov.cn/art/2024/1/17/art_1229426373_2510408.html"
+    },
+    "policySource": "嘉政发〔2024〕1号",
+    "effectiveDate": "2024-01-11",
+    "notes": "有效。毕业2年以内高校毕业生到中小微企业就业，每年3000元，补贴期限不超过3年，累计最高9000元。到养老服务、家政服务和现代农业企业就业的，每年1万元。两项不可重复享受。",
+    "location": "嘉兴市",
+    "tier": 1
+  },
+  {
+    "id": "jiaxing-shiji-chuangyebutie",
+    "city": "jiaxing",
+    "name": "嘉兴市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": false,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "登记注册3年内申请",
+      "channel": "浙江政务服务网或“浙里办”APP",
+      "materials": [
+        "居民身份证",
+        "毕业证书（在校生提供学籍证明）",
+        "营业执照副本",
+        "经营场地证明",
+        "带动就业人员劳动合同及社保缴纳证明（申请1万元档时提供）"
+      ],
+      "process": [
+        "登录“浙江政务服务网”或“浙里办”APP",
+        "搜索“一次性创业补贴申领”",
+        "在线填写并上传材料",
+        "经办机构审核、公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.jiaxing.gov.cn/art/2024/1/17/art_1229426373_2510408.html"
+    },
+    "policySource": "嘉政发〔2024〕1号",
+    "effectiveDate": "2024-01-11",
+    "notes": "有效。在校大学生和毕业5年以内高校毕业生等重点人群初次创业，正常经营满6个月，给予5000元一次性创业补贴；带动就业3人及以上的提高至1万元。创办经认定的养老、家政服务和现代农业企业，分三年给予10万元。",
+    "location": "嘉兴市",
+    "tier": 1
+  },
+  {
+    "id": "jiaxing-haining-shenghuobutie",
+    "city": "jiaxing",
+    "name": "海宁市大学生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 150000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 5000,
+        "max": 15000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 150000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "在连续缴纳社保满12/24/36个月后分别申请",
+      "channel": "海宁人才e家（电脑端）",
+      "materials": [
+        "浙江省社会保险参保证明（养老保险）",
+        "教育部学历证书电子注册备案表（学信网）或国（境）外学历学位认证书",
+        "用人单位审核确认书",
+        "企业营业执照",
+        "劳务派遣人员需提供被劳务派遣单位在职证明"
+      ],
+      "process": [
+        "单位登录海宁人才申报系统",
+        "点击“引才育才激励”，选择“大学生生活补贴”",
+        "填写信息并上传材料",
+        "提交后等待审核、公示",
+        "拨付至申请人账户"
+      ],
+      "location": "海宁市",
+      "url": "https://www.hnrcrs.com/wap/index.php?c=article&a=show&id=12569"
+    },
+    "policySource": "海人社〔2023〕76号",
+    "effectiveDate": "2023-12-01",
+    "notes": "有效。毕业5年内的硕士、全日制本科或博士，2023年12月1日起初次引进到海宁市用人单位（机关事业单位在编人员除外）工作，申请当月需在职。在连续缴纳社保满12/24/36个月时分别申请：博士5万/次共15万；硕士首次2万、后两次各1.5万共5万；本科0.5万/次共1.5万。海宁本地高校毕业生额外给予5000元。",
+    "location": "嘉兴市·海宁市",
+    "tier": 1,
+    "exclusiveGroup": "jiaxing-district"
+  },
+  {
+    "id": "jiaxing-pinghu-zufangbutie",
+    "city": "jiaxing",
+    "name": "平湖市新就业无房职工公共租赁住房租赁补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 600,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 600,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业三年内申请",
+      "channel": "浙江政务服务网或“浙里办”APP",
+      "materials": [
+        "申请人身份证",
+        "毕业证书",
+        "劳动合同或营业执照",
+        "社保或公积金缴纳证明",
+        "户口簿或浙江省居住证",
+        "家庭收入及财产证明",
+        "婚姻状况证明",
+        "无房证明"
+      ],
+      "process": [
+        "通过浙江政务服务网或“浙里办”APP进行网上申请，或到所在镇街道（村社区）便民服务中心、住房保障部门窗口线下申请",
+        "填写申请信息并上传材料",
+        "住房保障部门审核",
+        "审核通过后按月发放租赁补贴"
+      ],
+      "location": "平湖市",
+      "url": "https://m.sohu.com/a/818064315_121123883"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。高校毕业三年内的新就业无房职工，在平湖市非公企业就业或自主创业，签订1年及以上劳动合同，缴纳6个月以上社保或公积金。按户保障40平方米，大专每月500元、本科每月600元，累计不超过36个月。需具有平湖市城镇户籍或有效居住证，申请家庭在平湖市无住房且5年内无转让住房记录，家庭收入低于上年度城镇居民人均可支配收入，未享受其他人才安居政策。",
+    "location": "嘉兴市·平湖市",
+    "tier": 1,
+    "exclusiveGroup": "jiaxing-district"
+  }
+]

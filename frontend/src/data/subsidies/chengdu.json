@@ -1,0 +1,610 @@
+[
+  {
+    "id": "chengdu-shiji-boshianjiabutie",
+    "city": "chengdu",
+    "name": "成都市新引进急需紧缺人才安家补贴（2000元/月档）",
+    "category": "settlement",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年5月至7月集中申报，受理上一年度补贴；2026年度申报至2026年7月31日前",
+      "channel": "企业通过成都市急需紧缺人才服务管理系统网上申请",
+      "materials": [
+        "《成都市新引进人才安家补贴申请表》",
+        "企业营业执照",
+        "引进人才有效身份证件复印件",
+        "劳动合同",
+        "个人近6个月连续缴纳社保证明",
+        "《承诺书》",
+        "学历学位证书",
+        "6个月有效期学信网学历认证报告（国（境）外高校学历学位证书的，提供教育部留学服务中心认证报告）",
+        "其他根据审核需要须补充提供的材料"
+      ],
+      "process": [
+        "企业登录成都市急需紧缺人才服务管理系统",
+        "填写人才信息并上传材料",
+        "企业按属地原则提交申请",
+        "审核通过后按月发放"
+      ],
+      "location": "市级",
+      "url": "https://m.cd.bendibao.com/fangchan/210204.shtm"
+    },
+    "policySource": "《成都市引进急需紧缺人才实施办法》（2026年1月1日生效）",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效。取得全日制博士学历学位证书后一年内引进到成都市企业工作，或符合引进当年《成都市人才开发指引》紧缺度3星岗位要求的人才，从引进次月起3年内按月发放2000元/人·月，合计7.2万元。须由企业引进，个人不可单独申报；与新引进人才安家补贴不重复享受。",
+    "location": "成都市",
+    "tier": 1
+  },
+  {
+    "id": "chengdu-shiji-gaocengcianjiabutie",
+    "city": "chengdu",
+    "name": "成都市新引进急需紧缺人才安家补贴（3000元/月档）",
+    "category": "talent",
+    "amount": {
+      "min": 3000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "每年5月至7月集中申报，受理上一年度补贴",
+      "channel": "企业通过成都市急需紧缺人才服务管理系统网上申请",
+      "materials": [
+        "《成都市新引进人才安家补贴申请表》",
+        "企业营业执照",
+        "引进人才有效身份证件复印件",
+        "劳动合同",
+        "社保证明",
+        "成都市人才认定证书",
+        "《承诺书》",
+        "其他根据审核需要须补充提供的材料"
+      ],
+      "process": [
+        "企业登录成都市急需紧缺人才服务管理系统",
+        "填写人才信息并上传材料",
+        "提交申请并等待审核",
+        "审核通过后按月发放"
+      ],
+      "location": "市级",
+      "url": "https://m.cd.bendibao.com/fangchan/210205.shtm"
+    },
+    "policySource": "《成都市引进急需紧缺人才实施办法》（2026年1月1日生效）",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效。满足《成都市人才分类目录》A、B、C类条件之一的人才，以成都市人才认定证书为准，从引进次月起3年内按月发放3000元/人·月，合计10.8万元。需先取得成都市高层次人才认定，本系统仅作政策展示入口，不参与自动匹配。",
+    "location": "成都市",
+    "tier": 3
+  },
+  {
+    "id": "chengdu-shiji-xianchengxincheng",
+    "city": "chengdu",
+    "name": "成都县市新城新引进人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 800,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士"],
+      "schoolLevel": ["软科前150"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年5月至7月集中申报，受理上一年度补贴",
+      "channel": "企业通过成都市急需紧缺人才服务管理系统集中申报",
+      "materials": [
+        "《成都市新引进人才安家补贴（县市新城新引进人才生活补贴）申请表》",
+        "企业营业执照",
+        "引进人才有效身份证件复印件",
+        "劳动合同",
+        "个人近6个月连续缴纳社保证明",
+        "《承诺书》",
+        "学历学位证书",
+        "6个月有效期学信网学历认证报告（国（境）外高校学历学位证书的，提供教育部留学服务中心认证报告）",
+        "其他根据审核需要须补充提供的材料"
+      ],
+      "process": [
+        "企业通过成都市急需紧缺人才服务管理系统集中申报",
+        "提交申请表、企业营业执照、人才身份证件、劳动合同、社保证明、学历学位及认证材料",
+        "审核通过后拨付至人才本人社会保障卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://m.cd.bendibao.com/fangchan/210501.shtm"
+    },
+    "policySource": "《成都市引进急需紧缺人才实施办法》（2026年1月1日生效）",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效。毕业于软科世界大学学术排名（毕业当年）前150名高校的全日制硕士或本科毕业生，在成都市县市新城（简阳市、都江堰市、彭州市、邛崃市、崇州市、金堂县、大邑县、蒲江县）区域内企业就业，签订3年及以上劳动合同，5年内首次参保成都市企业职工基本养老保险且连续参保6个月及以上。硕士1500元/月、本科800元/月，发放3年。申请一次，三年有效，逾期未申请视为放弃。与新引进人才安家补贴不重复享受。",
+    "location": "成都市",
+    "tier": 1
+  },
+  {
+    "id": "chengdu-shiji-rencaiyouzu",
+    "city": "chengdu",
+    "name": "成都市人才优租行动实施细则",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "按各区（市）县及保租房项目运营单位通知",
+      "channel": "成都人才安居服务平台及各保租房项目运营单位",
+      "materials": [
+        "成都市人才认定证书或人才安居资格证明",
+        "有效身份证件",
+        "劳动合同或自主创业证明",
+        "社保或个税缴纳证明",
+        "租赁合同",
+        "其他项目要求的材料"
+      ],
+      "process": [
+        "申请人才安居资格",
+        "选择符合条件的保障性租赁住房项目",
+        "按项目要求提交人才认定材料、租赁合同等",
+        "审核通过后按补贴比例减免租金"
+      ],
+      "location": "市级",
+      "url": "https://m.cd.bendibao.com/fangchan/204446.shtm"
+    },
+    "policySource": "成都市住房和城乡建设局等四部门联合发布，2026年4月1日起实施，有效期5年",
+    "effectiveDate": "2026-04-01",
+    "notes": "有效。面向成都市市级A、B、C、D、E、F类人才，租住保障性租赁住房可享租金补贴，补贴比例50%-100%，面积最高50平方米。需先取得成都市人才认定资格，本系统仅作政策展示入口，不参与自动匹配。",
+    "location": "成都市",
+    "tier": 3
+  },
+  {
+    "id": "chengdu-qingyang-zufangbutie",
+    "city": "chengdu",
+    "name": "青羊区人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 6000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 6000,
+        "max": 6000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 12000,
+        "max": 12000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "具体申报时间以青羊区官方通知为准",
+      "channel": "青睐人才智慧云平台",
+      "materials": [
+        "有效身份证件",
+        "学历学位证书及学信网认证",
+        "劳动合同或聘用合同",
+        "社保缴纳证明",
+        "无房证明",
+        "专业与从事岗位一致性说明材料",
+        "其他需要的材料"
+      ],
+      "process": [
+        "登录青睐人才智慧云平台",
+        "填写个人信息并上传材料",
+        "用人单位确认并提交",
+        "等待审核",
+        "审核通过后一次性发放"
+      ],
+      "location": "青羊区",
+      "url": "https://m.cd.bendibao.com/fangchan/203782.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。全日制高校应届毕业生，2024年1月1日（含）起进入青羊区主导产业领域企业工作，毕业证记载时间起至线上申报当日不超过1年，所学专业须符合《青羊区主导产业急需紧缺人才目录（2024）》并从事本专业，与青羊辖区单位签订3年及以上劳动合同或聘用合同，按规定缴纳社保半年及以上，本人及配偶、未成年子女在成都市内无自有产权住房。博士3万元、硕士1.2万元、本科0.6万元一次性租房补贴。专业目录匹配属于细分追问条件。",
+    "location": "成都市·青羊区",
+    "tier": 2,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-xindu-yingjieshenghuobutie",
+    "city": "chengdu",
+    "name": "新都区高校应届毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年7月1日至7月15日集中申报",
+      "channel": "新都区行政审批局高层次人才服务中心（线下受理）",
+      "materials": [
+        "《成都市新都区高校应届毕业生生活补贴申请表》",
+        "人才资格证明材料（学历学位证书、技师及以上职业资格/技能等级证书等）",
+        "区内企业单位签订的劳动合同（加盖单位公章）",
+        "申请企业《营业执照》（加盖单位公章）",
+        "截止申请日期连续不间断12个月由申请单位缴纳养老保险的个人参保缴费证明",
+        "引进高校应届毕业生《居民户口簿》户主页、迁入页原件及复印件",
+        "引进高校应届毕业生身份证",
+        "引进高校应届毕业生银行卡或存折",
+        "国（境）外高校学历需提供教育部留学服务中心认证报告"
+      ],
+      "process": [
+        "企业填写《成都市新都区高校应届毕业生生活补贴申请表》并盖章",
+        "企业向新都区高层次人才服务中心集中报送申请材料",
+        "区高层次人才服务中心初审",
+        "区人社局复审",
+        "公示5个工作日",
+        "发放首次补贴",
+        "次年提交在职证明、年度考核评价结论和社保证明后发放剩余补贴"
+      ],
+      "location": "新都区",
+      "url": "https://www.zhengcejia.com/zhengceku/9662.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2023-07-01",
+    "notes": "有效。2023年7月1日（含）以后在新都区重点产业链企业新全职引进的高校应届毕业生，签订劳动合同时企业须入选新都区重点产业链企业目录，签订3年及以上劳动合同并全职工作满1年，毕业后6个月内首次就业在新都，缴纳养老保险12个月及以上，非新都籍须迁户到新都。本科1万元一次性、硕士3万元、博士10万元分两年平均拨付。同一企业内部调动不符合条件。",
+    "location": "成都市·新都区",
+    "tier": 2,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-shuangliu-boshianjiabutie",
+    "city": "chengdu",
+    "name": "双流区博士安家补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "待核实",
+      "channel": "成都市双流区人社局",
+      "materials": [
+        "有效身份证件",
+        "博士学历学位证书及认证材料",
+        "劳动合同或工作协议",
+        "社保缴纳证明",
+        "企业营业执照",
+        "企业属于重点产业链的说明材料"
+      ],
+      "process": [
+        "企业或人才准备申请材料",
+        "向双流区人社局提交申请",
+        "审核通过后按月发放"
+      ],
+      "location": "双流区",
+      "url": "https://m.cd.bendibao.com/live/184184.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。重点产业企业新引进的博士研究生学历人才，企业从成都市外引进或在蓉高校应届博士研究生，首次在蓉工作，所在企业与成都市重点产业链及重点细分领域相符，给予3年内2000元/月安家补贴，合计7.2万元。享受市级人才安家补贴的人才不再享受此项补贴。咨询电话：028-85811323。",
+    "location": "成都市·双流区",
+    "tier": 2,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-shuangliu-shuoboshenghuobutie",
+    "city": "chengdu",
+    "name": "双流区硕博等急需紧缺人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 36000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "待核实",
+      "channel": "成都市双流区人社局",
+      "materials": [
+        "有效身份证件",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "企业营业执照",
+        "研发岗位及工作内容说明",
+        "年薪证明（适用于30万年薪人才）",
+        "区人才开发指引3星岗位匹配材料"
+      ],
+      "process": [
+        "企业准备申请材料",
+        "向双流区人社局提交申请",
+        "审核通过后拨付"
+      ],
+      "location": "双流区",
+      "url": "https://m.cd.bendibao.com/live/184184.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。区内企业新引进的应届博士研究生10万元、硕士研究生3.6万元；或从市外引进的年薪达到30万元且符合当年度区属地人才开发指引3星岗位的研发人才7.2万元。须从事创新研发工作，签订3年及以上劳动合同并缴纳社保，截至申报通知印发时间至少工作满一年。享受市级人才安家补贴的人才不再享受此项补贴。咨询电话：028-85811323。",
+    "location": "成都市·双流区",
+    "tier": 2,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-tianfuxinqu-shenghuobutie",
+    "city": "chengdu",
+    "name": "四川天府新区急需紧缺人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "每年上半年集中受理上一年度补贴申报",
+      "channel": "四川天府新区智慧人才服务平台网站或微信小程序",
+      "materials": [
+        "个人身份证明材料",
+        "劳动合同",
+        "社保缴纳证明",
+        "学历学位证书及专业证明材料",
+        "从事岗位与紧缺清单匹配说明",
+        "企业营业执照及合规经营材料"
+      ],
+      "process": [
+        "个人登录四川天府新区智慧人才服务平台网站或微信小程序",
+        "填写个人信息及申报材料",
+        "企业同步提交企业材料",
+        "等待审核",
+        "审核通过后补贴发放至个人银行卡"
+      ],
+      "location": "四川天府新区",
+      "url": "https://m.cd.bendibao.com/fangchan/210215.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。从直管区外引进到天府新区直管区企业就业，签订3年及以上劳动合同，连续缴纳6个月以上社保，工作岗位须符合《四川天府新区直管区重点产业领域急需紧缺人才清单（2025—2026年）》，每人每月2000元，连续发放3年，合计7.2万元。无需落户。岗位清单匹配属于专业通道条件，本系统仅作政策展示入口，不参与自动匹配。",
+    "location": "成都市·四川天府新区",
+    "tier": 3,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-jinniu-zufangbutie",
+    "city": "chengdu",
+    "name": "金牛区人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "目前暂未开放申报，以金牛骄子综合服务智慧云平台通知为准",
+      "channel": "金牛骄子综合服务智慧云平台",
+      "materials": [
+        "人才认定证书",
+        "有效身份证件",
+        "劳动合同或自主创业证明",
+        "社保或个税缴纳证明",
+        "无房证明",
+        "租赁合同"
+      ],
+      "process": [
+        "登录金牛骄子综合服务智慧云平台",
+        "填写人才信息并上传材料",
+        "等待审核",
+        "审核通过后发放"
+      ],
+      "location": "金牛区",
+      "url": "https://m.cd.bendibao.com/fangchan/203782.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。已通过金牛区A—F类人才认定，在金牛区全职工作或自主创业，本人及配偶在金牛区无房，租赁商品住房或保障性租赁住房。A、B、C类按实际租金的100%/80%/60%补贴，每月最高8000/4500/2500元；D、E、F类在保障性租赁住房按实际租金的40%/20%/10%补贴，最长1年。需先取得金牛区人才认定，本系统仅作政策展示入口，不参与自动匹配。",
+    "location": "成都市·金牛区",
+    "tier": 3,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-jinjiang-zufangbutie",
+    "city": "chengdu",
+    "name": "锦江区人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "2025年申请已在7月结束（2025年6月9日—2025年7月4日），后续申请以官方通知为准",
+      "channel": "人才综合服务中心人才服务窗口（成都市锦江区三色路236号新华之星A1大厦B座7楼）",
+      "materials": [
+        "人才认定证书",
+        "有效身份证件",
+        "劳动合同或自主创业证明",
+        "社保缴纳证明",
+        "无房证明",
+        "租赁合同"
+      ],
+      "process": [
+        "前往人才综合服务中心人才服务窗口提交申请",
+        "等待审核",
+        "审核通过后发放"
+      ],
+      "location": "锦江区",
+      "url": "https://m.cd.bendibao.com/fangchan/203782.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2023-05-01",
+    "notes": "有效。2023年5月以后新引进的在锦江区创新创业的、符合锦江区人才分类目录E类及以上的人才，在成都市范围内家庭无自有住房，租住市场化住房、青年人才公寓、保障性住房。A-E类按面积和比例给予每月最高6000/4000/2000/1000/500元补贴，最长3年。不含机关事业单位在编人员。需先取得锦江区E类及以上人才认定，本系统仅作政策展示入口，不参与自动匹配。",
+    "location": "成都市·锦江区",
+    "tier": 3,
+    "exclusiveGroup": "chengdu-district"
+  },
+  {
+    "id": "chengdu-dayi-zufangbutie",
+    "city": "chengdu",
+    "name": "大邑县人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月"
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "待核实",
+      "channel": "大邑县住建局住房保障服务科（线下受理）",
+      "materials": [
+        "成都市人才认定证书及人才安居资格证明",
+        "有效身份证件",
+        "劳动合同",
+        "社保缴纳证明",
+        "无房证明",
+        "租赁合同"
+      ],
+      "process": [
+        "向大邑县住建局住房保障服务科提交人才租房补贴申请",
+        "提交人才认定证书、劳动合同、社保缴纳证明等材料",
+        "审核通过后发放"
+      ],
+      "location": "大邑县",
+      "url": "https://m.cd.bendibao.com/fangchan/203782.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-01-15",
+    "notes": "有效。2024年1月10日（含）后首次来大邑工作，通过成都市人才资格认定并取得人才安居资格，本人及家庭成员在大邑县域无自有产权住房且两年内无房产交易记录，所在单位注册纳税地在大邑。在人才公寓优惠政策面积内按大邑城区租赁住房平均租金，E类及以上100%、F类50%补贴，最长2年。需先取得成都市人才资格认定，本系统仅作政策展示入口，不参与自动匹配。",
+    "location": "成都市·大邑县",
+    "tier": 3,
+    "exclusiveGroup": "chengdu-district"
+  }
+]

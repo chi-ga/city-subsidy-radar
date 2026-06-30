@@ -1,0 +1,298 @@
+[
+  {
+    "id": "wenzhou-shiji-boshishenghuobutie",
+    "city": "wenzhou",
+    "name": "温州市新全职来温博士生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 80000,
+      "max": 80000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件后申请，享受期限为自符合条件首月起60个月内，享受月份累计不超过48个月",
+      "channel": "温州市产业政策奖励兑现系统或“温州人才”微信公众号-“人才云”",
+      "materials": [
+        "高校毕业生就业补贴申请表",
+        "单位年报等证明企业划型的材料",
+        "高等学校毕业证书",
+        "由人力资源服务机构派遣就业的，需提供派遣协议和劳动合同",
+        "学历与系统自动读取不一致的，需上传毕业证书和学信网学历证明或教育部留学服务中心国（境）外学历学位认证",
+        "其他证明材料"
+      ],
+      "process": [
+        "登录温州市产业政策奖励兑现系统或“温州人才云服务平台”",
+        "搜索“就业补贴”",
+        "按提示填报并上传材料",
+        "用人单位审核",
+        "人社部门审核拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.wenzhou.gov.cn/art/2025/6/18/art_1229118497_2039500.html"
+    },
+    "policySource": "温人社发〔2025〕50号",
+    "effectiveDate": "2025-07-01",
+    "notes": "有效。属“510+行动计划”（2025-2027年）生活和就业补贴条款，新全职来温工作的40周岁以下博士可申领8万元生活补贴，分4次发放。",
+    "location": "温州市",
+    "tier": 1
+  },
+  {
+    "id": "wenzhou-shiji-gaoxiaobiyeshenghuojiuyebutie",
+    "city": "wenzhou",
+    "name": "温州市高校毕业生就业/生活补贴",
+    "category": "employment",
+    "amount": {
+      "min": 5000,
+      "max": 40000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业2年内申请，享受期限为自符合条件首月起36个月内，享受月份累计不超过24个月",
+      "channel": "浙江政务服务网或浙里办APP，搜索“高校毕业生就业补贴申领”",
+      "materials": [
+        "高校毕业生就业补贴申请表",
+        "单位年报等证明企业划型的材料",
+        "高等学校毕业证书",
+        "由人力资源服务机构派遣就业的，需提供派遣协议和劳动合同",
+        "学历与系统自动读取不一致的，需上传毕业证书和学信网学历证明或教育部留学服务中心国（境）外学历学位认证",
+        "其他证明材料"
+      ],
+      "process": [
+        "登录浙江政务服务网或浙里办APP",
+        "搜索“高校毕业生就业补贴申领”",
+        "根据社保参保地选择辖区",
+        "按提示填报并上传材料",
+        "经办机构审核、公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.wenzhou.gov.cn/col/col1229892247/"
+    },
+    "policySource": "温人社发〔2025〕50号",
+    "effectiveDate": "2025-07-01",
+    "notes": "有效。毕业2年内新来温中小微企业就业的全日制硕士、本科、专科毕业生可申领，硕士4万元、本科1万元、专科0.5万元。工资收入需低于全省上年度非私营和私营单位就业人员加权平均工资。",
+    "location": "温州市",
+    "tier": 1
+  },
+  {
+    "id": "wenzhou-shiji-rencaizufangbutie",
+    "city": "wenzhou",
+    "name": "温州市人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 10000,
+      "max": 40000,
+      "unit": "元",
+      "period": "每年"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "每年"
+      },
+      "博士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "每年"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "在温初次建缴社保满12个月后的6个月内提出首次申请",
+      "channel": "温州人才之家或浙里办APP-“浙里人才之家-租房补贴”",
+      "materials": [
+        "申请人及配偶身份证（护照）",
+        "与用人单位签订3年以上的全职聘用合同和相应证明材料",
+        "到申请之日已以申请的用人单位为主体连续缴纳社保12个月以上证明材料",
+        "个人同意核查书",
+        "申请人的婚姻状况材料",
+        "与出租方签订的房屋租赁合同（租期到申请之日连续且满12个月以上）",
+        "房屋出租数电普票或增值税普通发票",
+        "F类人才需上传毕业证书、积分材料、年薪金、职称等相应材料"
+      ],
+      "process": [
+        "登录“温州人才之家-租房补贴”或浙里办APP-“浙里人才之家-租房补贴”",
+        "按提示填报信息并上传附件",
+        "用人单位审核并公示5个工作日",
+        "职能部门资格审核",
+        "准入登记后按发票金额据实发放"
+      ],
+      "location": "市级",
+      "url": "https://zjj.wenzhou.gov.cn/art/2025/6/30/art_1229129350_2039652.html"
+    },
+    "policySource": "温住建发〔2025〕20号",
+    "effectiveDate": "2025-07-01",
+    "notes": "有效。2025年7月1日起施行。申请对象须为温州市认定的ABCDEF类人才（F3对应全日制本科、F2对应全日制硕士、E类对应博士等），需先完成人才认定。F类最高1万元/年，DE类最高2万元/年，BC类最高4万元/年，累计不超过5年。",
+    "location": "温州市",
+    "tier": 3
+  },
+  {
+    "id": "wenzhou-longwan-gaoxiaobiyejiuyebutie",
+    "city": "wenzhou",
+    "name": "龙湾区高校毕业生就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 10800,
+      "max": 72000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 10800,
+        "max": 10800,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 72000,
+        "max": 72000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业5年内首次来龙湾区企业就业后申请",
+      "channel": "浙江政务服务网或浙里办APP，搜索“高校毕业生就业补贴申领”",
+      "materials": [
+        "居民身份证或社会保障卡",
+        "高校毕业生就业补贴申请表",
+        "高等学校毕业证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "其他证明材料"
+      ],
+      "process": [
+        "登录浙江政务服务网或浙里办APP",
+        "搜索“高校毕业生就业补贴申领”",
+        "选择龙湾区",
+        "按提示填报并上传材料",
+        "经办机构审核、公示",
+        "拨付"
+      ],
+      "location": "龙湾区",
+      "url": "https://m.wz.bendibao.com/live/50431.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2020-11-12",
+    "notes": "有效。龙湾区“510计划”攻坚行动政策，毕业5年以内首次来龙湾区企业就业并依法缴纳社保的高校毕业生，按温州市级标准150%兑现：博士7.2万元、硕士3.6万元、本科1.8万元、专科1.08万元，分2年发放。",
+    "location": "温州市·龙湾区",
+    "tier": 1,
+    "exclusiveGroup": "wenzhou-district"
+  },
+  {
+    "id": "wenzhou-lucheng-zhuankezufangbutie",
+    "city": "wenzhou",
+    "name": "鹿城区全日制专科高校毕业生租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 300,
+      "max": 300,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "conditions": {
+      "degree": ["专科"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件后申请，补贴期限不超过3年",
+      "channel": "向鹿城区住建部门或人社部门咨询受理",
+      "materials": [
+        "居民身份证",
+        "高等学校毕业证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "无房证明",
+        "房屋租赁合同",
+        "其他证明材料"
+      ],
+      "process": [
+        "向鹿城区住建部门或人社部门咨询受理方式",
+        "按要求提交材料",
+        "审核",
+        "拨付"
+      ],
+      "location": "鹿城区",
+      "url": "https://m.wz.bendibao.com/live/47795.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2020-12-21",
+    "notes": "有效。新到鹿城区中小微企业就业、在市区无住房且毕业未满5年的全日制专科高校毕业生，每月300元，补贴期限不超过3年。全日制本科及以上高校毕业生租房补贴按温州市人才新政执行。",
+    "location": "温州市·鹿城区",
+    "tier": 1,
+    "exclusiveGroup": "wenzhou-district"
+  }
+]
