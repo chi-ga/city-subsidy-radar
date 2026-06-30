@@ -173,23 +173,23 @@
     "name": "晋江市高校毕业生安居补助",
     "category": "rent",
     "amount": {
-      "min": 14400,
-      "max": 19200,
+      "min": 600,
+      "max": 800,
       "unit": "元",
       "period": "每月",
       "durationMonths": 24
     },
     "tieredAmount": {
       "硕士": {
-        "min": 19200,
-        "max": 19200,
+        "min": 800,
+        "max": 800,
         "unit": "元",
         "period": "每月",
         "durationMonths": 24
       },
       "本科": {
-        "min": 14400,
-        "max": 19200,
+        "min": 600,
+        "max": 800,
         "unit": "元",
         "period": "每月",
         "durationMonths": 24
@@ -202,7 +202,8 @@
       ],
       "ageLimit": 35,
       "employmentRequired": true,
-      "householdRequired": false
+      "householdRequired": false,
+      "requiresFullTime": true
     },
     "application": {
       "deadline": "2019年3月22日起在晋江市企业就业或自主创业后申报",
@@ -234,8 +235,8 @@
     "name": "晋江市高校毕业生社保补助",
     "category": "living",
     "amount": {
-      "min": 14400,
-      "max": 14400,
+      "min": 0,
+      "max": 600,
       "unit": "元",
       "period": "每月",
       "durationMonths": 24
@@ -329,8 +330,8 @@
     "name": "石狮市高校毕业生社保补助",
     "category": "living",
     "amount": {
-      "min": 14400,
-      "max": 14400,
+      "min": 0,
+      "max": 600,
       "unit": "元",
       "period": "每月",
       "durationMonths": 24
@@ -424,8 +425,8 @@
     "name": "惠安县高校毕业生社保补助",
     "category": "living",
     "amount": {
-      "min": 14400,
-      "max": 14400,
+      "min": 0,
+      "max": 600,
       "unit": "元",
       "period": "每月",
       "durationMonths": 24

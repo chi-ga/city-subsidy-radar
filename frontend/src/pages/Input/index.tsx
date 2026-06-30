@@ -153,6 +153,7 @@ export default function Input() {
     showFirstLingangEmployment: false,
     showFirstGuangzhouHukou: false,
     showHuaduImportStatus: false,
+    showCompanyType: false,
   };
 
   // 实际使用的条件配置
@@ -225,6 +226,7 @@ export default function Input() {
       isFirstLingangEmployment: activeConditions.showFirstLingangEmployment ? prev.isFirstLingangEmployment : undefined,
       isInThreeCitiesOneDistrict: activeConditions.showThreeCitiesOneDistrict ? prev.isInThreeCitiesOneDistrict : undefined,
       huaduImportStatus: activeConditions.showHuaduImportStatus ? prev.huaduImportStatus : undefined,
+      companyType: activeConditions.showCompanyType ? prev.companyType : undefined,
     }));
   }, [formData.city, formData.district, mode]);
 
@@ -1339,6 +1341,49 @@ export default function Input() {
                     <option value="" disabled>请选择引进时间</option>
                     <option value="after_2023">2023年1月1日后新引进花都区</option>
                     <option value="before_2023">2023年1月1日前已在花都工作</option>
+                  </select>
+                  <svg
+                    className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* 用人单位类型（南京雨花台区等限定企业类型） */}
+          {activeConditions.showCompanyType && (
+            <section className="animate-fade-slide-in">
+              <label className="flex items-center gap-2 text-sm font-semibold text-slate-800">
+                用人单位类型
+                <span className="ml-1 text-xs font-normal text-slate-400">（部分区域补贴限定企业类型）</span>
+              </label>
+              <p className="mt-1 text-xs text-slate-400">
+                如南京雨花台区优秀高校毕业生生活补贴要求用人单位属于重点产业企业
+              </p>
+              <div className="mt-3">
+                <div className="relative">
+                  <select
+                    value={formData.companyType || ''}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, companyType: e.target.value || undefined }))}
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                  >
+                    <option value="" disabled>请选择用人单位类型</option>
+                    <option value="规模以上工业企业">规模以上工业企业</option>
+                    <option value="国家高新技术企业">国家高新技术企业</option>
+                    <option value="省级以上专精特新企业">省级以上专精特新企业</option>
+                    <option value="重大创新平台">重大创新平台</option>
+                    <option value="高水平新型研发机构">高水平新型研发机构</option>
+                    <option value="独角兽企业">独角兽企业</option>
+                    <option value="培育独角兽企业">培育独角兽企业</option>
+                    <option value="瞪羚企业">瞪羚企业</option>
+                    <option value="区级以上重点人才工程入选者创办企业">区级以上重点人才工程入选者创办企业</option>
+                    <option value="其他">其他（不属于以上类型）</option>
                   </select>
                   <svg
                     className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"

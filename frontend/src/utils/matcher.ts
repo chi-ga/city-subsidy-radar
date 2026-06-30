@@ -369,6 +369,13 @@ export function matchSubsidy(user: UserProfile, subsidy: Subsidy): MatchResultIt
     }
   }
 
+  // 用人单位类型匹配（南京雨花台区等限定企业类型）
+  if (subsidy.conditions.companyType && subsidy.conditions.companyType.length > 0) {
+    if (!user.companyType || !subsidy.conditions.companyType.includes(user.companyType)) {
+      standardMissing.push(`用人单位类型：${subsidy.conditions.companyType.join('/')}`);
+    }
+  }
+
   // 全日制学历匹配
   if (subsidy.conditions.requiresFullTime) {
     if (user.isFullTime !== true) {

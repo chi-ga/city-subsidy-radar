@@ -62,6 +62,7 @@ const ALL_TRUE: CityConditions = {
   employmentRequired: true,
   householdRequired: true,
   major: true,
+  showCompanyType: true,
 };
 
 /** 条件字段名列表（用于 OR 合并） */
@@ -74,6 +75,7 @@ const CONDITION_KEYS: (keyof ConditionSet)[] = [
   'householdRequired',
   'major',
   'showIdentityType',
+  'showCompanyType',
 ];
 
 /**

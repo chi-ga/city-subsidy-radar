@@ -26,6 +26,8 @@ export interface ConditionSet {
   showFirstGuangzhouHukou?: boolean;
   /** 是否显示"花都引进时间"字段（广州花都区专用） */
   showHuaduImportStatus?: boolean;
+  /** 是否显示"用人单位类型"字段（南京雨花台区等限定企业类型） */
+  showCompanyType?: boolean;
 }
 
 /** 城市条件配置（含市级 base 和区级 extra） */

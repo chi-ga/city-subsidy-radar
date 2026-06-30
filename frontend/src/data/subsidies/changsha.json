@@ -102,8 +102,6 @@
         "硕士",
         "博士"
       ],
-      "ageLimit": 35,
-      "ageLimitExclusive": false,
       "graduationYear": "within_2_years",
       "employmentRequired": true,
       "householdRequired": true,
@@ -117,7 +115,9 @@
             "硕士",
             "博士"
           ],
-          "schoolRegion": "domestic"
+          "schoolRegion": "domestic",
+          "ageLimit": 35,
+          "ageLimitExclusive": false
         },
         {
           "id": "overseas-doctor",

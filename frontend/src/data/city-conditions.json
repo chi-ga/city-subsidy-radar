@@ -150,14 +150,16 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
       },
       "locationDependentFields": [],
       "districts": {
-        "雨花台区": {}
+        "雨花台区": {
+          "showCompanyType": true
+        }
       }
     },
     "chongqing": {
@@ -208,7 +210,9 @@
       },
       "locationDependentFields": [],
       "districts": {
-        "新洲区": {},
+        "新洲区": {
+          "householdRequired": true
+        },
         "武汉经济技术开发区（汉南区）": {}
       }
     },
@@ -256,6 +260,107 @@
       "locationDependentFields": [],
       "districts": {
         "良庆区": {}
+      }
+    },
+    "jiaxing": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "海宁市": {},
+        "平湖市": {}
+      }
+    },
+    "changsha": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "chengdu": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "双流区": {},
+        "四川天府新区": {},
+        "大邑县": {},
+        "新都区": {
+          "householdRequired": true
+        },
+        "金牛区": {},
+        "锦江区": {},
+        "青羊区": {}
+      }
+    },
+    "jinan": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "shaoxing": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "越城区": {},
+        "柯桥区": {},
+        "上虞区": {},
+        "诸暨市": {},
+        "嵊州市": {},
+        "新昌县": {}
+      }
+    },
+    "zhuhai": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "横琴粤澳深度合作区": {},
+        "高新区": {}
       }
     }
   }

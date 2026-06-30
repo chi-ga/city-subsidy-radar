@@ -706,8 +706,7 @@
         "专科",
         "本科",
         "硕士",
-        "博士",
-        "技师"
+        "博士"
       ],
       "requiresFullTime": true,
       "employmentRequired": true,

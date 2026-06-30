@@ -201,6 +201,9 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
   if (c.identityType && c.identityType.length > 0) {
     rows.push({ label: '身份要求', value: c.identityType.join('、'), status: defaultStatus });
   }
+  if (c.companyType && c.companyType.length > 0) {
+    rows.push({ label: '用人单位类型', value: c.companyType.join('、'), status: defaultStatus });
+  }
   if (c.talentLevel && c.talentLevel.length > 0) {
     rows.push({ label: '人才层次', value: c.talentLevel.join('、'), status: defaultStatus });
   }

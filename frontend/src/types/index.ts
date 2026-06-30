@@ -241,6 +241,10 @@ export interface UserProfile {
   // ===== 双学位 =====
   /** 是否拥有双学位（南山区等落户补贴要求双学位才给满额） */
   hasDoubleDegree?: boolean;
+
+  // ===== 用人单位类型（南京雨花台区等限定企业类型） =====
+  /** 用户所在用人单位类型 */
+  companyType?: string;
 }
 
 export interface MatchResultItem {
