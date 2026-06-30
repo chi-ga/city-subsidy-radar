@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hefei-shiji-zufang",
+    "city": "hefei",
+    "name": "合肥市高校毕业生住房租赁补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1250,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1250,
+        "max": 1250,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1667,
+        "max": 1667,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "自符合条件之日起可申请，续发无需重复申请",
+      "channel": "合肥市人才综合服务平台（安徽政务服务网/皖事通APP）",
+      "materials": [
+        "身份证",
+        "社会保障卡",
+        "毕业证/学位证",
+        "国（境）外学历学位认证（留学人员）",
+        "婚姻材料（已婚）",
+        "银行卡号",
+        "住房租赁合同备案信息"
+      ],
+      "process": [
+        "注册/登录安徽政务服务网或皖事通APP",
+        "进入合肥市人才综合服务平台完善个人信息",
+        "发起\"住房租赁补贴（2022）\"申请",
+        "大数据自动核验学历、住房、社保、企业纳税地等信息",
+        "所在企业审核",
+        "县区住房保障部门公示、兑现"
+      ],
+      "location": "市级",
+      "url": "https://rcaj.hfrsggff.com:8088/talent/"
+    },
+    "policySource": "合人才〔2022〕1号、合人才〔2024〕1号",
+    "effectiveDate": "2022-06-16",
+    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的35周岁以下博士、硕士、普通高校本科毕业生。3年内分别按每年3.6万元、2万元、1.5万元标准发放住房租赁补贴，累计不超过36个月。申请人及配偶、未成年子女在肥无自有住房，租赁住房须办理网签备案。2022年6月16日（含）后新来肥就业，且近三年在肥无参保记录。",
+    "location": "合肥市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "hefei-shiji-boshigoufang",
+    "city": "hefei",
+    "name": "合肥市博士购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 120000,
+      "max": 120000,
+      "unit": "元",
+      "period": "分5年拨付"
+    },
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "购房后按年度申请续发",
+      "channel": "合肥市人才综合服务平台（安徽政务服务网/皖事通APP）",
+      "materials": [
+        "身份证",
+        "婚姻材料",
+        "博士毕业证/学位证",
+        "银行卡号",
+        "购房网签合同",
+        "社保缴纳证明",
+        "住房情况查询授权材料"
+      ],
+      "process": [
+        "注册/登录安徽政务服务网或皖事通APP",
+        "进入合肥市人才综合服务平台完善个人信息",
+        "进入购房补贴模块发起申请",
+        "所在企业审核",
+        "政府审核、公示",
+        "按年度拨付"
+      ],
+      "location": "市级",
+      "url": "https://rcaj.hfrsggff.com:8088/talent/"
+    },
+    "policySource": "合人才〔2022〕1号、合人才〔2024〕1号",
+    "effectiveDate": "2022-06-16",
+    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的35周岁以下博士研究生。在肥连续缴纳社保满1年，购买首套自住住房可享最高12万元购房补贴，分5年拨付。购房时申请人及配偶、未成年子女在肥无住房且无住房转让记录，商品住房网签时间须在2022年6月16日（含）后。",
+    "location": "合肥市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

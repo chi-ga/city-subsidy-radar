@@ -102,7 +102,7 @@ export type EmploymentStatus = '已就业' | '未就业';
 export type SubsidyCategory = 'talent' | 'rent' | 'buy' | 'living' | 'employment' | 'startup' | 'settlement' | 'other';
 
 // 城市代码
-export type CityCode = 'beijing' | 'shanghai' | 'shenzhen' | 'guangzhou';
+export type CityCode = 'beijing' | 'shanghai' | 'shenzhen' | 'guangzhou' | 'hefei';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -110,6 +110,7 @@ export const CITY_NAMES: Record<CityCode, string> = {
   shanghai: '上海',
   shenzhen: '深圳',
   guangzhou: '广州',
+  hefei: '合肥',
 };
 
 // 补贴分类名称映射
