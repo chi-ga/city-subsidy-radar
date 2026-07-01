@@ -34,8 +34,7 @@
             "unit": "元",
             "period": "每月",
             "durationMonths": 36
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "phd-syl",
@@ -50,7 +49,13 @@
             "period": "每月",
             "durationMonths": 36
           },
-          "schoolLevel": "双一流"
+          "schoolLevel": [
+            "双一流",
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ]
         },
         {
           "id": "master-normal",
@@ -64,8 +69,7 @@
             "unit": "元",
             "period": "每月",
             "durationMonths": 36
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "master-syl",
@@ -80,7 +84,13 @@
             "period": "每月",
             "durationMonths": 36
           },
-          "schoolLevel": "双一流"
+          "schoolLevel": [
+            "双一流",
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ]
         },
         {
           "id": "bachelor-normal",
@@ -94,8 +104,7 @@
             "unit": "元",
             "period": "每月",
             "durationMonths": 36
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "bachelor-syl",
@@ -110,7 +119,13 @@
             "period": "每月",
             "durationMonths": 36
           },
-          "schoolLevel": "双一流"
+          "schoolLevel": [
+            "双一流",
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ]
         }
       ]
     },
@@ -175,8 +190,7 @@
             "max": 30000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "phd-yiliujs",
@@ -190,7 +204,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "phd-yiliuxk",
@@ -204,7 +220,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流学科建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "master-base",
@@ -217,8 +235,7 @@
             "max": 20000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "master-yiliujs",
@@ -232,7 +249,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "master-yiliuxk",
@@ -246,7 +265,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流学科建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "bachelor-base",
@@ -259,8 +280,7 @@
             "max": 10000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "bachelor-yiliujs",
@@ -274,7 +294,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "bachelor-yiliuxk",
@@ -288,7 +310,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流学科建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "zhuanke-base",
@@ -301,8 +325,7 @@
             "max": 8000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "普通"
+          }
         },
         {
           "id": "zhuanke-yiliujs",
@@ -316,7 +339,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         },
         {
           "id": "zhuanke-yiliuxk",
@@ -330,7 +355,9 @@
             "unit": "元",
             "period": "一次性"
           },
-          "schoolLevel": "一流学科建设"
+          "schoolLevel": [
+            "双一流"
+          ]
         }
       ]
     },
@@ -491,8 +518,7 @@
             "max": 100000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "不限"
+          }
         },
         {
           "id": "master-quan",
@@ -505,8 +531,7 @@
             "max": 50000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "不限"
+          }
         },
         {
           "id": "bachelor-quan",
@@ -519,8 +544,7 @@
             "max": 30000,
             "unit": "元",
             "period": "一次性"
-          },
-          "schoolLevel": "不限"
+          }
         }
       ]
     },
@@ -586,7 +610,13 @@
             "period": "分期",
             "durationMonths": 60
           },
-          "schoolLevel": "双一流/全球前200"
+          "schoolLevel": [
+            "双一流",
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ]
         },
         {
           "id": "master-jinpu",
@@ -601,7 +631,13 @@
             "period": "分期",
             "durationMonths": 60
           },
-          "schoolLevel": "双一流/全球前200"
+          "schoolLevel": [
+            "双一流",
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ]
         },
         {
           "id": "bachelor-jinpu",
@@ -616,7 +652,13 @@
             "period": "分期",
             "durationMonths": 60
           },
-          "schoolLevel": "双一流/全球前200"
+          "schoolLevel": [
+            "双一流",
+            "QS前200",
+            "THE前200",
+            "软科前200",
+            "USNews前200"
+          ]
         }
       ]
     },
