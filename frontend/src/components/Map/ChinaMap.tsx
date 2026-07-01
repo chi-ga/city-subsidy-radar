@@ -32,6 +32,15 @@ const COVERED_CITIES = [
   { name: '厦门市', code: 'xiamen', adcode: '350200', count: 2 },
   { name: '南昌市', code: 'nanchang', adcode: '360100', count: 3 },
   { name: '昆明市', code: 'kunming', adcode: '530100', count: 12 },
+  { name: '天津', code: 'tianjin', adcode: '120000', count: 2 },
+  { name: '苏州市', code: 'suzhou', adcode: '320500', count: 4 },
+  { name: '西安市', code: 'xian', adcode: '610100', count: 3 },
+  { name: '东莞市', code: 'dongguan', adcode: '441900', count: 2 },
+  { name: '佛山市', code: 'foshan', adcode: '440600', count: 2 },
+  { name: '惠州市', code: 'huizhou', adcode: '441300', count: 4 },
+  { name: '中山市', code: 'zhongshan', adcode: '442000', count: 3 },
+  { name: '海口市', code: 'haikou', adcode: '460100', count: 2 },
+  { name: '贵阳市', code: 'guiyang', adcode: '520100', count: 3 },
 ];
 
 

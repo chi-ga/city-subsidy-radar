@@ -1,0 +1,142 @@
+[
+  {
+    "id": "zhongshan-shiji-boshishenghuobutie",
+    "city": "zhongshan",
+    "name": "中山市新培养引进的博士生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 200000,
+      "max": 200000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "全年可申领（申领时须在中山市工作）",
+      "channel": "广东政务服务网（中山市）全流程网上申领",
+      "materials": [
+        "本人身份证",
+        "博士学历学位证书（国（境）外学历需教育部留学服务中心认证）",
+        "社会保险参保记录或个人纳税证明",
+        "与用人单位签订的劳动（聘用）合同",
+        "在中山工作满6个月的相关证明",
+        "国（境）外引进的另需提供引进相关证明材料（具体材料以广东政务服务网申办指南提示为准）"
+      ],
+      "process": [
+        "登录广东政务服务网（中山市）",
+        "全流程网上申领提交材料",
+        "审核",
+        "按4:2:4比例分三年发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://www.gdzwfw.gov.cn/"
+    },
+    "policySource": "中山组发〔2022〕1号",
+    "effectiveDate": "2022-04-01",
+    "notes": "有效。博士20万元生活补贴按4:2:4比例分三年发放；国（境）外引进的博士可另获10万元。要求2022年4月1日以来新培养引进、45周岁以下（含）、学历学位经教育部认可、在中山工作满6个月，不含公务员和参公管理人员。细则自2023年6月1日起施行，有效期五年（至2028-06-01）。",
+    "location": "中山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhongshan-shiji-shuoshishenghuobutie",
+    "city": "zhongshan",
+    "name": "中山市企业新培养引进的全日制硕士生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 30000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["硕士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "全年可申领（申领时须在中山市工作）",
+      "channel": "广东政务服务网（中山市）全流程网上申领",
+      "materials": [
+        "本人身份证",
+        "全日制硕士学历学位证书",
+        "社会保险参保记录或个人纳税证明",
+        "与企业签订的劳动（聘用）合同",
+        "在中山企业工作满12个月的相关证明",
+        "以副高级职称申报的须提供副高级专业技术职称证书（具体材料以广东政务服务网申办指南提示为准）"
+      ],
+      "process": [
+        "登录广东政务服务网（中山市）",
+        "全流程网上申领提交材料",
+        "审核",
+        "一次性发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://www.gdzwfw.gov.cn/"
+    },
+    "policySource": "中山组发〔2022〕1号",
+    "effectiveDate": "2022-04-01",
+    "notes": "有效。企业新培养引进的全日制硕士（或副高级专业技术人员）一次性3万元。要求2022年4月1日以来企业新引进、45周岁以下（含）、在中山企业工作满12个月。细则自2023年6月1日起施行，有效期五年（至2028-06-01）。",
+    "location": "中山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhongshan-shiji-benkeluohujintie",
+    "city": "zhongshan",
+    "name": "中山市全日制本科毕业生落户津贴",
+    "category": "settlement",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业后5年内申领",
+      "channel": "广东政务服务网（中山市）在线申领",
+      "materials": [
+        "本人身份证",
+        "全日制本科毕业证、学位证",
+        "中山市户口簿（落户证明）",
+        "社会保险参保记录",
+        "与中山市企业签订的劳动（聘用）合同",
+        "在中山市企业工作满1年的相关证明（具体材料以广东政务服务网申办指南提示为准）"
+      ],
+      "process": [
+        "登录广东政务服务网（中山市）",
+        "在线申领提交材料",
+        "审核",
+        "一次性发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://www.gdzwfw.gov.cn/"
+    },
+    "policySource": "中山组发〔2020〕4号",
+    "effectiveDate": "2020",
+    "notes": "有效。毕业5年内全日制本科毕业生、已落户中山且在中山市企业工作满1年，每人一次性1万元（2015年1月1日后毕业）。与青年后备人才待遇按“就高不就低、扣减差额”原则不重复核发。",
+    "location": "中山·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  }
+]

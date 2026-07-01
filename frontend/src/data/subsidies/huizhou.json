@@ -1,0 +1,372 @@
+[
+  {
+    "id": "huizhou-anjia-butie",
+    "city": "huizhou",
+    "name": "惠州市新引进人才安家补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 200000,
+      "max": 300000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生（45周岁以下）",
+          "amount": {
+            "min": 200000,
+            "max": 200000,
+            "unit": "元",
+            "period": "分期"
+          },
+          "degree": [
+            "博士"
+          ],
+          "ageLimit": 45,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "boshihou-zhenggaoji",
+          "name": "博士后及正高级职称专业技术人才（50周岁以下）",
+          "amount": {
+            "min": 300000,
+            "max": 300000,
+            "unit": "元",
+            "period": "分期"
+          },
+          "degree": [
+            "博士"
+          ],
+          "ageLimit": 50,
+          "ageLimitExclusive": false
+        }
+      ]
+    },
+    "application": {
+      "deadline": "通知下发之日起至2026年10月31日止（须在新引进到本市工作3年以内提出申请）",
+      "channel": "粤财扶助平台（线上申报）",
+      "materials": [
+        "安家补贴申请表",
+        "申请人身份证或有效证件",
+        "学历学位证书、博士后证书（国境外人才另提供学历学位认证书）",
+        "劳动或聘用合同（或非参公事业单位增人计划卡）",
+        "社会保障卡",
+        "本市户籍证明（户口簿，国境外人才除外）",
+        "连续12个月社会保险个人参保证明",
+        "连续12个月个人所得税纳税记录",
+        "职称证书（正高级职称人才提供）",
+        "用人单位营业执照或法人证书"
+      ],
+      "process": [
+        "通过粤财扶助平台网上申报",
+        "各县（区）人社部门受理、初审（市直单位直接由市人社局受理、审批）",
+        "市人社局复核审批",
+        "公示5个工作日",
+        "核准发放名单",
+        "补贴优先发至人才在本市的社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7634493195460428297/"
+    },
+    "policySource": "惠市人社规〔2022〕5号《惠州市人力资源和社会保障局 中共惠州市委组织部关于新引进人才安家落户补贴发放实施细则》",
+    "effectiveDate": "2022年",
+    "notes": "有效。博士20万（分3年6万/7万/7万发放）、博士后及正高级30万（分3年等额发放）安家补贴。要求2022年1月1日至2025年12月31日引进、首次在惠参保、非行政机关及参公单位、签订3年以上合同、连续社保和个税满12个月、具有本市户籍（国境外人才除外）。须3年以内提出申请，仍在领取领军人才补贴及在站博士后不予申报。补贴为税前金额，按偶然所得20%税率代扣个税。",
+    "location": "惠州市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huizhou-luohu-butie",
+    "city": "huizhou",
+    "name": "惠州市新引进人才落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 3000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "shuoshi-gaoji",
+          "name": "应届硕士毕业生、高级职称、高级技师",
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 45,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流院校应届本科毕业生、中级职称、技师",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "其他院校应届本科毕业生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "ageLimit": 35,
+          "ageLimitExclusive": false
+        }
+      ]
+    },
+    "application": {
+      "deadline": "通知下发之日起至2026年10月31日止（须在新引进到本市工作3年以内提出申请，一次性申报不得重复申领）",
+      "channel": "粤财扶助平台（线上申报）",
+      "materials": [
+        "落户补贴申请表",
+        "申请人身份证或有效证件",
+        "学历学位证书（国境外人才另提供学历学位认证书）",
+        "劳动或聘用合同（或非参公事业单位增人计划卡）",
+        "社会保障卡",
+        "本市户籍证明（户口簿，国境外人才除外）",
+        "自引进到本市工作之日起至申请之日止连续12个月社保个人参保证明",
+        "连续12个月个人所得税纳税记录",
+        "职称证书或职业资格证书（按相应条件提供）",
+        "用人单位营业执照或法人证书",
+        "双一流院校应届本科需提供毕业当年双一流院校名单佐证"
+      ],
+      "process": [
+        "通过粤财扶助平台网上申报",
+        "各县（区）人社部门受理、初审（市直单位直接由市人社局受理、审批）",
+        "市人社局复核审批",
+        "公示5个工作日",
+        "核准发放名单",
+        "补贴优先发至人才在本市的社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7634493195460428297/"
+    },
+    "policySource": "惠市人社规〔2022〕5号《惠州市人力资源和社会保障局 中共惠州市委组织部关于新引进人才安家落户补贴发放实施细则》",
+    "effectiveDate": "2022年",
+    "notes": "有效。应届硕士1万元、双一流应届本科或中级职称/技师5000元、其他院校应届本科3000元一次性落户补贴。要求2022年1月1日至2025年12月31日引进、首次在惠参保、非行政机关及参公单位、民营企业含外资可申请应届本科、签订3年以上合同、连续社保和个税满12个月、具有本市户籍（国境外人才除外）。须3年以内提出申请，一次性申报不得重复申领。补贴为税前金额，按偶然所得20%税率代扣个税。",
+    "location": "惠州市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huizhou-huiyang-rencaijintie",
+    "city": "huizhou",
+    "name": "惠阳区企业引进优秀毕业生人才津贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "每月"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生",
+          "amount": {
+            "min": 1000,
+            "max": 1000,
+            "unit": "元",
+            "period": "每月"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-zhongdian",
+          "name": "重点高校本科毕业生",
+          "amount": {
+            "min": 500,
+            "max": 500,
+            "unit": "元",
+            "period": "每月"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "重点高校"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "企业于2025年9月15日前报送材料到镇街初核；镇街于9月20日前报区人社局复核",
+      "channel": "线下提交至所在镇（街道）组织办，由镇街转交惠阳区人力资源和社会保障局",
+      "materials": [
+        "申领人员信息名单",
+        "《惠州市惠阳区优秀毕业生登记备案表》",
+        "《惠州市惠阳区优秀毕业生人才津贴申领表》",
+        "有效身份证、学历学位证书（境外学历另提供教育部留学服务中心认证书）",
+        "在职证明材料（任职文件、聘用证书等）",
+        "与企业签订的劳动合同（3年或累计3年以上）",
+        "企业营业执照",
+        "近半年以来在惠阳区缴纳社会保险费的证明",
+        "本人银行卡复印件（需与身份证复印在同一张A4纸上，注明单位并亲笔签名）"
+      ],
+      "process": [
+        "申领（填写备案表、申领表并准备材料）",
+        "初核（用人企业提交所在镇街道组织办，各镇街道核实材料真实性）",
+        "提交（各镇街道将材料提交区人社局）",
+        "复核（区人社局复核）",
+        "公示（7个工作日）",
+        "核准（区人社局确认名单）",
+        "拨付（按申领人数及发放月份数向区财政请拨资金，再拨付至企业人才个人账户）"
+      ],
+      "location": "惠阳区",
+      "url": "https://www.huiyang.gov.cn/zfxxgkml/hyqrsj/bmwj/tzgg/content/post_5600107.html"
+    },
+    "policySource": "《惠阳区企业引进优秀毕业生人才津贴实施细则》",
+    "effectiveDate": "null",
+    "notes": "有效。博士3000元/月、硕士1000元/月、重点高校本科500元/月，累计发放三年。要求2023年12月以来新引进、与惠阳区企业签订3年及以上劳动合同、在惠阳区缴纳社保满6个月。本科限重点高校（国家统一招生计划、非定向非委托培养）。2025年申领时段为2023年12月至2025年5月。在区人社局核准确认名单前离开惠阳区企业的不予发放。此前符合条件但错过申领且仍在岗的可补充申领。",
+    "location": "惠州市·惠阳区",
+    "tier": 2,
+    "exclusiveGroup": "huizhou-district"
+  },
+  {
+    "id": "huizhou-huicheng-anjia-butie",
+    "city": "huizhou",
+    "name": "惠城区新引进硕博士人才安家补助",
+    "category": "settlement",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生（35周岁及以下）",
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "分期"
+          },
+          "degree": [
+            "博士"
+          ],
+          "ageLimit": 35,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（30周岁及以下）",
+          "amount": {
+            "min": 20000,
+            "max": 20000,
+            "unit": "元",
+            "period": "分期"
+          },
+          "degree": [
+            "硕士"
+          ],
+          "ageLimit": 30,
+          "ageLimitExclusive": false
+        }
+      ]
+    },
+    "application": {
+      "deadline": "null",
+      "channel": "由区委人才办牵头引进，具体申报渠道未公布",
+      "materials": [
+        "null（具体材料未在公开渠道公布，建议咨询惠城区人才交流服务中心 0752-2386138）"
+      ],
+      "process": [
+        "由区委人才办牵头引进",
+        "试用期1年",
+        "试用期满考核合格后办理聘任手续",
+        "享受相应职务和职员等级待遇及安家补助"
+      ],
+      "location": "惠城区",
+      "url": "http://m.toutiao.com/group/7174607957944959521/"
+    },
+    "policySource": "《惠城区加快产业人才引进培育方案》及《惠城区机关事业单位人才引进工作方案》",
+    "effectiveDate": "null",
+    "notes": "有效。博士10万分5年等额发放（每年2万）、硕士2万分2年等额发放（每年1万）区级安家补助，在市级补助基础上叠加。由区委人才办牵头引进，面向35周岁及以下博士及30周岁及以下硕士，须与用人单位签订合同并落户惠城。符合条件可申请人才公寓。具体申报流程及材料建议咨询惠城区人才交流服务中心。",
+    "location": "惠州市·惠城区",
+    "tier": 2,
+    "exclusiveGroup": "huizhou-district"
+  }
+]

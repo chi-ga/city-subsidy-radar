@@ -1,0 +1,257 @@
+[
+  {
+    "id": "guiyang-shiji-zufangbutie",
+    "city": "guiyang",
+    "name": "贵阳贵安人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 200,
+      "max": 800,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 18
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 800,
+            "max": 800,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 18
+          },
+          "degree": ["博士"]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生",
+          "amount": {
+            "min": 400,
+            "max": 400,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 18
+          },
+          "degree": ["硕士"]
+        },
+        {
+          "id": "benkezhuanke",
+          "name": "本科及大专",
+          "amount": {
+            "min": 200,
+            "max": 200,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 18
+          },
+          "degree": ["本科", "专科"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "毕业三年内申领",
+      "channel": "贵阳贵安一站式人才网上办事平台线上申报",
+      "materials": [
+        "本人身份证",
+        "学历（或职称、人才卡）证明材料",
+        "社会保险参保证明（自主创业提供营业执照）",
+        "人才住房租赁合同及网签备案证明",
+        "个人承诺书",
+        "其他需要补充说明情况的材料（具体材料以平台提示为准）"
+      ],
+      "process": [
+        "人才登录贵阳贵安一站式人才网上办事平台申报",
+        "提交身份、学历、社保、租赁合同网签备案等材料",
+        "审核",
+        "公示",
+        "按年/按月发放租金补贴"
+      ],
+      "location": "市级",
+      "url": "https://www.gyrc.cn/yzs"
+    },
+    "policySource": "筑人才发〔2024〕6号",
+    "effectiveDate": "2024",
+    "notes": "有效。毕业三年内在贵阳贵安就业创业的高校毕业生，租住人才保障性租赁住房或经认定市场化房源，博士800元/月、硕士400元/月、本科及大专200元/月。租住保障性租赁住房累计≤18个月、市场化房源累计≤12个月。不要求全日制学历。依据筑人才发〔2024〕6号，2024年起施行。",
+    "location": "贵阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "guiyang-shiji-goufangbutie",
+    "city": "guiyang",
+    "name": "贵阳贵安人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": ["博士"]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生",
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": ["硕士"]
+        },
+        {
+          "id": "benkezhuanke",
+          "name": "本（专）科毕业生",
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": ["本科", "专科"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "购房完成网签备案或取得不动产权证书12个月内申报",
+      "channel": "贵阳贵安一站式人才网上办事平台线上申报",
+      "materials": [
+        "《贵阳贵安人才购房补贴申请表》",
+        "与用人单位签订的劳动（聘用）合同及相应社会保险证明",
+        "婚姻证明材料（已婚提供结婚证明，未婚提供未婚承诺书，有离异经历的补充提供离婚证和离婚协议书或判决书等）",
+        "购买新建商品住房的提交商品房购买合同网签备案证明或预告登记不动产登记证明，购买二手房的提交二手房不动产权证书",
+        "住房为申请人与亲属共有的应提供亲属关系相关证明材料"
+      ],
+      "process": [
+        "人才通过贵阳贵安一站式人才网上办事平台申报",
+        "主管部门或各区（市、县、开发区）人才工作部门初审",
+        "市人才服务中心会同相关部门审核",
+        "公示5个工作日",
+        "资金拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.gyrc.cn/yzs"
+    },
+    "policySource": "筑人社发〔2025〕2号",
+    "effectiveDate": "2025-03-05",
+    "notes": "有效。重点产业企业全职新引进3个月以上、依法参保、购房时年龄不超过35周岁（含）的全日制高校毕业生，博士5万、硕士3万、本专1万一次性。所购须为本人及配偶在贵阳贵安新购买的首套住房、购房时间为新引进后3年内；须在购房网签备案/取得不动产权证12个月内申报。每人只享一次，已享受其他财政购房补贴的不再享受。",
+    "location": "贵阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "guiyang-shiji-anjiafei",
+    "city": "guiyang",
+    "name": "贵阳贵安新引进人才安家费",
+    "category": "settlement",
+    "amount": {
+      "min": 12000,
+      "max": 48000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 12
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 48000,
+            "max": 48000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 12
+          },
+          "degree": ["博士"]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生",
+          "amount": {
+            "min": 24000,
+            "max": 24000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 12
+          },
+          "degree": ["硕士"]
+        },
+        {
+          "id": "benke",
+          "name": "本科毕业生",
+          "amount": {
+            "min": 12000,
+            "max": 12000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 12
+          },
+          "degree": ["本科"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "工作满6个月、满一年分两次兑现",
+      "channel": "贵阳贵安一站式人才网上办事平台线上申报",
+      "materials": [
+        "《贵阳贵安新引进人才安家费申请表》",
+        "本人身份证",
+        "学历学位证书（或职称/技能等级证书）",
+        "与重点产业企业签订的劳动（聘用）合同",
+        "社会保险参保证明",
+        "落户贵阳贵安的户籍证明",
+        "用人单位营业执照及重点产业企业资质证明",
+        "个人承诺书",
+        "其他需要补充说明情况的材料（具体材料以平台提示为准）"
+      ],
+      "process": [
+        "人才通过贵阳贵安一站式人才网上办事平台申报",
+        "主管部门或各区人才工作部门初审",
+        "市人才服务中心审核",
+        "公示",
+        "工作满6个月兑现50%、持续工作满一年兑现50%"
+      ],
+      "location": "市级",
+      "url": "https://www.gyrc.cn/yzs"
+    },
+    "policySource": "筑人才发〔2024〕6号",
+    "effectiveDate": "2024",
+    "notes": "有效。重点产业企业新引进符合《贵阳贵安重点产业人才需求目录》的人才且落户贵阳贵安，正高职称6万、博士4.8万、硕士2.4万、本科1.2万；工作满6个月兑现50%、持续工作满一年兑现50%（分两次发放，12个月内兑现完毕）。依据筑人才发〔2024〕6号，2024年起施行。",
+    "location": "贵阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  }
+]

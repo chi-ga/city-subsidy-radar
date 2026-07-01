@@ -128,7 +128,16 @@ export type CityCode =
   | 'fuzhou'
   | 'xiamen'
   | 'nanchang'
-  | 'kunming';
+  | 'kunming'
+  | 'tianjin'
+  | 'suzhou'
+  | 'xian'
+  | 'dongguan'
+  | 'foshan'
+  | 'huizhou'
+  | 'zhongshan'
+  | 'haikou'
+  | 'guiyang';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -158,6 +167,15 @@ export const CITY_NAMES: Record<CityCode, string> = {
   xiamen: '厦门',
   nanchang: '南昌',
   kunming: '昆明',
+  tianjin: '天津',
+  suzhou: '苏州',
+  xian: '西安',
+  dongguan: '东莞',
+  foshan: '佛山',
+  huizhou: '惠州',
+  zhongshan: '中山',
+  haikou: '海口',
+  guiyang: '贵阳',
 };
 
 // 补贴分类名称映射

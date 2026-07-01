@@ -1,0 +1,127 @@
+[
+  {
+    "id": "tianjin-shiji-yinjinqingnianrencai",
+    "city": "tianjin",
+    "name": "天津市引进青年人才项目",
+    "category": "talent",
+    "amount": {
+      "min": 200000,
+      "max": 200000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 40,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "待核实",
+      "channel": "待核实（2025年12月市人社局回复正在跟上级部门沟通，申报通道暂不明确）",
+      "materials": [
+        "null"
+      ],
+      "process": [
+        "待核实（政策过渡期，申报通道暂不明确）"
+      ],
+      "location": "市级",
+      "url": "https://hrss.tj.gov.cn/zhengminhudong/zhengminlingjuli/index_19955.html?id=4712440"
+    },
+    "policySource": "津人才组办〔2023〕5号",
+    "effectiveDate": "2023",
+    "notes": "政策过渡期/待核实。对我市重点产业链企业全职引进的博士、博士后（均须非在职，年龄应在40周岁以下，毕业或出站2年内留或来津工作，且与我市用人单位签订3年及以上工作合同），给予每人20万元奖励资助，由市人才发展基金、企业所在区各承担10万元，分3年拨付（第一年6万元、第二年7万元、第三年7万元）。2025年12月网友咨询时市人社局回复正在跟上级部门沟通，当前申报通道及最新执行口径暂不明确。",
+    "location": "天津市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tianjin-binhai-zhufangshenghuobutie",
+    "city": "tianjin",
+    "name": "滨海新区新引进全日制高校毕业生住房和生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 12000,
+      "max": 36000,
+      "unit": "元",
+      "period": "每年"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士",
+          "amount": {
+            "min": 36000,
+            "max": 36000,
+            "unit": "元",
+            "period": "每年"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士",
+          "amount": {
+            "min": 24000,
+            "max": 24000,
+            "unit": "元",
+            "period": "每年"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke",
+          "name": "本科",
+          "amount": {
+            "min": 12000,
+            "max": 12000,
+            "unit": "元",
+            "period": "每年"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "待核实",
+      "channel": "由人才所在企业为人才申请（疑似已停止执行）",
+      "materials": [
+        "null"
+      ],
+      "process": [
+        "待核实（该政策疑似已停止执行，当前申报通道不明确）"
+      ],
+      "location": "滨海新区",
+      "url": "https://www.tj.gov.cn/zmhd/wmfkxd/202506/t20250606_6948683.html"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "",
+    "notes": "疑似已停止/待核实。滨海新区对企业新引进落户的全日制大学本科以上学历人员和留学归国人员，连续三年发放住房和生活补贴：本科每人每年1.2万元（3年3.6万）、硕士每人每年2.4万元（3年7.2万）、博士每人每年3.6万元（3年10.8万）。补贴由人才所在企业为人才申请。2025年6月东丽区政府回复网友咨询时仅提及引进青年人才项目和海河英才卡两项现行政策，未提及本补贴。申请前请务必向滨海新区人社部门核实是否仍有替代政策。",
+    "location": "天津市·滨海新区",
+    "tier": 1,
+    "exclusiveGroup": "tianjin-district"
+  }
+]

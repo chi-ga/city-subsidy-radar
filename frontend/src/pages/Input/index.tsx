@@ -404,6 +404,15 @@ export default function Input() {
           'xiamen',
           'nanchang',
           'kunming',
+          'tianjin',
+          'suzhou',
+          'xian',
+          'dongguan',
+          'foshan',
+          'huizhou',
+          'zhongshan',
+          'haikou',
+          'guiyang',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

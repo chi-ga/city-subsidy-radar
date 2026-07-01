@@ -28,6 +28,15 @@ const COVERED_CITIES = [
   { code: 'xiamen', name: '厦门', count: 2 },
   { code: 'nanchang', name: '南昌', count: 3 },
   { code: 'kunming', name: '昆明', count: 12 },
+  { code: 'tianjin', name: '天津', count: 2 },
+  { code: 'suzhou', name: '苏州', count: 4 },
+  { code: 'xian', name: '西安', count: 3 },
+  { code: 'dongguan', name: '东莞', count: 2 },
+  { code: 'foshan', name: '佛山', count: 2 },
+  { code: 'huizhou', name: '惠州', count: 4 },
+  { code: 'zhongshan', name: '中山', count: 3 },
+  { code: 'haikou', name: '海口', count: 2 },
+  { code: 'guiyang', name: '贵阳', count: 3 },
 ];
 
 export default function CityListFallback({ onCityClick }: CityListFallbackProps) {

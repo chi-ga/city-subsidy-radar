@@ -1,0 +1,188 @@
+[
+  {
+    "id": "haikou-shiji-zufangbutie",
+    "city": "haikou",
+    "name": "海口市引进人才住房租赁补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1500,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "degree": ["博士"]
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士（40周岁以下）",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "degree": ["硕士"],
+          "ageLimit": 40,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "benke",
+          "name": "全日制本科（35周岁以下）",
+          "amount": {
+            "min": 1500,
+            "max": 1500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "degree": ["本科"],
+          "ageLimit": 35,
+          "ageLimitExclusive": false
+        }
+      ]
+    },
+    "application": {
+      "deadline": "须在人才引进之日起5年内申领完毕",
+      "channel": "海南政务服务网/海口市政务服务网线上申请，由用人单位提交申报",
+      "materials": [
+        "人才类型证明材料（学历学位证书、职称证书、职业资格证书等；国（境）外高校毕业生需教育部留学生服务中心学历认证书）",
+        "住房证明材料（申请租房补贴提供《房屋租赁证》）",
+        "劳动关系材料（劳动/聘用合同，自主创业提供营业执照）",
+        "引进人才住房补贴个人承诺书",
+        "其他需要补充说明情况的材料（个人）",
+        "引进人才住房补贴单位承诺书",
+        "事业单位法人证书或编制方案（公益一类、二类事业单位提供）",
+        "单位公示情况有关材料",
+        "其他需要补充说明情况的材料（单位）"
+      ],
+      "process": [
+        "个人完善信息",
+        "用人单位关联员工并公示",
+        "单位通过海南政务服务网提交申报",
+        "各区行政审批服务局受理审核",
+        "公示",
+        "按月发放"
+      ],
+      "location": "市级",
+      "url": "https://wssp.haikou.gov.cn/"
+    },
+    "policySource": "琼办发〔2018〕40号",
+    "effectiveDate": "2018-05-13",
+    "notes": "有效。租房补贴按月发放：博士3000元/月、硕士2000元/月、本科1500元/月，累计不超过36个月，须在引进之日起5年内申领完毕。2018年5月13日后第一次在海口就业/创业；硕士限40周岁以下、本科限35周岁以下（均含本数），高层次D/E类人才可放宽至50周岁。不含公务员及参公管理人员。已领取购房补贴的不再发放租房补贴。",
+    "location": "海口·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "haikou-shiji-goufangbutie",
+    "city": "haikou",
+    "name": "海口市引进人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 54000,
+      "max": 108000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 108000,
+            "max": 108000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 36
+          },
+          "degree": ["博士"]
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士（40周岁以下）",
+          "amount": {
+            "min": 72000,
+            "max": 72000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 36
+          },
+          "degree": ["硕士"],
+          "ageLimit": 40,
+          "ageLimitExclusive": false
+        },
+        {
+          "id": "benke",
+          "name": "全日制本科（35周岁以下）",
+          "amount": {
+            "min": 54000,
+            "max": 54000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 36
+          },
+          "degree": ["本科"],
+          "ageLimit": 35,
+          "ageLimitExclusive": false
+        }
+      ]
+    },
+    "application": {
+      "deadline": "须在人才引进之日起5年内申领完毕",
+      "channel": "海南政务服务网/海口市政务服务网线上申请，由用人单位提交申报",
+      "materials": [
+        "人才类型证明材料（学历学位证书、职称证书、职业资格证书等；国（境）外高校毕业生需教育部留学生服务中心学历认证书）",
+        "住房证明材料（申请购房补贴提供《海口市商品房买卖合同备案表》或《海口市房屋交易和产权状况确认书（转让）》）",
+        "劳动关系材料（劳动/聘用合同，自主创业提供营业执照）",
+        "引进人才住房补贴个人承诺书",
+        "其他需要补充说明情况的材料（个人）",
+        "引进人才住房补贴单位承诺书",
+        "事业单位法人证书或编制方案（公益一类、二类事业单位提供）",
+        "单位公示情况有关材料",
+        "其他需要补充说明情况的材料（单位）"
+      ],
+      "process": [
+        "个人完善信息",
+        "用人单位关联员工并公示",
+        "单位通过海南政务服务网提交申报",
+        "各区行政审批服务局受理审核",
+        "公示",
+        "按年集中受理和发放"
+      ],
+      "location": "市级",
+      "url": "https://wssp.haikou.gov.cn/"
+    },
+    "policySource": "琼办发〔2018〕40号",
+    "effectiveDate": "2018-05-13",
+    "notes": "有效。购房补贴按年集中发放：博士3.6万元/年、硕士2.4万元/年、本科1.8万元/年，累计不超过3年（合计博士10.8万、硕士7.2万、本科5.4万），须在引进之日起5年内申领完毕。硕士限40周岁以下、本科限35周岁以下（均含本数）。与租房补贴二选一，已领租房补贴的购房补贴应扣除已领金额；不含公务员及参公管理人员。",
+    "location": "海口·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]
