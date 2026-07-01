@@ -51,6 +51,17 @@ import weifang from './subsidies/weifang.json';
 import ganzhou from './subsidies/ganzhou.json';
 import yinchuan from './subsidies/yinchuan.json';
 import huhehaote from './subsidies/huhehaote.json';
+import linyi from './subsidies/linyi.json';
+import jinhua from './subsidies/jinhua.json';
+import taizhou from './subsidies/taizhou.json';
+import baoding from './subsidies/baoding.json';
+import yancheng from './subsidies/yancheng.json';
+import yangzhou from './subsidies/yangzhou.json';
+import taizhoujs from './subsidies/taizhoujs.json';
+import zhenjiang from './subsidies/zhenjiang.json';
+import lianyungang from './subsidies/lianyungang.json';
+import huaian from './subsidies/huaian.json';
+import suqian from './subsidies/suqian.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
@@ -109,6 +120,17 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   ganzhou: ganzhou as Subsidy[],
   yinchuan: yinchuan as Subsidy[],
   huhehaote: huhehaote as Subsidy[],
+  linyi: linyi as Subsidy[],
+  jinhua: jinhua as Subsidy[],
+  taizhou: taizhou as Subsidy[],
+  baoding: baoding as Subsidy[],
+  yancheng: yancheng as Subsidy[],
+  yangzhou: yangzhou as Subsidy[],
+  taizhoujs: taizhoujs as Subsidy[],
+  zhenjiang: zhenjiang as Subsidy[],
+  lianyungang: lianyungang as Subsidy[],
+  huaian: huaian as Subsidy[],
+  suqian: suqian as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -294,6 +316,17 @@ export function getCityLevelLocation(city: string): string {
     ganzhou: '赣州市',
     yinchuan: '银川市',
     huhehaote: '呼和浩特市',
+    linyi: '临沂市',
+    jinhua: '金华市',
+    taizhou: '台州市',
+    baoding: '保定市',
+    yancheng: '盐城市',
+    yangzhou: '扬州市',
+    taizhoujs: '泰州市',
+    zhenjiang: '镇江市',
+    lianyungang: '连云港市',
+    huaian: '淮安市',
+    suqian: '宿迁市',
   };
   return map[city] || '';
 }

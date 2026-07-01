@@ -431,6 +431,17 @@ export default function Input() {
           'ganzhou',
           'yinchuan',
           'huhehaote',
+          'linyi',
+          'jinhua',
+          'taizhou',
+          'baoding',
+          'yancheng',
+          'yangzhou',
+          'taizhoujs',
+          'zhenjiang',
+          'lianyungang',
+          'huaian',
+          'suqian',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

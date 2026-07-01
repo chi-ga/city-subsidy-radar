@@ -1,0 +1,155 @@
+[
+  {
+    "id": "taizhoujs-shiji-zufangbutie",
+    "city": "taizhoujs",
+    "name": "泰州市区高校毕业生租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "本科": { "min": 800, "max": 800, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "硕士": { "min": 1500, "max": 1500, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "博士": { "min": 2000, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "泰州人才公共服务平台",
+      "materials": [
+        "本人身份证",
+        "毕业证书",
+        "劳动合同",
+        "社保缴费证明",
+        "房屋租赁合同。具体材料以申报系统提示为准"
+      ],
+      "process": [
+        "登录泰州人才公共服务平台（https://tac.rsj.taizhou.gov.cn）",
+        "进入租房补贴申请",
+        "提交个人信息及相关材料",
+        "人社部门审核",
+        "审核通过后按月发放"
+      ],
+      "location": "市级",
+      "url": "https://tac.rsj.taizhou.gov.cn/guide/413739e1005a42cfbeef7eaa065d2c38"
+    },
+    "policySource": "泰州市人才公共服务平台现行政策（凤城英才计划配套）",
+    "effectiveDate": "",
+    "notes": "有效。凤城英才计划配套租房补贴持续执行中。大专500元/月、本科（或高级工以上大专）800元/月、硕士1500元/月、博士2000元/月，最长36个月。应届高校毕业生在泰州市实体经济企业就业或创业、工作所在地无房并租房居住可申领。",
+    "location": "泰州市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "taizhoujs-shiji-goufangquan",
+    "city": "taizhoujs",
+    "name": "泰州市区人才购房券（青年人才）",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "专科": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 60000, "max": 60000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "泰州人才公共服务平台、泰州市人才服务中心",
+      "materials": [
+        "本人身份证",
+        "毕业证书（学位证书）",
+        "劳动合同",
+        "社保缴费证明",
+        "商品房买卖合同",
+        "不动产权证书",
+        "契税完税证明。具体材料以申报系统提示为准"
+      ],
+      "process": [
+        "登录泰州人才公共服务平台进行人才类别认证",
+        "通过认证后申请购房券",
+        "人社部门审核发放购房券",
+        "购房时持购房券至住建部门办理购房合同备案冻结",
+        "取得不动产权证后向人社部门申请兑付"
+      ],
+      "location": "市级",
+      "url": "https://m.taizhou.bendibao.com/live/15953.shtm"
+    },
+    "policySource": "《泰州市区人才购房券发放及兑付实施细则》（泰人才办〔2023〕11号）",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。泰州市区人才购房券政策持续执行中。各类企业就业：博士20万、硕士10万、本科6万、大专3万；实体企业（金融、通讯、烟草、供电、盐业等行业企业除外）就业提高至博士30万、硕士15万、本科8万。全日制普通高校大专及以上、首次来泰在市区企业就业或创业、连续缴纳社保满3个月、兑付时年龄不超过40周岁、在泰州市区购买商品住宅房可申领。",
+    "location": "泰州市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "taizhoujs-jingjiang-goufangbutie",
+    "city": "taizhoujs",
+    "name": "靖江市\"马洲英才\"人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": { "min": 50000, "max": 80000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 300000, "max": 300000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "靖江市人力资源和社会保障局、泰州人才公共服务平台",
+      "materials": [
+        "本人身份证",
+        "毕业证书（学位证书）",
+        "劳动合同",
+        "社保缴费证明",
+        "商品房买卖合同",
+        "不动产权证书。具体材料以申报系统提示为准"
+      ],
+      "process": [
+        "通过靖江市人社部门或泰州人才公共服务平台申请",
+        "提交个人信息及购房相关材料",
+        "审核公示后发放"
+      ],
+      "location": "靖江市",
+      "url": "https://m.taizhou.bendibao.com/live/15781.shtm"
+    },
+    "policySource": "《关于加快集聚\"马洲英才\"支撑高质量发展的十条激励措施》（中共靖江市委、靖江市人民政府发布）",
+    "effectiveDate": "",
+    "notes": "有效。\"马洲英才\"政策持续执行中。全日制本科5万元、双一流高校全日制本科8万元、全日制硕士10万元、全日制博士（正高职称）30万元，一次性发放。首次在靖江市企业就业的全日制本科及以上毕业生在靖江市购买商品住房可申领。与泰州市区购房券互斥，只能在工作所在地享受一项购房补贴。",
+    "location": "泰州市·靖江市",
+    "tier": 2,
+    "exclusiveGroup": "taizhoujs-district"
+  }
+]

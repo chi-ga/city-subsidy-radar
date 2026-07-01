@@ -526,6 +526,11 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'tangshan-district': '唐山区级补贴（只能在一个区享受）',
   'wuhu-goufang': '芜湖购房补贴（企业与非企业单位二选一）',
   'ganzhou-district': '赣州区级补贴（只能在一个区享受）',
+  'yinchuan-district': '银川区级补贴（只能在一个区享受）',
+  'jinhua-jiuye': '金华就业补贴（中小微企业与养老家政农业企业二选一）',
+  'taizhou-jiuye': '台州就业补贴（中小微企业与养老家政农业企业二选一）',
+  'baoding-zufang-goufang': '保定租房与购房补贴（不可同时享受）',
+  'taizhoujs-district': '泰州区级补贴（只能在一个区享受）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

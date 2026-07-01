@@ -155,7 +155,18 @@ export type CityCode =
   | 'weifang'
   | 'ganzhou'
   | 'yinchuan'
-  | 'huhehaote';
+  | 'huhehaote'
+  | 'linyi'
+  | 'jinhua'
+  | 'taizhou'
+  | 'baoding'
+  | 'yancheng'
+  | 'yangzhou'
+  | 'taizhoujs'
+  | 'zhenjiang'
+  | 'lianyungang'
+  | 'huaian'
+  | 'suqian';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -212,6 +223,17 @@ export const CITY_NAMES: Record<CityCode, string> = {
   ganzhou: '赣州',
   yinchuan: '银川',
   huhehaote: '呼和浩特',
+  linyi: '临沂',
+  jinhua: '金华',
+  taizhou: '台州',
+  baoding: '保定',
+  yancheng: '盐城',
+  yangzhou: '扬州',
+  taizhoujs: '泰州',
+  zhenjiang: '镇江',
+  lianyungang: '连云港',
+  huaian: '淮安',
+  suqian: '宿迁',
 };
 
 // 补贴分类名称映射

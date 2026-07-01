@@ -165,9 +165,9 @@
     "chongqing": {
       "base": {
         "degree": true,
-        "schoolLevel": false,
+        "schoolLevel": true,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
@@ -185,7 +185,7 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
@@ -221,7 +221,7 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
@@ -237,7 +237,7 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
@@ -294,7 +294,7 @@
     "chengdu": {
       "base": {
         "degree": true,
-        "schoolLevel": false,
+        "schoolLevel": true,
         "ageLimit": true,
         "graduationYear": false,
         "employmentRequired": true,
@@ -702,7 +702,7 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
@@ -717,7 +717,7 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": true,
-        "graduationYear": false,
+        "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
         "major": false
@@ -842,6 +842,151 @@
         "degree": true,
         "schoolLevel": false,
         "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "linyi": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "jinhua": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "taizhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "baoding": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "yancheng": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "yangzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "taizhoujs": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "靖江市": {}
+      }
+    },
+    "zhenjiang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "lianyungang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "huaian": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "suqian": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
         "graduationYear": false,
         "employmentRequired": true,
         "householdRequired": false,

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "yancheng-shiji-shenghuobutie",
+    "city": "yancheng",
+    "name": "盐城市黄海明珠人才计划生活补贴（普通高校毕业生）",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "硕士": { "min": 1500, "max": 1500, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "博士": { "min": 3000, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"我的盐城\"APP、江苏政务服务网盐城旗舰店黄海明珠人才专栏、盐城市人力资源和社会保障网",
+      "materials": [
+        "本人身份证",
+        "毕业证书",
+        "教育部电子学历注册备案表（本科以上需提供学位证书）",
+        "单位营业执照或注册登记证书",
+        "海外留学人员另需提供教育部留学服务中心出具的《国外学历学位认证书》"
+      ],
+      "process": [
+        "下载\"我的盐城\"APP或登录盐城市人力资源和社会保障网黄海明珠人才专栏",
+        "点击\"人才申报\"，根据自身情况申请三星级人才绿卡",
+        "签署信用承诺，上传材料",
+        "黄海明珠人才服务窗口审核年龄、首次参保时间、企业注册、证书真实性",
+        "审核通过后由合作银行制作人才卡并邮寄",
+        "持卡后在系统内申请生活补贴"
+      ],
+      "location": "市级",
+      "url": "https://jsychrss.yancheng.gov.cn/art/2025/3/5/art_31881_4297030.html"
+    },
+    "policySource": "《关于深入实施\"黄海明珠人才计划\"的若干政策》（盐发〔2024〕2号）；《黄海明珠人才计划2.0版人才卡发放实施细则（试行）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。黄海明珠人才计划2.0版持续执行中。全日制博士3000元/月、硕士1500元/月、本科1000元/月，发放36个月。被盐城市企业和社会组织引进或来盐自主创业、首次在盐参保且正常缴费、35周岁以下的全日制普通高校本科及以上毕业生可申领。补贴与参保缴费相对应，自首次参保起连续计算36个月，中途中断不向后延期。",
+    "location": "盐城市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yancheng-shiji-zufangbutie",
+    "city": "yancheng",
+    "name": "盐城市黄海明珠人才计划租房补贴（普通高校毕业生）",
+    "category": "rent",
+    "amount": {
+      "min": 600,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": { "min": 600, "max": 600, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "硕士": { "min": 800, "max": 800, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "博士": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"我的盐城\"APP、江苏政务服务网盐城旗舰店黄海明珠人才专栏、盐城市人力资源和社会保障网",
+      "materials": [
+        "本人身份证",
+        "毕业证书",
+        "教育部电子学历注册备案表（本科以上需提供学位证书）",
+        "单位营业执照或注册登记证书",
+        "海外留学人员另需提供教育部留学服务中心出具的《国外学历学位认证书》"
+      ],
+      "process": [
+        "通过\"我的盐城\"APP或盐城市人社网黄海明珠人才专栏申请三星级人才绿卡",
+        "签署信用承诺，上传材料",
+        "服务窗口审核",
+        "制卡邮寄",
+        "持卡后在系统内申请租房补贴"
+      ],
+      "location": "市级",
+      "url": "http://m.yancheng.bendibao.com/news/15774.shtm"
+    },
+    "policySource": "《关于深入实施\"黄海明珠人才计划\"的若干政策》（盐发〔2024〕2号）；《黄海明珠人才计划2.0版人才卡发放实施细则（试行）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。黄海明珠人才计划2.0版持续执行中。全日制博士1000元/月、硕士800元/月、本科600元/月，享受期不超过36个月。被盐城市企业和社会组织引进或来盐自主创业、首次在盐参保且正常缴费、35周岁以下的全日制普通高校本科及以上毕业生可申领。与参保缴费相对应，自首次参保起连续计算，中途中断不向后延期。",
+    "location": "盐城市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yancheng-shiji-goufangbutie",
+    "city": "yancheng",
+    "name": "盐城市黄海明珠人才计划购房补贴（普通高校毕业生）",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "专科": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"我的盐城\"APP、江苏政务服务网盐城旗舰店黄海明珠人才专栏、盐城市人力资源和社会保障网",
+      "materials": [
+        "本人身份证",
+        "毕业证书",
+        "教育部电子学历注册备案表（本科以上需提供学位证书）",
+        "单位营业执照或注册登记证书",
+        "购房相关材料（商品房买卖合同、不动产权证书等，待核实具体清单）",
+        "海外留学人员另需提供教育部留学服务中心出具的《国外学历学位认证书》"
+      ],
+      "process": [
+        "通过\"我的盐城\"APP或盐城市人社网黄海明珠人才专栏申请三星级人才绿卡",
+        "签署信用承诺，上传材料",
+        "服务窗口审核",
+        "制卡邮寄",
+        "持卡后在系统内申请购房补贴，可选择直接抵扣购房款或审核通过后拨付"
+      ],
+      "location": "市级",
+      "url": "http://m.yancheng.bendibao.com/news/15774.shtm"
+    },
+    "policySource": "《关于深入实施\"黄海明珠人才计划\"的若干政策》（盐发〔2024〕2号）；《关于黄海明珠人才购房补贴支持购房款的实施办法》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。黄海明珠人才计划2.0版持续执行中。全日制博士20万元、硕士15万元、本科10万元、专科5万元，一次性发放（可选择直接抵扣购房款或审核通过后拨付）。被盐城市企业和社会组织引进或来盐自主创业、首次在盐参保且正常缴费、35周岁以下的全日制普通高校专科及以上毕业生在盐购买商品住房可申领。",
+    "location": "盐城市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yancheng-shiji-tanqinbutie",
+    "city": "yancheng",
+    "name": "盐城市黄海明珠人才计划探亲交通补贴（普通高校毕业生）",
+    "category": "other",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"我的盐城\"APP、江苏政务服务网盐城旗舰店黄海明珠人才专栏、盐城市人力资源和社会保障网",
+      "materials": [
+        "本人身份证",
+        "毕业证书",
+        "教育部电子学历注册备案表（本科以上需提供学位证书）",
+        "单位营业执照或注册登记证书",
+        "海外留学人员另需提供教育部留学服务中心出具的《国外学历学位认证书》"
+      ],
+      "process": [
+        "通过\"我的盐城\"APP或盐城市人社网黄海明珠人才专栏申请三星级人才绿卡",
+        "签署信用承诺，上传材料",
+        "服务窗口审核",
+        "制卡邮寄",
+        "持卡后在系统内申请探亲交通补贴"
+      ],
+      "location": "市级",
+      "url": "http://m.yancheng.bendibao.com/news/15774.shtm"
+    },
+    "policySource": "《关于深入实施\"黄海明珠人才计划\"的若干政策》（盐发〔2024〕2号）",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。黄海明珠人才计划2.0版持续执行中。非盐城籍全日制普通高校本科及以上毕业生2000元/年，发放3年（共6000元）。被盐城市企业和社会组织引进或来盐自主创业、首次在盐参保且正常缴费、35周岁以下可申领。",
+    "location": "盐城市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yancheng-shiji-liuyanbutie",
+    "city": "yancheng",
+    "name": "盐城市黄海明珠人才计划留盐专项补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"我的盐城\"APP、江苏政务服务网盐城旗舰店黄海明珠人才专栏、盐城市人力资源和社会保障网",
+      "materials": [
+        "本人身份证",
+        "毕业证书",
+        "教育部电子学历注册备案表（本科以上需提供学位证书）",
+        "单位营业执照或注册登记证书"
+      ],
+      "process": [
+        "通过\"我的盐城\"APP或盐城市人社网黄海明珠人才专栏申请三星级人才绿卡",
+        "签署信用承诺，上传材料",
+        "服务窗口审核",
+        "制卡邮寄",
+        "持卡后在系统内申请留盐专项补贴"
+      ],
+      "location": "市级",
+      "url": "http://m.yancheng.bendibao.com/mip/18875.shtm"
+    },
+    "policySource": "《黄海明珠人才计划2.0版留盐补贴发放实施细则》；政策依据《关于深入实施\"黄海明珠人才计划\"的若干政策》（盐发〔2024〕2号）",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。黄海明珠人才计划2.0版持续执行中。驻盐高校全日制应届本科以上毕业生和在盐技工院校技师班应届毕业生500元/月，发放36个月。被盐城市企业和社会组织引进、首次在盐参保且正常缴费、35周岁以下可申领。该补贴需为驻盐高校应届毕业生，属细分条件。",
+    "location": "盐城市",
+    "tier": 2,
+    "exclusiveGroup": ""
+  }
+]

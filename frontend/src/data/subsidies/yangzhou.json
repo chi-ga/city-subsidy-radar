@@ -1,0 +1,238 @@
+[
+  {
+    "id": "yangzhou-shiji-zufangbutie",
+    "city": "yangzhou",
+    "name": "扬州市企业引进人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 3500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "本科": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "硕士": { "min": 1500, "max": 1500, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "博士": { "min": 3500, "max": 3500, "unit": "元", "period": "每月", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "扬州人才智慧云平台、\"我的扬州\"APP、扬州人社APP",
+      "materials": [
+        "本人身份证",
+        "毕业证书（海外留学人员需提供海外学历毕业证书）",
+        "劳动合同（人力资源机构或劳务派遣人员须上传）",
+        "社保缴费证明（系统自动获取）。具体材料清单以申报系统提示为准"
+      ],
+      "process": [
+        "登录扬州人才智慧云平台或\"我的扬州\"APP，进入人才码首页",
+        "选择租房补贴申请",
+        "条件自检，阅读承诺书、授权书并勾选",
+        "填写表单（系统自动获取学历、参保、社保缴费、社保卡等信息）",
+        "上传材料",
+        "查看办事进度"
+      ],
+      "location": "市级",
+      "url": "https://m.yz.bendibao.com/live/21690.shtm"
+    },
+    "policySource": "《关于深入实施\"绿扬金凤计划\"+强化新质生产力人才支撑的若干政策》（扬发〔2025〕15号）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。人才政策4.0（扬发〔2025〕15号）持续执行中。博士3500元/月、硕士1500元/月、本科1000元/月、大专500元/月，发放3年。35周岁以下、全职来扬州市相关企业工作（银行、保险、证券、电讯、供电等企业除外）、大专（高级工）及以上学历人才可申领。由各县（市、区）人社部门受理审核。",
+    "location": "扬州市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yangzhou-shiji-goufangbutie",
+    "city": "yangzhou",
+    "name": "扬州市企业引进人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": { "min": 50000, "max": 70000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 300000, "max": 300000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年集中组织申报上年度企业引进人才购房补贴",
+      "channel": "扬州人才智慧云平台、\"我的扬州\"APP、扬州人社APP",
+      "materials": [
+        "本人身份证",
+        "毕业证书（学位证书）",
+        "劳动合同",
+        "社保缴费证明",
+        "商品房买卖合同",
+        "不动产权证书",
+        "契税完税证明。具体材料清单以申报系统提示为准"
+      ],
+      "process": [
+        "每年集中组织申报上年度企业引进人才购房补贴",
+        "由各县（市、区）人社部门、功能区组织人事部门组织符合条件的人才填写申报材料",
+        "申报工作逐步过渡为网上申报，通过扬州人才智慧云平台人才码申请"
+      ],
+      "location": "市级",
+      "url": "https://m.yz.bendibao.com/job/23521.shtm"
+    },
+    "policySource": "《关于深入实施\"绿扬金凤计划\"+强化新质生产力人才支撑的若干政策》（扬发〔2025〕15号）；《扬州市市区\"人才安家券\"补贴实施细则》（人才新政4.0）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。人才政策4.0持续执行中。博士（正高职称）30万元、硕士（副高职称、高级技师）15万元、双一流高校本科7万元、普通本科（技师）5万元，一次性发放。补贴资金由市财政和企业所在地区级财政各承担50%。35周岁以下、全职来扬州市区企业工作、全日制本科及以上学历、5年内在扬首次购买住房可申领。",
+    "location": "扬州市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yangzhou-shiji-liuyanghuiyang",
+    "city": "yangzhou",
+    "name": "扬州市鼓励高校毕业生来扬留扬回扬专项补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "扬州人才智慧云平台、\"我的扬州\"APP、扬州人社APP",
+      "materials": [
+        "本人身份证",
+        "毕业证书（海外留学人员需上传海外学历毕业证书）",
+        "劳动合同（人力资源机构或劳务派遣人员须上传）",
+        "回扬补贴：身份证号码非3210开头的需上传高中毕业证书并持原件到申报机构现场核验。系统自动获取学历、参保、社保缴费、社保卡等信息"
+      ],
+      "process": [
+        "登录扬州人才智慧云平台或\"我的扬州\"APP，进入人才码首页",
+        "点击\"留扬补贴\"或\"回扬补贴\"",
+        "进入条件自检界面，阅读承诺书、授权书并勾选",
+        "填写表单（系统自动获取学历、参保、社保缴费、社保卡等信息）",
+        "上传材料",
+        "查看办事进度"
+      ],
+      "location": "市级",
+      "url": "https://m.yz.bendibao.com/live/25044.shtm"
+    },
+    "policySource": "《扬州市鼓励高校毕业生来扬留扬回扬创业就业实施细则》（人才新政4.0）；政策依据《关于深入实施\"绿扬金凤计划\"+强化新质生产力人才支撑的若干政策》（扬发〔2025〕15号）",
+    "effectiveDate": "2025-05-21",
+    "notes": "有效。人才政策4.0持续执行中。在扬普通高校全日制本科及以上应届毕业生留扬企业工作、外地普通高校扬州籍全日制本科及以上应届毕业生回扬企业工作，500元/月，发放3年。在扬正常纳税并缴纳企业职工基本养老保险的企业（银行、保险、证券、电讯、供电等企业除外）就业。该补贴需为应届毕业生且满足留扬/回扬身份条件，属细分条件。",
+    "location": "扬州市",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yangzhou-shiji-tanqinbutie",
+    "city": "yangzhou",
+    "name": "扬州市企业引进人才探亲安居补贴（探亲交通补贴）",
+    "category": "other",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "扬州人才智慧云平台、\"我的扬州\"APP、扬州人社APP",
+      "materials": [
+        "本人身份证",
+        "毕业证书（海外留学人员需提供海外学历毕业证书）",
+        "劳动合同（人力资源机构或劳务派遣人员须上传）。系统自动获取学历、参保、社保缴费等信息"
+      ],
+      "process": [
+        "登录扬州人才智慧云平台或\"我的扬州\"APP，进入人才码首页",
+        "选择探亲交通补贴申请",
+        "条件自检，阅读承诺书、授权书并勾选",
+        "填写表单",
+        "上传材料",
+        "查看办事进度"
+      ],
+      "location": "市级",
+      "url": "https://m.yz.bendibao.com/live/21690.shtm"
+    },
+    "policySource": "《扬州市企业引进人才探亲安居补贴实施细则》（2026-01-26发布）；政策依据《关于深入实施\"绿扬金凤计划\"+强化新质生产力人才支撑的若干政策》（扬发〔2025〕15号）",
+    "effectiveDate": "2026-01-26",
+    "notes": "有效。人才政策4.0持续执行中。非扬州籍全日制普通高校本科及以上应届毕业生来扬企业工作，2000元/年，发放3年（共6000元）。在扬正常纳税并缴纳企业职工基本养老保险的企业（银行、保险、证券、电讯、供电等企业除外）就业。该补贴需为非扬州籍应届毕业生，属细分条件。",
+    "location": "扬州市",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yangzhou-shiji-mianshibutie",
+    "city": "yangzhou",
+    "name": "扬州市毕业生来扬求职面试补贴",
+    "category": "employment",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "扬州人才智慧云平台、\"我的扬州\"APP",
+      "materials": [
+        "本人身份证",
+        "毕业证书（或学生证）",
+        "面试邀请或招聘会参会证明",
+        "交通票据等。具体材料清单以申报系统提示为准"
+      ],
+      "process": [
+        "通过扬州人才智慧云平台或\"我的扬州\"APP人才码申请",
+        "提交面试相关证明材料",
+        "审核后发放"
+      ],
+      "location": "市级",
+      "url": "https://m.yz.bendibao.com/live/21690.shtm"
+    },
+    "policySource": "《关于深入实施\"绿扬金凤计划\"+强化新质生产力人才支撑的若干政策》（扬发〔2025〕15号）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。人才政策4.0持续执行中。应邀来扬参加招聘会等人才交流活动的高校毕业生、在扬赴外招聘会上达成就业意向后来扬面试的高校毕业生，1000元一次性发放。不限学历层次，面向高校毕业生。",
+    "location": "扬州市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

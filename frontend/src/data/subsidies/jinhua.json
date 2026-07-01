@@ -1,0 +1,263 @@
+[
+  {
+    "id": "jinhua-shiji-shenghuo",
+    "city": "jinhua",
+    "name": "金华市区引进人才生活补助",
+    "category": "living",
+    "amount": {
+      "min": 15000,
+      "max": 250000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": { "min": 15000, "max": 15000, "unit": "元", "period": "分期", "durationMonths": 36 },
+      "本科": { "min": 40000, "max": 40000, "unit": "元", "period": "分期", "durationMonths": 36 },
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "分期", "durationMonths": 36 },
+      "博士": { "min": 250000, "max": 250000, "unit": "元", "period": "分期", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理（系统自动推送申报提醒）",
+      "channel": "“浙里办”APP—“浙里人才之家”（金华）—“引进人才生活补助”",
+      "materials": [
+        "通过“浙里办”—“浙里人才之家”线上申请，系统自动比对身份、学历学位、社保缴纳等信息",
+        "国（境）外学历需提供教育部留学服务中心出具的学历学位认证书"
+      ],
+      "process": [
+        "符合条件人才登录“浙里办”APP—“浙里人才之家”（金华）—“引进人才生活补助”线上提交申请",
+        "系统自动比对身份、学历、社保等信息，5个工作日内完成审核（市属事业单位引进人才由市人社部门审核，企业、区属事业单位引进人才由所在区人社部门审核）",
+        "在“浙里人才之家”公示专区公示5个工作日",
+        "公示通过后将补助资金发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://m.jh.bendibao.com/mip/20819.shtm"
+    },
+    "policySource": "《“智选金华”大学生人才集聚工程若干意见的实施细则》",
+    "effectiveDate": "2020-05-04",
+    "notes": "有效。博士25万元（5/8/12万）、硕士10万元（2/3/5万）、双一流本科6万元（每年2万，本科tieredAmount取普通本科4万元）、普通本科4万元（1/1/2万）、专科1.5万元（每年0.5万），分三年支付。2020年5月4日（含）起首次从市外引进，在市（区）属企事业单位（不含参公）就业并缴社保；本科、专科须入职企业。博士申报当年1月1日不超过45周岁。金华籍应届本科、在金高校本科及专科应届毕业生可提一档享受。与租房补助、津贴补助、安家补助、公租房保障等不可同时享受。",
+    "location": "金华市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jinhua-shiji-goufang",
+    "city": "jinhua",
+    "name": "金华人才购房货币补助",
+    "category": "buy",
+    "amount": {
+      "min": 40000,
+      "max": 400000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "专科": { "min": 40000, "max": 40000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 400000, "max": 400000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "“浙里办”—“浙里人才之家”（金华）—“购房补助”",
+      "materials": [
+        "通过“浙里办”—“浙里人才之家”线上申请，系统比对身份、学历学位、社保缴纳、购房等信息",
+        "国（境）外学历需提供教育部留学服务中心出具的学历学位认证书",
+        "须提供所购住房网签备案合同或不动产登记证书等购房材料"
+      ],
+      "process": [
+        "符合条件人才登录“浙里办”—“浙里人才之家”（金华）—“购房补助”提出申请",
+        "系统比对身份、学历、社保、购房等信息并审核",
+        "公示",
+        "公示通过后发放至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7259930845098951180/"
+    },
+    "policySource": "《“智选金华”大学生人才集聚工程若干意见的实施细则》",
+    "effectiveDate": "2022-05-08",
+    "notes": "有效。企事业单位全职引进：博士最高40万、硕士最高20万、双一流本科最高15万（本科tieredAmount取普通本科8万）、普通本科最高8万、普通专科最高4万。市区政府机关单位（含参公）：博士最高10万、硕士最高5万、本科最高3万。2022年5月8日起首次在大市范围内参保，在市区用人单位全职工作连续参保满6个月，在市区首次购房，自引进起3年内购房有效，所购住房满5年后方可上市交易。金华籍应届本科、在金高校应届本科毕业生可提档享受。夫妻双方共同持有产权且均符合条件的按一方全额、一方50%享受。与人才住房购买折扣不可同时享受。",
+    "location": "金华市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jinhua-shiji-rencaizhufang-zhekou",
+    "city": "jinhua",
+    "name": "金华出售型人才住房购买折扣",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元（购房折扣优惠，非现金）",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理（按房源批次预约）",
+      "channel": "“浙里办”—“浙里人才之家”（金华）—“人才住房预约”",
+      "materials": [
+        "通过“浙里办”—“浙里人才之家”线上预约，系统比对身份、学历、社保、住房等信息",
+        "国（境）外学历需提供教育部学历学位认证书"
+      ],
+      "process": [
+        "登录“浙里办”—“浙里人才之家”（金华）—“人才住房预约”提交预约",
+        "审核资格",
+        "选房购房享受折扣"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7259930845098951180/"
+    },
+    "policySource": "《“智选金华”大学生人才集聚工程若干意见的实施细则》",
+    "effectiveDate": "",
+    "notes": "有效。按90平方米配售面积享受出售型人才住房购买折扣优惠：博士7折、硕士及双一流本科8.5折、其他本科9折、大专9.5折。与企事业单位（不含参公）签3年以上全职劳动合同，以单位名义依法缴纳养老保险6个月以上，本人及配偶、未成年子女均未在市区拥有除农房外任何形式自有住房。购房折扣为非现金优惠，直接在购房时享受。与购房货币补助不可同时享受，二选一。",
+    "location": "金华市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jinhua-shiji-jiuye-zhongxiao",
+    "city": "jinhua",
+    "name": "金华高校毕业生到中小微企业就业岗位补贴",
+    "category": "employment",
+    "amount": {
+      "min": 3000,
+      "max": 3000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "“浙里办”APP / 浙江政务服务网，搜索“高校毕业生就业补贴申领”",
+      "materials": [
+        "通过“浙里办”线上申请，系统比对身份、学历、劳动合同、社保等信息",
+        "须提供劳动合同、社保缴费证明等"
+      ],
+      "process": [
+        "通过“浙里办”APP、支付宝“浙里办”小程序、微信“浙里办”小程序或浙江政务服务网搜索“高校毕业生就业补贴申领”办理",
+        "系统审核",
+        "公示后发放"
+      ],
+      "location": "市级",
+      "url": "http://m.jh.bendibao.com/mip/28596.shtm"
+    },
+    "policySource": "浙江省高校毕业生就业政策（金华市执行）",
+    "effectiveDate": "",
+    "notes": "有效。毕业2年以内高校毕业生到中小微企业就业，签1年及以上劳动合同，依法缴纳社保且工资低于当地上年度非私营和私营单位就业人员加权平均工资，每年补贴3000元，不超过3年（amount为每年3000元，durationMonths=36即3年）。与到养老、家政服务和现代农业企业就业岗位补贴不重复享受。",
+    "location": "金华市",
+    "tier": 1,
+    "exclusiveGroup": "jinhua-jiuye"
+  },
+  {
+    "id": "jinhua-shiji-jiuye-yanglao",
+    "city": "jinhua",
+    "name": "金华高校毕业生到养老、家政服务和现代农业企业就业岗位补贴",
+    "category": "employment",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "“浙里办”APP / 浙江政务服务网，搜索“高校毕业生就业补贴申领”",
+      "materials": [
+        "通过“浙里办”线上申请，系统比对身份、学历、劳动合同、社保等信息",
+        "须提供劳动合同、社保缴费证明、企业行业认定材料等"
+      ],
+      "process": [
+        "通过“浙里办”APP、支付宝“浙里办”小程序、微信“浙里办”小程序或浙江政务服务网搜索“高校毕业生就业补贴申领”办理",
+        "系统审核",
+        "公示后发放"
+      ],
+      "location": "市级",
+      "url": "http://m.jh.bendibao.com/mip/28596.shtm"
+    },
+    "policySource": "浙江省高校毕业生就业政策（金华市执行）",
+    "effectiveDate": "",
+    "notes": "有效。毕业5年以内高校毕业生到经行业主管部门认定的养老、家政服务和现代农业企业就业，签1年及以上劳动合同并依法缴纳社保，每年补贴1万元，不超过3年（amount为每年1万元，durationMonths=36即3年）。与到中小微企业就业岗位补贴不重复享受。",
+    "location": "金华市",
+    "tier": 1,
+    "exclusiveGroup": "jinhua-jiuye"
+  },
+  {
+    "id": "jinhua-shiji-xuelitisheng",
+    "city": "jinhua",
+    "name": "金华学历提升补助",
+    "category": "talent",
+    "amount": {
+      "min": 30000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "硕士": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "“浙里办”—“浙里人才之家”（金华）—“学历提升补助”",
+      "materials": [
+        "通过“浙里办”—“浙里人才之家”线上申请",
+        "须上传学信网出具的学历验证报告，或国（境）外学历学位认证书",
+        "系统比对社保等信息"
+      ],
+      "process": [
+        "符合条件人才登录“浙里办”—“浙里人才之家”（金华）—“学历提升补助”提出申请，提交相关材料",
+        "审核（市属事业单位引进人才由市人社部门审核，企业、区属事业单位引进人才由所在区人社部门审核）",
+        "在“浙里人才之家”公示专区公示5个工作日",
+        "公示通过后将补助资金发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jinhua.gov.cn/art/2023/10/10/art_1229165046_58716419.html"
+    },
+    "policySource": "《“智选金华”大学生人才集聚工程若干意见的实施细则》之学历提升补助实施细则",
+    "effectiveDate": "2023-10-10",
+    "notes": "有效。在职攻读经统招统考的非全日制硕士、博士且获得学历学位证书（学历学位须在原先基础上有提升），在市（区）属企事业单位就业，由用人单位连续参加基本养老保险满6个月且发放前一直处于参保状态。硕士3万元、博士5万元，一次性发放至社保卡金融账户。",
+    "location": "金华市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]
