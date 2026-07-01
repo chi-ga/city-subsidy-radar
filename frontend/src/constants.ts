@@ -143,7 +143,13 @@ export type CityCode =
   | 'changchun'
   | 'harbin'
   | 'shijiazhuang'
-  | 'yantai';
+  | 'yantai'
+  | 'nantong'
+  | 'changzhou'
+  | 'xuzhou'
+  | 'tangshan'
+  | 'wuhu'
+  | 'taiyuan';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -188,6 +194,12 @@ export const CITY_NAMES: Record<CityCode, string> = {
   harbin: '哈尔滨',
   shijiazhuang: '石家庄',
   yantai: '烟台',
+  nantong: '南通',
+  changzhou: '常州',
+  xuzhou: '徐州',
+  tangshan: '唐山',
+  wuhu: '芜湖',
+  taiyuan: '太原',
 };
 
 // 补贴分类名称映射

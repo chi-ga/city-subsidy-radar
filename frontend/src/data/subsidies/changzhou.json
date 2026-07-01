@@ -1,0 +1,259 @@
+[
+  {
+    "id": "changzhou-shiji-shenghuo",
+    "city": "changzhou",
+    "name": "常州市青年人才生活居住双资助—生活资助",
+    "category": "living",
+    "amount": {
+      "min": 300,
+      "max": 800,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "within_2_years",
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士800元/月",
+          "degree": ["博士"],
+          "amount": { "min": 800, "max": 800, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士500元/月",
+          "degree": ["硕士"],
+          "amount": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "benke",
+          "name": "本科300元/月",
+          "degree": ["本科"],
+          "amount": { "min": 300, "max": 300, "unit": "元", "period": "每月", "durationMonths": 36 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "毕业两年内由常州市企业引进；2021年1月1日后企业新引进",
+      "channel": "\u201c我的常州\u201dAPP（免申报，系统自动比对；也可主动申请）",
+      "materials": [
+        "身份证（系统无法比对时补充上传）",
+        "学历学位证书（系统无法比对时补充上传）"
+      ],
+      "process": [
+        "该项政策采取免申报方式，系统自动比对社保、学历信息生成发放名单",
+        "从人才参保第7个月起按月发放",
+        "符合条件的人才也可登录\u201c我的常州\u201dAPP提出申请",
+        "系统无法比对数据的，由申请人根据提示补充上传相应资料"
+      ],
+      "location": "市级",
+      "url": "https://www.changzhou.gov.cn/yshj/policy/content/wjshow/123669"
+    },
+    "policySource": "常政办发〔2021〕21号",
+    "effectiveDate": "2021-03-19",
+    "notes": "有效。博士800元/月、硕士和高级技师500元/月、本科和技师300元/月，资助期限3年（36个月）。毕业两年内由常州市企业引进，在常州首次参保并连续缴纳社保6个月以上。硕士研究生须35周岁以下（含35周岁），博士和本科无明确年龄限制。2023年1月1日后新引进人才资助期限由2年延长至3年。免申报方式，系统自动比对社保和学历信息，从参保第7个月起按月发放。",
+    "location": "常州市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "changzhou-shiji-zufang",
+    "city": "changzhou",
+    "name": "常州市青年人才生活居住双资助—租房资助",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 800,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "within_2_years",
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士800元/月",
+          "degree": ["博士"],
+          "amount": { "min": 800, "max": 800, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士600元/月",
+          "degree": ["硕士"],
+          "amount": { "min": 600, "max": 600, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "benke",
+          "name": "本科500元/月",
+          "degree": ["本科"],
+          "amount": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "毕业两年内由常州市企业引进；2021年1月1日后企业新引进",
+      "channel": "\u201c我的常州\u201dAPP",
+      "materials": [
+        "身份证（系统无法比对时补充上传）",
+        "学历学位证书（系统无法比对时补充上传）",
+        "房屋租赁合同及备案（登记）证明（系统无法比对时补充上传）"
+      ],
+      "process": [
+        "登录\u201c我的常州\u201dAPP注册并实名认证，提出申请",
+        "系统运用金保系统数据、人才地图数据、不动产登记数据、房屋租赁备案数据比对社保、学历、房产、租房等信息",
+        "市人社局、市住建局会同市财政局制定资助方案，报市创新办备案",
+        "市财政局下达资金，按月发放"
+      ],
+      "location": "市级",
+      "url": "https://www.changzhou.gov.cn/yshj/policy/content/wjshow/123669"
+    },
+    "policySource": "常政办发〔2021〕21号",
+    "effectiveDate": "2021-03-19",
+    "notes": "有效。博士800元/月、硕士和高级技师600元/月、本科和技师500元/月，资助期限3年（36个月）。毕业两年内由常州市企业引进，在常州首次参保并连续缴纳社保6个月以上，本人及配偶在本市无自有住房，租房居住并办理租赁合同备案。硕士研究生须35周岁以下（含35周岁），博士和本科无明确年龄限制。2023年1月1日后新引进人才资助期限由2年延长至3年。按月发放。",
+    "location": "常州市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "changzhou-shiji-goufang",
+    "city": "changzhou",
+    "name": "常州市青年人才生活居住双资助—购房资助",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 300000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士30万元",
+          "degree": ["博士"],
+          "amount": { "min": 300000, "max": 300000, "unit": "元", "period": "分期" }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士8万元",
+          "degree": ["硕士"],
+          "amount": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "benke",
+          "name": "本科5万元",
+          "degree": ["本科"],
+          "amount": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "人才引进前1年至后3年内购买常州市商品住房；须在市相关部门资格确认后3年内提出申请，逾期视作放弃",
+      "channel": "\u201c我的常州\u201dAPP；常州住房一体化平台（住房保障服务—\u201c龙城英才购房补贴\u201d）",
+      "materials": [
+        "《常州市\u201c龙城英才计划\u201d购房补贴申请表》",
+        "《常州市\u201c龙城英才计划\u201d购房补贴承诺书》",
+        "身份证（正反面）",
+        "学历学位证书（系统无法比对时补充上传）"
+      ],
+      "process": [
+        "登录\u201c我的常州\u201dAPP注册并实名认证提出申请，或登录常州住房一体化平台→住房服务→住房保障服务→\u201c龙城英才购房补贴\u201d",
+        "下载并填写《常州市\u201c龙城英才计划\u201d购房补贴申请表》和《承诺书》",
+        "申请人所在单位公示无异议后签署初审意见",
+        "拍照上传《申请表》《承诺书》和身份证等材料，5个工作日内将原件寄至常州市住房保障中心",
+        "常州市住房保障中心10个工作日内核实后将购房补贴款打入申请人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.changzhou.gov.cn/yshj/policy/content/wjshow/123669"
+    },
+    "policySource": "常政办发〔2021〕21号",
+    "effectiveDate": "2021-03-19",
+    "notes": "有效。2023年1月1日后企业新引进人才：博士30万元、硕士和高级技师8万元、本科和技师5万元。常州市企业引进，在常州首次参保并连续缴纳社保6个月以上，人才引进前1年至后3年内购买常州市商品住房。硕士研究生须35周岁以下（含35周岁），博士和本科无明确年龄限制。购房资助不得重复享受，所购房屋自购房合同备案之日起5年内不得上市交易。5万元（含）以下一次性发放，5万元以上分3个年度平均发放。2023年1月1日前引进的按博士25万/硕士5万/本科3万执行。",
+    "location": "常州市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "changzhou-jingkaiqu-goufang",
+    "city": "changzhou",
+    "name": "常州经开区人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 150000,
+      "max": 300000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 120
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士30万元（长期贷款补贴，分十年拨付）",
+          "degree": ["博士"],
+          "amount": { "min": 300000, "max": 300000, "unit": "元", "period": "分期", "durationMonths": 120 }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士20万元（长期贷款补贴，分十年拨付）",
+          "degree": ["硕士"],
+          "amount": { "min": 200000, "max": 200000, "unit": "元", "period": "分期", "durationMonths": 120 }
+        },
+        {
+          "id": "benke",
+          "name": "本科15万元（长期贷款补贴，分十年拨付）",
+          "degree": ["本科"],
+          "amount": { "min": 150000, "max": 150000, "unit": "元", "period": "分期", "durationMonths": 120 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "在获得常州市\u201c青年人才生活居住双资助\u201d购房补贴的次年一季度提出申请",
+      "channel": "常州经开区人才办（具体线上平台以官方通知为准）",
+      "materials": [
+        "购房证明",
+        "社保证明",
+        "银行房贷合同",
+        "上一年度商业贷款还款证明",
+        "身份证",
+        "学历学位证书"
+      ],
+      "process": [
+        "人才个人在获得常州市\u201c青年人才生活居住双资助\u201d购房补贴的次年一季度提出申请",
+        "人才办、建设局、社会保障局根据购房证明、社保证明、银行房贷合同、上一年度商业贷款还款证明等进行资格审核",
+        "人才办、建设局会同财政局制定补贴方案，报人才办主任会议审定",
+        "将补贴资金拨付至人才个人社保卡账户"
+      ],
+      "location": "常州经开区",
+      "url": "https://m.cz.bendibao.com/news/67481.shtm"
+    },
+    "policySource": "《关于进一步优化人才购房补贴促进我区高质量发展的实施意见（试行）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效（试行）。在享受市级购房补贴基础上额外给予区级补贴。两类补贴方式：①一次性安家补贴（所购房产未申请商业贷款或贷款期限在9年及以内）：博士10万元、硕士和高级技师5万元，一次性拨付；②长期贷款补贴（所购房产申请商业贷款期限在10年以上含10年）：博士30万元、硕士和高级技师20万元、本科和技师15万元，分十年等额拨付。2024年1月1日后常州经开区企业从常州市外新引进，引进前1年至后3年内首次购买经开区内80平米及以上新建商品住房，在经开区首次参保并连续缴纳社保6个月以上，须已获得市级购房补贴。硕士研究生须35周岁以下（含35周岁）。与其他区级补贴互斥。",
+    "location": "常州市·常州经开区",
+    "tier": 2,
+    "exclusiveGroup": "changzhou-district"
+  }
+]

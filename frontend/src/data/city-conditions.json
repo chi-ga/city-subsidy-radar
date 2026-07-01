@@ -677,6 +677,94 @@
       "districts": {
         "黄渤海新区": {}
       }
+    },
+    "nantong": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "崇川区": {},
+        "如东县": {},
+        "海安市": {},
+        "如皋市": {},
+        "启东市": {}
+      }
+    },
+    "changzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "常州经开区": {}
+      }
+    },
+    "xuzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "tangshan": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "高新区": {}
+      }
+    },
+    "wuhu": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "taiyuan": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
     }
   }
 }

@@ -1,0 +1,547 @@
+[
+  {
+    "id": "tangshan-shiji-boshi-shenghuo",
+    "city": "tangshan",
+    "name": "唐山市博士研究生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 3000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 60
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 50,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "每年一、三季度集中申领",
+      "channel": "唐山人才综合服务平台",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "用人单位营业执照（或事业单位法人证书）"
+      ],
+      "process": [
+        "用人单位在唐山人才综合服务平台PC端注册，提交材料到唐山市民服务中心B区611室线下备案",
+        "个人通过唐山人才综合服务平台微信公众号注册并提出补贴备案申请",
+        "平台审核备案（满一年后方可申领）",
+        "个人登录平台上传材料提交补贴申领",
+        "平台初审→复审→报同级财政部门核定",
+        "公示7天后发放"
+      ],
+      "location": "市级",
+      "url": "https://rcpc.hfclass.com"
+    },
+    "policySource": "唐人社〔2024〕30号、唐才办〔2024〕6号",
+    "effectiveDate": "2021-10-21",
+    "notes": "现行有效。2021年10月21日以来全职引进或培养的在唐工作博士研究生（50周岁及以下，同时具有学历证和学位证），签订5年及以上劳动合同，正常缴纳社保，每月3000元发放60个月（合计最高18万元）。生活补贴与购房补贴二选一，在唐最低服务5年。最后核实日期2026-07-01。",
+    "location": "唐山市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tangshan-shiji-boshi-goufang",
+    "city": "tangshan",
+    "name": "唐山市博士研究生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 300000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "博士"
+      ],
+      "ageLimit": 50,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "每年一、三季度集中申领",
+      "channel": "唐山人才综合服务平台",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "户口簿（唐山户籍证明）",
+        "商品房买卖合同",
+        "契税完税凭证",
+        "用人单位营业执照（或事业单位法人证书）"
+      ],
+      "process": [
+        "用人单位在唐山人才综合服务平台PC端注册，提交材料到唐山市民服务中心B区611室线下备案",
+        "个人通过唐山人才综合服务平台微信公众号注册并提出购房补贴备案申请",
+        "平台审核备案（满一年后方可申领）",
+        "个人登录平台上传材料提交补贴申领",
+        "平台初审→复审→报同级财政部门核定",
+        "公示7天后发放"
+      ],
+      "location": "市级",
+      "url": "https://rcpc.hfclass.com"
+    },
+    "policySource": "唐人社〔2024〕30号、唐才办〔2024〕6号",
+    "effectiveDate": "2021-10-21",
+    "notes": "现行有效。博士研究生（50周岁及以下，同时具有学历证和学位证），具有唐山户籍，购买市域内自用商品住房一次性补贴30万元（不限首套，只享受一次）。购房补贴与生活补贴二选一，在唐最低服务5年。最后核实日期2026-07-01。",
+    "location": "唐山市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tangshan-shiji-shuoshi-shenghuo",
+    "city": "tangshan",
+    "name": "唐山市硕士研究生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1500,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 60
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "硕士"
+      ],
+      "ageLimit": 45,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "qiye",
+          "name": "入职企业1500元/月（60个月）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 1500,
+            "max": 1500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 60
+          }
+        },
+        {
+          "id": "qitadanwei",
+          "name": "入职其他单位一次性5000元",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年一、三季度集中申领",
+      "channel": "唐山人才综合服务平台",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "用人单位营业执照（或事业单位法人证书）"
+      ],
+      "process": [
+        "用人单位在唐山人才综合服务平台PC端注册，提交材料到唐山市民服务中心B区611室线下备案",
+        "个人通过唐山人才综合服务平台微信公众号注册并提出补贴备案申请",
+        "平台审核备案（满一年后方可申领）",
+        "个人登录平台上传材料提交补贴申领",
+        "平台初审→复审→报同级财政部门核定",
+        "公示7天后发放"
+      ],
+      "location": "市级",
+      "url": "https://rcpc.hfclass.com"
+    },
+    "policySource": "唐人社〔2024〕30号、唐才办〔2024〕6号",
+    "effectiveDate": "2021-10-21",
+    "notes": "现行有效。2021年10月21日以来全职引进来唐工作的硕士研究生（45周岁及以下，同时具有学历证和学位证），签订5年及以上劳动合同，正常缴纳社保。入职企业每月1500元发放60个月（合计最高9万元）；入职其他单位一次性5000元。生活补贴与购房补贴二选一，在唐最低服务5年。最后核实日期2026-07-01。",
+    "location": "唐山市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tangshan-shiji-shuoshi-goufang",
+    "city": "tangshan",
+    "name": "唐山市硕士研究生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 100000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "硕士"
+      ],
+      "ageLimit": 45,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "每年一、三季度集中申领",
+      "channel": "唐山人才综合服务平台",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "户口簿（唐山户籍证明）",
+        "商品房买卖合同",
+        "契税完税凭证",
+        "用人单位营业执照（或事业单位法人证书）"
+      ],
+      "process": [
+        "用人单位在唐山人才综合服务平台PC端注册，提交材料到唐山市民服务中心B区611室线下备案",
+        "个人通过唐山人才综合服务平台微信公众号注册并提出购房补贴备案申请",
+        "平台审核备案（满一年后方可申领）",
+        "个人登录平台上传材料提交补贴申领",
+        "平台初审→复审→报同级财政部门核定",
+        "公示7天后发放"
+      ],
+      "location": "市级",
+      "url": "https://rcpc.hfclass.com"
+    },
+    "policySource": "唐人社〔2024〕30号、唐才办〔2024〕6号",
+    "effectiveDate": "2021-10-21",
+    "notes": "现行有效。硕士研究生（45周岁及以下，同时具有学历证和学位证），具有唐山户籍，购买市域内自用商品住房一次性补贴10万元（不限首套，只享受一次）。购房补贴与生活补贴二选一，在唐最低服务5年。最后核实日期2026-07-01。",
+    "location": "唐山市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tangshan-shiji-zhongdianbenke-shenghuo",
+    "city": "tangshan",
+    "name": "唐山市重点高校本科毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科"
+      ],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "qiye",
+          "name": "入职企业1000元/月（36个月）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 1000,
+            "max": 1000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          }
+        },
+        {
+          "id": "qitadanwei",
+          "name": "入职其他单位一次性2000元",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年一、三季度集中申领",
+      "channel": "唐山人才综合服务平台",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "用人单位营业执照（或事业单位法人证书）"
+      ],
+      "process": [
+        "用人单位在唐山人才综合服务平台PC端注册，提交材料到唐山市民服务中心B区611室线下备案",
+        "个人通过唐山人才综合服务平台微信公众号注册并提出补贴备案申请",
+        "平台审核备案（满一年后方可申领）",
+        "个人登录平台上传材料提交补贴申领",
+        "平台初审→复审→报同级财政部门核定",
+        "公示7天后发放"
+      ],
+      "location": "市级",
+      "url": "https://rcpc.hfclass.com"
+    },
+    "policySource": "唐人社〔2024〕30号、唐才办〔2024〕6号",
+    "effectiveDate": "2021-10-21",
+    "notes": "现行有效。2021年10月21日以来全职引进来唐的42所国内重点院校全学科、双一流建设学科、世界大学排名前100院校全日制本科毕业生（40周岁及以下），签订3年及以上劳动合同，正常缴纳社保。入职企业每月1000元发放36个月（合计最高3.6万元）；入职其他单位一次性2000元。最后核实日期2026-07-01。",
+    "location": "唐山市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tangshan-shiji-putongbenke-zufang",
+    "city": "tangshan",
+    "name": "唐山市普通高校本科毕业生租房（生活）补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科"
+      ],
+      "ageLimit": 40,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "guoqi",
+          "name": "入职国有企业500元/月（12个月）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 500,
+            "max": 500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 12
+          }
+        },
+        {
+          "id": "minqi",
+          "name": "入职民营企业500元/月（24个月）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 500,
+            "max": 500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 24
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年一、三季度集中申领",
+      "channel": "唐山人才综合服务平台",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "用人单位营业执照（或事业单位法人证书）"
+      ],
+      "process": [
+        "用人单位在唐山人才综合服务平台PC端注册，提交材料到唐山市民服务中心B区611室线下备案",
+        "个人通过唐山人才综合服务平台微信公众号注册并提出补贴备案申请",
+        "平台审核备案（满一年后方可申领）",
+        "个人登录平台上传材料提交补贴申领",
+        "平台初审→复审→报同级财政部门核定",
+        "公示7天后发放"
+      ],
+      "location": "市级",
+      "url": "https://rcpc.hfclass.com"
+    },
+    "policySource": "唐人社〔2024〕30号、唐才办〔2024〕6号",
+    "effectiveDate": "2022-01-01",
+    "notes": "现行有效。2022年1月1日以来全职引进在唐企业（不含中省驻唐企业）工作的普通高校全日制本科毕业生（40周岁及以下，含唐山籍），签订1年及以上劳动合同，正常缴纳社保，每月500元。入职国有企业发放12个月（合计6000元）；入职民营企业发放24个月（合计12000元）。最后核实日期2026-07-01。",
+    "location": "唐山市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "tangshan-gaoxinqu-gaoxueli-shenghuo",
+    "city": "tangshan",
+    "name": "唐山高新区高学历人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士",
+        "本科"
+      ],
+      "ageLimit": 50,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士3000元/月（60个月）",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 60
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士1500元/月（60个月）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 1500,
+            "max": 1500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 60
+          }
+        },
+        {
+          "id": "shuangyiliuben",
+          "name": "双一流本科1000元/月（36个月）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 1000,
+            "max": 1000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "入职每满一年申领",
+      "channel": "唐山高新区人力资源和社会保障局人才处（线下办理）",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "高学历人才生活补贴备案表",
+        "高学历人才生活补贴申请表",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "入职企业3个月内，所在单位携带高学历人才生活补贴备案表及相关资料到区人力资源和社会保障局人才处备案",
+        "入职每满一年后，所在单位携带高学历人才生活补贴申请表及相关资料到区人社局人才处申领",
+        "区人社局审核后按年发放"
+      ],
+      "location": "高新区",
+      "url": ""
+    },
+    "policySource": "《关于印发〈高新区深入落实新时代“凤凰英才”计划的实施方案〉的通知》（高新人才新政十条）",
+    "effectiveDate": "2022-07-27",
+    "notes": "现行有效。2022年7月27日后首次来唐、首次来区企业工作的博士、全日制硕士、国家统招非全日制硕士、双一流院校全日制本科生，与区内企业签订3-5年以上劳动合同，在高新区正常缴纳社保。博士3000元/月发放60个月；硕士1500元/月发放60个月；双一流本科1000元/月发放36个月。非首次来唐者须未享受过唐山市凤凰英才计划政策。与市级同类生活补贴不重复享受。最后核实日期2026-07-01。",
+    "location": "唐山市·高新区",
+    "tier": 2,
+    "exclusiveGroup": "tangshan-district"
+  },
+  {
+    "id": "tangshan-gaoxinqu-gaoxueli-goufang",
+    "city": "tangshan",
+    "name": "唐山高新区高学历人才购房支持",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "博士",
+        "硕士",
+        "本科"
+      ],
+      "ageLimit": 50,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "备案满一年后申领",
+      "channel": "唐山高新区人力资源和社会保障局人才处（线下办理）",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "学位证书",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "商品房买卖合同",
+        "契税完税凭证",
+        "高学历人才购房补贴备案表",
+        "高学历人才购房补贴申请表",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "在高新区购房3个月内，所在单位携带高学历人才购房补贴备案表及相关资料到区人力资源和社会保障局人才处备案",
+        "备案满一年后，所在单位携带高学历人才购房补贴申请表及相关资料到区人社局人才处申领",
+        "区人社局审核后按购房税收高新区留用部分补贴发放"
+      ],
+      "location": "高新区",
+      "url": ""
+    },
+    "policySource": "《关于印发〈高新区深入落实新时代“凤凰英才”计划的实施方案〉的通知》（高新人才新政十条）",
+    "effectiveDate": "2022-07-27",
+    "notes": "现行有效。2022年7月27日后首次来区工作的博士、全日制硕士、国家统招非全日制硕士、双一流院校全日制本科生，在高新区正常缴纳社保，5年内在高新区购房（不限首套，只享受一次），对购房时缴纳的税收高新区留用部分给予补贴，金额按实际税收留用部分计算（非固定金额）。最后核实日期2026-07-01。",
+    "location": "唐山市·高新区",
+    "tier": 2,
+    "exclusiveGroup": "tangshan-district"
+  }
+]

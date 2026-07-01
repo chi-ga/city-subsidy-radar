@@ -419,6 +419,12 @@ export default function Input() {
           'harbin',
           'shijiazhuang',
           'yantai',
+          'nantong',
+          'changzhou',
+          'xuzhou',
+          'tangshan',
+          'wuhu',
+          'taiyuan',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

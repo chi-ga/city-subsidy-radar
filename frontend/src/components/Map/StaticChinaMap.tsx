@@ -46,6 +46,12 @@ const COVERED_CITIES = [
   { name: '哈尔滨市', code: 'harbin', adcode: '230100', count: 3 },
   { name: '石家庄市', code: 'shijiazhuang', adcode: '130100', count: 5 },
   { name: '烟台市', code: 'yantai', adcode: '370600', count: 4 },
+  { name: '南通市', code: 'nantong', adcode: '320600', count: 9 },
+  { name: '常州市', code: 'changzhou', adcode: '320400', count: 4 },
+  { name: '徐州市', code: 'xuzhou', adcode: '320300', count: 2 },
+  { name: '唐山市', code: 'tangshan', adcode: '130200', count: 8 },
+  { name: '芜湖市', code: 'wuhu', adcode: '340200', count: 3 },
+  { name: '太原市', code: 'taiyuan', adcode: '140100', count: 5 },
 ];
 
 export default function StaticChinaMap(_props: StaticChinaMapProps) {

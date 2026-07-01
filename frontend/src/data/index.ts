@@ -39,6 +39,12 @@ import changchun from './subsidies/changchun.json';
 import harbin from './subsidies/harbin.json';
 import shijiazhuang from './subsidies/shijiazhuang.json';
 import yantai from './subsidies/yantai.json';
+import nantong from './subsidies/nantong.json';
+import changzhou from './subsidies/changzhou.json';
+import xuzhou from './subsidies/xuzhou.json';
+import tangshan from './subsidies/tangshan.json';
+import wuhu from './subsidies/wuhu.json';
+import taiyuan from './subsidies/taiyuan.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
@@ -85,6 +91,12 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   harbin: harbin as Subsidy[],
   shijiazhuang: shijiazhuang as Subsidy[],
   yantai: yantai as Subsidy[],
+  nantong: nantong as Subsidy[],
+  changzhou: changzhou as Subsidy[],
+  xuzhou: xuzhou as Subsidy[],
+  tangshan: tangshan as Subsidy[],
+  wuhu: wuhu as Subsidy[],
+  taiyuan: taiyuan as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -258,6 +270,12 @@ export function getCityLevelLocation(city: string): string {
     harbin: '哈尔滨市',
     shijiazhuang: '石家庄市',
     yantai: '烟台市',
+    nantong: '南通市',
+    changzhou: '常州市',
+    xuzhou: '徐州市',
+    tangshan: '唐山市',
+    wuhu: '芜湖市',
+    taiyuan: '太原市',
   };
   return map[city] || '';
 }

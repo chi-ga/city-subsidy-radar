@@ -1,0 +1,480 @@
+[
+  {
+    "id": "nantong-shiji-fangpiao",
+    "city": "nantong",
+    "name": "南通市区人才房票",
+    "category": "buy",
+    "amount": {
+      "min": 80000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["大专", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "dazhuan",
+          "name": "全日制大专（或高级工）8万元",
+          "degree": ["大专"],
+          "amount": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "benke",
+          "name": "全日制本科（或技师）10万元",
+          "degree": ["本科"],
+          "amount": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士（或副高级职称、高级技师）15万元",
+          "degree": ["硕士"],
+          "amount": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "boshi",
+          "name": "博士（或正高级职称、特级技师）30万元",
+          "degree": ["博士"],
+          "amount": { "min": 300000, "max": 300000, "unit": "元", "period": "一次性" }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "2026年1月1日—12月31日期间在南通市区购买新建商品住房；房票自开具之日起12个月内有效",
+      "channel": "人才房票管理平台（南通市住建局）",
+      "materials": [
+        "学历学位证明（最高学历学位证书，学信网下载的教育部学历证书电子注册备案表；留学回国人员提供教育部留学服务中心出具的国外学历证明）",
+        "专业技术人才提供江苏省高级专业技术资格证书",
+        "技能人才提供职业资格证书或职业技能等级证书",
+        "申请人才与用人单位签订的三年及以上劳动合同",
+        "结婚证（申请人和配偶共同登记的需提供）"
+      ],
+      "process": [
+        "人才申请：符合条件的人才在人才房票管理平台办理资格申请，如实填报信息并上传材料",
+        "资格审核：市委人才办、市人社局联审，审核结果推送市住建局，市住建局官网公示",
+        "房票发放：公示无异议后由市住建局向申请人发放人才房票",
+        "房票使用：申请人在人才房源库中选择新建商品住房，将人才房票交由开发企业核验，按票面金额一次性抵扣购房款",
+        "房票结算：开发企业凭房票、已网签备案的购房合同等材料申请资金结算，12个月内审核拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.nt.bendibao.com/mip/68969.shtm"
+    },
+    "policySource": "《南通市区人才房票实施办法》、《南通市区人才房票购房补贴实施细则》（通住建房〔2025〕113号）",
+    "effectiveDate": "2026-01-01",
+    "notes": "有效。2026年1月1日起施行，有效期1年。全日制大专8万元、本科10万元、硕士15万元、博士30万元，房票抵扣购房款（不含首付款）。2021年1月1日后首次到南通市区就业创业并缴纳社保满3个月、签订3年及以上劳动合同、购买房源库新建商品住房可申领。适用范围：崇川区、通州区、海门区、开发区、苏锡通园区、通州湾示范区。夫妻双方均符合条件的按较高标准1.2倍执行。与现行人才购房补贴按不重复原则施行。",
+    "location": "南通市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nantong-shiji-shenghuojintie",
+    "city": "nantong",
+    "name": "南通市硕博士高层次人才生活津贴",
+    "category": "living",
+    "amount": {
+      "min": 2000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "shuoshi",
+          "name": "硕士（或副高级职称、高级技师）2000元/月",
+          "degree": ["硕士"],
+          "amount": { "min": 2000, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "boshi",
+          "name": "博士（或正高级职称、特级技师）3000元/月",
+          "degree": ["博士"],
+          "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "须在首次来通后5年内申报，逾期视为自动放弃",
+      "channel": "南通市网上申报管理平台（南通市人社局）",
+      "materials": [
+        "最高学历学位证书（留学回国须提供教育部留学服务中心出具的国外学历学位认证书）、专业技术职务、职业资格等相关证件",
+        "所在单位的营业执照",
+        "与用人单位签订的劳动合同"
+      ],
+      "process": [
+        "自主申请：人才本人或所在企业登录网上申报管理平台，如实填报信息、上传材料，确认开通社保卡银行金融功能",
+        "审核公示：相关职能部门受理汇总后集中审核，形成初步审核意见并向人才或企业反馈，市委人才办会议集体研究，通过人员名单在南通市人社局、南通人才发展集团等官网公示",
+        "待遇拨付：公示无异议后，将津贴拨付至申请人才本人的社会保障卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://m.nt.bendibao.com/live/60684.shtm"
+    },
+    "policySource": "《南通市市区企业高水平创新型人才享受生活津贴和购房补贴实施细则（修订版）》（通人社开〔2023〕13号）",
+    "effectiveDate": "2021-01-01",
+    "notes": "有效，政策持续执行中。博士3000元/月、硕士2000元/月，累计不超过36个月。2021年1月1日起南通市区企业（不含金融、供电、烟草等中央省属企业）从南通行政区划外全职新引进的硕博人才可申领。须首次来通前取得硕士以上学位，签订3年及以上劳动合同，在市区缴纳企业职工养老保险满6个月。在享受津贴期间购房的可延长津贴期最长24个月。",
+    "location": "南通市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nantong-shiji-zonghebutie",
+    "city": "nantong",
+    "name": "南通市青年人才综合补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["大专", "本科"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "dazhuan",
+          "name": "全日制大专（或技工院校高级工班）500元/月",
+          "degree": ["大专"],
+          "amount": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "benke",
+          "name": "全日制本科（或技工院校预备技师、技师班）1000元/月",
+          "degree": ["本科"],
+          "amount": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "江苏省人社网上办事服务大厅",
+      "materials": [
+        "毕业证书扫描件",
+        "《营业执照》扫描件",
+        "申请人与用人单位签订的《劳动合同》",
+        "社保卡（须开通金融功能）"
+      ],
+      "process": [
+        "注册：登录江苏省人社厅官网网上办事大厅，完成实名注册",
+        "登录：页面顶端选择\"南通\"，依次点击\"个人办事\"→\"人才人事\"",
+        "申报：选择\"本科毕业生（技师）综合补贴申请\"或\"大专生（技能人才）综合补贴\"进行申报，填写信息并上传材料",
+        "审核公示",
+        "补贴拨付至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://m.nt.bendibao.com/edu/59150.shtm"
+    },
+    "policySource": "《关于更大力度推动人才高质量发展的若干政策》（通委发〔2023〕10号）",
+    "effectiveDate": "2019-07-01",
+    "notes": "有效，政策持续执行中。全日制大专500元/月、本科1000元/月，最长不超过3年。首次到南通市企业就业或自主创业，参加企业职工养老保险且缴费满6个月可申领。所在单位须为南通市区范围内注册登记并缴纳企业职工养老保险的企业（不含金融、供电、烟草、通讯运营商等中央省属企业，不含机关事业单位、民办非企业、社会团体、个体工商户）。在享受补贴期间购房的可延长补贴期最长2年。",
+    "location": "南通市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nantong-shiji-boshihoujintie",
+    "city": "nantong",
+    "name": "南通市企业博士后生活津贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "南通市网上申报管理平台（南通市人社局）",
+      "materials": [
+        "待核实（一般含博士后进站证明、学历学位证书、劳动合同等）"
+      ],
+      "process": [
+        "待核实（参照南通市人才津补贴网上申报管理平台办理）"
+      ],
+      "location": "市级",
+      "url": "https://m.nt.bendibao.com/edu/59150.shtm"
+    },
+    "policySource": "《关于更大力度推动人才高质量发展的若干政策》（通委发〔2023〕10号）",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效，政策持续执行中。市区企业进站博士后5000元/月，最长不超过3年。出站博士后留通创新创业的可继续享受博士生活津贴和购房补贴。属人才新政4.0青年人才创新创业期政策。",
+    "location": "南通市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nantong-rudong-fangpiao",
+    "city": "nantong",
+    "name": "如东县城人才房票",
+    "category": "buy",
+    "amount": {
+      "min": 100000,
+      "max": 350000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["大专", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "dazhuan",
+          "name": "全日制大专（或高级工）10万元",
+          "degree": ["大专"],
+          "amount": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "benke",
+          "name": "全日制本科（或技师）15万元",
+          "degree": ["本科"],
+          "amount": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士（或副高级职称、高级技师）20万元",
+          "degree": ["硕士"],
+          "amount": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "boshi",
+          "name": "博士（或正高级职称、特级技师）35万元",
+          "degree": ["博士"],
+          "amount": { "min": 350000, "max": 350000, "unit": "元", "period": "一次性" }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "有效期2026年2月10日至2027年2月9日，逾期未使用自动失效",
+      "channel": "如东人才网",
+      "materials": [
+        "待核实（一般含学历学位证明、劳动合同、养老保险缴纳证明等）"
+      ],
+      "process": [
+        "个人申请：符合条件的人才在如东人才网办理房票申请手续",
+        "资格审核：人才办、人社部门按职责分工审核申请人资格",
+        "房票发放：住建部门向通过审核的申请人发放人才房票",
+        "房票使用：申请人选择房源，将人才房票交由开发企业核验，按票面金额一次性抵扣购房款",
+        "房票结算：开发企业凭房票、已备案购房合同等材料申请资金结算"
+      ],
+      "location": "如东县",
+      "url": "http://m.nt.bendibao.com/news/71095.shtm"
+    },
+    "policySource": "《如东县城人才房票实施办法》（2026年）",
+    "effectiveDate": "2026-02-10",
+    "notes": "有效。全日制大专10万元、本科15万元、硕士20万元、博士35万元，房票抵扣购房款。2021年1月1日后首次到如（回如）就业创业、在如东缴纳企业职工养老保险并取得相应学历学位的人才可申领。如东县购房补贴标准高于南通市区。与南通市区及其他县（市）购房类政策按就业/购房所在地互斥。",
+    "location": "南通市·如东县",
+    "tier": 1,
+    "exclusiveGroup": "nantong-district"
+  },
+  {
+    "id": "nantong-haian-goufangbutie",
+    "city": "nantong",
+    "name": "海安市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 300,
+      "max": 600,
+      "unit": "元/㎡",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["大专", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "dazhuan",
+          "name": "全日制大专（含技工院校）300元/㎡",
+          "degree": ["大专"],
+          "amount": { "min": 300, "max": 300, "unit": "元/㎡", "period": "一次性" }
+        },
+        {
+          "id": "benke",
+          "name": "全日制本科（或技师）400元/㎡",
+          "degree": ["本科"],
+          "amount": { "min": 400, "max": 400, "unit": "元/㎡", "period": "一次性" }
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士（或高级技师、副高级职称）500元/㎡",
+          "degree": ["硕士"],
+          "amount": { "min": 500, "max": 500, "unit": "元/㎡", "period": "一次性" }
+        },
+        {
+          "id": "boshi",
+          "name": "全日制博士（或正高级职称）600元/㎡",
+          "degree": ["博士"],
+          "amount": { "min": 600, "max": 600, "unit": "元/㎡", "period": "一次性" }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "待核实（海安市人社网上办事平台）",
+      "materials": [
+        "待核实（一般含学历学位证书、劳动合同、社保缴纳证明、购房合同等）"
+      ],
+      "process": [
+        "待核实（参照海安市人才补贴申报通知，向所在地区人社部门申报）"
+      ],
+      "location": "海安市",
+      "url": "http://m.nt.bendibao.com/mip/53305.shtm"
+    },
+    "policySource": "海安市促进房地产市场平稳健康发展若干措施（海安市住建局）",
+    "effectiveDate": "",
+    "notes": "有效（待核实最新执行状态）。按建筑面积乘以单价标准给予购房补贴：全日制博士600元/㎡、硕士500元/㎡、本科400元/㎡、大专300元/㎡。与海安本地用人单位签订1年以上劳动合同、缴纳社保满6个月，在海安城区购置首套预售商品房可申领。购买改善性二套的补贴标准为首套房的75%。与南通市区及其他县（市）购房类政策按就业/购房所在地互斥。",
+    "location": "南通市·海安市",
+    "tier": 2,
+    "exclusiveGroup": "nantong-district"
+  },
+  {
+    "id": "nantong-chongchuan-dazhuansheng",
+    "city": "nantong",
+    "name": "崇川区大专生人才综合补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["大专"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "江苏省人社网上办事服务大厅",
+      "materials": [
+        "毕业证书扫描件",
+        "《营业执照》扫描件",
+        "申请人与用人单位签订的《劳动合同》（劳务派遣须同步上传派遣、代理协议）",
+        "申请人身份证（线下购房延长）",
+        "购房相关材料：不动产权证书、契税完税证明，或经备案的购房合同、购房发票（线下购房延长）",
+        "《崇川区大专生人才综合补贴申请表》（线下购房延长）",
+        "结婚证（共同登记的需提供）"
+      ],
+      "process": [
+        "线上申报：登录江苏省人社网上办事服务大厅，如实填报个人信息并上传佐证材料，确认开通社保卡银行金融功能",
+        "线下申报：购房延长大专生补贴人才，在领满36个月补贴后，前往当前工作单位实际经营地所属街道提交纸质材料",
+        "审核公示：审核通过后在崇川区人民政府官网公示7个自然日",
+        "补贴拨付：公示无异议后拨付至社保卡银行账户"
+      ],
+      "location": "崇川区",
+      "url": "http://m.nt.bendibao.com/mip/72183.shtm"
+    },
+    "policySource": "《崇川区大专生人才综合补贴申报细则》（崇川区人社局）",
+    "effectiveDate": "2022-02-25",
+    "notes": "有效，政策持续执行中。全日制大专（或技工院校高级工班）500元/月，最长不超过36个月。在崇川区企业就业并参加崇川区企业职工养老保险满6个月可申领，首次在崇川就业时间自2022年2月25日起计算。购房的可延长补贴期最长2年。与市级青年人才综合补贴（大专档）按就高不重复原则执行。",
+    "location": "南通市·崇川区",
+    "tier": 2,
+    "exclusiveGroup": "nantong-district"
+  },
+  {
+    "id": "nantong-rugao-fangpiao",
+    "city": "nantong",
+    "name": "如皋市人才房票",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 1500000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["大专", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "2026年4月1日起施行，2027年3月31日停止执行",
+      "channel": "\"苏银随心办\"微信小程序",
+      "materials": [
+        "待核实（一般含学历学位证明、身份证明、购房相关材料等）"
+      ],
+      "process": [
+        "微信扫描二维码或搜索\"苏银随心办\"微信小程序",
+        "进入首页，搜索栏输入\"如皋人才房票\"，经实名认证后进入申请页面",
+        "点击\"房票申请\"，选择\"个人申请\"或\"夫妻双方共同申请\"",
+        "填写个人基本信息，上传相应附件，确认后提交"
+      ],
+      "location": "如皋市",
+      "url": "http://m.toutiao.com/group/7621806172282962432/"
+    },
+    "policySource": "《如皋市人才房票操作细则》（2026年）",
+    "effectiveDate": "2026-04-01",
+    "notes": "有效。2026年4月1日起施行，有效期至2027年3月31日。覆盖大专及以上学历人才、高级职称人员、高级工及以上技能人才，单人最高可享150万元购房补贴，具体各学历档补贴金额详见官方平台（待核实）。在如皋购买新建商品住房可凭房票抵扣购房款，不得与本市其他人才购房补贴重复享受。与南通市区及其他县（市）购房类政策按就业/购房所在地互斥。",
+    "location": "南通市·如皋市",
+    "tier": 2,
+    "exclusiveGroup": "nantong-district"
+  },
+  {
+    "id": "nantong-qidong-goufangquan",
+    "city": "nantong",
+    "name": "启东市人才购房券",
+    "category": "buy",
+    "amount": {
+      "min": 200000,
+      "max": 3000000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "购房券使用期限为人才申领后1年以内；实施细则有效期至2027年12月31日",
+      "channel": "待核实（启东市住建局）",
+      "materials": [
+        "待核实（一般含学历学位证明、劳动合同、社保缴纳证明等）"
+      ],
+      "process": [
+        "待核实（参照启东市住建局人才购房券申领流程）"
+      ],
+      "location": "启东市",
+      "url": "https://www.nantong.gov.cn/ntsrmzf/sxcz/content/fba3dd1f-1978-4871-9c91-5e2f7adb95fd.htm"
+    },
+    "policySource": "《启东市人才优惠购房实施细则》（2026年2月28日出台）",
+    "effectiveDate": "2026-02-28",
+    "notes": "有效。按《启东市高层次人才分类目录》八大类标准发放人才购房券，A类300万元、I类5万元；全日制硕士研究生在启东企业就业可享20万元购房券（博士、本科、大专档次待核实）。在启东企业就业、签订3年以上劳动合同、缴纳3个月及以上启东市企业职工基本养老保险可申领。购房券可作为首付款，使用购房券购房可延长24个月安居补贴享受期。与南通市区及其他县（市）购房类政策按就业/购房所在地互斥。",
+    "location": "南通市·启东市",
+    "tier": 2,
+    "exclusiveGroup": "nantong-district"
+  }
+]
