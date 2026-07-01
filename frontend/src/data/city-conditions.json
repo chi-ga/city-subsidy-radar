@@ -590,6 +590,93 @@
       },
       "locationDependentFields": [],
       "districts": {}
+    },
+    "shenyang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "沈北新区": {}
+      }
+    },
+    "dalian": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "金普新区": {}
+      }
+    },
+    "changchun": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "harbin": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "shijiazhuang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "藁城区": {},
+        "栾城区": {}
+      }
+    },
+    "yantai": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "黄渤海新区": {}
+      }
     }
   }
 }

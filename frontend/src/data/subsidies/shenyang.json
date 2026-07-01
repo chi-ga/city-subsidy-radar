@@ -1,0 +1,431 @@
+[
+  {
+    "id": "shenyang-shiji-zufangbutie",
+    "city": "shenyang",
+    "name": "沈阳市吸引人才就业创业租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 1250,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 850,
+        "max": 850,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "博士": {
+        "min": 1250,
+        "max": 1250,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 35,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常年受理，每次申报上半个年度的租房补贴",
+      "channel": "各区县人社局线下受理；沈阳市人力资源和社会保障局",
+      "materials": [
+        "《在沈就业创业人员租房补贴申请表》",
+        "身份证、毕业证、学位证原件及复印件（留学回国提供教育部《国（境）外学历学位认证书》），技师提供相应资格证书",
+        "就业人员：劳动合同、社保缴费凭证（加盖单位公章）、用人单位营业执照复印件（加盖公章）",
+        "创业人员：创业实体工商营业执照原件及复印件（加盖公章）、纳税/免税证明",
+        "新落户人员提供户口簿原件及复印件"
+      ],
+      "process": [
+        "申请人准备要件",
+        "到用人单位所在区（就业）或创业项目所在区（创业）的人社局申报",
+        "区县初审",
+        "市级复核",
+        "拨付补贴资金"
+      ],
+      "location": "市级",
+      "url": "http://rsj.shenyang.gov.cn/"
+    },
+    "policySource": "沈人社发〔2018〕78号",
+    "effectiveDate": "2018-01-01",
+    "notes": "有效。第1类（2018年后落户）：博士1250元/月、硕士850元/月、本科500元/月，最长2年，全日制博士/硕士/本科/技师均＜35周岁；第2类（2015/2017年后首次就业）：博士800元/月、硕士400元/月、学士200元/月，最长3年，博士＜35、硕士＜30、学士＜25周岁。两类不可交叉重复享受。原籍非沈阳市、无自有住房、未享受公租房。",
+    "location": "沈阳市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shenyang-shiji-shenghuobutie",
+    "city": "shenyang",
+    "name": "沈阳市高校毕业生就业创业生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 600,
+      "max": 2500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 600,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1200,
+        "max": 1200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 2500,
+        "max": 2500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "本科/硕士毕业两年内申请；博士首次在沈就业创业未超1年。常态化受理",
+      "channel": "盛事通APP；沈阳市人力资源和社会保障局",
+      "materials": [
+        "通过'盛事通'线上提交（身份证、户口簿、毕业证/学位证、劳动合同、社保缴纳证明等在线填报核验）"
+      ],
+      "process": [
+        "申请人通过'盛事通'APP提交申请",
+        "各区县人社部门即时受理并审核",
+        "每月比对发放条件，符合人员在区县政府网站公示7天",
+        "公示无异议后报市人社部门",
+        "拨付至申请人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.shenyang.gov.cn/"
+    },
+    "policySource": "沈人社发〔2023〕4号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。本科600元/月、硕士1200元/月、博士2500元/月，最长36个月。沈阳户籍；本科/硕士毕业两年内（毕业超一年须毕业后新落户），博士≤45周岁且首次在沈就业创业未超1年、非公务员参公。与县域地区企业就业专项生活补贴不可兼得。",
+    "location": "沈阳市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shenyang-shiji-goufangbutie",
+    "city": "shenyang",
+    "name": "沈阳市高校毕业生首次购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 70000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 70000,
+        "max": 70000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "首次购房（2017年1月1日后），申请时毕业年限和首次购房时间均不超过五年",
+      "channel": "各区县人力资源社会保障部门线下申报；沈阳市人力资源和社会保障局",
+      "materials": [
+        "《沈阳市高校毕业生首次购房补贴申请表》",
+        "身份证（港澳台居民通行证、外籍留学生护照）原件及复印件",
+        "毕业证（教育部留学服务中心出具的学历学位认证书）原件及复印件",
+        "近期在沈企业或事业单位连续缴纳六个月以上社会养老保险缴费证明原件及缴费单位营业执照复印件（机关事业单位社保需提供事业单位法人证书复印件）",
+        "不动产权证书原件及复印件（以网签合同签订时间为购房时间的还需提供网签合同复印件）"
+      ],
+      "process": [
+        "申请人持要件到缴纳养老保险所在区县人社部门申报",
+        "区县人社部门审核",
+        "区县网站公示7天",
+        "填报汇总表上报市人社部门",
+        "拨付补贴资金"
+      ],
+      "location": "市级",
+      "url": "https://rsj.shenyang.gov.cn/"
+    },
+    "policySource": "沈人社发〔2023〕4号",
+    "effectiveDate": "2017-01-01",
+    "notes": "有效。博士7万元、硕士4万元、本科2万元一次性发放。在沈企业或事业单位（不含参公事业单位）就业创业的全日制毕业生，首次购房（2017.1.1后），毕业年限和购房时间均不超5年，连续缴纳6个月以上社保。每人只能享受一次，与高级技师首次购房补贴不兼得。",
+    "location": "沈阳市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shenyang-shiji-rencaigongyu",
+    "city": "shenyang",
+    "name": "沈阳市人才公寓补贴",
+    "category": "rent",
+    "amount": {
+      "min": 300,
+      "max": 1200,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "大专": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 900,
+        "max": 900,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1200,
+        "max": 1200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "自首次享受补贴月份起36个月为政策享受期",
+      "channel": "人才公寓项目门店线下受理（待线上平台开通后转为线上）",
+      "materials": [
+        "《住房租赁合同》",
+        "《沈阳市人才公寓租赁申请条件认定表》",
+        "居民身份证（正、反面）",
+        "基础人才提供户口簿（首页、本人页）、毕业证书（海外高校毕业生提供教育部留学服务中心国外学历学位认证书）；D类及以上人才提供工作单位（创业实体）营业执照副本"
+      ],
+      "process": [
+        "申请人与有意向的人才公寓项目门店签订《住房租赁合同》",
+        "通过项目门店提交《沈阳市人才公寓租赁申请条件认定表》及相关审批要件",
+        "审核通过后按足月计算发放补贴"
+      ],
+      "location": "市级",
+      "url": "https://rsj.shenyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "",
+    "notes": "有效。博士1200元/月、硕士900元/月、本科500元/月、大专300元/月，最长36个月。基础人才：大专及以上学历、非沈阳户口或落户未满2年，博士≤45/硕士≤40/本科≤35/大专≤30周岁，无自有住房、未享受公租房，单位缴纳沈阳市城镇企业职工基本养老保险。A/B/C/D类人才通道需人才认定，不纳入自动匹配。",
+    "location": "沈阳市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shenyang-shiji-xianyushenghuo",
+    "city": "shenyang",
+    "name": "沈阳市高校毕业生到县域地区企业就业专项生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 2500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "大专": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1200,
+        "max": 1200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 2500,
+        "max": 2500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业5年内申请，常态化受理",
+      "channel": "养老保险参保单位注册所在区县人社部门线下申报（辽中区、新民市、法库县、康平县）",
+      "materials": [
+        "《沈阳市高校毕业生到县域地区企业就业专项生活补贴申请表》",
+        "居民身份证（原件及复印件）",
+        "户口簿（原件及首页、本人页复印件）",
+        "毕业证书（原件及复印件，境外高校提供教育部留学服务中心国外学历学位认证书）",
+        "缴纳辽宁省城镇企业职工基本养老保险的，提供养老保险缴费证明及参保单位营业执照复印件"
+      ],
+      "process": [
+        "申请人到养老保险参保单位注册所在区县人社部门申请",
+        "区县人社部门审核材料",
+        "符合人员在区县政府网站公示7天",
+        "公示无异议后向区县财政局申请全额资金并拨付至申请人银行卡（每季度拨付一次）",
+        "区县汇总报市人社部门"
+      ],
+      "location": "市级",
+      "url": "https://rsj.shenyang.gov.cn/"
+    },
+    "policySource": "沈人社发〔2023〕4号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。大专500元/月、本科800元/月、硕士1200元/月、博士2500元/月，最长36个月。沈阳户籍、毕业5年内、在县域地区企业（辽中区/新民市/法库县/康平县注册）缴纳城镇企业职工基本养老保险。与高校毕业生就业创业生活补贴不可兼得，每季度拨付一次。",
+    "location": "沈阳市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shenyang-shenbeixinqu-zufangbutie",
+    "city": "shenyang",
+    "name": "沈北新区'沈北汇·英才计划'租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 200,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 200,
+        "max": 200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 60
+      }
+    },
+    "conditions": {
+      "degree": [
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理，按月/季度公示",
+      "channel": "沈北新区社会事务服务与行政执法中心",
+      "materials": [
+        "毕业证、学位证",
+        "社保缴纳凭证",
+        "创业证明（创业人员提供）",
+        "沈北英才社区项目租赁合同"
+      ],
+      "process": [
+        "申请人凭毕业证、学位证、社保缴纳凭证、创业证明和项目租赁合同申请",
+        "沈北新区社会事务服务与行政执法中心受理审核",
+        "公示",
+        "拨付补贴资金"
+      ],
+      "location": "沈北新区",
+      "url": "https://www.nsy.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "",
+    "notes": "有效。硕士200元/月、博士500元/月，期限3年（博士可延长至5年）。在沈北新区就业创业、缴纳社保、与沈北英才社区签订1年以上租赁合同的硕士及以上人才。可与沈阳市生活补贴同时享受。区级政策，与其他区级人才补贴互斥。",
+    "location": "沈阳市·沈北新区",
+    "tier": 2,
+    "exclusiveGroup": "shenyang-district"
+  }
+]

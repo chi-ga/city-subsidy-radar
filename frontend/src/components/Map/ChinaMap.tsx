@@ -41,6 +41,12 @@ const COVERED_CITIES = [
   { name: '中山市', code: 'zhongshan', adcode: '442000', count: 3 },
   { name: '海口市', code: 'haikou', adcode: '460100', count: 2 },
   { name: '贵阳市', code: 'guiyang', adcode: '520100', count: 3 },
+  { name: '沈阳市', code: 'shenyang', adcode: '210100', count: 6 },
+  { name: '大连市', code: 'dalian', adcode: '210200', count: 6 },
+  { name: '长春市', code: 'changchun', adcode: '220100', count: 5 },
+  { name: '哈尔滨市', code: 'harbin', adcode: '230100', count: 3 },
+  { name: '石家庄市', code: 'shijiazhuang', adcode: '130100', count: 5 },
+  { name: '烟台市', code: 'yantai', adcode: '370600', count: 4 },
 ];
 
 

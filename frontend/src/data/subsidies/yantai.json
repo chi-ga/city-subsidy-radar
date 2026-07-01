@@ -1,0 +1,277 @@
+[
+  {
+    "id": "yantai-shiji-shenghuobutie",
+    "city": "yantai",
+    "name": "烟台市引进人才生活补贴",
+    "category": "living",
+    "amount": { "min": 500, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "shenghuo-boshi",
+          "name": "博士研究生（40周岁以下）",
+          "degree": ["博士"],
+          "ageLimit": 40,
+          "ageLimitExclusive": false,
+          "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "shenghuo-shuoshi",
+          "name": "硕士研究生（35周岁以下）",
+          "degree": ["硕士"],
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "amount": { "min": 2000, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "shenghuo-benke",
+          "name": "学士本科生（30周岁以下）",
+          "degree": ["本科"],
+          "ageLimit": 30,
+          "ageLimitExclusive": false,
+          "amount": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "shenghuo-zhuanke",
+          "name": "专科生（30周岁以下，限企业）",
+          "degree": ["专科"],
+          "ageLimit": 30,
+          "ageLimitExclusive": false,
+          "amount": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "首次来烟就业、缴纳社保当月起5年内申领完毕，累计申领不超过3年；常态化按批次申报",
+      "channel": "烟台市人社局网上综合服务系统“人才补贴申报”平台（智慧人社），全程网办",
+      "materials": [
+        "学历学位材料",
+        "工资薪酬发放凭证（工资账单或工资发放相关证明、银行流水等）",
+        "社保缴纳情况",
+        "此前已申领新就业无房职工住房租赁补贴的，须提交该补贴退回证明材料",
+        "特殊情况需要的其它有关材料"
+      ],
+      "process": [
+        "申报人通过烟台市人社局网上综合服务系统“人才补贴申报”平台全程网办申报",
+        "所在单位网上初审通过后，按隶属关系报同级人力资源社会保障部门",
+        "人社部门审核（争议情况需现场核查）",
+        "审核通过后按批次公示5个工作日",
+        "公示无异议后拨付至申报人社保卡或本人指定银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rshj.yantai.gov.cn/"
+    },
+    "policySource": "烟委人组办发〔2024〕22号",
+    "effectiveDate": "2024-06-01",
+    "notes": "有效。人才新政3.0（2024-06-01起）：博士3.6万元/年、硕士2.4万元/年、本科1.2万元/年、专科6000元/年，按年发放、补贴3年。要求首次新引进到烟台企业或事业单位工作、缴纳社保满1年、年龄符合对应学历档次（博士40/硕士35/本科30/专科30周岁以下，含本数）。制造业重点高校博士/硕士/本科生活补贴年限可延长至5年。与住建部门新就业无房职工住房租赁补贴就高不重复。市级生活补贴、购房补贴、留学费用补贴可叠加。",
+    "location": "烟台市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yantai-shiji-goufangbutie",
+    "city": "yantai",
+    "name": "烟台市引进人才购房补贴",
+    "category": "buy",
+    "amount": { "min": 20000, "max": 200000, "unit": "元", "period": "一次性" },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "goufang-boshi",
+          "name": "博士（40周岁以下，最高20万元）",
+          "degree": ["博士"],
+          "ageLimit": 40,
+          "ageLimitExclusive": false,
+          "amount": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "goufang-shuoshi",
+          "name": "硕士（35周岁以下，最高10万元）",
+          "degree": ["硕士"],
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "amount": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "goufang-benke",
+          "name": "学士本科（30周岁以下，最高5万元）",
+          "degree": ["本科"],
+          "ageLimit": 30,
+          "ageLimitExclusive": false,
+          "amount": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "goufang-zhuanke",
+          "name": "专科（30周岁以下，最高2万元）",
+          "degree": ["专科"],
+          "ageLimit": 30,
+          "ageLimitExclusive": false,
+          "amount": { "min": 20000, "max": 20000, "unit": "元", "period": "一次性" }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "社保满12个月后方可申报；须在首次来烟就业、缴纳社保当月起5年内申领完毕；常态化按批次申报",
+      "channel": "烟台市人社局网上综合服务系统“人才补贴申报”平台（智慧人社），全程网办",
+      "materials": [
+        "学历学位（职称证书）材料",
+        "工资薪酬发放凭证（工资账单或工资发放相关证明、银行流水等）",
+        "社保缴纳情况",
+        "购房合同、发票、房产证等有效购房证明材料",
+        "夫妻双方同时申报购房补贴，或一方申报但住房权利人仅登记为配偶一人的，须提供婚姻证明材料",
+        "特殊情况需要的其它有关材料"
+      ],
+      "process": [
+        "申报人通过烟台市人社局网上综合服务系统“人才补贴申报”平台全程网办申报",
+        "所在单位网上初审通过后，按隶属关系报同级人力资源社会保障部门",
+        "人社部门审核（争议情况需现场核查）",
+        "审核通过后按批次公示5个工作日",
+        "公示无异议后拨付至申报人社保卡或本人指定银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rshj.yantai.gov.cn/"
+    },
+    "policySource": "烟委人组办发〔2024〕22号",
+    "effectiveDate": "2024-06-01",
+    "notes": "有效。人才新政3.0：按购房金额30%给予一次性购房补贴，最高博士20万元、硕士10万元、本科5万元、专科2万元；制造业重点高校博士最高26万元。要求首次新引进并在烟新购商品住房、社保满1年、年龄符合档次（博士40/硕士35/本科30/专科30周岁以下，含本数）。夫妻双方均符合条件的可按同一套住房分别申报，合计不超购房金额60%。市级生活补贴、购房补贴、留学费用补贴可叠加。",
+    "location": "烟台市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yantai-shiji-liuxuefeiyongbutie",
+    "city": "yantai",
+    "name": "烟台市引进人才留学费用补贴",
+    "category": "talent",
+    "amount": { "min": 60000, "max": 150000, "unit": "元", "period": "一次性" },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "liuxue-boshi",
+          "name": "全球前200海外高校博士（45周岁以下）",
+          "degree": ["博士"],
+          "ageLimit": 45,
+          "ageLimitExclusive": false,
+          "schoolRegion": "overseas",
+          "schoolLevel": ["QS前200"],
+          "amount": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" }
+        },
+        {
+          "id": "liuxue-shuoshi",
+          "name": "全球前200海外高校硕士（40周岁以下）",
+          "degree": ["硕士"],
+          "ageLimit": 40,
+          "ageLimitExclusive": false,
+          "schoolRegion": "overseas",
+          "schoolLevel": ["QS前200"],
+          "amount": { "min": 60000, "max": 60000, "unit": "元", "period": "一次性" }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "社保满1年后申报；须在首次来烟就业、缴纳社保当月起5年内申领完毕；常态化按批次申报",
+      "channel": "烟台市人社局网上综合服务系统“人才补贴申报”平台（智慧人社），全程网办",
+      "materials": [
+        "教育部留学服务中心出具的国（境）外学历学位认证书",
+        "工资薪酬发放凭证（工资账单或工资发放相关证明、银行流水等）",
+        "社保缴纳情况",
+        "国（境）外学习期间使用的护照（通行证）及签证页（签注记录）",
+        "非公派留学声明（承诺函）",
+        "特殊情况需要的其他相关证明材料（外文的须由正规翻译机构翻译成中文，并加盖翻译机构公章）"
+      ],
+      "process": [
+        "申报人通过烟台市人社局网上综合服务系统“人才补贴申报”平台全程网办申报",
+        "所在单位网上初审通过后，按隶属关系报同级人力资源社会保障部门",
+        "人社部门审核（争议情况需现场核查）",
+        "审核通过后按批次公示5个工作日",
+        "公示无异议后拨付至申报人社保卡或本人指定银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rshj.yantai.gov.cn/"
+    },
+    "policySource": "烟委人组办发〔2024〕22号",
+    "effectiveDate": "2024-06-01",
+    "notes": "有效。全球前200名海外高校（QS）博士15万元、硕士6万元一次性发放。要求首次新引进到企事业单位、海外高校全日制就读、社保满1年、博士45/硕士40周岁以下（含本数）、签署非公派留学声明。可在生活补贴和购房补贴之外叠加享受。tier2：须为海外QS前200高校毕业生（细分身份条件）。",
+    "location": "烟台市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yantai-kaifaqu-shenghuobutie",
+    "city": "yantai",
+    "name": "烟台开发区青年人才生活补贴",
+    "category": "living",
+    "amount": { "min": 1000, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "kaifaqu-boshi",
+          "name": "全日制博士（40周岁以下）",
+          "degree": ["博士"],
+          "ageLimit": 40,
+          "ageLimitExclusive": false,
+          "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "kaifaqu-shuoshi",
+          "name": "全日制硕士（35周岁以下）",
+          "degree": ["硕士"],
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "amount": { "min": 2000, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        },
+        {
+          "id": "kaifaqu-benke",
+          "name": "择业期内双一流/QS前200学士本科",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流", "QS前200"],
+          "amount": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "缴纳社保满1年后申报；以开发区人社部门通知为准",
+      "channel": "烟台市人社局“人才补贴申报”平台申报，由烟台黄渤海新区（开发区）人社部门受理审核；开发区生活补贴咨询电话0535-6378033",
+      "materials": [
+        "学历学位材料",
+        "工资薪酬发放凭证（工资账单或工资发放相关证明、银行流水等）",
+        "社保缴纳情况",
+        "特殊情况需要的其它有关材料"
+      ],
+      "process": [
+        "申报人通过烟台市人社局网上综合服务系统“人才补贴申报”平台申报",
+        "由烟台黄渤海新区（开发区）人社部门受理审核",
+        "审核通过后按批次公示5个工作日",
+        "公示无异议后拨付至申报人社保卡或指定银行账户"
+      ],
+      "location": "黄渤海新区",
+      "url": "http://www.yeda.gov.cn/"
+    },
+    "policySource": "烟开人社〔2020〕48号",
+    "effectiveDate": "2020-07-01",
+    "notes": "有效（早期区级政策）。烟台开发区独立政策，2020年7月1日后首次引进开发区企业工作、社保满1年：全日制博士3000元/月、硕士2000元/月、择业期内双一流/QS前200本科1000元/月，补贴3年。与市级引进人才生活补贴（烟委人组办发〔2024〕22号）就高不重复、仅可申领其一。标准与市级企业引进生活补贴一致，现多数开发区人员走市级政策，仅少数2020年7月后引进人员适用。设为tier3（仅展示入口，不参与自动匹配），以免与市级生活补贴重复计算。",
+    "location": "烟台市·黄渤海新区",
+    "tier": 3,
+    "exclusiveGroup": "yantai-district"
+  }
+]

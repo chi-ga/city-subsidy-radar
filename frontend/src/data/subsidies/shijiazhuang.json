@@ -1,0 +1,418 @@
+[
+  {
+    "id": "shijiazhuang-shiji-anzhao-butie",
+    "city": "shijiazhuang",
+    "name": "石家庄市高校毕业生一次性就业安家补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "benke",
+          "name": "全日制学士学位毕业生1万元",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士学位研究生3万元",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "boshi",
+          "name": "博士学位研究生5万元",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每季度末月的1日至20日",
+      "channel": "线下申报，各县(市、区)人力资源社会保障部门经办窗口；参考石家庄市人社局官网 rsj.sjz.gov.cn",
+      "materials": [
+        "《高校毕业生一次性安家补贴申请表》",
+        "营业执照副本原件及复印件",
+        "高校毕业生身份证复印件",
+        "社会保障卡复印件",
+        "高校毕业生毕业证和学位证复印件（或学信网学历凭证；国(境)外高校毕业生提供教育部留学服务中心学历学位认证书）",
+        "与企业签订的劳动合同复印件（企业就业人员提供）",
+        "社会保险（养老、工伤、失业、医疗）参保缴费凭证（企业就业人员提供）",
+        "6个月正常经营流水凭证（自主创业人员提供）",
+        "其他需要的相关材料（须加盖公章）"
+      ],
+      "process": [
+        "企业申报：企业于高校毕业生缴纳社会保险费满6个月后（自主创业人员于领取营业执照并正常经营满6个月后）持申报材料向所在地县(市、区)人社部门申报，申报时间为每季度末月的1日至20日",
+        "资格审核：县(市、区)人社部门初审后于受理当月月底前上报市人社局，市人社局会同市行政审批局复核",
+        "社会公示：市人社局官网公示5个工作日",
+        "资金拨付：报市政府批准后拨付至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://m.sjz.bendibao.com/live/78472.shtm"
+    },
+    "policySource": "石人社发〔2022〕6号《石家庄市高校毕业生一次性就业安家补贴等5项奖补实施细则》",
+    "effectiveDate": "2023-05-19",
+    "notes": "政策状态：有效。面向毕业2年内普通高校全日制本科/硕士/博士，学士1万元、硕士3万元、博士5万元一次性发放。需2023年5月19日后到石家庄市企业工作并缴社保6个月以上，或初次自主创业正常经营6个月以上。每季度末月1-20日申报，资金拨付至社保卡金融账户。",
+    "location": "石家庄市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shijiazhuang-shiji-rencai-lvka-zufang",
+    "city": "shijiazhuang",
+    "name": "石家庄市人才绿卡（B卡）持有人员房租补助",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元/月",
+      "period": "按月（5年内）"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士每月3000元",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元/月",
+            "period": "按月（5年内）"
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士每月1500元",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 1500,
+            "max": 1500,
+            "unit": "元/月",
+            "period": "按月（5年内）"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "学士每月1000元",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 1000,
+            "max": 1000,
+            "unit": "元/月",
+            "period": "按月（5年内）"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "线下申报，由所在单位报送县(市、区)人社局或市直主管部门；参考石家庄市人社局官网 rsj.sjz.gov.cn",
+      "materials": [
+        "《石家庄市人才绿卡（B卡）持有人员房租补助申请表》",
+        "石家庄市人才绿卡（B卡）",
+        "申请人身份证",
+        "学位证",
+        "录用为选调生或公务员的需提供选调生（公务员）登记表，企事业单位需提供相关录用证明",
+        "其他相关证明材料"
+      ],
+      "process": [
+        "个人申请：持卡人填写《石家庄市人才绿卡（B卡）持有人员房租补助申请表》向所在单位申请",
+        "所在单位初审：单位对申请表及材料初审",
+        "单位报送、地方审核：单位填写《房租补助一览表》与申报材料一并报送所在县(市、区)人社局或市直主管部门审核",
+        "市审核：审核合格后报市人社局审批"
+      ],
+      "location": "市级",
+      "url": "https://www.shimen.com/wiki/15441.html"
+    },
+    "policySource": "石办字〔2017〕39号《石家庄市人才绿卡（B卡）管理办法（试行）》、石办发〔2018〕8号《关于实施现代产业人才聚集工程的若干措施的通知》",
+    "effectiveDate": "2017-01-01",
+    "notes": "政策状态：有效。需先取得石家庄市人才绿卡B卡（博士学位研究生/双一流建设高校全日制硕士/一流大学和一流学科全日制学士等，年龄一般不超过35周岁）。博士3000元/月、硕士1500元/月、学士1000元/月，按月发放，自到石家庄工作或创业之日起5年内享受。",
+    "location": "石家庄市·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shijiazhuang-shiji-rencai-lvka-goufang",
+    "city": "shijiazhuang",
+    "name": "石家庄市人才绿卡（B卡）持有人员购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士30万元",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 300000,
+            "max": 300000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士10万元",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "学士5万元",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "线下申报，由所在单位报送县(市、区)人社局或市直主管部门，汇总后报市人社局；参考石家庄市人社局官网 rsj.sjz.gov.cn",
+      "materials": [
+        "《石家庄市人才绿卡（B卡）持有人员购房补贴申请表》（一式3份）",
+        "石家庄市人才绿卡（B卡）",
+        "申请人身份证（或护照）、学位证",
+        "期房提供《预售商品房合同备案书》和购房发票（或收据），存量房提供《不动产权利及其他事项登记信息》和购房发票",
+        "本市无住房和无房产交易证明（首次购房证明）",
+        "与本市用人单位签订3年以上劳动合同（工作协议）",
+        "其他需要的证明材料（原件查验后退回，复印件一式2份）"
+      ],
+      "process": [
+        "申请：持卡人填写《购房补贴申请表》，所在单位初审后报县(市、区)人社局或市直主管部门，汇总后统一报市人社局",
+        "审核：市人社局审查资格，会同市住建局、不动产登记中心核实房产状况",
+        "公示：市人社局网站公示7天",
+        "拨付：市人社局、市财政局核定后拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.shimen.com/wiki/4804.html"
+    },
+    "policySource": "石办字〔2017〕39号《石家庄市人才绿卡（B卡）管理办法（试行）》、石办发〔2018〕8号《关于实施现代产业人才聚集工程的若干措施的通知》",
+    "effectiveDate": "2017-01-01",
+    "notes": "政策状态：有效。需先取得石家庄市人才绿卡B卡，并在石家庄市域内购买首套自用商品房和存量房，与本市用人单位签订3年以上劳动合同。博士30万元、硕士10万元、学士5万元，一次性发放。",
+    "location": "石家庄市·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "shijiazhuang-gaocheng-rencai-lvka-zufang",
+    "city": "shijiazhuang",
+    "name": "石家庄市藁城区人才绿卡房租补贴",
+    "category": "rent",
+    "amount": {
+      "min": 6000,
+      "max": 6000,
+      "unit": "元/年",
+      "period": "按年（最长5年）"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士学位研究生每年6000元",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 6000,
+            "max": 6000,
+            "unit": "元/年",
+            "period": "按年（最长5年）"
+          }
+        },
+        {
+          "id": "benke",
+          "name": "大学本科一批录取的高校全日制学士学位毕业生每年6000元（其他全日制本科标准待核实）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 6000,
+            "max": 6000,
+            "unit": "元/年",
+            "period": "按年（最长5年）"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "线下申报，藁城区人力资源和社会保障局（藁城区东城南街123号建投大厦14楼，咨询电话69071010）",
+      "materials": [
+        "藁城区人才绿卡",
+        "房租补贴申请表",
+        "申请人身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴费证明",
+        "房屋租赁合同",
+        "其他相关材料"
+      ],
+      "process": [
+        "个人申请：持卡人填写房租补贴申请表向所在单位申请",
+        "所在单位初审",
+        "报送藁城区人社部门审核",
+        "审核通过后拨付（具体流程以藁城区人社部门公布为准）"
+      ],
+      "location": "藁城区",
+      "url": "https://m.sjz.bendibao.com/mip/46582.shtm"
+    },
+    "policySource": "《石家庄市藁城区人才绿卡管理办法（试行）》",
+    "effectiveDate": "",
+    "notes": "政策状态：有效。需先取得藁城区人才绿卡，到藁城区工作或创业。全日制硕士、本科一批录取的全日制学士、中级职称及以上专业技术人员和紧缺工种技师每年6000元房租补贴，最长5年。区级政策互斥，仅可按工作所在区申领。",
+    "location": "石家庄市·藁城区",
+    "tier": 3,
+    "exclusiveGroup": "shijiazhuang-district"
+  },
+  {
+    "id": "shijiazhuang-luancheng-rencai-lvka-zufang",
+    "city": "shijiazhuang",
+    "name": "石家庄市栾城区人才绿卡房租补贴",
+    "category": "rent",
+    "amount": {
+      "min": 6000,
+      "max": 6000,
+      "unit": "元/年",
+      "period": "按年（最长5年）"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "硕士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "shuoshi",
+          "name": "硕士毕业生每年6000元（其他学历标准待核实）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 6000,
+            "max": 6000,
+            "unit": "元/年",
+            "period": "按年（最长5年）"
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "线下申报，栾城区人力资源和社会保障局（栾城区鑫源路1号217室，咨询电话88030072）",
+      "materials": [
+        "栾城区人才绿卡",
+        "房租补贴申请表",
+        "申请人身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴费证明",
+        "房屋租赁合同",
+        "其他相关材料"
+      ],
+      "process": [
+        "个人申请：持卡人填写房租补贴申请表向所在单位申请",
+        "所在单位初审",
+        "报送栾城区人社部门审核",
+        "审核通过后拨付（具体流程以栾城区人社部门公布为准）"
+      ],
+      "location": "栾城区",
+      "url": "https://www.sjz.gov.cn/zmhd/zfxxdetail.jsp?id=546672"
+    },
+    "policySource": "《石家庄市栾城区人才绿卡管理办法》",
+    "effectiveDate": "",
+    "notes": "政策状态：有效。需先取得栾城区人才绿卡，到栾城区工作或创业。硕士毕业生每年6000元房租补贴，其他学历标准待核实。区级政策互斥，仅可按工作所在区申领。",
+    "location": "石家庄市·栾城区",
+    "tier": 3,
+    "exclusiveGroup": "shijiazhuang-district"
+  }
+]

@@ -413,6 +413,12 @@ export default function Input() {
           'zhongshan',
           'haikou',
           'guiyang',
+          'shenyang',
+          'dalian',
+          'changchun',
+          'harbin',
+          'shijiazhuang',
+          'yantai',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

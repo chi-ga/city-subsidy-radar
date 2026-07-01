@@ -1,0 +1,651 @@
+[
+  {
+    "id": "dalian-shiji-zhufangbutie",
+    "city": "dalian",
+    "name": "大连市高校毕业生住房补贴（兴连英才计划）",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 2750,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "phd-normal",
+          "name": "博士（非双一流）",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 2500,
+            "max": 2500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "phd-syl",
+          "name": "博士（双一流）",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 2750,
+            "max": 2750,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "schoolLevel": "双一流"
+        },
+        {
+          "id": "master-normal",
+          "name": "硕士（非双一流）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 1500,
+            "max": 1500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "master-syl",
+          "name": "硕士（双一流）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 1650,
+            "max": 1650,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "schoolLevel": "双一流"
+        },
+        {
+          "id": "bachelor-normal",
+          "name": "本科（非双一流）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 1000,
+            "max": 1000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "bachelor-syl",
+          "name": "本科（双一流）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 1100,
+            "max": 1100,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          },
+          "schoolLevel": "双一流"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "大连人才网、大连智慧人才微信公众号/微信小程序、辽事通App",
+      "materials": [
+        "身份信息（系统实名认证）",
+        "学历信息（境内高校毕业生填写毕业学校、学历层次，系统自动核验；国(境)外高校毕业生填写教育部留学服务中心颁发的留学人员认证书编号）",
+        "户籍信息（选择是否大连户籍，系统比对）",
+        "社保信息（系统自动匹配在连缴纳社保及社保卡账户）",
+        "已开通金融功能的社会保障卡"
+      ],
+      "process": [
+        "注册登录：访问大连人才网（https://www.dl-rc.com）或大连智慧人才微信公众号/微信小程序、辽事通App进行实名注册",
+        "提交申请：进入高校毕业生住房补贴模块，阅读办理须知并授权查阅户籍、社保和学信网信息，在线填报学历、户籍、社保等信息",
+        "资格审核：每月第1-2个工作日市公安局核验户籍、学信网核验学历，市人才大数据综合服务平台进行资格确认",
+        "生成名单：每月第3个工作日核验连续缴纳社保满6个月情况，生成发放名单",
+        "资金发放：每月第4-5个工作日将补贴发放至个人社保卡账户"
+      ],
+      "location": "市级",
+      "url": "https://www.dl-rc.com"
+    },
+    "policySource": "《兴连英才计划》高校毕业生住房补贴实施细则（市委人才办组织实施）",
+    "effectiveDate": "2023-01",
+    "notes": "有效，政策持续执行中。博士2500元/月、硕士1500元/月、本科1000元/月，双一流上浮10%，按月发放保障期最多36个月。需全日制本科及以上学历、毕业后2年内、取得大连市户籍、在连连续缴纳社保满6个月（不含补缴）后次月起按月享受。",
+    "location": "大连市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "dalian-shiji-xuefeibuzhu",
+    "city": "dalian",
+    "name": "大连市高校毕业生学费补助",
+    "category": "talent",
+    "amount": {
+      "min": 8000,
+      "max": 42000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "phd-base",
+          "name": "博士（普通高校）",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "phd-yiliujs",
+          "name": "博士（一流建设高校，上浮40%）",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 42000,
+            "max": 42000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流建设"
+        },
+        {
+          "id": "phd-yiliuxk",
+          "name": "博士（一流学科建设高校，上浮20%）",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 36000,
+            "max": 36000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流学科建设"
+        },
+        {
+          "id": "master-base",
+          "name": "硕士（普通高校）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 20000,
+            "max": 20000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "master-yiliujs",
+          "name": "硕士（一流建设高校，上浮40%）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 28000,
+            "max": 28000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流建设"
+        },
+        {
+          "id": "master-yiliuxk",
+          "name": "硕士（一流学科建设高校，上浮20%）",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 24000,
+            "max": 24000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流学科建设"
+        },
+        {
+          "id": "bachelor-base",
+          "name": "本科（普通高校）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "bachelor-yiliujs",
+          "name": "本科（一流建设高校，上浮40%）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 14000,
+            "max": 14000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流建设"
+        },
+        {
+          "id": "bachelor-yiliuxk",
+          "name": "本科（一流学科建设高校，上浮20%）",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 12000,
+            "max": 12000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流学科建设"
+        },
+        {
+          "id": "zhuanke-base",
+          "name": "专科（普通高校）",
+          "degree": [
+            "专科"
+          ],
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "普通"
+        },
+        {
+          "id": "zhuanke-yiliujs",
+          "name": "专科（一流建设高校，上浮40%）",
+          "degree": [
+            "专科"
+          ],
+          "amount": {
+            "min": 11200,
+            "max": 11200,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流建设"
+        },
+        {
+          "id": "zhuanke-yiliuxk",
+          "name": "专科（一流学科建设高校，上浮20%）",
+          "degree": [
+            "专科"
+          ],
+          "amount": {
+            "min": 9600,
+            "max": 9600,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "一流学科建设"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年集中受理期（如2025年度为11月18日至12月1日）",
+      "channel": "大连人才网、大连智慧人才微信公众号/微信小程序",
+      "materials": [
+        "身份信息（系统实名认证）",
+        "学历信息（在线提交，系统通过学信网自动比对核验）",
+        "已开通金融功能的大连市社会保障卡（用于接收补助资金）"
+      ],
+      "process": [
+        "在线提交：访问大连人才网（https://www.dl-rc.com）或大连智慧人才微信公众号/微信小程序，进入高校毕业生学费补助模块，通过身份验证后在线提交学历信息",
+        "自动比对：平台系统按申请顺序分批次自动进行学历信息、社保缴纳信息比对",
+        "区划确认：市人社部门会同各地区人社部门对申请人所在单位进行区划确认",
+        "社会公示：市人社部门将符合条件人员名单及拟发补贴额度在市人社局官网公示5个工作日",
+        "资金发放：公示无异议后补助资金拨付至申请人开通金融功能的大连市社保卡账户"
+      ],
+      "location": "市级",
+      "url": "https://www.dl-rc.com"
+    },
+    "policySource": "《关于组织开展2025年度高校毕业生学费补助项目申报工作的通知》（大连市人社局）",
+    "effectiveDate": "2022",
+    "notes": "有效，每年集中受理一次。博士3万、硕士2万、本科1万、专科0.8万一次性学费补助；国内一流建设高校上浮40%，一流学科建设高校上浮20%，两市一县（瓦房店市、庄河市、长海县）就业上浮20%（就高不重复）。需2022届及以后国内全日制普通高校毕业生、毕业3年内、在连累计缴纳24个月及以上社保。",
+    "location": "大连市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "dalian-shiji-xuefeibuchang",
+    "city": "dalian",
+    "name": "大连市高校毕业生学费补偿或国家助学贷款代偿",
+    "category": "talent",
+    "amount": {
+      "min": 0,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevelRequired": "国内双一流大学全日制，或所学专业与大连市重点产业契合的知名高校、科研院所全日制（专业契合度以《大连市城市发展紧缺人才开发目录（2021）》为准）；瓦房店市、庄河市、长海县用人单位放宽至本科及以上高校毕业生，不受双一流限制"
+    },
+    "application": {
+      "deadline": "按年度集中受理",
+      "channel": "各地区人社部门（线下申报）",
+      "materials": [
+        "《大连市学费补偿（国家助学贷款代偿）申请表》（含Word电子版）",
+        "申请人的学历学位证书（一流学科下属专业或全国高校学科第四轮评估A类学科下属专业需附学校说明材料）、学费收据（或学费缴纳说明）、助学贷款协议书及还款记录复印件",
+        "申请人与用人单位签订的三年及以上期限劳动合同、在连连续缴纳1年社会保险记录复印件、身份证复印件",
+        "用人单位内部公示材料复印件",
+        "用人单位工商营业执照副本等资质材料复印件"
+      ],
+      "process": [
+        "准备材料：申请人准备申请表、学历学位证书、学费收据、劳动合同、社保记录等材料并加盖用人单位公章",
+        "单位公示：用人单位内部公示",
+        "提交申报：向所在地区人社部门提交申报材料（一式一份）",
+        "审核公示：人社部门审核并通过官网公示",
+        "资金发放：补助资金拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://m.dl.bendibao.com/news/72466.shtm"
+    },
+    "policySource": "大连市学费补偿（国家助学贷款代偿）政策（大连市人社局）",
+    "effectiveDate": "",
+    "notes": "有效，按年度集中受理。每人最高不超过5万元，同等学历只能享受一次，总额不超过个人实际承担学费。需国内双一流大学全日制毕业2年内，或所学专业与重点产业契合的知名高校/科研院所全日制毕业2年内；与用人单位签3年以上劳动合同、在连连续缴纳社保满1年。属细分追问层（需院校层次及专业契合度判定）。",
+    "location": "大连市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "dalian-shiji-yicixinggoufangbutie",
+    "city": "dalian",
+    "name": "大连市高校毕业生一次性购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "按年度集中受理（如2025年度为6月9日至7月31日）",
+      "channel": "大连市人社部门线下窗口（大连市沙河口区联合路100号1楼3号窗口），咨询电话39997553",
+      "materials": [
+        "身份证原件及复印件（正反面复印在一页）",
+        "社会保障卡原件及复印件（正反面复印在一页）",
+        "毕业证书或国家教育部留学服务中心出具的《国(境)外学位学历认证书》（复印盖章页）",
+        "不动产权证书（复印登记盖章页、房屋信息页）",
+        "房屋买卖合同（复印封面、买卖方信息页、坐落地址页、交易价格页、买卖方签字盖章页）",
+        "《高校毕业生一次性购房补贴申领表》打印件（须本人亲笔签名并标明日期）及电子表格存储优盘"
+      ],
+      "process": [
+        "提出申请：符合条件的高校毕业生于受理期内携带申领材料及电子表格存储优盘，到市人社部门（大连市沙河口区联合路100号1楼3号窗口）提交申请",
+        "受理审核：市人社部门现场受理，窗口核验学历、购买普通商品房、取得不动产权证书及领取住房补贴/购房券补贴情况",
+        "社会公示：核验通过人员名单在市人社局官网公示7天",
+        "待遇落实：公示无异议后，市人社局函商市财政局拨付经费，补贴资金发放至申领人社保卡账户"
+      ],
+      "location": "市级",
+      "url": "https://www.rsj.dl.gov.cn/"
+    },
+    "policySource": "《关于组织开展2025年度高校毕业生一次性购房补贴申领工作的通知》（大连市人力资源和社会保障局）",
+    "effectiveDate": "2022-05-26",
+    "notes": "有效，按年度集中受理。一次性给予10000元购房补贴，每人限申领一次。需2022年5月26日后毕业、正在领取或已全额领取大连市住房补贴的博士/硕士/本科毕业生、毕业后5年内购买普通商品房且已取得不动产权证书。与购房券补贴不可叠加享受。",
+    "location": "大连市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "dalian-shiji-goufangquan",
+    "city": "dalian",
+    "name": "大连市高校毕业生等群体购房券",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "phd-quan",
+          "name": "博士购房券",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "不限"
+        },
+        {
+          "id": "master-quan",
+          "name": "硕士购房券",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "不限"
+        },
+        {
+          "id": "bachelor-quan",
+          "name": "本科购房券",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "schoolLevel": "不限"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "购房网签备案须在2024年10月30日至2025年10月30日期间完成；申领兑付自2024年12月31日启动",
+      "channel": "辽事通App e大连频道",
+      "materials": [
+        "个人身份信息（系统认证）",
+        "商品房买卖合同网签备案号",
+        "学历学位信息（系统自动比对）"
+      ],
+      "process": [
+        "申请：申请人登录辽事通App e大连频道，认证个人身份信息，选择首页购房补贴—购房券栏目，录入商品房买卖合同网签备案号、学历学位等信息并承诺真实性",
+        "审核：系统通过共享数据自动比对商品房买卖合同网签备案、学历学位等信息，推送至市住建中心审核；无法自动比对或有异议的由市住建中心会同教育、人社等部门审核",
+        "发放：审核通过后由辽事通自动生成电子购房券实时推送至申请人",
+        "核销：领取购房券后办理不动产权证书，登录辽事通录入不动产权证号、银行账号等信息，审核通过后购房券自动核销",
+        "兑付：市住建中心确定兑付金额后按年度统一组织发放，资金拨付至个人银行卡账户"
+      ],
+      "location": "市级",
+      "url": "https://m.dl.bendibao.com/news/7454903847622820352.shtm"
+    },
+    "policySource": "《大连市进一步促进房地产市场平稳健康发展若干政策措施》（房地产新政14条，2024年10月30日出台）",
+    "effectiveDate": "2024-10-30",
+    "notes": "购房网签备案窗口已结束（2025年10月30日截止），已审核通过的购房券按年度兑付中，请关注官方是否出台延期或续接政策。博士10万、硕士5万、本科/专科/中职/技校3万购房券（有效期1年），不受毕业时间限制。须2024年10月30日至2025年10月30日期间购买中山区、西岗区、沙河口区、甘井子区新建商品房并网签备案。与住房补贴可叠加，与一次性购房补贴不可叠加。",
+    "location": "大连市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "dalian-jinpu-mingxiaoyoucai",
+    "city": "dalian",
+    "name": "大连金普新区名校优才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 50000,
+      "max": 200000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevelRequired": "国内双一流大学（全日制）或全球排名前200的海外高校（港澳台地区高校参照同一标准）毕业2年内；双一流名单以教育部公布的第二轮双一流建设高校及建设学科为准，海外高校参考USNEWS、QS、THE、ARWU四大排名",
+      "criterionSets": [
+        {
+          "id": "phd-jinpu",
+          "name": "博士",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 200000,
+            "max": 200000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 60
+          },
+          "schoolLevel": "双一流/全球前200"
+        },
+        {
+          "id": "master-jinpu",
+          "name": "硕士",
+          "degree": [
+            "硕士"
+          ],
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 60
+          },
+          "schoolLevel": "双一流/全球前200"
+        },
+        {
+          "id": "bachelor-jinpu",
+          "name": "学士",
+          "degree": [
+            "本科"
+          ],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 60
+          },
+          "schoolLevel": "双一流/全球前200"
+        }
+      ]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "金普新区人社部门（线下/线上申报，具体以金普新区政府公告为准）",
+      "materials": [
+        "申请人身份证",
+        "学历学位证书（国(境)外毕业生需提供教育部留学服务中心认证材料）",
+        "与金普新区用人单位签订的不少于1年劳动（聘用）合同（自主创业的提供营业执照及法定代表人证明）",
+        "在金普新区连续缴纳6个月以上社会保险或个人工薪所得税证明",
+        "用人单位工商营业执照副本（要求工商注册地和税收征管关系均在金普新区）",
+        "用人单位出具的审核意见"
+      ],
+      "process": [
+        "准备材料：申请人准备学历学位证书、劳动合同、社保缴纳证明等材料",
+        "单位审核：用人单位审核并出具意见",
+        "提交申报：向金普新区人社部门提交申报材料",
+        "资质复核：每年发放补贴前对用人单位和个人资质进行复核",
+        "资金发放：分5年平均发放至申请人账户"
+      ],
+      "location": "金普新区",
+      "url": "https://m.dl.bendibao.com/mip/65703.shtm"
+    },
+    "policySource": "《金普新区集聚人才十项重点政策（2.0版）》（金普新区政府）",
+    "effectiveDate": "",
+    "notes": "有效，政策持续执行中。博士20万、硕士10万、学士5万，分5年平均发放。需国内双一流大学（全日制）或全球排名前200海外高校毕业2年内，在金普新区创业或签订1年以上合同，连续缴纳6个月以上社保或个税。属细分追问层（需院校层次判定）。区级政策，与市级政策不互斥但与其他区级政策互斥。",
+    "location": "大连市·金普新区",
+    "tier": 2,
+    "exclusiveGroup": "dalian-district"
+  }
+]
