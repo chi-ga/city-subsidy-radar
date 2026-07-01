@@ -121,7 +121,14 @@ export type CityCode =
   | 'jinan'
   | 'shaoxing'
   | 'zhuhai'
-  | 'nanning';
+  | 'nanning'
+  | 'zhengzhou'
+  | 'qingdao'
+  | 'wuxi'
+  | 'fuzhou'
+  | 'xiamen'
+  | 'nanchang'
+  | 'kunming';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -144,6 +151,13 @@ export const CITY_NAMES: Record<CityCode, string> = {
   shaoxing: '绍兴',
   zhuhai: '珠海',
   nanning: '南宁',
+  zhengzhou: '郑州',
+  qingdao: '青岛',
+  wuxi: '无锡',
+  fuzhou: '福州',
+  xiamen: '厦门',
+  nanchang: '南昌',
+  kunming: '昆明',
 };
 
 // 补贴分类名称映射

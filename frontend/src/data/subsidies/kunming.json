@@ -1,0 +1,957 @@
+[
+  {
+    "id": "kunming-xishan-zufangbutie",
+    "city": "kunming",
+    "name": "西山区高校毕业生来昆留昆租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（含非全日制硕士及以上）",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流高校本科生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "普通高校本科生",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至西山区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆留昆租房补贴申请表》原件2份",
+        "劳动合同复印件1份（期限不低于2年）",
+        "最近1个月社会保险参保缴费证明原件1份",
+        "用人单位营业执照复印件1份",
+        "租房协议或租房合同复印件1份（原件查验），承租房业主证明（房产证/不动产权证/购房合同）及业主身份证复印件各1份",
+        "本人身份证、毕业证复印件各1份（原件查验，本科需注明是否双一流）",
+        "本人具有二代金融功能社保卡复印件1份（需开通激活并写明开户银行）"
+      ],
+      "process": [
+        "准备材料",
+        "向西山区人社部门/公共就业和人才服务中心提交申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "西山区",
+      "url": "https://km.bendibao.com/live/202616/101277.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。西山区租房补贴按学历分档：博士8000元、硕士5000元、双一流本科3000元、普通本科2000元，一次性发放。要求毕业年度内全日制高校毕业生、在西山区就业创业、与用人单位（不含党政机关、事业单位和国有企业）签订2年以上劳动合同并依法缴纳社保、未入住廉租房/公租房/人才公寓。部分地区明确非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·西山区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-xishan-luohubutie",
+    "city": "kunming",
+    "name": "西山区高校毕业生来昆留昆落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至西山区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆落户补贴申请表》原件2份",
+        "本人户口簿户主页与本人页复印件1份（原件查验）或户口证明材料原件1份",
+        "本人的毕业证、身份证复印件各1份（原件查验）",
+        "本人具有二代金融功能社保卡复印件1份（需开通激活并写明开户银行）"
+      ],
+      "process": [
+        "准备材料",
+        "向西山区公共就业和人才服务中心提出申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "西山区",
+      "url": "https://m.km.bendibao.com/mip/101275.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。西山区对毕业后1年内首次落户该区（含集体户）的全日制高校、职业院校大专及以上学历毕业生给予一次性落户奖励1000元。非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·西山区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-chenggong-zufangbutie",
+    "city": "kunming",
+    "name": "呈贡区高校毕业生来昆留昆租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（含非全日制硕士及以上）",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流高校本科生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "普通高校本科生",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至呈贡区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆留昆租房补贴申请表》原件2份",
+        "2年以上劳动合同复印件1份",
+        "最近1个月社会保险参保缴费证明原件1份",
+        "用人单位营业执照复印件1份",
+        "租房协议或租房合同复印件1份（原件查验），承租房业主证明（房产证/不动产权证/购房合同）及业主身份证复印件各1份",
+        "本人身份证、毕业证复印件各1份（原件查验，本科需注明是否双一流）",
+        "本人银行卡复印件1份（注明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向呈贡区人社部门/公共就业和人才服务中心提交申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "呈贡区",
+      "url": "https://m.km.bendibao.com/live/91469.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。呈贡区租房补贴按学历分档：博士8000元、硕士5000元、双一流本科3000元、普通本科2000元，一次性发放。要求毕业年度内全日制高校毕业生、在呈贡区就业创业、与用人单位（不含党政机关、事业单位和国有企业）签订2年以上劳动合同并依法缴纳社保、未入住廉租房/公租房/人才公寓。部分地区明确非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·呈贡区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-chenggong-luohubutie",
+    "city": "kunming",
+    "name": "呈贡区高校毕业生来昆留昆落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至呈贡区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆落户补贴申请表》原件2份",
+        "户口簿户主页及本人页复印件（验原件）或户口证明",
+        "毕业证、身份证复印件",
+        "本人银行卡复印件（注明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向呈贡区公共就业和人才服务中心提出申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "呈贡区",
+      "url": "https://m.km.bendibao.com/mip/91461.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。呈贡区对毕业后1年内首次落户该区（含集体户）的全日制高校、职业院校大专及以上学历毕业生给予一次性落户奖励1000元。非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·呈贡区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-panlong-zufangbutie",
+    "city": "kunming",
+    "name": "盘龙区高校毕业生来昆留昆租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（含非全日制硕士及以上）",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流高校本科生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "普通高校本科生",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至盘龙区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆留昆租房补贴申请表》原件1份",
+        "劳动合同复印件1份（期限不低于2年）",
+        "最近1个月社会保险参保缴费证明原件1份",
+        "用人单位营业执照复印件1份",
+        "租房合同（协议）或《昆明市房屋租赁信息登记备案表》复印件1份（原件查验）",
+        "本人身份证、毕业证复印件各1份（原件查验，本科需注明是否双一流）",
+        "本人签字按手印的承诺书",
+        "本人具有金融功能社保卡复印件1份（需开通激活并写明开户银行）"
+      ],
+      "process": [
+        "准备材料",
+        "向盘龙区人社部门/公共就业和人才服务中心提交申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "盘龙区",
+      "url": "https://m.km.bendibao.com/mip/101378.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。盘龙区租房补贴按学历分档：博士8000元、硕士5000元、双一流本科3000元、普通本科2000元，一次性发放。要求毕业年度内全日制高校毕业生、在盘龙区就业创业、与用人单位（不含党政机关、事业单位和国有企业）签订2年以上劳动合同并依法缴纳社保、未入住廉租房/公租房/人才公寓。部分地区明确非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·盘龙区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-panlong-luohubutie",
+    "city": "kunming",
+    "name": "盘龙区高校毕业生来昆留昆落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至盘龙区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆落户补贴申请表》原件1份",
+        "本人户口簿户主页与本人页复印件1份（原件查验）或户籍证明材料原件1份",
+        "本人的毕业证、身份证复印件各1份（原件查验）",
+        "本人具有金融功能社保卡复印件1份（需开通激活并写明开户银行）"
+      ],
+      "process": [
+        "准备材料",
+        "向盘龙区公共就业和人才服务中心提出申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "盘龙区",
+      "url": "https://m.km.bendibao.com/news/81104.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。盘龙区对毕业后1年内首次落户该区（含集体户）的全日制高校、职业院校大专及以上学历毕业生给予一次性落户奖励1000元。非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·盘龙区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-guandu-zufangbutie",
+    "city": "kunming",
+    "name": "官渡区高校毕业生来昆留昆租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（含非全日制硕士及以上）",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流高校本科生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "普通高校本科生",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至官渡区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆留昆租房补贴申请表》原件2份",
+        "劳动合同复印件1份（期限不低于2年）",
+        "最近1个月社会保险参保缴费证明原件1份",
+        "用人单位营业执照复印件1份",
+        "《昆明市房屋租赁信息登记备案表》复印件1份（原件查验）",
+        "本人身份证、毕业证复印件各1份（原件查验，本科需注明是否双一流）",
+        "本人银行卡复印件1份（需正常可用并写明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向官渡区人社部门/公共就业和人才服务中心提交申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "官渡区",
+      "url": "https://m.km.bendibao.com/mip/101361.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。官渡区租房补贴按学历分档：博士8000元、硕士5000元、双一流本科3000元、普通本科2000元，一次性发放。要求毕业年度内全日制高校毕业生、在官渡区就业创业、与用人单位（不含党政机关、事业单位和国有企业）签订2年以上劳动合同并依法缴纳社保、未入住廉租房/公租房/人才公寓。部分地区明确非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·官渡区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-guandu-luohubutie",
+    "city": "kunming",
+    "name": "官渡区高校毕业生来昆留昆落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至官渡区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆落户补贴申请表》",
+        "本人户口簿户主页与本人页复印件或户籍证明",
+        "本人的毕业证、身份证复印件",
+        "本人银行卡复印件（注明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向官渡区公共就业和人才服务中心提出申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "官渡区",
+      "url": "https://m.km.bendibao.com/mip/101361.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。官渡区对毕业后1年内首次落户该区（含集体户）的全日制高校、职业院校大专及以上学历毕业生给予一次性落户奖励1000元。非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·官渡区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-jinning-zufangbutie",
+    "city": "kunming",
+    "name": "晋宁区高校毕业生来昆留昆租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（含非全日制硕士及以上）",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流高校本科生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "普通高校本科生",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至晋宁区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆留昆租房补贴申请表》原件1份",
+        "劳动合同复印件1份（期限不低于2年）",
+        "最近1个月社会保险参保缴费证明原件1份",
+        "用人单位营业执照复印件1份",
+        "租房协议或租房合同复印件1份（原件查验），承租房业主证明（房产证/不动产权证/购房合同）及业主身份证复印件各1份",
+        "本人身份证、毕业证复印件各1份（原件查验，本科需注明是否双一流）",
+        "本人具有二代金融功能社保卡复印件1份（需开通激活并写明开户行，特殊原因可提供其他正常使用的银行卡并注明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向晋宁区人社部门/公共就业和人才服务中心提交申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "晋宁区",
+      "url": "https://m.km.bendibao.com/mip/101381.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。晋宁区租房补贴按学历分档：博士8000元、硕士5000元、双一流本科3000元、普通本科2000元，一次性发放。要求毕业年度内全日制高校毕业生、在晋宁区就业创业、与用人单位（不含党政机关、事业单位和国有企业）签订2年以上劳动合同并依法缴纳社保、未入住廉租房/公租房/人才公寓。部分地区明确非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·晋宁区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-jinning-luohubutie",
+    "city": "kunming",
+    "name": "晋宁区高校毕业生来昆留昆落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至晋宁区公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆落户补贴申请表》",
+        "本人户口簿户主页与本人页复印件或户籍证明",
+        "本人的毕业证、身份证复印件",
+        "本人具有二代金融功能社保卡复印件（需开通激活并写明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向晋宁区公共就业和人才服务中心提出申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "晋宁区",
+      "url": "https://m.km.bendibao.com/mip/101381.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。晋宁区对毕业后1年内首次落户该区（含集体户）的全日制高校、职业院校大专及以上学历毕业生给予一次性落户奖励1000元。非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·晋宁区",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-songming-zufangbutie",
+    "city": "kunming",
+    "name": "嵩明县高校毕业生来昆留昆租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 2000,
+      "max": 8000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "boshi",
+          "name": "博士研究生",
+          "amount": {
+            "min": 8000,
+            "max": 8000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "博士"
+          ]
+        },
+        {
+          "id": "shuoshi",
+          "name": "硕士研究生（含非全日制硕士及以上）",
+          "amount": {
+            "min": 5000,
+            "max": 5000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "硕士"
+          ]
+        },
+        {
+          "id": "benke-shuangyiliu",
+          "name": "双一流高校本科生",
+          "amount": {
+            "min": 3000,
+            "max": 3000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ],
+          "schoolLevel": [
+            "双一流"
+          ]
+        },
+        {
+          "id": "benke-qita",
+          "name": "普通高校本科生",
+          "amount": {
+            "min": 2000,
+            "max": 2000,
+            "unit": "元",
+            "period": "一次性"
+          },
+          "degree": [
+            "本科"
+          ]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至嵩明县公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆留昆租房补贴申请表》（附件3）",
+        "劳动合同复印件（期限不低于2年）",
+        "最近1个月社会保险缴纳证明原件1份",
+        "用人单位营业执照复印件1份",
+        "《昆明市房屋租赁信息登记备案表》复印件1份（原件查验）",
+        "本人身份证、毕业证复印件各1份（原件查验）",
+        "本人具有二代金融功能社保卡复印件1份（需开通激活并写明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向嵩明县人社部门/公共就业和人才服务中心提交申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "嵩明县",
+      "url": "https://m.km.bendibao.com/live/92181.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。嵩明县租房补贴按学历分档：博士8000元、硕士5000元、双一流本科3000元、普通本科2000元，一次性发放。要求毕业年度内全日制高校毕业生、在嵩明县就业创业、与用人单位（不含党政机关、事业单位和国有企业）签订2年以上劳动合同并依法缴纳社保、未入住廉租房/公租房/人才公寓。部分地区明确非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·嵩明县",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  },
+  {
+    "id": "kunming-songming-luohubutie",
+    "city": "kunming",
+    "name": "嵩明县高校毕业生来昆留昆落户补贴",
+    "category": "settlement",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "专科",
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年1月至3月集中受理上一年度补贴，逾期不予补报",
+      "channel": "线下提交至嵩明县公共就业和人才服务中心",
+      "materials": [
+        "《高校毕业生来昆落户补贴申请表》",
+        "本人户口簿户主页与本人页复印件或户籍证明",
+        "本人的毕业证、身份证复印件",
+        "本人具有二代金融功能社保卡复印件（需开通激活并写明开户行）"
+      ],
+      "process": [
+        "准备材料",
+        "向嵩明县公共就业和人才服务中心提出申请",
+        "材料审定",
+        "官网公示不少于5个工作日",
+        "向市人才市场管理办公室报备",
+        "发放至个人社保卡/银行卡"
+      ],
+      "location": "嵩明县",
+      "url": "https://m.km.bendibao.com/live/92181.shtm"
+    },
+    "policySource": "昆人社通〔2022〕6号",
+    "effectiveDate": "2022-02-07",
+    "notes": "有效。嵩明县对毕业后1年内首次落户该区（含集体户）的全日制高校、职业院校大专及以上学历毕业生给予一次性落户奖励1000元。非全日制硕士及以上研究生同等享受，但系统按全日制校验可能被过滤。",
+    "location": "昆明市·嵩明县",
+    "tier": 2,
+    "exclusiveGroup": "kunming-district"
+  }
+]

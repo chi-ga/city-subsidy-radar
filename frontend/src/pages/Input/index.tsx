@@ -397,6 +397,13 @@ export default function Input() {
           'shaoxing',
           'zhuhai',
           'nanning',
+          'zhengzhou',
+          'qingdao',
+          'wuxi',
+          'fuzhou',
+          'xiamen',
+          'nanchang',
+          'kunming',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

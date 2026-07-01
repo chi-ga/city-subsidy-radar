@@ -1,0 +1,176 @@
+[
+  {
+    "id": "nanchang-shiji-shenghuobutie",
+    "city": "nanchang",
+    "name": "南昌市青年人才生活补贴（新“人才10条”）",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "新“人才10条”印发之日（2023年10月24日）起首次来昌工作后，在昌正常参保即可申请",
+      "channel": "“昌通码”小程序、昌通码APP、南昌市人才“港、网、窗”一体化服务平台",
+      "materials": [
+        "申请人有效身份证件",
+        "有效期内学信网验证码（留学回国人员提供教育部留学服务中心学历学位认证书）或技能等级证书",
+        "与驻昌企业签订的劳动（聘用）合同或行政机关/事业单位录用证明（就业人才），或创办企业等经济实体佐证材料（创业人才）",
+        "社会保障卡银行账号（需激活金融功能）"
+      ],
+      "process": [
+        "个人使用社保卡在“昌通码”小程序或南昌市人才“港、网、窗”一体化服务平台注册并补充信息",
+        "向当前社保缴纳单位提出申请",
+        "单位审核并推送至系统平台",
+        "系统智能审批",
+        "审批通过后自动拨付至个人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nc.gov.cn/ncsrsj/tzgg/202404/1ebcb69c35384162bcba12dc4089b2dc.shtml"
+    },
+    "policySource": "洪人社发〔2023〕14号、洪人社发〔2024〕51号",
+    "effectiveDate": "2023-10-24",
+    "notes": "有效。2023年10月24日后首次来昌工作的全日制博士10万元、全日制硕士3万元、全日制本科1万元，分2笔发放（社保满6个月发50%、满12个月发50%）。机关事业单位在编人员不可申领。申领后须在昌就业满3年，否则需退回剩余补贴。",
+    "location": "南昌市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanchang-shiji-zufangbutie",
+    "city": "nanchang",
+    "name": "南昌市青年人才租房补贴（新“人才10条”）",
+    "category": "rent",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "已领取生活补贴后，在昌正常参保且取得有效租赁备案即可申请",
+      "channel": "“昌通码”小程序、昌通码APP、南昌市人才“港、网、窗”一体化服务平台",
+      "materials": [
+        "申请人有效身份证件",
+        "社会保障卡",
+        "有效商品房租赁备案登记凭证",
+        "已领取生活补贴的系统记录（平台自动核验）"
+      ],
+      "process": [
+        "个人在“昌通码”/南昌市人才“港、网、窗”一体化服务平台提交申请",
+        "社保缴纳单位审核并推送",
+        "系统智能审批",
+        "拨付至个人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://m.nc.bendibao.com/live/87535.shtm"
+    },
+    "policySource": "洪人社发〔2023〕14号",
+    "effectiveDate": "2023-10-24",
+    "notes": "有效。每人1万元，分两笔发放（社保满6个月发50%、满12个月发50%）。前置条件：已领取新“人才10条”生活补贴、非机关事业单位在编人员、租赁备案在有效期内且承租人为本人。",
+    "location": "南昌市",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanchang-shiji-goufangbutie",
+    "city": "nanchang",
+    "name": "南昌市青年人才购房补贴（新“人才10条”）",
+    "category": "buy",
+    "amount": {
+      "min": 60000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": [
+        "硕士",
+        "博士"
+      ],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "新“人才10条”印发之日起在南昌市购买商品住房，且社保累计满12个月",
+      "channel": "“昌通码”小程序、昌通码APP、南昌市人才“港、网、窗”一体化服务平台",
+      "materials": [
+        "申请人有效身份证件",
+        "有效期内的学信网验证码或教育部留学服务中心学历学位认证书，或技能等级证书",
+        "与用人单位签订的劳动合同及用人企业工商营业执照扫描件（就业人才），或创办企业等经济实体佐证材料（创业人才）",
+        "个人银行账号/社会保障卡",
+        "购房合同备案或不动产登记证明"
+      ],
+      "process": [
+        "个人在“昌通码”/南昌市人才“港、网、窗”一体化服务平台注册并提交购房补贴申请",
+        "社保缴纳单位核实并推送",
+        "系统智能审批",
+        "拨付至个人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://view.inews.qq.com/k/20251207A06MRN00"
+    },
+    "policySource": "洪人社发〔2023〕14号",
+    "effectiveDate": "2023-10-24",
+    "notes": "有效。全日制博士10万元、全日制硕士6万元一次性发放。前置条件：已领取两笔生活补贴、非机关事业单位在编人员、在新“人才10条”印发之日起购房、在昌社保累计满12个月、购房补贴一人仅享一次。",
+    "location": "南昌市",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

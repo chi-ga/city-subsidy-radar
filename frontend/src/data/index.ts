@@ -17,6 +17,13 @@ import jinan from './subsidies/jinan.json';
 import shaoxing from './subsidies/shaoxing.json';
 import zhuhai from './subsidies/zhuhai.json';
 import nanning from './subsidies/nanning.json';
+import zhengzhou from './subsidies/zhengzhou.json';
+import qingdao from './subsidies/qingdao.json';
+import wuxi from './subsidies/wuxi.json';
+import fuzhou from './subsidies/fuzhou.json';
+import xiamen from './subsidies/xiamen.json';
+import nanchang from './subsidies/nanchang.json';
+import kunming from './subsidies/kunming.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
@@ -41,6 +48,13 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   shaoxing: shaoxing as Subsidy[],
   zhuhai: zhuhai as Subsidy[],
   nanning: nanning as Subsidy[],
+  zhengzhou: zhengzhou as Subsidy[],
+  qingdao: qingdao as Subsidy[],
+  wuxi: wuxi as Subsidy[],
+  fuzhou: fuzhou as Subsidy[],
+  xiamen: xiamen as Subsidy[],
+  nanchang: nanchang as Subsidy[],
+  kunming: kunming as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -192,6 +206,13 @@ export function getCityLevelLocation(city: string): string {
     shaoxing: '绍兴市',
     zhuhai: '珠海市',
     nanning: '南宁市',
+    zhengzhou: '郑州市',
+    qingdao: '青岛市',
+    wuxi: '无锡市',
+    fuzhou: '福州市',
+    xiamen: '厦门市',
+    nanchang: '南昌市',
+    kunming: '昆明市',
   };
   return map[city] || '';
 }

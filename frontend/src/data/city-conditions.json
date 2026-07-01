@@ -362,6 +362,109 @@
         "横琴粤澳深度合作区": {},
         "高新区": {}
       }
+    },
+    "zhengzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "qingdao": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "西海岸新区": {},
+        "崂山区": {}
+      }
+    },
+    "wuxi": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "fuzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "长乐区": {}
+      }
+    },
+    "xiamen": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "nanchang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "kunming": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "西山区": {},
+        "呈贡区": {},
+        "盘龙区": {},
+        "官渡区": {},
+        "晋宁区": {},
+        "嵩明县": {}
+      }
     }
   }
 }
