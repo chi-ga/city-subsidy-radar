@@ -49,54 +49,6 @@
     "exclusiveGroup": ""
   },
   {
-    "id": "nanning-shiji-wanyuanjiuyeyingli",
-    "city": "nanning",
-    "name": "高校毕业生万元就业奖励",
-    "category": "employment",
-    "amount": {
-      "min": 1000,
-      "max": 1000,
-      "unit": "元",
-      "period": "每月",
-      "durationMonths": 10
-    },
-    "conditions": {
-      "degree": [
-        "大专",
-        "本科",
-        "硕士",
-        "博士"
-      ],
-      "ageLimit": 0,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "个人申报截止时间至2023年10月31日，后续不再受理新申请",
-      "channel": "“南宁智慧人社”APP、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
-      "materials": [
-        "劳动合同扫描件或照片",
-        "毕业证扫描件或照片（或《教育部学历证书电子注册备案表》）",
-        "留学回国毕业生提供教育部留学服务中心学历学位认证书"
-      ],
-      "process": [
-        "登录“南宁智慧人社”APP、微信公众号或小程序申报",
-        "县（市、区）、开发区人社部门初审",
-        "南宁市人才服务管理办公室复核、公示5个工作日",
-        "拨付至社会保障卡银行账户"
-      ],
-      "location": "市级",
-      "url": "https://m.nn.bendibao.com/live/63843.shtm"
-    },
-    "policySource": "南府规〔2022〕10号",
-    "effectiveDate": "2022-06-09",
-    "notes": "已截止。2022年内毕业的全日制普通高校大专生、本科生、研究生及国家统一下达招生计划的非全日制研究生，以及2022年内取得国（境）外学士以上层次学历学位证书的留学回国毕业生。就业企业在南宁市重点开发区（高新区、经开区、东盟经开区、五象新区）、东部产业新城登记注册，统计关系、纳税关系纳入以上辖区管理。签订1年及以上劳动合同，连续缴纳企业职工基本养老保险3个月及以上。每月1000元，最长10个月，最高10000元；2023年7月31日后未享受满10个月的不再继续发放。仅作为历史政策展示。",
-    "location": "南宁市·市级",
-    "tier": 3,
-    "exclusiveGroup": ""
-  },
-  {
     "id": "nanning-liangqingqingqu-chuangyebuzhu",
     "city": "nanning",
     "name": "高校毕业生一次性创业扶持补贴",

@@ -26,7 +26,7 @@ const CATEGORY_ORDER: SubsidyCategory[] = ['living', 'settlement', 'rent', 'buy'
 export default function Compare() {
   const navigate = useNavigate();
   const { compareResults } = useResultStore();
-  const [activeCity, setActiveCity] = useState<string>('beijing');
+  const [activeCity, setActiveCity] = useState<string>('');
 
   if (!compareResults) {
     return (
@@ -52,6 +52,11 @@ export default function Compare() {
   const cityResults = Object.entries(compareResults) as [CityCode, typeof compareResults[CityCode]][];
   const sortedCities = cityResults.sort((a, b) => b[1].totalAmount - a[1].totalAmount);
   const maxAmount = sortedCities[0][1].totalAmount || 1;
+
+  // 默认选中金额最高的城市
+  if (!activeCity && sortedCities.length > 0) {
+    setActiveCity(sortedCities[0][0]);
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -134,21 +139,31 @@ export default function Compare() {
           </div>
         </div>
 
-        {/* City Tabs */}
-        <div className="mt-8 flex gap-2 overflow-x-auto pb-2">
-          {sortedCities.map(([city]) => (
-            <button
-              key={city}
-              onClick={() => setActiveCity(city)}
-              className={`whitespace-nowrap rounded-xl px-5 py-2.5 text-sm font-semibold transition-all ${
-                activeCity === city
-                  ? 'bg-blue-600 text-white shadow-md shadow-blue-600/20'
-                  : 'border border-slate-200 bg-white text-slate-600 hover:border-slate-300'
-              }`}
+        {/* City Select */}
+        <div className="mt-8">
+          <label className="mb-2 block text-sm font-semibold text-slate-800">查看城市明细</label>
+          <div className="relative">
+            <select
+              value={activeCity}
+              onChange={(e) => setActiveCity(e.target.value)}
+              className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
             >
-              {CITY_NAMES[city as CityCode]}
-            </button>
-          ))}
+              {sortedCities.map(([city, result]) => (
+                <option key={city} value={city}>
+                  {CITY_NAMES[city as CityCode]} — {result.totalAmount.toLocaleString()}元
+                </option>
+              ))}
+            </select>
+            <svg
+              className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
         </div>
 
         {/* City Detail */}

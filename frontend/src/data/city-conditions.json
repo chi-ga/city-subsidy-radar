@@ -476,10 +476,8 @@
         "householdRequired": false,
         "major": false
       },
-      "locationDependentFields": ["householdRequired"],
-      "districts": {
-        "滨海新区": { "householdRequired": true }
-      }
+      "locationDependentFields": [],
+      "districts": {}
     },
     "suzhou": {
       "base": {

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
@@ -18,12 +18,33 @@ export default function Policies() {
   const [city, setCity] = useState<CityCode | ''>('');
   const [district, setDistrict] = useState<string>('');
   const [categoryFilter, setCategoryFilter] = useState<string>('');
+  const [citySearch, setCitySearch] = useState('');
+  const [showCityDropdown, setShowCityDropdown] = useState(false);
+  const cityDropdownRef = useRef<HTMLDivElement>(null);
 
   const districts = useMemo(() => (city ? getLocationsForCity(city) : []), [city]);
 
   // 唯一的展示标签列表（去重）
   const uniqueCategoryLabels = useMemo(() => {
     return [...new Set(Object.values(CATEGORY_NAMES))];
+  }, []);
+
+  // 过滤城市列表
+  const filteredCities = useMemo(() => {
+    const cities = Object.entries(CITY_NAMES) as [CityCode, string][];
+    if (!citySearch) return cities;
+    return cities.filter(([, name]) => name.includes(citySearch));
+  }, [citySearch]);
+
+  // 点击外部关闭下拉框
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (cityDropdownRef.current && !cityDropdownRef.current.contains(e.target as Node)) {
+        setShowCityDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const filteredPolicies = useMemo(() => {
@@ -82,18 +103,44 @@ export default function Policies() {
           <div className="grid gap-5 sm:grid-cols-3">
             <div>
               <label className="mb-2 block text-sm font-semibold text-slate-800">目标城市</label>
-              <div className="relative">
-                <select
-                  value={city}
-                  onChange={(e) => { setCity(e.target.value as CityCode); setDistrict(''); }}
-                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
-                >
-                  <option value="">全部城市</option>
-                  {Object.entries(CITY_NAMES).map(([code, name]) => (
-                    <option key={code} value={code}>{name}</option>
-                  ))}
-                </select>
-                <ChevronDownIcon />
+              <div className="relative" ref={cityDropdownRef}>
+                <input
+                  type="text"
+                  value={city ? CITY_NAMES[city as CityCode] : citySearch}
+                  onChange={(e) => {
+                    setCitySearch(e.target.value);
+                    setCity('');
+                    setDistrict('');
+                    setShowCityDropdown(true);
+                  }}
+                  onFocus={() => setShowCityDropdown(true)}
+                  placeholder="搜索城市名称..."
+                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                />
+                {showCityDropdown && (
+                  <div className="absolute z-10 mt-1 max-h-60 w-full overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-lg">
+                    <button
+                      onClick={() => { setCity(''); setCitySearch(''); setDistrict(''); setShowCityDropdown(false); }}
+                      className="w-full px-4 py-2.5 text-left text-sm text-slate-500 hover:bg-slate-50"
+                    >
+                      全部城市
+                    </button>
+                    {filteredCities.map(([code, name]) => (
+                      <button
+                        key={code}
+                        onClick={() => { setCity(code); setCitySearch(''); setDistrict(''); setShowCityDropdown(false); }}
+                        className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-slate-50 ${
+                          city === code ? 'bg-blue-50 font-semibold text-blue-700' : 'text-slate-700'
+                        }`}
+                      >
+                        {name}
+                      </button>
+                    ))}
+                    {filteredCities.length === 0 && (
+                      <div className="px-4 py-3 text-sm text-slate-400">未找到匹配城市</div>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
             <div>
