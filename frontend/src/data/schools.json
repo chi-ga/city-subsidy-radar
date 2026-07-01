@@ -933,6 +933,22 @@
     "province": "北京"
   },
   {
+    "id": "zhongyangyinyuexueyuan",
+    "name": "中央音乐学院",
+    "pinyin": "zhongyangyinyuexueyuan",
+    "abbreviation": "央音",
+    "aliases": [
+      "Central Conservatory of Music",
+      "CCOM"
+    ],
+    "levels": [
+      "211",
+      "双一流"
+    ],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
     "id": "tianjinyikedaxue",
     "name": "天津医科大学",
     "pinyin": "tianjinyikedaxue",
@@ -2263,6 +2279,21 @@
     "province": "广东"
   },
   {
+    "id": "nanfangkejidaxue",
+    "name": "南方科技大学",
+    "pinyin": "nanfangkejidaxue",
+    "abbreviation": "南科大",
+    "aliases": [
+      "Southern University of Science and Technology",
+      "SUSTech"
+    ],
+    "levels": [
+      "双一流"
+    ],
+    "city": "深圳",
+    "province": "广东"
+  },
+  {
     "id": "ningbodaxue",
     "name": "宁波大学",
     "pinyin": "ningbodaxue",
@@ -2627,6 +2658,32 @@
     "province": "北京"
   },
   {
+    "id": "beijingyuyandaxue",
+    "name": "北京语言大学",
+    "pinyin": "beijingyuyandaxue",
+    "abbreviation": "北语",
+    "aliases": [
+      "Beijing Language and Culture University",
+      "BLCU"
+    ],
+    "levels": [],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
+    "id": "zhongguoshehuikexueyuandaxue",
+    "name": "中国社会科学院大学",
+    "pinyin": "zhongguoshehuikexueyuandaxue",
+    "abbreviation": "社科大",
+    "aliases": [
+      "University of Chinese Academy of Social Sciences",
+      "UCASS"
+    ],
+    "levels": [],
+    "city": "北京",
+    "province": "北京"
+  },
+  {
     "id": "tianjinkejidaxue",
     "name": "天津科技大学",
     "pinyin": "tianjinkejidaxue",
@@ -2636,6 +2693,21 @@
       "TUST"
     ],
     "levels": [],
+    "city": "天津",
+    "province": "天津"
+  },
+  {
+    "id": "tianjincaijingdaxue",
+    "name": "天津财经大学",
+    "pinyin": "tianjincaijingdaxue",
+    "abbreviation": "天财",
+    "aliases": [
+      "Tianjin University of Finance and Economics",
+      "TUFE"
+    ],
+    "levels": [
+      "省重点"
+    ],
     "city": "天津",
     "province": "天津"
   },
@@ -3002,6 +3074,21 @@
     "levels": [],
     "city": "上海",
     "province": "上海"
+  },
+  {
+    "id": "xinanzhengfadaxue",
+    "name": "西南政法大学",
+    "pinyin": "xinanzhengfadaxue",
+    "abbreviation": "西政",
+    "aliases": [
+      "Southwest University of Political Science and Law",
+      "SWUPL"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "重庆",
+    "province": "重庆"
   },
   {
     "id": "chongqingyoudiandaxue",
@@ -3563,6 +3650,19 @@
     "province": "河北"
   },
   {
+    "id": "zhongguorenminjingchadaxue",
+    "name": "中国人民警察大学",
+    "pinyin": "zhongguorenminjingchadaxue",
+    "abbreviation": "警大",
+    "aliases": [
+      "China People's Police University",
+      "CPPU"
+    ],
+    "levels": [],
+    "city": "廊坊",
+    "province": "河北"
+  },
+  {
     "id": "zhongbeidaxue",
     "name": "中北大学",
     "pinyin": "zhongbeidaxue",
@@ -4054,6 +4154,81 @@
     "aliases": [
       "Dalian University",
       "DLU"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "大连",
+    "province": "辽宁"
+  },
+  {
+    "id": "dongbeicaijingdaxue",
+    "name": "东北财经大学",
+    "pinyin": "dongbeicaijingdaxue",
+    "abbreviation": "东财",
+    "aliases": [
+      "Dongbei University of Finance and Economics",
+      "DUFE"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "大连",
+    "province": "辽宁"
+  },
+  {
+    "id": "zhongguoyikedaxue",
+    "name": "中国医科大学",
+    "pinyin": "zhongguoyikedaxue",
+    "abbreviation": "中国医大",
+    "aliases": [
+      "China Medical University",
+      "CMU"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "沈阳",
+    "province": "辽宁"
+  },
+  {
+    "id": "dalianyikedaxue",
+    "name": "大连医科大学",
+    "pinyin": "dalianyikedaxue",
+    "abbreviation": "大医",
+    "aliases": [
+      "Dalian Medical University",
+      "DMU"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "大连",
+    "province": "辽宁"
+  },
+  {
+    "id": "liaoningshifandaxue",
+    "name": "辽宁师范大学",
+    "pinyin": "liaoningshifandaxue",
+    "abbreviation": "辽师",
+    "aliases": [
+      "Liaoning Normal University",
+      "LNNU"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "大连",
+    "province": "辽宁"
+  },
+  {
+    "id": "dalianwaiguoyudaxue",
+    "name": "大连外国语大学",
+    "pinyin": "dalianwaiguoyudaxue",
+    "abbreviation": "大外",
+    "aliases": [
+      "Dalian University of Foreign Languages",
+      "DUFL"
     ],
     "levels": [
       "省重点"
@@ -4702,6 +4877,21 @@
     "aliases": [
       "Harbin University of Commerce",
       "HRBCU"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "哈尔滨",
+    "province": "黑龙江"
+  },
+  {
+    "id": "haerbinyinyuexueyuan",
+    "name": "哈尔滨音乐学院",
+    "pinyin": "haerbinyinyuexueyuan",
+    "abbreviation": "哈音",
+    "aliases": [
+      "Harbin Conservatory of Music",
+      "HCOM"
     ],
     "levels": [
       "省重点"
@@ -7040,6 +7230,21 @@
     "province": "山东"
   },
   {
+    "id": "shandongcaijingdaxue",
+    "name": "山东财经大学",
+    "pinyin": "shandongcaijingdaxue",
+    "abbreviation": "山财",
+    "aliases": [
+      "Shandong University of Finance and Economics",
+      "SUFE"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "济南",
+    "province": "山东"
+  },
+  {
     "id": "shandongshiyouhuagongxueyuan",
     "name": "山东石油化工学院",
     "pinyin": "shandongshiyouhuagongxueyuan",
@@ -9182,6 +9387,21 @@
       "省重点"
     ],
     "city": "自贡",
+    "province": "四川"
+  },
+  {
+    "id": "sichuanyinyuexueyuan",
+    "name": "四川音乐学院",
+    "pinyin": "sichuanyinyuexueyuan",
+    "abbreviation": "川音",
+    "aliases": [
+      "Sichuan Conservatory of Music",
+      "SCCM"
+    ],
+    "levels": [
+      "省重点"
+    ],
+    "city": "成都",
     "province": "四川"
   },
   {
