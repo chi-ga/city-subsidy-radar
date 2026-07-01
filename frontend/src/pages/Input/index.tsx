@@ -425,6 +425,12 @@ export default function Input() {
           'tangshan',
           'wuhu',
           'taiyuan',
+          'lanzhou',
+          'luoyang',
+          'weifang',
+          'ganzhou',
+          'yinchuan',
+          'huhehaote',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

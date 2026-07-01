@@ -149,7 +149,13 @@ export type CityCode =
   | 'xuzhou'
   | 'tangshan'
   | 'wuhu'
-  | 'taiyuan';
+  | 'taiyuan'
+  | 'lanzhou'
+  | 'luoyang'
+  | 'weifang'
+  | 'ganzhou'
+  | 'yinchuan'
+  | 'huhehaote';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -200,6 +206,12 @@ export const CITY_NAMES: Record<CityCode, string> = {
   tangshan: '唐山',
   wuhu: '芜湖',
   taiyuan: '太原',
+  lanzhou: '兰州',
+  luoyang: '洛阳',
+  weifang: '潍坊',
+  ganzhou: '赣州',
+  yinchuan: '银川',
+  huhehaote: '呼和浩特',
 };
 
 // 补贴分类名称映射

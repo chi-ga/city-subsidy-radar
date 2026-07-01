@@ -1,0 +1,268 @@
+[
+  {
+    "id": "ganzhou-shiji-shenghuo",
+    "city": "ganzhou",
+    "name": "赣州市高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业2年内申请",
+      "channel": "支付宝进入'赣服通'赣州分厅→'亲清赣商'惠企政策兑现平台",
+      "materials": [
+        "高校毕业生生活补贴申请表",
+        "毕业证书、学信网学籍在线验证报告（技工院校毕业生只需提供毕业证书）",
+        "与企业签订的劳动合同"
+      ],
+      "process": [
+        "支付宝进入'赣服通'赣州分厅",
+        "'亲清赣商'惠企政策兑现平台提出申请",
+        "企业注册地人社部门审核（5个工作日）",
+        "注册地行政审批局发放至申请人社保卡"
+      ],
+      "location": "市级",
+      "url": "https://www.ganzhou.gov.cn/gzszf/c102790vpcnhgkvgt/202210/b86081e8da1341d5a7fe3c825b64872c.shtml"
+    },
+    "policySource": "赣市府办字〔2022〕56号",
+    "effectiveDate": "2022-05-17",
+    "notes": "原试行期至2025年5月16日到期，《赣州市人才政策清单（2025年修订版）》是否延续待核实。全日制博士5万元、硕士3万元、本科2万元、大专1万元。分3年按4:3:3比例发放，社保每缴满1年发放一次。毕业2年内落户赣州（含本地户籍），2022年5月17日后来赣州市企业就业，与企业签订1年以上劳动合同，首次在市域内缴纳社保。含技工院校预备技师班、高级工班毕业生。",
+    "location": "赣州市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ganzhou-zhanggong-shenghuo",
+    "city": "ganzhou",
+    "name": "章贡区高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年3月、10月将材料交至章贡高新区管委会",
+      "channel": "线下：章贡高新区管委会；线上（拟）：'亲清赣商'惠企政策兑现平台",
+      "materials": [
+        "《章贡区企业录用高校毕业生就业人员明细表》",
+        "《高校毕业生生活补贴资金申请表》",
+        "毕业证书复印件、学信网学籍在线验证报告（技工院校毕业生只需提供毕业证书）"
+      ],
+      "process": [
+        "每年3月、10月将材料交至章贡高新区管委会",
+        "审核（5个工作日内办结）",
+        "由企业于次年9月底前统一申报",
+        "发放至申请人社保卡"
+      ],
+      "location": "章贡区",
+      "url": "https://www.zgq.gov.cn/zgqxxgk/c108293/202211/4623aba2fd2b4457a162bb79719abead.shtml"
+    },
+    "policySource": "区府办字〔2022〕53号",
+    "effectiveDate": "2022-05-17",
+    "notes": "待核实（与市级政策同步到期可能性大）。全日制博士5万元、硕士3万元、本科2万元、大专1万元。分3年按4:3:3发放。毕业2内落户赣州，与章贡区纳税企业签订劳动合同，首次缴纳社保且在章贡区域内。含技工院校预备技师班、高级工班毕业生。",
+    "location": "赣州市·章贡区",
+    "tier": 1,
+    "exclusiveGroup": "ganzhou-district"
+  },
+  {
+    "id": "ganzhou-rongjiang-shenghuo",
+    "city": "ganzhou",
+    "name": "蓉江新区人才生活津贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业2年内申请",
+      "channel": "预计通过'亲清赣商'惠企政策兑现平台",
+      "materials": [
+        "高校毕业生生活补贴申请表",
+        "毕业证书、学信网学籍在线验证报告",
+        "与蓉江新区企业签订的劳动合同"
+      ],
+      "process": [
+        "通过'亲清赣商'平台申请（预计）",
+        "蓉江新区人社部门审核",
+        "发放至申请人社保卡"
+      ],
+      "location": "蓉江新区",
+      "url": "待核实"
+    },
+    "policySource": "《关于加快赣州蓉江新区人才集聚的若干措施（试行）》",
+    "effectiveDate": "待核实",
+    "notes": "待核实（试行措施）。全日制博士5万元、硕士3万元、本科2万元、大专1万元。分3年按4:3:3发放。毕业2内落户蓉江新区，与蓉江新区企业签订1年以上劳动合同，首次在蓉江新区缴纳社保。",
+    "location": "赣州市·蓉江新区",
+    "tier": 1,
+    "exclusiveGroup": "ganzhou-district"
+  },
+  {
+    "id": "ganzhou-jingkai-shenghuo",
+    "city": "ganzhou",
+    "name": "赣州经开区大学生人才补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业2年内申请",
+      "channel": "'亲清赣商'惠企政策兑现平台",
+      "materials": [
+        "高校毕业生生活补贴申请表",
+        "毕业证书、学信网学籍在线验证报告",
+        "与经开区企业签订的劳动合同"
+      ],
+      "process": [
+        "通过'亲清赣商'平台申请",
+        "经开区人社部门审核",
+        "发放至申请人社保卡"
+      ],
+      "location": "经开区",
+      "url": "待核实"
+    },
+    "policySource": "赣州经济技术开发区大学生高校就业生活补贴政策",
+    "effectiveDate": "待核实",
+    "notes": "待核实。全日制博士5万元、硕士3万元、本科2万元、大专1万元。分3年按4:3:3发放。毕业2内落户赣州，与经开区企业签订劳动合同，企业注册地在赣州经开区。据市民反映'亲清赣商'平台上经开区申请通道可能存在异常，建议向经开区党群部确认。",
+    "location": "赣州市·经开区",
+    "tier": 1,
+    "exclusiveGroup": "ganzhou-district"
+  }
+]

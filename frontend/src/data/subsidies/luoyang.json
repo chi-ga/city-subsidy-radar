@@ -1,0 +1,219 @@
+[
+  {
+    "id": "luoyang-shiji-shenghuo",
+    "city": "luoyang",
+    "name": "洛阳市青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "博士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理（未申报者需于2025年12月31日前申报）",
+      "channel": "'洛阳社保卡'微信公众号 / '洛阳人才'微信公众号 / '洛快办'APP → 洛阳市高层次人才服务系统",
+      "materials": [
+        "统一社会信用代码证书或营业执照+近6个月完税证明（用人单位注册）",
+        "授权委托书、法人及经办人身份证（用人单位注册）",
+        "《洛阳市青年人才生活补贴申请表》+身份证",
+        "毕业证、学位证（国内加《教育部学历证书电子注册备案表》，留学回国加《国(境)外学历学位认证书》）",
+        "劳动合同",
+        "个人参保缴费证明+个人所得税纳税记录（含工资薪金）",
+        "创业人员加营业执照+近6个月纳税证明"
+      ],
+      "process": [
+        "用人单位登录'洛阳市高层次人才服务系统'注册，组织申报人注册并提交材料、初审",
+        "区人社局会同相关部门审核，每季度结束次月一周内报市人社局",
+        "市人社局官网公示5个自然日",
+        "公示无异议后编制资金分配计划，按季度核发"
+      ],
+      "location": "市级",
+      "url": "https://www.ly.gov.cn/2025/05-09/566081.html"
+    },
+    "policySource": "洛人社〔2025〕9号",
+    "effectiveDate": "2024-06-01",
+    "notes": "有效。博士2000元/月、硕士1500元/月、本科1000元/月，补贴2年（民营企业、公立医院引进博士3年）。2017年起国家统招非全日制研究生可参照全日制享受。博士≤45周岁，硕士、本科≤40周岁。2024年6月1日后在洛阳市首次就业/创业。就业单位不含供电、烟草、通信、金融类主体。暂未就业者补贴6个月。有效期至2027年5月31日。",
+    "location": "洛阳市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "luoyang-shiji-zufang",
+    "city": "luoyang",
+    "name": "洛阳市人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 1200,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1200,
+        "max": 1200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理（每季度集中审核）",
+      "channel": "洛阳人才住房补贴系统",
+      "materials": [
+        "人才住房补贴申请表",
+        "身份证、户口本、婚姻证明",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社保缴费证明",
+        "租房合同",
+        "单位统一社会信用代码证书、营业执照、纳税证明"
+      ],
+      "process": [
+        "个人线上申请",
+        "单位初审",
+        "市/区住建局（住房保障中心）每季度第二个月底前复审",
+        "市住建局每季度最后一个月1-20日组织人社、社保、医保等部门联审",
+        "审核结果在市住房保障中心网站公示5个自然日",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://m.ly.bendibao.com/live/33228.shtm"
+    },
+    "policySource": "洛建〔2025〕6号",
+    "effectiveDate": "2024-06-01",
+    "notes": "有效。博士1200元/月、硕士800元/月、本科500元/月。2024年6月1日后全职引进，≤40周岁（博士≤45周岁）。每年在洛阳工作≥6个月且缴纳社保≥6个月。本人及家庭成员在洛阳城市区无自有住房，5年内无住房登记和交易记录。按季度核发。与购房补贴可租转购（需扣除已发租房补贴）。",
+    "location": "洛阳市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "luoyang-shiji-goufang",
+    "city": "luoyang",
+    "name": "洛阳市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理（每季度集中审核）",
+      "channel": "洛阳人才住房补贴系统",
+      "materials": [
+        "人才住房补贴申请表",
+        "身份证、户口本、婚姻证明",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社保缴费证明",
+        "购房合同",
+        "单位统一社会信用代码证书、营业执照、纳税证明"
+      ],
+      "process": [
+        "个人线上申请",
+        "单位初审",
+        "市/区住建局（住房保障中心）每季度第二个月底前复审",
+        "市住建局每季度最后一个月1-20日组织联审",
+        "审核结果公示5个自然日",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://m.ly.bendibao.com/live/33228.shtm"
+    },
+    "policySource": "洛建〔2025〕6号",
+    "effectiveDate": "2024-06-01",
+    "notes": "有效。博士10万元、硕士5万元、本科3万元、专科2万元。按年度分3年核发，每年分别40%、30%、30%。2024年6月1日后全职引进，≤40周岁（博士≤45周岁）。每年在洛阳工作≥6个月且缴纳社保≥6个月。本人及家庭成员在洛阳城市区无自有住房，5年内无住房登记和交易记录。与租房补贴可租转购。",
+    "location": "洛阳市",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

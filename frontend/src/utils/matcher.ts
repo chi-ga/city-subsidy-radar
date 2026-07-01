@@ -525,6 +525,7 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'changzhou-district': '常州区级补贴（只能在一个区享受）',
   'tangshan-district': '唐山区级补贴（只能在一个区享受）',
   'wuhu-goufang': '芜湖购房补贴（企业与非企业单位二选一）',
+  'ganzhou-district': '赣州区级补贴（只能在一个区享受）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

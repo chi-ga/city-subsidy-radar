@@ -765,6 +765,90 @@
       },
       "locationDependentFields": [],
       "districts": {}
+    },
+    "lanzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "luoyang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "weifang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "ganzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "章贡区": {},
+        "蓉江新区": {},
+        "经开区": {}
+      }
+    },
+    "yinchuan": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "西夏区": {}
+      }
+    },
+    "huhehaote": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
     }
   }
 }

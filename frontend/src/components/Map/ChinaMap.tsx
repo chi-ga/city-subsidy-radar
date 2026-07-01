@@ -53,6 +53,12 @@ const COVERED_CITIES = [
   { name: '唐山市', code: 'tangshan', adcode: '130200', count: 8 },
   { name: '芜湖市', code: 'wuhu', adcode: '340200', count: 3 },
   { name: '太原市', code: 'taiyuan', adcode: '140100', count: 5 },
+  { name: '兰州市', code: 'lanzhou', adcode: '620100', count: 3 },
+  { name: '洛阳市', code: 'luoyang', adcode: '410300', count: 3 },
+  { name: '潍坊市', code: 'weifang', adcode: '370700', count: 3 },
+  { name: '赣州市', code: 'ganzhou', adcode: '360700', count: 4 },
+  { name: '银川市', code: 'yinchuan', adcode: '640100', count: 3 },
+  { name: '呼和浩特市', code: 'huhehaote', adcode: '150100', count: 2 },
 ];
 
 

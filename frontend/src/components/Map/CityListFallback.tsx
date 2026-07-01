@@ -49,6 +49,12 @@ const COVERED_CITIES = [
   { code: 'tangshan', name: '唐山', count: 8 },
   { code: 'wuhu', name: '芜湖', count: 3 },
   { code: 'taiyuan', name: '太原', count: 5 },
+  { code: 'lanzhou', name: '兰州', count: 3 },
+  { code: 'luoyang', name: '洛阳', count: 3 },
+  { code: 'weifang', name: '潍坊', count: 3 },
+  { code: 'ganzhou', name: '赣州', count: 4 },
+  { code: 'yinchuan', name: '银川', count: 3 },
+  { code: 'huhehaote', name: '呼和浩特', count: 2 },
 ];
 
 export default function CityListFallback({ onCityClick }: CityListFallbackProps) {
