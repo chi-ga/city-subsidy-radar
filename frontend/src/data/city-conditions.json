@@ -158,6 +158,7 @@
       "locationDependentFields": [],
       "districts": {
         "雨花台区": {
+          "schoolLevel": true,
           "showCompanyType": true
         }
       }
@@ -187,7 +188,7 @@
         "ageLimit": true,
         "graduationYear": true,
         "employmentRequired": true,
-        "householdRequired": false,
+        "householdRequired": true,
         "major": false
       },
       "locationDependentFields": [],
@@ -208,7 +209,7 @@
         "householdRequired": false,
         "major": false
       },
-      "locationDependentFields": [],
+      "locationDependentFields": ["householdRequired"],
       "districts": {
         "新洲区": {
           "householdRequired": true
@@ -301,7 +302,7 @@
         "householdRequired": false,
         "major": false
       },
-      "locationDependentFields": [],
+      "locationDependentFields": ["householdRequired"],
       "districts": {
         "双流区": {},
         "四川天府新区": {},
@@ -354,7 +355,7 @@
         "ageLimit": true,
         "graduationYear": false,
         "employmentRequired": true,
-        "householdRequired": false,
+        "householdRequired": true,
         "major": false
       },
       "locationDependentFields": [],
@@ -399,7 +400,7 @@
         "ageLimit": true,
         "graduationYear": true,
         "employmentRequired": true,
-        "householdRequired": false,
+        "householdRequired": true,
         "major": false
       },
       "locationDependentFields": [],
@@ -412,7 +413,7 @@
         "ageLimit": true,
         "graduationYear": false,
         "employmentRequired": true,
-        "householdRequired": false,
+        "householdRequired": true,
         "major": false
       },
       "locationDependentFields": [],
