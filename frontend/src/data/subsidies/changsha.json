@@ -29,11 +29,50 @@
         "博士",
         "硕士"
       ],
-      "ageLimit": 35,
-      "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": false
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "overseas-doctor",
+          "name": "境外高校博士",
+          "degree": ["博士"],
+          "schoolRegion": "overseas",
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "domestic-doctor",
+          "name": "国内高校博士",
+          "degree": ["博士"],
+          "schoolRegion": "domestic",
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "master",
+          "name": "硕士研究生",
+          "degree": ["硕士"],
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "常年受理，按季度集中审批",

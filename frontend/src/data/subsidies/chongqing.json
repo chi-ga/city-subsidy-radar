@@ -453,11 +453,56 @@
     },
     "conditions": {
       "degree": ["本科", "硕士", "博士"],
-      "ageLimit": 35,
-      "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "benke",
+          "name": "全日制本科",
+          "degree": ["本科"],
+          "requiresFullTime": true,
+          "ageLimit": 25,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 0,
+            "max": 600,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 24
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士",
+          "degree": ["硕士"],
+          "requiresFullTime": true,
+          "ageLimit": 30,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 0,
+            "max": 600,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 24
+          }
+        },
+        {
+          "id": "boshi",
+          "name": "全日制博士",
+          "degree": ["博士"],
+          "requiresFullTime": true,
+          "ageLimit": 35,
+          "ageLimitExclusive": false,
+          "amount": {
+            "min": 0,
+            "max": 1000,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 24
+          }
+        }
+      ]
     },
     "application": {
       "deadline": "每年3月、9月集中申请",

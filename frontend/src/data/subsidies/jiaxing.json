@@ -46,12 +46,24 @@
         {
           "id": "jiaxing-shenghuo-boshi",
           "name": "博士研究生",
-          "degree": ["博士"]
+          "degree": ["博士"],
+          "amount": {
+            "min": 60000,
+            "max": 60000,
+            "unit": "元",
+            "period": "一次性"
+          }
         },
         {
           "id": "jiaxing-shenghuo-shuoshi",
           "name": "硕士研究生",
-          "degree": ["硕士"]
+          "degree": ["硕士"],
+          "amount": {
+            "min": 30000,
+            "max": 30000,
+            "unit": "元",
+            "period": "一次性"
+          }
         },
         {
           "id": "jiaxing-shenghuo-shuangyiliubenkewai",
@@ -63,17 +75,35 @@
             "QS前150",
             "QS前200",
             "QS前300"
-          ]
+          ],
+          "amount": {
+            "min": 20000,
+            "max": 20000,
+            "unit": "元",
+            "period": "一次性"
+          }
         },
         {
           "id": "jiaxing-shenghuo-qitabenke",
           "name": "其他高校本科",
-          "degree": ["本科"]
+          "degree": ["本科"],
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          }
         },
         {
           "id": "jiaxing-shenghuo-zhuanke",
           "name": "全日制专科",
-          "degree": ["专科"]
+          "degree": ["专科"],
+          "amount": {
+            "min": 6000,
+            "max": 6000,
+            "unit": "元",
+            "period": "一次性"
+          }
         }
       ]
     },
@@ -147,12 +177,24 @@
         {
           "id": "jiaxing-goufang-boshi",
           "name": "博士研究生",
-          "degree": ["博士"]
+          "degree": ["博士"],
+          "amount": {
+            "min": 350000,
+            "max": 350000,
+            "unit": "元",
+            "period": "分期"
+          }
         },
         {
           "id": "jiaxing-goufang-shuoshi",
           "name": "硕士研究生",
-          "degree": ["硕士"]
+          "degree": ["硕士"],
+          "amount": {
+            "min": 150000,
+            "max": 150000,
+            "unit": "元",
+            "period": "分期"
+          }
         },
         {
           "id": "jiaxing-goufang-shuangyiliubenkewai",
@@ -164,12 +206,24 @@
             "QS前150",
             "QS前200",
             "QS前300"
-          ]
+          ],
+          "amount": {
+            "min": 100000,
+            "max": 100000,
+            "unit": "元",
+            "period": "分期"
+          }
         },
         {
           "id": "jiaxing-goufang-qitabenke",
           "name": "其他高校本科",
-          "degree": ["本科"]
+          "degree": ["本科"],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "分期"
+          }
         }
       ]
     },
