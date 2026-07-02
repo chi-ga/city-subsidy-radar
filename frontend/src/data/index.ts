@@ -166,6 +166,11 @@ const CONDITION_KEYS: (keyof ConditionSet)[] = [
   'major',
   'showIdentityType',
   'showCompanyType',
+  'showThreeCitiesOneDistrict',
+  'showReturneeStatus',
+  'showFirstLingangEmployment',
+  'showFirstGuangzhouHukou',
+  'showHuaduImportStatus',
 ];
 
 /**

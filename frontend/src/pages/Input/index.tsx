@@ -44,6 +44,9 @@ export default function Input() {
     if (majorDropdownRef.current && !majorDropdownRef.current.contains(e.target as Node)) {
       setShowMajorDropdown(false);
     }
+    if (cityDropdownRef.current && !cityDropdownRef.current.contains(e.target as Node)) {
+      setShowCityDropdown(false);
+    }
   }, []);
 
   useEffect(() => {
@@ -129,6 +132,9 @@ export default function Input() {
 
   const [showSchoolDropdown, setShowSchoolDropdown] = useState(false);
   const [showMajorDropdown, setShowMajorDropdown] = useState(false);
+  const [showCityDropdown, setShowCityDropdown] = useState(false);
+  const [citySearch, setCitySearch] = useState('');
+  const cityDropdownRef = useRef<HTMLDivElement>(null);
   const [topStudentBases, setTopStudentBases] = useState<TopStudentPlanBase[]>([]);
   // 深圳重点产业目录匹配详情（区分专业直接命中 vs 一级学科命中）
   const [keyIndustryMatchSource, setKeyIndustryMatchSource] = useState<'major' | 'discipline' | null>(null);
@@ -209,6 +215,8 @@ export default function Input() {
     setFormData((prev) => ({
       ...prev,
       major: activeConditions.major ? prev.major || '' : '',
+      // 年龄：仅当城市需要时保留
+      age: activeConditions.ageLimit ? prev.age : (undefined as unknown as number),
       graduationYear: activeConditions.graduationYear ? prev.graduationYear : undefined,
       householdStatus: activeConditions.householdRequired
         ? prev.householdStatus || undefined
@@ -216,6 +224,8 @@ export default function Input() {
       employmentStatus: activeConditions.employmentRequired
         ? prev.employmentStatus || undefined
         : ('未就业' as UserProfile['employmentStatus']),
+      // 双学位：仅深圳需要，切到其他城市时清空
+      hasDoubleDegree: prev.city === 'shenzhen' ? prev.hasDoubleDegree : undefined,
       // 身份类型：仅前海等区域需要，切到不需要的区域时清空
       identityType: activeConditions.showIdentityType ? prev.identityType : undefined,
       // 首次在深就业创业时间：仅深圳需要
@@ -317,19 +327,23 @@ export default function Input() {
   const isFormValid = () => {
     const baseValid =
       !!formData.school &&
-      !!formData.degree &&
+      !!formData.degree;
+    // 年龄：仅当城市需要时才验证
+    const ageValid = !activeConditions.ageLimit || (
       formData.age !== undefined &&
       formData.age !== null &&
       formData.age >= 18 &&
-      formData.age <= 50;
+      formData.age <= 50
+    );
     // 对比模式下专业为可选；单城模式下按条件配置
     const majorValid = mode === 'compare' ? true : !activeConditions.major || !!formData.major;
-    const gradValid = !!formData.graduationYear;
+    // 毕业年份：仅当城市需要时才验证
+    const gradValid = !activeConditions.graduationYear || !!formData.graduationYear;
     const householdValid = !activeConditions.householdRequired || !!formData.householdStatus;
     const employmentValid = !activeConditions.employmentRequired || !!formData.employmentStatus;
 
     const allValid =
-      baseValid && majorValid && gradValid && householdValid && employmentValid;
+      baseValid && ageValid && majorValid && gradValid && householdValid && employmentValid;
 
     if (mode === 'single') {
       return allValid && formData.city;
@@ -540,19 +554,36 @@ export default function Input() {
                 </svg>
                 目标城市
               </label>
-              <div className="relative mt-3">
-                <select
-                  value={formData.city || ''}
-                  onChange={(e) => setFormData((prev) => ({ ...prev, city: e.target.value as CityCode }))}
-                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm text-slate-900 shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
-                >
-                  <option value="" disabled>请选择目标城市</option>
-                  {Object.entries(CITY_NAMES).map(([code, name]) => (
-                    <option key={code} value={code}>
-                      {name}
-                    </option>
-                  ))}
-                </select>
+              <div className="relative mt-3" ref={cityDropdownRef}>
+                <input
+                  type="text"
+                  value={showCityDropdown ? citySearch : (formData.city ? CITY_NAMES[formData.city] : '')}
+                  onChange={(e) => {
+                    setCitySearch(e.target.value);
+                    setShowCityDropdown(true);
+                  }}
+                  onFocus={() => {
+                    setCitySearch('');
+                    setShowCityDropdown(true);
+                  }}
+                  placeholder="搜索城市名称..."
+                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm text-slate-900 shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                />
+                {formData.city && !showCityDropdown && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setFormData((prev) => ({ ...prev, city: undefined }));
+                      setCitySearch('');
+                    }}
+                    className="absolute right-10 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600"
+                  >
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
                 <svg
                   className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
                   fill="none"
@@ -562,6 +593,31 @@ export default function Input() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
+                {showCityDropdown && (
+                  <div className="absolute z-10 mt-2 max-h-72 w-full overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-lg">
+                    {Object.entries(CITY_NAMES)
+                      .filter(([, name]) => name.includes(citySearch))
+                      .map(([code, name]) => (
+                        <button
+                          key={code}
+                          type="button"
+                          onClick={() => {
+                            setFormData((prev) => ({ ...prev, city: code as CityCode }));
+                            setShowCityDropdown(false);
+                            setCitySearch('');
+                          }}
+                          className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-blue-50 ${
+                            formData.city === code ? 'bg-blue-50 text-blue-600 font-medium' : 'text-slate-700'
+                          }`}
+                        >
+                          {name}
+                        </button>
+                      ))}
+                    {Object.entries(CITY_NAMES).filter(([, name]) => name.includes(citySearch)).length === 0 && (
+                      <div className="px-4 py-3 text-sm text-slate-400">未找到匹配城市</div>
+                    )}
+                  </div>
+                )}
               </div>
             </section>
           )}
@@ -728,8 +784,8 @@ export default function Input() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
-            {/* 双学位复选框：本科/硕士时显示 */}
-            {(formData.degree === '本科' || formData.degree === '硕士') && (
+            {/* 双学位复选框：仅深圳且本科/硕士时显示（仅深圳政策区分双学位金额） */}
+            {formData.city === 'shenzhen' && (formData.degree === '本科' || formData.degree === '硕士') && (
               <div className="mt-2">
                 <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
                   <input
@@ -1058,12 +1114,14 @@ export default function Input() {
             </section>
           )}
 
-          {/* Age & Graduation Year */}
+          {/* Age & Graduation Year：按城市条件配置决定是否显示 */}
+          {(activeConditions.ageLimit || activeConditions.graduationYear) && (
           <section>
             <label className="flex items-center gap-2 text-sm font-semibold text-slate-800">
                 个人情况
               </label>
-            <div className="mt-3 grid grid-cols-2 gap-4">
+            <div className={`mt-3 grid gap-4 ${activeConditions.ageLimit && activeConditions.graduationYear ? 'grid-cols-2' : 'grid-cols-1'}`}>
+              {activeConditions.ageLimit && (
               <div>
                 <label className="mb-2 block text-xs font-medium text-slate-500">年龄</label>
                 <input
@@ -1093,6 +1151,8 @@ export default function Input() {
                   <p className="mt-1.5 text-xs text-red-500">{fieldErrors.age}</p>
                 )}
               </div>
+              )}
+              {activeConditions.graduationYear && (
               <div>
                 <label className="mb-2 block text-xs font-medium text-slate-500">毕业年份</label>
                 <div className="relative">
@@ -1119,8 +1179,10 @@ export default function Input() {
                   </svg>
                 </div>
               </div>
+              )}
             </div>
           </section>
+          )}
 
           {/* Status */}
           {(activeConditions.householdRequired || activeConditions.employmentRequired) && (

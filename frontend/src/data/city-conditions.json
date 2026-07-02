@@ -9,7 +9,8 @@
         "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
-        "major": false
+        "major": false,
+        "showThreeCitiesOneDistrict": true
       },
       "locationDependentFields": ["householdRequired"],
       "districts": {
