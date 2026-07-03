@@ -104,7 +104,7 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
             name: f.properties.name,
             value: isCovered ? 1 : 0,
             itemStyle: isCovered
-              ? { areaColor: '#3b82f6', borderColor: '#2563eb', borderWidth: 1 }
+              ? { areaColor: '#2563EB', borderColor: '#2563EB', borderWidth: 1 }
               : { areaColor: '#f1f5f9' },
             ...(cityInfo && { code: cityInfo.code, count: cityInfo.count }),
           };

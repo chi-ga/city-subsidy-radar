@@ -4,35 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* 城市补贴雷达 · 视觉系统：civic data / 政策票根 */
+    --paper: 48 20% 98%;          /* #FAFAF8 纸白 */
+    --ink: 222 32% 10%;           /* #151922 墨黑 */
+    --civic-blue: 221 83% 48%;    /* #1D4ED8 市政蓝 */
+    --civic-blue-foreground: 0 0% 100%;
+    --seal-red: 0 72% 51%;        /* #DC2626 朱砂红（金额强调） */
+    --seal-red-foreground: 0 0% 100%;
+    --celadon: 160 84% 32%;       /* #059669 青瓷绿 */
+    --amber: 32 94% 43%;          /* #B45309 琥珀金 */
+
+    --background: 48 20% 98%;
+    --foreground: 222 32% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 32% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 0.5rem;
+    --popover-foreground: 222 32% 10%;
+    --primary: 221 83% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 32% 10%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 222 32% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 48%;
+    --radius: 0.625rem;
   }
 
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    font-size: 17px;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+    font-family: 'Noto Sans SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* 展示字体：用于页面大标题，营造政策/地图图鉴的权威感 */
+  .font-display {
+    font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  }
+
+  /* 数据字体：用于金额、年份、数量等需要等宽或高可读性的数字 */
+  .font-data {
+    font-family: 'Roboto Mono', 'SF Mono', 'Menlo', 'Consolas', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* 减少动画偏好 */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 聚焦环 */
+  .focus-ring:focus-visible {
+    @apply outline-none ring-2 ring-civic-blue/30 ring-offset-2 ring-offset-paper;
+  }
+
+  /* 纸质纹理：轻噪点 + 柔和纸白 */
+  .paper-texture {
+    background-color: #fffefb;
+    background-image:
+      radial-gradient(circle at 15% 50%, rgba(0, 0, 0, 0.012) 1px, transparent 1px),
+      radial-gradient(circle at 85% 30%, rgba(0, 0, 0, 0.01) 1px, transparent 1px),
+      radial-gradient(circle at 50% 80%, rgba(0, 0, 0, 0.008) 1px, transparent 1px);
+    background-size: 24px 24px, 32px 32px, 40px 40px;
   }
 }
 

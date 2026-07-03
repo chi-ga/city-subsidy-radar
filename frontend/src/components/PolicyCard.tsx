@@ -27,17 +27,83 @@ interface PolicyCardProps {
   defaultExpanded?: boolean;
 }
 
-// ===== 分类样式 =====
+// ===== 分类样式（受控于 civic data 调色盘） =====
 
-const categoryStyles: Record<SubsidyCategory, { gradient: string; light: string; text: string; ring: string; bg: string }> = {
-  talent: { gradient: 'from-amber-500 to-orange-500', light: 'bg-amber-50', text: 'text-amber-700', ring: 'ring-amber-200', bg: 'bg-amber-500' },
-  rent: { gradient: 'from-blue-500 to-cyan-500', light: 'bg-blue-50', text: 'text-blue-700', ring: 'ring-blue-200', bg: 'bg-blue-500' },
-  buy: { gradient: 'from-emerald-500 to-teal-500', light: 'bg-emerald-50', text: 'text-emerald-700', ring: 'ring-emerald-200', bg: 'bg-emerald-500' },
-  living: { gradient: 'from-rose-500 to-pink-500', light: 'bg-rose-50', text: 'text-rose-700', ring: 'ring-rose-200', bg: 'bg-rose-500' },
-  employment: { gradient: 'from-indigo-500 to-violet-500', light: 'bg-indigo-50', text: 'text-indigo-700', ring: 'ring-indigo-200', bg: 'bg-indigo-500' },
-  startup: { gradient: 'from-purple-500 to-fuchsia-500', light: 'bg-purple-50', text: 'text-purple-700', ring: 'ring-purple-200', bg: 'bg-purple-500' },
-  settlement: { gradient: 'from-sky-500 to-blue-600', light: 'bg-sky-50', text: 'text-sky-700', ring: 'ring-sky-200', bg: 'bg-sky-500' },
-  other: { gradient: 'from-slate-500 to-slate-600', light: 'bg-slate-100', text: 'text-slate-700', ring: 'ring-slate-200', bg: 'bg-slate-500' },
+const categoryStyles: Record<
+  SubsidyCategory,
+  {
+    color: string;
+    light: string;
+    text: string;
+    ring: string;
+    border: string;
+    label: string;
+  }
+> = {
+  talent: {
+    color: '#DC2626',
+    light: 'bg-seal-red/8',
+    text: 'text-seal-red',
+    ring: 'ring-seal-red/20',
+    border: 'border-seal-red/30',
+    label: '人才奖励',
+  },
+  rent: {
+    color: '#1D4ED8',
+    light: 'bg-civic-blue/8',
+    text: 'text-civic-blue',
+    ring: 'ring-civic-blue/20',
+    border: 'border-civic-blue/30',
+    label: '租房补贴',
+  },
+  buy: {
+    color: '#059669',
+    light: 'bg-celadon/8',
+    text: 'text-celadon',
+    ring: 'ring-celadon/20',
+    border: 'border-celadon/30',
+    label: '落户安家',
+  },
+  living: {
+    color: '#B45309',
+    light: 'bg-amber/10',
+    text: 'text-amber',
+    ring: 'ring-amber/20',
+    border: 'border-amber/30',
+    label: '生活补贴',
+  },
+  employment: {
+    color: '#374151',
+    light: 'bg-slate-100',
+    text: 'text-slate-700',
+    ring: 'ring-slate-200',
+    border: 'border-slate-300',
+    label: '就业补贴',
+  },
+  startup: {
+    color: '#7C3AED',
+    light: 'bg-violet-100',
+    text: 'text-violet-700',
+    ring: 'ring-violet-200',
+    border: 'border-violet-300',
+    label: '创业支持',
+  },
+  settlement: {
+    color: '#0D9488',
+    light: 'bg-teal-50',
+    text: 'text-teal-700',
+    ring: 'ring-teal-200',
+    border: 'border-teal-300',
+    label: '落户安家',
+  },
+  other: {
+    color: '#6B7280',
+    light: 'bg-slate-100',
+    text: 'text-slate-600',
+    ring: 'ring-slate-200',
+    border: 'border-slate-300',
+    label: '其他补贴',
+  },
 };
 
 const categoryIcons: Record<SubsidyCategory, string> = {
@@ -279,18 +345,14 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
     const sets = c.criterionSets;
 
     // 落户要求差异：部分通道需要落户、部分不需要
-    const householdValues = sets.map(s => s.householdRequired);
-    const hasHouseholdDiff = householdValues.some(v => v === true) && householdValues.some(v => v === false);
+    const householdValues = sets.map((s) => s.householdRequired);
+    const hasHouseholdDiff = householdValues.some((v) => v === true) && householdValues.some((v) => v === false);
     if (hasHouseholdDiff) {
       // 超过 4 个集合时用简化展示（避免卡片过长），否则逐集合列出
-      const parts = sets.length <= 4
-        ? sets
-            .filter(s => s.householdRequired !== undefined)
-            .map(s => `${s.name}：${s.householdRequired ? '需落户' : '无户籍要求'}`)
-        : [
-            `境内通道需落户`,
-            `港澳台/外籍通道免落户`
-          ];
+      const parts =
+        sets.length <= 4
+          ? sets.filter((s) => s.householdRequired !== undefined).map((s) => `${s.name}：${s.householdRequired ? '需落户' : '无户籍要求'}`)
+          : [`境内通道需落户`, `港澳台/外籍通道免落户`];
       rows.push({
         label: '户籍要求',
         value: parts.join('；'),
@@ -299,12 +361,12 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
     }
 
     // 就业要求差异
-    const empValues = sets.map(s => s.employmentRequired);
-    const hasEmpDiff = empValues.some(v => v === true) && empValues.some(v => v === false);
+    const empValues = sets.map((s) => s.employmentRequired);
+    const hasEmpDiff = empValues.some((v) => v === true) && empValues.some((v) => v === false);
     if (hasEmpDiff) {
       const parts = sets
-        .filter(s => s.employmentRequired !== undefined)
-        .map(s => `${s.name}：${s.employmentRequired ? '需就业' : '无就业要求'}`);
+        .filter((s) => s.employmentRequired !== undefined)
+        .map((s) => `${s.name}：${s.employmentRequired ? '需就业' : '无就业要求'}`);
       rows.push({
         label: '就业要求',
         value: parts.join('；'),
@@ -314,13 +376,13 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
 
     // 院校要求差异：仅当部分集合确实无任何院校限制时才展示
     // （无 schoolLevel 且无 majorInDoubleFirstClassDiscipline 才是真正无院校限制）
-    const hasTrulyNoSchool = sets.some(s =>
-      (!s.schoolLevel || s.schoolLevel.length === 0) && !s.majorInDoubleFirstClassDiscipline
+    const hasTrulyNoSchool = sets.some(
+      (s) => (!s.schoolLevel || s.schoolLevel.length === 0) && !s.majorInDoubleFirstClassDiscipline
     );
-    const hasExplicitSchool = sets.some(s => s.schoolLevel && s.schoolLevel.length > 0);
+    const hasExplicitSchool = sets.some((s) => s.schoolLevel && s.schoolLevel.length > 0);
     const hasSchoolDiff = hasTrulyNoSchool && hasExplicitSchool;
     if (hasSchoolDiff) {
-      const parts = sets.map(s => {
+      const parts = sets.map((s) => {
         const schoolList = s.schoolLevel;
         if (schoolList && schoolList.length > 0) return `${s.name}：${schoolList.join('/')}`;
         if (s.majorInDoubleFirstClassDiscipline) return `${s.name}：双一流建设学科`;
@@ -339,15 +401,61 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
 
 function StatusBadge({ status }: { status: ConditionStatus }) {
   if (status === 'hard-met') {
-    return <span className="inline-flex items-center rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">✓ 符合</span>;
+    return (
+      <span className="inline-flex items-center gap-1 rounded-full bg-celadon/10 px-2 py-0.5 text-[10px] font-semibold text-celadon ring-1 ring-celadon/20">
+        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        符合
+      </span>
+    );
   }
   if (status === 'soft') {
-    return <span className="inline-flex items-center rounded-full bg-blue-50 px-2 py-0.5 text-xs font-semibold text-blue-700">ℹ 到城后满足</span>;
+    return (
+      <span className="inline-flex items-center gap-1 rounded-full bg-civic-blue/8 px-2 py-0.5 text-[10px] font-semibold text-civic-blue ring-1 ring-civic-blue/20">
+        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        到城后满足
+      </span>
+    );
   }
   if (status === 'warning') {
-    return <span className="inline-flex items-center rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700">⚠ 注意</span>;
+    return (
+      <span className="inline-flex items-center gap-1 rounded-full bg-amber/10 px-2 py-0.5 text-[10px] font-semibold text-amber ring-1 ring-amber/20">
+        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4.5c-.77-.833-2.694-.833-3.464 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
+        </svg>
+        注意
+      </span>
+    );
   }
   return null;
+}
+
+function SectionTitle({ icon, children }: { icon: React.ReactNode; children: React.ReactNode }) {
+  return (
+    <h4 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400">
+      <span className="flex h-5 w-5 items-center justify-center rounded-md bg-slate-100 text-slate-500">{icon}</span>
+      {children}
+    </h4>
+  );
+}
+
+function InfoGrid({ items }: { items: { label: string; value: React.ReactNode; warning?: boolean }[] }) {
+  return (
+    <div className="grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2">
+      {items.map((item) => (
+        <div
+          key={item.label}
+          className={`rounded-lg border px-3 py-2.5 ${item.warning ? 'border-amber/20 bg-amber/5' : 'border-slate-100 bg-paper'}`}
+        >
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{item.label}</span>
+          <div className="mt-1 font-medium text-slate-800">{item.value}</div>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 // ===== 主组件 =====
@@ -366,15 +474,15 @@ export function PolicyCard({
   const style = categoryStyles[subsidy.category];
   const conditionRows = getConditionRows(subsidy, showStatusBadges);
   const hasCriterionSets = !!subsidy.conditions.criterionSets && subsidy.conditions.criterionSets.length > 0;
-
-  // 金额展示：匹配结果优先，否则展示参考金额 + 周期明细
   const amountDisplay = getAmountDisplay(subsidy, matchedAmount, amountBreakdown);
+  const isMatched = matchedAmount !== undefined;
 
   return (
-    <div className={`relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:border-slate-300 hover:shadow-md ${dimmed ? 'opacity-60' : ''}`}>
-      {/* 顶部彩色条 */}
-      <div className={`h-1.5 w-full bg-gradient-to-r ${style.gradient}`} />
-
+    <div
+      className={`paper-texture relative overflow-hidden rounded-xl border border-slate-200 shadow-sm transition-all ${
+        dimmed ? 'opacity-60' : 'hover:border-slate-300 hover:shadow-md'
+      }`}
+    >
       {/* 收藏按钮 */}
       <button
         onClick={(e) => {
@@ -390,63 +498,76 @@ export function PolicyCard({
             location: subsidy.application?.location,
           });
         }}
-        className={`absolute right-3 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full transition-all ${
-          isFav
-            ? 'text-rose-500 hover:bg-rose-50'
-            : 'text-slate-300 hover:bg-slate-100 hover:text-slate-400'
+        className={`absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full transition-all focus-ring ${
+          isFav ? 'text-seal-red hover:bg-seal-red/8' : 'text-slate-300 hover:bg-slate-100 hover:text-slate-500'
         }`}
         title={isFav ? '取消收藏' : '收藏'}
       >
-        <svg className="h-[18px] w-[18px] transition-transform hover:scale-110" fill={isFav ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={isFav ? 0 : 2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+        <svg className="h-[18px] w-[18px] transition-transform hover:scale-110" viewBox="0 0 1024 1024" fill="currentColor">
+          <path d="M770.784 113.28a293.12 293.12 0 0 0-410.496 57.696L235.712 336.32a31.968 31.968 0 1 0 51.104 38.496l124.576-165.344a229.12 229.12 0 1 1 365.952 275.776l-255.36 338.88a163.84 163.84 0 0 1-261.696-197.184l255.36-338.88a98.528 98.528 0 1 1 157.408 118.624l-216.064 286.752a33.28 33.28 0 1 1-53.184-40.064c86.176-115.616 141.024-189.024 164.544-220.256a32 32 0 1 0-51.136-38.496c-23.616 31.36-78.496 104.8-164.64 220.384a97.28 97.28 0 1 0 155.456 116.96l218.912-290.496c0.992-1.344 1.312-2.912 2.08-4.32 47.36-71.104 32.224-167.456-36.896-219.552a162.56 162.56 0 0 0-227.648 32l-255.36 338.88a227.84 227.84 0 0 0 363.904 274.24l255.36-338.88a293.056 293.056 0 0 0-57.6-410.56z" />
         </svg>
       </button>
+
+      {/* 文件头 */}
+      <div className="flex items-center justify-between border-b border-slate-200/80 px-4 py-2.5 sm:px-6">
+        <div className="flex items-center gap-2">
+          <span
+            className={`inline-flex items-center gap-1 rounded-md ${style.light} px-2 py-0.5 text-[10px] font-semibold ${style.text} ring-1 ${style.ring} sm:text-xs`}
+          >
+            <PolicyIcon category={subsidy.category} className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+            {CATEGORY_NAMES[subsidy.category]}
+          </span>
+          <span className="hidden text-[10px] font-medium text-slate-400 sm:inline sm:text-xs">
+            {subsidy.amount.period || '一次性'}
+          </span>
+        </div>
+        <div className="flex items-center gap-2 text-[10px] text-slate-500 sm:text-xs">
+          {subsidy.application?.location && (
+            <span className="inline-flex items-center gap-1">
+              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+              </svg>
+              {subsidy.application.location}
+            </span>
+          )}
+          <span className="max-w-[120px] truncate sm:max-w-[180px]">{subsidy.policySource}</span>
+        </div>
+      </div>
 
       {/* 头部：可点击展开 */}
       <button
         onClick={() => setExpanded((v) => !v)}
-        className="flex w-full items-start justify-between gap-2 p-4 text-left sm:gap-4 sm:p-5"
+        className="flex w-full items-start justify-between gap-3 px-4 py-4 pr-12 text-left sm:gap-4 sm:px-6 sm:py-5 sm:pr-14"
       >
         <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-            <span className={`inline-flex items-center gap-1 rounded-full ${style.light} px-2 py-0.5 text-[10px] font-semibold ${style.text} ring-1 ${style.ring} sm:px-2.5 sm:py-1 sm:text-xs`}>
-              <PolicyIcon category={subsidy.category} className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-              {CATEGORY_NAMES[subsidy.category]}
-            </span>
-            {subsidy.application?.location && (
-              <span className="inline-flex items-center gap-1 rounded-lg bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-600 sm:px-2 sm:text-xs">
-                <svg className="h-2.5 w-2.5 sm:h-3 sm:w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                </svg>
-                {subsidy.application.location}
-              </span>
-            )}
-            <span className="text-[10px] text-slate-400 sm:text-xs">{subsidy.amount.period || '一次性'}</span>
-          </div>
-          <p className="mt-1 line-clamp-2 text-sm font-bold text-slate-900 sm:mt-1.5 sm:text-base">{subsidy.name}</p>
+          <p className="mr-1 line-clamp-2 text-base font-bold text-ink sm:text-lg">{subsidy.name}</p>
           {/* 移动端：金额在标题下方 */}
-          <div className="mt-1 sm:hidden">
-            <span className={`text-sm font-extrabold ${style.text}`}>
+          <div className="mt-2 sm:hidden">
+            <span className={`font-data text-base font-bold ${isMatched ? 'text-seal-red' : style.text}`}>
               {amountDisplay.main}
               {amountDisplay.unit && <span className="ml-0.5 text-[10px] font-medium text-slate-500">{amountDisplay.unit}</span>}
             </span>
-            {amountDisplay.sub && (
-              <span className="ml-1.5 text-[10px] font-medium text-slate-400">{amountDisplay.sub}</span>
-            )}
+            {amountDisplay.sub && <span className="ml-1.5 text-[10px] text-slate-400">{amountDisplay.sub}</span>}
           </div>
         </div>
         {/* 桌面端：金额在右侧 */}
-        <div className="ml-2 hidden shrink-0 flex-col items-end sm:ml-4 sm:flex">
-          <span className={`text-base font-extrabold ${style.text} sm:text-lg`}>
+        <div className="ml-3 hidden shrink-0 flex-col items-end sm:ml-4 sm:flex">
+          <span className={`font-data text-lg font-bold ${isMatched ? 'text-seal-red' : style.text} sm:text-xl`}>
             {amountDisplay.main}
             {amountDisplay.unit && <span className="ml-0.5 text-[10px] font-medium text-slate-500 sm:text-xs">{amountDisplay.unit}</span>}
           </span>
-          {amountDisplay.sub && (
-            <span className="mt-0.5 text-[10px] font-medium text-slate-400 sm:text-xs">{amountDisplay.sub}</span>
-          )}
+          {amountDisplay.sub && <span className="mt-0.5 text-[10px] text-slate-400 sm:text-xs">{amountDisplay.sub}</span>}
         </div>
-        <span className="mt-0.5 shrink-0 text-slate-400 transition-transform duration-200 sm:mt-1" style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-          <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <span
+          className="absolute right-3 top-[38px] -translate-y-1/2 text-slate-400 transition-transform duration-200 sm:top-10"
+          style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}
+        >
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </span>
@@ -454,84 +575,94 @@ export function PolicyCard({
 
       {/* 展开内容 */}
       {expanded && (
-        <div className="border-t border-slate-100 bg-slate-50/50 px-4 pb-4 pt-3 sm:px-5 sm:pb-5 sm:pt-4">
+        <div className="border-t border-slate-100 bg-paper/60 px-4 pb-5 pt-4 sm:px-6 sm:pb-6 sm:pt-5">
           {/* 申请条件 */}
           {conditionRows.length > 0 && (
-            <div className="space-y-2.5">
-              <h4 className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
-                <svg className="h-3.5 w-3.5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div>
+              <SectionTitle
+                icon={
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                }
+              >
                 申请条件
-              </h4>
-              {conditionRows.map((row, idx) => (
-                <div
-                  key={idx}
-                  className={`flex items-start justify-between gap-3 rounded-lg px-3 py-2 shadow-sm ring-1 ${
-                    row.status === 'warning'
-                      ? 'bg-amber-50 ring-amber-200'
-                      : 'bg-white ring-slate-100'
-                  }`}
-                >
-                  <span className={`text-sm ${row.status === 'warning' ? 'text-amber-900' : 'text-slate-700'}`}>
-                    <span className={row.status === 'warning' ? 'text-amber-600' : 'text-slate-400'}>{row.label}：</span>
-                    <span className="font-medium">{row.value}</span>
-                  </span>
-                  {(showStatusBadges || row.status === 'warning') && <StatusBadge status={row.status} />}
-                </div>
-              ))}
-              {hasCriterionSets && (
-                <div className="rounded-lg bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-800">
-                  该政策包含多通道认定标准，满足其中任意一条即可，详见政策原文。
-                </div>
-              )}
+              </SectionTitle>
+              <div className="space-y-2">
+                {conditionRows.map((row, idx) => (
+                  <div
+                    key={idx}
+                    className={`flex items-start justify-between gap-3 rounded-lg border px-3 py-2.5 ${
+                      row.status === 'warning' ? 'border-amber/20 bg-amber/5' : 'border-slate-100 bg-white'
+                    }`}
+                  >
+                    <span className={`text-sm ${row.status === 'warning' ? 'text-amber-900' : 'text-slate-700'}`}>
+                      <span className={row.status === 'warning' ? 'text-amber-600' : 'text-slate-400'}>{row.label}：</span>
+                      <span className="font-medium">{row.value}</span>
+                    </span>
+                    {(showStatusBadges || row.status === 'warning') && <StatusBadge status={row.status} />}
+                  </div>
+                ))}
+                {hasCriterionSets && (
+                  <div className="rounded-lg border border-amber/20 bg-amber/5 px-3 py-2 text-xs leading-relaxed text-amber-800">
+                    该政策包含多通道认定标准，满足其中任意一条即可，详见政策原文。
+                  </div>
+                )}
+              </div>
             </div>
           )}
 
           {/* 申请信息 */}
-          <div className="mt-5 space-y-2.5">
-            <h4 className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
-              <svg className="h-3.5 w-3.5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-              </svg>
+          <div className="mt-6">
+            <SectionTitle
+              icon={
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  />
+                </svg>
+              }
+            >
               申请信息
-            </h4>
-            <div className="grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2">
-              <div className="rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-100">
-                <span className="text-xs font-medium text-slate-400">申请时限</span>
-                <p className="mt-0.5 font-medium text-slate-800">
-                  <span className="mr-1 text-amber-500">⚠</span>
-                  {subsidy.application.deadline}
-                </p>
-              </div>
-              <div className="rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-100">
-                <span className="text-xs font-medium text-slate-400">政策来源</span>
-                <p className="mt-0.5 font-medium text-slate-800">{subsidy.policySource}</p>
-              </div>
-              {subsidy.effectiveDate && subsidy.effectiveDate !== '待核实' && (
-                <div className="rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-100">
-                  <span className="text-xs font-medium text-slate-400">生效日期</span>
-                  <p className="mt-0.5 font-medium text-slate-800">{subsidy.effectiveDate}</p>
-                </div>
-              )}
-              {subsidy.application.location && (
-                <div className="rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-100">
-                  <span className="text-xs font-medium text-slate-400">适用区域</span>
-                  <p className="mt-0.5 font-medium text-slate-800">{subsidy.application.location}</p>
-                </div>
-              )}
-            </div>
+            </SectionTitle>
+            <InfoGrid
+              items={[
+                {
+                  label: '申请时限',
+                  value: (
+                    <>
+                      <span className="mr-1 text-amber">⚠</span>
+                      {subsidy.application.deadline}
+                    </>
+                  ),
+                  warning: subsidy.application.deadline.includes('截止') || subsidy.application.deadline.includes('限时'),
+                },
+                { label: '政策来源', value: subsidy.policySource },
+                ...(subsidy.effectiveDate && subsidy.effectiveDate !== '待核实'
+                  ? [{ label: '生效日期', value: subsidy.effectiveDate }]
+                  : []),
+                ...(subsidy.application.location
+                  ? [{ label: '适用区域', value: subsidy.application.location }]
+                  : []),
+              ]}
+            />
             {(subsidy.application.url || subsidy.application.channel) && (
               <a
                 href={subsidy.application.url || subsidy.application.channel}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:text-blue-700 hover:underline"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-civic-blue hover:underline focus-ring rounded-md"
                 onClick={(e) => e.stopPropagation()}
               >
                 查看官方政策入口
                 <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
                 </svg>
               </a>
             )}
@@ -539,16 +670,26 @@ export function PolicyCard({
 
           {/* 所需材料 */}
           {subsidy.application.materials && subsidy.application.materials.length > 0 && (
-            <div className="mt-5 space-y-2.5">
-              <h4 className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
-                <svg className="h-3.5 w-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
+            <div className="mt-6">
+              <SectionTitle
+                icon={
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                }
+              >
                 所需材料
-              </h4>
+              </SectionTitle>
               <div className="flex flex-wrap gap-2">
                 {subsidy.application.materials.map((m) => (
-                  <span key={m} className="rounded-lg bg-white px-2.5 py-1 text-xs font-medium text-slate-600 shadow-sm ring-1 ring-slate-100">
+                  <span
+                    key={m}
+                    className="rounded-lg border border-slate-100 bg-white px-2.5 py-1 text-xs font-medium text-slate-600"
+                  >
                     {m}
                   </span>
                 ))}
@@ -558,18 +699,25 @@ export function PolicyCard({
 
           {/* 认定标准摘要 */}
           {subsidy.application.talentCriteria && subsidy.application.talentCriteria.length > 0 && (
-            <div className="mt-5 space-y-2.5">
-              <h4 className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
-                <svg className="h-3.5 w-3.5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
+            <div className="mt-6">
+              <SectionTitle
+                icon={
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                }
+              >
                 认定标准摘要
-              </h4>
+              </SectionTitle>
               <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {subsidy.application.talentCriteria.map((tc) => (
-                  <div key={tc.level} className="rounded-lg bg-white px-3 py-2.5 shadow-sm ring-1 ring-slate-100">
-                    <span className="text-xs font-semibold text-indigo-700">{tc.level}</span>
-                    <p className="mt-1 text-xs leading-relaxed text-slate-600">{tc.criteria}</p>
+                  <div key={tc.level} className="rounded-lg border border-slate-100 bg-white px-3 py-2.5">
+                    <span className="text-xs font-semibold text-slate-700">{tc.level}</span>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-500">{tc.criteria}</p>
                   </div>
                 ))}
               </div>
@@ -578,16 +726,25 @@ export function PolicyCard({
 
           {/* 申请流程 */}
           {subsidy.application.process && subsidy.application.process.length > 0 && (
-            <div className="mt-5 space-y-2.5">
-              <h4 className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
-                <svg className="h-3.5 w-3.5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
+            <div className="mt-6">
+              <SectionTitle
+                icon={
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                    />
+                  </svg>
+                }
+              >
                 申请流程
-              </h4>
-              <ol className="list-inside list-decimal space-y-1 text-sm text-slate-700">
+              </SectionTitle>
+              <ol className="list-inside list-decimal space-y-1.5 text-sm text-slate-700">
                 {subsidy.application.process.map((step, idx) => (
-                  <li key={idx} className="leading-relaxed">{step}</li>
+                  <li key={idx} className="leading-relaxed">
+                    <span className="font-medium text-slate-500">步骤 {idx + 1}.</span> {step}
+                  </li>
                 ))}
               </ol>
             </div>
@@ -595,10 +752,14 @@ export function PolicyCard({
 
           {/* 政策说明 */}
           {subsidy.notes && (
-            <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50/50 px-4 py-3">
-              <h4 className="flex items-center gap-1.5 text-xs font-bold text-blue-800">
-                <svg className="h-3.5 w-3.5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="mt-6 rounded-lg border border-civic-blue/15 bg-civic-blue/[0.03] px-4 py-3">
+              <h4 className="flex items-center gap-1.5 text-xs font-bold text-civic-blue">
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
                 政策说明
               </h4>

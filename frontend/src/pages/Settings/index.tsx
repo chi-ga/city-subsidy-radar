@@ -33,7 +33,7 @@ const PROVIDERS: Provider[] = [
     defaultModel: 'deepseek-chat',
     logo: (
       <svg className="h-5 w-5" viewBox="0 0 24 24" fill="#4D6BFE">
-        <path d="M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 0 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45" />
+        <path d="M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 1 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45" />
       </svg>
     ),
   },
@@ -108,12 +108,12 @@ export default function Settings() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-paper">
       <header className="sticky top-0 z-10 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
           <button
             onClick={() => { clearFormCache(); navigate('/'); }}
-            className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800"
+            className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus-ring"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -136,13 +136,13 @@ export default function Settings() {
           {/* Title + Status */}
           <div className="flex items-end justify-between">
             <div>
-              <h1 className="text-xl font-bold tracking-tight text-slate-900">AI 服务商</h1>
+              <h1 className="font-display text-xl font-bold tracking-tight text-ink">AI 服务商</h1>
               <p className="mt-1 text-xs text-slate-500">配置模型 API，启用 AI 补贴解读</p>
             </div>
             <span
               className={`rounded-full px-2.5 py-1 text-xs font-medium ${
                 isConfigured
-                  ? 'bg-emerald-50 text-emerald-700 ring-1 ring-emerald-600/20'
+                  ? 'bg-celadon/10 text-celadon ring-1 ring-celadon/20'
                   : 'bg-slate-100 text-slate-600 ring-1 ring-slate-900/5'
               }`}
             >
@@ -158,21 +158,21 @@ export default function Settings() {
                 <button
                   key={provider.id}
                   onClick={() => switchProvider(provider.id)}
-                  className={`relative flex flex-col rounded-xl border p-4 text-left transition-all ${
+                  className={`relative flex flex-col rounded-xl border p-4 text-left transition-all focus-ring ${
                     active
-                      ? 'border-blue-500 bg-blue-50/60 shadow-sm shadow-blue-500/10'
+                      ? 'border-civic-blue bg-civic-blue/5 shadow-sm shadow-civic-blue/10'
                       : 'border-slate-200 bg-white hover:border-slate-300'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <div className={`${active ? 'text-blue-600' : 'text-slate-600'}`}>{provider.logo}</div>
+                    <div className={`${active ? 'text-civic-blue' : 'text-slate-600'}`}>{provider.logo}</div>
                     {active && (
-                      <svg className="h-4 w-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <svg className="h-4 w-4 text-civic-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     )}
                   </div>
-                  <div className="mt-2.5 text-sm font-semibold text-slate-900">{provider.name}</div>
+                  <div className="mt-2.5 text-sm font-semibold text-ink">{provider.name}</div>
                   <div className="mt-0.5 text-[11px] leading-snug text-slate-500">{provider.description}</div>
                 </button>
               );
@@ -182,12 +182,12 @@ export default function Settings() {
           {/* Config Form */}
           <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="mb-4 flex items-center gap-2.5">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-civic-blue/10 text-civic-blue">
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
                 </svg>
               </div>
-              <h2 className="text-sm font-semibold text-slate-900">{currentProvider.name} 配置</h2>
+              <h2 className="text-sm font-semibold text-ink">{currentProvider.name} 配置</h2>
             </div>
 
             <div className="space-y-4">
@@ -198,7 +198,7 @@ export default function Settings() {
                   value={form.key}
                   onChange={(e) => setForm((prev) => ({ ...prev, key: e.target.value }))}
                   placeholder={`${currentProvider.name} API Key`}
-                  className="mt-1.5 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="mt-1.5 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-1 focus:ring-civic-blue"
                 />
               </div>
 
@@ -209,7 +209,7 @@ export default function Settings() {
                   value={form.baseUrl}
                   onChange={(e) => setForm((prev) => ({ ...prev, baseUrl: e.target.value }))}
                   placeholder="https://api.example.com/v1"
-                  className="mt-1.5 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="mt-1.5 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-1 focus:ring-civic-blue"
                 />
               </div>
 
@@ -220,9 +220,9 @@ export default function Settings() {
                     <button
                       key={model}
                       onClick={() => setForm((prev) => ({ ...prev, model }))}
-                      className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${
+                      className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors focus-ring ${
                         form.model === model
-                          ? 'border-blue-500 bg-blue-50 text-blue-700'
+                          ? 'border-civic-blue bg-civic-blue/5 text-civic-blue'
                           : 'border-slate-200 text-slate-700 hover:border-slate-300'
                       }`}
                     >
@@ -235,7 +235,7 @@ export default function Settings() {
                   value={form.model}
                   onChange={(e) => setForm((prev) => ({ ...prev, model: e.target.value }))}
                   placeholder="或输入自定义模型名"
-                  className="mt-2 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="mt-2 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-1 focus:ring-civic-blue"
                 />
               </div>
             </div>
@@ -245,7 +245,7 @@ export default function Settings() {
           <div className="flex items-center gap-3">
             <button
               onClick={handleSave}
-              className="flex-1 rounded-lg bg-blue-600 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+              className="flex-1 rounded-lg bg-civic-blue py-2.5 text-sm font-semibold text-white transition-colors hover:bg-civic-blue/90 focus-ring"
             >
               {saved ? '已保存' : '保存配置'}
             </button>
@@ -255,7 +255,7 @@ export default function Settings() {
                   clearApiConfig();
                   setForm({ key: '', baseUrl: currentProvider.baseUrl, model: currentProvider.defaultModel });
                 }}
-                className="rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-50"
+                className="rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-50 focus-ring"
               >
                 清除
               </button>

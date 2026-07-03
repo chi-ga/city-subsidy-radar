@@ -47,8 +47,8 @@ export function SelectField({
             onChange={(e) => onChange(e.target.value)}
             onBlur={onBlur}
             disabled={disabled}
-            className={`block w-full appearance-none rounded-xl border bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10 ${
-              error ? 'border-red-300' : 'border-slate-200'
+            className={`block w-full appearance-none rounded-xl border bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20 ${
+              error ? 'border-seal-red/30' : 'border-slate-200'
             }`}
           >
             {children}
@@ -63,7 +63,7 @@ export function SelectField({
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
-        {error && <p className="mt-1.5 text-xs text-red-500">{error}</p>}
+        {error && <p className="mt-1.5 text-xs text-seal-red">{error}</p>}
       </div>
     </section>
   );

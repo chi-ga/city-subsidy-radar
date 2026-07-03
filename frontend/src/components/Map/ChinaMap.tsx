@@ -194,7 +194,7 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
             name: f.properties.name,
             value: isCovered ? 1 : 0,
             itemStyle: isCovered
-              ? { areaColor: '#3b82f6', borderColor: '#2563eb', borderWidth: 1 }
+              ? { areaColor: '#2563EB', borderColor: '#2563EB', borderWidth: 1 }
               : { areaColor: '#f1f5f9' },
             ...(cityInfo && { code: cityInfo.code, count: cityInfo.count }),
           };
@@ -209,14 +209,14 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
             borderWidth: 1,
             padding: [12, 16],
             textStyle: {
-              color: '#1e293b',
+              color: '#151922',
               fontSize: 13,
             },
             formatter: (params: unknown) => {
               const data = params as { name: string; value: number };
               if (data.value === 1) {
-                return `<div style="font-weight:600;color:#1e293b">${data.name}</div>
-                        <div style="color:#3b82f6;font-size:12px;margin-top:2px">已覆盖</div>`;
+                return `<div style="font-weight:600;color:#151922">${data.name}</div>
+                        <div style="color:#1D4ED8;font-size:12px;margin-top:2px">已覆盖</div>`;
               }
               return `<div style="color:#94a3b8">${data.name}<br/><span style="font-size:12px">暂未覆盖</span></div>`;
             },
@@ -239,9 +239,9 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
               },
               emphasis: {
                 itemStyle: {
-                  borderColor: '#93c5fd',
+                  borderColor: '#2563EB',
                   borderWidth: 1,
-                  areaColor: '#dbeafe',
+                  areaColor: '#DBEAFE',
                 },
                 label: { show: false },
               },

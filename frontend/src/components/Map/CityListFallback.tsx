@@ -76,11 +76,11 @@ export default function CityListFallback({ onCityClick }: CityListFallbackProps)
         <button
           key={city.code}
           onClick={() => onCityClick?.(city.code)}
-          className="group relative rounded-xl border-2 border-blue-100 bg-blue-50 p-6 transition-all hover:border-blue-300 hover:shadow-md"
+          className="group relative rounded-xl border border-slate-200 bg-white p-5 text-left transition-all hover:border-civic-blue/30 hover:shadow-md sm:p-6"
         >
-          <div className="text-lg font-semibold text-blue-700">{city.name}</div>
-          <div className="mt-1 text-xs text-blue-500">{city.count}项人才补贴</div>
-          <div className="absolute -right-1 -top-1 h-3 w-3 rounded-full bg-blue-500 ring-2 ring-white" />
+          <div className="font-display text-lg font-semibold text-ink">{city.name}</div>
+          <div className="mt-1 text-xs text-slate-500">{city.count}项人才补贴</div>
+          <div className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-civic-blue ring-2 ring-white" />
         </button>
       ))}
     </div>

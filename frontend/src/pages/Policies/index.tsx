@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
+import { FavoritesButton } from '../../components/FavoritesButton';
 import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
@@ -67,7 +68,7 @@ export default function Policies() {
   }, [filteredPolicies]);
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-paper">
       {/* Header */}
       <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
@@ -80,29 +81,23 @@ export default function Policies() {
             </svg>
             <span className="hidden sm:inline">返回首页</span>
           </button>
-          <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-500 shadow-sm shadow-amber-500/30">
-              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-              </svg>
-            </div>
-            <span className="text-sm font-bold text-slate-800">人才政策库</span>
-          </div>
+          <span className="text-sm font-bold text-ink">人才政策库</span>
+          <FavoritesButton />
         </div>
       </header>
 
       <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
         {/* Title */}
         <div className="text-center">
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900">浏览人才政策</h1>
+          <h1 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">浏览人才政策</h1>
           <p className="mt-2 text-slate-500">按城市与区域筛选</p>
         </div>
 
         {/* Filters */}
-        <div className="mt-8 rounded-3xl border border-slate-200/80 bg-white p-4 shadow-sm sm:p-6">
+        <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
           <div className="grid gap-5 sm:grid-cols-3">
             <div>
-              <label className="mb-2 block text-sm font-semibold text-slate-800">目标城市</label>
+              <label className="mb-2 block text-sm font-semibold text-ink">目标城市</label>
               <div className="relative" ref={cityDropdownRef}>
                 <input
                   type="text"
@@ -115,13 +110,13 @@ export default function Policies() {
                   }}
                   onFocus={() => setShowCityDropdown(true)}
                   placeholder="搜索城市名称..."
-                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                 />
                 {showCityDropdown && (
                   <div className="absolute z-10 mt-1 max-h-60 w-full overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-lg">
                     <button
                       onClick={() => { setCity(''); setCitySearch(''); setDistrict(''); setShowCityDropdown(false); }}
-                      className="w-full px-4 py-2.5 text-left text-sm text-slate-500 hover:bg-slate-50"
+                      className="w-full px-4 py-2.5 text-left text-sm text-slate-500 hover:bg-slate-100"
                     >
                       全部城市
                     </button>
@@ -129,8 +124,8 @@ export default function Policies() {
                       <button
                         key={code}
                         onClick={() => { setCity(code); setCitySearch(''); setDistrict(''); setShowCityDropdown(false); }}
-                        className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-slate-50 ${
-                          city === code ? 'bg-blue-50 font-semibold text-blue-700' : 'text-slate-700'
+                        className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-slate-100 ${
+                          city === code ? 'bg-civic-blue/5 font-semibold text-civic-blue' : 'text-slate-700'
                         }`}
                       >
                         {name}
@@ -144,7 +139,7 @@ export default function Policies() {
               </div>
             </div>
             <div>
-              <label className="mb-2 block text-sm font-semibold text-slate-800">
+              <label className="mb-2 block text-sm font-semibold text-ink">
                 区域 <span className="text-xs font-normal text-slate-400">（可选）</span>
               </label>
               <div className="relative">
@@ -152,7 +147,7 @@ export default function Policies() {
                   value={district}
                   onChange={(e) => setDistrict(e.target.value)}
                   disabled={!city}
-                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20 disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
                 >
                   <option value="">不限（全市）</option>
                   {districts.map((d) => (
@@ -163,12 +158,12 @@ export default function Policies() {
               </div>
             </div>
             <div>
-              <label className="mb-2 block text-sm font-semibold text-slate-800">补贴类型</label>
+              <label className="mb-2 block text-sm font-semibold text-ink">补贴类型</label>
               <div className="relative">
                 <select
                   value={categoryFilter}
                   onChange={(e) => setCategoryFilter(e.target.value)}
-                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                 >
                   <option value="">全部类型</option>
                   {uniqueCategoryLabels.map((label) => (
@@ -184,7 +179,7 @@ export default function Policies() {
         {/* Results count */}
         <div className="mt-6 flex items-center justify-between">
           <p className="text-sm text-slate-500">
-            共找到 <span className="font-bold text-slate-900">{filteredPolicies.length}</span> 项政策
+            共找到 <span className="font-data font-bold text-ink">{filteredPolicies.length}</span> 项政策
           </p>
           {(city || categoryFilter) && (
             <button
@@ -196,16 +191,16 @@ export default function Policies() {
           )}
         </div>
 
-        {/* Policy cards - 按城市分组展示，使用共享 PolicyCard 组件 */}
+        {/* Policy cards - 按城市分组展示 */}
         {filteredPolicies.length > 0 ? (
           <div className="mt-5 space-y-8">
             {(Object.entries(groupedByCity) as [CityCode, Subsidy[]][]).map(([cityCode, subsidies]) => (
               <div key={cityCode}>
                 <div className="flex items-center gap-2">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-900 text-xs font-bold text-white">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ink text-xs font-bold text-white">
                     {CITY_NAMES[cityCode].charAt(0)}
                   </span>
-                  <h3 className="text-base font-bold text-slate-900">{CITY_NAMES[cityCode]}</h3>
+                  <h3 className="text-base font-bold text-ink">{CITY_NAMES[cityCode]}</h3>
                   <span className="text-xs text-slate-400">（{subsidies.length} 项政策）</span>
                 </div>
                 <div className="mt-3 space-y-4">
@@ -217,13 +212,13 @@ export default function Policies() {
             ))}
           </div>
         ) : (
-          <div className="mt-10 rounded-3xl border border-dashed border-slate-300 bg-white/60 px-6 py-16 text-center">
+          <div className="mt-10 rounded-2xl border border-dashed border-slate-300 bg-white/60 px-6 py-16 text-center">
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-slate-100">
               <svg className="h-7 w-7 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <p className="mt-4 text-base font-semibold text-slate-700">未找到匹配政策</p>
+            <p className="mt-4 text-base font-semibold text-ink">未找到匹配政策</p>
             <p className="mt-1 text-sm text-slate-400">请尝试调整城市、区域或补贴类型筛选条件</p>
           </div>
         )}

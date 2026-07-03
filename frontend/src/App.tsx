@@ -1,58 +1,50 @@
-import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { Suspense, lazy } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import './index.css';
 import ErrorBoundary from './components/ErrorBoundary';
-import Home from './pages/Home';
-import { FavoritesPanel } from './components/FavoritesPanel';
-import { useResultStore } from './stores';
+import { BackToTop } from './components/BackToTop';
 
-// 懒加载非首屏页面，减小首屏 bundle 体积
+const Home = lazy(() => import('./pages/Home'));
 const Input = lazy(() => import('./pages/Input'));
 const Result = lazy(() => import('./pages/Result'));
 const Compare = lazy(() => import('./pages/Compare'));
-// AI 服务商设置页 — Demo 阶段隐藏，后续迭代开放
-// const Settings = lazy(() => import('./pages/Settings'));
 const Policies = lazy(() => import('./pages/Policies'));
+const Favorites = lazy(() => import('./pages/Favorites'));
+const Settings = lazy(() => import('./pages/Settings'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
-/** 页面级 Loading 占位 */
-function PageLoading() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-50">
-      <div className="h-8 w-8 animate-spin rounded-full border-2 border-blue-500 border-t-transparent" />
-    </div>
-  );
-}
+function AppContent() {
+  const { pathname } = useLocation();
+  const showBackToTop = pathname !== '/';
 
-/**
- * 结果页路由守卫：若无匹配结果，重定向到问卷页
- */
-function ResultGuard() {
-  const result = useResultStore((s) => s.result);
-  if (!result) {
-    return <Navigate to="/input" replace />;
-  }
-  return <Outlet />;
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/input" element={<Input />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/compare" element={<Compare />} />
+        <Route path="/policies" element={<Policies />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      {showBackToTop && <BackToTop />}
+    </>
+  );
 }
 
 function App() {
   return (
     <ErrorBoundary>
-      <Suspense fallback={<PageLoading />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/input" element={<Input />} />
-          {/* 结果页需有匹配数据才能访问 */}
-          <Route element={<ResultGuard />}>
-            <Route path="/result" element={<Result />} />
-          </Route>
-          <Route path="/compare" element={<Compare />} />
-          {/* AI 服务商设置页 — Demo 阶段隐藏，后续迭代开放
-          <Route path="/settings" element={<Settings />} />
-          */}
-          <Route path="/policies" element={<Policies />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <FavoritesPanel />
+      <Suspense
+        fallback={
+          <div className="flex min-h-screen items-center justify-center bg-paper">
+            <div className="h-8 w-8 animate-spin rounded-full border-2 border-civic-blue border-t-transparent" />
+          </div>
+        }
+      >
+        <AppContent />
       </Suspense>
     </ErrorBoundary>
   );

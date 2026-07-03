@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { FavoritesButton } from '../../components/FavoritesButton';
 import { useResultStore } from '../../stores';
 import { useUserStore } from '../../stores';
 import { useSchoolSearch, useSubsidyMatch, useMajorSearch } from '../../hooks';
@@ -498,7 +499,7 @@ export default function Input() {
   const citySelected = mode === 'compare' || !!formData.city;
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-paper">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
@@ -514,16 +515,17 @@ export default function Input() {
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <button
               onClick={() => setShowResetConfirm(true)}
-              className="shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-xs font-medium text-slate-400 transition-colors hover:bg-red-50 hover:text-red-600 sm:px-3"
+              className="shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-xs font-medium text-slate-400 transition-colors hover:bg-seal-red/5 hover:text-red-600 sm:px-3"
             >
               重新开始
             </button>
+            <FavoritesButton />
             <span className="shrink-0 text-xs font-semibold tabular-nums text-slate-600">
               {Math.round((completedSteps / progress.length) * 100)}%
             </span>
             <div className="h-2 w-20 overflow-hidden rounded-full bg-slate-100 sm:w-32">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-all duration-300 ease-out"
+                className="h-full rounded-full bg-civic-blue transition-all duration-300 ease-out"
                 style={{ width: `${(completedSteps / progress.length) * 100}%` }}
               />
             </div>
@@ -533,7 +535,7 @@ export default function Input() {
 
       <main className="mx-auto max-w-2xl px-5 py-6 sm:px-6 sm:py-10">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-slate-900">
+          <h1 className="font-display text-2xl font-bold text-ink">
             {mode === 'compare' ? '城市补贴对比' : '查询可申领补贴'}
           </h1>
           <p className="mt-2 text-slate-500">
@@ -548,7 +550,7 @@ export default function Input() {
           {mode === 'single' && (
             <section>
               <label className="flex items-center gap-2 text-sm font-semibold text-slate-800">
-                <svg className="h-4 w-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="h-4 w-4 text-civic-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -567,7 +569,7 @@ export default function Input() {
                     setShowCityDropdown(true);
                   }}
                   placeholder="搜索城市名称..."
-                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm text-slate-900 shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm text-ink shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                 />
                 {formData.city && !showCityDropdown && (
                   <button
@@ -606,8 +608,8 @@ export default function Input() {
                             setShowCityDropdown(false);
                             setCitySearch('');
                           }}
-                          className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-blue-50 ${
-                            formData.city === code ? 'bg-blue-50 text-blue-600 font-medium' : 'text-slate-700'
+                          className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-civic-blue/5 ${
+                            formData.city === code ? 'bg-civic-blue/5 text-civic-blue font-medium' : 'text-slate-700'
                           }`}
                         >
                           {name}
@@ -624,19 +626,15 @@ export default function Input() {
 
           {/* 未选城市时的引导提示 */}
           {!citySelected && (
-            <div className="relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-cyan-50 px-6 py-10 text-center shadow-sm sm:px-8 sm:py-14">
-              <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-blue-100/40 blur-2xl" />
-              <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-cyan-100/40 blur-2xl" />
-              <div className="relative">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg shadow-blue-500/25">
-                  <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <p className="mt-5 text-xl font-bold text-slate-900">请先选择目标城市</p>
-                <p className="mt-2 text-base text-slate-500">选择后将展开问卷填写</p>
+            <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50/60 px-5 py-8 text-center sm:px-6 sm:py-10">
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-400 shadow-sm">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
               </div>
+              <p className="mt-4 text-base font-semibold text-slate-700">请先选择目标城市</p>
+              <p className="mt-1 text-sm text-slate-500">选择后将展开问卷填写</p>
             </div>
           )}
 
@@ -645,7 +643,7 @@ export default function Input() {
           <>
           {/* 对比模式假设说明 */}
           {mode === 'compare' && (
-            <div className="rounded-xl border border-blue-200 bg-blue-50/60 px-4 py-3 text-xs leading-relaxed text-blue-700">
+            <div className="rounded-xl border border-civic-blue/15 bg-civic-blue/5 px-4 py-3 text-xs leading-relaxed text-civic-blue">
               <span className="font-semibold">对比模式说明：</span>
               系统假设你到达目标城市后会自然满足落户、就业等软性条件，因此对比结果展示的是各城市的"潜力上限"。实际申领还需满足对应条件。
             </div>
@@ -668,7 +666,7 @@ export default function Input() {
                       district: e.target.value === '' ? undefined : e.target.value,
                     }))
                   }
-                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                 >
                   <option value="">不限（全市）</option>
                   {getLocationsForCity(formData.city).map((d) => (
@@ -708,14 +706,14 @@ export default function Input() {
                 onChange={(e) => handleSchoolInput(e.target.value)}
                 onFocus={() => { if (formData.school && formData.school.length >= 1 && results.length > 0) setShowSchoolDropdown(true); }}
                 placeholder="输入院校名称，如：北京大学"
-                className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
               />
               {activeConditions.schoolLevel && formData.schoolLevel && formData.schoolLevel.length > 0 && (
                 <div className="mt-2 flex flex-wrap gap-2">
                   {formData.schoolLevel.map((level) => (
                     <span
                       key={level}
-                      className="inline-flex items-center rounded-lg bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700"
+                      className="inline-flex items-center rounded-lg bg-civic-blue/5 px-2.5 py-1 text-xs font-medium text-civic-blue"
                     >
                       {level}
                     </span>
@@ -726,7 +724,7 @@ export default function Input() {
                 <div className="absolute z-10 mt-2 w-full overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg">
                   {schoolSearching ? (
                     <div className="flex items-center gap-2 px-4 py-3 text-sm text-slate-400">
-                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-blue-500 border-t-transparent" />
+                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-civic-blue border-t-transparent" />
                       搜索中...
                     </div>
                   ) : (
@@ -734,7 +732,7 @@ export default function Input() {
                       <button
                         key={school.id}
                         onClick={() => handleSchoolSelect(school.name, school.levels)}
-                        className="flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-slate-50"
+                        className="flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-paper"
                       >
                         <span className="font-medium text-slate-800">{school.name}</span>
                         <div className="flex gap-1">
@@ -765,7 +763,7 @@ export default function Input() {
                 value={formData.degree || ''}
                 onChange={(e) => { setFormData((prev) => ({ ...prev, degree: e.target.value as UserProfile['degree'] })); clearFieldError('degree'); }}
                 onBlur={() => handleBlur('degree', formData.degree)}
-                className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
               >
                 <option value="" disabled>请选择学历</option>
                 {degrees.map((degree) => (
@@ -787,7 +785,7 @@ export default function Input() {
             {/* 双学位复选框：仅深圳且本科/硕士时显示（仅深圳政策区分双学位金额） */}
             {formData.city === 'shenzhen' && (formData.degree === '本科' || formData.degree === '硕士') && (
               <div className="mt-2">
-                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
+                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
                   <input
                     type="checkbox"
                     checked={formData.hasDoubleDegree === true}
@@ -798,7 +796,7 @@ export default function Input() {
                         hasDoubleDegree: checked ? true : undefined,
                       }));
                     }}
-                    className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                    className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue"
                   />
                   <span className="text-slate-700">
                     持有双学位
@@ -810,7 +808,7 @@ export default function Input() {
             {/* 全日制/非全日制复选框：本科及以上时显示 */}
             {formData.degree && formData.degree !== '专科' && (
               <div className="mt-2">
-                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
+                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
                   <input
                     type="checkbox"
                     checked={formData.isFullTime === true}
@@ -821,7 +819,7 @@ export default function Input() {
                         isFullTime: checked ? true : undefined,
                       }));
                     }}
-                    className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                    className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue"
                   />
                   <span className="text-slate-700">
                     全日制学历
@@ -845,13 +843,13 @@ export default function Input() {
                   onChange={(e) => handleMajorInput(e.target.value)}
                   onFocus={() => { if (formData.major && formData.major.length >= 1 && majorResults.length > 0) setShowMajorDropdown(true); }}
                   placeholder="输入专业名称，如：计算机科学与技术"
-                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                  className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                 />
                 {showMajorDropdown && (majorSearching || majorResults.length > 0) && (
                   <div className="absolute z-10 mt-2 max-h-72 w-full overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-lg">
                     {majorSearching ? (
                       <div className="flex items-center gap-2 px-4 py-3 text-sm text-slate-400">
-                        <div className="h-4 w-4 animate-spin rounded-full border-2 border-blue-500 border-t-transparent" />
+                        <div className="h-4 w-4 animate-spin rounded-full border-2 border-civic-blue border-t-transparent" />
                         搜索中...
                       </div>
                     ) : (
@@ -859,7 +857,7 @@ export default function Input() {
                         <button
                           key={major.code}
                           onClick={() => handleMajorSelect(major.name, major.first_level_discipline)}
-                          className="flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-slate-50"
+                          className="flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-paper"
                         >
                           <span className="font-medium text-slate-800">{major.name}</span>
                           <span className="ml-2 shrink-0 text-xs text-slate-400">
@@ -879,7 +877,7 @@ export default function Input() {
               {formData.city === 'shenzhen' && formData.major && formData.degree && formData.degree !== '专科' && (
                 <div className="mt-1.5 space-y-1 text-xs">
                   {/* 重点产业目录（edu-3 / edu-5-domestic 路径） */}
-                  <p className={formData.majorInShenzhenKeyIndustry === true ? 'text-green-600' : 'text-orange-500'}>
+                  <p className={formData.majorInShenzhenKeyIndustry === true ? 'text-celadon' : 'text-amber'}>
                     {formData.majorInShenzhenKeyIndustry === true
                       ? keyIndustryMatchSource === 'discipline'
                         ? `✓ 一级学科「${keyIndustryMatchedDiscipline}」属于《重点产业领域专业目录》`
@@ -888,7 +886,7 @@ export default function Input() {
                   </p>
                   {/* 双一流学科（edu-4 路径）：需同时有学校和一级学科 */}
                   {formData.school && formData.majorFirstLevelDiscipline && (
-                    <p className={doubleFirstClassMatch ? 'text-green-600' : 'text-orange-500'}>
+                    <p className={doubleFirstClassMatch ? 'text-celadon' : 'text-amber'}>
                       {doubleFirstClassMatch
                         ? `✓ 一级学科「${formData.majorFirstLevelDiscipline}」是${formData.school}的双一流学科`
                         : `✗ 一级学科「${formData.majorFirstLevelDiscipline}」不是${formData.school}的双一流学科`}
@@ -920,7 +918,7 @@ export default function Input() {
                         inTopStudentPlan: !!v,
                       }));
                     }}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="">未入选 / 未选择</option>
                     {topStudentBases.map((b) => (
@@ -958,7 +956,7 @@ export default function Input() {
                   境外高校需自行确认专业是否属于 STEM 范畴
                 </p>
                 <div className="mt-3">
-                  <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
+                  <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
                     <input
                       type="checkbox"
                       checked={formData.isStemMajor === true}
@@ -969,7 +967,7 @@ export default function Input() {
                           isStemMajor: checked ? true : undefined,
                         }));
                       }}
-                      className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                      className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue"
                     />
                     <span className="text-slate-700">
                       是，我的专业属于 STEM（科学/技术/工程/数学）
@@ -998,7 +996,7 @@ export default function Input() {
                         hasInnovationAbility: e.target.value || undefined,
                       }))
                     }
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="">不符合 / 未选择</option>
                     <optgroup label="国内外奖项">
@@ -1045,7 +1043,7 @@ export default function Input() {
                         hasInnovationContribution: e.target.value || undefined,
                       }))
                     }
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="">不符合 / 未选择</option>
                     <optgroup label="创业人才">
@@ -1093,7 +1091,7 @@ export default function Input() {
                         identityType: (e.target.value || undefined) as UserProfile['identityType'],
                       }))
                     }
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="">内地居民（默认）</option>
                     <option value="港澳居民">港澳居民</option>
@@ -1143,12 +1141,12 @@ export default function Input() {
                   placeholder="18-50"
                   min={18}
                   max={50}
-                  className={`block w-full rounded-xl border bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/10 ${
-                    fieldErrors.age ? 'border-red-300' : 'border-slate-200'
+                  className={`block w-full rounded-xl border bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-civic-blue/20 ${
+                    fieldErrors.age ? 'border-seal-red/30' : 'border-slate-200'
                   }`}
                 />
                 {fieldErrors.age && (
-                  <p className="mt-1.5 text-xs text-red-500">{fieldErrors.age}</p>
+                  <p className="mt-1.5 text-xs text-seal-red">{fieldErrors.age}</p>
                 )}
               </div>
               )}
@@ -1159,7 +1157,7 @@ export default function Input() {
                   <select
                     value={formData.graduationYear || ''}
                     onChange={(e) => setFormData((prev) => ({ ...prev, graduationYear: (e.target.value || undefined) as UserProfile['graduationYear'] }))}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="" disabled>请选择</option>
                     {graduationOptions.map((opt) => (
@@ -1198,7 +1196,7 @@ export default function Input() {
                       <select
                         value={formData.householdStatus || ''}
                         onChange={(e) => setFormData((prev) => ({ ...prev, householdStatus: e.target.value as UserProfile['householdStatus'] }))}
-                        className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                        className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                       >
                         <option value="" disabled>请选择落户状态</option>
                         {householdOptions.map((status) => (
@@ -1231,7 +1229,7 @@ export default function Input() {
                             firstShenzhenEmploymentDate: employmentStatus === '未就业' ? undefined : prev.firstShenzhenEmploymentDate,
                           }));
                         }}
-                        className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                        className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                       >
                         <option value="" disabled>请选择就业状态</option>
                         {employmentOptions.map((status) => (
@@ -1277,8 +1275,8 @@ export default function Input() {
                           className={`flex flex-col items-start rounded-xl border px-4 py-3 text-left text-sm transition-all ${
                             (opt.value === '' && !formData.firstShenzhenEmploymentDate) ||
                             formData.firstShenzhenEmploymentDate === opt.value
-                              ? 'border-blue-500 bg-blue-50 text-blue-700'
-                              : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-slate-50'
+                              ? 'border-civic-blue bg-civic-blue/5 text-civic-blue'
+                              : 'border-slate-200 bg-white text-slate-700 hover:border-civic-blue/30 hover:bg-paper'
                           }`}
                         >
                           <span className="font-semibold">{opt.label}</span>
@@ -1303,7 +1301,7 @@ export default function Input() {
                 "三城一区"指中关村科学城、怀柔科学城、未来科学城、北京经济技术开发区，可放宽年龄至50周岁
               </p>
               <div className="mt-3">
-                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
+                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
                   <input
                     type="checkbox"
                     checked={formData.isInThreeCitiesOneDistrict === true}
@@ -1314,7 +1312,7 @@ export default function Input() {
                         isInThreeCitiesOneDistrict: checked ? true : undefined,
                       }));
                     }}
-                    className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                    className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue"
                   />
                   <span className="text-slate-700">
                     我在"三城一区"工作（中关村科学城/怀柔科学城/未来科学城/北京经济技术开发区）
@@ -1338,7 +1336,7 @@ export default function Input() {
                   <select
                     value={formData.returneeStatus || ''}
                     onChange={(e) => setFormData((prev) => ({ ...prev, returneeStatus: (e.target.value || undefined) as UserProfile['returneeStatus'] }))}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="" disabled>请选择回国时间</option>
                     <option value="within_2_years">回国2年内</option>
@@ -1368,7 +1366,7 @@ export default function Input() {
                 临港安家补贴要求在临港新片区产城融合区首次就业和居住
               </p>
               <div className="mt-3">
-                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
+                <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
                   <input
                     type="checkbox"
                     checked={formData.isFirstLingangEmployment === true}
@@ -1379,7 +1377,7 @@ export default function Input() {
                         isFirstLingangEmployment: checked ? true : undefined,
                       }));
                     }}
-                    className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                    className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue"
                   />
                   <span className="text-slate-700">
                     是，我是第一次在临港新片区工作和居住
@@ -1409,7 +1407,7 @@ export default function Input() {
                         isFirstGuangzhouHukou: v === 'yes' ? true : v === 'no' ? false : undefined,
                       }));
                     }}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="" disabled>请选择入户情况</option>
                     <option value="yes">首次入户广州（从外地迁入黄埔区）</option>
@@ -1443,7 +1441,7 @@ export default function Input() {
                   <select
                     value={formData.huaduImportStatus || ''}
                     onChange={(e) => setFormData((prev) => ({ ...prev, huaduImportStatus: (e.target.value || undefined) as UserProfile['huaduImportStatus'] }))}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="" disabled>请选择引进时间</option>
                     <option value="after_2023">2023年1月1日后新引进花都区</option>
@@ -1478,7 +1476,7 @@ export default function Input() {
                   <select
                     value={formData.companyType || ''}
                     onChange={(e) => setFormData((prev) => ({ ...prev, companyType: e.target.value || undefined }))}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
+                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
                   >
                     <option value="" disabled>请选择用人单位类型</option>
                     <option value="规模以上工业企业">规模以上工业企业</option>
@@ -1512,7 +1510,7 @@ export default function Input() {
             disabled={!isFormValid() || isLoading}
             className={`mt-6 w-full rounded-2xl py-4 text-base font-bold transition-all ${
               isFormValid() && !isLoading
-                ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/30'
+                ? 'bg-civic-blue text-white shadow-lg shadow-civic-blue/20 hover:bg-civic-blue/90 hover:shadow-xl hover:shadow-civic-blue/30'
                 : 'cursor-not-allowed bg-slate-200 text-slate-400'
             }`}
           >
@@ -1528,7 +1526,7 @@ export default function Input() {
 
           {/* 匹配错误提示 */}
           {matchError && (
-            <div className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            <div className="mt-4 rounded-xl border border-seal-red/15 bg-seal-red/5 px-4 py-3 text-sm text-seal-red">
               匹配出错：{matchError}，请检查信息后重试。
             </div>
           )}
@@ -1538,12 +1536,12 @@ export default function Input() {
             <>
               <div className="fixed inset-0 z-[100] bg-slate-900/40 backdrop-blur-sm" onClick={() => setShowResetConfirm(false)} />
               <div className="fixed left-1/2 top-1/2 z-[101] w-[min(90vw,400px)] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl">
-                <h3 className="text-base font-bold text-slate-900">确认重新开始？</h3>
+                <h3 className="text-base font-bold text-ink">确认重新开始？</h3>
                 <p className="mt-2 text-sm text-slate-500">当前已填写的所有信息将被清空，无法恢复。</p>
                 <div className="mt-5 flex items-center justify-end gap-3">
                   <button
                     onClick={() => setShowResetConfirm(false)}
-                    className="rounded-xl border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-50"
+                    className="rounded-xl border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-paper"
                   >
                     取消
                   </button>

@@ -19,12 +19,12 @@ export function CheckboxField({
 }: CheckboxFieldProps) {
   return (
     <div className={className}>
-      <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-blue-300 hover:bg-blue-50/30">
+      <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/[0.03]">
         <input
           type="checkbox"
           checked={checked}
           onChange={(e) => onChange(e.target.checked)}
-          className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+          className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue/20"
         />
         <span className="text-slate-700">
           {label}

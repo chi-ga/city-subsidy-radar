@@ -13,6 +13,18 @@ export default {
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        paper: 'hsl(var(--paper))',
+        ink: 'hsl(var(--ink))',
+        'civic-blue': {
+          DEFAULT: 'hsl(var(--civic-blue))',
+          foreground: 'hsl(var(--civic-blue-foreground))',
+        },
+        'seal-red': {
+          DEFAULT: 'hsl(var(--seal-red))',
+          foreground: 'hsl(var(--seal-red-foreground))',
+        },
+        celadon: 'hsl(var(--celadon))',
+        amber: 'hsl(var(--amber))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
@@ -48,7 +60,9 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        sans: ['Inter', 'Noto Sans SC', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Noto Sans SC', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        display: ['Noto Serif SC', 'Songti SC', 'SimSun', 'serif'],
+        data: ['Roboto Mono', 'SF Mono', 'Menlo', 'Consolas', 'monospace'],
       },
       keyframes: {
         fadeSlideIn: {
