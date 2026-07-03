@@ -479,7 +479,7 @@ export function PolicyCard({
 
   return (
     <div
-      className={`paper-texture relative rounded-xl border border-slate-200 shadow-sm transition-all ${
+      className={`paper-texture relative rounded-xl border border-slate-200 shadow-sm transition-all active:scale-[0.997] ${
         dimmed ? 'opacity-60' : 'hover:border-slate-300 hover:shadow-md'
       }`}
     >

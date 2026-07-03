@@ -38,8 +38,8 @@ export default class ErrorBoundary extends Component<Props, State> {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4.5c-.77-.833-2.694-.833-3.464 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
               </svg>
             </div>
-            <h1 className="mt-6 font-display text-xl font-bold text-ink">页面出错了</h1>
-            <p className="mt-2 text-sm text-slate-500">
+            <h1 className="mt-4 text-lg font-bold text-ink">页面出错了</h1>
+            <p className="mt-1 text-sm text-slate-500">
               应用遇到了一个意外错误，请尝试刷新页面。
             </p>
             {this.state.error && (
@@ -47,16 +47,16 @@ export default class ErrorBoundary extends Component<Props, State> {
                 {this.state.error.message}
               </p>
             )}
-            <div className="mt-6 flex justify-center gap-3">
+            <div className="mt-5 flex justify-center gap-3">
               <button
                 onClick={() => window.location.reload()}
-                className="rounded-xl bg-civic-blue px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-civic-blue/90 focus-ring"
+                className="rounded-xl bg-civic-blue px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-civic-blue/90 focus-ring"
               >
                 刷新页面
               </button>
               <button
                 onClick={this.handleReset}
-                className="rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-50 focus-ring"
+                className="rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600 shadow-sm transition-colors hover:bg-slate-50 focus-ring"
               >
                 返回首页
               </button>

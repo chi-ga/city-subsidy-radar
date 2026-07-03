@@ -4,6 +4,7 @@ import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
+import { EmptyState } from '../../components/EmptyState';
 import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
@@ -212,14 +213,25 @@ export default function Policies() {
             ))}
           </div>
         ) : (
-          <div className="mt-10 rounded-2xl border border-dashed border-slate-300 bg-white/60 px-6 py-16 text-center">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-slate-100">
-              <svg className="h-7 w-7 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <p className="mt-4 text-base font-semibold text-ink">未找到匹配政策</p>
-            <p className="mt-1 text-sm text-slate-400">请尝试调整城市、区域或补贴类型筛选条件</p>
+          <div className="mt-6">
+            <EmptyState
+              variant="inline"
+              icon={
+                <svg className="h-7 w-7 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              }
+              title="未找到匹配政策"
+              description="请尝试调整城市、区域或补贴类型筛选条件"
+              action={
+                (city || categoryFilter)
+                  ? {
+                      label: '重置筛选',
+                      onClick: () => { setCity(''); setDistrict(''); setCategoryFilter(''); },
+                    }
+                  : undefined
+              }
+            />
           </div>
         )}
       </main>

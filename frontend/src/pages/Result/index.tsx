@@ -6,6 +6,7 @@ import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems } from '../../utils/matcher';
 import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
+import { EmptyState } from '../../components/EmptyState';
 import { createPortal } from 'react-dom';
 import { useEffect, useState } from 'react';
 import type { UserProfile } from '../../types';
@@ -68,21 +69,19 @@ export default function Result() {
 
   if (!result) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-paper">
-        <div className="text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
+      <div className="flex min-h-screen items-center justify-center bg-paper p-6">
+        <EmptyState
+          icon={
             <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
             </svg>
-          </div>
-          <p className="mt-4 text-slate-600">暂无结果，请先填写信息</p>
-          <button
-            onClick={() => { clearFormCache(); navigate('/'); }}
-            className="mt-4 rounded-xl bg-civic-blue px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-civic-blue/90 focus-ring"
-          >
-            返回首页
-          </button>
-        </div>
+          }
+          title="暂无结果，请先填写信息"
+          action={{
+            label: '返回首页',
+            onClick: () => { clearFormCache(); navigate('/'); },
+          }}
+        />
       </div>
     );
   }
@@ -108,9 +107,9 @@ export default function Result() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
+      <main className="mx-auto max-w-3xl px-5 py-5 sm:px-6 sm:py-6">
         {/* Total Amount Hero */}
-        <div className="relative overflow-hidden rounded-2xl border border-civic-blue/15 bg-civic-blue px-6 py-7 text-center text-white shadow-lg shadow-civic-blue/15 sm:p-9">
+        <div className="relative overflow-hidden rounded-2xl border border-civic-blue/15 bg-civic-blue px-6 py-6 text-center text-white shadow-lg shadow-civic-blue/15 sm:p-8">
           {/* 装饰角标 */}
           <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-white/10" />
           <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-white/5" />
@@ -192,7 +191,7 @@ export default function Result() {
 
         {/* AI Interpretation */}
         {aiLoading && (
-          <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-center gap-3 text-sm text-slate-500">
               <div className="h-5 w-5 animate-spin rounded-full border-2 border-civic-blue border-t-transparent" />
               AI 正在生成个性化解读...
@@ -202,7 +201,7 @@ export default function Result() {
 
         {/* AI 解读失败提示 */}
         {!aiLoading && aiError && !aiData.interpretation && (
-          <div className="mt-6 rounded-2xl border border-amber/20 bg-amber/5 p-6 shadow-sm">
+          <div className="mt-5 rounded-2xl border border-amber/20 bg-amber/5 p-5 shadow-sm">
             <div className="flex items-center gap-2 text-sm text-amber">
               <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4.5c-.77-.833-2.694-.833-3.464 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -213,25 +212,25 @@ export default function Result() {
         )}
 
         {aiData.interpretation && (
-          <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-100">
+              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-100">
                 <svg className="h-4 w-4 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-base font-bold text-ink">AI 个性化解读</h3>
+              <h3 className="text-sm font-bold text-ink">AI 个性化解读</h3>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-slate-600">{aiData.interpretation}</p>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600">{aiData.interpretation}</p>
           </div>
         )}
 
         {/* Matched Subsidies */}
-        <div className="mt-8">
-          <h3 className="font-display text-xl font-bold text-ink">可申领补贴</h3>
-          <div className="mt-4 space-y-6">
+        <div className="mt-6">
+          <h3 className="font-display text-lg font-bold text-ink">可申领补贴</h3>
+          <div className="mt-3 space-y-5">
             {exclusiveGroups.length > 0 && (
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {exclusiveGroups.map((group) => (
                   <div key={group.groupId} className="rounded-2xl border border-amber/20 bg-amber/5 p-4">
                     <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
@@ -267,7 +266,7 @@ export default function Result() {
               </div>
             )}
             {standaloneItems.length > 0 && (
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {standaloneItems.map((item) => (
                   <PolicyCard
                     key={item.subsidy.id}
@@ -284,13 +283,13 @@ export default function Result() {
 
         {/* Reverse Match */}
         {nearMissItems.length > 0 && (
-          <div className="mt-8">
-            <h3 className="font-display text-xl font-bold text-ink">你还能拿更多</h3>
-            <div className="mt-4 space-y-3">
+          <div className="mt-6">
+            <h3 className="font-display text-lg font-bold text-ink">你还能拿更多</h3>
+            <div className="mt-3 space-y-3">
               {nearMissItems.slice(0, 3).map((item) => (
                 <div
                   key={item.subsidy.id}
-                  className="flex items-center justify-between rounded-2xl border border-civic-blue/15 bg-civic-blue/5 px-6 py-4"
+                  className="flex items-center justify-between rounded-2xl border border-civic-blue/15 bg-civic-blue/5 px-5 py-3.5"
                 >
                   <div>
                     <h4 className="font-semibold text-ink">{item.subsidy.name}</h4>
@@ -310,10 +309,10 @@ export default function Result() {
 
         {/* Pitfall Tips */}
         {aiData.pitfallTips && aiData.pitfallTips.length > 0 && (
-          <div className="mt-8">
-            <h3 className="font-display text-xl font-bold text-ink">避坑提示</h3>
-            <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="space-y-4">
+          <div className="mt-6">
+            <h3 className="font-display text-lg font-bold text-ink">避坑提示</h3>
+            <div className="mt-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div className="space-y-3">
                 {aiData.pitfallTips.map((tip, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber/15 text-xs font-bold text-amber">
@@ -329,13 +328,13 @@ export default function Result() {
 
         {/* Todo List */}
         {result.todoList.length > 0 && (
-          <div className="mt-8">
-            <h3 className="font-display text-xl font-bold text-ink">落地待办清单</h3>
-            <div className="mt-4 space-y-3">
+          <div className="mt-6">
+            <h3 className="font-display text-lg font-bold text-ink">落地待办清单</h3>
+            <div className="mt-3 space-y-3">
               {result.todoList.map((todo) => (
                 <div
                   key={todo.id}
-                  className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+                  className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
                 >
                   <input
                     type="checkbox"
@@ -411,12 +410,12 @@ export default function Result() {
 
         {/* Tier 3 专业通道：高层次人才/认定类政策入口 */}
         {professionalChannels.length > 0 && (
-          <div className="mt-8">
-            <h3 className="font-display text-xl font-bold text-ink">专业通道（需额外认定）</h3>
+          <div className="mt-6">
+            <h3 className="font-display text-lg font-bold text-ink">专业通道（需额外认定）</h3>
             <p className="mt-1 text-sm text-slate-500">
               以下政策不参与自动金额计算，需先通过人才认定或单位申报，点击查看官方渠道了解详情。
             </p>
-            <div className="mt-4 space-y-4">
+            <div className="mt-3 space-y-3">
               {professionalChannels.map((subsidy) => (
                 <PolicyCard key={subsidy.id} subsidy={subsidy} defaultExpanded={false} />
               ))}

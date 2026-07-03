@@ -6,6 +6,7 @@ import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems } from '../../utils/matcher';
 import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
+import { EmptyState } from '../../components/EmptyState';
 import type { CityCode, SubsidyCategory } from '../../constants';
 import type { MatchResultItem } from '../../types';
 
@@ -33,21 +34,19 @@ export default function Compare() {
 
   if (!compareResults) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-paper">
-        <div className="text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
+      <div className="flex min-h-screen items-center justify-center bg-paper p-6">
+        <EmptyState
+          icon={
             <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
-          </div>
-          <p className="mt-4 text-slate-600">暂无对比结果，请先填写信息</p>
-          <button
-            onClick={() => { clearFormCache(); navigate('/'); }}
-            className="mt-4 rounded-xl bg-civic-blue px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-civic-blue/90 focus-ring"
-          >
-            返回首页
-          </button>
-        </div>
+          }
+          title="暂无对比结果，请先填写信息"
+          action={{
+            label: '返回首页',
+            onClick: () => { clearFormCache(); navigate('/'); },
+          }}
+        />
       </div>
     );
   }
