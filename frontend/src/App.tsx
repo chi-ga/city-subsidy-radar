@@ -2,6 +2,7 @@ import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
 import Home from './pages/Home';
+import { FavoritesPanel } from './components/FavoritesPanel';
 import { useResultStore } from './stores';
 
 // 懒加载非首屏页面，减小首屏 bundle 体积
@@ -51,6 +52,7 @@ function App() {
           <Route path="/policies" element={<Policies />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <FavoritesPanel />
       </Suspense>
     </ErrorBoundary>
   );

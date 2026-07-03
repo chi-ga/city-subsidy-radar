@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CATEGORY_NAMES } from '../constants';
+import { useFavoritesStore } from '../stores';
 import type { Subsidy, SubsidyCategory } from '../types';
 
 // ===== 类型定义 =====
@@ -360,6 +361,8 @@ export function PolicyCard({
   defaultExpanded = false,
 }: PolicyCardProps) {
   const [expanded, setExpanded] = useState(defaultExpanded);
+  const { isFavorite, toggleFavorite } = useFavoritesStore();
+  const isFav = isFavorite(subsidy.id);
   const style = categoryStyles[subsidy.category];
   const conditionRows = getConditionRows(subsidy, showStatusBadges);
   const hasCriterionSets = !!subsidy.conditions.criterionSets && subsidy.conditions.criterionSets.length > 0;
@@ -368,9 +371,36 @@ export function PolicyCard({
   const amountDisplay = getAmountDisplay(subsidy, matchedAmount, amountBreakdown);
 
   return (
-    <div className={`overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:border-slate-300 hover:shadow-md ${dimmed ? 'opacity-60' : ''}`}>
+    <div className={`relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:border-slate-300 hover:shadow-md ${dimmed ? 'opacity-60' : ''}`}>
       {/* 顶部彩色条 */}
       <div className={`h-1.5 w-full bg-gradient-to-r ${style.gradient}`} />
+
+      {/* 收藏按钮 */}
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleFavorite({
+            id: subsidy.id,
+            city: subsidy.city,
+            name: subsidy.name,
+            category: subsidy.category,
+            amountMin: subsidy.amount.min,
+            amountMax: subsidy.amount.max,
+            unit: subsidy.amount.unit,
+            location: subsidy.application?.location,
+          });
+        }}
+        className={`absolute right-3 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full transition-all ${
+          isFav
+            ? 'text-rose-500 hover:bg-rose-50'
+            : 'text-slate-300 hover:bg-slate-100 hover:text-slate-400'
+        }`}
+        title={isFav ? '取消收藏' : '收藏'}
+      >
+        <svg className="h-[18px] w-[18px] transition-transform hover:scale-110" fill={isFav ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={isFav ? 0 : 2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+        </svg>
+      </button>
 
       {/* 头部：可点击展开 */}
       <button
