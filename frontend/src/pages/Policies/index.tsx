@@ -91,7 +91,7 @@ export default function Policies() {
         {/* Title */}
         <div className="text-center">
           <h1 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">浏览人才政策</h1>
-          <p className="mt-2 text-slate-500">按城市与区域筛选</p>
+          <p className="mt-2 text-sm text-slate-500">按城市与区域筛选</p>
         </div>
 
         {/* Filters */}

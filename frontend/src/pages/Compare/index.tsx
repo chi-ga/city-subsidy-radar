@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { useResultStore } from '../../stores';
 import { CITY_NAMES, CATEGORY_NAMES } from '../../constants';
 import { clearFormCache } from '../../utils/formCache';
-import { groupExclusiveItems } from '../../utils/matcher';
+import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/matcher';
 import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
 import { EmptyState } from '../../components/EmptyState';
 import type { CityCode, SubsidyCategory } from '../../constants';
-import type { MatchResultItem } from '../../types';
+import type { MatchResultItem, MatchResult } from '../../types';
 
 function groupByCategory(items: MatchResultItem[]): Record<SubsidyCategory, MatchResultItem[]> {
   const groups: Partial<Record<SubsidyCategory, MatchResultItem[]>> = {};
@@ -29,10 +29,20 @@ const COMPARE_COLORS = ['#1D4ED8', '#059669', '#B45309', '#7C3AED', '#0D9488', '
 
 export default function Compare() {
   const navigate = useNavigate();
-  const { compareResults } = useResultStore();
+  const { compareResults, compareExcludedCategories, toggleCompareExcludedCategory } = useResultStore();
   const [activeCity, setActiveCity] = useState<string>('');
 
-  if (!compareResults) {
+  // 根据排除分类派生过滤后的对比结果
+  const filteredCompareResults = compareResults
+    ? (Object.fromEntries(
+        Object.entries(compareResults).map(([city, result]) => [
+          city,
+          filterMatchResultByCategories(result, compareExcludedCategories),
+        ])
+      ) as Record<CityCode, MatchResult>)
+    : null;
+
+  if (!filteredCompareResults) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-paper p-6">
         <EmptyState
@@ -51,7 +61,7 @@ export default function Compare() {
     );
   }
 
-  const cityResults = Object.entries(compareResults) as [CityCode, typeof compareResults[CityCode]][];
+  const cityResults = Object.entries(filteredCompareResults) as [CityCode, typeof filteredCompareResults[CityCode]][];
   const sortedCities = cityResults.sort((a, b) => b[1].totalAmount - a[1].totalAmount);
   const maxAmount = sortedCities[0][1].totalAmount || 1;
 
@@ -83,7 +93,7 @@ export default function Compare() {
 
       <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
         <div className="text-center">
-          <h1 className="font-display text-2xl font-bold text-ink sm:text-3xl">城市补贴对比</h1>
+          <h1 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">城市补贴对比</h1>
           <p className="mt-2 text-sm text-slate-500">基于你的条件，各城市预计可拿补贴总额对比</p>
         </div>
 
@@ -93,6 +103,20 @@ export default function Compare() {
             <h3 className="text-sm font-bold text-ink">预估补贴总额（到城后预计最高可拿）</h3>
           </div>
           <div className="p-6">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-xs text-slate-400">
+                * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
+              </p>
+              <label className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs text-slate-600 transition-colors hover:bg-slate-100">
+                <input
+                  type="checkbox"
+                  className="h-3.5 w-3.5 rounded border-slate-300 text-civic-blue focus:ring-civic-blue/30"
+                  checked={compareExcludedCategories.includes('buy')}
+                  onChange={() => toggleCompareExcludedCategory('buy')}
+                />
+                <span>过滤购房补贴</span>
+              </label>
+            </div>
             <div className="space-y-5">
               {sortedCities.map(([city, result], index) => {
                 const percentage = (result.totalAmount / maxAmount) * 100;
@@ -138,9 +162,6 @@ export default function Compare() {
                 );
               })}
             </div>
-            <p className="mt-4 text-xs text-slate-400">
-              * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
-            </p>
           </div>
         </div>
 
@@ -172,19 +193,19 @@ export default function Compare() {
         </div>
 
         {/* City Detail */}
-        {activeCity && compareResults[activeCity as CityCode] && (
+        {activeCity && filteredCompareResults[activeCity as CityCode] && (
           <div className="mt-4">
             <div className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
               <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
               <div className="font-data text-xl font-extrabold text-civic-blue">
-                {compareResults[activeCity as CityCode].totalAmount.toLocaleString()}
+                {filteredCompareResults[activeCity as CityCode].totalAmount.toLocaleString()}
                 <span className="ml-1 text-sm font-medium text-slate-500">元</span>
               </div>
             </div>
 
             <div className="mt-4 space-y-8">
               {(() => {
-                const matched = compareResults[activeCity as CityCode].subsidies.filter((s) => s.matched);
+                const matched = filteredCompareResults[activeCity as CityCode].subsidies.filter((s) => s.matched);
                 const { groups: exclusiveGroups, standalone: standaloneItems } = groupExclusiveItems(matched);
                 const categoryGroups = groupByCategory(standaloneItems);
                 return (

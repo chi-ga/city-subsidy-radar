@@ -400,6 +400,7 @@ export default function Input() {
           'guangzhou',
           'hefei',
           'hangzhou',
+          'jiaxing',
           'nanjing',
           'chongqing',
           'quanzhou',
@@ -535,10 +536,10 @@ export default function Input() {
 
       <main className="mx-auto max-w-2xl px-5 py-6 sm:px-6 sm:py-10">
         <div className="text-center">
-          <h1 className="font-display text-2xl font-bold text-ink">
+          <h1 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
             {mode === 'compare' ? '城市补贴对比' : '查询可申领补贴'}
           </h1>
-          <p className="mt-2 text-slate-500">
+          <p className="mt-2 text-sm text-slate-500">
             {mode === 'compare'
               ? '输入你的信息，一键对比多城市补贴总额'
               : '输入你的信息，智能匹配可申领的补贴'}

@@ -1,5 +1,6 @@
 import type { UserProfile, Subsidy, SubsidyAmount, MatchResultItem, MatchResult, TodoItem, CriterionSet, Degree } from '../types';
 import { IMMUTABLE_CONDITION_PREFIXES, expandLevels } from '../constants';
+import type { SubsidyCategory } from '../constants';
 import {
   schoolHasTopStudentPlan,
   isDoubleFirstClassDiscipline,
@@ -641,4 +642,51 @@ export function generateTodoList(results: MatchResultItem[]): TodoItem[] {
   });
 
   return todos;
+}
+
+/**
+ * 按补贴分类过滤 MatchResult，并重新计算 totalAmount（正确处理互斥组）。
+ * 用于对比结果页动态排除购房补贴等大额单项。
+ */
+export function filterMatchResultByCategories(
+  result: MatchResult,
+  excludedCategories: SubsidyCategory[]
+): MatchResult {
+  if (!excludedCategories || excludedCategories.length === 0) return result;
+
+  const excludedSet = new Set(excludedCategories);
+  const filteredSubsidies = result.subsidies.filter(
+    (s) => !excludedSet.has(s.subsidy.category)
+  );
+
+  const matchedResults = filteredSubsidies.filter((r) => r.matched);
+
+  // 重新计算互斥组金额
+  const groupMaxAmounts: Record<string, number> = {};
+  for (const r of matchedResults) {
+    const g = r.subsidy.exclusiveGroup;
+    if (!g) continue;
+    if (!(g in groupMaxAmounts) || r.matchedAmount > groupMaxAmounts[g]) {
+      groupMaxAmounts[g] = r.matchedAmount;
+    }
+  }
+
+  const countedGroups = new Set<string>();
+  const totalAmount = matchedResults.reduce((sum, r) => {
+    const g = r.subsidy.exclusiveGroup;
+    if (g) {
+      if (!countedGroups.has(g)) {
+        countedGroups.add(g);
+        return sum + groupMaxAmounts[g];
+      }
+      return sum;
+    }
+    return sum + r.matchedAmount;
+  }, 0);
+
+  return {
+    ...result,
+    subsidies: filteredSubsidies,
+    totalAmount,
+  };
 }
