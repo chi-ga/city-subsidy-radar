@@ -79,14 +79,25 @@
     @apply outline-none ring-2 ring-civic-blue/30 ring-offset-2 ring-offset-paper;
   }
 
-  /* 纸质纹理：轻噪点 + 柔和纸白 */
+  /* 纸质纹理：极淡纤维交织 + 柔和纸白 */
   .paper-texture {
     background-color: #fffefb;
     background-image:
-      radial-gradient(circle at 15% 50%, rgba(0, 0, 0, 0.012) 1px, transparent 1px),
-      radial-gradient(circle at 85% 30%, rgba(0, 0, 0, 0.01) 1px, transparent 1px),
-      radial-gradient(circle at 50% 80%, rgba(0, 0, 0, 0.008) 1px, transparent 1px);
-    background-size: 24px 24px, 32px 32px, 40px 40px;
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 0, 0, 0.006) 1px,
+        rgba(0, 0, 0, 0.006) 2px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 0, 0, 0.004) 1px,
+        rgba(0, 0, 0, 0.004) 2px
+      );
+    background-size: 20px 20px, 20px 20px;
   }
 }
 

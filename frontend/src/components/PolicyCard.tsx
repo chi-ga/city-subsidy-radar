@@ -509,7 +509,7 @@ export function PolicyCard({
       </button>
 
       {/* 文件头 */}
-      <div className="flex items-center justify-between border-b border-slate-200/80 px-4 py-2.5 sm:px-6">
+      <div className="flex items-center justify-between px-4 py-2.5 sm:px-6">
         <div className="flex items-center gap-2">
           <span
             className={`inline-flex items-center gap-1 rounded-md ${style.light} px-2 py-0.5 text-[10px] font-semibold ${style.text} ring-1 ${style.ring} sm:text-xs`}
@@ -538,6 +538,9 @@ export function PolicyCard({
           <span className="max-w-[120px] truncate sm:max-w-[180px]">{subsidy.policySource}</span>
         </div>
       </div>
+
+      {/* 穿孔虚线：文件头与正文的分隔 */}
+      <div className="border-b border-dashed border-slate-300" />
 
       {/* 头部：可点击展开 */}
       <button
