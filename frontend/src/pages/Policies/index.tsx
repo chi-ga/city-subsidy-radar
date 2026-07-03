@@ -72,7 +72,7 @@ export default function Policies() {
     <div className="min-h-screen bg-paper">
       {/* Header */}
       <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
+        <div className="relative mx-auto flex max-w-3xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
           <button
             onClick={() => navigate('/')}
             className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 sm:px-3"
@@ -82,7 +82,7 @@ export default function Policies() {
             </svg>
             <span className="hidden sm:inline">返回首页</span>
           </button>
-          <span className="text-sm font-bold text-ink">人才政策库</span>
+          <span className="absolute left-1/2 -translate-x-1/2 text-sm font-bold text-ink">人才政策库</span>
           <FavoritesButton />
         </div>
       </header>
