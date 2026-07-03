@@ -483,14 +483,6 @@ export function PolicyCard({
         dimmed ? 'opacity-60' : 'hover:border-slate-300 hover:shadow-md'
       }`}
     >
-      {/* 顶部文件夹标签页 */}
-      <div
-        className={`absolute -top-[13px] left-4 z-10 inline-flex items-center gap-1 rounded-t-lg border border-b-0 border-slate-200 ${style.light} px-2 py-0.5 text-[10px] font-semibold ${style.text} sm:left-6 sm:text-xs`}
-      >
-        <PolicyIcon category={subsidy.category} className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-        {CATEGORY_NAMES[subsidy.category]}
-      </div>
-
       {/* 收藏按钮：右上角回形针，半出框；移动端扩大触控热区 */}
       <button
         onClick={(e) => {
@@ -520,6 +512,12 @@ export function PolicyCard({
       {/* 文件头 */}
       <div className="flex items-center justify-between px-4 py-2.5 sm:px-6">
         <div className="flex items-center gap-2">
+          <span
+            className={`inline-flex items-center gap-1 rounded-md ${style.light} px-2 py-0.5 text-[10px] font-semibold ${style.text} ring-1 ${style.ring} sm:text-xs`}
+          >
+            <PolicyIcon category={subsidy.category} className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+            {CATEGORY_NAMES[subsidy.category]}
+          </span>
           <span className="hidden text-[10px] font-medium text-slate-400 sm:inline sm:text-xs">
             {subsidy.amount.period || '一次性'}
           </span>
