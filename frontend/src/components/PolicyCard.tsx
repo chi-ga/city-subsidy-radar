@@ -483,7 +483,7 @@ export function PolicyCard({
         dimmed ? 'opacity-60' : 'hover:border-slate-300 hover:shadow-md'
       }`}
     >
-      {/* 收藏按钮：右上角回形针，半出框 */}
+      {/* 收藏按钮：右上角回形针，半出框；移动端扩大触控热区 */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -498,10 +498,11 @@ export function PolicyCard({
             location: subsidy.application?.location,
           });
         }}
-        className={`absolute -right-1.5 -top-1.5 z-10 flex h-8 w-8 items-center justify-center transition-all focus-ring ${
+        className={`absolute -right-1.5 -top-1.5 z-10 flex h-11 w-11 items-center justify-center transition-all focus-ring sm:h-8 sm:w-8 ${
           isFav ? 'text-seal-red' : 'text-slate-300 hover:text-slate-500'
         }`}
         title={isFav ? '取消收藏' : '收藏'}
+        aria-label={isFav ? '取消收藏' : '收藏'}
       >
         <svg className="h-5 w-5 transition-transform hover:scale-110" viewBox="0 0 1024 1024" fill="currentColor">
           <path d="M770.784 113.28a293.12 293.12 0 0 0-410.496 57.696L235.712 336.32a31.968 31.968 0 1 0 51.104 38.496l124.576-165.344a229.12 229.12 0 1 1 365.952 275.776l-255.36 338.88a163.84 163.84 0 0 1-261.696-197.184l255.36-338.88a98.528 98.528 0 1 1 157.408 118.624l-216.064 286.752a33.28 33.28 0 1 1-53.184-40.064c86.176-115.616 141.024-189.024 164.544-220.256a32 32 0 1 0-51.136-38.496c-23.616 31.36-78.496 104.8-164.64 220.384a97.28 97.28 0 1 0 155.456 116.96l218.912-290.496c0.992-1.344 1.312-2.912 2.08-4.32 47.36-71.104 32.224-167.456-36.896-219.552a162.56 162.56 0 0 0-227.648 32l-255.36 338.88a227.84 227.84 0 0 0 363.904 274.24l255.36-338.88a293.056 293.056 0 0 0-57.6-410.56z" />
@@ -551,7 +552,7 @@ export function PolicyCard({
           <p className="mr-1 line-clamp-2 text-base font-bold text-ink sm:text-lg">{subsidy.name}</p>
           {/* 移动端：金额在标题下方 */}
           <div className="mt-2 sm:hidden">
-            <span className={`font-data text-base font-bold ${isMatched ? 'text-seal-red' : style.text}`}>
+            <span className={`font-data text-base font-bold ${isMatched ? 'text-civic-blue' : style.text}`}>
               {amountDisplay.main}
               {amountDisplay.unit && <span className="ml-0.5 text-[10px] font-medium text-slate-500">{amountDisplay.unit}</span>}
             </span>
@@ -560,7 +561,7 @@ export function PolicyCard({
         </div>
         {/* 桌面端：金额在右侧 */}
         <div className="ml-3 hidden shrink-0 flex-col items-end sm:ml-4 sm:flex">
-          <span className={`font-data text-lg font-bold ${isMatched ? 'text-seal-red' : style.text} sm:text-xl`}>
+          <span className={`font-data text-lg font-bold ${isMatched ? 'text-civic-blue' : style.text} sm:text-xl`}>
             {amountDisplay.main}
             {amountDisplay.unit && <span className="ml-0.5 text-[10px] font-medium text-slate-500 sm:text-xs">{amountDisplay.unit}</span>}
           </span>

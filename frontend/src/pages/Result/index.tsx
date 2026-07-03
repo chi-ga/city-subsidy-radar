@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import { useResultStore, useUserStore } from '../../stores';
 import { useAIInterpret, useSubsidyMatch } from '../../hooks';
 import { useConfigStore } from '../../stores';
-import { CITY_NAMES } from '../../constants';
 import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems } from '../../utils/matcher';
 import { PolicyCard } from '../../components/PolicyCard';
@@ -29,49 +28,6 @@ export default function Result() {
     pitfallTips?: string[];
   }>({});
   const [showBreakdown, setShowBreakdown] = useState(false);
-  const [shareToast, setShareToast] = useState(false);
-
-  // 生成分享文本
-  const buildShareText = () => {
-    if (!result || !profile) return '';
-    const city = profile.city ? CITY_NAMES[profile.city] : '多城市';
-    const lines = [
-      `【城市补贴雷达 · ${city}】`,
-      `预估可申领总金额：${result.totalAmount.toLocaleString()} 元`,
-      `已匹配 ${matchedItems.length} 项补贴：`,
-      ...matchedItems.map((item) => `  · ${item.subsidy.name} — ${item.matchedAmount.toLocaleString()}元`),
-      '',
-      '数据仅供参考，以各地人社局最新政策为准。',
-    ];
-    return lines.join('\n');
-  };
-
-  // 分享
-  const handleShare = async () => {
-    const text = buildShareText();
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: '城市补贴雷达', text });
-      } catch { /* 用户取消 */ }
-    } else {
-      await navigator.clipboard.writeText(text);
-      setShareToast(true);
-      setTimeout(() => setShareToast(false), 2000);
-    }
-  };
-
-  // 导出为文本文件
-  const handleExport = () => {
-    const text = buildShareText();
-    if (!text) return;
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `城市补贴雷达_${profile?.city ? CITY_NAMES[profile.city] : '结果'}.txt`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
 
   // 进入页面时滚动到顶部
   useEffect(() => {
@@ -146,24 +102,6 @@ export default function Result() {
               </svg>
               <span className="hidden sm:inline">重新查询</span>
             </button>
-            <button
-              onClick={handleShare}
-              className="flex items-center gap-1 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus-ring"
-              title="分享结果"
-            >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-              </svg>
-            </button>
-            <button
-              onClick={handleExport}
-              className="flex items-center gap-1 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus-ring"
-              title="导出清单"
-            >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </button>
             <FavoritesButton />
           </div>
           <span className="text-sm font-bold text-ink">补贴结果</span>
@@ -172,7 +110,7 @@ export default function Result() {
 
       <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
         {/* Total Amount Hero */}
-        <div className="relative overflow-hidden rounded-2xl border border-seal-red/15 bg-seal-red px-6 py-7 text-center text-white shadow-lg shadow-seal-red/15 sm:p-9">
+        <div className="relative overflow-hidden rounded-2xl border border-civic-blue/15 bg-civic-blue px-6 py-7 text-center text-white shadow-lg shadow-civic-blue/15 sm:p-9">
           {/* 装饰角标 */}
           <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-white/10" />
           <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-white/5" />
@@ -219,7 +157,7 @@ export default function Result() {
                       <div key={item.subsidy.id} className="rounded-xl border border-slate-100 bg-paper p-4">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-semibold text-ink">{item.subsidy.name}</span>
-                          <span className="font-data text-lg font-semibold text-seal-red">
+                          <span className="font-data text-lg font-semibold text-civic-blue">
                             {item.matchedAmount.toLocaleString()}
                           </span>
                         </div>
@@ -229,7 +167,7 @@ export default function Result() {
                   </div>
                   <div className="mt-4 flex items-center justify-between border-t border-slate-200 pt-4">
                     <span className="text-sm font-semibold text-ink">合计</span>
-                    <span className="font-data text-xl font-semibold text-seal-red">{result.totalAmount.toLocaleString()}</span>
+                    <span className="font-data text-xl font-semibold text-civic-blue">{result.totalAmount.toLocaleString()}</span>
                   </div>
                 </div>
               </div>,
@@ -352,14 +290,14 @@ export default function Result() {
               {nearMissItems.slice(0, 3).map((item) => (
                 <div
                   key={item.subsidy.id}
-                  className="flex items-center justify-between rounded-2xl border border-amber/20 bg-amber/5 px-6 py-4"
+                  className="flex items-center justify-between rounded-2xl border border-civic-blue/15 bg-civic-blue/5 px-6 py-4"
                 >
                   <div>
                     <h4 className="font-semibold text-ink">{item.subsidy.name}</h4>
                     <p className="mt-1 text-sm text-slate-600">还差：{item.missingConditions.join('；')}</p>
                   </div>
                   <div className="text-right">
-                    <span className="font-data text-sm font-bold text-amber">
+                    <span className="font-data text-sm font-bold text-civic-blue">
                       最高 {item.subsidy.amount.max.toLocaleString()}
                       {item.subsidy.amount.unit}
                     </span>
@@ -487,12 +425,6 @@ export default function Result() {
         )}
       </main>
 
-      {/* 复制成功提示 */}
-      {shareToast && (
-        <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full bg-ink px-4 py-2 text-sm font-medium text-white shadow-lg">
-          已复制到剪贴板
-        </div>
-      )}
     </div>
   );
 }

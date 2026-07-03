@@ -198,8 +198,10 @@ function PathCard({ onClick, icon, color, title, description }: PathCardProps) {
   return (
     <button
       onClick={onClick}
-      className={`group flex h-[104px] w-full shrink-0 items-center gap-3 rounded-xl border border-slate-200 bg-white p-3.5 text-left shadow-sm transition-all ${c.borderHover} hover:shadow-md sm:gap-4 lg:h-24 lg:p-3.5`}
+      className={`group relative flex h-[104px] w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-3.5 pl-4 text-left shadow-sm transition-all ${c.borderHover} hover:shadow-md sm:gap-4 lg:h-24 lg:p-3.5 lg:pl-4`}
     >
+      {/* 左侧微色块：与图标色系呼应 */}
+      <div className={`absolute left-0 top-0 h-full w-1 ${c.bg} opacity-70`} />
       <div
         className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${c.iconBg} ${c.iconText} sm:h-11 sm:w-11`}
       >
