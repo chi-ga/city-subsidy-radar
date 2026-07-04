@@ -98,24 +98,10 @@
 
   /* 纸质纹理：极淡纤维交织 + 柔和纸白 */
   .paper-texture {
-    background-color: #fffefb;
-    background-image:
-      repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 1px,
-        rgba(0, 0, 0, 0.006) 1px,
-        rgba(0, 0, 0, 0.006) 2px
-      ),
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 1px,
-        rgba(0, 0, 0, 0.004) 1px,
-        rgba(0, 0, 0, 0.004) 2px
-      );
-    background-size: 20px 20px, 20px 20px;
-  }
+  background-color: #fffefb;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
 }
 
 @layer utilities {

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { ChevronDownIcon } from '../icons';
 
 interface SelectFieldProps {
   label: string;
@@ -53,15 +54,7 @@ export function SelectField({
           >
             {children}
           </select>
-          <svg
-            className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
+          <ChevronDownIcon className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
         </div>
         {error && <p className="mt-1.5 text-xs text-seal-red">{error}</p>}
       </div>

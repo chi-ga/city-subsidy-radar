@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useFavoritesStore } from '../stores';
 import { CITY_NAMES, CATEGORY_NAMES } from '../constants';
+import { XMarkIcon } from './icons';
 import type { CityCode, SubsidyCategory } from '../constants';
 
 export function FavoritesPanel() {
@@ -40,9 +41,7 @@ export function FavoritesPanel() {
               className="ml-2 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-seal-red/10 hover:text-seal-red focus-ring"
               title="取消收藏"
             >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <XMarkIcon className="h-4 w-4" />
             </button>
           </div>
         ))}

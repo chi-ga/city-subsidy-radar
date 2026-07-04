@@ -3,6 +3,7 @@ import { ChinaMap } from '../../components/Map';
 import { GitHubPromo } from '../../components/GitHubPromo';
 import { FavoritesButton } from '../../components/FavoritesButton';
 import { CITY_NAMES } from '../../constants';
+import { MagnifyingGlassIcon, ScaleIcon, DocumentTextIcon, ChevronRightIcon } from '../../components/icons';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -87,11 +88,7 @@ export default function Home() {
             <div className="mt-8 flex shrink-0 flex-col justify-center space-y-3.5 lg:mt-5 lg:space-y-3">
               <PathCard
                 onClick={handlePathA}
-                icon={
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                }
+                icon={<MagnifyingGlassIcon className="h-5 w-5" />}
                 color="civic-blue"
                 title="我能拿到什么"
                 description="选择目标城市，智能匹配全部可领补贴"
@@ -99,11 +96,7 @@ export default function Home() {
 
               <PathCard
                 onClick={handlePathB}
-                icon={
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                }
+                icon={<ScaleIcon className="h-5 w-5" />}
                 color="celadon"
                 title="哪个城市对我更好"
                 description="一键对比多城市补贴总额，数据帮你做决策"
@@ -111,11 +104,7 @@ export default function Home() {
 
               <PathCard
                 onClick={handlePathC}
-                icon={
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                  </svg>
-                }
+                icon={<DocumentTextIcon className="h-5 w-5" />}
                 color="amber"
                 title="查看政策"
                 description="按城市、区域浏览全部人才政策"
@@ -201,14 +190,9 @@ function PathCard({ onClick, icon, color, title, description }: PathCardProps) {
         <h3 className="text-base font-bold text-ink sm:text-base">{title}</h3>
         <p className="mt-1 text-sm leading-snug text-slate-500 sm:text-sm">{description}</p>
       </div>
-      <svg
+      <ChevronRightIcon
         className={`h-5 w-5 shrink-0 ${c.arrow} transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5`}
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-      </svg>
+      />
     </button>
   );
 }

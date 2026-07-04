@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as echarts from 'echarts';
 import { MAP_CACHE_KEY, MAP_CACHE_EXPIRY } from '../../constants';
+import { RadarSpinner } from '../RadarSpinner';
 
 interface ChinaMapProps {
   onCityClick?: (cityCode: string) => void;
@@ -120,13 +121,21 @@ function setCachedMapData(data: unknown[]): void {
 
 export default function ChinaMap({ onCityClick }: ChinaMapProps) {
   const chartRef = useRef<HTMLDivElement>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!chartRef.current) return;
 
-    const chart = echarts.init(chartRef.current!, undefined, {
-      renderer: 'canvas',
-    });
+    const initChart = () => {
+      if (!chartRef.current) return null;
+      return echarts.init(chartRef.current, undefined, { renderer: 'canvas' });
+    };
+
+    const chart = initChart();
+    if (!chart) return;
+
+    let cleanup: (() => void) | null = null;
 
     // 尝试从缓存获取地图数据
     const cachedData = getCachedMapData();
@@ -254,6 +263,7 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
         };
 
         chart.setOption(option);
+        setLoading(false);
 
         chart.on('click', (params: unknown) => {
           const event = params as { data?: { code?: string } };
@@ -266,27 +276,42 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
         const handleResize = () => chart.resize();
         window.addEventListener('resize', handleResize);
 
-        return () => {
+        cleanup = () => {
           window.removeEventListener('resize', handleResize);
           chart.dispose();
         };
       })
       .catch((err) => {
         console.error('地图加载失败:', err);
-        if (chartRef.current) {
-          chartRef.current.innerHTML = `
-            <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#94a3b8">
-              地图加载失败，请刷新重试
-            </div>
-          `;
-        }
+        setError('地图加载失败，请刷新重试');
+        setLoading(false);
       });
+
+    return () => {
+      cleanup?.();
+    };
   }, [onCityClick]);
 
+  if (error) {
+    return (
+      <div
+        className="flex items-center justify-center text-sm text-slate-500"
+        style={{ width: '100%', height: '100%', minHeight: '500px' }}
+      >
+        {error}
+      </div>
+    );
+  }
+
   return (
-    <div
-      ref={chartRef}
-      style={{ width: '100%', height: '100%', minHeight: '500px' }}
-    />
+    <div className="relative" style={{ width: '100%', height: '100%', minHeight: '500px' }}>
+      {loading && (
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-paper/80 backdrop-blur-sm">
+          <RadarSpinner className="h-8 w-8" />
+          <span className="text-sm font-medium text-slate-500">正在加载城市地图数据...</span>
+        </div>
+      )}
+      <div ref={chartRef} style={{ width: '100%', height: '100%', minHeight: '500px' }} />
+    </div>
   );
 }

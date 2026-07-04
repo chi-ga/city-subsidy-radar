@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useConfigStore } from '../../stores';
 import { clearFormCache } from '../../utils/formCache';
+import { PageHeader } from '../../components/PageHeader';
 
 interface Provider {
   id: string;
@@ -109,27 +110,12 @@ export default function Settings() {
 
   return (
     <div className="min-h-screen bg-paper">
-      <header className="sticky top-0 z-10 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
-          <button
-            onClick={() => { clearFormCache(); navigate('/'); }}
-            className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus-ring"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            返回首页
-          </button>
-          <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-700 shadow-sm shadow-slate-700/30">
-              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <span className="text-sm font-bold text-slate-800">AI 服务商</span>
-          </div>
-        </div>
-      </header>
+      <PageHeader
+        title="AI 服务商"
+        backLabel="返回首页"
+        showFavorites={false}
+        onBack={() => { clearFormCache(); navigate('/'); }}
+      />
 
       <main className="mx-auto max-w-2xl px-6 py-8">
         <div className="space-y-5">

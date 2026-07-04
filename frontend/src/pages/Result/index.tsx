@@ -7,8 +7,18 @@ import { groupExclusiveItems } from '../../utils/matcher';
 import { CATEGORY_NAMES } from '../../constants';
 import type { SubsidyCategory } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
-import { FavoritesButton } from '../../components/FavoritesButton';
+import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
+import {
+  ClipboardDocumentListIcon,
+  XMarkIcon,
+  CheckBadgeIcon,
+  MapPinIcon,
+  ExclamationTriangleIcon,
+  LightningBoltIcon,
+  ClockIcon,
+  ExternalLinkIcon,
+} from '../../components/icons';
 import { AnimatedNumber } from '../../components/AnimatedNumber';
 import { RadarSpinner } from '../../components/RadarSpinner';
 import { createPortal } from 'react-dom';
@@ -48,14 +58,14 @@ export default function Result() {
   const nearMissItems = result?.nearMissItems || [];
 
   const CATEGORY_COLORS: Record<SubsidyCategory, string> = {
-    living: '#f59e0b',
-    employment: '#f59e0b',
-    other: '#f59e0b',
-    rent: '#2563eb',
-    buy: '#7c3aed',
-    settlement: '#7c3aed',
-    talent: '#059669',
-    startup: '#0891b2',
+    living: 'hsl(var(--amber))',
+    employment: 'hsl(var(--amber))',
+    other: 'hsl(var(--muted-foreground))',
+    rent: 'hsl(var(--civic-blue))',
+    buy: 'hsl(var(--civic-blue))',
+    settlement: 'hsl(var(--civic-blue))',
+    talent: 'hsl(var(--celadon))',
+    startup: 'hsl(var(--amber))',
   };
 
   const categoryAmounts = matchedItems.reduce((acc, item) => {
@@ -94,11 +104,7 @@ export default function Result() {
     return (
       <div className="flex min-h-screen items-center justify-center bg-paper p-6">
         <EmptyState
-          icon={
-            <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-            </svg>
-          }
+          icon={<ClipboardDocumentListIcon className="h-8 w-8 text-slate-400" />}
           title="暂无结果，请先填写信息"
           action={{
             label: '返回首页',
@@ -111,24 +117,11 @@ export default function Result() {
 
   return (
     <div className="min-h-screen bg-paper">
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
-          <div className="flex items-center gap-1">
-            <button
-              onClick={() => navigate('/input?mode=single')}
-              className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus-ring sm:px-3"
-            >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              <span className="hidden sm:inline">重新查询</span>
-            </button>
-            <FavoritesButton />
-          </div>
-          <span className="text-sm font-bold text-ink">补贴结果</span>
-        </div>
-      </header>
+      <PageHeader
+        title="补贴结果"
+        backTo="/input?mode=single"
+        backLabel="重新查询"
+      />
 
       <main className="mx-auto max-w-3xl px-5 py-5 sm:px-6 sm:py-6">
         {/* Total Amount Hero */}
@@ -169,9 +162,7 @@ export default function Result() {
                       onClick={() => setShowBreakdown(false)}
                       className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600 focus-ring"
                     >
-                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
+                      <XMarkIcon className="h-5 w-5" />
                     </button>
                   </div>
                   <div className="mt-4 space-y-3">
@@ -223,20 +214,18 @@ export default function Result() {
           )}
 
           <div className="relative mt-5 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm backdrop-blur-sm">
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+            <CheckBadgeIcon className="h-4 w-4" />
             已匹配 {matchedItems.length} 项补贴
           </div>
           {profile?.district && (
             <div className="relative mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-xs font-medium backdrop-blur-sm">
-              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              </svg>
-              区域范围：{profile.district} 及市级
+              <MapPinIcon className="h-3 w-3" />
+            区域范围：{profile.district} 及市级
             </div>
           )}
         </div>
+
+        <div className="mt-6 border-t border-slate-200/80" />
 
         {/* AI Interpretation */}
         {aiLoading && (
@@ -252,9 +241,7 @@ export default function Result() {
         {!aiLoading && aiError && !aiData.interpretation && (
           <div className="mt-5 rounded-2xl border border-amber/20 bg-amber/5 p-5 shadow-sm">
             <div className="flex items-center gap-2 text-sm text-amber">
-              <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4.5c-.77-.833-2.694-.833-3.464 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
+              <ExclamationTriangleIcon className="h-5 w-5 shrink-0" />
               <span>AI 解读暂不可用（{aiError}），以下为规则匹配结果。你可以在设置中检查 API 配置后重试。</span>
             </div>
           </div>
@@ -264,9 +251,7 @@ export default function Result() {
           <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-100">
-                <svg className="h-4 w-4 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+                <LightningBoltIcon className="h-4 w-4 text-violet-600" />
               </div>
               <h3 className="text-sm font-bold text-ink">AI 个性化解读</h3>
             </div>
@@ -332,8 +317,8 @@ export default function Result() {
 
         {/* Reverse Match */}
         {nearMissItems.length > 0 && (
-          <div className="mt-6">
-            <h3 className="font-display text-lg font-bold text-ink">你还能拿更多</h3>
+          <div className="mt-8">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">差一步即可申领</h3>
             <div className="mt-3 space-y-3">
               {nearMissItems.slice(0, 3).map((item) => (
                 <div
@@ -358,8 +343,8 @@ export default function Result() {
 
         {/* Pitfall Tips */}
         {aiData.pitfallTips && aiData.pitfallTips.length > 0 && (
-          <div className="mt-6">
-            <h3 className="font-display text-lg font-bold text-ink">避坑提示</h3>
+          <div className="mt-8">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">避坑提示</h3>
             <div className="mt-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="space-y-3">
                 {aiData.pitfallTips.map((tip, index) => (
@@ -377,8 +362,8 @@ export default function Result() {
 
         {/* Todo List */}
         {result.todoList.length > 0 && (
-          <div className="mt-6">
-            <h3 className="font-display text-lg font-bold text-ink">落地待办清单</h3>
+          <div className="mt-8">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">落地待办清单</h3>
             <div className="mt-3 space-y-3">
               {result.todoList.map((todo) => (
                 <div
@@ -395,9 +380,7 @@ export default function Result() {
                     <p className="text-sm font-semibold text-ink">{todo.title}</p>
                     <div className="mt-1.5 flex flex-wrap gap-3 text-xs text-slate-500">
                       <span className="inline-flex items-center gap-1">
-                        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <ClockIcon className="h-3 w-3" />
                         {todo.deadline}
                       </span>
                       {(() => {
@@ -411,18 +394,14 @@ export default function Result() {
                               rel="noopener noreferrer"
                               className="inline-flex items-center gap-1 text-civic-blue hover:underline"
                             >
-                              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                              </svg>
-                              点击访问
+                              <ExternalLinkIcon className="h-3 w-3" />
+                              查看办理入口
                             </a>
                           );
                         }
                         return (
                           <span className="inline-flex items-center gap-1">
-                            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            </svg>
+                            <MapPinIcon className="h-3 w-3" />
                             {todo.channel}
                           </span>
                         );
@@ -459,8 +438,8 @@ export default function Result() {
 
         {/* Tier 3 专业通道：高层次人才/认定类政策入口 */}
         {professionalChannels.length > 0 && (
-          <div className="mt-6">
-            <h3 className="font-display text-lg font-bold text-ink">专业通道（需额外认定）</h3>
+          <div className="mt-8">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">专业通道（需额外认定）</h3>
             <p className="mt-1 text-sm text-slate-500">
               以下政策不参与自动金额计算，需先通过人才认定或单位申报，点击查看官方渠道了解详情。
             </p>

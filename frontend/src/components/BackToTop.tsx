@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { ArrowUpIcon } from './icons';
 
 export function BackToTop() {
   const [visible, setVisible] = useState(false);
@@ -25,15 +26,7 @@ export function BackToTop() {
         visible ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0 pointer-events-none'
       }`}
     >
-      <svg
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={2}
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-      </svg>
+      <ArrowUpIcon className="h-5 w-5" />
     </button>
   );
 }

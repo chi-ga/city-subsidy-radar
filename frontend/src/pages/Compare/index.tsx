@@ -5,8 +5,9 @@ import { CITY_NAMES, CATEGORY_NAMES } from '../../constants';
 import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/matcher';
 import { PolicyCard } from '../../components/PolicyCard';
-import { FavoritesButton } from '../../components/FavoritesButton';
+import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
+import { ScaleIcon, ArrowLeftIcon, ChevronRightIcon } from '../../components/icons';
 import { CompareBuyFilterButton } from '../../components/CompareBuyFilterButton';
 import { AnimatedNumber } from '../../components/AnimatedNumber';
 import type { CityCode, SubsidyCategory } from '../../constants';
@@ -27,7 +28,16 @@ function groupByCategory(items: MatchResultItem[]): Record<SubsidyCategory, Matc
 
 const CATEGORY_ORDER: SubsidyCategory[] = ['living', 'settlement', 'rent', 'buy', 'talent', 'startup', 'employment', 'other'];
 
-const COMPARE_COLORS = ['#1D4ED8', '#059669', '#B45309', '#7C3AED', '#0D9488', '#DC2626', '#374151', '#6B7280'];
+const COMPARE_COLORS = [
+  'hsl(var(--civic-blue))',
+  'hsl(var(--celadon))',
+  'hsl(var(--amber))',
+  'hsl(var(--seal-red))',
+  'hsl(260 60% 55%)',
+  'hsl(190 80% 35%)',
+  'hsl(40 90% 45%)',
+  'hsl(340 70% 50%)',
+];
 
 export default function Compare() {
   const navigate = useNavigate();
@@ -79,11 +89,7 @@ export default function Compare() {
     return (
       <div className="flex min-h-screen items-center justify-center bg-paper p-6">
         <EmptyState
-          icon={
-            <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-          }
+          icon={<ScaleIcon className="h-8 w-8 text-slate-400" />}
           title="暂无对比结果，请先填写信息"
           action={{
             label: '返回首页',
@@ -105,24 +111,11 @@ export default function Compare() {
 
   return (
     <div className="min-h-screen bg-paper">
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
-          <div className="flex items-center gap-1">
-            <button
-              onClick={() => { navigate('/input?mode=compare'); }}
-              className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus-ring sm:px-3"
-            >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              <span className="hidden sm:inline">重新对比</span>
-            </button>
-            <FavoritesButton />
-          </div>
-          <span className="text-sm font-bold text-ink">城市对比</span>
-        </div>
-      </header>
+      <PageHeader
+        title="城市对比"
+        backTo="/input?mode=compare"
+        backLabel="重新对比"
+      />
 
       <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
         <div className="text-center">
@@ -177,7 +170,7 @@ export default function Compare() {
                     <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-slate-100">
                       <div
                         className="h-full rounded-full transition-all duration-700"
-                        style={{ width: `${percentage}%`, backgroundColor: isTop ? color : '#cbd5e1' }}
+                        style={{ width: `${percentage}%`, backgroundColor: isTop ? color : 'hsl(var(--border))' }}
                       />
                     </div>
                     <div className="mt-1 text-xs text-slate-400">
@@ -192,18 +185,22 @@ export default function Compare() {
 
         {/* Rank Chips */}
         <div className="mt-8">
-          <label className="mb-3 block text-sm font-semibold text-ink">查看城市明细</label>
+          <label className="mb-3 block text-sm font-semibold text-ink">选择城市查看明细</label>
           <div className="relative">
+            {canScrollLeft && (
+              <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-6 bg-gradient-to-r from-white to-transparent sm:w-8" />
+            )}
+            {canScrollRight && (
+              <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-6 bg-gradient-to-l from-white to-transparent sm:w-8" />
+            )}
             {canScrollLeft && (
               <button
                 type="button"
                 onClick={() => scrollBy('left')}
                 aria-label="向左滚动"
-                className="absolute -left-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm transition-colors hover:border-slate-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-civic-blue/30 sm:-left-4"
+                className="absolute -left-3 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm transition-colors hover:border-slate-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-civic-blue/30 sm:-left-4"
               >
-                <svg className="h-4 w-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
+                <ArrowLeftIcon className="h-4 w-4 text-slate-600" />
               </button>
             )}
             <div
@@ -248,11 +245,9 @@ export default function Compare() {
                 type="button"
                 onClick={() => scrollBy('right')}
                 aria-label="向右滚动"
-                className="absolute -right-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm transition-colors hover:border-slate-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-civic-blue/30 sm:-right-4"
+                className="absolute -right-3 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm transition-colors hover:border-slate-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-civic-blue/30 sm:-right-4"
               >
-                <svg className="h-4 w-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
+                <ChevronRightIcon className="h-4 w-4 text-slate-600" />
               </button>
             )}
           </div>
