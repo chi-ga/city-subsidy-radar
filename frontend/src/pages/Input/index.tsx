@@ -711,15 +711,45 @@ export default function Input() {
                 className="block w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
               />
               {activeConditions.schoolLevel && formData.schoolLevel && formData.schoolLevel.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {formData.schoolLevel.map((level) => (
-                    <span
-                      key={level}
-                      className="inline-flex items-center rounded-lg bg-civic-blue/5 px-2.5 py-1 text-xs font-medium text-civic-blue"
-                    >
-                      {level}
-                    </span>
-                  ))}
+                <div className="mt-2 flex flex-wrap items-center gap-2">
+                  {(() => {
+                    const domestic = formData.schoolLevel.filter((l) => ['985', '211', '双一流'].includes(l));
+                    const rankings = formData.schoolLevel.filter((l) => /前\d+/.test(l));
+                    return (
+                      <>
+                        {domestic.length > 0 && (
+                          <div className="flex flex-wrap gap-1.5">
+                            {domestic.map((level) => (
+                              <span
+                                key={level}
+                                className="inline-flex items-center rounded-md bg-civic-blue/5 px-2 py-0.5 text-xs font-medium text-civic-blue ring-1 ring-civic-blue/10"
+                              >
+                                {level}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                        {rankings.length > 0 && (
+                          <>
+                            {domestic.length > 0 && <span className="text-xs text-slate-300">·</span>}
+                            <div className="flex flex-wrap gap-1.5">
+                              {rankings.map((level) => (
+                                <span
+                                  key={level}
+                                  className="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200"
+                                >
+                                  <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  {level}
+                                </span>
+                              ))}
+                            </div>
+                          </>
+                        )}
+                      </>
+                    );
+                  })()}
                 </div>
               )}
               {showSchoolDropdown && (schoolSearching || results.length > 0) && (
@@ -734,18 +764,32 @@ export default function Input() {
                       <button
                         key={school.id}
                         onClick={() => handleSchoolSelect(school.name, school.levels)}
-                        className="flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors hover:bg-paper"
+                        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left text-sm transition-colors hover:bg-paper"
                       >
                         <span className="font-medium text-slate-800">{school.name}</span>
-                        <div className="flex gap-1">
-                          {deduplicateLevels(school.levels).map((level) => (
-                            <span
-                              key={level}
-                              className="rounded-md bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500"
-                            >
-                              {level}
-                            </span>
-                          ))}
+                        <div className="flex shrink-0 flex-wrap items-center justify-end gap-1">
+                          {(() => {
+                            const levels = deduplicateLevels(school.levels);
+                            const domestic = levels.filter((l) => ['985', '211', '双一流'].includes(l));
+                            const hasRanking = levels.some((l) => /前\d+/.test(l));
+                            return (
+                              <>
+                                {domestic.slice(0, 2).map((level) => (
+                                  <span
+                                    key={level}
+                                    className="rounded-md bg-slate-100 px-1.5 py-0.5 text-xs text-slate-500"
+                                  >
+                                    {level}
+                                  </span>
+                                ))}
+                                {hasRanking && (
+                                  <span className="rounded-md bg-emerald-50 px-1.5 py-0.5 text-xs font-medium text-emerald-600">
+                                    世界前100
+                                  </span>
+                                )}
+                              </>
+                            );
+                          })()}
                         </div>
                       </button>
                     ))
