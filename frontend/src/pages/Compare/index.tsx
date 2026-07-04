@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useResultStore } from '../../stores';
 import { CITY_NAMES, CATEGORY_NAMES } from '../../constants';
 import { clearFormCache } from '../../utils/formCache';
@@ -41,9 +41,12 @@ const COMPARE_COLORS = [
 
 export default function Compare() {
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const cityFromUrl = searchParams.get('city') as CityCode | null;
   const { compareResults, compareExcludedCategories } = useResultStore();
   const [activeCity, setActiveCity] = useState<string>('');
   const scrollRef = useRef<HTMLDivElement>(null);
+  const detailRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
 
@@ -104,10 +107,25 @@ export default function Compare() {
   const sortedCities = cityResults.sort((a, b) => b[1].totalAmount - a[1].totalAmount);
   const maxAmount = sortedCities[0][1].totalAmount || 1;
 
-  // 默认选中金额最高的城市
-  if (!activeCity && sortedCities.length > 0) {
-    setActiveCity(sortedCities[0][0]);
-  }
+  // 初始化活跃城市：URL 指定 > 金额最高
+  useEffect(() => {
+    if (cityFromUrl && filteredCompareResults[cityFromUrl]) {
+      setActiveCity(cityFromUrl);
+    } else if (!activeCity && sortedCities.length > 0) {
+      setActiveCity(sortedCities[0][0]);
+    }
+  }, [cityFromUrl, filteredCompareResults]);
+
+  // 从其他页返回并指定城市时，滚动到对应详情
+  useEffect(() => {
+    if (cityFromUrl && activeCity === cityFromUrl && detailRef.current) {
+      detailRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // 滚动后清除 URL 中的 city 参数，避免刷新时再次滚动
+      const params = new URLSearchParams(searchParams);
+      params.delete('city');
+      setSearchParams(params, { replace: true });
+    }
+  }, [cityFromUrl, activeCity]);
 
   return (
     <div className="min-h-screen bg-paper">
@@ -255,14 +273,14 @@ export default function Compare() {
 
         {/* City Detail */}
         {activeCity && filteredCompareResults[activeCity as CityCode] && (
-          <div key={activeCity} className="mt-4 animate-fade-in">
+          <div ref={detailRef} key={activeCity} className="mt-4 animate-fade-in">
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
               <div>
                 <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
                 <div className="mt-1.5 flex flex-wrap items-center gap-4">
                   <button
                     type="button"
-                    onClick={() => navigate(`/input?mode=single&city=${activeCity}`)}
+                    onClick={() => navigate(`/input?mode=single&city=${activeCity}&from=compare`)}
                     className="group inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
                   >
                     <MagnifyingGlassIcon className="h-3 w-3 transition-transform group-hover:scale-110" />

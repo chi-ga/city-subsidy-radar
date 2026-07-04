@@ -29,6 +29,8 @@ export default function Input() {
   const [searchParams] = useSearchParams();
   const mode = searchParams.get('mode') || 'single';
   const preselectedCity = searchParams.get('city') as CityCode | undefined;
+  const from = searchParams.get('from') || '';
+  const isFromCompare = from === 'compare';
 
   const { setLoading, setResult, setCompareResults, setError, error: matchError, isLoading } = useResultStore();
   const { setProfile, resetProfile } = useUserStore();
@@ -510,13 +512,19 @@ export default function Input() {
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-5 py-3 sm:px-6 sm:py-4">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => {
+              if (isFromCompare && formData.city) {
+                navigate(`/compare?city=${formData.city}`);
+              } else {
+                navigate('/');
+              }
+            }}
             className="flex shrink-0 items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 sm:px-3"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            <span className="hidden sm:inline">返回首页</span>
+            <span className="hidden sm:inline">{isFromCompare ? '返回对比' : '返回首页'}</span>
           </button>
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <button
