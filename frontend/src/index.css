@@ -10,6 +10,13 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  .bottom-safe {
+    bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  }
+  .bottom-safe-7 {
+    bottom: calc(1.75rem + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 @layer base {

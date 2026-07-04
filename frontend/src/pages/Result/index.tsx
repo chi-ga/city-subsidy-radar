@@ -143,9 +143,9 @@ export default function Result() {
             onClick={() => setShowBreakdown((v) => !v)}
             className="relative mt-2 block w-full cursor-pointer text-center focus:outline-none"
           >
-            <div className="font-data text-5xl font-semibold tracking-tight transition-opacity hover:opacity-90 sm:text-6xl">
+            <div className="font-data text-4xl font-semibold tracking-tight transition-opacity hover:opacity-90 sm:text-5xl lg:text-6xl">
               <AnimatedNumber value={result.totalAmount} />
-              <span className="ml-1 text-xl font-medium sm:text-2xl">元</span>
+              <span className="ml-1 text-lg font-medium sm:text-xl lg:text-2xl">元</span>
             </div>
             <div className="mt-1 text-xs text-white/70">
               {showBreakdown ? '点击收起明细' : '点击查看计算明细'}

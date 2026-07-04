@@ -5,7 +5,7 @@ export function CompareBuyFilterButton() {
   const isFiltered = compareExcludedCategories.includes('buy');
 
   return (
-    <div className="group fixed bottom-5 right-20 z-40 sm:bottom-6 sm:right-24">
+    <div className="group fixed bottom-safe right-20 z-40 sm:right-24">
       <button
         type="button"
         onClick={() => toggleCompareExcludedCategory('buy')}
