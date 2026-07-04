@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useResultStore } from '../../stores';
 import { CITY_NAMES, CATEGORY_NAMES } from '../../constants';
@@ -33,6 +33,37 @@ export default function Compare() {
   const navigate = useNavigate();
   const { compareResults, compareExcludedCategories } = useResultStore();
   const [activeCity, setActiveCity] = useState<string>('');
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const updateScrollState = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1);
+  };
+
+  const scrollKey = compareExcludedCategories.join(',');
+
+  useEffect(() => {
+    updateScrollState();
+    const el = scrollRef.current;
+    if (!el) return;
+    el.addEventListener('scroll', updateScrollState, { passive: true });
+    window.addEventListener('resize', updateScrollState);
+    return () => {
+      el.removeEventListener('scroll', updateScrollState);
+      window.removeEventListener('resize', updateScrollState);
+    };
+  }, [scrollKey]);
+
+  const scrollBy = (direction: 'left' | 'right') => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const scrollAmount = Math.min(el.clientWidth * 0.75, 280);
+    el.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+  };
 
   // 根据排除分类派生过滤后的对比结果
   const filteredCompareResults = compareResults
@@ -162,8 +193,24 @@ export default function Compare() {
         {/* Rank Chips */}
         <div className="mt-8">
           <label className="mb-3 block text-sm font-semibold text-ink">查看城市明细</label>
-          <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-2 sm:-mx-6 sm:px-6 scrollbar-hide">
-            {sortedCities.map(([city, result], index) => {
+          <div className="relative">
+            {canScrollLeft && (
+              <button
+                type="button"
+                onClick={() => scrollBy('left')}
+                aria-label="向左滚动"
+                className="absolute -left-2 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm transition-colors hover:border-slate-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-civic-blue/30 sm:-left-3"
+              >
+                <svg className="h-4 w-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            )}
+            <div
+              ref={scrollRef}
+              className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-2 sm:-mx-6 sm:px-6 scrollbar-hide"
+            >
+              {sortedCities.map(([city, result], index) => {
               const isActive = activeCity === city;
               const rank = index + 1;
               return (
@@ -195,6 +242,19 @@ export default function Compare() {
                 </button>
               );
             })}
+            </div>
+            {canScrollRight && (
+              <button
+                type="button"
+                onClick={() => scrollBy('right')}
+                aria-label="向右滚动"
+                className="absolute -right-2 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm transition-colors hover:border-slate-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-civic-blue/30 sm:-right-3"
+              >
+                <svg className="h-4 w-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
 
