@@ -10370,9 +10370,7 @@
     "name": "上海体育学院",
     "pinyin": "shanghaitiyuxueyuan",
     "abbreviation": "",
-    "levels": [
-      "双一流"
-    ],
+    "levels": [],
     "city": "上海",
     "province": "上海"
   },
@@ -10442,7 +10440,6 @@
       "Shanghai Conservatory of Music"
     ],
     "levels": [
-      "211",
       "双一流"
     ],
     "city": "上海",
@@ -10470,7 +10467,6 @@
       "SHUTCM"
     ],
     "levels": [
-      "211",
       "双一流"
     ],
     "city": "上海",
@@ -17061,7 +17057,6 @@
       "China Conservatory of Music"
     ],
     "levels": [
-      "211",
       "双一流"
     ],
     "city": "北京",
