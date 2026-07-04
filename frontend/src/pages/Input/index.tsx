@@ -57,6 +57,12 @@ export default function Input() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [handleClickOutside]);
+
+  // 进入页面滚动到顶部
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
   const { match, matchMultipleCities } = useSubsidyMatch();
 
   // 默认空表单

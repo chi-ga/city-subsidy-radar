@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
@@ -10,9 +10,9 @@ import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
 export default function Policies() {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const from = searchParams.get('from') || '';
-  const backTo = from === 'compare' ? '/compare' : '/';
   const backLabel = from === 'compare' ? '返回对比' : '返回首页';
   const initialCity = searchParams.get('city') as CityCode | null;
   const allSubsidies = useMemo(() => getAllSubsidies(), []);
@@ -84,8 +84,14 @@ export default function Policies() {
     <div className="min-h-screen bg-paper">
       <PageHeader
         title="人才政策库"
-        backTo={backTo}
         backLabel={backLabel}
+        onBack={() => {
+          if (from === 'compare' && city) {
+            navigate(`/compare?city=${city}`);
+          } else {
+            navigate('/');
+          }
+        }}
       />
 
       <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">
