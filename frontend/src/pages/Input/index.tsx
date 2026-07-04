@@ -771,7 +771,11 @@ export default function Input() {
                           {(() => {
                             const levels = deduplicateLevels(school.levels);
                             const domestic = levels.filter((l) => ['985', '211', '双一流'].includes(l));
-                            const hasRanking = levels.some((l) => /前\d+/.test(l));
+                            const rankingOrder = ['前100', '前150', '前200', '前300', '前500'];
+                            const rankings = levels.filter((l) => /前\d+/.test(l));
+                            const bestRanking = rankingOrder
+                              .map((suffix) => rankings.find((r) => r.endsWith(suffix)))
+                              .find(Boolean);
                             return (
                               <>
                                 {domestic.slice(0, 2).map((level) => (
@@ -782,9 +786,9 @@ export default function Input() {
                                     {level}
                                   </span>
                                 ))}
-                                {hasRanking && (
+                                {bestRanking && (
                                   <span className="rounded-md bg-emerald-50 px-1.5 py-0.5 text-xs font-medium text-emerald-600">
-                                    世界前100
+                                    世界{bestRanking.match(/前\d+/)?.[0] ?? ''}
                                   </span>
                                 )}
                               </>
