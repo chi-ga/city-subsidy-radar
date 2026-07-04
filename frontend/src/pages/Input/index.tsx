@@ -340,8 +340,8 @@ export default function Input() {
       formData.age >= 18 &&
       formData.age <= 50
     );
-    // 对比模式下专业为可选；单城模式下按条件配置
-    const majorValid = mode === 'compare' ? true : !activeConditions.major || !!formData.major;
+    // 专业：按条件配置验证
+    const majorValid = !activeConditions.major || !!formData.major;
     // 毕业年份：仅当城市需要时才验证
     const gradValid = !activeConditions.graduationYear || !!formData.graduationYear;
     const householdValid = !activeConditions.householdRequired || !!formData.householdStatus;
