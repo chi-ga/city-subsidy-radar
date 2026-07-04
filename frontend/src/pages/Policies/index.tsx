@@ -180,11 +180,8 @@ export default function Policies() {
             {(Object.entries(groupedByCity) as [CityCode, Subsidy[]][]).map(([cityCode, subsidies]) => (
               <div key={cityCode}>
                 <div className="flex items-center gap-2">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ink text-xs font-bold text-white">
-                    {CITY_NAMES[cityCode].charAt(0)}
-                  </span>
                   <h3 className="text-base font-bold text-ink">{CITY_NAMES[cityCode]}</h3>
-                  <span className="text-xs text-slate-400">（{subsidies.length} 项政策）</span>
+                  <span className="text-xs text-slate-400">{subsidies.length} 项政策</span>
                 </div>
                 <div className="mt-3 space-y-4">
                   {subsidies.map((subsidy) => (
