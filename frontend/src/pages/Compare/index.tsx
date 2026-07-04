@@ -7,7 +7,7 @@ import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/
 import { PolicyCard } from '../../components/PolicyCard';
 import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
-import { ScaleIcon, ArrowLeftIcon, ChevronRightIcon, ExternalLinkIcon } from '../../components/icons';
+import { ScaleIcon, ArrowLeftIcon, ChevronRightIcon, ExternalLinkIcon, MagnifyingGlassIcon } from '../../components/icons';
 import { CompareBuyFilterButton } from '../../components/CompareBuyFilterButton';
 import { AnimatedNumber } from '../../components/AnimatedNumber';
 import type { CityCode, SubsidyCategory } from '../../constants';
@@ -259,21 +259,22 @@ export default function Compare() {
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
               <div>
                 <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
-                <div className="mt-1 flex flex-wrap items-center gap-3">
+                <div className="mt-1.5 flex flex-wrap items-center gap-4">
                   <button
                     type="button"
                     onClick={() => navigate(`/input?mode=single&city=${activeCity}`)}
-                    className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 transition-colors hover:text-slate-700 hover:underline"
+                    className="group inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
                   >
+                    <MagnifyingGlassIcon className="h-3 w-3 transition-transform group-hover:scale-110" />
                     查询该城市信息
                   </button>
                   <button
                     type="button"
                     onClick={() => navigate(`/policies?city=${activeCity}`, { state: { backTo: '/compare' } })}
-                    className="inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
+                    className="group inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
                   >
+                    <ExternalLinkIcon className="h-3 w-3 transition-transform group-hover:scale-110" />
                     查看该城市全部政策
-                    <ExternalLinkIcon className="h-3 w-3" />
                   </button>
                 </div>
               </div>
