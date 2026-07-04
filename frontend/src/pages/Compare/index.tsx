@@ -7,6 +7,7 @@ import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/
 import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
 import { EmptyState } from '../../components/EmptyState';
+import { CompareBuyFilterButton } from '../../components/CompareBuyFilterButton';
 import type { CityCode, SubsidyCategory } from '../../constants';
 import type { MatchResultItem, MatchResult } from '../../types';
 
@@ -29,7 +30,7 @@ const COMPARE_COLORS = ['#1D4ED8', '#059669', '#B45309', '#7C3AED', '#0D9488', '
 
 export default function Compare() {
   const navigate = useNavigate();
-  const { compareResults, compareExcludedCategories, toggleCompareExcludedCategory } = useResultStore();
+  const { compareResults, compareExcludedCategories } = useResultStore();
   const [activeCity, setActiveCity] = useState<string>('');
 
   // 根据排除分类派生过滤后的对比结果
@@ -103,20 +104,9 @@ export default function Compare() {
             <h3 className="text-sm font-bold text-ink">预估补贴总额（到城后预计最高可拿）</h3>
           </div>
           <div className="p-6">
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-              <p className="text-xs text-slate-400">
-                * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
-              </p>
-              <label className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs text-slate-600 transition-colors hover:bg-slate-100">
-                <input
-                  type="checkbox"
-                  className="h-3.5 w-3.5 rounded border-slate-300 text-civic-blue focus:ring-civic-blue/30"
-                  checked={compareExcludedCategories.includes('buy')}
-                  onChange={() => toggleCompareExcludedCategory('buy')}
-                />
-                <span>过滤购房补贴</span>
-              </label>
-            </div>
+            <p className="mb-4 text-xs text-slate-400">
+              * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
+            </p>
             <div className="space-y-5">
               {sortedCities.map(([city, result], index) => {
                 const percentage = (result.totalAmount / maxAmount) * 100;
@@ -271,6 +261,7 @@ export default function Compare() {
           </div>
         )}
       </main>
+      <CompareBuyFilterButton />
     </div>
   );
 }

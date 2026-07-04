@@ -126,7 +126,7 @@ export default function Home() {
                 }
                 color="amber"
                 title="查看政策"
-                description="按城市、区域浏览全部人才政策，了解补贴详情"
+                description="按城市、区域浏览全部人才政策"
               />
             </div>
           </section>
