@@ -1,24 +1,17 @@
 import { useNavigate } from 'react-router-dom';
-import { useUserStore } from '../../stores';
 import { ChinaMap } from '../../components/Map';
 import { GitHubPromo } from '../../components/GitHubPromo';
 import { FavoritesButton } from '../../components/FavoritesButton';
-import { clearFormCache } from '../../utils/formCache';
 import { CITY_NAMES } from '../../constants';
 
 export default function Home() {
   const navigate = useNavigate();
-  const { resetProfile } = useUserStore();
 
   const handlePathA = () => {
-    clearFormCache();
-    resetProfile();
     navigate('/input?mode=single');
   };
 
   const handlePathB = () => {
-    clearFormCache();
-    resetProfile();
     navigate('/input?mode=compare');
   };
 
@@ -27,8 +20,6 @@ export default function Home() {
   };
 
   const handleCityClick = (city: string) => {
-    clearFormCache();
-    resetProfile();
     navigate(`/input?mode=single&city=${city}`);
   };
 
