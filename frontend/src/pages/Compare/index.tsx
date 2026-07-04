@@ -270,7 +270,7 @@ export default function Compare() {
                   </button>
                   <button
                     type="button"
-                    onClick={() => navigate(`/policies?city=${activeCity}`, { state: { backTo: '/compare' } })}
+                    onClick={() => navigate(`/policies?city=${activeCity}&from=compare`)}
                     className="group inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
                   >
                     <ExternalLinkIcon className="h-3 w-3 transition-transform group-hover:scale-110" />

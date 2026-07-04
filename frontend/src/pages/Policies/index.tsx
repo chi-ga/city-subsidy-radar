@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { useSearchParams, useLocation } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
@@ -10,10 +10,10 @@ import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
 export default function Policies() {
-  const location = useLocation();
-  const backTo = (location.state as { backTo?: string } | null)?.backTo || '/';
-  const backLabel = backTo === '/compare' ? '返回对比' : '返回首页';
   const [searchParams, setSearchParams] = useSearchParams();
+  const from = searchParams.get('from') || '';
+  const backTo = from === 'compare' ? '/compare' : '/';
+  const backLabel = from === 'compare' ? '返回对比' : '返回首页';
   const initialCity = searchParams.get('city') as CityCode | null;
   const allSubsidies = useMemo(() => getAllSubsidies(), []);
   const [city, setCity] = useState<CityCode | ''>(initialCity && CITY_NAMES[initialCity] ? initialCity : '');
@@ -28,14 +28,13 @@ export default function Policies() {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
 
-  // 同步 URL 参数与城市选择
+  // 同步 URL 参数与城市选择（保留 from 来源标记）
   useEffect(() => {
-    if (city) {
-      setSearchParams({ city });
-    } else if (searchParams.has('city')) {
-      setSearchParams({});
-    }
-  }, [city]);
+    const params: Record<string, string> = {};
+    if (city) params.city = city;
+    if (from) params.from = from;
+    setSearchParams(params);
+  }, [city, from]);
 
   const districts = useMemo(() => (city ? getLocationsForCity(city) : []), [city]);
 
