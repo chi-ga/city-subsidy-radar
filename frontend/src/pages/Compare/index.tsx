@@ -259,14 +259,23 @@ export default function Compare() {
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
               <div>
                 <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
-                <button
-                  type="button"
-                  onClick={() => navigate(`/policies?city=${activeCity}`)}
-                  className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
-                >
-                  查看该城市全部政策
-                  <ExternalLinkIcon className="h-3 w-3" />
-                </button>
+                <div className="mt-1 flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => navigate('/input?mode=compare')}
+                    className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 transition-colors hover:text-slate-700 hover:underline"
+                  >
+                    修改条件
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => navigate(`/policies?city=${activeCity}`)}
+                    className="inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
+                  >
+                    查看该城市全部政策
+                    <ExternalLinkIcon className="h-3 w-3" />
+                  </button>
+                </div>
               </div>
               <div className="font-data text-xl font-extrabold text-civic-blue">
                 <AnimatedNumber value={filteredCompareResults[activeCity as CityCode].totalAmount} />
