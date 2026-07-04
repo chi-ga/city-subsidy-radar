@@ -285,7 +285,9 @@ function getConditionRows(subsidy: Subsidy, showStatusBadges: boolean): Conditio
     rows.push({ label: '身份要求', value: c.identityType.join('、'), status: defaultStatus });
   }
   if (c.companyType && c.companyType.length > 0) {
-    rows.push({ label: '用人单位类型', value: c.companyType.join('、'), status: defaultStatus });
+    // 合肥显示为"企业要求"，其他城市显示为"用人单位类型"
+    const label = c.companyType.includes('重点单位') ? '企业要求' : '用人单位类型';
+    rows.push({ label, value: c.companyType.join('、'), status: defaultStatus });
   }
   if (c.talentLevel && c.talentLevel.length > 0) {
     rows.push({ label: '人才层次', value: c.talentLevel.join('、'), status: defaultStatus });

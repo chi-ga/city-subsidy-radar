@@ -124,10 +124,53 @@
         "graduationYear": false,
         "employmentRequired": true,
         "householdRequired": false,
-        "major": false
+        "major": false,
+        "showCompanyType": true,
+        "showFullTime": false
       },
       "locationDependentFields": [],
-      "districts": {}
+      "districts": {},
+      "tier2Questions": [
+        {
+          "field": "applicantType",
+          "label": "您的身份类型",
+          "description": "请选择您的人才类型",
+          "type": "select",
+          "options": [
+            { "value": "", "label": "请选择" },
+            { "value": "talent", "label": "已认定的高层次人才（A/B/C/D/E类）" },
+            { "value": "skilled", "label": "持有技能等级证书的技工" }
+          ]
+        },
+        {
+          "field": "talentLevel",
+          "label": "人才认定等级",
+          "description": "须通过合肥市高层次人才分类认定系统认定",
+          "type": "select",
+          "showWhen": { "field": "applicantType", "value": "talent" },
+          "options": [
+            { "value": "", "label": "请选择等级" },
+            { "value": "A类", "label": "A类人才" },
+            { "value": "B类", "label": "B类人才" },
+            { "value": "C类", "label": "C类人才" },
+            { "value": "D类", "label": "D类人才" },
+            { "value": "E类", "label": "E类人才" }
+          ]
+        },
+        {
+          "field": "skillLevel",
+          "label": "技能等级",
+          "description": "国家职业资格三级（高级工）及以上",
+          "type": "select",
+          "showWhen": { "field": "applicantType", "value": "skilled" },
+          "options": [
+            { "value": "", "label": "请选择等级" },
+            { "value": "高级工", "label": "高级工（三级）" },
+            { "value": "技师", "label": "技师（二级）" },
+            { "value": "高级技师", "label": "高级技师（一级）" }
+          ]
+        }
+      ]
     },
     "hangzhou": {
       "base": {

@@ -33,6 +33,8 @@ export interface SubsidyConditions {
   companyType?: string[];
   /** 深圳高层次人才层次要求（任一即满足） */
   talentLevel?: TalentLevel[];
+  /** 技能等级要求（合肥高技能人才政策等） */
+  skillLevel?: ('高级工' | '技师' | '高级技师')[];
   /** 身份类型要求（任一即满足）；不填则不限制 */
   identityType?: IdentityType[];
   /** 首次在深就业创业时间需不早于该日期（用于深圳 2026 青年人才新政），格式 YYYY-MM-DD */
@@ -245,6 +247,10 @@ export interface UserProfile {
   // ===== 用人单位类型（南京雨花台区等限定企业类型） =====
   /** 用户所在用人单位类型 */
   companyType?: string;
+
+  // ===== 技能等级（合肥高技能人才等政策） =====
+  /** 技能等级：高级工/技师/高级技师 */
+  skillLevel?: '高级工' | '技师' | '高级技师';
 }
 
 export interface MatchResultItem {

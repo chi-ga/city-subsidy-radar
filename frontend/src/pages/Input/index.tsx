@@ -5,7 +5,7 @@ import { RadarSpinner } from '../../components/RadarSpinner';
 import { useResultStore } from '../../stores';
 import { useUserStore } from '../../stores';
 import { useSchoolSearch, useSubsidyMatch, useMajorSearch } from '../../hooks';
-import { getEffectiveConditions, getLocationsForCity, checkShenzhenKeyIndustryMajor } from '../../data';
+import { getEffectiveConditions, getLocationsForCity, checkShenzhenKeyIndustryMajor, getTier2Questions } from '../../data';
 import { getCachedFlatMajors } from '../../data/lazyMajors';
 import { isDoubleFirstClassDiscipline } from '../../data/lazyTalent';
 import {
@@ -138,6 +138,8 @@ export default function Input() {
   const [citySearch, setCitySearch] = useState('');
   const cityDropdownRef = useRef<HTMLDivElement>(null);
   const [topStudentBases, setTopStudentBases] = useState<TopStudentPlanBase[]>([]);
+  // Tier 2 追问区域是否展开
+  const [showTier2Questions, setShowTier2Questions] = useState(false);
   // 深圳重点产业目录匹配详情（区分专业直接命中 vs 一级学科命中）
   const [keyIndustryMatchSource, setKeyIndustryMatchSource] = useState<'major' | 'discipline' | null>(null);
   const [keyIndustryMatchedDiscipline, setKeyIndustryMatchedDiscipline] = useState<string | undefined>();
@@ -162,6 +164,7 @@ export default function Input() {
     showFirstGuangzhouHukou: false,
     showHuaduImportStatus: false,
     showCompanyType: false,
+    showFullTime: true,
   };
 
   // 实际使用的条件配置
@@ -389,6 +392,7 @@ export default function Input() {
           huaduImportStatus: 'after_2023',
           isInThreeCitiesOneDistrict: true,
           isFullTime: true,
+          companyType: '重点单位', // 假设所在企业为重点单位
           firstShenzhenEmploymentDate: new Date().toISOString().split('T')[0],
           // 境外高校默认按留学回国2年内处理，便于上海等地留学生政策匹配
           returneeStatus: isOverseas ? 'within_2_years' : undefined,
@@ -855,8 +859,8 @@ export default function Input() {
                 </label>
               </div>
             )}
-            {/* 全日制/非全日制复选框：本科及以上时显示 */}
-            {formData.degree && formData.degree !== '专科' && (
+            {/* 全日制/非全日制复选框：本科及以上时显示，且城市配置需要时 */}
+            {formData.degree && formData.degree !== '专科' && activeConditions.showFullTime !== false && (
               <div className="mt-2">
                 <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
                   <input
@@ -1511,37 +1515,110 @@ export default function Input() {
             </section>
           )}
 
-          {/* 用人单位类型（南京雨花台区等限定企业类型） */}
+          {/* 用人单位类型 */}
           {activeConditions.showCompanyType && (
             <section className="animate-fade-slide-in">
-              <label className="flex items-center gap-2 text-sm font-semibold text-slate-800">
-                用人单位类型
-                <span className="ml-1 text-xs font-normal text-slate-400">（部分区域补贴限定企业类型）</span>
-              </label>
-              <p className="mt-1 text-xs text-slate-400">
-                如南京雨花台区优秀高校毕业生生活补贴要求用人单位属于重点产业企业
-              </p>
-              <div className="mt-3">
-                <div className="relative">
-                  <select
-                    value={formData.companyType || ''}
-                    onChange={(e) => setFormData((prev) => ({ ...prev, companyType: e.target.value || undefined }))}
-                    className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
-                  >
-                    <option value="" disabled>请选择用人单位类型</option>
-                    <option value="规模以上工业企业">规模以上工业企业</option>
-                    <option value="国家高新技术企业">国家高新技术企业</option>
-                    <option value="省级以上专精特新企业">省级以上专精特新企业</option>
-                    <option value="重大创新平台">重大创新平台</option>
-                    <option value="高水平新型研发机构">高水平新型研发机构</option>
-                    <option value="独角兽企业">独角兽企业</option>
-                    <option value="培育独角兽企业">培育独角兽企业</option>
-                    <option value="瞪羚企业">瞪羚企业</option>
-                    <option value="区级以上重点人才工程入选者创办企业">区级以上重点人才工程入选者创办企业</option>
-                    <option value="其他">其他（不属于以上类型）</option>
-                  </select>
+              {formData.city === 'hefei' ? (
+                /* 合肥：复选框 + 查询链接 */
+                <>
+                  <label className="flex items-center gap-2 text-sm font-semibold text-slate-800">
+                    企业是否属于重点单位
+                  </label>
+                  <p className="mt-1 text-xs text-slate-400">
+                    合肥人才补贴要求所在企业属于政策规定的产业及相关领域重点单位
+                  </p>
+                  <div className="mt-3">
+                    <label className="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors hover:border-civic-blue/30 hover:bg-civic-blue/5/30">
+                      <input
+                        type="checkbox"
+                        checked={formData.companyType === '重点单位'}
+                        onChange={(e) => {
+                          const checked = e.target.checked;
+                          setFormData((prev) => ({
+                            ...prev,
+                            companyType: checked ? '重点单位' : undefined,
+                          }));
+                        }}
+                        className="h-4 w-4 rounded border-slate-300 text-civic-blue focus:ring-civic-blue"
+                      />
+                      <span className="text-slate-700">
+                        是，所在企业属于重点单位
+                      </span>
+                    </label>
+                    <a
+                      href="http://rcaj.hfrsggff.com:8088/talent/#/enterpriseDirectory"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-flex items-center gap-1 text-xs text-civic-blue hover:underline"
+                    >
+                      <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      点击查询企业是否在重点单位名录
+                    </a>
+                  </div>
+                </>
+              ) : (
+                /* 其他城市：下拉选择 */
+                <>
+                  <label className="flex items-center gap-2 text-sm font-semibold text-slate-800">
+                    用人单位类型
+                    <span className="ml-1 text-xs font-normal text-slate-400">（部分区域补贴限定企业类型）</span>
+                  </label>
+                  <p className="mt-1 text-xs text-slate-400">
+                    如南京雨花台区优秀高校毕业生生活补贴要求用人单位属于重点产业企业
+                  </p>
+                  <div className="mt-3">
+                    <div className="relative">
+                      <select
+                        value={formData.companyType || ''}
+                        onChange={(e) => setFormData((prev) => ({ ...prev, companyType: e.target.value || undefined }))}
+                        className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
+                      >
+                        <option value="" disabled>请选择用人单位类型</option>
+                        <option value="规模以上工业企业">规模以上工业企业</option>
+                        <option value="国家高新技术企业">国家高新技术企业</option>
+                        <option value="省级以上专精特新企业">省级以上专精特新企业</option>
+                        <option value="重大创新平台">重大创新平台</option>
+                        <option value="高水平新型研发机构">高水平新型研发机构</option>
+                        <option value="独角兽企业">独角兽企业</option>
+                        <option value="培育独角兽企业">培育独角兽企业</option>
+                        <option value="瞪羚企业">瞪羚企业</option>
+                        <option value="区级以上重点人才工程入选者创办企业">区级以上重点人才工程入选者创办企业</option>
+                        <option value="其他">其他（不属于以上类型）</option>
+                      </select>
+                      <svg
+                        className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </div>
+                </>
+              )}
+            </section>
+          )}
+
+          {/* Tier 2 追问区域：细分追问层（可折叠） */}
+          {mode === 'single' && (() => {
+            const tier2Questions = getTier2Questions(formData.city);
+            if (tier2Questions.length === 0) return null;
+
+            return (
+              <section>
+                {/* 折叠触发链接 */}
+                <button
+                  type="button"
+                  onClick={() => setShowTier2Questions(!showTier2Questions)}
+                  className="flex w-full items-center justify-center gap-1.5 py-2 text-xs text-slate-400 transition-colors hover:text-civic-blue"
+                >
+                  如果您是高层次人才或持有技能证书，点此查看其他通道
                   <svg
-                    className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+                    className={`h-3 w-3 transition-transform ${showTier2Questions ? 'rotate-180' : ''}`}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -1549,10 +1626,83 @@ export default function Input() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
-                </div>
-              </div>
-            </section>
-          )}
+                </button>
+
+                {/* 展开的追问表单 */}
+                {showTier2Questions && (
+                  <div className="mt-2 animate-fade-slide-in rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 p-4 sm:p-5">
+                    <p className="text-xs text-slate-500">
+                      如果您是高层次人才或持有技能证书，可匹配到其他补贴通道
+                    </p>
+
+                    <div className="mt-3 space-y-3">
+                      {tier2Questions.map((q) => {
+                        // 检查是否应该显示此问题
+                        const shouldShow = !q.showWhen ||
+                          (formData as Record<string, any>)[q.showWhen.field] === q.showWhen.value;
+
+                        if (!shouldShow) return null;
+
+                        return (
+                          <div key={q.field}>
+                            <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
+                              {q.label}
+                            </label>
+                            {q.description && (
+                              <p className="mt-0.5 text-xs text-slate-400">{q.description}</p>
+                            )}
+                            <div className="mt-1.5">
+                              <div className="relative">
+                                <select
+                                  value={(formData as Record<string, any>)[q.field] || ''}
+                                  onChange={(e) => {
+                                    const value = e.target.value || undefined;
+                                    setFormData((prev) => ({
+                                      ...prev,
+                                      [q.field]: value,
+                                    }));
+                                  }}
+                                  className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
+                                >
+                                  {q.options?.map((opt: { value: string; label: string }) => (
+                                    <option key={opt.value} value={opt.value}>
+                                      {opt.label}
+                                    </option>
+                                  ))}
+                                </select>
+                                <svg
+                                  className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  strokeWidth={2}
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                              </div>
+                              {q.link && (
+                                <a
+                                  href={q.link.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="mt-1 inline-flex items-center gap-1 text-xs text-civic-blue hover:underline"
+                                >
+                                  <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                  </svg>
+                                  {q.link.text}
+                                </a>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </section>
+            );
+          })()}
 
           {/* Submit */}
           <button

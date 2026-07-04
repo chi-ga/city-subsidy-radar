@@ -134,6 +134,12 @@ function buildPerfectProfile(subsidy: Subsidy): UserProfile {
   if (c.companyType && c.companyType.length > 0) {
     profile.companyType = c.companyType[0]
   }
+  if (c.talentLevel && c.talentLevel.length > 0) {
+    profile.talentLevel = c.talentLevel[0]
+  }
+  if (c.skillLevel && c.skillLevel.length > 0) {
+    profile.skillLevel = c.skillLevel[0]
+  }
   if (c.firstShenzhenEmploymentAfter) {
     profile.firstShenzhenEmploymentDate = '2026-06-01'
   }
@@ -297,6 +303,7 @@ describe('政策数据完整性', () => {
       'changzhou-district', 'tangshan-district', 'wuhu-goufang',
       'ganzhou-district', 'yinchuan-district', 'jinhua-jiuye',
       'taizhou-jiuye', 'baoding-zufang-goufang', 'taizhoujs-district',
+      'hefei-zufang',
     ])
     const unknown = allSubsidies.filter(
       (s) => s.exclusiveGroup && !knownGroups.has(s.exclusiveGroup)

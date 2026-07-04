@@ -2,7 +2,7 @@
   {
     "id": "hefei-shiji-zufang",
     "city": "hefei",
-    "name": "合肥市高校毕业生住房租赁补贴",
+    "name": "合肥市人才住房租赁补贴（高校毕业生）",
     "category": "rent",
     "amount": {
       "min": 1250,
@@ -44,37 +44,35 @@
       "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": false
+      "requiresFullTime": false,
+      "companyType": ["重点单位"]
     },
     "application": {
-      "deadline": "自符合条件之日起可申请，续发无需重复申请",
+      "deadline": "申请截止日期为2026年12月31日，首次申请应在来肥工作之日起2年内",
       "channel": "合肥市人才综合服务平台（安徽政务服务网/皖事通APP）",
       "materials": [
-        "身份证",
-        "社会保障卡",
-        "毕业证/学位证",
-        "国（境）外学历学位认证（留学人员）",
-        "婚姻材料（已婚）",
-        "银行卡号",
-        "住房租赁合同备案信息"
+        "身份证或护照等身份验证材料",
+        "教育部留学服务中心国（境）外学历留学认证",
+        "婚姻状况证明和家庭成员身份证（已婚）",
+        "银行卡卡号"
       ],
       "process": [
         "注册/登录安徽政务服务网或皖事通APP",
-        "进入合肥市人才综合服务平台完善个人信息",
-        "发起\"住房租赁补贴（2022）\"申请",
-        "大数据自动核验学历、住房、社保、企业纳税地等信息",
-        "所在企业审核",
+        "进入人才安居平台申请人才住房租赁补贴",
+        "签订承诺书及授权委托书",
+        "系统自动比对复核信息",
+        "所在单位核实确认",
         "县区住房保障部门公示、兑现"
       ],
       "location": "市级",
       "url": "https://rcaj.hfrsggff.com:8088/talent/"
     },
-    "policySource": "合人才〔2022〕1号（试行）、合人才〔2024〕1号（修订版）",
-    "effectiveDate": "2022-06-16",
-    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的35周岁以下博士、硕士、普通高校本科毕业生。3年内分别按每年3.6万元、2万元、1.5万元标准发放住房租赁补贴，累计不超过36个月。申请人及配偶、未成年子女在肥无自有住房，租赁住房须办理网签备案。2022年6月16日（含）后新来肥就业，且近三年在肥无参保记录。",
+    "policySource": "合人才〔2024〕1号",
+    "effectiveDate": "2024-03-15",
+    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的35周岁以下博士、硕士、普通高校本科毕业生。3年内分别按每年3.6万元、2万元、1.5万元标准发放住房租赁补贴，累计不超过36个月。来肥工作时间为2024年3月15日（含）及以后，且近3年内在肥无参保记录。申请人及配偶、未成年子女在肥无自有住房，租赁住房须办理网签备案。需通过工作单位在肥按规定缴纳社保。夫妻双方均符合条件的可叠加申请，住房租赁补贴和购房补贴按就高补差原则执行。",
     "location": "合肥市",
     "tier": 1,
-    "exclusiveGroup": ""
+    "exclusiveGroup": "hefei-zufang"
   },
   {
     "id": "hefei-shiji-boshigoufang",
@@ -95,7 +93,8 @@
       "ageLimitExclusive": false,
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": false
+      "requiresFullTime": false,
+      "companyType": ["重点单位"]
     },
     "application": {
       "deadline": "购房后按年度申请续发",
@@ -120,11 +119,162 @@
       "location": "市级",
       "url": "https://rcaj.hfrsggff.com:8088/talent/"
     },
-    "policySource": "合人才〔2022〕1号（试行）、合人才〔2024〕1号（修订版）",
-    "effectiveDate": "2022-06-16",
-    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的35周岁以下博士研究生。在肥连续缴纳社保满1年，购买首套自住住房可享最高12万元购房补贴，分5年拨付。购房时申请人及配偶、未成年子女在肥无住房且无住房转让记录，商品住房网签时间须在2022年6月16日（含）后。",
+    "policySource": "合人才〔2024〕1号",
+    "effectiveDate": "2024-03-15",
+    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的35周岁以下博士研究生。在肥连续缴纳社保满1年，购买首套自住住房可享最高12万元购房补贴，分5年拨付。购房时申请人及配偶、未成年子女在肥无住房且无住房转让记录，商品住房网签时间须在2024年3月15日（含）后。需在肥购买首套自住住房。住房租赁补贴和购房补贴按就高补差原则执行，不可同时享受。",
     "location": "合肥市",
     "tier": 1,
     "exclusiveGroup": ""
+  },
+  {
+    "id": "hefei-shiji-gaojirencai",
+    "city": "hefei",
+    "name": "合肥市人才住房租赁补贴（高层次人才）",
+    "category": "rent",
+    "amount": {
+      "min": 3000,
+      "max": 8333,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "E类": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "D类": {
+        "min": 3500,
+        "max": 3500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "C类": {
+        "min": 4000,
+        "max": 4000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "B类": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "A类": {
+        "min": 8333,
+        "max": 8333,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "companyType": ["重点单位"],
+      "talentLevel": ["A类", "B类", "C类", "D类", "E类"]
+    },
+    "application": {
+      "deadline": "申请截止日期为2026年12月31日",
+      "channel": "合肥市人才综合服务平台（安徽政务服务网/皖事通APP）",
+      "materials": [
+        "身份证或护照等身份验证材料",
+        "婚姻状况证明和家庭成员身份证（已婚）",
+        "银行卡卡号"
+      ],
+      "process": [
+        "注册/登录安徽政务服务网或皖事通APP",
+        "进入人才安居平台申请人才住房租赁补贴",
+        "签订承诺书及授权委托书",
+        "系统自动比对复核信息",
+        "所在单位核实确认",
+        "县区住房保障部门公示、兑现"
+      ],
+      "location": "市级",
+      "url": "https://rcaj.hfrsggff.com:8088/talent/"
+    },
+    "policySource": "合人才〔2024〕1号",
+    "effectiveDate": "2024-03-15",
+    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的高层次人才（A/B/C/D/E类）。3年内分别按每年10万元、6万元、4.8万元、4.2万元、3.6万元标准发放住房租赁补贴，累计不超过36个月。须通过合肥市高层次人才分类认定系统认定。来肥工作时间为2024年3月15日（含）及以后（A类人才不受此时间限制）。申请人及配偶、未成年子女在肥无自有住房。",
+    "location": "合肥市",
+    "tier": 2,
+    "exclusiveGroup": "hefei-zufang"
+  },
+  {
+    "id": "hefei-shiji-gaojineng",
+    "city": "hefei",
+    "name": "合肥市人才住房租赁补贴（高技能人才）",
+    "category": "rent",
+    "amount": {
+      "min": 1250,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "高级工": {
+        "min": 1250,
+        "max": 1250,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "技师": {
+        "min": 1667,
+        "max": 1667,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "高级技师": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "companyType": ["重点单位"],
+      "skillLevel": ["高级工", "技师", "高级技师"]
+    },
+    "application": {
+      "deadline": "申请截止日期为2026年12月31日",
+      "channel": "合肥市人才综合服务平台（安徽政务服务网/皖事通APP）",
+      "materials": [
+        "身份证或护照等身份验证材料",
+        "婚姻状况证明和家庭成员身份证（已婚）",
+        "国家职业资格三级及以上技能等级证书编号",
+        "银行卡卡号"
+      ],
+      "process": [
+        "注册/登录安徽政务服务网或皖事通APP",
+        "进入人才安居平台申请人才住房租赁补贴",
+        "签订承诺书及授权委托书",
+        "系统自动比对复核信息",
+        "所在单位核实确认",
+        "县区住房保障部门公示、兑现"
+      ],
+      "location": "市级",
+      "url": "https://rcaj.hfrsggff.com:8088/talent/"
+    },
+    "policySource": "合人才〔2024〕1号",
+    "effectiveDate": "2024-03-15",
+    "notes": "有效。面向在合肥市产业及相关领域重点单位就业的高级技师、技师、高级工。3年内分别按每年3.6万元、2万元、1.5万元标准发放住房租赁补贴，累计不超过36个月。需在单位全职工作，为一线生产服务技术工人。申请人及配偶、未成年子女在肥无自有住房。",
+    "location": "合肥市",
+    "tier": 2,
+    "exclusiveGroup": "hefei-zufang"
   }
 ]

@@ -391,6 +391,13 @@ export function matchSubsidy(
     }
   }
 
+  // 技能等级匹配（合肥高技能人才政策等）
+  if (subsidy.conditions.skillLevel && subsidy.conditions.skillLevel.length > 0) {
+    if (!user.skillLevel || !subsidy.conditions.skillLevel.includes(user.skillLevel)) {
+      standardMissing.push(`技能等级：${subsidy.conditions.skillLevel.join('/')}`);
+    }
+  }
+
   // 全日制学历匹配
   if (subsidy.conditions.requiresFullTime) {
     if (user.isFullTime !== true) {
@@ -550,6 +557,7 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'taizhou-jiuye': '台州就业补贴（中小微企业与养老家政农业企业二选一）',
   'baoding-zufang-goufang': '保定租房与购房补贴（不可同时享受）',
   'taizhoujs-district': '泰州区级补贴（只能在一个区享受）',
+  'hefei-zufang': '合肥住房租赁补贴（高校毕业生/高层次人才/高技能人才三选一）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

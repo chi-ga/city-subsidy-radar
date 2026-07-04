@@ -7,7 +7,7 @@ import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/
 import { PolicyCard } from '../../components/PolicyCard';
 import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
-import { ScaleIcon, ArrowLeftIcon, ChevronRightIcon } from '../../components/icons';
+import { ScaleIcon, ArrowLeftIcon, ChevronRightIcon, ExternalLinkIcon } from '../../components/icons';
 import { CompareBuyFilterButton } from '../../components/CompareBuyFilterButton';
 import { AnimatedNumber } from '../../components/AnimatedNumber';
 import type { CityCode, SubsidyCategory } from '../../constants';
@@ -256,8 +256,18 @@ export default function Compare() {
         {/* City Detail */}
         {activeCity && filteredCompareResults[activeCity as CityCode] && (
           <div key={activeCity} className="mt-4 animate-fade-in">
-            <div className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
-              <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
+            <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
+              <div>
+                <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
+                <button
+                  type="button"
+                  onClick={() => navigate(`/policies?city=${activeCity}`)}
+                  className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
+                >
+                  查看该城市全部政策
+                  <ExternalLinkIcon className="h-3 w-3" />
+                </button>
+              </div>
               <div className="font-data text-xl font-extrabold text-civic-blue">
                 <AnimatedNumber value={filteredCompareResults[activeCity as CityCode].totalAmount} />
                 <span className="ml-1 text-sm font-medium text-slate-500">元</span>

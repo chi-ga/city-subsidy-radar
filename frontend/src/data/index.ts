@@ -64,7 +64,7 @@ import huaian from './subsidies/huaian.json';
 import suqian from './subsidies/suqian.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
-import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
+import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
 
 export const subsidiesData: Record<string, Subsidy[]> = {
   beijing: beijing as Subsidy[],
@@ -153,6 +153,7 @@ const ALL_TRUE: CityConditions = {
   householdRequired: true,
   major: true,
   showCompanyType: true,
+  showFullTime: true,
 };
 
 /** 条件字段名列表（用于 OR 合并） */
@@ -244,6 +245,15 @@ export {
 // 导出专业搜索相关函数
 export { searchMajorsAsync as searchMajors, loadMajorCatalog, loadShenzhenKeyIndustryMajors, checkShenzhenKeyIndustryMajor } from './lazyMajors';
 export type { MajorItem, MajorCatalog, ShenzhenKeyIndustryMajors } from './lazyMajors';
+
+/**
+ * 获取城市的 Tier 2 追问问题配置
+ */
+export function getTier2Questions(city?: string): Tier2Question[] {
+  if (!city) return [];
+  const config = cityConditionsConfig[city];
+  return config?.tier2Questions || [];
+}
 
 /**
  * 获取区/县级 location 列表（不含市级）

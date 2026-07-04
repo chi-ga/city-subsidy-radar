@@ -28,6 +28,20 @@ export interface ConditionSet {
   showHuaduImportStatus?: boolean;
   /** 是否显示"用人单位类型"字段（南京雨花台区等限定企业类型） */
   showCompanyType?: boolean;
+  /** 是否显示"全日制学历"复选框（默认 true，合肥等不要求全日制的城市设为 false） */
+  showFullTime?: boolean;
+}
+
+/** Tier 2 追问问题配置 */
+export interface Tier2Question {
+  field: string;
+  label: string;
+  description?: string;
+  type: 'select' | 'checkbox';
+  options?: { value: string; label: string }[];
+  link?: { url: string; text: string };
+  /** 条件显示：当指定字段等于指定值时才显示此问题 */
+  showWhen?: { field: string; value: string };
 }
 
 /** 城市条件配置（含市级 base 和区级 extra） */
@@ -37,6 +51,8 @@ export interface CityConditionsConfig {
   districts?: Record<string, Partial<ConditionSet>>;
   /** 区域状态字段列表（选区前不展示，选区后才展示）。如落户、就业依赖具体区域才有意义 */
   locationDependentFields?: string[];
+  /** Tier 2 追问问题配置 */
+  tier2Questions?: Tier2Question[];
 }
 
 /** 合并后的有效条件（UI 使用此类型） */

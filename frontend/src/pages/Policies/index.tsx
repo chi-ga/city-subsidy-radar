@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
@@ -9,13 +10,24 @@ import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
 export default function Policies() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialCity = searchParams.get('city') as CityCode | null;
   const allSubsidies = useMemo(() => getAllSubsidies(), []);
-  const [city, setCity] = useState<CityCode | ''>('');
+  const [city, setCity] = useState<CityCode | ''>(initialCity && CITY_NAMES[initialCity] ? initialCity : '');
   const [district, setDistrict] = useState<string>('');
   const [categoryFilter, setCategoryFilter] = useState<string>('');
   const [citySearch, setCitySearch] = useState('');
   const [showCityDropdown, setShowCityDropdown] = useState(false);
   const cityDropdownRef = useRef<HTMLDivElement>(null);
+
+  // 同步 URL 参数与城市选择
+  useEffect(() => {
+    if (city) {
+      setSearchParams({ city });
+    } else if (searchParams.has('city')) {
+      setSearchParams({});
+    }
+  }, [city]);
 
   const districts = useMemo(() => (city ? getLocationsForCity(city) : []), [city]);
 
