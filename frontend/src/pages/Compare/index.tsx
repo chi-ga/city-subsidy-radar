@@ -262,10 +262,10 @@ export default function Compare() {
                 <div className="mt-1 flex flex-wrap items-center gap-3">
                   <button
                     type="button"
-                    onClick={() => navigate('/input?mode=compare')}
+                    onClick={() => navigate(`/policies?city=${activeCity}`)}
                     className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 transition-colors hover:text-slate-700 hover:underline"
                   >
-                    修改条件
+                    查询该城市信息
                   </button>
                   <button
                     type="button"
