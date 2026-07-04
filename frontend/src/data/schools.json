@@ -523,20 +523,6 @@
     "province": "挪威"
   },
   {
-    "id": "arwu_南方医科大学",
-    "name": "南方医科大学",
-    "pinyin": "southernmedicaluniversity",
-    "abbreviation": "",
-    "aliases": [
-      "Southern Medical University"
-    ],
-    "levels": [
-      "软科前300"
-    ],
-    "city": "",
-    "province": "中国"
-  },
-  {
     "id": "arwu_因斯布鲁克大学",
     "name": "因斯布鲁克大学",
     "pinyin": "universityofinnsbruck",
@@ -650,21 +636,6 @@
     ],
     "city": "",
     "province": "意大利"
-  },
-  {
-    "id": "arwu_江苏大学",
-    "name": "江苏大学",
-    "pinyin": "jiangsuuniversity",
-    "abbreviation": "",
-    "aliases": [
-      "Jiangsu University"
-    ],
-    "levels": [
-      "软科前300",
-      "USNews前300"
-    ],
-    "city": "",
-    "province": "中国"
   },
   {
     "id": "arwu_波尔图大学",
@@ -882,20 +853,6 @@
     ],
     "city": "",
     "province": "英国"
-  },
-  {
-    "id": "arwu_首都医科大学",
-    "name": "首都医科大学",
-    "pinyin": "capitalmedicaluniversity",
-    "abbreviation": "",
-    "aliases": [
-      "Capital Medical University"
-    ],
-    "levels": [
-      "软科前300"
-    ],
-    "city": "",
-    "province": "中国"
   },
   {
     "id": "arwu_马尼托巴大学",
