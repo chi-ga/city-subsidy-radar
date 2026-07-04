@@ -1,16 +1,18 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
 import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
-import { ChevronDownIcon, FaceFrownIcon, ScaleIcon } from '../../components/icons';
+import { ChevronDownIcon, FaceFrownIcon } from '../../components/icons';
 import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
 export default function Policies() {
-  const navigate = useNavigate();
+  const location = useLocation();
+  const backTo = (location.state as { backTo?: string } | null)?.backTo || '/';
+  const backLabel = backTo === '/compare' ? '返回对比' : '返回首页';
   const [searchParams, setSearchParams] = useSearchParams();
   const initialCity = searchParams.get('city') as CityCode | null;
   const allSubsidies = useMemo(() => getAllSubsidies(), []);
@@ -83,19 +85,8 @@ export default function Policies() {
     <div className="min-h-screen bg-paper">
       <PageHeader
         title="人才政策库"
-        backTo="/"
-        backLabel="返回首页"
-        right={
-          <button
-            type="button"
-            onClick={() => navigate('/compare')}
-            className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 focus:outline-none focus:ring-2 focus:ring-civic-blue/30"
-            title="返回城市对比"
-          >
-            <ScaleIcon className="h-4 w-4" />
-            <span className="hidden sm:inline">返回对比</span>
-          </button>
-        }
+        backTo={backTo}
+        backLabel={backLabel}
       />
 
       <main className="mx-auto max-w-3xl px-5 py-6 sm:px-6 sm:py-8">

@@ -262,14 +262,14 @@ export default function Compare() {
                 <div className="mt-1 flex flex-wrap items-center gap-3">
                   <button
                     type="button"
-                    onClick={() => navigate(`/policies?city=${activeCity}`)}
+                    onClick={() => navigate(`/input?mode=single&city=${activeCity}`)}
                     className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 transition-colors hover:text-slate-700 hover:underline"
                   >
                     查询该城市信息
                   </button>
                   <button
                     type="button"
-                    onClick={() => navigate(`/policies?city=${activeCity}`)}
+                    onClick={() => navigate(`/policies?city=${activeCity}`, { state: { backTo: '/compare' } })}
                     className="inline-flex items-center gap-1 text-xs font-medium text-civic-blue transition-colors hover:text-civic-blue/80 hover:underline"
                   >
                     查看该城市全部政策
