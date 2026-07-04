@@ -74,6 +74,7 @@ export default function Home() {
               {/* Badge */}
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-civic-blue/15 bg-civic-blue/5 px-3 py-1.5 text-xs font-semibold text-civic-blue sm:px-3.5 sm:py-1.5 sm:text-sm">
                 <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-2 w-2 animate-radar-pulse rounded-full bg-civic-blue/40" />
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-civic-blue/60 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-civic-blue" />
                 </span>

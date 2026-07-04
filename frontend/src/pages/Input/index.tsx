@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { FavoritesButton } from '../../components/FavoritesButton';
+import { RadarSpinner } from '../../components/RadarSpinner';
 import { useResultStore } from '../../stores';
 import { useUserStore } from '../../stores';
 import { useSchoolSearch, useSubsidyMatch, useMajorSearch } from '../../hooks';
@@ -1517,8 +1518,8 @@ export default function Input() {
           >
             {isLoading ? (
               <span className="inline-flex items-center gap-2">
-                <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                匹配中...
+                <RadarSpinner />
+                {mode === 'compare' ? '正在核对 64 城政策…' : '正在匹配政策…'}
               </span>
             ) : (
               mode === 'compare' ? '开始对比' : '开始匹配'

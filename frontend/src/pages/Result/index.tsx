@@ -4,9 +4,13 @@ import { useAIInterpret, useSubsidyMatch } from '../../hooks';
 import { useConfigStore } from '../../stores';
 import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems } from '../../utils/matcher';
+import { CATEGORY_NAMES } from '../../constants';
+import type { SubsidyCategory } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
 import { EmptyState } from '../../components/EmptyState';
+import { AnimatedNumber } from '../../components/AnimatedNumber';
+import { RadarSpinner } from '../../components/RadarSpinner';
 import { createPortal } from 'react-dom';
 import { useEffect, useState } from 'react';
 import type { UserProfile } from '../../types';
@@ -42,6 +46,25 @@ export default function Result() {
     groupExclusiveItems(matchedItems);
   // 直接使用 matcher 计算好的 nearMissItems，避免重复计算
   const nearMissItems = result?.nearMissItems || [];
+
+  const CATEGORY_COLORS: Record<SubsidyCategory, string> = {
+    living: '#f59e0b',
+    employment: '#f59e0b',
+    other: '#f59e0b',
+    rent: '#2563eb',
+    buy: '#7c3aed',
+    settlement: '#7c3aed',
+    talent: '#059669',
+    startup: '#0891b2',
+  };
+
+  const categoryAmounts = matchedItems.reduce((acc, item) => {
+    const cat = item.subsidy.category;
+    acc[cat] = (acc[cat] || 0) + item.matchedAmount;
+    return acc;
+  }, {} as Partial<Record<SubsidyCategory, number>>);
+
+  const totalCategoryAmount = Object.values(categoryAmounts).reduce((sum, v) => sum + (v || 0), 0);
 
   useEffect(() => {
     if (apiConfig && result && profile && matchedItems.length > 0) {
@@ -121,7 +144,7 @@ export default function Result() {
             className="relative mt-2 block w-full cursor-pointer text-center focus:outline-none"
           >
             <div className="font-data text-5xl font-semibold tracking-tight transition-opacity hover:opacity-90 sm:text-6xl">
-              {result.totalAmount.toLocaleString()}
+              <AnimatedNumber value={result.totalAmount} />
               <span className="ml-1 text-xl font-medium sm:text-2xl">元</span>
             </div>
             <div className="mt-1 text-xs text-white/70">
@@ -157,7 +180,7 @@ export default function Result() {
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-semibold text-ink">{item.subsidy.name}</span>
                           <span className="font-data text-lg font-semibold text-civic-blue">
-                            {item.matchedAmount.toLocaleString()}
+                            <AnimatedNumber value={item.matchedAmount} />
                           </span>
                         </div>
                         {item.subsidy.notes && <p className="mt-1 text-xs text-slate-500">{item.subsidy.notes || ''}</p>}
@@ -166,12 +189,38 @@ export default function Result() {
                   </div>
                   <div className="mt-4 flex items-center justify-between border-t border-slate-200 pt-4">
                     <span className="text-sm font-semibold text-ink">合计</span>
-                    <span className="font-data text-xl font-semibold text-civic-blue">{result.totalAmount.toLocaleString()}</span>
+                    <span className="font-data text-xl font-semibold text-civic-blue"><AnimatedNumber value={result.totalAmount} /></span>
                   </div>
                 </div>
               </div>,
               document.body
             )}
+
+          {totalCategoryAmount > 0 && (
+            <div className="relative mx-auto mt-5 w-full max-w-xs">
+              <div className="flex h-2.5 w-full overflow-hidden rounded-full bg-white/20">
+                {(Object.entries(categoryAmounts) as [SubsidyCategory, number][]).map(([cat, amount]) => {
+                  const pct = (amount / totalCategoryAmount) * 100;
+                  return (
+                    <div
+                      key={cat}
+                      className="h-full transition-all duration-700"
+                      style={{ width: `${pct}%`, backgroundColor: CATEGORY_COLORS[cat] }}
+                      title={`${CATEGORY_NAMES[cat]}：${amount.toLocaleString()}元`}
+                    />
+                  );
+                })}
+              </div>
+              <div className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1 text-[10px] text-white/80">
+                {(Object.entries(categoryAmounts) as [SubsidyCategory, number][]).map(([cat, amount]) => (
+                  <span key={cat} className="inline-flex items-center gap-1">
+                    <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: CATEGORY_COLORS[cat] }} />
+                    {CATEGORY_NAMES[cat]} {Math.round((amount / totalCategoryAmount) * 100)}%
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="relative mt-5 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm backdrop-blur-sm">
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -193,7 +242,7 @@ export default function Result() {
         {aiLoading && (
           <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-center gap-3 text-sm text-slate-500">
-              <div className="h-5 w-5 animate-spin rounded-full border-2 border-civic-blue border-t-transparent" />
+              <RadarSpinner className="h-5 w-5 text-civic-blue" />
               AI 正在生成个性化解读...
             </div>
           </div>

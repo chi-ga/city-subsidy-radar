@@ -73,10 +73,20 @@ export default {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        radarPulse: {
+          '0%': { transform: 'scale(0.8)', opacity: '0.35' },
+          '100%': { transform: 'scale(2.4)', opacity: '0' },
+        },
+        radarSweep: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         'fade-slide-in': 'fadeSlideIn 0.25s ease-out',
         'fade-in': 'fadeIn 0.2s ease-out',
+        'radar-pulse': 'radarPulse 2.4s ease-out infinite',
+        'radar-sweep': 'radarSweep 3s linear infinite',
       },
     },
   },

@@ -8,6 +8,7 @@ import { PolicyCard } from '../../components/PolicyCard';
 import { FavoritesButton } from '../../components/FavoritesButton';
 import { EmptyState } from '../../components/EmptyState';
 import { CompareBuyFilterButton } from '../../components/CompareBuyFilterButton';
+import { AnimatedNumber } from '../../components/AnimatedNumber';
 import type { CityCode, SubsidyCategory } from '../../constants';
 import type { MatchResultItem, MatchResult } from '../../types';
 
@@ -107,13 +108,16 @@ export default function Compare() {
             <p className="mb-4 text-xs text-slate-400">
               * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
             </p>
-            <div className="space-y-5">
+            <div
+              key={compareExcludedCategories.join(',')}
+              className="space-y-5 animate-fade-in"
+            >
               {sortedCities.map(([city, result], index) => {
                 const percentage = (result.totalAmount / maxAmount) * 100;
                 const isTop = index === 0;
                 const color = COMPARE_COLORS[index % COMPARE_COLORS.length];
                 return (
-                  <div key={city}>
+                  <div key={city} className="transition-all duration-500">
                     <div className="flex items-center justify-between text-sm">
                       <div className="flex items-center gap-2">
                         <span
@@ -135,13 +139,13 @@ export default function Compare() {
                         )}
                       </div>
                       <span className="font-data text-lg font-extrabold text-ink">
-                        {result.totalAmount.toLocaleString()}
+                        <AnimatedNumber value={result.totalAmount} />
                         <span className="ml-0.5 text-sm font-medium text-slate-500">元</span>
                       </span>
                     </div>
                     <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-slate-100">
                       <div
-                        className="h-full rounded-full transition-all"
+                        className="h-full rounded-full transition-all duration-700"
                         style={{ width: `${percentage}%`, backgroundColor: isTop ? color : '#cbd5e1' }}
                       />
                     </div>
@@ -155,40 +159,52 @@ export default function Compare() {
           </div>
         </div>
 
-        {/* City Select */}
+        {/* Rank Chips */}
         <div className="mt-8">
-          <label className="mb-2 block text-sm font-semibold text-ink">查看城市明细</label>
-          <div className="relative">
-            <select
-              value={activeCity}
-              onChange={(e) => setActiveCity(e.target.value)}
-              className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 pr-10 text-sm shadow-sm transition-colors focus:border-civic-blue focus:outline-none focus:ring-2 focus:ring-civic-blue/20"
-            >
-              {sortedCities.map(([city, result]) => (
-                <option key={city} value={city}>
-                  {CITY_NAMES[city as CityCode]} — {result.totalAmount.toLocaleString()}元
-                </option>
-              ))}
-            </select>
-            <svg
-              className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+          <label className="mb-3 block text-sm font-semibold text-ink">查看城市明细</label>
+          <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-2 sm:-mx-6 sm:px-6 scrollbar-hide">
+            {sortedCities.map(([city, result], index) => {
+              const isActive = activeCity === city;
+              const rank = index + 1;
+              return (
+                <button
+                  key={city}
+                  type="button"
+                  onClick={() => setActiveCity(city)}
+                  className={`group relative flex shrink-0 flex-col items-start rounded-xl border px-3.5 py-2.5 text-left transition-all ${
+                    isActive
+                      ? 'border-civic-blue/30 bg-civic-blue/5 shadow-sm'
+                      : 'border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50'
+                  }`}
+                >
+                  <span
+                    className={`mb-1 flex h-5 w-5 items-center justify-center rounded-md text-[10px] font-bold ${
+                      rank === 1
+                        ? 'bg-civic-blue text-white'
+                        : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'
+                    }`}
+                  >
+                    {rank}
+                  </span>
+                  <span className={`text-sm font-semibold ${isActive ? 'text-civic-blue' : 'text-ink'}`}>
+                    {CITY_NAMES[city as CityCode]}
+                  </span>
+                  <span className="font-data text-xs font-medium text-slate-500">
+                    <AnimatedNumber value={result.totalAmount} />元
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
         {/* City Detail */}
         {activeCity && filteredCompareResults[activeCity as CityCode] && (
-          <div className="mt-4">
+          <div key={activeCity} className="mt-4 animate-fade-in">
             <div className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-4 shadow-sm">
               <h3 className="text-base font-bold text-ink">{CITY_NAMES[activeCity as CityCode]}可拿补贴明细</h3>
               <div className="font-data text-xl font-extrabold text-civic-blue">
-                {filteredCompareResults[activeCity as CityCode].totalAmount.toLocaleString()}
+                <AnimatedNumber value={filteredCompareResults[activeCity as CityCode].totalAmount} />
                 <span className="ml-1 text-sm font-medium text-slate-500">元</span>
               </div>
             </div>
