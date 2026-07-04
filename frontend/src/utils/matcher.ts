@@ -1,6 +1,12 @@
 import type { UserProfile, Subsidy, SubsidyAmount, MatchResultItem, MatchResult, TodoItem, CriterionSet, Degree } from '../types';
 import { IMMUTABLE_CONDITION_PREFIXES, expandLevels } from '../constants';
 import type { SubsidyCategory } from '../constants';
+
+export interface MatchOptions {
+  /** 多城对比等场景下，默认用户最终可满足落户、就业等软性条件 */
+  satisfySoftConditions?: boolean;
+}
+
 import {
   schoolHasTopStudentPlan,
   isDoubleFirstClassDiscipline,
@@ -80,9 +86,11 @@ export function calculateTotalAmount(
  */
 export function matchCriterionSet(
   user: UserProfile,
-  set: CriterionSet
+  set: CriterionSet,
+  options?: MatchOptions
 ): { matched: boolean; missing: string[]; applicable: boolean } {
   const missing: string[] = [];
+  const softSatisfied = options?.satisfySoftConditions === true;
 
   // 学校区域限制：若用户的学校区域与集合要求不符，集合整体不适用
   if (set.schoolRegion) {
@@ -191,12 +199,12 @@ export function matchCriterionSet(
   }
 
   // 落户要求（criterionSets 内使用，如区分国内/海外博士的户籍限制）
-  if (set.householdRequired && user.householdStatus !== '已落户') {
+  if (set.householdRequired && !softSatisfied && user.householdStatus !== '已落户') {
     missing.push('需要已落户');
   }
 
   // 就业要求（criterionSets 内使用）
-  if (set.employmentRequired && user.employmentStatus !== '已就业') {
+  if (set.employmentRequired && !softSatisfied && user.employmentStatus !== '已就业') {
     missing.push('需要已就业');
   }
 
@@ -234,11 +242,12 @@ export function matchCriterionSet(
  */
 export function matchByCriterionSets(
   user: UserProfile,
-  sets: CriterionSet[]
+  sets: CriterionSet[],
+  options?: MatchOptions
 ): { matched: boolean; missing: string[]; matchedSet?: CriterionSet } {
   const allMissing = new Set<string>();
   for (const set of sets) {
-    const r = matchCriterionSet(user, set);
+    const r = matchCriterionSet(user, set, options);
     if (!r.applicable) continue;
     if (r.matched) {
       return { matched: true, missing: [], matchedSet: set };
@@ -250,7 +259,12 @@ export function matchByCriterionSets(
   return { matched: false, missing: Array.from(allMissing) };
 }
 
-export function matchSubsidy(user: UserProfile, subsidy: Subsidy): MatchResultItem {
+export function matchSubsidy(
+  user: UserProfile,
+  subsidy: Subsidy,
+  options?: MatchOptions
+): MatchResultItem {
+  const softSatisfied = options?.satisfySoftConditions === true;
   // 双学位金额处理：若政策区分双学位金额，无双学位时用 baseTieredAmount（基础档），有双学位时用 tieredAmount（满额）
   let effectiveTiered = subsidy.tieredAmount;
   if (subsidy.requiresDoubleDegree) {
@@ -313,11 +327,11 @@ export function matchSubsidy(user: UserProfile, subsidy: Subsidy): MatchResultIt
     }
   }
 
-  if (subsidy.conditions.employmentRequired && user.employmentStatus !== '已就业') {
+  if (subsidy.conditions.employmentRequired && !softSatisfied && user.employmentStatus !== '已就业') {
     standardMissing.push('需要已就业');
   }
 
-  if (subsidy.conditions.householdRequired && user.householdStatus !== '已落户') {
+  if (subsidy.conditions.householdRequired && !softSatisfied && user.householdStatus !== '已落户') {
     standardMissing.push('需要已落户');
   }
 
@@ -405,7 +419,7 @@ export function matchSubsidy(user: UserProfile, subsidy: Subsidy): MatchResultIt
   // 第二步：若存在 criterionSets，则在标准条件已满足的基础上，
   //         要求至少有一个集合"适用且全部条件都满足"（取交集）
   if (subsidy.conditions.criterionSets && subsidy.conditions.criterionSets.length > 0) {
-    const { matched, missing, matchedSet } = matchByCriterionSets(user, subsidy.conditions.criterionSets);
+    const { matched, missing, matchedSet } = matchByCriterionSets(user, subsidy.conditions.criterionSets, options);
     // 若匹配到的集合自带金额配置，则优先使用该集合的金额
     let setTotal = total;
     let setBreakdown = breakdown;
@@ -434,8 +448,12 @@ export function matchSubsidy(user: UserProfile, subsidy: Subsidy): MatchResultIt
   };
 }
 
-export function matchAllSubsidies(user: UserProfile, subsidies: Subsidy[]): MatchResult {
-  const results = subsidies.map((s) => matchSubsidy(user, s));
+export function matchAllSubsidies(
+  user: UserProfile,
+  subsidies: Subsidy[],
+  options?: MatchOptions
+): MatchResult {
+  const results = subsidies.map((s) => matchSubsidy(user, s, options));
   const matchedResults = results.filter((r) => r.matched);
 
   // 互斥组处理：同一组只能领一个，金额取最高值；无组的政策直接累加

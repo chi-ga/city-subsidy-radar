@@ -27,7 +27,7 @@ export function useSubsidyMatch() {
         const citySubsidies = getSubsidiesByCity(city);
         const filtered = applyDistrictFilter(citySubsidies, user.district);
         const subsidies = filterByTier(filtered, [1]);
-        results[city] = matchAllSubsidies(cityUser, subsidies);
+        results[city] = matchAllSubsidies(cityUser, subsidies, { satisfySoftConditions: true });
       });
       return results;
     },
