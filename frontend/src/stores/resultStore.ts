@@ -6,6 +6,7 @@ interface ResultState {
   result: MatchResult | null;
   compareResults: Record<string, MatchResult> | null;
   compareExcludedCategories: SubsidyCategory[];
+  excludedCategories: SubsidyCategory[];
   isLoading: boolean;
   error: string | null;
   setResult: (result: MatchResult) => void;
@@ -13,27 +14,36 @@ interface ResultState {
   setLoading: (loading: boolean) => void;
   setError: (error: string | null) => void;
   toggleCompareExcludedCategory: (category: SubsidyCategory) => void;
+  toggleExcludedCategory: (category: SubsidyCategory) => void;
   toggleTodo: (todoId: string) => void;
   reset: () => void;
 }
+
+const createToggle = (key: 'compareExcludedCategories' | 'excludedCategories') =>
+  (category: SubsidyCategory, get: () => ResultState, set: (state: Partial<ResultState>) => void) => {
+    const current = get()[key];
+    const next = current.includes(category)
+      ? current.filter((c) => c !== category)
+      : [...current, category];
+    set({ [key]: next } as Partial<ResultState>);
+  };
+
+const toggleCompareExcludedCategoryImpl = createToggle('compareExcludedCategories');
+const toggleExcludedCategoryImpl = createToggle('excludedCategories');
 
 export const useResultStore = create<ResultState>((set, get) => ({
   result: null,
   compareResults: null,
   compareExcludedCategories: [],
+  excludedCategories: [],
   isLoading: false,
   error: null,
   setResult: (result) => set({ result, isLoading: false, error: null }),
   setCompareResults: (compareResults) => set({ compareResults, isLoading: false, error: null }),
   setLoading: (isLoading) => set({ isLoading }),
   setError: (error) => set({ error, isLoading: false }),
-  toggleCompareExcludedCategory: (category) => {
-    const { compareExcludedCategories } = get();
-    const next = compareExcludedCategories.includes(category)
-      ? compareExcludedCategories.filter((c) => c !== category)
-      : [...compareExcludedCategories, category];
-    set({ compareExcludedCategories: next });
-  },
+  toggleCompareExcludedCategory: (category) => toggleCompareExcludedCategoryImpl(category, get, set),
+  toggleExcludedCategory: (category) => toggleExcludedCategoryImpl(category, get, set),
   toggleTodo: (todoId: string) => {
     const { result } = get();
     if (!result) return;

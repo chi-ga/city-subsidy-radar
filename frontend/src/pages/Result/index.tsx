@@ -3,8 +3,9 @@ import { useResultStore, useUserStore } from '../../stores';
 import { useAIInterpret, useSubsidyMatch } from '../../hooks';
 import { useConfigStore } from '../../stores';
 import { clearFormCache } from '../../utils/formCache';
-import { groupExclusiveItems } from '../../utils/matcher';
+import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/matcher';
 import { PolicyCard } from '../../components/PolicyCard';
+import { BuyFilterButton } from '../../components/BuyFilterButton';
 import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
 import {
@@ -25,7 +26,7 @@ import type { UserProfile } from '../../types';
 
 export default function Result() {
   const navigate = useNavigate();
-  const { result, toggleTodo } = useResultStore();
+  const { result, toggleTodo, excludedCategories, toggleExcludedCategory } = useResultStore();
   const { profile } = useUserStore();
   const { apiConfig } = useConfigStore();
   const { interpret, isLoading: aiLoading, error: aiError } = useAIInterpret();
@@ -47,13 +48,22 @@ export default function Result() {
     window.scrollTo(0, 0);
   }, []);
 
+  // 根据排除分类派生过滤后的结果
+  const filteredResult = result
+    ? filterMatchResultByCategories(result, excludedCategories)
+    : null;
+  const filteredTotalAmount = filteredResult?.totalAmount ?? result?.totalAmount ?? 0;
+
   // 展示条件：matched 为真 AND 年化金额 > 0（过滤掉 min=0 的占位政策）
   const matchedItems =
-    result?.subsidies.filter((s) => s.matched && s.matchedAmount > 0) || [];
+    filteredResult?.subsidies.filter((s) => s.matched && s.matchedAmount > 0) ||
+    result?.subsidies.filter((s) => s.matched && s.matchedAmount > 0) ||
+    [];
   const { groups: exclusiveGroups, standalone: standaloneItems } =
     groupExclusiveItems(matchedItems);
   // 直接使用 matcher 计算好的 nearMissItems，避免重复计算
   const nearMissItems = result?.nearMissItems || [];
+  const isBuyFiltered = excludedCategories.includes('buy');
 
   useEffect(() => {
     if (apiConfig && result && profile && matchedItems.length > 0) {
@@ -116,7 +126,7 @@ export default function Result() {
             className="relative mt-2 block w-full cursor-pointer text-center focus:outline-none"
           >
             <div className="font-data text-4xl font-semibold tracking-tight transition-opacity hover:opacity-90 sm:text-5xl lg:text-6xl">
-              <AnimatedNumber value={result.totalAmount} />
+              <AnimatedNumber value={filteredTotalAmount} />
               <span className="ml-1 text-lg font-medium sm:text-xl lg:text-2xl">元</span>
             </div>
             <div className="mt-1 text-xs text-white/70">
@@ -159,7 +169,7 @@ export default function Result() {
                   </div>
                   <div className="mt-4 flex items-center justify-between border-t border-slate-200 pt-4">
                     <span className="text-sm font-semibold text-ink">合计</span>
-                    <span className="font-data text-xl font-semibold text-civic-blue"><AnimatedNumber value={result.totalAmount} /></span>
+                    <span className="font-data text-xl font-semibold text-civic-blue"><AnimatedNumber value={filteredTotalAmount} /></span>
                   </div>
                 </div>
               </div>,
@@ -405,6 +415,10 @@ export default function Result() {
         )}
       </main>
 
+      <BuyFilterButton
+        isFiltered={isBuyFiltered}
+        onToggle={() => toggleExcludedCategory('buy')}
+      />
     </div>
   );
 }
