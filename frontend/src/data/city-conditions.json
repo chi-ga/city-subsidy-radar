@@ -744,7 +744,24 @@
         "海安市": {},
         "如皋市": {},
         "启东市": {}
-      }
+      },
+      "tier2Questions": [
+        {
+          "field": "rugaoTalentType",
+          "label": "您是否入选如皋市人才计划？",
+          "description": "如皋市人才房票包含\"雉水英才\"通道，覆盖各类人才计划入选者，最高可享150万元",
+          "type": "select",
+          "options": [
+            { "value": "", "label": "否 / 不确定（按学历通道匹配）" },
+            { "value": "zhishui_putong", "label": "如皋市\"雉水英才\"计划资助对象" },
+            { "value": "zhishui_jianghai", "label": "南通市江海英才计划资助对象" },
+            { "value": "zhishui_panfeng", "label": "南通市攀峰资助对象" },
+            { "value": "zhishui_shengji", "label": "省双创人才/省顶尖人才支持计划入选者" },
+            { "value": "zhishui_guojiaji", "label": "国家高层次人才（长江学者/国家杰青等）" },
+            { "value": "zhishui_yuanshi", "label": "中国科学院/工程院院士" }
+          ]
+        }
+      ]
     },
     "changzhou": {
       "base": {
