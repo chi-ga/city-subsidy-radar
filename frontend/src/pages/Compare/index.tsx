@@ -144,7 +144,10 @@ export default function Compare() {
         {/* Comparison Chart */}
         <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div className="border-b border-slate-100 px-6 py-4">
-            <h3 className="text-sm font-bold text-ink">预估补贴总额（到城后预计最高可拿）</h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm font-bold text-ink">预估补贴总额（到城后预计最高可拿）</h3>
+              <span className="text-xs text-slate-400">共 {sortedCities.length} 座城市 · 上下滑动查看</span>
+            </div>
           </div>
           <div className="p-6">
             <p className="mb-4 text-xs text-slate-400">
@@ -152,7 +155,7 @@ export default function Compare() {
             </p>
             <div
               key={compareExcludedCategories.join(',')}
-              className="space-y-5 animate-fade-in"
+              className="chart-scroll max-h-[480px] space-y-5 overflow-y-auto pr-1 animate-fade-in sm:max-h-[560px]"
             >
               {sortedCities.map(([city, result], index) => {
                 const percentage = (result.totalAmount / maxAmount) * 100;
