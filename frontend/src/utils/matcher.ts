@@ -629,6 +629,10 @@ export function applyDistrictFilter(subsidies: Subsidy[], district?: string): Su
   //   b) "上海市·徐汇区"      → 取出 "徐汇区"
   const districtName = district.includes('·') ? district.split('·')[1] : district;
   return subsidies.filter((s) => {
+    // 如果有 applicableDistricts 字段，只有用户选择的区在列表中才显示
+    if (s.application?.applicableDistricts && s.application.applicableDistricts.length > 0) {
+      return s.application.applicableDistricts.includes(districtName);
+    }
     const loc = s.application?.location || '';
     if (!loc) return true; // 无 location 信息默认保留
     if (loc === '市级') return true; // 市级始终保留

@@ -8,26 +8,26 @@
       "min": 10000,
       "max": 100000,
       "unit": "元",
-      "period": "一次性"
+      "period": "分两笔"
     },
     "tieredAmount": {
       "本科": {
         "min": 10000,
         "max": 10000,
         "unit": "元",
-        "period": "一次性"
+        "period": "分两笔"
       },
       "硕士": {
         "min": 30000,
         "max": 30000,
         "unit": "元",
-        "period": "一次性"
+        "period": "分两笔"
       },
       "博士": {
         "min": 100000,
         "max": 100000,
         "unit": "元",
-        "period": "一次性"
+        "period": "分两笔"
       }
     },
     "conditions": {
@@ -193,6 +193,7 @@
         "审核通过后拨付"
       ],
       "location": "市级",
+      "applicableDistricts": ["富阳区", "临安区", "桐庐县", "淳安县", "建德市"],
       "url": "https://hrss.hangzhou.gov.cn/art/2024/5/13/art_1229810556_4336829.html"
     },
     "policySource": "杭人社发〔2023〕126号",
@@ -214,7 +215,6 @@
     },
     "conditions": {
       "degree": ["专科"],
-      "graduationYear": "within_2_years",
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true
@@ -270,7 +270,6 @@
     },
     "conditions": {
       "degree": ["硕士", "博士"],
-      "graduationYear": "within_2_years",
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true
@@ -296,7 +295,7 @@
     },
     "policySource": "待核实",
     "effectiveDate": "2018-02-01",
-    "notes": "有效。税收在滨江区的企业新引进全日制应届博士、硕士毕业生。博士：第一年5万元一次性生活补贴，第二、第三年2000元/月租房补贴，合计9.8万元；硕士：第一年3万元一次性生活补贴，第二、第三年1000元/月租房补贴，合计5.4万元。需与企业签订1年及以上劳动合同并缴纳社保，申请人及家庭成员在杭州市城区无住房且未享受其他住房优惠政策。区所属行政事业单位及国有企业不列入租房补贴范围。",
+    "notes": "有效。2018年2月1日之后毕业、税收在滨江区的企业新引进全日制应届博士、硕士毕业生。博士：第一年5万元一次性生活补贴，第二、第三年2000元/月租房补贴，合计9.8万元；硕士：第一年3万元一次性生活补贴，第二、第三年1000元/月租房补贴，合计5.4万元。需与企业签订1年及以上劳动合同并缴纳社保，申请人及家庭成员在杭州市城区无住房且未享受其他住房优惠政策。区所属行政事业单位及国有企业不列入租房补贴范围。",
     "location": "杭州市·滨江区",
     "tier": 1,
     "exclusiveGroup": "hangzhou-district"

@@ -175,18 +175,24 @@
     "hangzhou": {
       "base": {
         "degree": true,
-        "schoolLevel": false,
+        "schoolLevel": true,
         "ageLimit": true,
         "graduationYear": true,
         "employmentRequired": true,
         "householdRequired": false,
-        "major": false
+        "major": false,
+        "showFullTime": true
       },
       "locationDependentFields": [],
       "districts": {
         "萧山区": {},
         "滨江区": {},
-        "余杭区": {}
+        "余杭区": {},
+        "富阳区": {},
+        "临安区": {},
+        "桐庐县": {},
+        "淳安县": {},
+        "建德市": {}
       }
     },
     "nanjing": {

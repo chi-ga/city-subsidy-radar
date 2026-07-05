@@ -4,8 +4,6 @@ import { useAIInterpret, useSubsidyMatch } from '../../hooks';
 import { useConfigStore } from '../../stores';
 import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems } from '../../utils/matcher';
-import { CATEGORY_NAMES } from '../../constants';
-import type { SubsidyCategory } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
 import { PageHeader } from '../../components/PageHeader';
 import { EmptyState } from '../../components/EmptyState';
@@ -56,25 +54,6 @@ export default function Result() {
     groupExclusiveItems(matchedItems);
   // 直接使用 matcher 计算好的 nearMissItems，避免重复计算
   const nearMissItems = result?.nearMissItems || [];
-
-  const CATEGORY_COLORS: Record<SubsidyCategory, string> = {
-    living: 'hsl(var(--amber))',
-    employment: 'hsl(var(--amber))',
-    other: 'hsl(var(--muted-foreground))',
-    rent: 'hsl(var(--civic-blue))',
-    buy: 'hsl(var(--civic-blue))',
-    settlement: 'hsl(var(--civic-blue))',
-    talent: 'hsl(var(--celadon))',
-    startup: 'hsl(var(--amber))',
-  };
-
-  const categoryAmounts = matchedItems.reduce((acc, item) => {
-    const cat = item.subsidy.category;
-    acc[cat] = (acc[cat] || 0) + item.matchedAmount;
-    return acc;
-  }, {} as Partial<Record<SubsidyCategory, number>>);
-
-  const totalCategoryAmount = Object.values(categoryAmounts).reduce((sum, v) => sum + (v || 0), 0);
 
   useEffect(() => {
     if (apiConfig && result && profile && matchedItems.length > 0) {
@@ -186,32 +165,6 @@ export default function Result() {
               </div>,
               document.body
             )}
-
-          {totalCategoryAmount > 0 && (
-            <div className="relative mx-auto mt-5 w-full max-w-xs">
-              <div className="flex h-2.5 w-full overflow-hidden rounded-full bg-white/20">
-                {(Object.entries(categoryAmounts) as [SubsidyCategory, number][]).map(([cat, amount]) => {
-                  const pct = (amount / totalCategoryAmount) * 100;
-                  return (
-                    <div
-                      key={cat}
-                      className="h-full transition-all duration-700"
-                      style={{ width: `${pct}%`, backgroundColor: CATEGORY_COLORS[cat] }}
-                      title={`${CATEGORY_NAMES[cat]}：${amount.toLocaleString()}元`}
-                    />
-                  );
-                })}
-              </div>
-              <div className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1 text-[10px] text-white/80">
-                {(Object.entries(categoryAmounts) as [SubsidyCategory, number][]).map(([cat, amount]) => (
-                  <span key={cat} className="inline-flex items-center gap-1">
-                    <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: CATEGORY_COLORS[cat] }} />
-                    {CATEGORY_NAMES[cat]} {Math.round((amount / totalCategoryAmount) * 100)}%
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
 
           <div className="relative mt-5 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm backdrop-blur-sm">
             <CheckBadgeIcon className="h-4 w-4" />

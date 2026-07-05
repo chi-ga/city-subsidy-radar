@@ -33,7 +33,10 @@ export type SchoolLevel =
   | 'USNews前300';
 
 // 榜单层级蕴含关系：前100 → 前150 → 前200 → 前300
+// 985/211 → 双一流：985和211院校都是双一流
 const LEVEL_IMPLICATIONS: Record<string, string> = {
+  '985': '双一流',
+  '211': '双一流',
   'QS前100': 'QS前150',
   'QS前150': 'QS前200',
   'QS前200': 'QS前300',

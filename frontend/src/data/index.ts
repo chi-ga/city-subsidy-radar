@@ -257,12 +257,15 @@ export function getTier2Questions(city?: string): Tier2Question[] {
 
 /**
  * 获取区/县级 location 列表（不含市级）
- * - city 不传 = 4 市的全部区集合
+ * - city 不传 = 所有城市的全部区集合
  * - city 传了 = 该市的全部区集合
+ * 同时从补贴数据的 application.location 和 city-conditions.json 的 districts 中获取
  */
 export function getLocationsForCity(city?: string): string[] {
   const cities = city ? [city] : Object.keys(subsidiesData);
   const set = new Set<string>();
+
+  // 从补贴数据的 application.location 中获取
   for (const c of cities) {
     for (const s of subsidiesData[c] || []) {
       const loc = s.application?.location;
@@ -272,6 +275,17 @@ export function getLocationsForCity(city?: string): string[] {
       }
     }
   }
+
+  // 从 city-conditions.json 的 districts 中获取
+  for (const c of cities) {
+    const config = cityConditionsConfig[c];
+    if (config?.districts) {
+      for (const district of Object.keys(config.districts)) {
+        set.add(district);
+      }
+    }
+  }
+
   return Array.from(set).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
 }
 

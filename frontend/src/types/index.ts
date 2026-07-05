@@ -130,6 +130,8 @@ export interface SubsidyApplication {
   channel: string;
   materials: string[];
   location: string;
+  /** 适用区域列表（可选）：当 location 为"市级"但只适用于特定区县时使用 */
+  applicableDistricts?: string[];
   url?: string;
   /** 申请流程步骤（可选） */
   process?: string[];
