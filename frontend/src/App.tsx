@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import './index.css';
 import ErrorBoundary from './components/ErrorBoundary';
 import { BackToTop } from './components/BackToTop';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const Home = lazy(() => import('./pages/Home'));
 const Input = lazy(() => import('./pages/Input'));
@@ -19,6 +20,7 @@ function AppContent() {
 
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/input" element={<Input />} />
