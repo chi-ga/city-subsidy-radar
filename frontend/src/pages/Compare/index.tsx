@@ -143,16 +143,21 @@ export default function Compare() {
 
         {/* Comparison Chart */}
         <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-100 px-6 py-4">
-            <div className="flex items-center justify-between">
+          <div className="border-b border-slate-100 px-4 py-3 sm:px-6 sm:py-4">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
               <h3 className="text-sm font-bold text-ink">预估补贴总额（到城后预计最高可拿）</h3>
               <span className="text-xs text-slate-400">共 {sortedCities.length} 座城市 · 上下滑动查看</span>
             </div>
           </div>
-          <div className="p-6">
-            <p className="mb-4 text-xs text-slate-400">
-              * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
-            </p>
+          <div className="p-4 sm:p-6">
+            <div className="mb-4 space-y-1">
+              <p className="text-xs text-slate-400">
+                * 金额为到该城市后、满足软性条件（落户/就业等）情况下的预计最高可拿总额，实际以官方审核为准。
+              </p>
+              <p className="text-xs text-slate-400">
+                * 部分城市含购房补贴可能影响金额计算，可点击右下方按钮过滤。
+              </p>
+            </div>
             <div
               key={compareExcludedCategories.join(',')}
               className="chart-scroll max-h-[480px] space-y-5 overflow-y-auto pr-1 animate-fade-in sm:max-h-[560px]"
