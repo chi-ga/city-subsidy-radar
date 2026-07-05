@@ -558,6 +558,10 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'baoding-zufang-goufang': '保定租房与购房补贴（不可同时享受）',
   'taizhoujs-district': '泰州区级补贴（只能在一个区享受）',
   'hefei-zufang': '合肥住房租赁补贴（高校毕业生/高层次人才/高技能人才三选一）',
+  'suzhou-rent': '苏州租房补贴（虚拟优租房与人才公寓二选一）',
+  'weifang-housing': '潍坊住房补贴（购房补贴与租房补贴二选一）',
+  'linyi-housing': '临沂住房补贴（购房补贴与租房补贴二选一）',
+  'taiyuan-shenghuo-zufang': '太原市生活补助与租房补贴（只可申请一项）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {
