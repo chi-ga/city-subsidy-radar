@@ -1,0 +1,390 @@
+[
+  {
+    "id": "xiangyang-shiji-zhihuxiangyangshenghuobutie",
+    "city": "xiangyang",
+    "name": "襄阳市企事业单位引进人才生活补贴（\u201c智汇襄阳\u201d计划）",
+    "category": "living",
+    "amount": {
+      "min": 36000,
+      "max": 180000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 72000,
+        "max": 72000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 180000,
+        "max": 180000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2022年7月10日及以后首次来襄就业，在职在岗期间申报",
+      "channel": "襄阳人才综合服务平台（线上申报审核）",
+      "materials": [
+        "教育部学历证书电子注册备案表",
+        "在有效期内的劳动合同（2022年7月10日及以后签订）",
+        "截至申报上月的社保缴纳记录（至少包含个人养老保险、医疗保险明细表，可从湖北政务服务网或鄂汇办APP下载）",
+        "社会保障卡或银行卡",
+        "人力资源公司书面说明（针对劳务派遣人员，重点说明人才引进时间、工作形式是否属于劳务派遣或服务外包、用工单位等）"
+      ],
+      "process": [
+        "登录襄阳人才综合服务平台注册认证",
+        "填写申报信息、上传证明材料",
+        "单位初审",
+        "市委人才办/管理部门审核",
+        "审核通过后按月拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "http://www.xiangyang.gov.cn/szf/zfxxgk/fdzdgknr/gysyjs/jy/jyzc/202601/t20260108_3939263.shtml"
+    },
+    "policySource": "襄发〔2022〕14号《\u201c智汇襄阳\u201d计划实施办法》",
+    "effectiveDate": "2022-07-10",
+    "notes": "有效。博士18万元、硕士7.2万元、全日制本（专）科生3.6万元，税前，分3年按月发放（连续36个月）。2022年7月10日及以后首次来襄就业，市区企业（不含襄州区）或市直事业单位全职新引进，缴纳社保。博士不限毕业年限，硕士/本专科需毕业5年内。博士/硕士应为全日制或2016年12月1日后录取全脱产非全日制。在襄首次就业且未更换工作单位。",
+    "location": "襄阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xiangyang-shiji-goufangshoufukuanbutiequan",
+    "city": "xiangyang",
+    "name": "襄阳市企事业单位引进人才购房首付款补贴券",
+    "category": "buy",
+    "amount": {
+      "min": 60000,
+      "max": 120000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "本科": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 120000,
+        "max": 120000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2022年7月10日及以后首次就业（含返乡创业）3年内申请",
+      "channel": "襄阳人才综合服务平台（线上申报审核，需先完成人才分类认定）",
+      "materials": [
+        "人才分类认定相关证明材料（学历学位证书、教育部学历证书电子注册备案表或留学服务中心认证书等）",
+        "身份证",
+        "劳动合同或事业单位聘用文件",
+        "社保缴纳证明",
+        "本人及配偶无自有产权住房证明",
+        "近5年内无产权房出售交易记录证明",
+        "购房合同（网签备案）等（具体以平台系统提示为准）"
+      ],
+      "process": [
+        "在襄阳人才综合服务平台注册认证，完成人才分类认定",
+        "在\u201c购房首付款补贴券\u201d业务模块填写信息、提交佐证资料",
+        "市委人才办会同市人社局审核引进时间、学历等，提出发放金额意见",
+        "市住建局核查本人及配偶在市区自有产权住房和近5年交易记录",
+        "拟核发对象在平台公示5个工作日",
+        "公示无异议后由市住建局发放电子购房首付款补贴券"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7146181262485848576/"
+    },
+    "policySource": "《襄阳市人才安居保障办法》《襄阳市人才分类服务保障暂行办法》",
+    "effectiveDate": "2022-07-10",
+    "notes": "有效。博士12万元、硕士8万元、全日制本（专）科生6万元，税前，一次性发放电子券（6个月内有效）。需人才分类认定（F类本科专科/E类博士硕士，按学历认定）。2022年7月10日及以后首次就业3年内，缴纳社保，个人及配偶在市区无自有产权住房且近5年内无产权房出售交易记录。A/B类实行\u201c一事一议\u201d，C/D类需省级/市级人才认定，不纳入普惠范围。每人限领一张，仅限本人使用。",
+    "location": "襄阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xiangyang-shiji-rencagongyu",
+    "city": "xiangyang",
+    "name": "襄阳市人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "分期"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常年受理（A-E类随时申请，F类每半年集中申报一次）",
+      "channel": "襄阳人才综合服务平台（线上申报审核）",
+      "materials": [
+        "人才分类认定相关证明材料（学历学位证书等）",
+        "身份证及配偶身份证",
+        "劳动合同或任职文件",
+        "社保缴纳证明",
+        "本人及配偶在市区无自有房产证明等（具体以平台系统提示为准）"
+      ],
+      "process": [
+        "在襄阳人才综合服务平台注册认证，完成人才分类认定",
+        "提交人才公寓申请",
+        "工作单位初审",
+        "审核资格、核查房产",
+        "公示",
+        "安排入住（E类以上随时安排，F类集中审核）"
+      ],
+      "location": "市级",
+      "url": "http://m.xf.bendibao.com/mip/26725.shtm"
+    },
+    "policySource": "《襄阳市人才安居保障办法》",
+    "effectiveDate": "2022-07-10",
+    "notes": "有效。租住人才公寓3年内按市场租金50%收取，3-5年按70%，5年后按100%。市区26处人才公寓市场租金基准价11.4-25元/平方米/月。需人才分类认定（全日制本专科为F类，博士/硕士为E类）。有劳动合同，本人及配偶在市区无自有房产，在市区缴纳社保。精装修配备家具家电，可拎包入住，水电燃气宽带物业等费用自理。新租金标准2025年9月18日起施行，有效期两年。",
+    "location": "襄阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xiangyang-shiji-yicixingchuangyebutie",
+    "city": "xiangyang",
+    "name": "襄阳市高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "正常经营6个月及以上即可申报，不可重复申报",
+      "channel": "线上：襄阳人社APP；线下：各县（市、区）公共就业和人才服务局",
+      "materials": [
+        "《居民身份证》",
+        "《教育部学历证书电子注册备案表》、返乡证明、《就业创业证》就业困难人员认定",
+        "工商营业执照",
+        "带动就业人员的劳动合同（或工资发放记录或银行转账流水）等资料",
+        "申请人在银行的开户信息等"
+      ],
+      "process": [
+        "下载\u201c襄阳人社\u201dAPP注册登录",
+        "点击【服务】-【就业创业】-【创业补贴申请】",
+        "填写基本信息及银行账户，拍照上传申请材料",
+        "提交后由营业执照所在地的公共就业经办机构受理审核",
+        "审核→公示→拨付"
+      ],
+      "location": "市级",
+      "url": "http://rsj.xiangyang.gov.cn/ztzl/gxbysjycy/cyzc/202507/t20250708_3837996.shtml"
+    },
+    "policySource": "鄂财社发〔2024〕88号《湖北省就业补助资金管理办法》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。5000元一次性发放，不可重复申报。毕业5年内高校毕业生（含非本地户籍），初次办理注册登记，正常经营6个月及以上，带动就业2人及以上（含创业者本人），申请时处于正常营业状态。不限定全日制学历。",
+    "location": "襄阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xiangyang-shiji-chuangyeshenghuobutie",
+    "city": "xiangyang",
+    "name": "襄阳市高校毕业生创业生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "取得营业执照满1年后申报，一年一发放，最长不超过3年",
+      "channel": "各县（市、区）公共就业和人才服务局窗口",
+      "materials": [
+        "《襄阳市高校毕业生创业（生活、租赁住房）补贴资金申请表》",
+        "《居民身份证》原件及复印件",
+        "《毕业证》（在校《学生证》）原件及复印件",
+        "工商营业执照原件及复印件",
+        "申请人在银行的开户名称及账号复印件"
+      ],
+      "process": [
+        "准备申请材料",
+        "向各县（市、区）公共就业和人才服务局窗口提交申请",
+        "受理→审核→拨付"
+      ],
+      "location": "市级",
+      "url": "http://www.xiangyang.gov.cn/zmhd/mszqy/202308/t20230817_3353459.shtml"
+    },
+    "policySource": "襄政发〔2019〕3号《襄阳市人民政府关于做好当前和今后一段时期促进就业工作的实施意见》",
+    "effectiveDate": "2019-01-01",
+    "notes": "有效。500元/月，一年一发放，最长不超过3年。全日制普通高校（含国家承认学历的境外院校）在校生和毕业学年5年内高校毕业生，在襄首次注册创办企业并担任企业法定代表人，自取得营业执照之日起满1年。",
+    "location": "襄阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xiangyang-shiji-chuangyezulinzhufangbutie",
+    "city": "xiangyang",
+    "name": "襄阳市高校毕业生创业租赁住房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "取得营业执照满1年后申报，一年一发放，最长不超过3年",
+      "channel": "各县（市、区）公共就业和人才服务局窗口",
+      "materials": [
+        "《襄阳市高校毕业生创业（生活、租赁住房）补贴资金申请表》",
+        "《居民身份证》原件及复印件",
+        "《毕业证》（在校《学生证》）原件及复印件",
+        "工商营业执照原件及复印件",
+        "申请人在银行的开户名称及账号复印件"
+      ],
+      "process": [
+        "准备申请材料",
+        "向各县（市、区）公共就业和人才服务局窗口提交申请",
+        "受理→审核→拨付"
+      ],
+      "location": "市级",
+      "url": "http://www.xiangyang.gov.cn/zmhd/mszqy/202308/t20230817_3353459.shtml"
+    },
+    "policySource": "襄政发〔2019〕3号《襄阳市人民政府关于做好当前和今后一段时期促进就业工作的实施意见》",
+    "effectiveDate": "2019-01-01",
+    "notes": "有效。500元/月，一年一发放，最长不超过3年。全日制普通高校（含国家承认学历的境外院校）在校生和毕业学年5年内高校毕业生，在襄首次注册创办企业并担任企业法定代表人，自取得营业执照之日起满1年，且在外租赁住房。",
+    "location": "襄阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xiangyang-shiji-chuangyechangdizulinbutie",
+    "city": "xiangyang",
+    "name": "襄阳市高校毕业生创业场地租赁补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "租赁合同满1年以上即可申报，连续3年每年5000元",
+      "channel": "线上：襄阳人社APP；线下：各县（市、区）公共就业和人才服务局",
+      "materials": [
+        "《居民身份证》",
+        "《毕业证》（在校《学生证》）",
+        "《教育部学历证书电子注册备案表》",
+        "工商营业执照",
+        "申请人在银行的开户名称及账号复印件",
+        "场地租赁合同及银行转账信息等"
+      ],
+      "process": [
+        "下载\u201c襄阳人社\u201dAPP注册登录",
+        "点击【服务】-【就业创业】-【创业补贴申请】-【高校毕业生创业场租补贴申领】-【开始办理】",
+        "填写申报人本人基本信息及本人银行账户等相关信息",
+        "拍照上传申请材料，点击【提交】",
+        "由营业执照所在地的公共就业经办机构受理审核"
+      ],
+      "location": "市级",
+      "url": "http://www.xiangyang.gov.cn/zt/2025/fxcy2/cybtzc/202506/t20250630_3833327.shtml"
+    },
+    "policySource": "鄂财社发〔2024〕88号《湖北省就业补助资金管理办法》（原依据襄财社发〔2013〕28号《襄阳市支持大学生创业就业专项资金管理暂行办法》）",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。5000元/年，连续3年发放（场租、水电、宽带网络、公共软件等补贴）。全日制普通高校在校生和毕业5年内高校毕业生，在襄首次创业并租赁场地，租赁合同满1年以上。",
+    "location": "襄阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

@@ -140,6 +140,7 @@ export type CityCode =
   | 'huizhou'
   | 'zhongshan'
   | 'haikou'
+  | 'sanya'
   | 'guiyang'
   | 'shenyang'
   | 'dalian'
@@ -175,7 +176,12 @@ export type CityCode =
   | 'lasa'
   | 'zibo'
   | 'mianyang'
-  | 'guilin';
+  | 'guilin'
+  | 'shantou'
+  | 'zhanjiang'
+  | 'jiujiang'
+  | 'yichang'
+  | 'xiangyang';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -213,6 +219,7 @@ export const CITY_NAMES: Record<CityCode, string> = {
   huizhou: '惠州',
   zhongshan: '中山',
   haikou: '海口',
+  sanya: '三亚',
   guiyang: '贵阳',
   shenyang: '沈阳',
   dalian: '大连',
@@ -249,6 +256,11 @@ export const CITY_NAMES: Record<CityCode, string> = {
   zibo: '淄博',
   mianyang: '绵阳',
   guilin: '桂林',
+  shantou: '汕头',
+  zhanjiang: '湛江',
+  jiujiang: '九江',
+  yichang: '宜昌',
+  xiangyang: '襄阳',
 };
 
 // 补贴分类名称映射

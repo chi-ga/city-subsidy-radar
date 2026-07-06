@@ -39,6 +39,7 @@ const COVERED_CITIES = [
   { name: '惠州市', code: 'huizhou', adcode: '441300', count: 4 },
   { name: '中山市', code: 'zhongshan', adcode: '442000', count: 3 },
   { name: '海口市', code: 'haikou', adcode: '460100', count: 2 },
+  { name: '三亚市', code: 'sanya', adcode: '460200', count: 2 },
   { name: '贵阳市', code: 'guiyang', adcode: '520100', count: 3 },
   { name: '沈阳市', code: 'shenyang', adcode: '210100', count: 6 },
   { name: '大连市', code: 'dalian', adcode: '210200', count: 6 },
@@ -76,6 +77,11 @@ const COVERED_CITIES = [
   { name: '淄博市', code: 'zibo', adcode: '370300', count: 3 },
   { name: '绵阳市', code: 'mianyang', adcode: '510700', count: 2 },
   { name: '桂林市', code: 'guilin', adcode: '450300', count: 6 },
+  { name: '汕头市', code: 'shantou', adcode: '440500', count: 8 },
+  { name: '湛江市', code: 'zhanjiang', adcode: '440800', count: 4 },
+  { name: '九江市', code: 'jiujiang', adcode: '360400', count: 5 },
+  { name: '宜昌市', code: 'yichang', adcode: '420500', count: 7 },
+  { name: '襄阳市', code: 'xiangyang', adcode: '420600', count: 7 },
 ];
 
 export default function StaticChinaMap(_props: StaticChinaMapProps) {

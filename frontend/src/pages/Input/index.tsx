@@ -300,12 +300,13 @@ export default function Input() {
           'nanjing', 'chongqing', 'quanzhou', 'wuhan', 'wenzhou', 'ningbo', 'changsha',
           'chengdu', 'jinan', 'shaoxing', 'zhuhai', 'nanning', 'zhengzhou', 'qingdao',
           'wuxi', 'fuzhou', 'xiamen', 'nanchang', 'kunming', 'tianjin', 'suzhou', 'xian',
-          'dongguan', 'foshan', 'huizhou', 'zhongshan', 'haikou', 'guiyang', 'shenyang',
+          'dongguan', 'foshan', 'huizhou', 'zhongshan', 'haikou', 'sanya', 'guiyang', 'shenyang',
           'dalian', 'changchun', 'harbin', 'shijiazhuang', 'yantai', 'nantong', 'changzhou',
           'xuzhou', 'tangshan', 'wuhu', 'taiyuan', 'lanzhou', 'luoyang', 'weifang', 'ganzhou',
           'yinchuan', 'huhehaote', 'linyi', 'jinhua', 'taizhou', 'baoding', 'yancheng',
           'yangzhou', 'taizhoujs', 'zhenjiang', 'lianyungang', 'huaian', 'suqian',
           'wulumuqi', 'xining', 'lasa', 'zibo', 'mianyang', 'guilin',
+          'sanya', 'shantou', 'zhanjiang', 'jiujiang', 'yichang', 'xiangyang',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

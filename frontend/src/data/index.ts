@@ -32,6 +32,7 @@ import foshan from './subsidies/foshan.json';
 import huizhou from './subsidies/huizhou.json';
 import zhongshan from './subsidies/zhongshan.json';
 import haikou from './subsidies/haikou.json';
+import sanya from './subsidies/sanya.json';
 import guiyang from './subsidies/guiyang.json';
 import shenyang from './subsidies/shenyang.json';
 import dalian from './subsidies/dalian.json';
@@ -68,6 +69,11 @@ import lasa from './subsidies/lasa.json';
 import zibo from './subsidies/zibo.json';
 import mianyang from './subsidies/mianyang.json';
 import guilin from './subsidies/guilin.json';
+import shantou from './subsidies/shantou.json';
+import zhanjiang from './subsidies/zhanjiang.json';
+import jiujiang from './subsidies/jiujiang.json';
+import yichang from './subsidies/yichang.json';
+import xiangyang from './subsidies/xiangyang.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -107,6 +113,7 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   huizhou: huizhou as Subsidy[],
   zhongshan: zhongshan as Subsidy[],
   haikou: haikou as Subsidy[],
+  sanya: sanya as Subsidy[],
   guiyang: guiyang as Subsidy[],
   shenyang: shenyang as Subsidy[],
   dalian: dalian as Subsidy[],
@@ -143,6 +150,11 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   zibo: zibo as Subsidy[],
   mianyang: mianyang as Subsidy[],
   guilin: guilin as Subsidy[],
+  shantou: shantou as Subsidy[],
+  zhanjiang: zhanjiang as Subsidy[],
+  jiujiang: jiujiang as Subsidy[],
+  yichang: yichang as Subsidy[],
+  xiangyang: xiangyang as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -338,6 +350,7 @@ export function getCityLevelLocation(city: string): string {
     huizhou: '惠州市',
     zhongshan: '中山市',
     haikou: '海口市',
+    sanya: '三亚市',
     guiyang: '贵阳市',
     shenyang: '沈阳市',
     dalian: '大连市',
@@ -374,6 +387,11 @@ export function getCityLevelLocation(city: string): string {
     zibo: '淄博市',
     mianyang: '绵阳市',
     guilin: '桂林市',
+    shantou: '汕头市',
+    zhanjiang: '湛江市',
+    jiujiang: '九江市',
+    yichang: '宜昌市',
+    xiangyang: '襄阳市',
   };
   return map[city] || '';
 }

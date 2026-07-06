@@ -1,0 +1,491 @@
+[
+  {
+    "id": "yichang-shiji-shenghuobutie",
+    "city": "yichang",
+    "name": "宜昌市高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 18000,
+      "max": 300000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 150000,
+        "max": 300000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2021年6月1日以后新引进；硕士、本（专）科连续缴纳社保6个月后按月申报（每月20日前完成申报，次月发放），政策享受期限最高不超过3年",
+      "channel": "宜才码微信小程序",
+      "materials": [
+        "身份证",
+        "学历学位证书及《教育部学历证书电子注册备案表》（或教育部留学服务中心学历学位认证书）",
+        "劳动合同或就业协议（创业的提供营业执照）",
+        "社会保险缴纳证明",
+        "创业人员须提供企业正常经营6个月以上证明"
+      ],
+      "process": [
+        "通过“宜才码”微信小程序进行人才分类认定",
+        "选择“博士研究生生活补贴发放”或“大学生生活补贴发放”服务事项在线申请",
+        "市直主管部门/各城区人社局进行资格审核",
+        "市人社局确认后发放至用人单位或市民卡账户（硕士、本专科每月20日前申报，次月发放）"
+      ],
+      "location": "市级",
+      "url": "http://www.yichang.gov.cn/content-62559-1042472-1.html"
+    },
+    "policySource": "宜办发〔2021〕21号（《关于印发优化人才生态加快人才集聚有关文件的通知》及“1+4”配套文件）",
+    "effectiveDate": "2021-06-01",
+    "notes": "有效。2021年6月1日以后新引进到宜昌城区（含夷陵区）的博士、硕士、本（专）科生可申请。博士三年内发放15-30万元（按用人单位类型分档：公益一类事业单位15万、公益二类事业单位20万、企业工作或创业30万），按年度分三次发放；硕士每月1000元、本（专）科每月500元，最长不超过3年。硕士、本（专）科须在城区企业首次就业且连续缴纳养老、工伤、失业三项社保6个月以上。需通过“宜才码”分类认定（博士凭学历认定D类、硕士E类、本专科F类，均为凭学历自动认定，无需特殊人才证书）。",
+    "location": "宜昌·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yichang-shiji-zufangbutie",
+    "city": "yichang",
+    "name": "宜昌市新就业大学生租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 18000,
+      "max": 36000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 28800,
+        "max": 28800,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "在宜昌市正式签订聘用合同或就业协议后2年内提出申请，补贴时间最长不超过3年",
+      "channel": "宜才码微信小程序 / 湖北政务服务网 / 租房所在地社区",
+      "materials": [
+        "申请人及家庭成员身份证",
+        "申请人毕业证书",
+        "申请人与用工单位签订的聘用合同或就业协议",
+        "租房合同",
+        "租赁合同备案证明或住房租赁真实性承诺书"
+      ],
+      "process": [
+        "方式一：登录“宜才码”小程序点击“租房补贴”填报信息并上传材料；方式二：登录湖北政务服务网搜索“公租房租赁补贴申请（协办）”选择所在社区在线办理；方式三：到租房所在地纳入网格管理的社区提出申请",
+        "审核通过后按年发放补贴"
+      ],
+      "location": "市级",
+      "url": "https://www.yuejiaxmz.com/news/view/204974"
+    },
+    "policySource": "宜办发〔2021〕21号（《宜昌市人才安居暂行办法》）",
+    "effectiveDate": "2021-06-01",
+    "notes": "有效。新就业毕业生在宜昌首次就业、签订聘用合同或就业协议后2年内可申请。博士12000元/年、硕士9600元/年、本专科6000元/年，最长不超过3年；也可选择3年内以1元/年租金入住人才公寓。年龄限制：博士35周岁以内、硕士30周岁以内、本科及以下毕业5年以内。需本人及家庭成员在城区无自有住房。每年申请一次。",
+    "location": "宜昌·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yichang-shiji-goufangbutie",
+    "city": "yichang",
+    "name": "宜昌市人才购房首付款补贴券",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "与宜昌市企事业单位签订正式聘用合同或就业协议后2年内提出申请",
+      "channel": "宜才码微信小程序 / 宜昌市公共资源交易中心不动产交易登记网上服务大厅",
+      "materials": [
+        "身份证",
+        "学历学位证书及《教育部学历证书电子注册备案表》或教育部留学服务中心认证书",
+        "聘用合同或就业协议等就业创业证明材料",
+        "承诺书",
+        "商品房买卖合同",
+        "市民卡或个人银行卡",
+        "不动产登记证明或不动产权证书",
+        "“购房首付款补贴券”兑付领款单"
+      ],
+      "process": [
+        "与房地产开发企业通过宜昌市公共资源交易中心“不动产交易登记网上服务大厅”网上签订商品房买卖合同",
+        "登录“宜才码”微信小程序提交聘用合同或就业协议等材料、承诺书申领“购房首付款补贴券”",
+        "房地产开发企业依补贴券及券面价值抵扣合同首付款",
+        "5个工作日内向市住建部门提交市民卡或个人银行卡、不动产登记证明或不动产权证书、兑付领款单申请兑付",
+        "市住建部门15个工作日内将资金拨付到市民卡或个人银行账户"
+      ],
+      "location": "市级",
+      "url": "http://m.yichang.bendibao.com/news/19835.shtm"
+    },
+    "policySource": "宜办发〔2021〕21号（《宜昌市人才安居暂行办法》）",
+    "effectiveDate": "2021-06-01",
+    "notes": "有效。2021年6月1日后新引进、首次就业（含返乡创业）2年内的博士/硕士/本（专）科毕业生，在宜昌城区购买首套人才住房或新建商品住房，一次性发放购房首付款补贴券：博士10万、硕士6万、本科专科5万。需申请人及配偶在城区无自有产权住房且5年内无产权交易记录。与租房补贴不重复享受。需通过“宜才码”分类认定（凭学历自动认定D/E/F类）。",
+    "location": "宜昌·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yichang-shiji-yicixingchuangyebutie",
+    "city": "yichang",
+    "name": "宜昌市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业5年内申请，终身只能享受一次",
+      "channel": "湖北政务服务网或营业执照登记注册地所在区人力资源和社会保障局",
+      "materials": [
+        "《湖北省一次性创业补贴申请表》",
+        "申请人身份证",
+        "营业执照副本",
+        "毕业证书",
+        "带动就业人员劳动合同",
+        "连续3个月工资流水"
+      ],
+      "process": [
+        "线上：登录湖北政务服务网选择宜昌市/所在区人社局搜索“创业补贴申领”在线办理；线下：向营业执照登记注册地所在区人社局提交申请",
+        "审核通过后拨付补贴资金"
+      ],
+      "location": "市级",
+      "url": "http://www.ycwjg.gov.cn/pcms_611_redianzhuanti_23/site_611_fanxiangchuangyezhengdangshi/site_611_redianwenda/69a54c185e05d10554421985.html"
+    },
+    "policySource": "湖北省一次性创业补贴相关政策文件（待核实具体文号）",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业5年内高校毕业生在宜昌市内初次创办小微企业、个体工商户、民办非企业单位、农民专业合作社等，经营6个月以上且带动就业2人及以上（含创业者本人），给予5000元一次性创业补贴。终身只能享受一次。湖北省统一政策在宜昌落地。",
+    "location": "宜昌·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yichang-zhijiang-shenghuobutie",
+    "city": "yichang",
+    "name": "枝江市人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 18000,
+      "max": 300000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "中专": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "专科": {
+        "min": 24000,
+        "max": 24000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 36000,
+        "max": 36000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 300000,
+        "max": 300000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["中专", "专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2022年1月1日以后到枝江企业首次就业；硕士及以下须毕业5年内，工作满1年即可申报，最长不超过3年",
+      "channel": "枝江市人社局（公园路113号，联系电话0717-4212004）",
+      "materials": [
+        "身份证",
+        "学历学位证书及《教育部学历证书电子注册备案表》",
+        "劳动合同",
+        "社会保险缴纳证明",
+        "其他相关证明材料（待核实）"
+      ],
+      "process": [
+        "向枝江市人社局提交申请",
+        "审核通过后按年度发放"
+      ],
+      "location": "枝江市",
+      "url": "https://m.yichang.bendibao.com/news/19520.shtm"
+    },
+    "policySource": "枝江市人才引进政策相关文件（待核实）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效（枝江市区级政策）。2022年1月1日以后到枝江企业首次就业的人才可申请。博士3年内发放30万元，按年度分三次发放；硕士2万元/年、本科1.2万元/年、大专0.8万元/年、中专0.6万元/年，最长不超过3年。硕士及以下须毕业5年内到枝江市民营企业（不含国有及中省在枝企业）首次就业，签订1年以上劳动合同。工作满1年即可申报当年生活补贴。",
+    "location": "宜昌·枝江市",
+    "tier": 2,
+    "exclusiveGroup": "yichang-district"
+  },
+  {
+    "id": "yichang-zhijiang-goufangbutie",
+    "city": "yichang",
+    "name": "枝江市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 150000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "中专": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "专科": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["中专", "专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "待核实",
+      "channel": "枝江市人社局 / 枝江市住房保障中心",
+      "materials": [
+        "身份证",
+        "学历学位证书及学历证明",
+        "劳动合同或就业协议",
+        "社会保险缴纳证明",
+        "购房合同及不动产权证书",
+        "其他相关证明材料（待核实）"
+      ],
+      "process": [
+        "申请人所在单位初步核查并签署意见（返乡创业的由所在社区或村签署意见）",
+        "主管部门（镇、街道）复核并签署意见（返乡创业的由所在镇/街道签署意见）",
+        "市人社局就申请人资格（在枝首次就业或返乡创业）进行认定并签署意见",
+        "市住房保障中心就申请人提供的所有资料进行综合审核并签署意见"
+      ],
+      "location": "枝江市",
+      "url": "https://m.yichang.bendibao.com/news/19519.shtm"
+    },
+    "policySource": "枝江市人才引进政策相关文件（待核实）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效（枝江市区级政策）。到枝江市就业创业并购买住房的各类学历人才可申请。博士15万元、硕士10万元、本科6万元、大专4万元、中专2万元，一次性发放。须通过单位初审、主管部门复核、市人社局资格认定、市住房保障中心综合审核四级审批。具体购房及社保条件待核实。",
+    "location": "宜昌·枝江市",
+    "tier": 3,
+    "exclusiveGroup": "yichang-district"
+  },
+  {
+    "id": "yichang-yidu-goufangbutie",
+    "city": "yichang",
+    "name": "宜都市企业硕士研究生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 150000,
+      "max": 150000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["硕士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "与用人单位签订劳动（聘用）合同或服务协议之日起3年内提出购房申请",
+      "channel": "宜都市房产交易信息服务网（http://ydfcw.21itcn.cn/）",
+      "materials": [
+        "《宜都市招引人才“购房补贴”申请表》",
+        "《宜都市招引人才“购房补贴”诚信承诺书》",
+        "申请人及配偶身份证、户口簿、婚姻状况材料（核实原件提供复印件）",
+        "申请人毕业证、学位证、《教育部学历证书电子注册备案表》或教育部《国(境)外学历学位认证书》（核实原件提供复印件）",
+        "申请人与所在单位签订的劳动(聘用)合同或服务协议，连续6个月社会保险缴纳记录（核实原件提供复印件）",
+        "返乡创业申请人还须提供营业执照及主要经营场所照片1张，带动3名及以上人员就业的聘用协议及工资发放流水（核实原件提供复印件）"
+      ],
+      "process": [
+        "填写《宜都市招引人才“购房补贴”申请表》及《宜都市招引人才“购房补贴”诚信承诺书》",
+        "准备身份证、学历学位证书、劳动合同、社保缴纳记录、购房等材料",
+        "向宜都市相关部门提交申请",
+        "审核通过后拨付补贴资金"
+      ],
+      "location": "宜都市",
+      "url": "http://m.yichang.bendibao.com/live/19264.shtm"
+    },
+    "policySource": "宜都市人才购房补贴政策相关文件（待核实）",
+    "effectiveDate": "2022-02-15",
+    "notes": "有效（宜都市区级政策）。2022年2月15日及以后新引进到宜都市企业的全日制硕士研究生，35周岁以下，签订3年及以上劳动（聘用）合同且用人单位在本市缴纳社保6个月以上，在本市购买新建商品自住房且本人及配偶无自有产权住房（5年内无交易记录），可享受15万元一次性购房首付款定额补贴。须在签订合同之日起3年内提出申请。",
+    "location": "宜昌·宜都市",
+    "tier": 3,
+    "exclusiveGroup": "yichang-district"
+  }
+]

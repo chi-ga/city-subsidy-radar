@@ -564,6 +564,8 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'taiyuan-shenghuo-zufang': '太原市生活补助与租房补贴（只可申请一项）',
   'lasa-anjia': '拉萨安家费（市级与自治区就高不重复）',
   'guilin-lingui-housing': '桂林临桂区购房补贴（多项购房补贴就高享受一项）',
+  'shantou-district': '汕头区级补贴（只能在一个区享受）',
+  'yichang-district': '宜昌区级补贴（只能在一个区享受）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

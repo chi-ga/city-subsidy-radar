@@ -1,0 +1,197 @@
+[
+  {
+    "id": "zhanjiang-shiji-jiuyebutie",
+    "city": "zhanjiang",
+    "name": "粤东粤西粤北地区就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 5000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "博士": { "min": 10000, "max": 10000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+      "硕士": { "min": 7000, "max": 7000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+      "本科": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+      "专科": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "稳定就业满6个月之日起1年内提出申请",
+      "channel": "广东公共就业服务云平台（线上申报）",
+      "materials": [
+        "符合条件人员基本身份类证明",
+        "毕业证书（博士、硕士须提供学位证书和学历证书）",
+        "劳动合同（属服务基层项目提供服务协议或用人单位出具的书面证明）",
+        "补贴对象社会保障卡金融账户"
+      ],
+      "process": [
+        "登录广东公共就业服务云平台",
+        "如实、完整填写补贴申报信息并上传相关申报资料（注意补贴申请受理地点选取对应的市或县（市、区））",
+        "公共就业服务机构受理审核",
+        "公示",
+        "拨付资金至申请人社会保障卡账户"
+      ],
+      "location": "市级",
+      "url": "https://ggfw.hrss.gd.gov.cn/OUJY/"
+    },
+    "policySource": "湛人社函〔2023〕176号《湛江市就业创业补贴申请办理指导清单（2023年修订版）》",
+    "effectiveDate": "2023",
+    "notes": "有效。按学历分档：博士10000元、硕士7000元、其他（含本科、专科等）5000元，一次性发放。面向毕业2年内普通高等学校、职业学校、技工院校毕业生，到湛江市用人单位就业（入编机关事业单位除外），签订1年以上劳动合同并缴纳6个月以上社保。本项补贴与公共就业服务岗位补贴不得叠加享受。补贴对象应在稳定就业满6个月之日起1年内提出申请。上位依据为粤人社规〔2021〕12号。",
+    "location": "湛江·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhanjiang-shiji-linghuojiuyeshebaobutie",
+    "city": "zhanjiang",
+    "name": "高校毕业生灵活就业社会保险补贴",
+    "category": "employment",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "首次补贴申请应于办理就业登记之日起1年内提出",
+      "channel": "广东公共就业服务云平台/广东政务服务网（向参保地人力资源社会保障部门申请）",
+      "materials": [
+        "符合条件人员基本身份类证明",
+        "毕业证书",
+        "就业登记证明",
+        "社会保险缴费凭证",
+        "补贴对象社会保障卡金融账户"
+      ],
+      "process": [
+        "向参保地人力资源社会保障部门提出补贴申请",
+        "审核",
+        "公示",
+        "拨付资金至社会保障卡账户"
+      ],
+      "location": "市级",
+      "url": "https://ggfw.hrss.gd.gov.cn/OUJY/"
+    },
+    "policySource": "湛人社函〔2023〕176号《湛江市就业创业补贴申请办理指导清单（2023年修订版）》",
+    "effectiveDate": "2023",
+    "notes": "有效。每月按不超过其实际社保缴费额2/3的标准给予补贴，补贴期限最长不超过3年。面向毕业2年内高校毕业生，需向公共就业人才服务机构以灵活就业类型登记就业，并以个人身份缴纳社会保险费。首次补贴申请应于办理就业登记之日起1年内提出。上位依据为粤人社规〔2021〕12号。",
+    "location": "湛江·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhanjiang-shiji-chuangyezizhu",
+    "city": "zhanjiang",
+    "name": "一次性创业资助",
+    "category": "startup",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 60,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "相关创办主体登记注册之日起6个月后、3年内提出资助申请",
+      "channel": "广东省就业创业专项资金补贴申报平台（线上申报）+同级公共就业服务机构（纸质材料）",
+      "materials": [
+        "符合条件人员基本身份类证明（身份证/就业创业证/社会保障卡等，选择其一）",
+        "申请人相关证明（属毕业生的提供毕业证书；属在校生的提供学籍证明或学生证；属出国（境）留学回国人员的提供国外学历学位认证书）",
+        "营业执照或其他登记注册证明（如有变更需提供《核准变更登记通知书》）",
+        "申请人个人社会保障卡账户（确无社会保障卡账户的提供申请人名下其他银行账户）"
+      ],
+      "process": [
+        "登录广东省就业创业专项资金补贴申报平台网上申报",
+        "向同级公共就业服务机构提交纸质资料",
+        "人力资源社会保障部门复核",
+        "公示7天",
+        "审批（5个工作日内提出拨款申请，3个工作日内出具拨款意见）",
+        "资金划拨（5个工作日内办理拨付手续）"
+      ],
+      "location": "市级",
+      "url": "https://www.gdhrss.gov.cn/gdjycy/ggfw/app/index.html#/ggfw/grbsxq"
+    },
+    "policySource": "湛人社函〔2023〕176号《湛江市就业创业补贴申请办理指导清单（2023年修订版）》",
+    "effectiveDate": "2023",
+    "notes": "有效。10000元一次性发放。面向普通高等学校、中等职业学校、技工院校学生（在校及毕业5年内）和出国（境）留学回国人员（领取毕业证5年内）等符合条件的创业者。须为初创企业（登记注册3年内）的法定代表人或主要负责人，女性不超过55周岁、男性不超过60周岁，正常经营6个月以上，申请前连续3个月有在职员工（不含本人）正常缴纳社保，未被列入经营异常名录。符合条件人员和创办主体只能享受一次。上位依据为粤人社规〔2021〕12号。",
+    "location": "湛江·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhanjiang-shiji-chuangyezujinbutie",
+    "city": "zhanjiang",
+    "name": "创业租金补贴",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 4000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 60,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "首次补贴申请应于相关创业主体登记注册之日起3年内（初创期内）提出；每一符合补贴条件的年度应在下一年度内提出申请",
+      "channel": "广东省就业创业专项资金补贴申报平台（线上申报）+同级公共就业服务机构（纸质材料）",
+      "materials": [
+        "符合条件人员基本身份类证明",
+        "属毕业生的提供毕业证书（核验后退回）",
+        "属在校生的提供学籍证明",
+        "属出国（境）留学回国人员的提供学历学位认证书",
+        "场地租赁合同及租金发票",
+        "本人社会保障卡金融账户"
+      ],
+      "process": [
+        "登录广东省就业创业专项资金补贴申报平台网上申报",
+        "向同级公共就业服务机构提交纸质资料",
+        "公共就业服务机构按规定受理、审核、公示、审批",
+        "拨付资金至申请人社会保障卡账户"
+      ],
+      "location": "市级",
+      "url": "https://www.gdhrss.gov.cn/gdjycy/ggfw/app/index.html#/ggfw/grbsxq"
+    },
+    "policySource": "湛人社函〔2023〕176号《湛江市就业创业补贴申请办理指导清单（2023年修订版）》",
+    "effectiveDate": "2023",
+    "notes": "有效。年租金大于或等于4000元的按每年4000元补贴，不足4000元的按实际发生租金额补贴，累计不超过3年（合计最高12000元）。面向普通高等学校、中等职业学校、技工院校学生（在校及毕业5年内）和出国（境）留学回国人员（领取毕业证5年内）等符合条件的创业者。须为初创企业法定代表人或经营者（女性不超过55周岁、男性不超过60周岁），租赁场地用于经营（租赁地址与注册登记地一致，非自有物业），申请前连续3个月有在职员工（不含本人）正常缴纳社保，未被列入经营异常名录。补贴按年度申请。上位依据为粤人社规〔2021〕12号。",
+    "location": "湛江·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  }
+]
