@@ -1229,6 +1229,73 @@
       },
       "locationDependentFields": [],
       "districts": {}
+    },
+    "zhuzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "yueyang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "bengbu": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "maanshan": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "zhangzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "长泰区": {}
+      }
     }
   }
 }

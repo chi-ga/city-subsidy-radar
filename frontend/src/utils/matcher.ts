@@ -566,6 +566,9 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'guilin-lingui-housing': '桂林临桂区购房补贴（多项购房补贴就高享受一项）',
   'shantou-district': '汕头区级补贴（只能在一个区享受）',
   'yichang-district': '宜昌区级补贴（只能在一个区享受）',
+  'bengbu-housing': '蚌埠住房补贴（安家补贴与购房补贴二选一）',
+  'zhangzhou-anjia': '漳州安家补助（就业安家补助与主导产业技术人才补助就高不重复）',
+  'zhangzhou-changtai-housing': '漳州长泰区住房补贴（购房补贴与安家补助二选一）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

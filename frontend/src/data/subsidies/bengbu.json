@@ -1,0 +1,228 @@
+[
+  {
+    "id": "bengbu-shiji-anjia",
+    "city": "bengbu",
+    "name": "蚌埠市重点产业企业新引进产业人才安家补贴",
+    "category": "settlement",
+    "amount": { "min": 45000, "max": 108000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 45000, "max": 45000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 60000, "max": 60000, "unit": "元", "period": "分期" },
+      "博士": { "min": 108000, "max": 108000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网蚌埠惠企服务平台（法人用户申报）",
+      "materials": [
+        "蚌埠市重点产业企业新引进的产业人才安家补贴和购房补贴申报企业信息归集表",
+        "蚌埠市重点产业企业新引进的产业人才安家补贴申报汇总表",
+        "人才身份证",
+        "学历学位证明（学信网证明材料，国外学历需教育部留学中心学历学位认证证明）",
+        "职称、职业资格等相关材料",
+        "人才与企业签订的劳动合同",
+        "在蚌缴纳所有社保的证明材料"
+      ],
+      "process": [
+        "人才所在企业登录安徽政务服务网蚌埠惠企服务平台（法人用户）",
+        "点击政策兑现找到对应政策服务名称申报",
+        "选择企业注册地所在县（区）申报，网上提交材料",
+        "各县（区）住房保障、人社部门初审",
+        "市相关职能部门复审",
+        "会议审议通过后按规定渠道拨付申报企业",
+        "企业将资金拨付至个人"
+      ],
+      "location": "市级",
+      "url": "https://zjj.bengbu.gov.cn/xwdt/tzggao/140940107.html"
+    },
+    "policySource": "蚌发〔2022〕20号；蚌组通字〔2022〕18号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。博士3.6万元/年×3年=10.8万元、硕士2万元/年×3年=6万元、本科1.5万元/年×3年=4.5万元，按年度发放连续3年。2024年1月1日后从市外新引进在蚌就业的全日制本科及以上学历毕业生，所在企业须为重点产业企业、战略性新兴产业企业或高新技术企业。本科硕士40周岁以下，博士45周岁以下。与购房补贴互斥（已享受购房补贴的不重复享受安家补贴）。资金按市与县3:7、市与区5:5比例分担。2025年度申报已完成。",
+    "location": "蚌埠·市级",
+    "tier": 1,
+    "exclusiveGroup": "bengbu-housing"
+  },
+  {
+    "id": "bengbu-shiji-goufang",
+    "city": "bengbu",
+    "name": "蚌埠市重点产业企业新引进产业人才购房补贴",
+    "category": "buy",
+    "amount": { "min": 0, "max": 200000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 0, "max": 200000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 0, "max": 200000, "unit": "元", "period": "分期" },
+      "博士": { "min": 0, "max": 200000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网蚌埠惠企服务平台（法人用户申报）",
+      "materials": [
+        "蚌埠市重点产业企业新引进的产业人才安家补贴和购房补贴申报企业信息归集表",
+        "蚌埠市重点产业企业新引进的产业人才购房补贴申报汇总表",
+        "人才身份证",
+        "学历学位证明（学信网证明材料，国外学历需教育部留学中心认证）",
+        "职称、职业资格等相关材料",
+        "人才与企业的劳动合同",
+        "在蚌缴纳所有社保的证明",
+        "购房合同（新建商品住房以合同网签时间为准，二手住房以不动产权证书登记日期为准）",
+        "购房发票",
+        "已婚提供结婚证"
+      ],
+      "process": [
+        "人才所在企业登录安徽政务服务网蚌埠惠企服务平台",
+        "选择企业注册地所在县（区）申报",
+        "网上提交材料",
+        "县区初审",
+        "市级复审",
+        "审议通过后拨付企业",
+        "企业拨付至个人"
+      ],
+      "location": "市级",
+      "url": "https://zjj.bengbu.gov.cn/xwdt/tzggao/140940107.html"
+    },
+    "policySource": "蚌发〔2022〕20号；蚌组通字〔2022〕18号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。按购房款比例发放：博士正高级20%、硕士高级技师副高级12%、本科技师中级职称10%，最高不超过20万元。每年按1/3发放，分三年兑现。人才引进后5年内在蚌购买首套普通商品住房（含二手房）。夫妻双方均符合条件的只发放一人。与安家补贴互斥（已享受安家补贴的不重复享受购房补贴）。2025年度申报已完成。",
+    "location": "蚌埠·市级",
+    "tier": 1,
+    "exclusiveGroup": "bengbu-housing"
+  },
+  {
+    "id": "bengbu-shiji-jiuye",
+    "city": "bengbu",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网（单位账号登录）",
+      "materials": [
+        "毕业生身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "通过安徽省阳光就业网单位账号登录",
+        "进入单位中心-一次性就业补贴申请模块",
+        "如实填报数据并提交至市或县人社部门",
+        "人社部门审核、财政部门复核",
+        "补贴资金拨付至企业银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.bengbu.gov.cn/xwdt/ztzl/jycyzcwd/8791561.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，蚌埠市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "蚌埠·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "bengbu-shiji-chuangye",
+    "city": "bengbu",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 10000, "max": 10000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网（单位账号登录）",
+      "materials": [
+        "《高校毕业生（就业困难人员）初始创业补助资金申报表》",
+        "毕业证书等身份类证明材料",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽省阳光就业网单位账号登录",
+        "进入单位中心-一次性创业补贴申请模块",
+        "如实填报相关数据并提交至市或县人社部门",
+        "经办人员预审",
+        "人社部门审核、财政部门复核",
+        "补贴资金拨付到企业银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.bengbu.gov.cn/ywdt/ztzl/rdzt/zcjmwd/czjr/51040954.html"
+    },
+    "policySource": "蚌埠市人力资源和社会保障局政策（省级标准5000元，蚌埠市加码至10000元）",
+    "effectiveDate": "",
+    "notes": "有效。蚌埠市标准10000元（高于省级5000元标准），一次性发放。毕业2年内高校毕业生首次创办小微企业，正常经营3个月以上。",
+    "location": "蚌埠·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "bengbu-shiji-lingjiu",
+    "city": "bengbu",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网蚌埠分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.bengbu.gov.cn/xwdt/ztzl/jycyzcwd/8791561.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，蚌埠市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "蚌埠·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

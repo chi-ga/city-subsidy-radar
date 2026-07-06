@@ -307,6 +307,7 @@ export default function Input() {
           'yangzhou', 'taizhoujs', 'zhenjiang', 'lianyungang', 'huaian', 'suqian',
           'wulumuqi', 'xining', 'lasa', 'zibo', 'mianyang', 'guilin',
           'sanya', 'shantou', 'zhanjiang', 'jiujiang', 'yichang', 'xiangyang',
+          'zhuzhou', 'yueyang', 'bengbu', 'maanshan', 'zhangzhou',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

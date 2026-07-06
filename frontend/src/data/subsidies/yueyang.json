@@ -1,0 +1,161 @@
+[
+  {
+    "id": "yueyang-shiji-goufang",
+    "city": "yueyang",
+    "name": "岳阳市人才购房补贴",
+    "category": "buy",
+    "amount": { "min": 20000, "max": 200000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 20000, "max": 20000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "岳阳人才综合服务平台",
+      "materials": ["不动产权证书或不动产登记证明（无产权证的须提供房屋预告登记证明及已备案的房屋买卖合同）", "事业单位人员信息表（仅市属事业单位人员提供）", "学历学位证书和有效期内带二维验证码的学信网《教育部学历证书电子注册备案表》及《学位认证报告》", "相关职称、技师等级证明材料", "缴纳12个月以上的社保证明"],
+      "process": ["登录岳阳人才综合服务平台自主申报", "单位审核通过", "每季度第三个月统一审核", "公示", "发放"],
+      "location": "市级",
+      "url": "https://zhrc.yueyang.gov.cn/pub/#/dashboard"
+    },
+    "policySource": "岳发〔2021〕17号；岳人才办发〔2022〕19号",
+    "effectiveDate": "2021-11-01",
+    "notes": "有效。博士及市级以上领军人才20万元、全日制硕士5万元、双一流高校本科3万元、其他高校本科2万元，一次性发放。双一流高校本科（含原985/211）可享3万元。博士45周岁以下，硕士及双一流本科38周岁以下。需从岳阳市范围外新引进，连续缴纳社保12个月以上，购买首套住宅。夫妻双方均符合条件的限补一套按较高一档享受。领取补贴后5年内住房不能交易。已至第十一批468户公示。2026年6月1日起新版要求2022年6月1日后新引进到白名单重点企业。",
+    "location": "岳阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yueyang-shiji-shenghuo",
+    "city": "yueyang",
+    "name": "岳阳市青年人才生活补贴",
+    "category": "living",
+    "amount": { "min": 800, "max": 1200, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "本科": { "min": 800, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "硕士": { "min": 1200, "max": 1200, "unit": "元", "period": "每月", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士"],
+      "ageLimit": 30,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "岳阳人才综合服务平台",
+      "materials": ["身份证", "学历学位证书及学信网认证", "劳动合同", "社保证明"],
+      "process": ["登录岳阳人才综合服务平台申报", "单位审核", "审核公示", "发放"],
+      "location": "市级",
+      "url": "https://zhrc.yueyang.gov.cn/pub/#/dashboard"
+    },
+    "policySource": "岳发〔2021〕17号",
+    "effectiveDate": "",
+    "notes": "有效。硕士1200元/月（3年总额43200元）、重点高校本科1000元/月（3年总额36000元）、其他高校本科800元/月（3年总额28800元），按月计算分年度兑现。30周岁以下，从岳阳市范围外新引进，连续缴纳养老保险12个月以上。重点高校含原985/211。2026年6月1日起新版要求新引进到白名单重点企业或省级示范性高中、市体校工作。",
+    "location": "岳阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yueyang-shiji-boanjia",
+    "city": "yueyang",
+    "name": "岳阳市博士人才安家补贴",
+    "category": "settlement",
+    "amount": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "博士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "岳阳人才综合服务平台",
+      "materials": ["学历学位证书及学信网认证", "劳动合同", "社保证明"],
+      "process": ["登录岳阳人才综合服务平台申报", "审核", "公示", "发放"],
+      "location": "市级",
+      "url": "https://zhrc.yueyang.gov.cn/pub/#/dashboard"
+    },
+    "policySource": "岳发〔2021〕17号",
+    "effectiveDate": "",
+    "notes": "有效。新引进博士10万元安家补贴，另享1000元/月生活补贴×36个月=3.6万元。与购房补贴可叠加，博士综合最高可享33.6万元（购房20万+安家10万+生活3.6万）。45周岁以下，新引进或培养。第九批博士人才生活安家补贴已公示。",
+    "location": "岳阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yueyang-shiji-lingjiu",
+    "city": "yueyang",
+    "name": "高校毕业生灵活就业社会保险补贴",
+    "category": "employment",
+    "amount": { "min": 0, "max": 0, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "社保缴纳地社区（行政村）申报",
+      "materials": ["身份证", "社会保障卡", "毕业证书或学信网证明"],
+      "process": ["本人到社保缴纳地社区（行政村）申报", "人社部门审核", "官网公示", "发放"],
+      "location": "市级",
+      "url": "https://zhrc.yueyang.gov.cn/pub/#/dashboard"
+    },
+    "policySource": "湘财社〔2024〕33号",
+    "effectiveDate": "",
+    "notes": "有效。湖南省省级框架政策，岳阳市执行。离校2年内未就业高校毕业生灵活就业后，按社保缴费基数60%的40%给予补贴，最长不超过2年。",
+    "location": "岳阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "yueyang-shiji-chuangye",
+    "city": "yueyang",
+    "name": "一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 20000, "max": 30000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "湘就业微信小程序-创业一站式服务专区",
+      "materials": ["系统内按提示上传（具体以申报通知为准）"],
+      "process": ["微信搜索湘就业小程序", "进入创业一站式服务专区", "点击创业补贴申请", "根据提示申报"],
+      "location": "市级",
+      "url": "https://zhrc.yueyang.gov.cn/pub/#/dashboard"
+    },
+    "policySource": "湘财社〔2024〕33号",
+    "effectiveDate": "",
+    "notes": "有效。湖南省省级框架政策，岳阳市执行。大学生创业个体工商户2万元/户，企业3万元/户，一次性发放。需首次登记注册的创业企业或个体工商户，正常经营1年以上，个体户吸纳2人以上就业，企业吸纳3人以上就业并缴纳半年以上养老保险。",
+    "location": "岳阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

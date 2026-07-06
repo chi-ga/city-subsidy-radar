@@ -1,0 +1,197 @@
+[
+  {
+    "id": "zhangzhou-shiji-anjia",
+    "city": "zhangzhou",
+    "name": "来漳高校毕业生就业安家补助",
+    "category": "settlement",
+    "amount": { "min": 10000, "max": 60000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "专科": { "min": 10000, "max": 10000, "unit": "元", "period": "分期" },
+      "本科": { "min": 20000, "max": 20000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 30000, "max": 60000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "万才聚漳人才网 / 万才聚漳人才云系统微信小程序",
+      "materials": ["证件照", "身份证或居住证等有效个人身份证明", "学历学位证书（须提供教育部学历证书电子注册备案表或认证报告；留学人员须提供教育部学历认证中心出具的学历认证书）", "签订3年以上聘用（劳动）合同", "个人所得税完税证明", "社保医保缴纳证明"],
+      "process": ["登录万才聚漳官网或微信小程序万才聚漳人才云系统", "进入人才服务栏目", "填写信息并上传材料", "线上审核", "审核通过后按规定发放"],
+      "location": "市级",
+      "url": "http://m.zhangzhou.bendibao.com/live/16697.shtm"
+    },
+    "policySource": "漳委发〔2021〕7号；漳委人才办〔2023〕1号",
+    "effectiveDate": "2021",
+    "notes": "有效。全日制硕士3年内给予双一流6万元/其他3万元；本科应届2万元；大专应届1万元。入职一年后申领，做满两年发放50%，第三年满发放50%。35周岁以下，首次来漳就业，签订3年以上劳动合同，在漳缴纳基本养老保险和失业保险。双一流建设高校硕士可享6万元，其他硕士3万元。来漳一年内申报逾期不再受理。2025-2026年仍有补贴公示拨付。与主导产业技术人才补助不重复享受。",
+    "location": "漳州·市级",
+    "tier": 1,
+    "exclusiveGroup": "zhangzhou-anjia"
+  },
+  {
+    "id": "zhangzhou-shiji-jishu",
+    "city": "zhangzhou",
+    "name": "漳州市主导产业技术人才补助",
+    "category": "settlement",
+    "amount": { "min": 90000, "max": 300000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 90000, "max": 120000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 150000, "max": 180000, "unit": "元", "period": "分期" },
+      "博士": { "min": 240000, "max": 300000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "万才聚漳人才网 / 县（市、区）人社局、开发区人劳局线下受理",
+      "materials": ["学历证书原件", "身份证或居住证等有效个人身份证明", "聘用（劳动）合同", "社保缴纳证明", "个人所得税完税证明（未达起征点须提交说明）", "企业工商登记证", "《漳州市主导产业技术人才岗位补助申请表》"],
+      "process": ["企业向所在县（市、区）人社局或开发区人劳局申请，市属国企向市引进人才服务中心申请", "提交《漳州市主导产业技术人才岗位补助申请表》及材料", "县区人社局10个工作日内审核", "人才工作领导小组专题会议研究确定", "公示5个工作日", "公示无异议后核拨补助"],
+      "location": "市级",
+      "url": "http://rsj.zhangzhou.gov.cn/cms/html/zzsrlzyhshbzj/2024-11-29/916714060.html"
+    },
+    "policySource": "漳委发〔2021〕7号；漳委人才办〔2023〕1号；漳委人才办〔2022〕40号",
+    "effectiveDate": "2021",
+    "notes": "有效。国内双一流建设高校及境外著名大学（ARWU/QS/THE三大排名均前200名）博士30万元、硕士18万元、本科12万元；其他高校博士24万元、硕士15万元、本科9万元。南靖县、华安县补助标准上浮20%。需所学专业为石油化工、装备制造、特殊钢铁、电子信息、生物医药、新能源、新材料等急需紧缺专业，毕业后5年内到漳州企业专技岗位首次就业，签订5年以上合同，用人单位每年税前支付薪酬不少于7万元。与来漳就业安家补助不重复享受。2025年漳浦县、芗城区、华安县等多区县均有补贴公示拨付。",
+    "location": "漳州·市级",
+    "tier": 3,
+    "exclusiveGroup": "zhangzhou-anjia"
+  },
+  {
+    "id": "zhangzhou-shiji-lingjiu",
+    "city": "zhangzhou",
+    "name": "离校2年内未就业高校毕业生灵活就业社会保险补贴",
+    "category": "employment",
+    "amount": { "min": 0, "max": 0, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "社会保险参保所在地公共就业人才服务机构",
+      "materials": ["本人《居民身份证》、《就业创业证》（或《就业失业登记证》）原件及复印件", "《高校毕业生社会保险补贴申请表》", "高校毕业生毕业证书原件及复印件", "社会保险征缴经办机构出具本人年度缴费凭证", "指定银行个人存折或银行卡复印件一份", "本人社保卡原件及复印件", "本人户口本原件及复印件"],
+      "process": ["向当地公共就业服务机构提供基本身份类证明、灵活就业证明材料等", "人社部门审核", "补贴资金支付到申请者本人社会保障卡银行账户"],
+      "location": "市级",
+      "url": "http://m.zhangzhou.bendibao.com/live/14650.shtm"
+    },
+    "policySource": "漳人社〔2024〕11号",
+    "effectiveDate": "2024",
+    "notes": "有效。按实际缴费额的50%给予基本养老保险费、医疗保险费补贴，补贴期限最长不超过2年。离校2年内未就业高校毕业生灵活就业并以个人身份缴纳基本养老、医疗保险费。含港澳台及留学回国毕业生。",
+    "location": "漳州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhangzhou-shiji-chuangye",
+    "city": "zhangzhou",
+    "name": "一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 10000, "max": 10000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "当地公共就业与人才服务机构",
+      "materials": ["身份证明", "毕业证书", "营业执照", "正常运营1年以上证明材料", "社会保险缴纳证明"],
+      "process": ["向当地公共就业与人才服务机构提出申请", "提交材料审核", "公示", "发放"],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7215125719322460732/"
+    },
+    "policySource": "漳人社〔2024〕11号",
+    "effectiveDate": "2024",
+    "notes": "有效。1万元一次性发放。离校2年内高校毕业生在漳州市首次创办小微企业或从事个体经营（实体、网店），自工商登记注册之日起正常运营1年以上且当前仍在正常运营，缴纳社会保险满3个月且申请时仍在参保。每位创业人员只能享受一次，每份营业执照只能申请一次。",
+    "location": "漳州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhangzhou-changtai-goufang",
+    "city": "zhangzhou",
+    "name": "长泰区人才购房补贴",
+    "category": "buy",
+    "amount": { "min": 30000, "max": 60000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 30000, "max": 30000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 60000, "max": 60000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "长泰区人社局",
+      "materials": ["身份证明", "学历学位证书", "劳动合同或营业执照", "社保缴纳证明", "购房合同及房产证明"],
+      "process": ["向所在单位或长泰区人社局申请", "审核", "发放"],
+      "location": "长泰区",
+      "url": "http://m.zhangzhou.bendibao.com/news/6945.shtm"
+    },
+    "policySource": "长泰区长爱人才泰盼你来人才工程",
+    "effectiveDate": "2022-01",
+    "notes": "有效。硕士研究生6万元、本科生3万元，以货币形式分三年平均拨付。全日制本科及以上学历到长泰区非国有企事业单位工作且服务年限不少于3年，或在长泰区自主创业且缴纳社保一年以上。购置首套区内新建商品房（不含店面、车库、商墅）面积不少于80平方米。夫妻购房可叠加享受。已享受安家补助的人员不再享受购房补贴。与长泰区名校优生安家补助互斥。",
+    "location": "漳州·长泰区",
+    "tier": 2,
+    "exclusiveGroup": "zhangzhou-changtai-housing"
+  },
+  {
+    "id": "zhangzhou-changtai-mingxiao",
+    "city": "zhangzhou",
+    "name": "长泰区名校优生安家补助和生活补助",
+    "category": "settlement",
+    "amount": { "min": 160000, "max": 420000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 160000, "max": 160000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 290000, "max": 290000, "unit": "元", "period": "分期" },
+      "博士": { "min": 420000, "max": 420000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "长泰区人社局",
+      "materials": ["身份证明", "学历学位证书", "劳动合同或聘用合同", "社保缴纳证明"],
+      "process": ["向长泰区人社局申请", "审核", "发放"],
+      "location": "长泰区",
+      "url": "http://m.zhangzhou.bendibao.com/news/6945.shtm"
+    },
+    "policySource": "长泰区长爱人才泰盼你来人才工程",
+    "effectiveDate": "2022-01",
+    "notes": "有效。到机关事业单位、国企就业：博士30万安家+12万生活、硕士20万安家+9万生活、双一流/世界前300名本科10万安家+6万生活。到企业就业的博士：30万安家+12万生活。均分5年平均拨付。全日制博士、硕士或双一流/世界前300名高校本科毕业生，考录到长泰区机关事业单位、国有企业就业（博士也可到企业就业），服务年限不少于5年。未满服务年限须全额退还。与长泰区购房补贴互斥（已享受安家补助者不再享受购房补贴）。本科仅限双一流/世界前300名高校。",
+    "location": "漳州·长泰区",
+    "tier": 3,
+    "exclusiveGroup": "zhangzhou-changtai-housing"
+  }
+]

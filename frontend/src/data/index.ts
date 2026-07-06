@@ -74,6 +74,11 @@ import zhanjiang from './subsidies/zhanjiang.json';
 import jiujiang from './subsidies/jiujiang.json';
 import yichang from './subsidies/yichang.json';
 import xiangyang from './subsidies/xiangyang.json';
+import zhuzhou from './subsidies/zhuzhou.json';
+import yueyang from './subsidies/yueyang.json';
+import bengbu from './subsidies/bengbu.json';
+import maanshan from './subsidies/maanshan.json';
+import zhangzhou from './subsidies/zhangzhou.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -155,6 +160,11 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   jiujiang: jiujiang as Subsidy[],
   yichang: yichang as Subsidy[],
   xiangyang: xiangyang as Subsidy[],
+  zhuzhou: zhuzhou as Subsidy[],
+  yueyang: yueyang as Subsidy[],
+  bengbu: bengbu as Subsidy[],
+  maanshan: maanshan as Subsidy[],
+  zhangzhou: zhangzhou as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -392,6 +402,11 @@ export function getCityLevelLocation(city: string): string {
     jiujiang: '九江市',
     yichang: '宜昌市',
     xiangyang: '襄阳市',
+    zhuzhou: '株洲市',
+    yueyang: '岳阳市',
+    bengbu: '蚌埠市',
+    maanshan: '马鞍山市',
+    zhangzhou: '漳州市',
   };
   return map[city] || '';
 }

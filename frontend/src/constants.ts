@@ -181,7 +181,12 @@ export type CityCode =
   | 'zhanjiang'
   | 'jiujiang'
   | 'yichang'
-  | 'xiangyang';
+  | 'xiangyang'
+  | 'zhuzhou'
+  | 'yueyang'
+  | 'bengbu'
+  | 'maanshan'
+  | 'zhangzhou';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -261,6 +266,11 @@ export const CITY_NAMES: Record<CityCode, string> = {
   jiujiang: '九江',
   yichang: '宜昌',
   xiangyang: '襄阳',
+  zhuzhou: '株洲',
+  yueyang: '岳阳',
+  bengbu: '蚌埠',
+  maanshan: '马鞍山',
+  zhangzhou: '漳州',
 };
 
 // 补贴分类名称映射

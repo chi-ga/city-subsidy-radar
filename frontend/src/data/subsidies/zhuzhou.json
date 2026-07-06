@@ -1,0 +1,96 @@
+[
+  {
+    "id": "zhuzhou-shiji-goufang",
+    "city": "zhuzhou",
+    "name": "株洲市大学生一次性购房补贴",
+    "category": "buy",
+    "amount": { "min": 20000, "max": 50000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 20000, "max": 20000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "待实施细则明确（株政办发〔2025〕11号文件刚发布）",
+      "materials": ["待实施细则明确"],
+      "process": ["待实施细则明确"],
+      "location": "市级",
+      "url": "http://www.zhuzhou.gov.cn/c18596/20251112/i2444237.html"
+    },
+    "policySource": "株政办发〔2025〕11号",
+    "effectiveDate": "2025-10-24",
+    "notes": "有效。博士5万元、硕士3万元、本科2万元，一次性发放。依据《株洲市进一步支持大学生创新创业若干措施》（株政办发〔2025〕11号），2025年10月24日发布，有效期5年（至2030年10月23日）。要求全日制学历、首次购房。具体申请条件、流程、材料等待后续实施细则明确。技师取得全日制大专以上学历的可按对应学历档次享受。",
+    "location": "株洲·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhuzhou-shiji-lingjiu",
+    "city": "zhuzhou",
+    "name": "高校毕业生灵活就业社会保险补贴",
+    "category": "employment",
+    "amount": { "min": 0, "max": 0, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "社保缴纳地社区（行政村）申报",
+      "materials": ["身份证", "社会保障卡", "毕业证书或学信网证明"],
+      "process": ["本人到社保缴纳地社区（行政村）申报", "提供身份证、社保卡、毕业证书等", "人社部门审核", "官网公示", "发放"],
+      "location": "市级",
+      "url": "https://zz.rednet.cn/m/content/646943/56/15275587.html"
+    },
+    "policySource": "湘财社〔2024〕33号",
+    "effectiveDate": "",
+    "notes": "有效。湖南省省级框架政策，株洲市执行。离校2年内未就业高校毕业生灵活就业后，按社保缴费基数60%的40%给予补贴，最长不超过2年。需以灵活就业人员身份参加社会保险并足额缴纳。",
+    "location": "株洲·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhuzhou-shiji-chuangye",
+    "city": "zhuzhou",
+    "name": "一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 20000, "max": 30000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "湘就业微信小程序-创业一站式服务专区",
+      "materials": ["系统内按提示上传（具体以申报通知为准）"],
+      "process": ["微信搜索湘就业小程序", "进入创业一站式服务专区", "点击创业补贴申请", "根据提示申报"],
+      "location": "市级",
+      "url": "https://rsj.zhuzhou.gov.cn/c923/20251114/i2445179.html"
+    },
+    "policySource": "湘财社〔2024〕33号；株政办发〔2025〕11号",
+    "effectiveDate": "2025-10-24",
+    "notes": "有效。大学生创业个体工商户2万元/户，企业3万元/户，一次性发放。株政办发〔2025〕11号将标准提高为不低于2万元。需株洲地区首次登记注册的创业企业或个体工商户，正常经营1年以上，工商注册时间在5年以内，个体户吸纳2人以上就业，企业吸纳3人以上就业并缴纳半年以上养老保险。2025年11月有78家创业实体发放公示。",
+    "location": "株洲·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

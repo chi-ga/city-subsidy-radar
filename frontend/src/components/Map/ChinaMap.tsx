@@ -84,6 +84,11 @@ const COVERED_CITIES = [
   { name: '九江市', code: 'jiujiang', adcode: '360400', count: 5 },
   { name: '宜昌市', code: 'yichang', adcode: '420500', count: 7 },
   { name: '襄阳市', code: 'xiangyang', adcode: '420600', count: 7 },
+  { name: '株洲市', code: 'zhuzhou', adcode: '430200', count: 3 },
+  { name: '岳阳市', code: 'yueyang', adcode: '430600', count: 5 },
+  { name: '蚌埠市', code: 'bengbu', adcode: '340300', count: 5 },
+  { name: '马鞍山市', code: 'maanshan', adcode: '340500', count: 5 },
+  { name: '漳州市', code: 'zhangzhou', adcode: '350600', count: 6 },
 ];
 
 

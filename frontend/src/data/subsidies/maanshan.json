@@ -1,0 +1,225 @@
+[
+  {
+    "id": "maanshan-shiji-anjia",
+    "city": "maanshan",
+    "name": "马鞍山市青年人才引进项目安家补贴",
+    "category": "settlement",
+    "amount": { "min": 20000, "max": 40000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "专科": { "min": 20000, "max": 20000, "unit": "元", "period": "分期" },
+      "本科": { "min": 30000, "max": 30000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 40000, "max": 40000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "马鞍山诗城英才综合管理服务平台",
+      "materials": [
+        "个人承诺书（手写签名）",
+        "银行工资流水或单位盖章的工资详情（6个月及以上）",
+        "完整规范的劳动合同",
+        "学历毕业证书和学位证书（学历提升的要上传提升前后的毕业证书和学位证书）",
+        "身份证",
+        "其他证书（职称、职业资格等）"
+      ],
+      "process": [
+        "个人通过诗城英才平台提交申报材料",
+        "用人（用工）单位初审",
+        "部门联审（辖区教育、人社等）",
+        "辖区主管部门终审并在当季度公示",
+        "市人社局向财政部门去函申请奖补资金",
+        "市财政局拨款至市科创和人才发展集团",
+        "市科创和人才发展集团核岗后拨付至个人社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.masscyc.com.cn/#/regulations/index/detail?id=59"
+    },
+    "policySource": "马发〔2022〕6号；马发〔2023〕2号",
+    "effectiveDate": "2025-05-19",
+    "notes": "有效。硕士4万元、本科3万元、专科2万元，按2:2:2:2:2比例分5年发放。原骏马工程，2025年5月19日起更名为青年人才引进项目。40周岁以下，首次在马鞍山市就业或自主创业，签订3年及以上劳动合同并依法持续参加社会保险满6个月。博士不在此项目内（属龙马工程高层次人才引进项目，需特殊认定）。与购房补贴可叠加享受。续发人员由系统自动比对社保缴纳情况。",
+    "location": "马鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "maanshan-shiji-goufang",
+    "city": "maanshan",
+    "name": "马鞍山市人才购房补贴",
+    "category": "buy",
+    "amount": { "min": 50000, "max": 110000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "专科": { "min": 50000, "max": 50000, "unit": "元", "period": "分期" },
+      "本科": { "min": 80000, "max": 80000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 110000, "max": 110000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "马鞍山诗城英才综合管理服务平台",
+      "materials": [
+        "《马鞍山市人才购房补贴申请表》",
+        "《马鞍山市人才购房补贴申请承诺书》",
+        "申请人身份证",
+        "本人开户银行及银行卡号",
+        "已婚的提供结婚证及配偶身份证",
+        "购买二手住房的提供父母、配偶父母身份证",
+        "合同备案确认书",
+        "购房全款发票",
+        "契税完税凭证",
+        "公共维修基金缴存凭证",
+        "不动产权证书（如已抵押，提交不动产登记中心开具的不动产登记证明）"
+      ],
+      "process": [
+        "个人通过诗城英才平台线上申报并上传材料",
+        "部门会审（市人才服务中心审核龙马工程情况；市人社局审核骏马工程及社保；市住建局审核住房网签合同等；市自然资源和规划局审核不动产登记、首套房认定；市税务局审核购房发票、契税凭证）",
+        "市住建局综合判断是否受理",
+        "市重点人才工程审理会集中会审",
+        "市住建局官网及诗城英才平台公示5个工作日",
+        "公示无异议后拨付首期补贴至本人银行借记卡",
+        "后续发放每年需资格复审"
+      ],
+      "location": "市级",
+      "url": "https://www.bwxf.gov.cn/show.Asp?ID=18722"
+    },
+    "policySource": "马发〔2023〕2号；马住建〔2023〕51号",
+    "effectiveDate": "2022-03-17",
+    "notes": "有效。硕士生（技师）11万元、本科生（高级工）8万元、专科生5万元，按4:3:3比例分三年发放。属于急需紧缺专业的：硕士16万元、本科11万元。需入选骏马工程（现青年人才引进项目），三年内在马鞍山市购买首套自住普通商品房，房屋位于市区范围（花山区、雨山区、市经开区、慈湖高新区）。合同备案时间须为2022年3月17日（含）以后。2026年1月1日起不再补贴新购买二手住房。与安家补贴可叠加享受。博士购房补贴属龙马工程（30-100万，需高层次人才认定，未纳入）。",
+    "location": "马鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "maanshan-shiji-jiuye",
+    "city": "maanshan",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网马鞍山分厅 / 马鞍山人才网",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "http://www.masrc.cn/masjyweb/notice/d/968.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，马鞍山市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。2025年已发放多个批次。",
+    "location": "马鞍山·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "maanshan-shiji-chuangye",
+    "city": "maanshan",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网马鞍山分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://www.masrc.com.cn/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，马鞍山市执行5000元标准。高校毕业生首次创办小微企业，正常经营3个月以上。2026年第一批次于3月12日公示。",
+    "location": "马鞍山·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "maanshan-shiji-lingjiu",
+    "city": "maanshan",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网马鞍山分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://jyw.mastc.edu.cn/info/1002/3852.htm"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，马鞍山市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "马鞍山·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]
