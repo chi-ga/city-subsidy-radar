@@ -305,6 +305,7 @@ export default function Input() {
           'xuzhou', 'tangshan', 'wuhu', 'taiyuan', 'lanzhou', 'luoyang', 'weifang', 'ganzhou',
           'yinchuan', 'huhehaote', 'linyi', 'jinhua', 'taizhou', 'baoding', 'yancheng',
           'yangzhou', 'taizhoujs', 'zhenjiang', 'lianyungang', 'huaian', 'suqian',
+          'wulumuqi', 'xining', 'lasa', 'zibo', 'mianyang', 'guilin',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

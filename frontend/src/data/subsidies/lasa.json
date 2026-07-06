@@ -1,0 +1,150 @@
+[
+  {
+    "id": "lasa-shiji-goufang",
+    "city": "lasa",
+    "name": "拉萨市新建商品住房购房补贴（高校毕业生专项）",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 60000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 45000, "max": 45000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 60000, "max": 60000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "萨都办App（线上）；咨询电话0891-6375472",
+      "materials": [
+        "身份证",
+        "购房合同/网签合同",
+        "购房发票",
+        "学历证书",
+        "银行卡等（以实施细则为准）"
+      ],
+      "process": [
+        "通过萨都办App线上提交申请材料",
+        "住建局审核",
+        "分批公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://zfjs.lasa.gov.cn/zjj/xxyw/202507/4cd8892224fe4233b6344286e2055e11.shtml"
+    },
+    "policySource": "拉政发〔2025〕10号",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。高校毕业生专项补贴：专科及本科3万元、硕士4.5万元、博士6万元（单套一次性）。需2023年1月1日后毕业的全日制普通高校学历，购置通过出让方式取得的新建商品住房，每名符合条件人员仅可享受一次。另有区域分类基础补贴可叠加：堆龙德庆区/柳梧新区/达孜区按网签合同总价8.2%发放（单套最高10万），其余区域3%基础补贴（单套最高5万）；总额上限堆龙/柳梧/达孜16万、其余11万。2026-07-04发布2026新政延续。",
+    "location": "拉萨·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "lasa-zizhiqu-anjia",
+    "city": "lasa",
+    "name": "西藏自治区急需紧缺人才安家费（拉萨落地）",
+    "category": "settlement",
+    "amount": {
+      "min": 40000,
+      "max": 150000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": { "min": 40000, "max": 40000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "",
+      "channel": "拉萨市委组织部人才科（线下统计申报）",
+      "materials": [
+        "待核实（需咨询拉萨市委组织部人才科）"
+      ],
+      "process": [
+        "地市组织部统计引进类人才",
+        "审核",
+        "发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "《关于加强和改进新时代西藏人才工作的若干措施（试行）》（自治区党委2021年底制定，文号待核实）",
+    "effectiveDate": "2021",
+    "notes": "有效（试行）。按工作地海拔分类区发放一次性安家费：拉萨市区属二类区，适用博士15万、硕士8万、本科4万（三类区博士20/硕士10/本科6万，四类区博士25/硕士12/本科8万）。限双一流高校或学科全日制毕业生，经急需紧缺人才引进渠道（专项引进/西部计划/专招生）。已享受相关待遇不重复发放，低于最新标准可补差额；定向生不适用。与拉萨市级2012年安家费就高不重复（互斥组lasa-anjia）。",
+    "location": "拉萨·市级",
+    "tier": 1,
+    "exclusiveGroup": "lasa-anjia"
+  },
+  {
+    "id": "lasa-shiji-anjia-2012",
+    "city": "lasa",
+    "name": "拉萨市引进人才安家费（2012年实施细则）",
+    "category": "settlement",
+    "amount": {
+      "min": 20000,
+      "max": 80000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": { "min": 20000, "max": 20000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "拉萨市委组织部牵头、市人社局具体执行（线下）",
+      "materials": [
+        "待核实"
+      ],
+      "process": [
+        "用人单位报送计划",
+        "公开招聘（《拉萨市急需紧缺人才引进目录》）",
+        "资格审核",
+        "组织考察",
+        "签订协议",
+        "兑现安家费"
+      ],
+      "location": "市级",
+      "url": "https://www.lasa.gov.cn/lasa/lsyw/201203/5021f611ee0049c1bcb01d854798f80c.shtml"
+    },
+    "policySource": "《拉萨市引进人才优惠政策实施细则》（2012年3月出台，文号待核实）",
+    "effectiveDate": "2012-03",
+    "notes": "现行性待核实。2015年兑现标准为博士8万、硕士5万、本科2万一次性安家费（最高8万，资助费最高20万）。以调入方式引进拉萨机关企事业单位，最低服务期5年，未满5年按比例追回。是否被自治区2021年新政策替代需核实；与自治区安家费就高不重复（互斥组lasa-anjia）。",
+    "location": "拉萨·市级",
+    "tier": 1,
+    "exclusiveGroup": "lasa-anjia"
+  }
+]

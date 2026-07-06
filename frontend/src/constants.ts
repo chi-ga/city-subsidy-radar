@@ -169,7 +169,13 @@ export type CityCode =
   | 'zhenjiang'
   | 'lianyungang'
   | 'huaian'
-  | 'suqian';
+  | 'suqian'
+  | 'wulumuqi'
+  | 'xining'
+  | 'lasa'
+  | 'zibo'
+  | 'mianyang'
+  | 'guilin';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -237,6 +243,12 @@ export const CITY_NAMES: Record<CityCode, string> = {
   lianyungang: '连云港',
   huaian: '淮安',
   suqian: '宿迁',
+  wulumuqi: '乌鲁木齐',
+  xining: '西宁',
+  lasa: '拉萨',
+  zibo: '淄博',
+  mianyang: '绵阳',
+  guilin: '桂林',
 };
 
 // 补贴分类名称映射

@@ -72,6 +72,12 @@ const COVERED_CITIES = [
   { name: '连云港市', code: 'lianyungang', adcode: '320700', count: 2 },
   { name: '淮安市', code: 'huaian', adcode: '320800', count: 1 },
   { name: '宿迁市', code: 'suqian', adcode: '321300', count: 2 },
+  { name: '乌鲁木齐市', code: 'wulumuqi', adcode: '650100', count: 3 },
+  { name: '西宁市', code: 'xining', adcode: '630100', count: 2 },
+  { name: '拉萨市', code: 'lasa', adcode: '540100', count: 3 },
+  { name: '淄博市', code: 'zibo', adcode: '370300', count: 3 },
+  { name: '绵阳市', code: 'mianyang', adcode: '510700', count: 2 },
+  { name: '桂林市', code: 'guilin', adcode: '450300', count: 6 },
 ];
 
 

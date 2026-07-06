@@ -1,0 +1,112 @@
+[
+  {
+    "id": "xining-shiji-anjia",
+    "city": "xining",
+    "name": "西宁市引进人才安家费",
+    "category": "settlement",
+    "amount": {
+      "min": 100000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "西宁市校园引才/事业单位引进（年度公告）",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "学信网电子注册备案表",
+        "报名表",
+        "应届毕业生证明等（以当期公告为准）"
+      ],
+      "process": [
+        "关注青海人事考试网/西宁市人社局校园引才公告",
+        "按公告报名应聘",
+        "通过考核录用",
+        "纳入事业单位编制",
+        "由市人才开发基金一次性拨付安家费"
+      ],
+      "location": "市级",
+      "url": "https://czj.xining.gov.cn/zwgk/zcjd/202312/t20231204_196107.html"
+    },
+    "policySource": "宁办发〔2018〕2号",
+    "effectiveDate": "2023-11-23",
+    "notes": "有效。硕士10万元、博士10万元一次性（市级配套）。博士另享受省级40万元（昆仑英才拔尖人才），省市两级合计50万元；本科无市级安家费。须全职引进到西宁市事业单位，通过年度校园引才/事业单位引进被录用并纳入事业单位编制管理。2024—2026年校园引才持续执行。资金管理依据《西宁市人才发展基金管理办法(试行)》（2023-11-23印发）。",
+    "location": "西宁·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xining-chengbei-gongyu",
+    "city": "xining",
+    "name": "西宁市城北区青年人才公寓配租",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "实物配租",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "城北区活力YOUNG谷/城北区人社局（批次办理）",
+      "materials": [
+        "申请人/配偶/未成年子女身份证（未办身份证的提供户口本或出生医学证明）",
+        "毕业证、学位证、学信网电子注册备案表",
+        "结婚证（单身在承诺书中注明婚姻状态）",
+        "营业执照正副本（创业人员）或劳动合同",
+        "社保缴纳证明",
+        "西宁市个人房屋产权信息表",
+        "未承租保障性住房证明",
+        "未享受保障性住房补贴证明",
+        "人才引进认定文件",
+        "无犯罪记录证明",
+        "个人征信报告（含配偶）",
+        "信用承诺书",
+        "城北区青年人才公寓承租申请表（经单位初审、公示并盖章）"
+      ],
+      "process": [
+        "登录城北区政府官网/城北之声公众号下载申请表及材料清单",
+        "准备材料",
+        "提交所在单位初审",
+        "单位内部公示3个工作日",
+        "报城北区活力YOUNG谷",
+        "区人社局复审",
+        "城北区政府官网公示审核结果",
+        "配租入住"
+      ],
+      "location": "城北区",
+      "url": "https://xncb.gov.cn/index.php/html/tzgg/37167.html"
+    },
+    "policySource": "《西宁市城北区青年人才公寓管理办法(试行)》（文号待核实）",
+    "effectiveDate": "",
+    "notes": "有效。实物配租（免房租），单人间/双人间拎包入住，租期不超过2年，一年一签。物业费1元/㎡/月，水20元/套/月、电40元/套/月、网15元/套/月、暖5.51元/㎡/月由承租人自理。需城北区法人单位新就业人才或新领照自主创业人员，离校两年内，城北区连续缴纳职工养老保险满3个月或当年新创业，本人及配偶在西宁市内五区两县无自有住房、未承租保障性住房、未享受相关保障性住房补贴。国内双一流建设高校硕士及以上可优先保障。2025年度首批配租已完成公示。无现金金额，不计入总金额。",
+    "location": "西宁·城北区",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

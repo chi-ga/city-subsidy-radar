@@ -62,6 +62,12 @@ import zhenjiang from './subsidies/zhenjiang.json';
 import lianyungang from './subsidies/lianyungang.json';
 import huaian from './subsidies/huaian.json';
 import suqian from './subsidies/suqian.json';
+import wulumuqi from './subsidies/wulumuqi.json';
+import xining from './subsidies/xining.json';
+import lasa from './subsidies/lasa.json';
+import zibo from './subsidies/zibo.json';
+import mianyang from './subsidies/mianyang.json';
+import guilin from './subsidies/guilin.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -131,6 +137,12 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   lianyungang: lianyungang as Subsidy[],
   huaian: huaian as Subsidy[],
   suqian: suqian as Subsidy[],
+  wulumuqi: wulumuqi as Subsidy[],
+  xining: xining as Subsidy[],
+  lasa: lasa as Subsidy[],
+  zibo: zibo as Subsidy[],
+  mianyang: mianyang as Subsidy[],
+  guilin: guilin as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -356,6 +368,12 @@ export function getCityLevelLocation(city: string): string {
     lianyungang: '连云港市',
     huaian: '淮安市',
     suqian: '宿迁市',
+    wulumuqi: '乌鲁木齐市',
+    xining: '西宁市',
+    lasa: '拉萨市',
+    zibo: '淄博市',
+    mianyang: '绵阳市',
+    guilin: '桂林市',
   };
   return map[city] || '';
 }

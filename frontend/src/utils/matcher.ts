@@ -279,7 +279,7 @@ export function matchSubsidy(
   //         无论是否存在 criterionSets，外层标准条件都必须满足（取交集）
   const standardMissing: string[] = [];
 
-  if (subsidy.conditions.degree && !subsidy.conditions.degree.includes(user.degree)) {
+  if (subsidy.conditions.degree && subsidy.conditions.degree.length > 0 && !subsidy.conditions.degree.includes(user.degree)) {
     standardMissing.push(`学历要求：${subsidy.conditions.degree.join('/')}`);
   }
 
@@ -562,6 +562,8 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'weifang-housing': '潍坊住房补贴（购房补贴与租房补贴二选一）',
   'linyi-housing': '临沂住房补贴（购房补贴与租房补贴二选一）',
   'taiyuan-shenghuo-zufang': '太原市生活补助与租房补贴（只可申请一项）',
+  'lasa-anjia': '拉萨安家费（市级与自治区就高不重复）',
+  'guilin-lingui-housing': '桂林临桂区购房补贴（多项购房补贴就高享受一项）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

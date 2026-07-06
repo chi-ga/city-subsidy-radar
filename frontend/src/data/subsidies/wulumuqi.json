@@ -1,0 +1,163 @@
+[
+  {
+    "id": "wulumuqi-ganquanbao-xuewei",
+    "city": "wulumuqi",
+    "name": "甘泉堡经开区企业硕博学位补贴",
+    "category": "living",
+    "amount": {
+      "min": 2000,
+      "max": 4000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": { "min": 2000, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 36 },
+      "博士": { "min": 4000, "max": 4000, "unit": "元", "period": "每月", "durationMonths": 36 }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "甘泉堡经开区组织和人力资源局（年度集中申报）",
+      "materials": [
+        "学位证书",
+        "劳动合同",
+        "身份证",
+        "社保缴纳证明",
+        "工资发放证明",
+        "年度考核结果证明"
+      ],
+      "process": [
+        "用人单位/个人向甘泉堡经开区组织和人力资源局申报",
+        "审核",
+        "公示（5个工作日）",
+        "资金发放"
+      ],
+      "location": "甘泉堡经开区",
+      "url": "http://www.gqp.gov.cn/gqbkfq/c120304/202409/30606ed9fb9840d2a39fac70be087ffd.shtml"
+    },
+    "policySource": "乌甘管规发〔2024〕3号",
+    "effectiveDate": "2024",
+    "notes": "有效。依据《乌鲁木齐甘泉堡经济技术开发区（工业区）引才育才实施办法（试行）》。博士4000元/月、硕士2000元/月、双一流应届本科1000元/月，按月发放最长3年（36个月）。需在甘泉堡经开区企业就业并签订3年以上劳动合同，工作满6个月起发，年度考核合格及以上。2025年度引才育才奖励资金已于2025-11-24公示。",
+    "location": "乌鲁木齐·甘泉堡经开区",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "wulumuqi-ganquanbao-goufang",
+    "city": "wulumuqi",
+    "name": "甘泉堡经开区企业购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 100000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 300000, "max": 300000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "甘泉堡经开区组织和人力资源局（年度集中申报）",
+      "materials": [
+        "学位证书",
+        "劳动合同",
+        "身份证",
+        "社保缴纳证明",
+        "购房合同及发票",
+        "户口本（落户证明）"
+      ],
+      "process": [
+        "用人单位/个人向甘泉堡经开区组织和人力资源局申报",
+        "审核",
+        "公示（5个工作日）",
+        "资金发放"
+      ],
+      "location": "甘泉堡经开区",
+      "url": "http://www.gqp.gov.cn/gqbkfq/c120304/202409/30606ed9fb9840d2a39fac70be087ffd.shtml"
+    },
+    "policySource": "乌甘管规发〔2024〕3号",
+    "effectiveDate": "2024",
+    "notes": "有效。博士30万元、硕士10万元一次性发放。需在甘泉堡经开区企业就业并签订3年以上劳动合同，工作满5年，在乌鲁木齐市行政区域购首套商品住房。与学位补贴（生活类）分属不同类别，可同时享受。",
+    "location": "乌鲁木齐·甘泉堡经开区",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "wulumuqi-shiji-shiyedanwei",
+    "city": "wulumuqi",
+    "name": "乌鲁木齐市事业单位引进人才生活安置费及购房补助",
+    "category": "settlement",
+    "amount": {
+      "min": 125000,
+      "max": 335000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "硕士": { "min": 125000, "max": 125000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 335000, "max": 335000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "乌鲁木齐市事业单位引进人才考试（年度公告）",
+      "materials": [
+        "报名信息表",
+        "学历学位证书",
+        "学历学位认证书（境外毕业生）",
+        "身份证",
+        "岗位所需专业/职业资格证明",
+        "资格审查表",
+        "考察表",
+        "体检报告",
+        "落户证明、首套房购房合同（申领购房补助时）"
+      ],
+      "process": [
+        "发布公告",
+        "网络报名缴费（乌鲁木齐市人力资源和社会保障服务平台）",
+        "考核测试",
+        "笔试",
+        "总成绩计算",
+        "体检",
+        "考察",
+        "公示（7个工作日）",
+        "聘用，补贴在聘用后按相关规定发放"
+      ],
+      "location": "市级",
+      "url": "https://rst.xinjiang.gov.cn/xjrst/c112746/202510/f7f03635356242bcb12caa89e9393cac.shtml"
+    },
+    "policySource": "新人社发〔2013〕141号",
+    "effectiveDate": "",
+    "notes": "有效。事业编制内引进，需通过事业单位引进考试聘用。生活安置费：硕士2.5万、博士3.5万（一次性）；购房补助：硕士10万、博士30万（一次性，需落户+首次购房）；本科仅享受人才公寓无现金补贴。本科/硕士30周岁及以下，博士可放宽至35周岁。2025年下半年引进191人公告已于2025-10-15发布。",
+    "location": "乌鲁木齐·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

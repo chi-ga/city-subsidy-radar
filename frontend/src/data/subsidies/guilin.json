@@ -1,0 +1,267 @@
+[
+  {
+    "id": "guilin-shiji-liugui",
+    "city": "guilin",
+    "name": "留桂兴业奖",
+    "category": "living",
+    "amount": {
+      "min": 15600,
+      "max": 15600,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "tieredAmount": {
+      "硕士": { "min": 1300, "max": 1300, "unit": "元", "period": "每月", "durationMonths": 12 }
+    },
+    "conditions": {
+      "degree": ["硕士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "桂林英才码小程序（2024年12月上线）/市人才服务中心",
+      "materials": [
+        "劳动合同",
+        "社保缴纳证明",
+        "学历学位证书",
+        "身份证等"
+      ],
+      "process": [
+        "企业申报",
+        "城区初审",
+        "市人社局审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://rsj.guilin.gov.cn/xwzx/tzgg/t26808376.shtml"
+    },
+    "policySource": "市办发〔2024〕11号",
+    "effectiveDate": "2024",
+    "notes": "有效。对引进至桂林市重点产业、重点领域企业获硕士学位的青年人才，发放租赁补助和生活补助（两项合并）1300元/人·月，补助1年（合计约1.56万元）。需在桂林正常缴纳社会保险6个月（含）以上。资金由市本级70%+企业注册地城区30%承担。2019版曾为硕士1万、学士5000元一次性，现以2024版按月为准。市本级累计发放人才奖励5490万余元。",
+    "location": "桂林·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "guilin-shiji-xueli",
+    "city": "guilin",
+    "name": "学历提升奖（在职博士奖励）",
+    "category": "other",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "桂林英才码小程序/市人才服务中心",
+      "materials": [
+        "博士学位证书",
+        "劳动合同等"
+      ],
+      "process": [
+        "待核实"
+      ],
+      "location": "市级",
+      "url": "http://m.gl.bendibao.com/mip/17300.shtm"
+    },
+    "policySource": "市办发〔2019〕19号",
+    "effectiveDate": "2019",
+    "notes": "待核实（2019版有效，2024版是否保留需确认）。在职企业青年人才获得博士学位者1万元一次性。需在《办法》实施后获得博士学位，与用人单位签订3年（含）以上劳动合同/服务协议，可与《办法》其他奖励政策同时享受。",
+    "location": "桂林·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "guilin-shiji-chuangye",
+    "city": "guilin",
+    "name": "一次性创业扶持补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "当地人社部门",
+      "materials": [
+        "营业执照",
+        "毕业证",
+        "经营证明等"
+      ],
+      "process": [
+        "向当地人社部门申报",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://m.gl.bendibao.com/mip/17300.shtm"
+    },
+    "policySource": "广西就业补助资金管理办法",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。毕业5年内高校毕业生5000元/户一次性；贫困地区（扶贫开发重点县/石漠化片区县/天窗县）10000元/户。需首次在设区市辖区内创办小微企业，自工商注册登记之日起正常运营6个月以上。施行至2027-12-31。",
+    "location": "桂林·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "guilin-shiji-lingjiu",
+    "city": "guilin",
+    "name": "高校毕业生灵活就业社会保险补贴",
+    "category": "employment",
+    "amount": {
+      "min": 200,
+      "max": 200,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "广西人社服务系统",
+      "materials": [
+        "《就业创业证》",
+        "社保缴费凭证等"
+      ],
+      "process": [
+        "就业登记",
+        "社保缴纳",
+        "向人社部门申报补贴"
+      ],
+      "location": "市级",
+      "url": "http://m.gl.bendibao.com/mip/17300.shtm"
+    },
+    "policySource": "广西就业补助资金管理办法",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。离校2年内未就业高校毕业生灵活就业后2400元/年·人（不足一年按月折算200元/月·人），最长不超过2年（合计4800元）。需灵活就业后申报就业并进行就业登记，以个人身份参加社会保险并按时足额缴纳，持有《就业失业登记证》或《就业创业证》。施行至2027-12-31。",
+    "location": "桂林·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "guilin-lingui-qishui",
+    "city": "guilin",
+    "name": "临桂区购房契税全额补贴",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "临桂区住建局/房屋登记管理中心",
+      "materials": [
+        "购房合同",
+        "契税完税凭证",
+        "身份证",
+        "银行卡等"
+      ],
+      "process": [
+        "购房",
+        "缴纳契税",
+        "提交申请",
+        "审核",
+        "发放至银行卡"
+      ],
+      "location": "临桂区",
+      "url": "http://www.lingui.gov.cn/ggfw/ztfw/bzxzf/gzzcxzfgmzgsc/t26774474.shtml"
+    },
+    "policySource": "临桂区住建局、财政局联合发布（文号待核实）",
+    "effectiveDate": "2023-09",
+    "notes": "待核实（2023年发布，建议核实2026年是否延续）。按已缴纳契税金额的100%给予财政补贴，普惠性购房补贴（无学历要求）。在临桂区购买新建商品住房或新建商品车位（库）即可。与临桂区其他购房类补贴属同一互斥组（guilin-lingui-housing），按就高原则享受一项。",
+    "location": "桂林·临桂区",
+    "tier": 3,
+    "exclusiveGroup": "guilin-lingui-housing"
+  },
+  {
+    "id": "guilin-lingui-xinshimin",
+    "city": "guilin",
+    "name": "临桂区新市民购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "临桂区住建局",
+      "materials": [
+        "待核实"
+      ],
+      "process": [
+        "待核实"
+      ],
+      "location": "临桂区",
+      "url": "http://m.toutiao.com/group/7101502470081462817/"
+    },
+    "policySource": "临桂区相关活动文件（文号待核实）",
+    "effectiveDate": "",
+    "notes": "待核实（阶段性活动，需确认是否在2026年延续）。3万元购房补贴+契税全额补贴。面向在临桂区辖区范围内购买商品住房的新市民。与临桂区其他购房类补贴属同一互斥组（guilin-lingui-housing），按就高原则享受一项。",
+    "location": "桂林·临桂区",
+    "tier": 3,
+    "exclusiveGroup": "guilin-lingui-housing"
+  }
+]

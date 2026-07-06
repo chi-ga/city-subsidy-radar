@@ -1,0 +1,145 @@
+[
+  {
+    "id": "zibo-shiji-shenghuo",
+    "city": "zibo",
+    "name": "淄博市高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 4000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 60
+    },
+    "tieredAmount": {
+      "专科": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 60 },
+      "本科": { "min": 1000, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 60 },
+      "硕士": { "min": 2000, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 60 },
+      "博士": { "min": 4000, "max": 4000, "unit": "元", "period": "每月", "durationMonths": 60 }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "淄博百事通人才管理服务系统（无形认证/个人申报）",
+      "materials": [
+        "毕业证电子版",
+        "学位证电子版（本科及以上）",
+        "《淄博市高校毕业生生活补贴申请表》（现场申报时）",
+        "央属/省属企业就业者另须提供金融机构代发工资证明"
+      ],
+      "process": [
+        "政策找人（无形认证）：人社部门每月筛选符合条件名单，企业做就业登记时同步身份确认上传学历学位证，公示5个工作日",
+        "个人申请（二选一）：网上申报通过淄博百事通人才管理服务系统提交，或现场申报至市行政服务中心/区县公共就业和人才服务机构窗口",
+        "公示5个工作日无异议，资金拨付至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://hrss.zibo.gov.cn/zbrcw/person/home"
+    },
+    "policySource": "淄组发〔2022〕16号",
+    "effectiveDate": "2022-07-26",
+    "notes": "有效。按月发放连续5年（最长60个月）：博士4000元/月、毕业五年内硕士2000元/月、毕业五年内全日制本科1000元/月、毕业五年内全日制大专500元/月、毕业五年内中职300元/月。需2022年7月26日（含）后办理就业登记，在淄博市企业/事业单位/个体工商户/新型农业经营主体全职工作并缴纳社保。硕士及以下需毕业五年内新引进，博士无毕业年限限制。离职不在市内再就业则停发，一年内市内转岗可继续。2026-01-22发布2025年12月新增人员公示。各区县统一执行市级标准，市区县财政50:50分担。",
+    "location": "淄博·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zibo-shiji-goufang",
+    "city": "zibo",
+    "name": "淄博市高校毕业生一次性购房补助",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 120000, "max": 120000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 300000, "max": 300000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "淄博百事通人才管理服务系统（无形认证/个人申报）",
+      "materials": [
+        "毕业证电子版",
+        "学位证电子版（本科及以上）",
+        "购房合同或不动产登记证电子版"
+      ],
+      "process": [
+        "政策找人：人社部门每月筛选符合条件名单并公示",
+        "个人申请（二选一）：网上申报通过淄博百事通人才管理服务系统提交，或现场申报",
+        "公示5个工作日无异议，资金拨付至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://hrss.zibo.gov.cn/zbrcw/person/home"
+    },
+    "policySource": "淄组发〔2022〕16号",
+    "effectiveDate": "2022-07-26",
+    "notes": "有效。一次性发放：博士30万、毕业五年内硕士12万、毕业五年内全日制本科8万、毕业五年内全日制专科3万；在全市规定区域内新购新建商品房再给予1万元。需2022年7月26日后办理就业登记并缴纳社保，全职工作满1年，未购买产权型人才公寓，在淄博市行政区域内新购买商品住宅（不含公寓）。硕士及以下需毕业五年内新引进，每人享受一次。与生活补贴不互斥可同时享受。2026年1月公示中含一次性购房补助新增人员。",
+    "location": "淄博·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zibo-shiji-qinqing",
+    "city": "zibo",
+    "name": "淄博市回淄就业创业高校毕业生亲情引才奖励",
+    "category": "other",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "淄博百事通人才管理服务系统/温暖淄博人社APP/淄博人社微信公众号",
+      "materials": [
+        "《淄博市回淄就业创业高校毕业生亲情引才奖励申请表》",
+        "毕业证、学位证电子版",
+        "央属/省属企业就业者另须提供金融机构代发工资证明"
+      ],
+      "process": [
+        "无形认证：人社部门每月10日通过信息系统调取符合条件名单，10个工作日内审核后直接发放并消息提醒",
+        "个人申请（二选一）：网上申报通过淄博市人社网/温暖淄博人社APP/淄博人社微信公众号提交，或现场申报填报申请表",
+        "公示无异议，5个工作日内拨付至家庭成员社保卡"
+      ],
+      "location": "市级",
+      "url": "https://hrss.zibo.gov.cn/zbrcw/person/home"
+    },
+    "policySource": "淄组发〔2022〕16号（原淄组发〔2019〕31号）",
+    "effectiveDate": "2019-11-21",
+    "notes": "有效。1万元一次性发放至毕业生指定家庭成员社保卡，每个毕业生只享受一次。需毕业五年内全日制学士本科及以上学历淄博籍毕业生（淄博学籍或入职时父母一方为淄博市户籍），2019年11月21日后新到淄博企事业单位全职工作或创业满1年，签订3年及以上劳动合同并缴纳社保。2026年1月公示中含亲情引才奖励新增人员。",
+    "location": "淄博·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "mianyang-shiji-anju",
+    "city": "mianyang",
+    "name": "绵阳市引进人才安居补助",
+    "category": "settlement",
+    "amount": {
+      "min": 490000,
+      "max": 500000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "博士": { "min": 490000, "max": 490000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "绵阳市政务服务中心（新益大厦11楼企业服务大厅1—4号窗口）；各县市区/园区属地党委组织部复核",
+      "materials": [
+        "身份证/护照",
+        "学历学位证书",
+        "劳动(聘用)合同（不少于5年）",
+        "社会保险缴纳证明",
+        "住房公积金缴存证明",
+        "用人单位主责主业证明材料",
+        "职称/技能人才证书（如适用）",
+        "购房合同/房产证明（申请购房补贴时）"
+      ],
+      "process": [
+        "申报",
+        "初审（用人单位）",
+        "复核（区县组织部/园区党群工作部）",
+        "联审",
+        "公示",
+        "发放（资金拨付用人单位，由用人单位发放至申请人）"
+      ],
+      "location": "市级",
+      "url": "http://zzb.my.gov.cn/myswzzb/c100003/list.shtml"
+    },
+    "policySource": "绵委人才组〔2024〕4号",
+    "effectiveDate": "2022-04-06",
+    "notes": "有效（暂行）。最高50万元，博士约49万元（科技城新区落地数据）；硕士/本科分档金额官方未公开，需咨询受理单位（市委人才办0816-2985203）。生活补贴分4次发放（40%/20%/20%/20%），每次申领需满一年；购房补贴一次性发放；享受生活补贴期间在绵购置房产可申请一次性发放剩余部分。需2022年4月6日及以后引进，与用人单位签订不少于5年劳动合同，在绵阳缴纳社保公积金，工作属单位主责主业。本科需短缺学科，其他学科需研究生学历及以上。2026年1月仍有拟拨付名单公示。",
+    "location": "绵阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "mianyang-kejicheng-chuangye",
+    "city": "mianyang",
+    "name": "绵阳科技城新区（直管区）青年就业创业政策包",
+    "category": "startup",
+    "amount": {
+      "min": 1500,
+      "max": 15000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "科技城新区党群工作部（0816-6335573）",
+      "materials": [
+        "待核实（各项目不同，需咨询受理单位）"
+      ],
+      "process": [
+        "待核实（具体流程需咨询科技城新区党群工作部）"
+      ],
+      "location": "科技城新区",
+      "url": "https://kjcxq.my.gov.cn/"
+    },
+    "policySource": "《绵阳科技城新区(直管区)人才服务绿卡制度实施办法(试行)》（2022-01-06印发，文号待核实）",
+    "effectiveDate": "2021",
+    "notes": "有效。多项叠加：首次创业补贴最高15000元（离校5年内高校毕业生，正常运营18个月以上）；一次性场租补贴1万元（首次创业、自主租用场地、正常经营1年以上）；困难高校毕业生就业补贴2000元；一次性求职补贴1500元；灵活就业社保补贴按实际缴费2/3；技能培训补贴最高3800元；创业担保贷款个人最高50万/小微企业最高600万政府贴息50%；税费扣减限额24000元/年。需在科技城新区就业创业。2025年7月仍开展青年人才日活动发布政策大礼包。",
+    "location": "绵阳·科技城新区",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]
