@@ -1,0 +1,606 @@
+[
+  {
+    "id": "jilin-shiji-shenghuo-wanming",
+    "city": "jilin",
+    "name": "吉林市万名学子助企兴业生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 300,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 60
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 1000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 60
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 60
+      },
+      "本科": {
+        "min": 300,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 60
+      }
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "985-211-master-phd",
+          "name": "985/211院校博士硕士",
+          "degree": ["硕士", "博士"],
+          "schoolLevel": ["985", "211"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "other-master-phd",
+          "name": "其他院校博士硕士",
+          "degree": ["硕士", "博士"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "thu-pku-bachelor",
+          "name": "清华北大本科",
+          "degree": ["本科"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "985-211-bachelor",
+          "name": "985/211院校本科",
+          "degree": ["本科"],
+          "schoolLevel": ["985", "211"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "other-bachelor",
+          "name": "其他院校本科",
+          "degree": ["本科"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        }
+      ]
+    },
+    "application": {
+      "deadline": "常年受理",
+      "channel": "吉林市人力资源和社会保障局及各区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与吉林市民营企业签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.《吉林市万名学子助企兴业生活补贴申请表》"
+      ],
+      "process": [
+        "1.个人向所在企业提出申请，企业审核公示后统一向所在区人社部门申报",
+        "2.各区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后按月发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉市发〔2021〕19号《关于实施万名学子助企兴业计划的意见》",
+    "effectiveDate": "2021-12-01",
+    "notes": "有效。吉林市万名学子助企兴业计划，对到吉林市民营企业就业的高校毕业生发放生活补贴，最长发放60个月（5年）。按院校层次分档：985/211院校博士硕士2000元/月，其他院校博士硕士及清华北大本科1000元/月，985/211院校本科（不含清北）500元/月，其他院校本科300元/月。须与吉林市民营企业签订劳动合同并按规定缴纳社会保险。",
+    "location": "吉林市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jilin-shiji-goufang-wanming",
+    "city": "jilin",
+    "name": "吉林市万名学子助企兴业购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 50000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 20000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "985-211-master-phd",
+          "name": "985/211院校博士硕士",
+          "degree": ["硕士", "博士"],
+          "schoolLevel": ["985", "211"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "other-master-phd",
+          "name": "其他院校博士硕士",
+          "degree": ["硕士", "博士"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "thu-pku-bachelor",
+          "name": "清华北大本科",
+          "degree": ["本科"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "985-211-bachelor",
+          "name": "985/211院校本科",
+          "degree": ["本科"],
+          "schoolLevel": ["985", "211"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "other-bachelor",
+          "name": "其他院校本科",
+          "degree": ["本科"],
+          "companyType": ["民营企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        }
+      ]
+    },
+    "application": {
+      "deadline": "5年合同期满后申请",
+      "channel": "吉林市人力资源和社会保障局及各区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与吉林市民营企业签订的劳动合同及5年合同期满证明",
+        "5.社会保险缴纳证明（满5年）",
+        "6.不动产权证书或已备案商品房买卖合同",
+        "7.《吉林市万名学子助企兴业购房补贴申请表》"
+      ],
+      "process": [
+        "1.5年劳动合同期满后向所在区人社部门提出申请",
+        "2.各区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后一次性发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉市发〔2021〕19号《关于实施万名学子助企兴业计划的意见》",
+    "effectiveDate": "2021-12-01",
+    "notes": "有效。吉林市万名学子助企兴业计划，在5年合同期满后给予一次性购房补贴。按院校层次分档：985/211院校博士硕士10万元，其他院校博士硕士及清华北大本科5万元，985/211院校本科（不含清北）3万元，其他院校本科2万元。须与吉林市民营企业签订劳动合同满5年并按规定缴纳社会保险后方可申请。",
+    "location": "吉林市·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jilin-shiji-zhongdianchanye-boshishuoshi",
+    "city": "jilin",
+    "name": "吉林市重点产业引进博士硕士专项生活补贴",
+    "category": "talent",
+    "amount": {
+      "min": 60000,
+      "max": 120000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 120000,
+        "max": 120000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 120000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "按年度集中申报，申报时间以政策通知为准",
+      "channel": "吉林市人力资源和社会保障局",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与吉林市企业签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.企业营业执照（限重点产业企业）",
+        "7.《吉林市重点产业引进博士硕士专项生活补贴申请表》"
+      ],
+      "process": [
+        "1.用人单位组织申报，经审核公示后向市人社部门提交材料",
+        "2.市人社部门初审",
+        "3.相关部门联合审核",
+        "4.公示5个工作日",
+        "5.公示无异议后一次性发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉林市重点产业引进博士硕士专项政策",
+    "effectiveDate": "2021-12-01",
+    "notes": "有效。吉林市重点产业引进博士硕士专项一次性生活补贴。博士12万元，985/211院校硕士12万元，其他院校硕士6万元，一次性发放。年龄不超过40周岁（含），须全职在吉林市重点产业企业就业并按规定缴纳社会保险。",
+    "location": "吉林市·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jilin-shiji-chuangye-chuci",
+    "city": "jilin",
+    "name": "吉林市初次创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常年受理",
+      "channel": "创业所在地人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书",
+        "3.营业执照副本",
+        "4.经营场所证明",
+        "5.正常经营满6个月以上证明材料",
+        "6.《吉林市初次创业补贴申请表》"
+      ],
+      "process": [
+        "1.创业者向经营所在地人社部门提出申请",
+        "2.人社部门初审",
+        "3.实地核查",
+        "4.公示5个工作日",
+        "5.公示无异议后一次性发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉林市就业创业补贴政策",
+    "effectiveDate": "2021-12-01",
+    "notes": "有效。高校毕业生在吉林市首次创办企业或个体工商户，正常经营满6个月以上的，给予5000元一次性初次创业补贴。无年龄限制，不限企业类型。",
+    "location": "吉林市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jilin-shiji-rencagongyu",
+    "city": "jilin",
+    "name": "吉林市人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常年受理（根据公寓空余情况安排入住）",
+      "channel": "吉林市人力资源和社会保障局人才服务窗口",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书",
+        "3.教育部学历证书电子注册备案表",
+        "4.与吉林市用人单位签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.无房证明",
+        "7.《吉林市人才公寓入住申请表》"
+      ],
+      "process": [
+        "1.个人向市人社部门人才服务窗口提交申请",
+        "2.人社部门审核资格",
+        "3.根据人才公寓空余情况安排入住",
+        "4.签订入住协议",
+        "5.免租金入住，最长3年"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉林市人才公寓管理办法",
+    "effectiveDate": "2021-12-01",
+    "notes": "有效。吉林市为引进的高校毕业生提供人才公寓，免租金入住，最长入住3年。适用于在吉林市就业的全日制本科、硕士、博士毕业生，须与用人单位签订劳动合同并按规定缴纳社会保险，在吉林市无自有住房。",
+    "location": "吉林市·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jilin-shengji-jiuyeshenghuo",
+    "city": "jilin",
+    "name": "吉林省高校毕业生就业生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 2500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "博士": {
+        "min": 2500,
+        "max": 2500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "毕业年度"
+    },
+    "application": {
+      "deadline": "当年应届毕业生所在自然年",
+      "channel": "吉林市人力资源和社会保障局及各区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与用人单位签订的一年及以上劳动合同或聘用合同",
+        "5.社会保险缴纳证明",
+        "6.本人已激活金融功能的社保卡",
+        "7.《吉林省高校毕业生就业生活补贴申请表》"
+      ],
+      "process": [
+        "1.个人向所在区人社部门提出申请",
+        "2.各区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后按月核验社保，发放到社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉人社联〔2024〕78号；吉发〔2024〕7号",
+    "effectiveDate": "2024-04-22",
+    "notes": "有效。吉林省高校毕业生就业生活补贴，在吉林市辖区适用。当年应届全日制博士2500元/月、硕士1500元/月、本科1000元/月，最长发放24个月。须毕业年度内与用人单位签订1年及以上劳动（聘用）合同并按规定缴纳社会保险。与省级就业创业租房补贴互斥，不可同时享受。",
+    "location": "吉林市·市级",
+    "tier": 1,
+    "exclusiveGroup": "jilin-shenghuo-zufang"
+  },
+  {
+    "id": "jilin-shengji-zufang",
+    "city": "jilin",
+    "name": "吉林省高校毕业生就业创业租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 2500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "博士": {
+        "min": 2500,
+        "max": 2500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "毕业年度"
+    },
+    "application": {
+      "deadline": "当年应届毕业生所在自然年",
+      "channel": "吉林市人力资源和社会保障局及各区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与用人单位签订的一年及以上劳动合同或聘用合同",
+        "5.社会保险缴纳证明",
+        "6.有效期内的房屋租赁合同",
+        "7.本人已激活金融功能的社保卡",
+        "8.《吉林省高校毕业生就业创业租房补贴申请表》"
+      ],
+      "process": [
+        "1.个人向所在区人社部门提出申请",
+        "2.各区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后按月核验社保及租赁合同，发放到社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉人社联〔2024〕78号",
+    "effectiveDate": "2024-04-22",
+    "notes": "有效。吉林省高校毕业生就业创业租房补贴，在吉林市辖区适用。当年应届全日制博士2500元/月、硕士1500元/月、本科1000元/月，最长发放24个月。须毕业年度内与用人单位签订1年及以上劳动（聘用）合同或自主创业，在吉林市租房并按规定缴纳社会保险。与省级就业生活补贴互斥，不可同时享受。",
+    "location": "吉林市·市级",
+    "tier": 1,
+    "exclusiveGroup": "jilin-shenghuo-zufang"
+  },
+  {
+    "id": "jilin-shengji-goufang",
+    "city": "jilin",
+    "name": "吉林省高校毕业生一次性购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 80000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "graduationYear": "毕业5年内"
+    },
+    "application": {
+      "deadline": "常年受理（购房后申请）",
+      "channel": "房产所在区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与用人单位签订的一年及以上劳动合同或聘用合同",
+        "5.社会保险缴纳证明",
+        "6.不动产权证书或已备案商品房买卖合同",
+        "7.本人已激活金融功能的社保卡",
+        "8.《吉林省高校毕业生一次性购房补贴申请表》"
+      ],
+      "process": [
+        "1.购房后到房产所在区人社部门提出申请",
+        "2.各区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后一次性发放到社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.jlcity.gov.cn"
+    },
+    "policySource": "吉人社联〔2024〕78号",
+    "effectiveDate": "2024-04-22",
+    "notes": "有效。吉林省高校毕业生一次性购房补贴，在吉林市辖区适用。毕业5年内全日制博士8万元、硕士5万元、本科3万元，一次性发放。须毕业5年内与用人单位签订1年以上劳动（聘用）合同或自主创业并按规定缴纳社会保险，在吉林市行政区域内购买首套住房。",
+    "location": "吉林市·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

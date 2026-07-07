@@ -1,0 +1,404 @@
+[
+  {
+    "id": "anshan-shiji-shenghuo",
+    "city": "anshan",
+    "name": "鞍山市“钢都英才计划2.0版”生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 600,
+      "max": 2500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 600,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1200,
+        "max": 1200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 2500,
+        "max": 2500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "鞍山市人力资源和社会保障局 / 鞍山市委人才办",
+      "materials": [
+        "《鞍山市“钢都英才计划”生活补贴申请表》",
+        "身份证",
+        "毕业证、学位证（国内提供学信网《教育部学历证书电子注册备案表》，留学回国提供《国(境)外学历学位认证书》）",
+        "劳动合同",
+        "社会保险缴费证明"
+      ],
+      "process": [
+        "申请人通过人才服务窗口或线上平台提交材料",
+        "市委人才办/市人社部门审核",
+        "公示",
+        "按月核发至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "鞍委发〔2022〕5号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士2500元/月、硕士1200元/月、本科600元/月，补贴期限36个月。全日制本科及以上毕业生在鞍山就业可申领。年龄以硕士35周岁以下、本科30周岁以下、博士无限制为准，为简化匹配统一取 ageLimit: 35。",
+    "location": "鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anshan-shiji-goufang",
+    "city": "anshan",
+    "name": "鞍山市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 70000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 70000,
+        "max": 70000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "鞍山市住房和城乡建设局 / 各区人社部门",
+      "materials": [
+        "《鞍山市人才购房补贴申请表》",
+        "身份证、户口本、婚姻证明",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社会保险缴费证明",
+        "购房合同、不动产权证书",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "个人提交申请材料",
+        "人社部门审核人才资格",
+        "住建部门复核",
+        "公示",
+        "一次性拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "鞍委发〔2022〕5号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士7万元、硕士4万元、本科2万元，一次性发放。与租房补贴同属“钢都英才计划2.0版”住房保障政策，二者不可兼得（属 anshan-housing 互斥组）。",
+    "location": "鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": "anshan-housing"
+  },
+  {
+    "id": "anshan-shiji-zufang",
+    "city": "anshan",
+    "name": "鞍山市人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 1250,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1250,
+        "max": 1250,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "鞍山市住房和城乡建设局 / 各区人社部门",
+      "materials": [
+        "《鞍山市人才租房补贴申请表》",
+        "身份证、户口本",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社会保险缴费证明",
+        "租房合同",
+        "无房证明"
+      ],
+      "process": [
+        "个人提交申请材料",
+        "人社部门审核人才资格",
+        "住建部门复核",
+        "公示",
+        "按月核发至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "鞍委发〔2022〕5号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士1250元/月、硕士800元/月、本科500元/月，补贴期限36个月。与购房补贴同属“钢都英才计划2.0版”住房保障政策，二者不可兼得（属 anshan-housing 互斥组）。",
+    "location": "鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": "anshan-housing"
+  },
+  {
+    "id": "anshan-shiji-gongyu",
+    "city": "anshan",
+    "name": "鞍山市人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理，按房源情况配租",
+      "channel": "鞍山市人才服务窗口 / 住建部门",
+      "materials": [
+        "《鞍山市人才公寓配租申请表》",
+        "身份证",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社会保险缴费证明",
+        "无房证明"
+      ],
+      "process": [
+        "个人提交配租申请",
+        "人才资格审核",
+        "公示",
+        "按房源情况配租入住，3年内免费提供"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。面向在鞍山市就业的全日制本科及以上毕业生，3年内免费提供人才公寓。具体房源及配租标准以当期公告为准。",
+    "location": "鞍山·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anshan-shiji-chuangye-changdi",
+    "city": "anshan",
+    "name": "鞍山市创业场地补贴",
+    "category": "startup",
+    "amount": {
+      "min": 10000,
+      "max": 20000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理，按年度申报",
+      "channel": "鞍山市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "《鞍山市创业场地补贴申请表》",
+        "身份证",
+        "毕业证",
+        "工商营业执照",
+        "经营场地租赁合同及缴费凭证",
+        "近12个月经营纳税证明"
+      ],
+      "process": [
+        "申请人按年度向创业所在地区公共就业服务机构提交材料",
+        "受理机构审核经营及场地情况",
+        "公示",
+        "按年拨付至个人银行账户，最长2年"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在鞍山市初次创办经营实体并租赁经营场地，给予1万-2万元/年的创业场地补贴，累计最长2年。具体金额根据场地规模及经营情况核定。",
+    "location": "鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anshan-shiji-chuangye-yixing",
+    "city": "anshan",
+    "name": "鞍山市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 3000,
+      "max": 3000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "鞍山市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "《鞍山市一次性创业补贴申请表》",
+        "身份证",
+        "毕业证",
+        "工商营业执照",
+        "经营场地证明",
+        "带动就业人员劳动合同及工资发放凭证"
+      ],
+      "process": [
+        "申请人向创业所在地区公共就业服务机构提交材料",
+        "受理机构审核",
+        "公示",
+        "拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在鞍山市初次创办经营实体并正常经营，给予3000元一次性创业补贴。不可重复申报。",
+    "location": "鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anshan-shiji-chuangye-daikuan",
+    "city": "anshan",
+    "name": "鞍山市创业担保贷款",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "鞍山市人力资源和社会保障局 / 经办银行",
+      "materials": [
+        "《鞍山市创业担保贷款申请表》",
+        "身份证",
+        "毕业证",
+        "工商营业执照",
+        "经营项目可行性报告及还款计划",
+        "反担保材料（如适用）"
+      ],
+      "process": [
+        "申请人向人社部门提交贷款申请",
+        "人社部门审核资格",
+        "经办银行尽职调查及审批",
+        "签订贷款合同并发放，财政贴息，最长2年"
+      ],
+      "location": "市级",
+      "url": "https://rsj.anshan.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在鞍山市自主创业，可申请最高20万元创业担保贷款，由财政给予贴息，贷款期限最长2年。",
+    "location": "鞍山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

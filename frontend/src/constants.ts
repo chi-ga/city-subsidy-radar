@@ -202,7 +202,13 @@ export type CityCode =
   | 'jingzhou'
   | 'jingmen'
   | 'ezhou'
-  | 'huanggang';
+  | 'huanggang'
+  | 'weihai'
+  | 'cangzhou'
+  | 'nanyang'
+  | 'anshan'
+  | 'jilin'
+  | 'eerduosi';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -303,6 +309,12 @@ export const CITY_NAMES: Record<CityCode, string> = {
   jingmen: '荆门',
   ezhou: '鄂州',
   huanggang: '黄冈',
+  weihai: '威海',
+  cangzhou: '沧州',
+  nanyang: '南阳',
+  anshan: '鞍山',
+  jilin: '吉林市',
+  eerduosi: '鄂尔多斯',
 };
 
 // 补贴分类名称映射

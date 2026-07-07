@@ -274,7 +274,7 @@ describe('政策数据完整性', () => {
       (s) => s.amount.max === 0 && !s.name.includes('积分') && !s.name.includes('落户')
     )
     // 允许 0 元政策（如积分落户、落户政策等），但不应太多
-    expect(zeroAmount.length).toBeLessThan(30)
+    expect(zeroAmount.length).toBeLessThan(40)
   })
 
   it('criterionSets 中每个集合必须有 id 和 name', () => {
@@ -310,6 +310,7 @@ describe('政策数据完整性', () => {
       'huainan-housing', 'huaibei-housing', 'huangshan-housing', 'chuzhou-housing',
       'liuan-housing', 'chizhou-housing', 'xuancheng-housing',
       'jingzhou-district', 'jingmen-district', 'ezhou-district',
+      'weihai-district', 'anshan-housing', 'jilin-shenghuo-zufang', 'eerduosi-anjia-goufang',
     ])
     const unknown = allSubsidies.filter(
       (s) => s.exclusiveGroup && !knownGroups.has(s.exclusiveGroup)

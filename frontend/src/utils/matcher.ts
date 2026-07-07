@@ -579,6 +579,10 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'jingzhou-district': '荆州区级补贴（只能在一个区享受）',
   'jingmen-district': '荆门区级补贴（只能在一个区享受）',
   'ezhou-district': '鄂州区级补贴（只能在一个区享受）',
+  'weihai-district': '威海区级补贴（只能在一个区享受）',
+  'anshan-housing': '鞍山住房补贴（购房补贴与租房补贴二选一）',
+  'jilin-shenghuo-zufang': '吉林市省级生活补贴与租房补贴（不重复享受）',
+  'eerduosi-anjia-goufang': '鄂尔多斯安家补贴与购房补贴（就高不重复）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

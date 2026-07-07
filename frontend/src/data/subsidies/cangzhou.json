@@ -1,0 +1,384 @@
+[
+  {
+    "id": "cangzhou-shiji-shenghuobutie",
+    "city": "cangzhou",
+    "name": "沧州市青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1500,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "phd-master",
+          "name": "博士/硕士通道（不限院校）",
+          "degree": ["硕士", "博士"],
+          "employmentRequired": true,
+          "requiresFullTime": true,
+          "tieredAmount": {
+            "博士": {
+              "min": 5000,
+              "max": 5000,
+              "unit": "元",
+              "period": "每月",
+              "durationMonths": 36
+            },
+            "硕士": {
+              "min": 2500,
+              "max": 2500,
+              "unit": "元",
+              "period": "每月",
+              "durationMonths": 36
+            }
+          }
+        },
+        {
+          "id": "bachelor-top",
+          "name": "双一流/QS前100本科通道",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流", "QS前100"],
+          "employmentRequired": true,
+          "requiresFullTime": true,
+          "amount": {
+            "min": 1500,
+            "max": 1500,
+            "unit": "元",
+            "period": "每月",
+            "durationMonths": 36
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "沧州市人社局网上服务平台或各县(市、区)人社部门窗口申报",
+      "materials": [
+        "《沧州市青年人才生活补贴申请表》",
+        "申请人身份证",
+        "学历学位证书（国(境)外学历须提供教育部留学服务中心认证书）",
+        "全日制学历证明材料",
+        "院校层次证明（本科限双一流/QS前100）",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "其他相关材料"
+      ],
+      "process": [
+        "个人或单位通过沧州市人社局网上服务平台申报",
+        "所在单位初审",
+        "人社部门审核学历、院校层次、就业及社保情况",
+        "审核通过后公示",
+        "按月发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.cangzhou.gov.cn/"
+    },
+    "policySource": "《沧州市青年人才生活补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。青年人才生活补贴：博士5000元/月、硕士2500元/月、双一流/QS前100本科1500元/月，补贴期限36个月。博士/硕士不限院校，本科限双一流或QS前100高校。要求全日制学历、在沧州就业并缴纳社保，无年龄限制。tier1普惠政策。",
+    "location": "沧州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "cangzhou-shiji-goufangbutie",
+    "city": "cangzhou",
+    "name": "沧州市青年人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "phd-master",
+          "name": "博士/硕士通道（不限院校）",
+          "degree": ["硕士", "博士"],
+          "employmentRequired": true,
+          "requiresFullTime": true,
+          "tieredAmount": {
+            "博士": {
+              "min": 300000,
+              "max": 300000,
+              "unit": "元",
+              "period": "一次性",
+              "durationMonths": 0
+            },
+            "硕士": {
+              "min": 150000,
+              "max": 150000,
+              "unit": "元",
+              "period": "一次性",
+              "durationMonths": 0
+            }
+          }
+        },
+        {
+          "id": "bachelor-top",
+          "name": "双一流/QS前100本科通道",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流", "QS前100"],
+          "employmentRequired": true,
+          "requiresFullTime": true,
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "一次性",
+            "durationMonths": 0
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "沧州市人社局或各县(市、区)人社部门窗口申报",
+      "materials": [
+        "《沧州市青年人才购房补贴申请表》",
+        "申请人身份证",
+        "学历学位证书（国(境)外学历须提供教育部留学服务中心认证书）",
+        "全日制学历证明材料",
+        "院校层次证明（本科限双一流/QS前100）",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "购房合同、发票或不动产登记证书",
+        "家庭住房情况核查授权书",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人向人社部门申报",
+        "人社部门审核学历、院校层次、就业、社保及购房情况",
+        "审核通过后公示",
+        "一次性发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.cangzhou.gov.cn/"
+    },
+    "policySource": "《沧州市青年人才购房补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。青年人才购房补贴：博士30万元、硕士15万元、双一流/QS前100本科5万元，一次性发放。博士/硕士不限院校，本科限双一流或QS前100高校。要求全日制学历、在沧州就业并缴纳社保、购房，无年龄限制。tier1普惠政策。",
+    "location": "沧州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "cangzhou-shiji-rencaigongyu",
+    "city": "cangzhou",
+    "name": "沧州市人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "以沧州市人社部门或住建部门通知为准",
+      "channel": "沧州市人社局或人才公寓管理部门申请",
+      "materials": [
+        "《沧州市人才公寓入住申请表》",
+        "申请人身份证",
+        "学历学位证书",
+        "全日制学历证明材料",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "家庭住房情况说明",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人向人才公寓管理部门提交申请",
+        "审核学历、就业及社保情况",
+        "审核通过后分配人才公寓",
+        "签订入住协议，享受租金减免，最长3年"
+      ],
+      "location": "市级",
+      "url": "https://rsj.cangzhou.gov.cn/"
+    },
+    "policySource": "《沧州市人才公寓政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。人才公寓提供租金减免，最长享受3年。要求全日制本科及以上学历、在沧州就业并缴纳社保，不要求落户。属实物保障而非现金补贴。tier2追问层政策。",
+    "location": "沧州·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "cangzhou-shiji-boshihou-butie",
+    "city": "cangzhou",
+    "name": "沧州市博士后留沧补贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "沧州市人社局或设站单位申报",
+      "materials": [
+        "《沧州市博士后留沧补贴申请表》",
+        "申请人身份证",
+        "博士学位证书",
+        "博士后进站/出站批复及工作协议",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "其他相关材料"
+      ],
+      "process": [
+        "设站单位或个人向沧州市人社局申报",
+        "人社部门审核在站/留沧情况及就业社保",
+        "审核通过后公示",
+        "按月发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.cangzhou.gov.cn/"
+    },
+    "policySource": "《沧州市博士后留沧补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。博士后留沧补贴5000元/月，补贴期限24个月。要求全日制博士、在沧州就业并缴纳社保，无年龄限制。tier3专业通道政策。",
+    "location": "沧州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "cangzhou-shiji-chuangyebutie",
+    "city": "cangzhou",
+    "name": "沧州市创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "沧州市人社局或各县(市、区)人社部门窗口申报",
+      "materials": [
+        "《沧州市创业补贴申请表》",
+        "申请人身份证",
+        "学历学位证书",
+        "营业执照",
+        "正常经营证明（经营流水、纳税证明等）",
+        "经营场所证明",
+        "社会保险缴费证明（如有）",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人向注册地人社部门申报",
+        "人社部门审核创业主体及正常经营情况",
+        "审核通过后公示",
+        "一次性发放创业补贴，并按规定享受房租补贴、社保补贴"
+      ],
+      "location": "市级",
+      "url": "https://rsj.cangzhou.gov.cn/"
+    },
+    "policySource": "《沧州市创业补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。创业补贴5000元一次性发放，另按规定享受房租补贴及社保补贴。要求在沧州初次创办经营主体并正常经营，不要求就业、落户及全日制。tier1普惠政策。",
+    "location": "沧州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "cangzhou-shiji-zhuxuedaikuan-daichang",
+    "city": "cangzhou",
+    "name": "沧州市助学贷款代偿",
+    "category": "other",
+    "amount": {
+      "min": 0,
+      "max": 8000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "以沧州市人社部门或教育部门通知为准",
+      "channel": "沧州市人社局或教育部门申报",
+      "materials": [
+        "《沧州市助学贷款代偿申请表》",
+        "申请人身份证",
+        "学历学位证书",
+        "全日制学历证明材料",
+        "助学贷款合同及还款记录",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人向人社部门或教育部门申报",
+        "审核学历、就业社保及助学贷款情况",
+        "审核通过后公示",
+        "按规定逐年代偿，最长3年"
+      ],
+      "location": "市级",
+      "url": "https://rsj.cangzhou.gov.cn/"
+    },
+    "policySource": "《沧州市助学贷款代偿政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。助学贷款代偿最高8000元/年，最长代偿3年。要求全日制本科及以上学历、在沧州就业并缴纳社保，不要求落户。tier2追问层政策。",
+    "location": "沧州·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  }
+]

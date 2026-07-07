@@ -1,0 +1,504 @@
+[
+  {
+    "id": "eerduosi-shiji-anjia",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市高校毕业生安家补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 400000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 300000,
+        "max": 400000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 100000,
+        "max": 300000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 50000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "double-first-phd",
+          "name": "双一流博士",
+          "degree": ["博士"],
+          "schoolLevel": ["双一流"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "double-first-master",
+          "name": "双一流硕士",
+          "degree": ["硕士"],
+          "schoolLevel": ["双一流"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "other-phd",
+          "name": "其他博士",
+          "degree": ["博士"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "other-master",
+          "name": "其他硕士",
+          "degree": ["硕士"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "double-first-bachelor",
+          "name": "双一流本科",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        }
+      ]
+    },
+    "application": {
+      "deadline": "按年度集中申报，申报时间以政策通知为准",
+      "channel": "鄂尔多斯市人力资源和社会保障局及各旗区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与鄂尔多斯市用人单位签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.本人银行账户",
+        "7.《鄂尔多斯市人才安居保障安家补贴申请表》"
+      ],
+      "process": [
+        "1.用人单位组织申报，经审核公示后向所在旗区人社部门提交材料",
+        "2.旗区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后按4:3:3比例分3年发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "《鄂尔多斯市人才安居保障实施办法（2024年修订）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。鄂尔多斯市高校毕业生安家补贴，按4:3:3比例分3年发放。双一流博士40万元，双一流硕士30万元，其他博士30万元，其他硕士10万元，双一流本科10万元，其他双一流本科5万元。须全职在鄂尔多斯市就业并按规定缴纳社会保险。与租房补贴、高层次人才购房补贴就高不重复享受。",
+    "location": "鄂尔多斯·市级",
+    "tier": 1,
+    "exclusiveGroup": "eerduosi-anjia-goufang"
+  },
+  {
+    "id": "eerduosi-shiji-zufang",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 1500,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "博士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "phd",
+          "name": "博士",
+          "degree": ["博士"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "master-double-first-bachelor",
+          "name": "硕士/双一流本科",
+          "degree": ["硕士", "本科"],
+          "schoolLevel": ["双一流"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        }
+      ]
+    },
+    "application": {
+      "deadline": "常年受理",
+      "channel": "鄂尔多斯市人力资源和社会保障局及各旗区人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与鄂尔多斯市用人单位签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.有效期内的房屋租赁合同",
+        "7.本人银行账户",
+        "8.《鄂尔多斯市人才安居保障租房补贴申请表》"
+      ],
+      "process": [
+        "1.个人向所在旗区人社部门提出申请",
+        "2.旗区人社部门初审",
+        "3.市人社部门审核汇总",
+        "4.公示5个工作日",
+        "5.公示无异议后按月发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "《鄂尔多斯市人才安居保障实施办法（2024年修订）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。鄂尔多斯市人才租房补贴。博士及正高级职称人才2000元/月，硕士、副高级职称、双一流本科及境外排名前300高校本科1500元/月，最长发放36个月。须全职在鄂尔多斯市就业并按规定缴纳社会保险，在鄂尔多斯市租房。与安家补贴、高层次人才购房补贴就高不重复享受。",
+    "location": "鄂尔多斯·市级",
+    "tier": 1,
+    "exclusiveGroup": "eerduosi-anjia-goufang"
+  },
+  {
+    "id": "eerduosi-shiji-zhongdianqiye-yuedu",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市重点企业引进人才月度生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1500,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "硕士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      },
+      "博士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 24
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "companyType": ["重点企业"]
+    },
+    "application": {
+      "deadline": "按年度集中申报，申报时间以政策通知为准",
+      "channel": "鄂尔多斯市人力资源和社会保障局",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书（境外学历需提供教育部留学服务中心认证书）",
+        "3.教育部学历证书电子注册备案表",
+        "4.与鄂尔多斯市重点企业签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.企业营业执照及重点企业认定证明",
+        "7.本人银行账户",
+        "8.《鄂尔多斯市重点企业引进人才生活补贴申请表》"
+      ],
+      "process": [
+        "1.用人单位组织申报，经审核公示后向市人社部门提交材料",
+        "2.市人社部门初审",
+        "3.相关部门联合审核",
+        "4.公示5个工作日",
+        "5.公示无异议后按月发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "鄂党发〔2023〕19号",
+    "effectiveDate": "2023-12-01",
+    "notes": "有效。鄂尔多斯市重点企业引进人才月度生活补贴。博士3000元/月，硕士2000元/月，本科1500元/月，最长发放24个月。须全职在鄂尔多斯市重点企业就业并按规定缴纳社会保险。",
+    "location": "鄂尔多斯·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "eerduosi-shiji-zhongdianqiye-yixing",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市重点企业新引进人才一次性生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "criterionSets": [
+        {
+          "id": "executive",
+          "name": "高管/技术骨干",
+          "degree": ["本科", "硕士", "博士"],
+          "companyType": ["重点企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        },
+        {
+          "id": "bachelor",
+          "name": "本科毕业生",
+          "degree": ["本科"],
+          "companyType": ["重点企业"],
+          "employmentRequired": true,
+          "requiresFullTime": true
+        }
+      ]
+    },
+    "application": {
+      "deadline": "按年度集中申报，申报时间以政策通知为准",
+      "channel": "鄂尔多斯市人力资源和社会保障局",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书",
+        "3.教育部学历证书电子注册备案表",
+        "4.与鄂尔多斯市重点企业签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.企业营业执照及重点企业认定证明",
+        "7.高管/技术骨干任职证明（适用高管/技术骨干）",
+        "8.本人银行账户",
+        "9.《鄂尔多斯市重点企业新引进人才一次性生活补贴申请表》"
+      ],
+      "process": [
+        "1.用人单位组织申报，经审核公示后向市人社部门提交材料",
+        "2.市人社部门初审",
+        "3.相关部门联合审核",
+        "4.公示5个工作日",
+        "5.公示无异议后发放到个人账户（高管/技术骨干分3年发放，本科一次性发放）"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "鄂党发〔2023〕19号",
+    "effectiveDate": "2023-12-01",
+    "notes": "有效。鄂尔多斯市重点企业新引进人才一次性生活补贴。重点企业高管/技术骨干10万元（分3年发放），本科毕业生1万元（一次性发放）。须全职在鄂尔多斯市重点企业就业并按规定缴纳社会保险。",
+    "location": "鄂尔多斯·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "eerduosi-shiji-chuangye-yixing",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常年受理",
+      "channel": "创业所在地人社部门",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书",
+        "3.营业执照副本",
+        "4.经营场所证明",
+        "5.正常经营满1年以上证明材料",
+        "6.带动就业证明（申请3万元档需提供带动2人以上就业证明）",
+        "7.《鄂尔多斯市一次性创业补贴申请表》"
+      ],
+      "process": [
+        "1.创业者向经营所在地人社部门提出申请",
+        "2.人社部门初审",
+        "3.实地核查",
+        "4.公示5个工作日",
+        "5.公示无异议后一次性发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "鄂尔多斯市就业创业补贴政策",
+    "effectiveDate": "2023-12-01",
+    "notes": "有效。高校毕业生在鄂尔多斯市首次创办企业或个体工商户，正常经营满1年以上的，给予1万元一次性创业补贴；带动2人以上就业的，给予3万元一次性创业补贴。无年龄限制，不限企业类型。",
+    "location": "鄂尔多斯·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "eerduosi-shiji-rencagongyu",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常年受理（根据公寓空余情况安排入住）",
+      "channel": "鄂尔多斯市人力资源和社会保障局人才服务窗口",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书",
+        "3.教育部学历证书电子注册备案表",
+        "4.与鄂尔多斯市用人单位签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.无房证明",
+        "7.《鄂尔多斯市人才公寓入住申请表》"
+      ],
+      "process": [
+        "1.个人向市人社部门人才服务窗口提交申请",
+        "2.人社部门审核资格",
+        "3.根据人才公寓空余情况安排入住",
+        "4.签订入住协议",
+        "5.免租金入住，最长3年"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "《鄂尔多斯市人才安居保障实施办法（2024年修订）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。鄂尔多斯市为引进的高校毕业生提供人才公寓，免租金入住，最长入住3年。适用于在鄂尔多斯市就业的全日制本科、硕士、博士毕业生，须与用人单位签订劳动合同并按规定缴纳社会保险，在鄂尔多斯市无自有住房。",
+    "location": "鄂尔多斯·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "eerduosi-shiji-goufang-gaochengci",
+    "city": "eerduosi",
+    "name": "鄂尔多斯市高层次人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士", "硕士", "本科"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "talentLevel": ["天骄英才", "草原英才", "鄂尔多斯英才"]
+    },
+    "application": {
+      "deadline": "按年度集中申报，申报时间以政策通知为准",
+      "channel": "鄂尔多斯市人力资源和社会保障局",
+      "materials": [
+        "1.本人身份证",
+        "2.毕业证书及学位证书",
+        "3.高层次人才认定证书（天骄英才/草原英才/鄂尔多斯英才）",
+        "4.与鄂尔多斯市用人单位签订的劳动合同",
+        "5.社会保险缴纳证明",
+        "6.不动产权证书或已备案商品房买卖合同",
+        "7.本人银行账户",
+        "8.《鄂尔多斯市高层次人才购房补贴申请表》"
+      ],
+      "process": [
+        "1.个人向市人社部门提出申请",
+        "2.市人社部门初审",
+        "3.高层次人才认定部门复核",
+        "4.公示5个工作日",
+        "5.公示无异议后按5年等额发放到个人账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.ordos.gov.cn"
+    },
+    "policySource": "《鄂尔多斯市人才安居保障实施办法（2024年修订）》",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。鄂尔多斯市高层次人才购房补贴，按人才层次给予购房面积补贴：天骄英才180平方米，草原英才150平方米，鄂尔多斯英才120平方米（按房价计算），分5年等额发放。须经高层次人才认定并在鄂尔多斯市购房。与安家补贴、租房补贴就高不重复享受。",
+    "location": "鄂尔多斯·市级",
+    "tier": 3,
+    "exclusiveGroup": "eerduosi-anjia-goufang"
+  }
+]

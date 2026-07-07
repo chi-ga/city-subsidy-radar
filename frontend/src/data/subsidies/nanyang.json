@@ -1,0 +1,465 @@
+[
+  {
+    "id": "nanyang-shiji-shenghuo",
+    "city": "nanyang",
+    "name": "南阳市引进青年大学生生活补助",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "companyType": ["重点企业"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "南阳市人力资源和社会保障局，由重点企业统一组织申报",
+      "materials": [
+        "《南阳市引进青年大学生生活补助申请表》",
+        "身份证",
+        "毕业证、学位证（国内提供学信网《教育部学历证书电子注册备案表》，留学回国提供《国(境)外学历学位认证书》）",
+        "劳动合同",
+        "社会保险缴费证明",
+        "重点企业认定材料"
+      ],
+      "process": [
+        "重点企业审核确认并组织申报人提交材料",
+        "市/区人社部门审核",
+        "公示",
+        "按月核发至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "宛人社办〔2022〕54号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士5000元/月、硕士3000元/月、本科1000元/月，补贴期限36个月。限在南阳市重点企业就业的全日制本科及以上毕业生，由重点企业统一组织申报。",
+    "location": "南阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-shenghuobutie",
+    "city": "nanyang",
+    "name": "南阳市引进高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "南阳市人力资源和社会保障局，由用人单位统一组织申报",
+      "materials": [
+        "《南阳市引进高校毕业生生活补贴申请表》",
+        "身份证",
+        "毕业证、学位证（国内提供学信网《教育部学历证书电子注册备案表》，留学回国提供《国(境)外学历学位认证书》）",
+        "劳动合同",
+        "社会保险缴费证明",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "用人单位审核并组织申报人提交材料",
+        "市/区人社部门审核",
+        "公示",
+        "按月核发至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "宛人社〔2018〕78号",
+    "effectiveDate": "2018-01-01",
+    "notes": "有效。博士5000元/月、硕士3000元/月、本科1000元/月，补贴期限36个月。面向在南阳市就业的全日制本科及以上毕业生，由用人单位统一组织申报。",
+    "location": "南阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-goufang",
+    "city": "nanyang",
+    "name": "南阳市人才首次购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "中专": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "专科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["中专", "专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "南阳市住房和城乡建设局 / 各区人社部门",
+      "materials": [
+        "《南阳市人才首次购房补贴申请表》",
+        "身份证、户口本、婚姻证明",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社会保险缴费证明",
+        "购房合同、不动产权证书",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "个人提交申请材料",
+        "人社部门审核人才资格",
+        "住建部门复核",
+        "公示",
+        "一次性拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。博士5万元、硕士3万元、本科2万元、大中专1万元，一次性发放。面向在南阳市就业、首次在南阳购房的全日制大中专及以上毕业生。",
+    "location": "南阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-gongyu",
+    "city": "nanyang",
+    "name": "南阳市市级人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理，按房源情况配租",
+      "channel": "南阳市人才服务窗口 / 住建部门",
+      "materials": [
+        "《南阳市人才公寓配租申请表》",
+        "身份证",
+        "学历学位证书及学信网备案表/国(境)外学历认证书",
+        "劳动合同、社会保险缴费证明",
+        "无房证明"
+      ],
+      "process": [
+        "个人提交配租申请",
+        "人才资格审核",
+        "公示",
+        "按房源情况配租入住，最长租住3年"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。面向在南阳市就业的全日制本科及以上毕业生提供人才公寓租金减免，最长3年。具体减免标准及房源以当期配租公告为准。",
+    "location": "南阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-chuangye-kaiye",
+    "city": "nanyang",
+    "name": "南阳市创业开业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "南阳市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "《南阳市创业开业补贴申请表》",
+        "身份证",
+        "毕业证",
+        "工商营业执照",
+        "经营场地证明",
+        "带动就业人员劳动合同及工资发放凭证"
+      ],
+      "process": [
+        "申请人向创业所在地区公共就业服务机构提交材料",
+        "受理机构审核",
+        "公示",
+        "拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在南阳市初次创办经营实体并正常经营，给予5000元一次性创业开业补贴。不可重复申报。",
+    "location": "南阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-chuangye-yunying",
+    "city": "nanyang",
+    "name": "南阳市创业运营补贴",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 10000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理，按年度申报",
+      "channel": "南阳市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "《南阳市创业运营补贴申请表》",
+        "身份证",
+        "毕业证",
+        "工商营业执照",
+        "近12个月经营纳税证明",
+        "经营场地租赁合同及缴费凭证"
+      ],
+      "process": [
+        "申请人按年度向创业所在地区公共就业服务机构提交材料",
+        "受理机构审核经营情况",
+        "公示",
+        "按年拨付至个人银行账户，最长3年"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在南阳市创办经营实体并正常运营，给予最高10000元/年的创业运营补贴，累计最长36个月。具体金额根据经营及带动就业情况核定。",
+    "location": "南阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-qiuzhi",
+    "city": "nanyang",
+    "name": "南阳市求职创业补贴",
+    "category": "other",
+    "amount": {
+      "min": 300,
+      "max": 300,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "毕业年度内集中申报",
+      "channel": "南阳市人力资源和社会保障局 / 各高校就业指导中心",
+      "materials": [
+        "《南阳市求职创业补贴申请表》",
+        "身份证",
+        "毕业证或学籍证明",
+        "困难家庭证明材料（如适用）",
+        "本人银行账户"
+      ],
+      "process": [
+        "申请人向所在高校或区公共就业服务机构提交材料",
+        "审核",
+        "公示",
+        "一次性拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在南阳市求职创业，给予300元一次性求职创业补贴，主要用于求职创业相关支出。",
+    "location": "南阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "nanyang-shiji-jianxi",
+    "city": "nanyang",
+    "name": "南阳市就业见习补贴",
+    "category": "employment",
+    "amount": {
+      "min": 2150,
+      "max": 2150,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理，按见习批次申报",
+      "channel": "南阳市人力资源和社会保障局 / 见习单位",
+      "materials": [
+        "《南阳市就业见习补贴申请表》",
+        "见习人员身份证、毕业证",
+        "就业见习协议",
+        "见习人员生活费发放凭证",
+        "见习单位资质材料"
+      ],
+      "process": [
+        "见习单位为见习人员申报",
+        "人社部门审核见习情况",
+        "公示",
+        "按月核发至见习人员账户，最长12个月"
+      ],
+      "location": "市级",
+      "url": "https://rsj.nanyang.gov.cn/"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "待核实",
+    "notes": "有效。大中专及以上毕业生在南阳市认定的就业见习单位参加见习，给予2150元/月就业见习补贴，见习期限最长12个月。",
+    "location": "南阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  }
+]

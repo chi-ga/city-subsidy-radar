@@ -1511,6 +1511,93 @@
       },
       "locationDependentFields": [],
       "districts": {}
+    },
+    "weihai": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": ["householdRequired"],
+      "districts": {
+        "环翠区": {},
+        "经区": {},
+        "荣成市": {},
+        "乳山市": {},
+        "文登区": {}
+      }
+    },
+    "cangzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "nanyang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false,
+        "showCompanyType": true
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "anshan": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "jilin": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": false,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false,
+        "showCompanyType": true
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "eerduosi": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": false,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false,
+        "showCompanyType": true
+      },
+      "locationDependentFields": [],
+      "districts": {}
     }
   }
 }

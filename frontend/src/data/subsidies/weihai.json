@@ -1,0 +1,568 @@
+[
+  {
+    "id": "weihai-shiji-shenghuobutie",
+    "city": "weihai",
+    "name": "威海市青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "威海市人社局网上服务平台或各区市人社部门窗口申报",
+      "materials": [
+        "《威海市青年人才生活补贴申请表》",
+        "申请人身份证",
+        "学历学位证书（国(境)外学历须提供教育部留学服务中心认证书）",
+        "全日制学历证明材料",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "其他相关材料"
+      ],
+      "process": [
+        "个人或单位通过威海市人社局网上服务平台申报",
+        "所在单位初审",
+        "人社部门审核学历、就业及社保情况",
+        "审核通过后公示",
+        "按月发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.weihai.gov.cn/"
+    },
+    "policySource": "威人社发〔2023〕17号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。博士5000元/月、硕士2000元/月、本科1000元/月，补贴期限36个月。要求全日制学历、在威海就业并缴纳社保，无年龄限制。tier1普惠政策。",
+    "location": "威海·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "weihai-shiji-boshihou-shenghuobutie",
+    "city": "weihai",
+    "name": "威海市博士后在站生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "威海市人社局或设站单位申报",
+      "materials": [
+        "《威海市博士后在站生活补贴申请表》",
+        "申请人身份证",
+        "博士学位证书",
+        "博士后进站批复及工作协议",
+        "社会保险缴费证明",
+        "其他相关材料"
+      ],
+      "process": [
+        "设站单位或个人向威海市人社局申报",
+        "人社部门审核在站情况及就业社保",
+        "审核通过后公示",
+        "按月发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.weihai.gov.cn/"
+    },
+    "policySource": "威人社发〔2023〕20号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。博士后在站期间5000元/月，补贴期限24个月。要求全日制博士、在威海设站单位进站工作并缴纳社保，无年龄限制。tier3专业通道政策。",
+    "location": "威海·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "weihai-shiji-liuxue-yixingbutie",
+    "city": "weihai",
+    "name": "威海市留学回国人员一次性补贴",
+    "category": "talent",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "威海市人社局申报",
+      "materials": [
+        "《威海市留学回国人员一次性补贴申请表》",
+        "申请人身份证",
+        "教育部留学服务中心国(境)外学历学位认证书",
+        "国(境)外学习期间使用的护照及签证页（签注记录）",
+        "学历学位证书",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "其他相关材料"
+      ],
+      "process": [
+        "个人向威海市人社局申报",
+        "人社部门审核留学身份及就业情况",
+        "审核通过后公示",
+        "一次性发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.weihai.gov.cn/"
+    },
+    "policySource": "威人社发〔2023〕21号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。留学回国人员一次性补贴：博士10万元、硕士5万元、本科2万元，一次性发放。要求全日制国(境)外学历、在威海就业并缴纳社保，无年龄限制。tier3专业通道政策。",
+    "location": "威海·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "weihai-shiji-zulinbutie",
+    "city": "weihai",
+    "name": "威海市新就业无房职工阶段性租赁补贴",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 600,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "威海市住建部门或各区市住房保障部门窗口申报",
+      "materials": [
+        "《威海市新就业无房职工阶段性租赁补贴申请表》",
+        "申请人身份证、户口本、婚姻证明",
+        "学历证明",
+        "劳动合同、就业登记证明",
+        "社会保险缴费证明",
+        "房屋租赁合同",
+        "家庭住房情况核查授权书",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人填表备料",
+        "所在单位初审",
+        "向单位所在地住房保障部门申请",
+        "住房保障部门审核及房产核查",
+        "审核通过后公示",
+        "按季度发放补贴"
+      ],
+      "location": "市级",
+      "url": "https://zjj.weihai.gov.cn/"
+    },
+    "policySource": "威住建通字〔2021〕39号",
+    "effectiveDate": "2021-01-01",
+    "notes": "有效。新就业无房职工阶段性租赁补贴最高600元/月，累计不超过36个月，实际租金低于核定补贴额的按实际金额发放。要求在威海就业、无自有住房，不要求全日制及落户。tier2追问层政策。",
+    "location": "威海·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "weihai-huancui-goufangbutie",
+    "city": "weihai",
+    "name": "威海市环翠区大学生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 120000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "huancui-boshi-shuoshi",
+          "name": "博士/硕士通道（不限院校）",
+          "degree": ["硕士", "博士"],
+          "employmentRequired": true,
+          "householdRequired": true,
+          "requiresFullTime": true,
+          "tieredAmount": {
+            "博士": {
+              "min": 120000,
+              "max": 120000,
+              "unit": "元",
+              "period": "分期",
+              "durationMonths": 60
+            },
+            "硕士": {
+              "min": 80000,
+              "max": 80000,
+              "unit": "元",
+              "period": "分期",
+              "durationMonths": 60
+            }
+          }
+        },
+        {
+          "id": "huancui-benke-shuangyiliu",
+          "name": "双一流本科通道",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流"],
+          "employmentRequired": true,
+          "householdRequired": true,
+          "requiresFullTime": true,
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "分期",
+            "durationMonths": 60
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "以环翠区人社部门通知为准",
+      "channel": "环翠区人力资源和社会保障局窗口申报",
+      "materials": [
+        "《环翠区大学生购房补贴申请表》",
+        "申请人身份证、户口本、婚姻证明",
+        "学历学位证书（双一流本科须提供院校层次证明）",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "购房合同、发票或不动产登记证书",
+        "家庭住房情况核查授权书",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人填表备料并向环翠区人社部门申报",
+        "人社部门审核学历、就业、落户及购房情况",
+        "审核通过后公示",
+        "分期发放至申请人社保卡金融账户（分5年）"
+      ],
+      "location": "环翠区",
+      "url": "待核实"
+    },
+    "policySource": "《威海市环翠区大学生购房补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。环翠区大学生购房补贴：博士12万元、硕士8万元、双一流本科5万元，分5年发放。博士/硕士不限院校，本科限双一流。要求全日制学历、在环翠区就业并落户、购房。属区级购房补贴，与经区、荣成市购房补贴互斥。tier3专业通道政策。",
+    "location": "威海·环翠区",
+    "tier": 3,
+    "exclusiveGroup": "weihai-district"
+  },
+  {
+    "id": "weihai-jingqu-goufangbutie",
+    "city": "weihai",
+    "name": "威海市经区大学生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 80000,
+      "max": 80000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "以经区人社部门通知为准",
+      "channel": "威海经济技术开发区人社部门窗口申报",
+      "materials": [
+        "《经区大学生购房补贴申请表》",
+        "申请人身份证、户口本、婚姻证明",
+        "学历学位证书",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "购房合同、发票或不动产登记证书",
+        "家庭住房情况核查授权书",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人填表备料并向经区人社部门申报",
+        "人社部门审核学历、就业、落户及购房情况",
+        "审核通过后公示",
+        "一次性发放至申请人社保卡金融账户"
+      ],
+      "location": "经区",
+      "url": "待核实"
+    },
+    "policySource": "《威海市经区大学生购房补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。经区大学生购房补贴：本科8万元，一次性发放。另配套租房补贴500元/月。要求全日制本科、在经区就业并落户、购房。属区级购房补贴，与环翠区、荣成市购房补贴互斥。tier3专业通道政策。",
+    "location": "威海·经区",
+    "tier": 3,
+    "exclusiveGroup": "weihai-district"
+  },
+  {
+    "id": "weihai-rongcheng-goufangbutie",
+    "city": "weihai",
+    "name": "荣成市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "以荣成市人社部门通知为准",
+      "channel": "荣成市人力资源和社会保障局窗口申报",
+      "materials": [
+        "《荣成市人才购房补贴申请表》",
+        "申请人身份证、户口本、婚姻证明",
+        "学历学位证书",
+        "与用人单位签订的劳动合同",
+        "社会保险缴费证明",
+        "购房合同、发票或不动产登记证书",
+        "家庭住房情况核查授权书",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人填表备料并向荣成市人社部门申报",
+        "人社部门审核学历、就业、落户及购房情况",
+        "审核通过后公示",
+        "一次性发放至申请人社保卡金融账户"
+      ],
+      "location": "荣成市",
+      "url": "待核实"
+    },
+    "policySource": "《荣成市人才购房补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。荣成市人才购房补贴：博士20万元、硕士10万元、本科5万元，一次性发放。要求全日制学历、在荣成市就业并落户、购房。属区级购房补贴，与环翠区、经区购房补贴互斥。tier3专业通道政策。",
+    "location": "威海·荣成市",
+    "tier": 3,
+    "exclusiveGroup": "weihai-district"
+  },
+  {
+    "id": "weihai-shiji-chuangyebutie",
+    "city": "weihai",
+    "name": "威海市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 20000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "威海市人社局或各区市人社部门窗口申报",
+      "materials": [
+        "《威海市一次性创业补贴申请表》",
+        "申请人身份证",
+        "学历学位证书",
+        "营业执照（个体工商户或小微企业）",
+        "正常经营证明（经营流水、纳税证明等）",
+        "社会保险缴费证明（如有）",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人向注册地人社部门申报",
+        "人社部门审核创业主体及正常经营情况",
+        "审核通过后公示",
+        "一次性发放至申请人社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.weihai.gov.cn/"
+    },
+    "policySource": "《威海市一次性创业补贴政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。一次性创业补贴：个体工商户5000元、小微企业2万元，一次性发放。要求在威海初次创办经营主体并正常经营，不要求就业、落户及全日制。tier1普惠政策。",
+    "location": "威海·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "weihai-shiji-chuangyedaikuan",
+    "city": "weihai",
+    "name": "威海市创业担保贷款",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "威海市人社局及经办银行申报",
+      "materials": [
+        "《威海市创业担保贷款申请表》",
+        "申请人身份证",
+        "学历学位证书",
+        "营业执照",
+        "经营场所及正常经营证明",
+        "贷款用途说明及还款计划",
+        "反担保材料（如需）",
+        "其他相关材料"
+      ],
+      "process": [
+        "申请人向人社部门提出贷款资格审核申请",
+        "人社部门审核创业资格",
+        "经办银行审核贷款及反担保",
+        "签订贷款合同后放款",
+        "财政按规定给予贴息"
+      ],
+      "location": "市级",
+      "url": "https://rsj.weihai.gov.cn/"
+    },
+    "policySource": "《威海市创业担保贷款政策》",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。创业担保贷款最高20万元，由财政按规定给予贴息。要求在威海创业并正常经营，不要求就业、落户及全日制。tier1普惠政策。本项为贷款贴息，非直接补贴。",
+    "location": "威海·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

@@ -311,6 +311,7 @@ export default function Input() {
           'huainan', 'huaibei', 'tongling', 'anqing', 'huangshan', 'chuzhou', 'fuyang',
           'suzhouah', 'liuan', 'bozhou', 'chizhou', 'xuancheng',
           'jingzhou', 'jingmen', 'ezhou', 'huanggang',
+          'weihai', 'cangzhou', 'nanyang', 'anshan', 'jilin', 'eerduosi',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);
