@@ -573,6 +573,9 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'huaibei-housing': '淮北住房补贴（重点产业与非目录购房补贴就高不重复）',
   'huangshan-housing': '黄山住房补贴（购房补贴与租房补贴二选一）',
   'chuzhou-housing': '滁州住房补贴（购房补贴与租房补贴二选一）',
+  'liuan-housing': '六安住房补贴（购房补贴与租房补贴二选一）',
+  'chizhou-housing': '池州住房补贴（购房补贴与租房补贴二选一）',
+  'xuancheng-housing': '宣城购房补贴（安家补助费与主城区购房补贴就高不重复）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

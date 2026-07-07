@@ -1,0 +1,310 @@
+[
+  {
+    "id": "xuancheng-shiji-anjia",
+    "city": "xuancheng",
+    "name": "宣城市\"宣十条\"首次购房安家补助费",
+    "category": "buy",
+    "amount": { "min": 20000, "max": 300000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "专科": { "min": 20000, "max": 20000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 60000, "max": 60000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 300000, "max": 300000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "宣城市人才综合服务中心 / 皖事通APP",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明",
+        "首套房购房合同/不动产权证书",
+        "重点产业企业证明"
+      ],
+      "process": [
+        "申请人提交材料",
+        "市人社局审核",
+        "市住建局复核",
+        "公示",
+        "一次性拨付"
+      ],
+      "location": "市级",
+      "url": "http://rsj.xuancheng.gov.cn/xqrx/rczc/index.html"
+    },
+    "policySource": "宣办发〔2023〕4号",
+    "effectiveDate": "2023-04",
+    "notes": "有效。博士30万、硕士15万、本科6万、专科2万，一次性发放。需在宣城市重点产业企业名录内企业就业，首次在宣城购房。与主城区购房补贴就高不重复。",
+    "location": "宣城·市级",
+    "tier": 1,
+    "exclusiveGroup": "xuancheng-housing"
+  },
+  {
+    "id": "xuancheng-shiji-zufang",
+    "city": "xuancheng",
+    "name": "宣城市\"宣十条\"租房补贴",
+    "category": "rent",
+    "amount": { "min": 300, "max": 1500, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "专科": { "min": 300, "max": 300, "unit": "元", "period": "每月" },
+      "本科": { "min": 600, "max": 600, "unit": "元", "period": "每月" },
+      "硕士": { "min": 1000, "max": 1000, "unit": "元", "period": "每月" },
+      "博士": { "min": 1500, "max": 1500, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "宣城市人才综合服务中心 / 皖事通APP",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明",
+        "房屋租赁合同",
+        "无房证明",
+        "重点产业企业证明"
+      ],
+      "process": [
+        "申请人提交材料",
+        "市人社局审核",
+        "公示",
+        "按月拨付。或申请入住人才公寓"
+      ],
+      "location": "市级",
+      "url": "http://rsj.xuancheng.gov.cn/xqrx/rczc/index.html"
+    },
+    "policySource": "宣办发〔2023〕4号",
+    "effectiveDate": "2023-04",
+    "notes": "有效。博士1500元/月、硕士1000元/月、本科600元/月、专科300元/月，补贴3年。或免费入住人才公寓3年。需在宣城市重点产业企业名录内企业就业。可与薪酬补贴、购房补贴并行享受。",
+    "location": "宣城·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xuancheng-shiji-xinchou",
+    "city": "xuancheng",
+    "name": "宣城市\"宣十条\"薪酬补贴",
+    "category": "living",
+    "amount": { "min": 300, "max": 4000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "专科": { "min": 300, "max": 300, "unit": "元", "period": "每月" },
+      "本科": { "min": 600, "max": 600, "unit": "元", "period": "每月" },
+      "硕士": { "min": 2500, "max": 2500, "unit": "元", "period": "每月" },
+      "博士": { "min": 4000, "max": 4000, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "宣城市人才综合服务中心 / 皖事通APP",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明",
+        "重点产业企业证明"
+      ],
+      "process": [
+        "申请人提交材料",
+        "市人社局审核",
+        "公示",
+        "按月拨付"
+      ],
+      "location": "市级",
+      "url": "http://rsj.xuancheng.gov.cn/xqrx/rczc/index.html"
+    },
+    "policySource": "宣办发〔2023〕4号",
+    "effectiveDate": "2023-04",
+    "notes": "有效。博士4000元/月、硕士2500元/月、本科600元/月、专科300元/月，补贴3年。需在宣城市重点产业企业名录内企业就业。可与租房补贴、购房补贴并行享受。",
+    "location": "宣城·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xuancheng-shiji-goufang",
+    "city": "xuancheng",
+    "name": "宣城市\"宣十条\"主城区购房补贴",
+    "category": "buy",
+    "amount": { "min": 40000, "max": 200000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 40000, "max": 40000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "博士": { "min": 200000, "max": 200000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "皖事通APP / 宣城市住建局",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明",
+        "首套房购房合同/不动产权证书"
+      ],
+      "process": [
+        "申请人提交材料",
+        "市住建局审核",
+        "市人社局复核",
+        "公示",
+        "一次性拨付"
+      ],
+      "location": "市级",
+      "url": "http://zjj.xuancheng.gov.cn/"
+    },
+    "policySource": "宣办发〔2023〕4号",
+    "effectiveDate": "2023-04",
+    "notes": "有效。博士20万、硕士10万、本科4万，一次性发放。需未享受首次购房安家补助费政策，在宣城市主城区购房。第二十一批人才购房补贴公示于2025年仍在进行。与首次购房安家补助费就高不重复。",
+    "location": "宣城·市级",
+    "tier": 1,
+    "exclusiveGroup": "xuancheng-housing"
+  },
+  {
+    "id": "xuancheng-shiji-jiuye",
+    "city": "xuancheng",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网宣城分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.xuancheng.gov.cn/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，宣城市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "宣城·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xuancheng-shiji-chuangye",
+    "city": "xuancheng",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网宣城分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，宣城市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "宣城·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xuancheng-shiji-lingjiu",
+    "city": "xuancheng",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网宣城分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，宣城市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "宣城·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

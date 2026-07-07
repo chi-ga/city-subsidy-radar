@@ -308,6 +308,7 @@ describe('政策数据完整性', () => {
       'shantou-district', 'yichang-district',
       'bengbu-housing', 'zhangzhou-anjia', 'zhangzhou-changtai-housing',
       'huainan-housing', 'huaibei-housing', 'huangshan-housing', 'chuzhou-housing',
+      'liuan-housing', 'chizhou-housing', 'xuancheng-housing',
     ])
     const unknown = allSubsidies.filter(
       (s) => s.exclusiveGroup && !knownGroups.has(s.exclusiveGroup)

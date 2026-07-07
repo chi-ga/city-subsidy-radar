@@ -1,0 +1,215 @@
+[
+  {
+    "id": "liuan-shiji-goufang",
+    "city": "liuan",
+    "name": "六安市人才新政购房补贴（普通高校毕业生）",
+    "category": "buy",
+    "amount": { "min": 30000, "max": 50000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "专科": { "min": 30000, "max": 30000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 40000, "max": 40000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "六安市人社局人才\"一站式\"服务窗口（0564-3313779、3371220）",
+      "materials": [
+        "六安市人才购房补贴申请表",
+        "身份证（已婚的同时提供配偶身份证）、学历（学位）证书、结婚证原件及复印件",
+        "学信网学历证书电子注册备案表",
+        "经备案的有效期内劳动合同书（或灵活就业人员养老保险缴费记录）",
+        "购房预告登记证书（新房）或不动产权证书（二手房）"
+      ],
+      "process": [
+        "申请人提交材料",
+        "市人社局人才\"一站式\"服务窗口受理初审",
+        "相关责任单位复审",
+        "公示5个工作日",
+        "拨付至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://www.luan.gov.cn/content/article/9663839"
+    },
+    "policySource": "六发〔2021〕14号",
+    "effectiveDate": "2021",
+    "notes": "有效。全日制研究生5万、本科4万、专科3万，一次性发放。需全日制学历、签订3年及以上劳动合同或自主创业缴社保半年以上、在六安购买首套商品住房（含二手房）。与租房补贴互斥，二选一。",
+    "location": "六安·市级",
+    "tier": 1,
+    "exclusiveGroup": "liuan-housing"
+  },
+  {
+    "id": "liuan-shiji-zufang",
+    "city": "liuan",
+    "name": "六安市人才新政租房补贴（普通毕业生）",
+    "category": "rent",
+    "amount": { "min": 300, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "专科": { "min": 300, "max": 300, "unit": "元", "period": "每月" },
+      "本科": { "min": 400, "max": 400, "unit": "元", "period": "每月" },
+      "硕士": { "min": 500, "max": 500, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "六安市人社局人才\"一站式\"服务窗口（0564-3313779、3371220）",
+      "materials": [
+        "六安市人才租房补贴申请表",
+        "身份证、学历（学位）证书原件及复印件",
+        "学信网学历证书电子注册备案表",
+        "经备案的有效期内劳动合同书",
+        "房屋租赁合同",
+        "无房证明"
+      ],
+      "process": [
+        "申请人提交材料",
+        "市人社局人才\"一站式\"服务窗口受理初审",
+        "相关责任单位复审",
+        "公示5个工作日",
+        "按月拨付至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://www.luan.gov.cn/content/article/9663839"
+    },
+    "policySource": "六发〔2021〕14号",
+    "effectiveDate": "2021",
+    "notes": "有效。全日制研究生500元/月、本科400元/月、专科300元/月，最长补贴3年。需全日制学历、签订3年及以上劳动合同、在六安租房居住。与购房补贴互斥，二选一。",
+    "location": "六安·市级",
+    "tier": 1,
+    "exclusiveGroup": "liuan-housing"
+  },
+  {
+    "id": "liuan-shiji-jiuye",
+    "city": "liuan",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网六安分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.luan.gov.cn/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，六安市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "六安·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "liuan-shiji-chuangye",
+    "city": "liuan",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网六安分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，六安市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "六安·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "liuan-shiji-lingjiu",
+    "city": "liuan",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网六安分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，六安市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "六安·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

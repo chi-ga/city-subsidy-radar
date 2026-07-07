@@ -1,0 +1,263 @@
+[
+  {
+    "id": "chizhou-shiji-shenghuo",
+    "city": "chizhou",
+    "name": "池州市高校毕业生生活补贴",
+    "category": "living",
+    "amount": { "min": 300, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "专科": { "min": 300, "max": 300, "unit": "元", "period": "每月" },
+      "本科": { "min": 800, "max": 800, "unit": "元", "period": "每月" },
+      "硕士": { "min": 1500, "max": 1500, "unit": "元", "period": "每月" },
+      "博士": { "min": 3000, "max": 3000, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"万马奔池\"微信小程序；池州市人才综合服务中心（0566-3211918）",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保缴纳证明",
+        "民营企业营业执照复印件（加盖公章）或事业单位急需紧缺岗位证明"
+      ],
+      "process": [
+        "通过\"万马奔池\"微信小程序申请",
+        "市人才综合服务中心审核",
+        "公示",
+        "按月发放至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://www.chizhou.gov.cn/OpennessContent/showList/2655677/911128661.html"
+    },
+    "policySource": "池人社秘〔2022〕53号",
+    "effectiveDate": "2022-04-20",
+    "notes": "有效。博士3000元/月、硕士1500元/月、本科800元/月、大专300元/月，补贴3年。2022年4月20日后首次来池就业，与民企签合同缴社保6个月以上，或在事业单位急需紧缺岗位就业。与购租房补贴可并行享受。",
+    "location": "池州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "chizhou-shiji-goufang",
+    "city": "chizhou",
+    "name": "池州市高校毕业生和高技能人才购房补贴",
+    "category": "buy",
+    "amount": { "min": 20000, "max": 300000, "unit": "元", "period": "分期", "durationMonths": 60 },
+    "tieredAmount": {
+      "专科": { "min": 20000, "max": 20000, "unit": "元", "period": "分期" },
+      "本科": { "min": 60000, "max": 60000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 120000, "max": 120000, "unit": "元", "period": "分期" },
+      "博士": { "min": 300000, "max": 300000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"万马奔池\"微信小程序；池州市人才综合服务中心（0566-3211918）",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保缴纳证明",
+        "首套房购房合同/不动产权证书",
+        "人才认定证书（如有）"
+      ],
+      "process": [
+        "通过\"万马奔池\"微信小程序申请",
+        "市人才综合服务中心审核",
+        "公示",
+        "分5年等额支付至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://www.chizhou.gov.cn/OpennessContent/showList/2655677/911128661.html"
+    },
+    "policySource": "池人社秘〔2022〕53号",
+    "effectiveDate": "2022-04-20",
+    "notes": "有效。博士30万、硕士12万、本科6万、大专2万，分5年等额支付。符合池州市人才认定条件，在池州首次购房，连续缴纳社保6个月以上。与租房补贴互斥，二选一。",
+    "location": "池州·市级",
+    "tier": 1,
+    "exclusiveGroup": "chizhou-housing"
+  },
+  {
+    "id": "chizhou-shiji-zufang",
+    "city": "chizhou",
+    "name": "池州市高校毕业生和高技能人才租房补贴",
+    "category": "rent",
+    "amount": { "min": 300, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "专科": { "min": 300, "max": 300, "unit": "元", "period": "每月" },
+      "本科": { "min": 500, "max": 500, "unit": "元", "period": "每月" },
+      "硕士": { "min": 1000, "max": 1000, "unit": "元", "period": "每月" },
+      "博士": { "min": 1000, "max": 1000, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "\"万马奔池\"微信小程序；池州市人才综合服务中心（0566-3211918）",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保缴纳证明",
+        "房屋租赁合同",
+        "无房证明",
+        "人才认定证书（如有）"
+      ],
+      "process": [
+        "通过\"万马奔池\"微信小程序申请",
+        "市人才综合服务中心审核",
+        "公示",
+        "按月发放至社保卡金融账户"
+      ],
+      "location": "市级",
+      "url": "https://www.chizhou.gov.cn/OpennessContent/showList/2655677/911128661.html"
+    },
+    "policySource": "池人社秘〔2022〕53号",
+    "effectiveDate": "2022-04-20",
+    "notes": "有效。硕士及以上1000元/月、本科500元/月、大专300元/月，最长补贴3年。符合池州市人才认定条件，在池州租房居住，连续缴纳社保6个月以上。与购房补贴互斥，二选一。",
+    "location": "池州·市级",
+    "tier": 1,
+    "exclusiveGroup": "chizhou-housing"
+  },
+  {
+    "id": "chizhou-shiji-jiuye",
+    "city": "chizhou",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网池州分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.chizhou.gov.cn/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，池州市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "池州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "chizhou-shiji-chuangye",
+    "city": "chizhou",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网池州分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，池州市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "池州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "chizhou-shiji-lingjiu",
+    "city": "chizhou",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网池州分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，池州市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "池州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

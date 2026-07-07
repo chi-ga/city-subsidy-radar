@@ -94,6 +94,11 @@ const COVERED_CITIES = [
   { name: '黄山市', code: 'huangshan', adcode: '341000', count: 6 },
   { name: '滁州市', code: 'chuzhou', adcode: '341100', count: 6 },
   { name: '阜阳市', code: 'fuyang', adcode: '341200', count: 4 },
+  { name: '宿州市', code: 'suzhouah', adcode: '341300', count: 5 },
+  { name: '六安市', code: 'liuan', adcode: '341500', count: 5 },
+  { name: '亳州市', code: 'bozhou', adcode: '341600', count: 3 },
+  { name: '池州市', code: 'chizhou', adcode: '341700', count: 6 },
+  { name: '宣城市', code: 'xuancheng', adcode: '341800', count: 7 },
 ];
 
 export default function StaticChinaMap(_props: StaticChinaMapProps) {

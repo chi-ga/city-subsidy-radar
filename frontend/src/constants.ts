@@ -193,7 +193,12 @@ export type CityCode =
   | 'anqing'
   | 'huangshan'
   | 'chuzhou'
-  | 'fuyang';
+  | 'fuyang'
+  | 'suzhouah'
+  | 'liuan'
+  | 'bozhou'
+  | 'chizhou'
+  | 'xuancheng';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -285,6 +290,11 @@ export const CITY_NAMES: Record<CityCode, string> = {
   huangshan: '黄山',
   chuzhou: '滁州',
   fuyang: '阜阳',
+  suzhouah: '宿州',
+  liuan: '六安',
+  bozhou: '亳州',
+  chizhou: '池州',
+  xuancheng: '宣城',
 };
 
 // 补贴分类名称映射

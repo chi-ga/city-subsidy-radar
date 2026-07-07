@@ -86,6 +86,11 @@ import anqing from './subsidies/anqing.json';
 import huangshan from './subsidies/huangshan.json';
 import chuzhou from './subsidies/chuzhou.json';
 import fuyang from './subsidies/fuyang.json';
+import suzhouah from './subsidies/suzhouah.json';
+import liuan from './subsidies/liuan.json';
+import bozhou from './subsidies/bozhou.json';
+import chizhou from './subsidies/chizhou.json';
+import xuancheng from './subsidies/xuancheng.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -179,6 +184,11 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   huangshan: huangshan as Subsidy[],
   chuzhou: chuzhou as Subsidy[],
   fuyang: fuyang as Subsidy[],
+  suzhouah: suzhouah as Subsidy[],
+  liuan: liuan as Subsidy[],
+  bozhou: bozhou as Subsidy[],
+  chizhou: chizhou as Subsidy[],
+  xuancheng: xuancheng as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -428,6 +438,11 @@ export function getCityLevelLocation(city: string): string {
     huangshan: '黄山市',
     chuzhou: '滁州市',
     fuyang: '阜阳市',
+    suzhouah: '宿州市',
+    liuan: '六安市',
+    bozhou: '亳州市',
+    chizhou: '池州市',
+    xuancheng: '宣城市',
   };
   return map[city] || '';
 }
