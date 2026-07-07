@@ -89,6 +89,13 @@ const COVERED_CITIES = [
   { name: '蚌埠市', code: 'bengbu', adcode: '340300', count: 5 },
   { name: '马鞍山市', code: 'maanshan', adcode: '340500', count: 5 },
   { name: '漳州市', code: 'zhangzhou', adcode: '350600', count: 6 },
+  { name: '淮南市', code: 'huainan', adcode: '340400', count: 5 },
+  { name: '淮北市', code: 'huaibei', adcode: '340600', count: 7 },
+  { name: '铜陵市', code: 'tongling', adcode: '340700', count: 5 },
+  { name: '安庆市', code: 'anqing', adcode: '340800', count: 5 },
+  { name: '黄山市', code: 'huangshan', adcode: '341000', count: 6 },
+  { name: '滁州市', code: 'chuzhou', adcode: '341100', count: 6 },
+  { name: '阜阳市', code: 'fuyang', adcode: '341200', count: 4 },
 ];
 
 

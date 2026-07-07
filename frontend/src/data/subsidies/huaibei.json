@@ -1,0 +1,294 @@
+[
+  {
+    "id": "huaibei-shiji-goufang",
+    "city": "huaibei",
+    "name": "淮北市人才激励政策新十条购房补贴（重点产业企业）",
+    "category": "buy",
+    "amount": { "min": 50000, "max": 200000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "博士": { "min": 200000, "max": 200000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 60000, "max": 60000, "unit": "元", "period": "分期" },
+      "本科": { "min": 50000, "max": 50000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "淮北市住房和城乡建设局（市房产管理服务中心）",
+      "materials": [
+        "《淮北市引进人才购房补贴申请表》",
+        "申请人身份证",
+        "已网签备案的商品住房买卖合同和不动产权证书",
+        "学历证书及学信网学历证书电子注册备案表",
+        "劳动合同（3年及以上）",
+        "社会保险证明（连续缴纳满6个月）"
+      ],
+      "process": [
+        "个人填写申请表报市住建局",
+        "相关单位审核（人社局审社保/职称/学历，民政局审婚姻，房产中心查重+首套房认定，不动产登记中心审不动产）",
+        "汇总反馈并征求意见",
+        "公示5个工作日",
+        "公示后5个工作日内拨付申请人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://hbzjj.huaibei.gov.cn/zwgk/public/53/64924602.html"
+    },
+    "policySource": "淮人才字〔2025〕5号；淮住建〔2026〕7号",
+    "effectiveDate": "2025-09-30",
+    "notes": "有效。博士20万元、硕士6万元、本科5万元，3年内按年度分期等额发放。2025年9月30日后全职到淮工作，在重点产业企业（先进高分子结构材料、铝基高端金属材料及汽车零部件、绿色食品、高端装备制造等）就业，签订3年及以上劳动合同，连续缴纳社保满6个月，在淮购买首套商品住房。本科须毕业五年内全日制普通高校。与生活补贴可叠加，与非目录购房补贴互斥。",
+    "location": "淮北·市级",
+    "tier": 1,
+    "exclusiveGroup": "huaibei-housing"
+  },
+  {
+    "id": "huaibei-shiji-shenghuo",
+    "city": "huaibei",
+    "name": "淮北市企事业单位引进人才生活补贴",
+    "category": "living",
+    "amount": { "min": 600, "max": 1000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "硕士": { "min": 1000, "max": 1000, "unit": "元", "period": "每月" },
+      "本科": { "min": 800, "max": 800, "unit": "元", "period": "每月" },
+      "专科": { "min": 600, "max": 600, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "淮北市人社局",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "个人提交申报材料",
+        "市人社局审核",
+        "公示",
+        "按月发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.huaibei.gov.cn/ztzl/zyxszgjypxzcxc/jycyzcwd/57749701.html"
+    },
+    "policySource": "淮北市人才政策汇总（淮人才字〔2025〕5号系列）",
+    "effectiveDate": "2025-09",
+    "notes": "有效。企业引进、不在急需紧缺人才目录的硕士1000元/月、本科800元/月、大专及中专600元/月，连续3年按月发放。与购房补贴可叠加。",
+    "location": "淮北·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huaibei-shiji-goufang-feimulu",
+    "city": "huaibei",
+    "name": "淮北市企事业单位引进人才购房补贴（非急需紧缺目录）",
+    "category": "buy",
+    "amount": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "淮北市住建局 / 淮北市人社局",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "首套房购房合同"
+      ],
+      "process": [
+        "个人提交申报材料",
+        "市住建局/人社局审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.huaibei.gov.cn/ztzl/zyxszgjypxzcxc/jycyzcwd/57749701.html"
+    },
+    "policySource": "淮北市人才政策汇总（淮人才字〔2025〕5号系列）",
+    "effectiveDate": "2025-09",
+    "notes": "有效。企业引进、不在急需紧缺人才目录的人才，在淮购买首套商品住房给予5万元一次性购房补贴。与重点产业企业购房补贴互斥（按'时间从新、标准从高，不重复'原则执行）。",
+    "location": "淮北·市级",
+    "tier": 1,
+    "exclusiveGroup": "huaibei-housing"
+  },
+  {
+    "id": "huaibei-shiji-jiuye",
+    "city": "huaibei",
+    "name": "淮北市高校毕业生就业补贴",
+    "category": "employment",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网淮北分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "劳动合同（6个月以上）",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.huaibei.gov.cn/ztzl/zyxszgjypxzcxc/jycyzcwd/57749701.html"
+    },
+    "policySource": "淮北市人才政策汇总第08条",
+    "effectiveDate": "2025-09",
+    "notes": "有效。毕业2年内高校毕业生、中职、技工院校毕业生与淮北市民营企业签订6个月以上劳动合同并缴纳社保，一次性就业补贴5000元/人。高于省级小微企业3000元标准，按不重复原则执行。",
+    "location": "淮北·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huaibei-shiji-chuangye",
+    "city": "huaibei",
+    "name": "淮北市高校毕业生创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 10000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网淮北分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://rsj.huaibei.gov.cn/ztzl/zyxszgjypxzcxc/jycyzcwd/57749701.html"
+    },
+    "policySource": "淮北市人才政策汇总第11条",
+    "effectiveDate": "2025-09",
+    "notes": "有效。在淮创业的高校毕业生最高1万元创业补贴，高于省级5000元标准。可享受最高50万元创业担保贷款。",
+    "location": "淮北·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huaibei-shiji-jiuye-sheng",
+    "city": "huaibei",
+    "name": "高校毕业生一次性就业补贴（省级）",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网淮北分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.huaibei.gov.cn/ztzl/zyxszgjypxzcxc/jycyzcwd/57749701.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，淮北市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。与市级民营企业就业补贴5000元按不重复原则执行。",
+    "location": "淮北·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huaibei-shiji-lingjiu",
+    "city": "huaibei",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网淮北分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，淮北市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "淮北·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

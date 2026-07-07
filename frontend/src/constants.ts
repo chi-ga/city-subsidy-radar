@@ -186,7 +186,14 @@ export type CityCode =
   | 'yueyang'
   | 'bengbu'
   | 'maanshan'
-  | 'zhangzhou';
+  | 'zhangzhou'
+  | 'huainan'
+  | 'huaibei'
+  | 'tongling'
+  | 'anqing'
+  | 'huangshan'
+  | 'chuzhou'
+  | 'fuyang';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -271,6 +278,13 @@ export const CITY_NAMES: Record<CityCode, string> = {
   bengbu: '蚌埠',
   maanshan: '马鞍山',
   zhangzhou: '漳州',
+  huainan: '淮南',
+  huaibei: '淮北',
+  tongling: '铜陵',
+  anqing: '安庆',
+  huangshan: '黄山',
+  chuzhou: '滁州',
+  fuyang: '阜阳',
 };
 
 // 补贴分类名称映射

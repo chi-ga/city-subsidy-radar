@@ -1,0 +1,260 @@
+[
+  {
+    "id": "chuzhou-shiji-goufang",
+    "city": "chuzhou",
+    "name": "滁州市'六免六补六优化'购房补贴",
+    "category": "buy",
+    "amount": { "min": 80000, "max": 200000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 200000, "max": 200000, "unit": "元", "period": "分期" },
+      "专科": { "min": 160000, "max": 160000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "滁州数字人才服务平台（www.czrc.gov.cn）/ 皖事通APP'滁州数字人才'端口",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明",
+        "新建商品住房网签合同",
+        "首套房证明"
+      ],
+      "process": [
+        "通过滁州数字人才服务平台或皖事通APP在线申报",
+        "上传申请材料",
+        "市委人才办/市人社局审核",
+        "公示",
+        "资金拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.sohu.com/a/678219114_121106991/"
+    },
+    "policySource": "滁人社发〔2023〕65号",
+    "effectiveDate": "2023-05-12",
+    "notes": "有效。普通高校本科毕业生/初级职称/高技能人才购房款10%最高20万元；大专（含高职院校）毕业生购房款8%最高20万元。按3:3:2:2比例分4年到位。年龄35周岁以下，在列入市重点产业领域工作，在滁州市购买首套新建商品住房，未享受过其他购房补贴。与租房补贴互斥。",
+    "location": "滁州·市级",
+    "tier": 1,
+    "exclusiveGroup": "chuzhou-housing"
+  },
+  {
+    "id": "chuzhou-shiji-zufang",
+    "city": "chuzhou",
+    "name": "滁州市'六免六补六优化'租房补贴",
+    "category": "rent",
+    "amount": { "min": 5000, "max": 15000, "unit": "元", "period": "每年", "durationMonths": 36 },
+    "tieredAmount": {
+      "硕士": { "min": 15000, "max": 15000, "unit": "元", "period": "每年" },
+      "本科": { "min": 10000, "max": 10000, "unit": "元", "period": "每年" },
+      "专科": { "min": 5000, "max": 5000, "unit": "元", "period": "每年" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "滁州数字人才服务平台（www.czrc.gov.cn）/ 皖事通APP",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明（连续1年以上）",
+        "房屋租赁合同",
+        "无房证明"
+      ],
+      "process": [
+        "通过滁州数字人才服务平台或皖事通APP在线申报",
+        "上传材料",
+        "审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.sohu.com/a/678219114_121106991/"
+    },
+    "policySource": "滁人社发〔2023〕65号",
+    "effectiveDate": "2023-05-12",
+    "notes": "有效。硕士1.5万元/年、本科1万元/年、大专0.5万元/年，按年发放期限3年。年龄35周岁以下，无自有住房，在列入市重点产业领域工作，连续缴纳社保1年以上。与购房补贴互斥。",
+    "location": "滁州·市级",
+    "tier": 1,
+    "exclusiveGroup": "chuzhou-housing"
+  },
+  {
+    "id": "chuzhou-shiji-shenghuo",
+    "city": "chuzhou",
+    "name": "滁州市'六免六补六优化'生活补贴",
+    "category": "living",
+    "amount": { "min": 5000, "max": 20000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "硕士": { "min": 20000, "max": 20000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 10000, "max": 10000, "unit": "元", "period": "一次性" },
+      "专科": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "滁州数字人才服务平台（www.czrc.gov.cn）/ 皖事通APP",
+      "materials": [
+        "身份证",
+        "学历证书及学信网备案表",
+        "劳动合同",
+        "社保证明（连续1年以上）",
+        "银行卡"
+      ],
+      "process": [
+        "通过滁州数字人才服务平台或皖事通APP在线申报",
+        "审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.sohu.com/a/678219114_121106991/"
+    },
+    "policySource": "滁人社发〔2023〕65号",
+    "effectiveDate": "2023-05-12",
+    "notes": "有效。硕士2万元、本科1万元、大专0.5万元，一次性发放。年龄35周岁以下，在列入市重点产业领域工作，连续缴纳社保1年以上。",
+    "location": "滁州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "chuzhou-shiji-jiuye",
+    "city": "chuzhou",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网滁州分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://m.sohu.com/a/678219114_121106991/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，滁州市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "滁州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "chuzhou-shiji-chuangye",
+    "city": "chuzhou",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网滁州分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，滁州市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "滁州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "chuzhou-shiji-lingjiu",
+    "city": "chuzhou",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网滁州分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，滁州市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "滁州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "id": "fuyang-shiji-shenghuo",
+    "city": "fuyang",
+    "name": "阜阳市引进急需紧缺人才生活补助（企业单位）",
+    "category": "living",
+    "amount": { "min": 72000, "max": 360000, "unit": "元", "period": "分期", "durationMonths": 36 },
+    "tieredAmount": {
+      "博士": { "min": 360000, "max": 360000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 144000, "max": 144000, "unit": "元", "period": "分期" },
+      "本科": { "min": 72000, "max": 72000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "阜阳市人才工作网（www.fyrc.gov.cn）",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "职称/职业资格证书",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "单位管理员在阜阳市人才工作网创建账号",
+        "个人登录填写履历并提交单位审核",
+        "选择'引进急需紧缺人才生活补助申报'",
+        "填写信息提交审核",
+        "审核公示、发放"
+      ],
+      "location": "市级",
+      "url": "http://m.fy.bendibao.com/live/4506.shtm"
+    },
+    "policySource": "颍淮英才计划；《阜阳市促进企业人才建设若干政策（2022版）》",
+    "effectiveDate": "2022",
+    "notes": "有效。企业单位引进：博士/高级技师按薪酬30%最高36万元（每月不低于4000元）；硕士/'双一流'本科/技师/中级职称按薪酬30%最高14.4万元；普通本科/高级工按薪酬30%最高7.2万元。须从市外全职引进，符合阜阳市市级急需紧缺人才需求目录，在企业单位全职在岗，累计补助不超过3年。需符合需求目录，非所有毕业生均可申请。",
+    "location": "阜阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "fuyang-shiji-jiuye",
+    "city": "fuyang",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网阜阳分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "区人社局审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://www.yingzhou.gov.cn/OpennessContent/show/2704092.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，阜阳市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。2026年颍州区仍在公示发放。",
+    "location": "阜阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "fuyang-shiji-chuangye",
+    "city": "fuyang",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网阜阳分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，阜阳市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "阜阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "fuyang-shiji-lingjiu",
+    "city": "fuyang",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网阜阳分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，阜阳市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "阜阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "id": "huangshan-shiji-jiuye",
+    "city": "huangshan",
+    "name": "黄山市市外大中专毕业生一次性就业补助",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 10000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "本科": { "min": 10000, "max": 10000, "unit": "元", "period": "一次性" },
+      "专科": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "各级公共就业和人才服务机构（线下申报）",
+      "materials": [
+        "《市外大中专毕业生一次性就业补助申请表》",
+        "毕业证书"
+      ],
+      "process": [
+        "申请人向所在企业提交申请表和毕业证书",
+        "企业按税收缴纳属地原则向各级公共就业和人才服务机构提交申报材料",
+        "初审",
+        "人社局审核",
+        "财政部门核拨资金"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7101134273855652364/"
+    },
+    "policySource": "《企业招工市外大中专毕业生招引计划》",
+    "effectiveDate": "2022",
+    "notes": "有效。本科10000元、大专5000元、中专3000元，一次性发放。市外高校、职业院校毕业生，毕业2年内，在黄山市首次就业，与规模以上民营重点企业签订三年以上劳动合同、缴纳社保满8个月。",
+    "location": "黄山·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huangshan-shiji-goufang",
+    "city": "huangshan",
+    "name": "黄山市'迎客松英才计划'购房补贴",
+    "category": "buy",
+    "amount": { "min": 30000, "max": 200000, "unit": "元", "period": "分期", "durationMonths": 0 },
+    "tieredAmount": {
+      "博士": { "min": 200000, "max": 200000, "unit": "元", "period": "分期" },
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "分期" },
+      "本科": { "min": 60000, "max": 60000, "unit": "元", "period": "分期" },
+      "专科": { "min": 30000, "max": 30000, "unit": "元", "period": "分期" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "'慧黄山'微信小程序 / 安徽政务服务网黄山分厅（http://hs.ahzwfw.gov.cn）/ 优才卡'事项申报'端口",
+      "materials": [
+        "《黄山市人才资金补贴申请表》",
+        "购房合同",
+        "契税完税证明",
+        "结婚证和户口簿（以配偶名义购房需提供）",
+        "诚信承诺书",
+        "学历证书",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "通过'慧黄山'微信小程序或安徽政务服务网申请人才认定",
+        "填写《黄山市高层次人才认定审批表》，经用人单位推荐→主管部门审查→组织部门核准→人才工作领导小组审定",
+        "认定通过后，每半年申报一次购房补贴，通过优才卡'事项申报'端口线上申报",
+        "审核",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://www.ahqimen.gov.cn/zwgk/public/6616615/11077255.html"
+    },
+    "policySource": "黄字〔2021〕22号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。全日制博士20万元、硕士10万元、本科6万元、大专3万元，首年度补贴30%，剩余年度按30%、40%补贴到位。新引进到黄山市新兴产业企业（数字创意、绿色食品、生命健康、新材料与智能制造等）工作，经'迎客松英才计划'认定，本人及配偶在黄山市首次购买自住商品房，参加社保之日起3年内购房。与租房补贴互斥。之前未享受过黄山市任一形式的财政补贴。",
+    "location": "黄山·市级",
+    "tier": 1,
+    "exclusiveGroup": "huangshan-housing"
+  },
+  {
+    "id": "huangshan-shiji-zufang",
+    "city": "huangshan",
+    "name": "黄山市'迎客松英才计划'租房补贴",
+    "category": "rent",
+    "amount": { "min": 300, "max": 2000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "博士": { "min": 2000, "max": 2000, "unit": "元", "period": "每月" },
+      "硕士": { "min": 1000, "max": 1000, "unit": "元", "period": "每月" },
+      "本科": { "min": 600, "max": 600, "unit": "元", "period": "每月" },
+      "专科": { "min": 300, "max": 300, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "'慧黄山'微信小程序 / 安徽政务服务网黄山分厅 / 优才卡'事项申报'端口",
+      "materials": [
+        "《黄山市人才资金补贴申请表》",
+        "租房合同",
+        "诚信承诺书",
+        "学历证书",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "通过'慧黄山'微信小程序申请人才认定",
+        "认定通过后，每半年申报一次租房补贴，通过优才卡'事项申报'端口线上申报",
+        "审核",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7217014450602279456/"
+    },
+    "policySource": "黄字〔2021〕22号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。全日制博士2000元/月、硕士1000元/月、本科600元/月、大专300元/月，最长不超过3年。新引进到黄山市新兴产业企业工作，经'迎客松英才计划'认定，本人及配偶在黄山市无自住商品房且租房。与购房补贴互斥，如选择先租房后购房的，支付购房补贴时扣除已领取的租房补贴。",
+    "location": "黄山·市级",
+    "tier": 1,
+    "exclusiveGroup": "huangshan-housing"
+  },
+  {
+    "id": "huangshan-shiji-jiuye-sheng",
+    "city": "huangshan",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网黄山分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7101134273855652364/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，黄山市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "黄山·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huangshan-shiji-chuangye",
+    "city": "huangshan",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网黄山分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7217014450602279456/"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，黄山市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "黄山·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huangshan-shiji-lingjiu",
+    "city": "huangshan",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网黄山分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.ahshx.gov.cn/zwgk/grassroots/6616382/11601994.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，黄山市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "黄山·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

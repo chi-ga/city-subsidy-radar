@@ -1,0 +1,216 @@
+[
+  {
+    "id": "anqing-shiji-shenghuo",
+    "city": "anqing",
+    "name": "安庆市菁英学子生活补贴",
+    "category": "living",
+    "amount": { "min": 500, "max": 3000, "unit": "元", "period": "每月", "durationMonths": 36 },
+    "tieredAmount": {
+      "博士": { "min": 3000, "max": 3000, "unit": "元", "period": "每月" },
+      "硕士": { "min": 1500, "max": 1500, "unit": "元", "period": "每月" },
+      "本科": { "min": 1000, "max": 1000, "unit": "元", "period": "每月" },
+      "专科": { "min": 500, "max": 500, "unit": "元", "period": "每月" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安庆人才管家服务平台（www.aqrcgj.com）/ 微信小程序'安庆人才管家' / 皖事通APP",
+      "materials": [
+        "《菁英学子生活补贴申请表》",
+        "人才身份证",
+        "学历及学位证书",
+        "人才社保参保证明",
+        "备案的劳动合同"
+      ],
+      "process": [
+        "每月1-20日通过'安庆人才管家'平台线上申报并上传材料",
+        "人才部门初审",
+        "属地人社部门审核",
+        "公示",
+        "属地财政部门将资金拨付至属地人社部门，由人社部门发放至申报人"
+      ],
+      "location": "市级",
+      "url": "http://m.aq.bendibao.com/news/2522.shtm"
+    },
+    "policySource": "人才强市二十条（'宜礼待才'人才周发布）",
+    "effectiveDate": "2022-07-01",
+    "notes": "有效。博士3000元/月、硕士1500元/月、本科1000元/月、大中专500元/月，连续3年按月发放。2022年7月1日后全职引进，与在宜注册企业签订不少于3年劳动合同，在宜首次缴纳社保3个月以上。年龄限制：硕士35周岁（含）以下、本科及以下30周岁（含）以下、博士不限。企业须为民营实体经济（不含房地产、金融、保险、证券）。与购房补贴可叠加。",
+    "location": "安庆·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anqing-shiji-goufang",
+    "city": "anqing",
+    "name": "安庆市菁英学子购房补贴",
+    "category": "buy",
+    "amount": { "min": 50000, "max": 150000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {
+      "博士": { "min": 150000, "max": 150000, "unit": "元", "period": "一次性" },
+      "硕士": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" },
+      "本科": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" },
+      "专科": { "min": 50000, "max": 50000, "unit": "元", "period": "一次性" }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安庆人才管家服务平台（www.aqrcgj.com）/ 微信小程序'安庆人才管家' / 皖事通APP",
+      "materials": [
+        "身份证",
+        "学历及学位证书",
+        "社保参保证明",
+        "备案的劳动合同",
+        "商品房买卖合同（网签备案）",
+        "购房相关凭证"
+      ],
+      "process": [
+        "通过'安庆人才管家'平台线上申报并上传材料",
+        "市住建局房地产业管理办公室/各县市区住建局审核",
+        "公示",
+        "属地财政承担并拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.anqing.gov.cn/zmhd/wdzsk/2007162606.html"
+    },
+    "policySource": "人才强市二十条；安庆市支持房地产市场平稳健康发展23条措施",
+    "effectiveDate": "2022-07-01",
+    "notes": "有效。博士购房款10%最高15万元、硕士购房款7%最高10万元、本科购房款5%最高8万元、大中专购房款3%最高5万元，一次性发放。2022年7月1日后全职引进，首次缴纳社保之日起3年内在宜购买首套新建商品住房，网签合同备案之日起3年内不得上市交易。与生活补贴可叠加。夫妻双方均符合条件可同时享受。",
+    "location": "安庆·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anqing-shiji-jiuye",
+    "city": "anqing",
+    "name": "高校毕业生一次性就业补贴",
+    "category": "employment",
+    "amount": { "min": 3000, "max": 3000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽省阳光就业网 / 安徽政务服务网安庆分厅",
+      "materials": [
+        "身份证",
+        "毕业证书（毕业年度证明）",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "高校毕业生自主申报",
+        "市人才综合服务中心审核",
+        "公示",
+        "发放至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://www.aqdgq.gov.cn/grassroots/2000004591/2020166871.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，安庆市执行。毕业年度高校毕业生到小微企业就业，签订6个月以上劳动合同并依法缴纳社会保险费，3000元/人一次性发放。",
+    "location": "安庆·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anqing-shiji-chuangye",
+    "city": "anqing",
+    "name": "高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": { "min": 5000, "max": 5000, "unit": "元", "period": "一次性", "durationMonths": 0 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网安庆分厅 / 安徽省阳光就业网",
+      "materials": [
+        "《高校毕业生初始创业补助资金申报表》",
+        "毕业证书",
+        "营业执照",
+        "正常经营证明材料"
+      ],
+      "process": [
+        "通过安徽政务服务网或当地人社部门申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://www.aqdgq.gov.cn/grassroots/2000004591/2020166871.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，安庆市执行5000元标准。毕业2年内高校毕业生首次创办小微企业，正常经营6个月以上。",
+    "location": "安庆·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "anqing-shiji-lingjiu",
+    "city": "anqing",
+    "name": "高校毕业生灵活就业社保补贴",
+    "category": "employment",
+    "amount": { "min": 450, "max": 450, "unit": "元", "period": "每月", "durationMonths": 24 },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "",
+      "channel": "安徽政务服务网安庆分厅 / 安徽省阳光就业网",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "灵活就业证明",
+        "社保缴费证明",
+        "低保证明（如适用）"
+      ],
+      "process": [
+        "向当地公共就业服务机构申请",
+        "人社部门审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.aqdgq.gov.cn/grassroots/2000004591/2020166871.html"
+    },
+    "policySource": "安徽省就业补助资金管理办法",
+    "effectiveDate": "",
+    "notes": "有效。安徽省省级框架政策，安庆市执行。离校2年内未就业高校毕业生灵活就业，职工养老保险补贴350元/月（享受最低生活保障的450元/月）+职工医疗保险补贴100元/月，最长不超过24个月。",
+    "location": "安庆·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]
