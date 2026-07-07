@@ -198,7 +198,11 @@ export type CityCode =
   | 'liuan'
   | 'bozhou'
   | 'chizhou'
-  | 'xuancheng';
+  | 'xuancheng'
+  | 'jingzhou'
+  | 'jingmen'
+  | 'ezhou'
+  | 'huanggang';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -295,6 +299,10 @@ export const CITY_NAMES: Record<CityCode, string> = {
   bozhou: '亳州',
   chizhou: '池州',
   xuancheng: '宣城',
+  jingzhou: '荆州',
+  jingmen: '荆门',
+  ezhou: '鄂州',
+  huanggang: '黄冈',
 };
 
 // 补贴分类名称映射

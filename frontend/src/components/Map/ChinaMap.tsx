@@ -101,6 +101,10 @@ const COVERED_CITIES = [
   { name: '亳州市', code: 'bozhou', adcode: '341600', count: 3 },
   { name: '池州市', code: 'chizhou', adcode: '341700', count: 6 },
   { name: '宣城市', code: 'xuancheng', adcode: '341800', count: 7 },
+  { name: '荆州市', code: 'jingzhou', adcode: '421000', count: 7 },
+  { name: '荆门市', code: 'jingmen', adcode: '420800', count: 5 },
+  { name: '鄂州市', code: 'ezhou', adcode: '420700', count: 5 },
+  { name: '黄冈市', code: 'huanggang', adcode: '421100', count: 4 },
 ];
 
 

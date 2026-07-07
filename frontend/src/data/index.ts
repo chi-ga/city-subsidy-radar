@@ -91,6 +91,10 @@ import liuan from './subsidies/liuan.json';
 import bozhou from './subsidies/bozhou.json';
 import chizhou from './subsidies/chizhou.json';
 import xuancheng from './subsidies/xuancheng.json';
+import jingzhou from './subsidies/jingzhou.json';
+import jingmen from './subsidies/jingmen.json';
+import ezhou from './subsidies/ezhou.json';
+import huanggang from './subsidies/huanggang.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -189,6 +193,10 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   bozhou: bozhou as Subsidy[],
   chizhou: chizhou as Subsidy[],
   xuancheng: xuancheng as Subsidy[],
+  jingzhou: jingzhou as Subsidy[],
+  jingmen: jingmen as Subsidy[],
+  ezhou: ezhou as Subsidy[],
+  huanggang: huanggang as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -443,6 +451,10 @@ export function getCityLevelLocation(city: string): string {
     bozhou: '亳州市',
     chizhou: '池州市',
     xuancheng: '宣城市',
+    jingzhou: '荆州市',
+    jingmen: '荆门市',
+    ezhou: '鄂州市',
+    huanggang: '黄冈市',
   };
   return map[city] || '';
 }

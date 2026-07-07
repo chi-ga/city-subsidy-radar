@@ -1,0 +1,206 @@
+[
+  {
+    "id": "huanggang-shiji-yicixingchuangyebutie",
+    "city": "huanggang",
+    "name": "黄冈市高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "毕业5年内申请",
+      "channel": "各区县政务服务中心人社窗口；\"黄冈市创业担保贷款\"微信小程序",
+      "materials": [
+        "《大学生一次性创业补贴申请表》",
+        "普通高等学校毕业证书原件及复印件",
+        "申请人居民身份证原件及复印件",
+        "工商营业执照副本原件及复印件",
+        "本人及带动就业人员《就业创业证》原件及复印件",
+        "带动就业证明（劳动合同、工资发放流水）",
+        "本人银行卡复印件"
+      ],
+      "process": [
+        "申请人向经营地所在乡镇人社中心窗口办理",
+        "受理",
+        "经办机构审核",
+        "人社部门复核并公示",
+        "财政部门拨付到个人"
+      ],
+      "location": "市级",
+      "url": "http://www.huangzhou.gov.cn/zwgk/grassroots/6635160/1085356.html"
+    },
+    "policySource": "黄发〔2022〕26号（《关于实施\"才聚荆楚·梦圆黄冈\"工程促进高校毕业生就业创业若干措施》）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。毕业5年内高校毕业生在黄冈市初次创办小微企业或个体工商户等，经营6个月以上且带动就业2人及以上，给予5000元一次性创业补贴。湖北省统一政策在黄冈落地，\"人才政策25条\"扩大了范围。",
+    "location": "黄冈·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huanggang-shiji-jiuyebutie",
+    "city": "huanggang",
+    "name": "黄冈市一次性就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "应届或离校2年内未就业期间申请",
+      "channel": "各区县政务服务中心人社窗口",
+      "materials": [
+        "《一次性吸纳就业补贴申请表》",
+        "劳动合同",
+        "毕业证书",
+        "本人银行账号",
+        "社会保险缴费证明"
+      ],
+      "process": [
+        "申请人到公共就业服务机构现场办理",
+        "核验材料",
+        "录入系统",
+        "审核",
+        "人社部门复核并公示",
+        "财政部门安排资金",
+        "发放到个人"
+      ],
+      "location": "市级",
+      "url": "http://www.tfzf.gov.cn/zwgk/grassroots/6635272/1591398.html"
+    },
+    "policySource": "黄发〔2022〕26号",
+    "effectiveDate": "待核实",
+    "notes": "有效。应届或离校2年内未就业高校毕业生到中小微企业就业，签订1年以上劳动合同并缴纳社保，给予1000元一次性就业补贴。湖北省统一政策在黄冈落地。",
+    "location": "黄冈·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huanggang-shiji-rencaijintie",
+    "city": "huanggang",
+    "name": "黄冈市直事业单位引进人才生活津贴",
+    "category": "talent",
+    "amount": {
+      "min": 50000,
+      "max": 250000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      },
+      "博士": {
+        "min": 250000,
+        "max": 250000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "随录用程序办理，工作后按年发放",
+      "channel": "黄冈市人社局官网 rsj.hg.gov.cn",
+      "materials": [
+        "待核实（随录用程序办理）"
+      ],
+      "process": [
+        "随录用程序办理",
+        "工作后按年发放"
+      ],
+      "location": "市级",
+      "url": "https://rsj.hg.gov.cn/ztzl/sydwzpzl/gkzp/1259084.html"
+    },
+    "policySource": "黄冈市直事业单位引进人才政策待遇（每年公告）",
+    "effectiveDate": "待核实",
+    "notes": "有效（需通过事业单位公开招聘引进）。博士5万元/年（5年累计25万元）、硕士1万元/年（5年累计5万元），按年发放连续5年。需经市直事业单位公开招聘录用并纳入事业编制。",
+    "location": "黄冈·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "huanggang-shiji-chuangyexiangmufuchi",
+    "city": "huanggang",
+    "name": "大学生创业扶持项目",
+    "category": "startup",
+    "amount": {
+      "min": 50000,
+      "max": 500000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "在校生或毕业5年内申请",
+      "channel": "湖北政务服务网 http://zwfw.hubei.gov.cn ；申报系统 http://hbdcxm.hb12333.com",
+      "materials": [
+        "法定代表人登记照",
+        "法定代表人学历电子认证表",
+        "项目商业计划书"
+      ],
+      "process": [
+        "登录湖北政务服务网搜索\"湖北省大学生创业扶持项目\"",
+        "在线申请",
+        "法人注册",
+        "项目申报",
+        "项目审查",
+        "省级核查",
+        "省级评审"
+      ],
+      "location": "市级",
+      "url": "http://www.luotian.gov.cn/zwgk/grassroots/6635734/1117754.html"
+    },
+    "policySource": "湖北省大学生创业扶持项目相关政策文件（待核实具体文号）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。湖北省大学生创业扶持项目在黄冈落地。创业组5万-50万元、创意组5000元-5万元一次性资金扶持。需经省级专家评审，面向在校生及毕业5年内高校毕业生。湖北省统一政策在黄冈落地。",
+    "location": "黄冈·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

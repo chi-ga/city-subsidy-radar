@@ -1,0 +1,317 @@
+[
+  {
+    "id": "jingmen-shiji-goufangbutie",
+    "city": "jingmen",
+    "name": "荆门市中心城区高校毕业生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "原定网签截止2024年12月31日，2026年公告确认仍可享受，具体截止时限待核实",
+      "channel": "线下扫码填写信息；咨询电话0724-2338529（市住房和城市更新局）",
+      "materials": [
+        "《荆门市高校毕业生购房补贴申请表》",
+        "本人身份证原件及复印件",
+        "学历（学位）证书复印件",
+        "婚姻证明复印件和户口簿等家庭关系材料",
+        "契税完税凭证原件及复印件"
+      ],
+      "process": [
+        "网签购房合同并缴纳契税后扫码填写信息",
+        "或携带材料向所购商品住房所在区人社部门申领",
+        "市住建局推送信息，各区财政部门发放补贴"
+      ],
+      "location": "市级",
+      "url": "http://www.jingmen.gov.cn/art/2023/10/18/art_18716_1099032.html"
+    },
+    "policySource": "荆政办发〔2023〕29号（《市人民政府办公室关于进一步促进中心城区房地产市场健康平稳发展的通知》）",
+    "effectiveDate": "2023-09-28",
+    "notes": "有效。博士10万元、硕士6万元、本科4万元、专科2万元一次性购房补贴。须在中心城区购买首套唯一新建商品住房。原定网签截止2024年12月31日，2026年公告确认仍可享受，具体截止时限待核实。",
+    "location": "荆门·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingmen-shiji-yicixingchuangyebutie",
+    "city": "jingmen",
+    "name": "荆门市高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "毕业5年内申请，终身只能享受一次",
+      "channel": "荆门市象山大道150号市人社局三楼309室；各县市区公共就业服务大厅窗口",
+      "materials": [
+        "《湖北省一次性创业补贴申请表》",
+        "申请人身份证",
+        "营业执照副本",
+        "毕业证书",
+        "带动就业人员劳动合同",
+        "连续3个月工资流水"
+      ],
+      "process": [
+        "向同级公共就业人才服务机构申报",
+        "审核",
+        "报人社部门审批",
+        "同级财政部门拨付"
+      ],
+      "location": "市级",
+      "url": "http://www.jingmen.gov.cn/art/2025/8/4/art_26534_1169063.html"
+    },
+    "policySource": "湖北省就业创业补贴相关政策文件（待核实具体文号）",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业5年内高校毕业生在荆门市初次创办小微企业或个体工商户等，经营6个月以上且带动就业2人及以上，给予5000元一次性创业补贴。终身只能享受一次。湖北省统一政策在荆门落地。",
+    "location": "荆门·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingmen-shiji-zhaoshuoyinbo-rencaijintie",
+    "city": "jingmen",
+    "name": "荆门市“招硕引博”人才津贴",
+    "category": "talent",
+    "amount": {
+      "min": 60000,
+      "max": 150000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "3月开始报名，6月底前完成聘用；津贴工作满一年后开始发放",
+      "channel": "荆门人事考试网 https://www.jmrsks.cn",
+      "materials": [
+        "准考证",
+        "身份证",
+        "学历学位证书原件及复印件各1份"
+      ],
+      "process": [
+        "网上报名（荆门人事考试网 https://www.jmrsks.cn）",
+        "资格审核",
+        "考试",
+        "考察体检",
+        "公示聘用",
+        "工作满一年后发放"
+      ],
+      "location": "市级",
+      "url": "https://www.jingmen.gov.cn/art/2025/3/7/art_18938_1138191.html"
+    },
+    "policySource": "荆办发〔2023〕1号（《荆门市人才引进培养使用一揽子支持措施（试行）》）",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效（需通过“招硕引博”计划引进）。博士累计15万元、硕士累计6万元，分三年发放。需通过“招硕引博”考试并被事业单位聘用，最低服务年限3年。年龄限制：硕士35周岁以下、博士40周岁以下。",
+    "location": "荆门·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingmen-shayang-zhaoshuoyinbo-rencaijintie",
+    "city": "jingmen",
+    "name": "沙洋县“招硕引博”人才津贴",
+    "category": "talent",
+    "amount": {
+      "min": 100000,
+      "max": 200000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "同市级招硕引博流程（3月开始报名，6月底前完成聘用；津贴工作满一年后开始发放）",
+      "channel": "荆门人事考试网 https://www.jmrsks.cn",
+      "materials": [
+        "准考证",
+        "身份证",
+        "学历学位证书原件及复印件"
+      ],
+      "process": [
+        "同市级招硕引博流程（网上报名→资格审核→考试→考察体检→公示聘用→工作满一年后发放）"
+      ],
+      "location": "沙洋县",
+      "url": "https://www.shayang.gov.cn/art/2025/3/7/art_5449_1138274.html"
+    },
+    "policySource": "依据荆办发〔2023〕1号（沙洋县加码执行）",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效（沙洋县区级政策，需通过“招硕引博”计划引进）。博士累计20万元、硕士累计10万元（高于市级标准），分三年发放。最低服务年限5年。区级政策，与荆门市其他区级政策互斥。",
+    "location": "荆门·沙洋县",
+    "tier": 3,
+    "exclusiveGroup": "jingmen-district"
+  },
+  {
+    "id": "jingmen-zhongxiang-goufangbutie",
+    "city": "jingmen",
+    "name": "钟祥市学历购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 40000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "补贴截止2026年7月31日",
+      "channel": "钟祥市住建局",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同或就业证明",
+        "购房合同",
+        "其他相关材料（待核实）"
+      ],
+      "process": [
+        "待核实（参考钟祥市住建局流程）"
+      ],
+      "location": "钟祥市",
+      "url": "https://m.sohu.com/a/1043923853_121123746/"
+    },
+    "policySource": "钟祥市购房补贴政策（待核实具体文号）",
+    "effectiveDate": "待核实",
+    "notes": "有效（钟祥市区级政策）。在钟祥市就业的各学历毕业生购买城区新建商品住房可按面积享受购房补贴：博士25㎡、硕士20㎡、本科15㎡、专科10㎡，按购房单价折算金额。夫妻双方可叠加，最高不超过25㎡。补贴截止2026年7月31日。区级政策，与荆门市其他区级政策互斥。",
+    "location": "荆门·钟祥市",
+    "tier": 2,
+    "exclusiveGroup": "jingmen-district"
+  }
+]

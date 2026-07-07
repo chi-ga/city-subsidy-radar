@@ -1,0 +1,317 @@
+[
+  {
+    "id": "ezhou-shiji-zufangshenghuobutie",
+    "city": "ezhou",
+    "name": "鄂州市\"人才强企工程\"租房和生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 25200,
+      "max": 144000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 25200,
+        "max": 25200,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 32400,
+        "max": 32400,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 54000,
+        "max": 54000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 144000,
+        "max": 144000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2022年5月11日后新入职到鄂州市企业的人才；按季度批次公示发放",
+      "channel": "\"鄂州人才码\"小程序；鄂州人才数智服务平台",
+      "materials": [
+        "教育部学历认证",
+        "入职前3个月和入职后社保记录",
+        "工资发放银行流水",
+        "企业工作证明",
+        "劳动合同（签字盖章按手印）",
+        "与市委人才办签订在鄂州工作不少于3年的承诺"
+      ],
+      "process": [
+        "企业向人才发展服务公司报备引才计划",
+        "人才入职",
+        "通过\"鄂州人才码\"小程序申领",
+        "市委人才办审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.ezhou.gov.cn/bsfw_0/ztfwcs/jy1/rcyj/wyk/202303/t20230324_531820.html"
+    },
+    "policySource": "鄂州人才〔2022〕6号（《鄂州市\"人才强企工程\"实施办法》）",
+    "effectiveDate": "2022-05-11",
+    "notes": "有效。到鄂州市企业就业的全日制专科及以上大学生可申请租房和生活补贴：博士4000元/月、硕士1500元/月（重点高校1700元/月）、本科900元/月（重点高校1100元/月）、大专700元/月，按月发放连续3年。2026年1月1日起新入职者需全日制重点本科及以上方可享受。重点高校毕业生可享受更高补贴标准。",
+    "location": "鄂州·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ezhou-shiji-goufangbutie",
+    "city": "ezhou",
+    "name": "鄂州市\"人才安居工程\"购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "经市委人才办认定人才身份后购买新建商品住房并申报；每个家庭只能享受一次",
+      "channel": "市民中心人才服务窗口；市住建局",
+      "materials": [
+        "身份证",
+        "学历认证/职称/技能等级证明",
+        "劳动合同、社保记录、工资流水、企业工作证明",
+        "工作年限承诺书",
+        "房屋备案信息"
+      ],
+      "process": [
+        "本人携身份证至市民中心人才服务窗口提交材料",
+        "市委人才办审核认定人才身份（短信告知）",
+        "购买住房并备案",
+        "向市住建局申报购房补贴",
+        "市住建局审核发放"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7114086575469789707/"
+    },
+    "policySource": "鄂州人才〔2024〕4号附件（《\"新鄂州人\"计划·人才安居项目实施细则》）",
+    "effectiveDate": "2022-06-16",
+    "notes": "有效。在鄂州市购买新建商品住房的全日制大专及以上人才可享受购房补贴：博士10万元、硕士6万元、本科4万元、大专2万元，一次性发放。需经市委人才办认定人才身份，签订最低工作年限承诺（企业不少于3年）。每个家庭只能享受一次。",
+    "location": "鄂州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ezhou-shiji-yicixingchuangyebutie",
+    "city": "ezhou",
+    "name": "鄂州市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "毕业5年内申请；不可重复申报",
+      "channel": "各区级公共就业服务机构",
+      "materials": [
+        "《鄂州市一次性创业补贴申请表》一式三份",
+        "工商营业执照复印件",
+        "申请人和带动就业人员有效身份证复印件",
+        "带动就业人员劳动合同、近3个月工资表或工资发放凭证",
+        "经营场地现场照片3张",
+        "高校毕业生另需提供高校毕业证复印件"
+      ],
+      "process": [
+        "申请人向创业所在地区级公共就业服务机构提出申请",
+        "受理机构审核",
+        "拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.ezhou.gov.cn/ztzl/jsjf/202602/t20260211_750661.html"
+    },
+    "policySource": "鄂财社发〔2024〕88号（《湖北省就业补助资金管理办法》）",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业5年内高校毕业生在鄂州市初次创办小微企业或个体工商户等，经营6个月以上且带动就业2人及以上，给予5000元一次性创业补贴。不可重复申报。湖北省统一政策在鄂州落地。",
+    "location": "鄂州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ezhou-shiji-yicixingjiuyebutie",
+    "city": "ezhou",
+    "name": "鄂州市一次性就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 1000,
+      "max": 1000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "毕业年度或离校2年内未就业；签订1年以上劳动合同并缴纳社保",
+      "channel": "各区级公共就业服务机构",
+      "materials": [
+        "《一次性吸纳就业补贴申请表》原件1份",
+        "劳动合同复印件1份",
+        "毕业证书原件或复印件1份",
+        "本人银行账号复印件1份"
+      ],
+      "process": [
+        "申请人向就业所在地区级公共就业服务机构申请",
+        "审核",
+        "政府网站公示7个工作日",
+        "公示无异议后拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://rsj.ezhou.gov.cn/ztzl/jsjf/202602/t20260211_750676.html"
+    },
+    "policySource": "鄂人社发〔2024〕20号",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业年度或离校2年内未就业高校毕业生到中小微企业就业，签订1年以上劳动合同并缴纳社保，给予1000元一次性就业补贴。湖北省统一政策在鄂州落地。",
+    "location": "鄂州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ezhou-lingkong-shenghuobutie",
+    "city": "ezhou",
+    "name": "临空经济区专业性人才区级补贴",
+    "category": "living",
+    "amount": {
+      "min": 30000,
+      "max": 90000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 90000,
+        "max": 90000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "待核实（按区经济发展局实施细则）",
+      "channel": "临空经济区组织人事局",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保证明",
+        "其他相关材料（待核实，详见区经济发展局实施细则）"
+      ],
+      "process": [
+        "待核实（按区经济发展局实施细则）"
+      ],
+      "location": "临空经济区",
+      "url": "https://lkjjq.ezhou.gov.cn/xxgk/dfbmptlj/xz/swx/zc/qtzdgkwj/202409/t20240926_652942.shtml"
+    },
+    "policySource": "《\"新鄂州人\"计划·临空经济区\"引人聚才\"若干措施（试行）》（2024年9月26日）",
+    "effectiveDate": "2024-09-26",
+    "notes": "有效（临空经济区区级政策）。临空经济区\"一区四园\"企业工作的专业性人才可享受区级额外补贴：博士3万元/年、重点高校硕士2万元/年、重点高校本科1万元/年，按年发放累计不超过3年。需为航空运输、航空制造、MRO、保税等专业性人才。区级政策，与鄂州市其他区级政策互斥。",
+    "location": "鄂州·临空经济区",
+    "tier": 3,
+    "exclusiveGroup": "ezhou-district"
+  }
+]

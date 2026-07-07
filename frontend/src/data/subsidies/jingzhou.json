@@ -1,0 +1,474 @@
+[
+  {
+    "id": "jingzhou-shiji-shenghuobutie",
+    "city": "jingzhou",
+    "name": "荆州市大中专毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10800,
+      "max": 18000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "中专": {
+        "min": 10800,
+        "max": 10800,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "专科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["中专", "专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业5年内首次到荆州市企业就业或创业，签订1年以上劳动合同并缴纳社保1年以上可申请，补贴时间最长不超过3年",
+      "channel": "当地社保局（线下申报）",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "劳动合同或就业协议（创业的提供营业执照）",
+        "社会保险缴纳证明",
+        "其他相关证明材料（待核实）"
+      ],
+      "process": [
+        "准备相关纸质材料到当地社保局申报领取"
+      ],
+      "location": "市级",
+      "url": "http://www.jingzhou.gov.cn/zfwhd/szrx/202303/t20230309_818018.shtml"
+    },
+    "policySource": "待核实（依据荆州市人社局政策解读）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。毕业5年内首次到荆州市企业就业或创业的毕业生可申请。生活补贴全日制大专及以上6000元/年、全日制中专3600元/年，最长不超过3年。需签订1年以上劳动合同并缴纳社保1年以上。",
+    "location": "荆州·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingzhou-shiji-zufangbutie",
+    "city": "jingzhou",
+    "name": "荆州市大中专毕业生租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 10800,
+      "max": 18000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "中专": {
+        "min": 10800,
+        "max": 10800,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "专科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 18000,
+        "max": 18000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["中专", "专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业5年内首次到荆州市企业就业或创业，签订1年以上劳动合同并缴纳社保1年以上可申请，本人在稳定工作地无自有住房，补贴时间最长不超过3年",
+      "channel": "当地社保局（线下申报）",
+      "materials": [
+        "申请人及家庭成员身份证",
+        "毕业证书",
+        "劳动合同或就业协议",
+        "租房合同",
+        "社会保险缴纳证明",
+        "无自有住房证明（待核实）"
+      ],
+      "process": [
+        "准备相关纸质材料到当地社保局申报领取"
+      ],
+      "location": "市级",
+      "url": "http://www.jingzhou.gov.cn/zfwhd/szrx/202303/t20230309_818018.shtml"
+    },
+    "policySource": "待核实（依据荆州市人社局政策解读）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。毕业5年内首次到荆州市企业就业或创业且本人在稳定工作地无自有住房的毕业生可申请。租房补贴全日制大专及以上6000元/年、全日制中专3600元/年，最长不超过3年。与生活补贴可同时享受。",
+    "location": "荆州·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingzhou-shiji-yicixingchuangyebutie",
+    "city": "jingzhou",
+    "name": "荆州市高校毕业生一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "毕业5年内申请，终身只能享受一次",
+      "channel": "湖北政务服务网或当地人社部门",
+      "materials": [
+        "《湖北省一次性创业补贴申请表》",
+        "申请人身份证",
+        "营业执照副本",
+        "毕业证书",
+        "带动就业人员劳动合同",
+        "连续3个月工资流水"
+      ],
+      "process": [
+        "向当地人社部门申请",
+        "审核",
+        "拨付补贴资金"
+      ],
+      "location": "市级",
+      "url": "http://zwfwhdsj.jingzhou.gov.cn/gzhd/zcwtk/202311/t20231103_883800.shtml"
+    },
+    "policySource": "湖北省就业创业补贴相关政策文件（待核实具体文号）",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业5年内高校毕业生在荆州市初次创办小微企业或个体工商户等，经营6个月以上且带动就业2人及以上，给予5000元一次性创业补贴。终身只能享受一次。湖北省统一政策在荆州落地。",
+    "location": "荆州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingzhou-shiji-goufangbutie",
+    "city": "jingzhou",
+    "name": "荆州市中心城区人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "须在2026年6月30日前凭网签备案的《商品房买卖合同》到所在区住建部门窗口申请",
+      "channel": "所在区（功能区）行政服务中心住建部门窗口",
+      "materials": [
+        "网签备案的《商品房买卖合同》",
+        "身份证",
+        "学历学位证书",
+        "银行卡",
+        "其他相关材料（待核实）"
+      ],
+      "process": [
+        "凭网签备案的《商品房买卖合同》到所在区（功能区）行政服务中心住建部门窗口申请"
+      ],
+      "location": "市级",
+      "url": "http://zjj.jingzhou.gov.cn/xwzx/dtyw/202411/t20241111_968670.shtml"
+    },
+    "policySource": "《关于持续促进荆州市中心城区房地产平稳健康发展若干措施》（2024年11月8日施行）",
+    "effectiveDate": "2024-11-08",
+    "notes": "有效。2024年11月8日起施行。在中心城区购买新建商品住房的购房人可享受购房补贴：全日制博士10万元、硕士5万元、其他学历2万元。须在2026年6月30日前凭网签备案合同申请。",
+    "location": "荆州·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingzhou-shiji-zhaoshuoyinbo-goufangbutie",
+    "city": "jingzhou",
+    "name": "荆州市“招硕引博”购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "通过“招硕引博”计划引进，在荆州市中心城区购买首套商品住宅可申请；购房补贴与租房补贴累计享受不超过3年",
+      "channel": "各区（功能区）行政服务中心住建窗口",
+      "materials": [
+        "《人才购房补贴申请表》",
+        "本人身份证、户口、结婚证原件及复印件",
+        "已备案的商品房买卖合同原件及复印件",
+        "不动产登记信息查询记录原件",
+        "购房人银行卡号"
+      ],
+      "process": [
+        "携带材料到商品住宅所在区住建窗口办理",
+        "市人社局审核人才资格",
+        "区住建窗口每月5日前送交市住建局审核",
+        "每月10日前送交区财政部门",
+        "区财政部门7个工作日内拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.xflapp.com/blog/i7289356682377888312"
+    },
+    "policySource": "荆办电发〔2022〕6号（《关于进一步加强市直事业单位“招硕引博”人才激励工作的通知》）；荆建发〔2023〕10号（购房补贴实施细则）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效（需通过“招硕引博”计划引进）。通过“招硕引博”计划引进的博士/硕士在荆州市中心城区购买首套商品住宅可享受购房补贴：博士10万元、硕士5万元。需通过“招硕引博”考试并被事业单位或指定企业聘用。",
+    "location": "荆州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingzhou-shiji-zhaoshuoyinbo-rencaijintie",
+    "city": "jingzhou",
+    "name": "荆州市“招硕引博”人才津贴",
+    "category": "talent",
+    "amount": {
+      "min": 50000,
+      "max": 160000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      },
+      "博士": {
+        "min": 160000,
+        "max": 160000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "通过“招硕引博”计划引进并签订聘用合同（最低服务年限3年），工作满一年开始发放，分三年发放",
+      "channel": "荆州市人社局",
+      "materials": [
+        "待核实（随录用程序办理）"
+      ],
+      "process": [
+        "通过“招硕引博”考试聘用后",
+        "工作满一年开始发放",
+        "分三年发放"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7063250603505549835/"
+    },
+    "policySource": "荆办电发〔2022〕6号（《关于进一步加强市直事业单位“招硕引博”人才激励工作的通知》）",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效（需通过“招硕引博”计划引进）。博士5年内累计发放16万元、硕士5年内累计发放5万元，分三年发放。需通过“招硕引博”考试并被事业单位聘用，最低服务年限3年。",
+    "location": "荆州·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jingzhou-jiangling-goufangbutie",
+    "city": "jingzhou",
+    "name": "江陵县引进人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "2018年以来在江陵县实际工作满3年的事业单位引进人才，在江陵县购买首套商品住房且已网签备案可申请",
+      "channel": "江陵县住建局（线下申报）",
+      "materials": [
+        "江陵县引进人才购房财政补贴申请表",
+        "商品房买卖合同（复印件）",
+        "申请人及配偶身份证、结婚证（复印件）",
+        "申请人招录文件、学历或职称（复印件）",
+        "商品房销售不动产发票（复印件）",
+        "申请人及配偶不动产登记查询证明（原件）",
+        "申请人银行卡（复印件）"
+      ],
+      "process": [
+        "向县住建局提交申请材料",
+        "县委人才办审核引进人才资格，县住建局审核购房补贴资料",
+        "县政府网站公示5个工作日",
+        "县政府批准后县住建局汇入申请人银行账户"
+      ],
+      "location": "江陵县",
+      "url": "http://zwgk.jiangling.gov.cn/zjj/1794/103220243/t126220243034/475988.shtml"
+    },
+    "policySource": "江建发〔2024〕5号（《江陵县引进人才购房补贴实施细则》）",
+    "effectiveDate": "2024-03-17",
+    "notes": "有效（江陵县区级政策）。2018年以来在江陵县实际工作满3年的事业单位引进人才，在江陵县购买首套商品住房可申请购房补贴。博士最高10万元、“双一流”硕/本最高8万元、其他硕/本最高5万元，分2个年度发放。区级政策，与荆州市其他区级政策互斥。",
+    "location": "荆州·江陵县",
+    "tier": 3,
+    "exclusiveGroup": "jingzhou-district"
+  }
+]
