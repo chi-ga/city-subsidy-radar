@@ -1,7 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-import * as echarts from 'echarts';
+import * as echarts from 'echarts/core';
+import { MapChart } from 'echarts/charts';
+import { GeoComponent, TooltipComponent } from 'echarts/components';
+import { CanvasRenderer } from 'echarts/renderers';
+import type { EChartsType } from 'echarts/core';
 import { MAP_CACHE_KEY, MAP_CACHE_EXPIRY } from '../../constants';
 import { RadarSpinner } from '../RadarSpinner';
+
+// 按需注册 ECharts 模块，避免全量引入导致首屏 chunk 过大
+echarts.use([MapChart, GeoComponent, TooltipComponent, CanvasRenderer]);
 
 interface ChinaMapProps {
   onCityClick?: (cityCode: string) => void;
@@ -120,10 +127,16 @@ interface MapCache {
   data: unknown[];
 }
 
+interface CityFeature {
+  type: string;
+  properties: { name: string; code: string };
+  geometry: unknown;
+}
+
 /**
  * 从缓存中获取地图数据
  */
-function getCachedMapData(): unknown[] | null {
+function getCachedMapData(): CityFeature[] | null {
   try {
     const cached = localStorage.getItem(MAP_CACHE_KEY);
     if (!cached) return null;
@@ -137,7 +150,7 @@ function getCachedMapData(): unknown[] | null {
       return null;
     }
 
-    return data;
+    return data as CityFeature[];
   } catch {
     return null;
   }
@@ -146,7 +159,7 @@ function getCachedMapData(): unknown[] | null {
 /**
  * 将地图数据保存到缓存
  */
-function setCachedMapData(data: unknown[]): void {
+function setCachedMapData(data: CityFeature[]): void {
   try {
     const cache: MapCache = {
       timestamp: Date.now(),
@@ -163,30 +176,40 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // 使用 ref 保存最新的 onCityClick，避免它变化导致整个 effect 重新执行
+  const onCityClickRef = useRef(onCityClick);
+  onCityClickRef.current = onCityClick;
+
   useEffect(() => {
-    if (!chartRef.current) return;
+    const dom = chartRef.current;
+    if (!dom) return;
 
-    const initChart = () => {
-      if (!chartRef.current) return null;
-      return echarts.init(chartRef.current, undefined, { renderer: 'canvas' });
-    };
+    // 如果该 DOM 上已存在图表实例（如 StrictMode 双调用残留），先释放，避免 "already initialized" 警告
+    const existing = echarts.getInstanceByDom(dom);
+    if (existing) {
+      existing.dispose();
+    }
 
-    const chart = initChart();
-    if (!chart) return;
+    let cancelled = false;
+    const chart: EChartsType = echarts.init(dom, undefined, { renderer: 'canvas' });
 
-    let cleanup: (() => void) | null = null;
+    const handleResize = () => chart.resize();
+    window.addEventListener('resize', handleResize);
 
-    // 尝试从缓存获取地图数据
-    const cachedData = getCachedMapData();
+    // ResizeObserver：容器从隐藏(display:none)变为可见时自动重绘，解决移动端/窄屏下 0 尺寸问题
+    let resizeObserver: ResizeObserver | null = null;
+    if (typeof ResizeObserver !== 'undefined') {
+      resizeObserver = new ResizeObserver(() => chart.resize());
+      resizeObserver.observe(dom);
+    }
 
-    const loadMapData = async () => {
-      // 如果有缓存数据，直接使用
+    const loadData = async () => {
+      // 优先使用缓存
+      const cachedData = getCachedMapData();
       if (cachedData) {
-        console.log('使用缓存的地图数据');
         return cachedData;
       }
 
-      console.log('从本地加载城市级地图数据...');
       // 从本地加载城市级地图数据
       const response = await fetch('/geo/china-cities.json');
       if (!response.ok) {
@@ -195,16 +218,14 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
       const geoData = await response.json();
 
       // 收集所有城市级 feature
-      const allCityFeatures: { type: string; properties: { name: string; code: string }; geometry: unknown }[] = [];
+      const allCityFeatures: CityFeature[] = [];
       if (geoData && geoData.features) {
-        geoData.features.forEach((feature: { type: string; properties: { name: string; code: string }; geometry: unknown }) => {
+        geoData.features.forEach((feature: CityFeature) => {
           if (feature.properties && feature.properties.code) {
             allCityFeatures.push(feature);
           }
         });
       }
-
-      console.log(`加载了 ${allCityFeatures.length} 个城市特征`);
 
       // 缓存地图数据
       if (allCityFeatures.length > 0) {
@@ -214,13 +235,15 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
       return allCityFeatures;
     };
 
-    loadMapData()
+    loadData()
       .then((allCityFeatures) => {
+        // 异步操作返回后组件可能已卸载，需检查取消标志
+        if (cancelled) return;
+
         if (!allCityFeatures || allCityFeatures.length === 0) {
           throw new Error('没有加载到地图数据');
         }
 
-        console.log('注册地图...');
         // 构建城市级 GeoJSON
         const cityGeoJson = {
           type: 'FeatureCollection',
@@ -230,14 +253,10 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
         echarts.registerMap('china_cities', cityGeoJson as never);
 
         // 构建所有城市数据 - 已覆盖的城市强制设置蓝色
-        const allCities = (allCityFeatures as { properties: { name: string; code: string } }[]).map((f) => {
+        const allCities = allCityFeatures.map((f) => {
           const featureCode = String(f.properties.code);
           const cityInfo = COVERED_CITIES.find((c) => c.adcode === featureCode);
           const isCovered = !!cityInfo;
-          // 调试日志
-          if (['110000', '310000', '440000', '440300', '440100'].includes(featureCode)) {
-            console.log(`城市: ${f.properties.name}, code: ${featureCode}, 匹配: ${isCovered}`);
-          }
           return {
             name: f.properties.name,
             value: isCovered ? 1 : 0,
@@ -248,7 +267,7 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
           };
         });
 
-        const option: echarts.EChartsOption = {
+        const option: echarts.EChartsCoreOption = {
           backgroundColor: 'transparent',
           tooltip: {
             trigger: 'item',
@@ -301,6 +320,9 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
           ],
         };
 
+        // 再次检查取消标志，确保 DOM 未被移除
+        if (cancelled) return;
+
         chart.setOption(option);
         setLoading(false);
 
@@ -308,28 +330,26 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
           const event = params as { data?: { code?: string } };
           const code = event.data?.code;
           if (code) {
-            onCityClick?.(code);
+            onCityClickRef.current?.(code);
           }
         });
-
-        const handleResize = () => chart.resize();
-        window.addEventListener('resize', handleResize);
-
-        cleanup = () => {
-          window.removeEventListener('resize', handleResize);
-          chart.dispose();
-        };
       })
       .catch((err) => {
+        if (cancelled) return;
         console.error('地图加载失败:', err);
         setError('地图加载失败，请刷新重试');
         setLoading(false);
       });
 
     return () => {
-      cleanup?.();
+      // 同步释放：无论异步操作是否完成都立即清理，避免实例泄漏与重复初始化
+      cancelled = true;
+      window.removeEventListener('resize', handleResize);
+      resizeObserver?.disconnect();
+      chart.off('click');
+      chart.dispose();
     };
-  }, [onCityClick]);
+  }, []);
 
   if (error) {
     return (

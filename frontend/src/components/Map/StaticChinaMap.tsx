@@ -1,5 +1,11 @@
 import { useEffect, useRef } from 'react';
-import * as echarts from 'echarts';
+import * as echarts from 'echarts/core';
+import { MapChart } from 'echarts/charts';
+import { GeoComponent } from 'echarts/components';
+import { CanvasRenderer } from 'echarts/renderers';
+
+// 按需注册 ECharts 模块，避免全量引入
+echarts.use([MapChart, GeoComponent, CanvasRenderer]);
 
 interface StaticChinaMapProps {
   onCityClick?: (cityCode: string) => void;
@@ -149,7 +155,7 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
           };
         });
 
-        const option: echarts.EChartsOption = {
+        const option: echarts.EChartsCoreOption = {
           backgroundColor: 'transparent',
           tooltip: { show: false },
           series: [

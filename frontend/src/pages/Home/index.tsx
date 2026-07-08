@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChinaMap } from '../../components/Map';
 import { GitHubPromo } from '../../components/GitHubPromo';
@@ -20,9 +21,9 @@ export default function Home() {
     navigate('/policies');
   };
 
-  const handleCityClick = (city: string) => {
+  const handleCityClick = useCallback((city: string) => {
     navigate(`/input?mode=single&city=${city}`);
-  };
+  }, [navigate]);
 
   const coveredCount = Object.keys(CITY_NAMES).length;
 
