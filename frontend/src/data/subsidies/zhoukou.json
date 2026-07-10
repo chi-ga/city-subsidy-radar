@@ -1,0 +1,184 @@
+[
+  {
+    "id": "zhoukou-shiji-goufang",
+    "city": "zhoukou",
+    "name": "周口市引进人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 100000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "周口英才码线上平台 / 市行政服务中心窗口",
+      "materials": [
+        "《周口市高层次人才认定申报表》",
+        "身份证件",
+        "周口市社会保险参保证明",
+        "劳动合同或聘用合同",
+        "最高学历学位证书和认证",
+        "职称证书/职业资格证书",
+        "其他佐证材料",
+        "《周口市引进人才购房补贴申请审批表》",
+        "备案的商品房买卖合同",
+        "学历认证报告",
+        "购房人银行卡"
+      ],
+      "process": [
+        "个人向用人单位提出高层次人才认定申请",
+        "人社部门审核认定",
+        "认定通过后申请购房补贴",
+        "资格联合审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.henan.gov.cn/2024/08-13/3049754.html"
+    },
+    "policySource": "周人才〔2022〕19号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士20万元、硕士10万元一次性购房补贴。需先进行高层次人才认定（基于学历+社保+就业的行政审核）。夫妻双方可分别申领。公积金贷款额度提高15万元。",
+    "location": "周口·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhoukou-shiji-shenghuo",
+    "city": "zhoukou",
+    "name": "周口市引进人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 3600,
+      "max": 24000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 3600,
+        "max": 3600,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 24000,
+        "max": 24000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "周口英才码线上平台",
+      "materials": [
+        "《周口市高层次人才认定申报表》",
+        "身份证件",
+        "周口市社会保险参保证明",
+        "劳动合同或聘用合同",
+        "最高学历学位证书和认证",
+        "职称证书/职业资格证书",
+        "《周口市引进人才生活补贴申请审批表》",
+        "本人银行卡"
+      ],
+      "process": [
+        "个人向用人单位提出高层次人才认定申请",
+        "人社部门审核认定",
+        "认定通过后申请生活补贴",
+        "公示",
+        "按月/按年发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "周人才〔2022〕19号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士2000元/月（年24000元）、硕士年3600元，补贴3年。需先进行高层次人才认定。",
+    "location": "周口·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zhoukou-shiji-gongyu",
+    "city": "zhoukou",
+    "name": "周口市人才公寓",
+    "category": "rent",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理，按房源情况配租",
+      "channel": "周口英才码线上平台",
+      "materials": [
+        "《周口市人才公寓配租申请表》",
+        "身份证件",
+        "高层次人才认定证明",
+        "劳动合同、社会保险参保证明",
+        "无房证明"
+      ],
+      "process": [
+        "个人提交配租申请",
+        "人才资格审核",
+        "按房源情况配租入住"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "周口市「1+21」人才政策体系",
+    "effectiveDate": "待核实",
+    "notes": "有效。中心城区550余套人才公寓，经认定的引进人才可申请入住，享受租金减免优惠。",
+    "location": "周口·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

@@ -313,6 +313,7 @@ export default function Input() {
           'jingzhou', 'jingmen', 'ezhou', 'huanggang',
           'weihai', 'cangzhou', 'nanyang', 'anshan', 'jilin', 'eerduosi',
           'jiaozuo', 'jining', 'hengyang', 'xinxiang', 'panjin', 'daqing',
+          'ningde', 'kaifeng', 'zhoukou', 'deyang', 'baoji', 'zigong',
         ];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);

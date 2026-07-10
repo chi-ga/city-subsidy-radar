@@ -1,0 +1,269 @@
+[
+  {
+    "id": "zigong-shiji-anju",
+    "city": "zigong",
+    "name": "自贡市人才安居保障——安居补贴",
+    "category": "rent",
+    "amount": {
+      "min": 300,
+      "max": 600,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 300,
+        "max": 300,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 600,
+        "max": 600,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "自贡市人力资源服务中心（自流井区交通路39号）6号窗口；0813-8107963",
+      "materials": [
+        "《自贡市人才安居保障申请表》一式3份",
+        "申请人身份证复印件",
+        "劳动合同/录用通知及社保缴费证明",
+        "市不动产登记中心近五年无住房登记交易记录证明",
+        "学历学位证书"
+      ],
+      "process": [
+        "申请人填写申请表",
+        "用人单位审查公示3个工作日",
+        "主管部门审核",
+        "市人社局复核",
+        "分类发放"
+      ],
+      "location": "市级",
+      "url": "https://www.zgtalent.gov.cn/"
+    },
+    "policySource": "自贡市人才安居保障办法（2025年修订版）",
+    "effectiveDate": "2025-10-30",
+    "notes": "有效。博士600元/月、硕士300元/月（市属事业单位限双一流），连续3年。签3年以上劳动合同+缴纳社保或公积金，家庭无自有住房。人才公寓与安居补贴二选一。",
+    "location": "自贡·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zigong-shiji-shenghuo",
+    "city": "zigong",
+    "name": "自贡市高校毕业生就业创业——生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 10000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每年9-10月申报",
+      "channel": "企业按属地提交经信部门初审，市人社部门审核",
+      "materials": [
+        "身份证",
+        "毕业证、学位证",
+        "生活补贴申报表",
+        "社保缴费记录",
+        "聘用（录用）合同"
+      ],
+      "process": [
+        "每年9-10月申报",
+        "企业按属地提交经信部门初审公示",
+        "市人社部门审核公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://www.zg.gov.cn/"
+    },
+    "policySource": "自人社办发〔2025〕64号",
+    "effectiveDate": "2025-11-27",
+    "notes": "有效。博士10000元/年、硕士5000元/年，连续3年。全职引进到企业或市属事业单位。每年9-10月申报。",
+    "location": "自贡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zigong-shiji-chuangye",
+    "city": "zigong",
+    "name": "自贡市高校毕业生创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 15000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "创业所在地区县公共就业服务机构",
+      "materials": [
+        "身份证",
+        "毕业证",
+        "营业执照",
+        "创业补贴申报表",
+        "创业实体概述",
+        "正常经营证明材料（交易流水、租房合同、水电费、纳税记录）"
+      ],
+      "process": [
+        "向创业所在地区县公共就业服务机构申报",
+        "初审公示",
+        "区县人社部门审核",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://www.zg.gov.cn/"
+    },
+    "policySource": "自人社办发〔2025〕64号",
+    "effectiveDate": "2025-11-27",
+    "notes": "有效。离校5年内高校毕业生首次创办小微企业或个体经营，正常运营6个月以上5000元，18个月以上再给最高1万元。",
+    "location": "自贡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zigong-shiji-chuangye-daikuan",
+    "city": "zigong",
+    "name": "自贡市创业担保贷款",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 500000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "区县公共就业服务机构",
+      "materials": [
+        "身份证",
+        "毕业证",
+        "户口簿",
+        "个人创业担保贷款申请表",
+        "营业执照"
+      ],
+      "process": [
+        "向区县公共就业服务机构申报",
+        "初审公示",
+        "人社部门审核",
+        "银行发放"
+      ],
+      "location": "市级",
+      "url": "http://www.zg.gov.cn/"
+    },
+    "policySource": "自人社办发〔2025〕64号",
+    "effectiveDate": "2025-11-27",
+    "notes": "有效。在自贡创业的高校毕业生最高50万元创业担保贷款，期限最长3年，财政贴息50%。",
+    "location": "自贡·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "zigong-shiji-linghuo-jiuye",
+    "city": "zigong",
+    "name": "自贡市灵活就业高校毕业生社保补贴",
+    "category": "other",
+    "amount": {
+      "min": 0,
+      "max": 4000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "区县公共就业服务机构",
+      "materials": [
+        "身份证",
+        "毕业证",
+        "社保缴费证明",
+        "灵活就业证明",
+        "申请表"
+      ],
+      "process": [
+        "向区县公共就业服务机构申报",
+        "初审",
+        "审核发放"
+      ],
+      "location": "市级",
+      "url": "https://www.sdpcjy.net/"
+    },
+    "policySource": "自贡市统一政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。离校2年内未就业高校毕业生灵活就业并缴纳社保，补贴实际缴费30%，年度总额不超过4000元/人，最长不超过2年。",
+    "location": "自贡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

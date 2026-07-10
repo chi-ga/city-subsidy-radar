@@ -1,0 +1,135 @@
+[
+  {
+    "id": "baoji-shiji-beidaqinghua",
+    "city": "baoji",
+    "name": "宝鸡市引进北大清华毕业生优惠政策",
+    "category": "talent",
+    "amount": {
+      "min": 50000,
+      "max": 150000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      },
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      },
+      "博士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["北大", "清华"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "宝鸡市人力资源和社会保障局",
+      "materials": [
+        "身份证",
+        "北京大学/清华大学毕业证、学位证",
+        "劳动合同或聘用通知",
+        "社保缴纳证明",
+        "申请表"
+      ],
+      "process": [
+        "向市人社局申请",
+        "审核",
+        "公示",
+        "按年/月发放"
+      ],
+      "location": "市级",
+      "url": "http://m.gkmao.com/news/gjzc/868748.html"
+    },
+    "policySource": "宝鸡市引进高层次人才优惠政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。限北京大学、清华大学毕业生。安家费本科5万/硕士10万/博士15万分5年发放。另享生活补贴（市属企业1000-2000元/月，中省企业800-1800元/月）连续5年，住房补贴500元/月或免费公租房。",
+    "location": "宝鸡·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "baoji-shiji-zhizao",
+    "city": "baoji",
+    "name": "宝鸡市制造业高质量发展人才引育八条政策",
+    "category": "talent",
+    "amount": {
+      "min": 30000,
+      "max": 60000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "宝鸡市工业和信息化局 / 宝鸡市人力资源和社会保障局",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "理工科第一批次录取证明",
+        "申请表"
+      ],
+      "process": [
+        "向市工信局或人社局申请",
+        "审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7426941722208371210/"
+    },
+    "policySource": "宝办发〔2023〕4号",
+    "effectiveDate": "2023-01-01",
+    "notes": "有效。工业企业引进的第一批次理工科类本科3万元、硕士6万元（分3年发放）。另含技能人才一次性补助（高级技师1万/技师8000/高级工5000）及社保补贴50%。签订3年以上劳动合同。",
+    "location": "宝鸡·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

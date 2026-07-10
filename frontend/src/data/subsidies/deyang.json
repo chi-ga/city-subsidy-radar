@@ -1,0 +1,174 @@
+[
+  {
+    "id": "deyang-shiji-zufang",
+    "city": "deyang",
+    "name": "德阳市人才租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 800,
+      "max": 1000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "德阳市人才发展集团 / 各区人社部门",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "未入住人才公寓证明",
+        "申请表"
+      ],
+      "process": [
+        "向用人单位申请",
+        "审核",
+        "公示",
+        "按月发放"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "德阳市集聚十万英才10条措施",
+    "effectiveDate": "2024-05-17",
+    "notes": "有效。硕士800元/月、博士1000元/月，连续3年。未入住人才公寓的才可享受。2024年5月17日发布，5年计划期内执行。",
+    "location": "德阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "deyang-shiji-anjia",
+    "city": "deyang",
+    "name": "德阳市企业新引进人才安家补助",
+    "category": "settlement",
+    "amount": {
+      "min": 100000,
+      "max": 400000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "德阳市人才发展集团 / 各区人社部门",
+      "materials": [
+        "身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "用人单位安家补贴发放证明"
+      ],
+      "process": [
+        "向用人单位申请",
+        "审核",
+        "公示",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "http://m.toutiao.com/group/7234313564687843844/"
+    },
+    "policySource": "德阳市集聚十万英才10条措施",
+    "effectiveDate": "2024-05-17",
+    "notes": "有效。博士后最高40万、博士最高20万、硕士最高10万。企业或科研院所新引进，签订5年以上协议，连续缴纳社保或纳税1年以上。在用人单位安家补贴基础上叠加。",
+    "location": "德阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "deyang-shiji-chuangye",
+    "city": "deyang",
+    "name": "德阳市创业新星计划创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 100000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "德阳市人才发展集团 / 各区人社部门",
+      "materials": [
+        "身份证",
+        "学历证书",
+        "营业执照",
+        "创业项目计划书",
+        "申请表"
+      ],
+      "process": [
+        "向人社部门申请",
+        "评审",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "德阳市集聚十万英才10条措施",
+    "effectiveDate": "2024-05-17",
+    "notes": "有效。大学生创新创业给予10万元一次性创业补贴，创新团队给予20万元项目支持。每年单列1000万元支持。",
+    "location": "德阳·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

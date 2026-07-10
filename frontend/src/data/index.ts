@@ -107,6 +107,12 @@ import hengyang from './subsidies/hengyang.json';
 import xinxiang from './subsidies/xinxiang.json';
 import panjin from './subsidies/panjin.json';
 import daqing from './subsidies/daqing.json';
+import ningde from './subsidies/ningde.json';
+import kaifeng from './subsidies/kaifeng.json';
+import zhoukou from './subsidies/zhoukou.json';
+import deyang from './subsidies/deyang.json';
+import baoji from './subsidies/baoji.json';
+import zigong from './subsidies/zigong.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -221,6 +227,12 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   xinxiang: xinxiang as Subsidy[],
   panjin: panjin as Subsidy[],
   daqing: daqing as Subsidy[],
+  ningde: ningde as Subsidy[],
+  kaifeng: kaifeng as Subsidy[],
+  zhoukou: zhoukou as Subsidy[],
+  deyang: deyang as Subsidy[],
+  baoji: baoji as Subsidy[],
+  zigong: zigong as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -491,6 +503,12 @@ export function getCityLevelLocation(city: string): string {
     xinxiang: '新乡市',
     panjin: '盘锦市',
     daqing: '大庆市',
+    ningde: '宁德市',
+    kaifeng: '开封市',
+    zhoukou: '周口市',
+    deyang: '德阳市',
+    baoji: '宝鸡市',
+    zigong: '自贡市',
   };
   return map[city] || '';
 }

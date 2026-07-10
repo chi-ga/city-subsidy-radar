@@ -1,0 +1,287 @@
+[
+  {
+    "id": "ningde-shiji-shenghuo",
+    "city": "ningde",
+    "name": "宁德市高校毕业生来宁就业一次性生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 5000,
+      "max": 12000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "企业所在县区人社部门",
+      "materials": [
+        "身份证",
+        "毕业证书",
+        "劳动合同",
+        "社保缴费证明",
+        "落户证明",
+        "申请表"
+      ],
+      "process": [
+        "向企业所在县区人社部门申报",
+        "审核",
+        "发放至社保卡银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "宁德市鼓励高校毕业生来宁就业创业若干措施",
+    "effectiveDate": "待核实",
+    "notes": "有效。全日制本科及以上应届毕业生在宁德民营中小微企业稳定就业并缴纳社保3个月以上，不低于5000元一次性生活补贴。须在宁德落户。",
+    "location": "宁德·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ningde-shiji-zufang",
+    "city": "ningde",
+    "name": "宁德市\u201c天湖人才\u201d住房补助",
+    "category": "rent",
+    "amount": {
+      "min": 1000,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 50,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "宁德市智慧人才服务平台",
+      "materials": [
+        "《宁德市\u201c天湖人才\u201d认定申请表》一式三份",
+        "身份证复印件",
+        "劳动合同/聘用合同",
+        "任职证明",
+        "工资表",
+        "社保缴费证明",
+        "个税完税证明",
+        "学历学位证书",
+        "专业技术资格证书",
+        "与原单位解除劳动关系证明（应届除外）"
+      ],
+      "process": [
+        "个人向用人单位申请",
+        "用人单位初审推荐",
+        "县区人社部门初审汇总",
+        "市人社局复审",
+        "公示5个工作日",
+        "市委人才工作领导小组确认",
+        "颁发天湖人才证"
+      ],
+      "location": "市级",
+      "url": "https://rc.rsj.ningde.gov.cn/"
+    },
+    "policySource": "宁委人才〔2022〕4号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士3000元/月、双一流硕士2000元/月、双一流本科1000元/月，连续3年。从市外引进，签订3年以上合同。与购房补助就高不重复。",
+    "location": "宁德·市级",
+    "tier": 2,
+    "exclusiveGroup": "ningde-zufang-goufang"
+  },
+  {
+    "id": "ningde-shiji-goufang",
+    "city": "ningde",
+    "name": "宁德市引进人才首套房购房补助",
+    "category": "buy",
+    "amount": {
+      "min": 150000,
+      "max": 200000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 60
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 150000,
+        "max": 150000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 60
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "ageLimit": 50,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "宁德市智慧人才服务平台",
+      "materials": [
+        "《宁德市引进人才首套住房购房补助申请表》",
+        "申请人及配偶身份证件、婚姻证件、户籍证件",
+        "未成年子女身份证件",
+        "购房合同、购房发票、房屋备案表"
+      ],
+      "process": [
+        "申请人向用人单位申请",
+        "用人单位审核公示5个工作日",
+        "登录智慧人才服务平台上传",
+        "人社发至自然资源住建核查",
+        "市人社复核",
+        "公示5个工作日",
+        "市委人才工作领导小组确认",
+        "发放"
+      ],
+      "location": "市级",
+      "url": "https://rc.rsj.ningde.gov.cn/"
+    },
+    "policySource": "宁建规〔2024〕13号",
+    "effectiveDate": "2024-09-24",
+    "notes": "有效。博士首套房总价25%最高20万、双一流硕士总价20%最高15万，分5年发放。2024年9月24日起施行，有效期5年。与住房补助就高不重复。",
+    "location": "宁德·市级",
+    "tier": 2,
+    "exclusiveGroup": "ningde-zufang-goufang"
+  },
+  {
+    "id": "ningde-shiji-chuangye",
+    "city": "ningde",
+    "name": "宁德市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 10000,
+      "max": 10000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "创业所在地县区公共就业和人才服务机构",
+      "materials": [
+        "就业创业证",
+        "毕业证",
+        "身份证",
+        "营业执照",
+        "经营场地证明",
+        "带动就业人员劳动合同及工资发放凭证"
+      ],
+      "process": [
+        "向创业所在地县区公共就业和人才服务机构申请",
+        "审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "宁德市人社局就业创业政策指南",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业2年内全日制大中专院校毕业生首次创办小微企业或个体经营且正常经营1年以上，给予1万元一次性创业补贴。",
+    "location": "宁德·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "ningde-shiji-qiuzhi",
+    "city": "ningde",
+    "name": "宁德市求职创业补贴",
+    "category": "other",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "按省级通知集中申报",
+      "channel": "福建就业网",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学籍证明",
+        "困难家庭证明材料",
+        "本人银行账户"
+      ],
+      "process": [
+        "按省级通知集中申报",
+        "审核公示",
+        "拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "福建省统一政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。困难毕业生（低保、残疾、脱贫家庭等）毕业学年内可申领2000元一次性求职创业补贴。",
+    "location": "宁德·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

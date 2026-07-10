@@ -311,7 +311,7 @@ describe('政策数据完整性', () => {
       'liuan-housing', 'chizhou-housing', 'xuancheng-housing',
       'jingzhou-district', 'jingmen-district', 'ezhou-district',
       'weihai-district', 'anshan-housing', 'jilin-shenghuo-zufang', 'eerduosi-anjia-goufang',
-      'jiaozuo-shenghuo', 'daqing-shenghuo-zufang',
+      'jiaozuo-shenghuo', 'daqing-shenghuo-zufang', 'ningde-zufang-goufang',
     ])
     const unknown = allSubsidies.filter(
       (s) => s.exclusiveGroup && !knownGroups.has(s.exclusiveGroup)

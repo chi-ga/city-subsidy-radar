@@ -214,7 +214,13 @@ export type CityCode =
   | 'hengyang'
   | 'xinxiang'
   | 'panjin'
-  | 'daqing';
+  | 'daqing'
+  | 'ningde'
+  | 'kaifeng'
+  | 'zhoukou'
+  | 'deyang'
+  | 'baoji'
+  | 'zigong';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -327,6 +333,12 @@ export const CITY_NAMES: Record<CityCode, string> = {
   xinxiang: '新乡',
   panjin: '盘锦',
   daqing: '大庆',
+  ningde: '宁德',
+  kaifeng: '开封',
+  zhoukou: '周口',
+  deyang: '德阳',
+  baoji: '宝鸡',
+  zigong: '自贡',
 };
 
 // 补贴分类名称映射

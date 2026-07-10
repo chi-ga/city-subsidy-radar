@@ -585,6 +585,7 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'eerduosi-anjia-goufang': '鄂尔多斯安家补贴与购房补贴（就高不重复）',
   'jiaozuo-shenghuo': '焦作生活补贴（2023年新政与2018年旧政不重复享受）',
   'daqing-shenghuo-zufang': '大庆生活补贴与租房补贴（不重复享受）',
+  'ningde-zufang-goufang': '宁德住房补助与购房补助（就高不重复）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

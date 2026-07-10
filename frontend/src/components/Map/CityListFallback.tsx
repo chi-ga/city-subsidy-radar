@@ -112,6 +112,12 @@ const COVERED_CITIES = [
   { code: 'xinxiang', name: '新乡', count: 5 },
   { code: 'panjin', name: '盘锦', count: 5 },
   { code: 'daqing', name: '大庆', count: 7 },
+  { code: 'ningde', name: '宁德', count: 5 },
+  { code: 'kaifeng', name: '开封', count: 4 },
+  { code: 'zhoukou', name: '周口', count: 3 },
+  { code: 'deyang', name: '德阳', count: 3 },
+  { code: 'baoji', name: '宝鸡', count: 2 },
+  { code: 'zigong', name: '自贡', count: 5 },
 ];
 
 export default function CityListFallback({ onCityClick }: CityListFallbackProps) {

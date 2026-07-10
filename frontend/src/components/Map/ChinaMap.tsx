@@ -124,6 +124,12 @@ const COVERED_CITIES = [
   { name: '新乡市', code: 'xinxiang', adcode: '410700', count: 5 },
   { name: '盘锦市', code: 'panjin', adcode: '211100', count: 5 },
   { name: '大庆市', code: 'daqing', adcode: '230600', count: 7 },
+  { name: '宁德市', code: 'ningde', adcode: '350900', count: 5 },
+  { name: '开封市', code: 'kaifeng', adcode: '410200', count: 4 },
+  { name: '周口市', code: 'zhoukou', adcode: '411600', count: 3 },
+  { name: '德阳市', code: 'deyang', adcode: '510600', count: 3 },
+  { name: '宝鸡市', code: 'baoji', adcode: '610300', count: 2 },
+  { name: '自贡市', code: 'zigong', adcode: '510300', count: 5 },
 ];
 
 

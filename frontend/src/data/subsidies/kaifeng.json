@@ -1,0 +1,238 @@
+[
+  {
+    "id": "kaifeng-shiji-shenghuo",
+    "city": "kaifeng",
+    "name": "开封市青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "市民之家人才一站式服务专窗",
+      "materials": [
+        "身份证",
+        "毕业证/学位证及学信网备案表",
+        "劳动合同",
+        "社保缴纳证明",
+        "银行卡信息",
+        "《开封市青年人才生活补贴申请表》"
+      ],
+      "process": [
+        "申请人准备材料",
+        "用人单位审核盖章",
+        "统一报送至市人社局",
+        "审核通过后按季度发放"
+      ],
+      "location": "市级",
+      "url": "https://www.kaifeng.gov.cn/"
+    },
+    "policySource": "汴发〔2022〕10号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士1500元/月、硕士1000元/月、本科500元/月，补贴期限36个月。毕业3年内在汴落户并缴纳社保6个月以上。硕士本科35周岁以下。",
+    "location": "开封·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "kaifeng-shiji-goufang",
+    "city": "kaifeng",
+    "name": "开封市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 100000,
+      "unit": "元",
+      "period": "分期",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "分期",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "市民之家人才一站式服务专窗",
+      "materials": [
+        "身份证",
+        "户口本",
+        "学历学位证书及学信网备案表",
+        "劳动合同",
+        "社保缴纳证明",
+        "购房合同/不动产权证书",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "个人提交申请",
+        "人社部门审核人才资格",
+        "财政/住建复核",
+        "公示",
+        "分年拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.kaifeng.gov.cn/"
+    },
+    "policySource": "汴政办〔2022〕43号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士购房价格10%最高10万、硕士5%最高5万、本科2%最高2万，分3年发放。在汴唯一商品住房。与生活补贴可同时享受。",
+    "location": "开封·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "kaifeng-shiji-chuangye",
+    "city": "kaifeng",
+    "name": "开封市创业开业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "工商注册地人社部门",
+      "materials": [
+        "《就业创业证》",
+        "毕业证或学籍证明",
+        "身份证",
+        "工商营业执照",
+        "经营场地证明",
+        "带动就业人员劳动合同及工资发放凭证"
+      ],
+      "process": [
+        "向工商注册地人社部门提交",
+        "审核",
+        "公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "河南省统一政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业5年内大中专学生首次创办企业或个体经营且正常经营1年以上，给予5000元一次性创业开业补贴。",
+    "location": "开封·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "kaifeng-shiji-qiuzhi",
+    "city": "kaifeng",
+    "name": "开封市困难毕业生求职创业补贴",
+    "category": "other",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "按省级通知集中申报",
+      "channel": "按省级通知集中申报",
+      "materials": [
+        "申请表",
+        "身份证",
+        "学籍证明",
+        "困难家庭证明材料",
+        "本人银行账户"
+      ],
+      "process": [
+        "按省级通知集中申报",
+        "审核公示",
+        "拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "河南省统一政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。困难家庭毕业生（低保、残疾、脱贫家庭等）可申领2000元一次性求职创业补贴。",
+    "location": "开封·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]
