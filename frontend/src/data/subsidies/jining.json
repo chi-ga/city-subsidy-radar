@@ -1,0 +1,212 @@
+[
+  {
+    "id": "jining-shiji-yincai",
+    "city": "jining",
+    "name": "青年人才引才补贴",
+    "category": "talent",
+    "amount": {
+      "min": 6000,
+      "max": 60000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 6000,
+        "max": 6000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "本科": {
+        "min": 12000,
+        "max": 12000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 24000,
+        "max": 24000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理，按年度申报",
+      "channel": "济宁市人才服务中心在线申报平台",
+      "materials": [
+        "人才本人身份证",
+        "学历证书、学位证书",
+        "教育部学历证书电子注册备案表、中国高等教育学位在线验证报告",
+        "劳动合同或聘用合同",
+        "报到证（全日制本科需上传）",
+        "申报补贴年度的企业完税证明",
+        "青年人才引才补贴申请表/申报花名册",
+        "联系人授权委托书",
+        "人才金政引才补贴申领承诺书"
+      ],
+      "process": [
+        "数据筛选",
+        "信息确认",
+        "名单公示5个工作日",
+        "政策兑现（发放至用人单位，代扣代缴税务后发放给人才）"
+      ],
+      "location": "市级",
+      "url": "http://60.211.255.252:8080/jnrcw/jnrsrch/home"
+    },
+    "policySource": "济办发〔2022〕25号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士6万/年、硕士2.4万/年、本科1.2万/年、专科0.6万/年，补贴3年。博士家庭额外奖励10万元，硕士家庭额外奖励3万元。发放至用人单位后分配给人才。",
+    "location": "济宁·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jining-shiji-goufang",
+    "city": "jining",
+    "name": "青年人才购房补贴·人才房票",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 300000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "专科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "本科": {
+        "min": 40000,
+        "max": 40000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 60000,
+        "max": 60000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 45,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "济宁市住建局 / 各县区住建部门",
+      "materials": [
+        "人才房票补贴审核表",
+        "申请人身份证件",
+        "毕业证、学位证",
+        "劳动合同或聘用合同",
+        "社会保险缴纳证明",
+        "新建商品住房购房合同（网签备案）",
+        "购房发票凭证",
+        "婚姻情况证明材料",
+        "不动产登记信息核查授权"
+      ],
+      "process": [
+        "博士名单征集",
+        "征求意见",
+        "联合审核",
+        "公示5个工作日",
+        "发放房票",
+        "资金兑付"
+      ],
+      "location": "市级",
+      "url": "https://jnszjj.jining.gov.cn/"
+    },
+    "policySource": "济办发〔2022〕25号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士20万、硕士6万、本科4万、专科3万（攀登企业引进标准更高）。房票2年内购买新建商品住房可直接抵扣房款。与引才补贴可同时享受。",
+    "location": "济宁·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jining-shiji-chuangye-daikuan",
+    "city": "jining",
+    "name": "创业担保贷款",
+    "category": "startup",
+    "amount": {
+      "min": 0,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "济宁市人力资源和社会保障局 / 经办银行",
+      "materials": [
+        "申请人身份证件",
+        "营业执照",
+        "创业项目计划书",
+        "担保材料",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "申请人提交贷款申请及担保材料",
+        "经办银行初审",
+        "人社部门审核创业资质",
+        "公示",
+        "银行发放贷款，政府予以贴息"
+      ],
+      "location": "市级",
+      "url": "https://www.jnhn.gov.cn/"
+    },
+    "policySource": "济办发〔2022〕25号",
+    "effectiveDate": "待核实",
+    "notes": "有效。个人创业最高20万元、合伙创业最高60万元、小微企业最高400万元，政府予以贴息支持。",
+    "location": "济宁·市级",
+    "tier": 3,
+    "exclusiveGroup": ""
+  }
+]

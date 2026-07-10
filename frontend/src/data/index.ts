@@ -101,6 +101,12 @@ import nanyang from './subsidies/nanyang.json';
 import anshan from './subsidies/anshan.json';
 import jilin from './subsidies/jilin.json';
 import eerduosi from './subsidies/eerduosi.json';
+import jiaozuo from './subsidies/jiaozuo.json';
+import jining from './subsidies/jining.json';
+import hengyang from './subsidies/hengyang.json';
+import xinxiang from './subsidies/xinxiang.json';
+import panjin from './subsidies/panjin.json';
+import daqing from './subsidies/daqing.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
@@ -209,6 +215,12 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   anshan: anshan as Subsidy[],
   jilin: jilin as Subsidy[],
   eerduosi: eerduosi as Subsidy[],
+  jiaozuo: jiaozuo as Subsidy[],
+  jining: jining as Subsidy[],
+  hengyang: hengyang as Subsidy[],
+  xinxiang: xinxiang as Subsidy[],
+  panjin: panjin as Subsidy[],
+  daqing: daqing as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -473,6 +485,12 @@ export function getCityLevelLocation(city: string): string {
     anshan: '鞍山市',
     jilin: '吉林市',
     eerduosi: '鄂尔多斯市',
+    jiaozuo: '焦作市',
+    jining: '济宁市',
+    hengyang: '衡阳市',
+    xinxiang: '新乡市',
+    panjin: '盘锦市',
+    daqing: '大庆市',
   };
   return map[city] || '';
 }

@@ -1,0 +1,372 @@
+[
+  {
+    "id": "daqing-shiji-shenghuo",
+    "city": "daqing",
+    "name": "大庆市新引进人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 6
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 6
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 6
+      },
+      "博士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 6
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "黑龙江政务服务网·大庆或市政府行政服务中心2楼120号窗口",
+      "materials": [
+        "申请人身份证复印件",
+        "学历证书和学位证书复印件",
+        "劳动合同复印件",
+        "申请人银行卡复印件",
+        "企业注册信息、营业执照复印件"
+      ],
+      "process": [
+        "用人单位统一提交申请材料",
+        "审核通过后发放给个人",
+        "可按月申请"
+      ],
+      "location": "市级",
+      "url": "http://m.dq.bendibao.com/news/6198.shtm"
+    },
+    "policySource": "《大庆市拥抱新市民\"五免\"\"六补\"\"七优\"政策措施》",
+    "effectiveDate": "待核实",
+    "notes": "有效。博士1500元/月、硕士1000元/月、本科500元/月，最长6个月。与市区企业签不少于1年劳动合同并缴纳社保。新进人员要求前5年内未在庆就业。年度名额1000个。与租房补贴不重复享受。",
+    "location": "大庆·市级",
+    "tier": 1,
+    "exclusiveGroup": "daqing-shenghuo-zufang"
+  },
+  {
+    "id": "daqing-shiji-anjia",
+    "city": "daqing",
+    "name": "大庆市新引进博士一次性安家费",
+    "category": "settlement",
+    "amount": {
+      "min": 150000,
+      "max": 150000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "黑龙江政务服务网·大庆或市政府行政服务中心2楼120号窗口",
+      "materials": [
+        "身份证复印件",
+        "学历证书和学位证书复印件",
+        "劳动合同复印件",
+        "银行卡复印件",
+        "企业注册信息、营业执照复印件"
+      ],
+      "process": [
+        "用人单位或个人提交申请材料",
+        "审核通过",
+        "一次性拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "http://m.dq.bendibao.com/news/6198.shtm"
+    },
+    "policySource": "《大庆市拥抱新市民\"五免\"\"六补\"\"七优\"政策措施》",
+    "effectiveDate": "待核实",
+    "notes": "有效。统招博士一次性15万元安家费。与市区企业签不少于3年劳动合同并缴纳社保和个人所得税且工作超过1年，或在市区创办企业正常经营超过1年。",
+    "location": "大庆·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "daqing-shiji-goufang",
+    "city": "daqing",
+    "name": "大庆市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 3000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "取得不动产权证1年内申请",
+      "channel": "购房所在地区住建部门办理点",
+      "materials": [
+        "《大庆市人才购房补贴申请表》",
+        "申请人身份证",
+        "户口簿",
+        "银行卡",
+        "职称证书（正高职需）",
+        "社保缴纳记录",
+        "不动产权证",
+        "用工合同或诚信协议书",
+        "学历证书"
+      ],
+      "process": [
+        "取得不动产权证1年内向市住建局提交材料",
+        "到购房所在地区住建部门办理"
+      ],
+      "location": "市级",
+      "url": "http://m.dq.bendibao.com/news/6920.shtm"
+    },
+    "policySource": "庆政办规〔2021〕11号",
+    "effectiveDate": "2021-01-01",
+    "notes": "有效。A类（博士）最高10万元、B类（双一流硕士或毕业5年内硕士）最高7万元、C类（毕业5年内本科）最高1万元。须持有大庆市区常住户口，购买新建商品住房，签订承诺服务不少于5年的用工合同。与契税补贴、二孩三孩补贴不重复享受。",
+    "location": "大庆·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "daqing-shiji-zufang",
+    "city": "daqing",
+    "name": "大庆市租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 300,
+      "max": 300,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 6
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": [],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": true,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "黑龙江政务服务网·大庆或市政府行政服务中心2楼120号窗口",
+      "materials": [
+        "身份证",
+        "户口簿",
+        "租赁登记备案证",
+        "银行卡",
+        "学历证书"
+      ],
+      "process": [
+        "申请人提交材料至受理窗口",
+        "审核落户及租赁备案信息",
+        "公示后按月拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "http://m.dq.bendibao.com/news/6198.shtm"
+    },
+    "policySource": "《大庆市拥抱新市民\"五免\"\"六补\"\"七优\"政策措施》",
+    "effectiveDate": "待核实",
+    "notes": "有效。在市区城镇落户并租赁住房的青年群体，300元/月，最长6个月。年度名额2000个。与生活补贴不重复享受。",
+    "location": "大庆·市级",
+    "tier": 1,
+    "exclusiveGroup": "daqing-shenghuo-zufang"
+  },
+  {
+    "id": "daqing-shiji-chuangye-yici",
+    "city": "daqing",
+    "name": "大庆市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 10000,
+      "max": 15000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "身份证",
+        "毕业证",
+        "营业执照",
+        "经营场所证明",
+        "正常运营1年以上证明",
+        "一次性创业补贴申请表"
+      ],
+      "process": [
+        "申请人向创业所在县区人社部门提交材料",
+        "审核经营情况",
+        "公示后拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://jyxx.hcc.edu.cn/2021/1217/c277a24225/page.htm"
+    },
+    "policySource": "庆政规〔2019〕8号",
+    "effectiveDate": "2019-01-01",
+    "notes": "有效。离校2年内高校毕业生首次创办小微企业正常运营1年以上15000元；首次从事个体经营正常运营1年以上10000元。",
+    "location": "大庆·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "daqing-shiji-chuangye-daijiu",
+    "city": "daqing",
+    "name": "大庆市创业带动就业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 2000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "申请表",
+        "身份证",
+        "毕业证",
+        "营业执照",
+        "吸纳就业人员劳动合同及社保缴纳证明"
+      ],
+      "process": [
+        "申请人向创业所在县区人社部门提交材料",
+        "审核吸纳就业情况",
+        "公示后拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://jyxx.hcc.edu.cn/2021/1217/c277a24225/page.htm"
+    },
+    "policySource": "庆政规〔2019〕8号",
+    "effectiveDate": "2019-01-01",
+    "notes": "有效。在校及毕业2年内高校毕业生创办企业，每吸纳1人就业（签1年以上劳动合同+缴社保）给予2000元，最高20万元。",
+    "location": "大庆·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "daqing-shiji-linghuo-jiuye",
+    "city": "daqing",
+    "name": "大庆市灵活就业高校毕业生社保补贴",
+    "category": "other",
+    "amount": {
+      "min": 3578,
+      "max": 3578,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "申请表",
+        "身份证",
+        "毕业证",
+        "社保缴费证明",
+        "灵活就业证明"
+      ],
+      "process": [
+        "申请人向所在县区人社部门提交材料",
+        "审核灵活就业及社保缴费情况",
+        "公示后拨付补贴"
+      ],
+      "location": "市级",
+      "url": "https://jyxx.hcc.edu.cn/2021/1217/c277a24225/page.htm"
+    },
+    "policySource": "黑财规审〔2018〕10号",
+    "effectiveDate": "2018-01-01",
+    "notes": "有效。离校2年内未就业高校毕业生灵活就业并参加社会保险，养老每年2196元+医疗每年1382元，最长不超过2年。",
+    "location": "大庆·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

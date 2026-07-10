@@ -1,0 +1,281 @@
+[
+  {
+    "id": "hengyang-shiji-shenghuo",
+    "city": "hengyang",
+    "name": "衡阳市青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 800,
+      "max": 4000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 4000,
+        "max": 4000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 50,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "衡阳市人才服务窗口（0734-8969112、8969113），由用人单位申报",
+      "materials": [
+        "《衡阳市青年人才生活补贴申报表》",
+        "学历学位证明",
+        "劳动服务合同（聘用协议）",
+        "户籍证明",
+        "参保登记手续"
+      ],
+      "process": [
+        "用人单位向衡阳市人才服务窗口提交申报材料",
+        "查验审核",
+        "移交人社局审批，市委人才办、市财政局逐月审核",
+        "审核通过后次月发放至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://kx.hengyang.gov.cn/gggs/20220408/i2661517.html"
+    },
+    "policySource": "衡人才办通〔2022〕5号",
+    "effectiveDate": "2022-01-01",
+    "notes": "有效。博士4000元/月、硕士2000元/月、普通本科800元/月、双一流本科1500元/月，最长3年。非公有制企业新全职引进的全日制本科及以上毕业生，需在衡阳落户后兑现。",
+    "location": "衡阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "hengyang-shiji-goufang",
+    "city": "hengyang",
+    "name": "衡阳市人才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 50000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 70000,
+        "max": 70000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 50,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "衡阳市政务服务中心三楼E区（0734-8969080），由用人单位统一组织申报",
+      "materials": [
+        "《衡阳市人才购房补贴申请表》",
+        "学历证、身份证、户口簿、银行卡",
+        "商品房买卖合同网签备案信息页及纳税凭证",
+        "3年以上劳动合同（2022年3月1日前引进另需连续6个月以上个税或养老保险证明）",
+        "代办需提供受托人身份证和委托书",
+        "技师/高级工需提供资格证书及劳动合同"
+      ],
+      "process": [
+        "用人单位统一组织申报",
+        "市住房保障服务中心初审",
+        "市委人才办复审",
+        "公示5个工作日",
+        "市财政局拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": "http://m.hy.bendibao.com/live/7007.shtm"
+    },
+    "policySource": "衡人才办通〔2018〕5号",
+    "effectiveDate": "2018-04-03",
+    "notes": "有效。博士10万元、硕士7万元、双一流本科5万元，一次性发放。2018年4月3日后新引进人才购买首套新建商品住房。3年内不得转让。",
+    "location": "衡阳·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "hengyang-shiji-chuangye",
+    "city": "hengyang",
+    "name": "衡阳市大学生初次创业一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 20000,
+      "max": 20000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "衡阳市就业服务中心创业服务科",
+      "materials": [
+        "一次性创业补贴申请表",
+        "工商营业执照副本、经营实体银行对公账号",
+        "正常经营1年以上证明",
+        "法人代表居民身份证、毕业证",
+        "内资企业登记表（仅变更企业提供）"
+      ],
+      "process": [
+        "到工商注册地人社局就业服务中心递交申请材料",
+        "初审",
+        "复审",
+        "公示5个工作日",
+        "核拨至申请人对公账户"
+      ],
+      "location": "市级",
+      "url": "https://www.hengyang.gov.cn/xxgk/dtxx/tzgg/gsgg/20240912/i3454209.html"
+    },
+    "policySource": "湘人社规〔2024〕2号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。毕业2年内高校毕业生初次创办企业或个体工商户且正常经营1年以上，给予20000元一次性创业补贴。已享受一次性开办费补贴的不重复受理。",
+    "location": "衡阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "hengyang-shiji-linghuo-jiuye",
+    "city": "hengyang",
+    "name": "衡阳市灵活就业高校毕业生社会保险补贴",
+    "category": "other",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "衡阳市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "《就业创业证》复印件或毕业证书复印件",
+        "灵活就业证明材料",
+        "社会保险缴费明细账（单）"
+      ],
+      "process": [
+        "申请人提交申请材料",
+        "受理机构审核",
+        "按月核发补贴至申请人账户，最长不超过2年"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "衡阳市统一政策",
+    "effectiveDate": "",
+    "notes": "有效。离校1年内未就业高校毕业生灵活就业后缴纳社会保险费，补贴个人实际缴费的40%，最长不超过2年。",
+    "location": "衡阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "hengyang-shengji-boshi",
+    "city": "hengyang",
+    "name": "湖南省新入职全日制博士毕业生一次性补贴",
+    "category": "talent",
+    "amount": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "湖南省人才服务窗口 / 衡阳市人社局",
+      "materials": [
+        "申请表",
+        "身份证",
+        "博士学历学位证书",
+        "劳动合同",
+        "社保缴纳证明"
+      ],
+      "process": [
+        "申请人提交申请材料",
+        "审核认定",
+        "一次性拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://rsc.hynu.edu.cn/info/1039/7860.htm"
+    },
+    "policySource": "湘人才办发〔2024〕5号",
+    "effectiveDate": "2024-01-01",
+    "notes": "有效。省级政策，衡阳适用。符合条件的全日制博士毕业生新入职可申领1.5万元一次性补贴。",
+    "location": "衡阳·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

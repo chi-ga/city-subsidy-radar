@@ -1,0 +1,284 @@
+[
+  {
+    "id": "panjin-shiji-shenghuo",
+    "city": "panjin",
+    "name": "盘锦市高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 800,
+      "max": 3000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 800,
+        "max": 800,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 3000,
+        "max": 3000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "本人身份证原件及复印件",
+        "毕业证、学位证原件及复印件",
+        "劳动合同或营业执照原件及复印件",
+        "社保缴费证明",
+        "本人建设银行储蓄卡原件及复印件",
+        "《盘锦市引进人才补贴申请表》"
+      ],
+      "process": [
+        "申请人提交材料至县区人社部门",
+        "初审",
+        "市引才办会审",
+        "公示5个工作日",
+        "财政拨付至银行账户"
+      ],
+      "location": "市级",
+      "url": "http://rsj.panjin.gov.cn/"
+    },
+    "policySource": "盘委人才〔2024〕1号",
+    "effectiveDate": "待核实",
+    "notes": "有效。博士3000元/月、硕士1500元/月、双一流本科800元/月，补贴期限36个月。毕业5年内留盘来盘工作，本科限双一流高校。",
+    "location": "盘锦·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "panjin-shiji-goufang",
+    "city": "panjin",
+    "name": "盘锦市高校毕业生购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 45000,
+      "max": 120000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 45000,
+        "max": 45000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 80000,
+        "max": 80000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 120000,
+        "max": 120000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至购房所在县区人社局受理窗口",
+      "materials": [
+        "《盘锦市高校毕业生购房补贴申报审核表》",
+        "已网签备案的商品房买卖合同（二手房须提交产权过户手续及房照）",
+        "购买新建普通住房须提交全款购房发票",
+        "购房人身份证、毕业证、学位证",
+        "劳动关系证明或营业执照、纳税证明及社保缴费证明",
+        "购房契税证明"
+      ],
+      "process": [
+        "申请人提交至购房所在县区受理窗口",
+        "县区人社局组织联审",
+        "出具办理通知书",
+        "联审小组审核并公示",
+        "财政局国库集中支付15个工作日内发放"
+      ],
+      "location": "市级",
+      "url": "https://view.inews.qq.com/k/DYL2019011400196400"
+    },
+    "policySource": "盘委人才办〔2024〕2号",
+    "effectiveDate": "2018-10-01",
+    "notes": "有效。博士1000元/㎡最高12万、硕士800元/㎡最高8万、双一流本科500元/㎡最高4.5万，另契税全额返还。2018年10月1日后首次购房。与租房补贴不可兼得。",
+    "location": "盘锦·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "panjin-shiji-chuangye-yici",
+    "city": "panjin",
+    "name": "盘锦市一次性创业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 3000,
+      "max": 3900,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "一次性创业补贴申请表",
+        "身份证",
+        "毕业证",
+        "营业执照",
+        "创业担保贷款证明",
+        "正常经营证明"
+      ],
+      "process": [
+        "申请人向创业所在县区人社部门提交材料",
+        "审核经营情况",
+        "公示后拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "盘委人才〔2024〕1号",
+    "effectiveDate": "待核实",
+    "notes": "有效。首次在盘锦创办小微企业或个体经营且成功申领创业担保贷款的高校毕业生，给予3000元一次性补贴。新产业新业态可上浮30%。",
+    "location": "盘锦·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "panjin-shiji-chuangye-changdi",
+    "city": "panjin",
+    "name": "盘锦市创业场地补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 10000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "创业场地补贴申请表",
+        "身份证",
+        "毕业证",
+        "营业执照",
+        "租赁合同及租金支付凭证",
+        "正常运营6个月以上证明"
+      ],
+      "process": [
+        "申请人向创业所在县区人社部门提交材料",
+        "审核经营及场地情况",
+        "公示后按年拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "盘委人才〔2024〕1号",
+    "effectiveDate": "待核实",
+    "notes": "有效。租赁场地首次创办小微企业或个体经营且正常运营6个月以上，一般高校毕业生5000元/年、困难高校毕业生10000元/年，最长24个月。",
+    "location": "盘锦·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "panjin-shiji-linghuo-jiuye",
+    "city": "panjin",
+    "name": "盘锦市灵活就业高校毕业生社会保险补贴",
+    "category": "other",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "线下申报至各区人社服务中心",
+      "materials": [
+        "《盘锦市灵活就业高校毕业生社会保险补贴申报表》",
+        "毕业证、身份证原件及复印件",
+        "《就业创业证》",
+        "社会保险缴费证明"
+      ],
+      "process": [
+        "申请人向所在县区人社部门提交材料",
+        "审核灵活就业及社保缴费情况",
+        "公示后拨付补贴"
+      ],
+      "location": "市级",
+      "url": "https://rsj.panjin.gov.cn/2023_08/28_10/content-424075.html"
+    },
+    "policySource": "盘锦市统一政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。灵活就业的高校毕业生可申领社会保险补贴，最长不超过2年。",
+    "location": "盘锦·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

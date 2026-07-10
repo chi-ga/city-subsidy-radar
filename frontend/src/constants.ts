@@ -208,7 +208,13 @@ export type CityCode =
   | 'nanyang'
   | 'anshan'
   | 'jilin'
-  | 'eerduosi';
+  | 'eerduosi'
+  | 'jiaozuo'
+  | 'jining'
+  | 'hengyang'
+  | 'xinxiang'
+  | 'panjin'
+  | 'daqing';
 
 // 城市名称映射
 export const CITY_NAMES: Record<CityCode, string> = {
@@ -315,6 +321,12 @@ export const CITY_NAMES: Record<CityCode, string> = {
   anshan: '鞍山',
   jilin: '吉林市',
   eerduosi: '鄂尔多斯',
+  jiaozuo: '焦作',
+  jining: '济宁',
+  hengyang: '衡阳',
+  xinxiang: '新乡',
+  panjin: '盘锦',
+  daqing: '大庆',
 };
 
 // 补贴分类名称映射

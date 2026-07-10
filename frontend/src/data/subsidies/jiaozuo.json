@@ -1,0 +1,356 @@
+[
+  {
+    "id": "jiaozuo-shiji-shenghuo",
+    "city": "jiaozuo",
+    "name": "焦作市青年人才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "焦作市人力资源和社会保障局 / 焦作市人才交流中心，由用人单位统一组织申报",
+      "materials": [
+        "《焦作市青年人才申领生活补贴受理登记表》",
+        "《教育部学历证书电子注册备案表》",
+        "本人社会保障卡原件及复印件",
+        "劳动合同/聘用合同复印件",
+        "身份证、毕业证、学位证原件及复印件",
+        "养老保险个人账户查询单"
+      ],
+      "process": [
+        "个人向用人单位申请提交材料",
+        "用人单位初审并报县区人社部门汇总核准",
+        "人社部门综合审核",
+        "公示5个工作日",
+        "财政审批后拨付至个人社保卡"
+      ],
+      "location": "市级",
+      "url": "https://www.jzsrczx.com.cn/"
+    },
+    "policySource": "焦办〔2023〕9号",
+    "effectiveDate": "待核实",
+    "notes": "有效。博士2000元/月、硕士1500元/月、本科1000元/月，补贴期限36个月。毕业三年内来（留）焦就业创业的全日制本科及以上毕业生，不要求落户。",
+    "location": "焦作·市级",
+    "tier": 1,
+    "exclusiveGroup": "jiaozuo-shenghuo"
+  },
+  {
+    "id": "jiaozuo-shiji-luohu-shenghuo",
+    "city": "jiaozuo",
+    "name": "焦作市落户高校毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 500,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "每季度末组织审核，常态化受理",
+      "channel": "焦作市人才交流中心大厅\"一站式\"服务窗口 / \"焦我办\"APP",
+      "materials": [
+        "《\"青年人才\"落户生活补贴业务受理登记表》",
+        "户口本、学位证、社会保障卡原件及复印件",
+        "《教育部学历证书电子注册备案表》",
+        "劳动合同/聘用合同/入编手续复印件"
+      ],
+      "process": [
+        "个人申请提交材料",
+        "用人单位初审并报人社局（人才交流中心\"一站式\"窗口）",
+        "每季度末组织审核，报市人才工作领导小组审议",
+        "官网公示7个工作日",
+        "市财政拨付至个人"
+      ],
+      "location": "市级",
+      "url": "https://www.jzsrczx.com.cn/rcnews/detail/148197.html"
+    },
+    "policySource": "焦发〔2018〕11号",
+    "effectiveDate": "2018-01-01",
+    "notes": "有效。博士1500元/月、硕士1000元/月、本科500元/月，补贴期限36个月。2018年1月1日后毕业并落户焦作的全日制本科及以上毕业生。与焦办〔2023〕9号不重复享受。",
+    "location": "焦作·市级",
+    "tier": 1,
+    "exclusiveGroup": "jiaozuo-shenghuo"
+  },
+  {
+    "id": "jiaozuo-shiji-goufang",
+    "city": "jiaozuo",
+    "name": "焦作青年人才首次购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 20000,
+      "max": 200000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 200000,
+        "max": 200000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": true,
+      "employmentRequired": true,
+      "householdRequired": true,
+      "requiresFullTime": true,
+      "schoolLevel": ["双一流", "QS前500", "THE前500"]
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "焦作房信网 / 市人才交流中心\"一站式\"服务窗口",
+      "materials": [
+        "《首次购房补贴申请表》（焦作房信网下载）",
+        "身份证、户口本、婚姻证明",
+        "学历学位证书及学信网备案表",
+        "劳动合同、社保缴费证明",
+        "购房合同、不动产权证书",
+        "用人单位营业执照"
+      ],
+      "process": [
+        "申请人下载并填写首次购房补贴申请表（焦作房信网）",
+        "准备申报资料",
+        "到市人才交流中心\"一站式\"服务窗口提交审核",
+        "人社部门审核人才资格",
+        "公示后拨付至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://m.jiwu.com/jiaozuo/news/3308335.html"
+    },
+    "policySource": "焦人社〔2019〕2号",
+    "effectiveDate": "2019-01-01",
+    "notes": "有效。博士20万元、硕士5万元、本科（限双一流/世界500强高校）2万元，一次性发放。夫妻双方均符合条件的只能享受一次。",
+    "location": "焦作·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jiaozuo-shiji-chuangye-kaiye",
+    "city": "jiaozuo",
+    "name": "焦作市创业开业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "河南政务服务网 / 焦作市人社局",
+      "materials": [
+        "《开业补贴申请表》",
+        "创业者身份证",
+        "符合身份证明材料",
+        "营业执照",
+        "工资支付凭证",
+        "社会保障卡银行账户",
+        "正常经营证明材料（连续6个月经营流水5000元以上）",
+        "实地核查照片"
+      ],
+      "process": [
+        "申请人线上或线下提交申请材料",
+        "人社部门审核并实地核查",
+        "公示后拨付至个人账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "豫人社规〔2018〕5号",
+    "effectiveDate": "待核实",
+    "notes": "有效。离校2年内高校毕业生首次创办小微企业或个体工商户且正常运营满1年，给予5000元一次性创业开业补贴。",
+    "location": "焦作·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jiaozuo-shiji-qiuzhi",
+    "city": "jiaozuo",
+    "name": "焦作市求职创业补贴",
+    "category": "other",
+    "amount": {
+      "min": 2000,
+      "max": 2000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业学年内集中申报",
+      "channel": "河南省统一政策 / 各高校就业指导中心",
+      "materials": [
+        "《求职创业补贴申请表》",
+        "身份证",
+        "毕业证或学籍证明",
+        "困难家庭证明材料",
+        "本人银行账户"
+      ],
+      "process": [
+        "申请人向所在高校或公共就业服务机构提交材料",
+        "审核困难毕业生身份",
+        "公示",
+        "一次性拨付至个人银行账户"
+      ],
+      "location": "市级",
+      "url": "https://www.henan.gov.cn/2024/10-31/3080745.html"
+    },
+    "policySource": "河南省统一政策",
+    "effectiveDate": "待核实",
+    "notes": "有效。困难毕业生（低保、残疾、脱贫家庭等）毕业学年内可申领2000元一次性求职创业补贴。",
+    "location": "焦作·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "jiaozuo-shiji-linghuo-jiuye",
+    "city": "jiaozuo",
+    "name": "焦作市高校毕业生灵活就业社保补贴",
+    "category": "other",
+    "amount": {
+      "min": 500,
+      "max": 500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 24
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "焦作市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "《灵活就业社保补贴申请表》",
+        "身份证",
+        "毕业证",
+        "社保缴费证明",
+        "灵活就业证明"
+      ],
+      "process": [
+        "申请人向公共就业服务机构提交材料",
+        "审核灵活就业及社保缴纳情况",
+        "按月拨付至个人账户"
+      ],
+      "location": "市级",
+      "url": "https://m.henan.gov.cn/2021/10-15/2327605.html"
+    },
+    "policySource": "焦发〔2018〕11号",
+    "effectiveDate": "待核实",
+    "notes": "有效。毕业两年内灵活就业并缴纳社保的高校毕业生，给予每人每月500元社保补贴，最长不超过2年。",
+    "location": "焦作·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

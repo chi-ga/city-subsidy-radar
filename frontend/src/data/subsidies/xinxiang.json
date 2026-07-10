@@ -1,0 +1,307 @@
+[
+  {
+    "id": "xinxiang-shiji-shenghuo",
+    "city": "xinxiang",
+    "name": "新乡市青年英才生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 1000,
+      "max": 2000,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "硕士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      },
+      "博士": {
+        "min": 2000,
+        "max": 2000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 36
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "「牧野人才」微信公众号；「新乡市人才交流中心」微信公众号，由企业按注册地集中申报",
+      "materials": [
+        "《新乡市青年英才生活补贴申请表》",
+        "身份证",
+        "毕业证、学位证及学信网备案表",
+        "劳动合同",
+        "社保缴费证明"
+      ],
+      "process": [
+        "申请人向所在企业提交申请材料",
+        "企业核实汇总",
+        "按企业注册地向人社局集中申报",
+        "审核",
+        "公示7个工作日",
+        "按月核发至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://hrss.xinxiang.gov.cn/"
+    },
+    "policySource": "新人才〔2021〕4号",
+    "effectiveDate": "2021-01-01",
+    "notes": "有效。博士2000元/月、硕士1500元/月、本科1000元/月，补贴期限36个月。应届全日制本科及以上毕业生到新乡企业就业，本科限双一流或联盟高校。35周岁以下。",
+    "location": "新乡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xinxiang-shiji-goufang",
+    "city": "xinxiang",
+    "name": "新乡市青年英才购房补贴",
+    "category": "buy",
+    "amount": {
+      "min": 30000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "硕士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性",
+        "durationMonths": 0
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 35,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "「牧野人才」微信公众号；「新乡市人才交流中心」微信公众号，由企业按注册地集中申报",
+      "materials": [
+        "《新乡市青年英才购房补贴申请表》",
+        "身份证",
+        "毕业证、学位证",
+        "劳动合同",
+        "社保缴费证明",
+        "购房合同及不动产权证书"
+      ],
+      "process": [
+        "申请人向所在企业提交申请材料",
+        "企业核实汇总",
+        "按企业注册地向人社局集中申报",
+        "审核",
+        "公示7个工作日",
+        "一次性拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": "https://hrss.xinxiang.gov.cn/"
+    },
+    "policySource": "新人才〔2021〕4号",
+    "effectiveDate": "2021-01-01",
+    "notes": "有效。博士10万元、硕士5万元、本科3万元，一次性发放。青年英才本人或配偶在工作单位所在县区购买首套商品住房。35周岁以下。",
+    "location": "新乡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xinxiang-shiji-zufang",
+    "city": "xinxiang",
+    "name": "新乡市应届毕业生租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 500,
+      "max": 1500,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 12
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 500,
+        "max": 500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      },
+      "硕士": {
+        "min": 1000,
+        "max": 1000,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      },
+      "博士": {
+        "min": 1500,
+        "max": 1500,
+        "unit": "元",
+        "period": "每月",
+        "durationMonths": 12
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "新乡市人力资源和社会保障局",
+      "materials": [
+        "申请表",
+        "身份证",
+        "毕业证学位证",
+        "劳动合同",
+        "社保缴费证明"
+      ],
+      "process": [
+        "申请人提交申请材料",
+        "审核资格",
+        "公示",
+        "按月核发至申请人账户，最长12个月"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "《新乡市引进人才留新创新创业若干政策》",
+    "effectiveDate": "",
+    "notes": "有效。博士1500元/月、硕士1000元/月、本科500元/月，补贴期限12个月。须在4+2战略新兴产业就业创业。与生活补贴就高不重复享受。",
+    "location": "新乡·市级",
+    "tier": 2,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xinxiang-shiji-chuangye-kaiye",
+    "city": "xinxiang",
+    "name": "新乡市创业开业补贴",
+    "category": "startup",
+    "amount": {
+      "min": 5000,
+      "max": 5000,
+      "unit": "元",
+      "period": "一次性",
+      "durationMonths": 0
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "新乡市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "开业补贴申请表",
+        "身份证",
+        "毕业证",
+        "营业执照",
+        "经营场地证明",
+        "正常经营1年以上证明"
+      ],
+      "process": [
+        "申请人向人社部门提交申请材料",
+        "审核",
+        "一次性拨付至申请人账户"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "《新乡市引进人才留新创新创业若干政策》",
+    "effectiveDate": "",
+    "notes": "有效。毕业5年内高校毕业生及在校生留新首次创办企业或个体经营，正常营业1年以上，给予5000元一次性创业开业补贴。",
+    "location": "新乡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  },
+  {
+    "id": "xinxiang-shiji-linghuo-jiuye",
+    "city": "xinxiang",
+    "name": "新乡市灵活就业社保补贴",
+    "category": "other",
+    "amount": {
+      "min": 0,
+      "max": 0,
+      "unit": "元",
+      "period": "每月",
+      "durationMonths": 36
+    },
+    "tieredAmount": {},
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "ageLimit": 0,
+      "ageLimitExclusive": false,
+      "employmentRequired": false,
+      "householdRequired": false,
+      "requiresFullTime": false
+    },
+    "application": {
+      "deadline": "常态化受理",
+      "channel": "新乡市人力资源和社会保障局 / 各区公共就业服务机构",
+      "materials": [
+        "申请表",
+        "身份证",
+        "毕业证",
+        "社保缴费证明",
+        "灵活就业证明"
+      ],
+      "process": [
+        "申请人提交申请材料",
+        "审核",
+        "按月核发补贴至申请人账户，最长不超过3年"
+      ],
+      "location": "市级",
+      "url": ""
+    },
+    "policySource": "《新乡市引进人才留新创新创业若干政策》",
+    "effectiveDate": "",
+    "notes": "有效。离校2年内灵活就业并缴纳社保的高校毕业生，补贴个人实际缴纳社保费的三分之二，最长不超过3年。",
+    "location": "新乡·市级",
+    "tier": 1,
+    "exclusiveGroup": ""
+  }
+]

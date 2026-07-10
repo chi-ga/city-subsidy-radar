@@ -1598,6 +1598,85 @@
       },
       "locationDependentFields": [],
       "districts": {}
+    },
+    "jiaozuo": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "jining": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false,
+        "showCompanyType": true
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "hengyang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": false,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "xinxiang": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "panjin": {
+      "base": {
+        "degree": true,
+        "schoolLevel": true,
+        "ageLimit": false,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
+    },
+    "daqing": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": false,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": true,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {}
     }
   }
 }
