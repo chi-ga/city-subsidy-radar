@@ -501,6 +501,16 @@ describe('金额计算测试', () => {
     expect(result.total).toBe(10000)
   })
 
+  it('按年补贴有durationMonths时计算总额', () => {
+    const result = calculateTotalAmount({ min: 0, max: 10000, unit: '元', period: '每年', durationMonths: 36 })
+    expect(result.total).toBe(30000)
+  })
+
+  it('分期补贴：amount.max即为总额', () => {
+    const result = calculateTotalAmount({ min: 0, max: 120000, unit: '元', period: '分期', durationMonths: 60 })
+    expect(result.total).toBe(120000)
+  })
+
   it('tieredAmount 按学历分档', () => {
     const base = { min: 0, max: 10000, unit: '元' as const, period: '一次性' }
     const tiered = {

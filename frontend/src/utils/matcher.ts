@@ -70,7 +70,24 @@ export function calculateTotalAmount(
       breakdown: `${v}${unitLabel}/半年 × 2 = ${(yuan * 2).toLocaleString()}元`,
     };
   }
+  if (/分期|分次/.test(period)) {
+    // "分期"表示amount.max即为总额，按durationMonths分期发放
+    const months = effectiveAmount.durationMonths || amount.durationMonths || 0;
+    const yearLabel = months > 0 ? `，分${Math.round(months / 12 * 10) / 10}年发放` : '';
+    return {
+      total: yuan,
+      breakdown: `${v}${unitLabel}（分期发放${yearLabel}）`,
+    };
+  }
   if (/年|每年|年度|年发|连续.*年/.test(period)) {
+    const months = effectiveAmount.durationMonths || amount.durationMonths || 0;
+    if (months > 0) {
+      const years = months / 12;
+      return {
+        total: yuan * years,
+        breakdown: `${v}${unitLabel}/年 × ${years}年 = ${(yuan * years).toLocaleString()}元`,
+      };
+    }
     return {
       total: yuan,
       breakdown: `${v}${unitLabel}/年`,

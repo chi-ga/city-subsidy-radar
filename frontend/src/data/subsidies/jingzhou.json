@@ -5,44 +5,44 @@
     "name": "荆州市大中专毕业生生活补贴",
     "category": "living",
     "amount": {
-      "min": 10800,
-      "max": 18000,
+      "min": 3600,
+      "max": 6000,
       "unit": "元",
-      "period": "分期",
+      "period": "每年",
       "durationMonths": 36
     },
     "tieredAmount": {
       "中专": {
-        "min": 10800,
-        "max": 10800,
+        "min": 3600,
+        "max": 3600,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "专科": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "本科": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "硕士": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "博士": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
@@ -85,44 +85,44 @@
     "name": "荆州市大中专毕业生租房补贴",
     "category": "rent",
     "amount": {
-      "min": 10800,
-      "max": 18000,
+      "min": 3600,
+      "max": 6000,
       "unit": "元",
-      "period": "分期",
+      "period": "每年",
       "durationMonths": 36
     },
     "tieredAmount": {
       "中专": {
-        "min": 10800,
-        "max": 10800,
+        "min": 3600,
+        "max": 3600,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "专科": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "本科": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "硕士": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36
       },
       "博士": {
-        "min": 18000,
-        "max": 18000,
+        "min": 6000,
+        "max": 6000,
         "unit": "元",
         "period": "每年",
         "durationMonths": 36

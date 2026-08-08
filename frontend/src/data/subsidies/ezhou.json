@@ -5,37 +5,37 @@
     "name": "鄂州市\"人才强企工程\"租房和生活补贴",
     "category": "living",
     "amount": {
-      "min": 25200,
-      "max": 144000,
+      "min": 700,
+      "max": 4000,
       "unit": "元",
       "period": "每月",
       "durationMonths": 36
     },
     "tieredAmount": {
       "专科": {
-        "min": 25200,
-        "max": 25200,
+        "min": 700,
+        "max": 700,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "本科": {
-        "min": 32400,
-        "max": 32400,
+        "min": 900,
+        "max": 900,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "硕士": {
-        "min": 54000,
-        "max": 54000,
+        "min": 1500,
+        "max": 1500,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "博士": {
-        "min": 144000,
-        "max": 144000,
+        "min": 4000,
+        "max": 4000,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36

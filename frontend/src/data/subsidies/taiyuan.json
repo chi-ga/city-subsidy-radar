@@ -288,8 +288,8 @@
     "name": "本土人才能力素质提升补助",
     "category": "talent",
     "amount": {
-      "min": 15000,
-      "max": 30000,
+      "min": 30000,
+      "max": 60000,
       "unit": "元",
       "period": "分期",
       "durationMonths": 24
@@ -303,27 +303,27 @@
       "criterionSets": [
         {
           "id": "boshi",
-          "name": "取得博士研究生学历学位每年3万元，发放2年",
+          "name": "取得博士研究生学历学位每年3万元，发放2年（总额6万元）",
           "degree": ["博士"],
-          "amount": { "min": 30000, "max": 30000, "unit": "元", "period": "分期", "durationMonths": 24 }
+          "amount": { "min": 60000, "max": 60000, "unit": "元", "period": "分期", "durationMonths": 24 }
         },
         {
           "id": "shuoshi",
-          "name": "取得硕士研究生学历学位每年2万元，发放2年",
+          "name": "取得硕士研究生学历学位每年2万元，发放2年（总额4万元）",
           "degree": ["硕士"],
-          "amount": { "min": 20000, "max": 20000, "unit": "元", "period": "分期", "durationMonths": 24 }
+          "amount": { "min": 40000, "max": 40000, "unit": "元", "period": "分期", "durationMonths": 24 }
         },
         {
           "id": "gaojijishi",
-          "name": "取得一级（高级技师）职业资格证书每年2万元，发放2年",
+          "name": "取得一级（高级技师）职业资格证书每年2万元，发放2年（总额4万元）",
           "degree": [],
-          "amount": { "min": 20000, "max": 20000, "unit": "元", "period": "分期", "durationMonths": 24 }
+          "amount": { "min": 40000, "max": 40000, "unit": "元", "period": "分期", "durationMonths": 24 }
         },
         {
           "id": "jishi",
-          "name": "取得二级（技师）职业资格证书每年1.5万元，发放2年",
+          "name": "取得二级（技师）职业资格证书每年1.5万元，发放2年（总额3万元）",
           "degree": [],
-          "amount": { "min": 15000, "max": 15000, "unit": "元", "period": "分期", "durationMonths": 24 }
+          "amount": { "min": 30000, "max": 30000, "unit": "元", "period": "分期", "durationMonths": 24 }
         }
       ]
     },

@@ -13,22 +13,22 @@
     },
     "tieredAmount": {
       "专科": {
-        "min": 18000,
-        "max": 18000,
+        "min": 500,
+        "max": 500,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "本科": {
-        "min": 18000,
-        "max": 18000,
+        "min": 500,
+        "max": 500,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36
       },
       "硕士": {
-        "min": 36000,
-        "max": 36000,
+        "min": 1000,
+        "max": 1000,
         "unit": "元",
         "period": "每月",
         "durationMonths": 36

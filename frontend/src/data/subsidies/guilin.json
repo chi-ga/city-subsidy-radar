@@ -5,8 +5,8 @@
     "name": "留桂兴业奖",
     "category": "living",
     "amount": {
-      "min": 15600,
-      "max": 15600,
+      "min": 1300,
+      "max": 1300,
       "unit": "元",
       "period": "每月",
       "durationMonths": 12

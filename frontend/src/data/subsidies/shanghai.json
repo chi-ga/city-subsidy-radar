@@ -455,7 +455,7 @@
     "category": "rent",
     "amount": {
       "min": 0,
-      "max": 45000,
+      "max": 3750,
       "unit": "元",
       "period": "每月",
       "durationMonths": 12
