@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useConfigStore } from '../../stores';
+import { useConfigStore, useHistoryStore } from '../../stores';
 import { clearFormCache } from '../../utils/formCache';
 import { PageHeader } from '../../components/PageHeader';
+import { HistoryIcon, ArrowPathIcon } from '../../components/icons';
 
 interface Provider {
   id: string;
@@ -62,6 +63,7 @@ const PRESET_MODELS: Record<string, string[]> = {
 export default function Settings() {
   const navigate = useNavigate();
   const { apiConfig, setApiConfig, clearApiConfig, isConfigured } = useConfigStore();
+  const { records, clearHistory, exportHistory } = useHistoryStore();
 
   const initialProviderId = useMemo(() => {
     if (!apiConfig) return 'openai';
@@ -77,6 +79,7 @@ export default function Settings() {
     model: apiConfig?.model || PROVIDERS[0].defaultModel,
   });
   const [saved, setSaved] = useState(false);
+  const [showClearHistoryConfirm, setShowClearHistoryConfirm] = useState(false);
 
   const currentProvider = PROVIDERS.find((p) => p.id === providerId) || PROVIDERS[0];
   const models = PRESET_MODELS[providerId] || PRESET_MODELS.custom;
@@ -248,9 +251,77 @@ export default function Settings() {
             )}
           </div>
 
+          {/* 查询历史管理 */}
+          <div className="border-t border-slate-200 pt-5">
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-civic-blue/10 text-civic-blue">
+                <HistoryIcon className="h-4 w-4" />
+              </div>
+              <div>
+                <h2 className="text-sm font-semibold text-ink">查询历史管理</h2>
+                <p className="text-xs text-slate-500">
+                  已保存 <span className="font-data font-semibold text-ink">{records.length}</span> 条查询记录（最多 20 条）
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-4 flex items-center gap-3">
+              <button
+                onClick={() => exportHistory()}
+                disabled={records.length === 0}
+                className="flex-1 rounded-lg border border-slate-200 bg-white py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50 focus-ring"
+              >
+                <span className="inline-flex items-center gap-1.5">
+                  <ArrowPathIcon className="h-4 w-4" />
+                  导出为 JSON
+                </span>
+              </button>
+              <button
+                onClick={() => setShowClearHistoryConfirm(true)}
+                disabled={records.length === 0}
+                className="flex-1 rounded-lg border border-seal-red/20 bg-white py-2.5 text-sm font-semibold text-seal-red transition-colors hover:bg-seal-red/5 disabled:cursor-not-allowed disabled:opacity-50 focus-ring"
+              >
+                清除查询历史
+              </button>
+            </div>
+          </div>
+
           <p className="text-center text-xs text-slate-400">API Key 仅保存在浏览器本地，不会上传服务器</p>
         </div>
       </main>
+
+      {/* 清除历史确认弹窗 */}
+      {showClearHistoryConfirm && (
+        <>
+          <div
+            className="fixed inset-0 z-[100] bg-slate-900/40 backdrop-blur-sm"
+            onClick={() => setShowClearHistoryConfirm(false)}
+          />
+          <div className="fixed left-1/2 top-1/2 z-[101] w-[min(90vw,400px)] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl">
+            <h3 className="text-base font-bold text-ink">确认清除查询历史？</h3>
+            <p className="mt-2 text-sm text-slate-500">
+              所有 {records.length} 条查询记录将被永久删除，无法恢复。建议先导出备份。
+            </p>
+            <div className="mt-5 flex items-center justify-end gap-3">
+              <button
+                onClick={() => setShowClearHistoryConfirm(false)}
+                className="rounded-xl border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-paper"
+              >
+                取消
+              </button>
+              <button
+                onClick={() => {
+                  clearHistory();
+                  setShowClearHistoryConfirm(false);
+                }}
+                className="rounded-xl bg-red-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+              >
+                确认清除
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

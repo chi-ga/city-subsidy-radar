@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { useResultStore } from '../../stores';
+import { useResultStore, useUserStore, useHistoryStore, extractSnapshot, summarizeCompareResult, buildCompareRanking } from '../../stores';
 import { CITY_NAMES, CATEGORY_NAMES } from '../../constants';
 import { clearFormCache } from '../../utils/formCache';
 import { groupExclusiveItems, filterMatchResultByCategories } from '../../utils/matcher';
@@ -44,6 +44,29 @@ export default function Compare() {
   const [searchParams, setSearchParams] = useSearchParams();
   const cityFromUrl = searchParams.get('city') as CityCode | null;
   const { compareResults, compareExcludedCategories } = useResultStore();
+  const { profile } = useUserStore();
+  const { addRecord } = useHistoryStore();
+
+  // 防止同一对比结果重复写入历史
+  const recordedCompareRef = useRef<typeof compareResults>(null);
+
+  // 监听 compareResults 变化写入查询历史（queryType=compare）
+  useEffect(() => {
+    if (!compareResults || !profile) return;
+    if (recordedCompareRef.current === compareResults) return;
+    recordedCompareRef.current = compareResults;
+
+    const snapshot = extractSnapshot(profile);
+    const summary = summarizeCompareResult(compareResults);
+    const ranking = buildCompareRanking(compareResults);
+    addRecord({
+      queryType: 'compare',
+      profileSnapshot: snapshot,
+      resultSummary: summary,
+      compareRanking: ranking,
+    });
+  }, [compareResults, profile, addRecord]);
+
   const [activeCity, setActiveCity] = useState<string>('');
   const scrollRef = useRef<HTMLDivElement>(null);
   const detailRef = useRef<HTMLDivElement>(null);

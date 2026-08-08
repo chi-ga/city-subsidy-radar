@@ -167,6 +167,24 @@ export function ClockIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function HistoryIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Icon {...props}>
+      <path d="M12 8v4l3 3" />
+      <path d="M3.055 11H5m14 0h1.945M12 3.055V5m0 14v1.945" />
+      <path d="M20.485 12A8.485 8.485 0 1 1 12 3.515" />
+    </Icon>
+  );
+}
+
+export function ArrowPathIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <Icon {...props}>
+      <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+    </Icon>
+  );
+}
+
 export function DocumentTextIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <Icon {...props}>

@@ -11,6 +11,7 @@ const Result = lazy(() => import('./pages/Result'));
 const Compare = lazy(() => import('./pages/Compare'));
 const Policies = lazy(() => import('./pages/Policies'));
 const Favorites = lazy(() => import('./pages/Favorites'));
+const History = lazy(() => import('./pages/History'));
 const Settings = lazy(() => import('./pages/Settings'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
@@ -28,6 +29,7 @@ function AppContent() {
         <Route path="/compare" element={<Compare />} />
         <Route path="/policies" element={<Policies />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/history" element={<History />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

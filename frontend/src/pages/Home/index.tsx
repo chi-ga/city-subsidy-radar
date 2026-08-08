@@ -3,11 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { ChinaMap } from '../../components/Map';
 import { GitHubPromo } from '../../components/GitHubPromo';
 import { FavoritesButton } from '../../components/FavoritesButton';
+import { HistoryButton, getLastQueryPreview } from '../../components/HistoryButton';
+import { useHistoryStore } from '../../stores';
 import { CITY_NAMES } from '../../constants';
-import { MagnifyingGlassIcon, ScaleIcon, DocumentTextIcon, ChevronRightIcon } from '../../components/icons';
+import { MagnifyingGlassIcon, ScaleIcon, DocumentTextIcon, ChevronRightIcon, ClockIcon } from '../../components/icons';
 
 export default function Home() {
   const navigate = useNavigate();
+  const { records } = useHistoryStore();
+  const lastRecord = records[0];
+  const lastPreview = getLastQueryPreview(lastRecord);
 
   const handlePathA = () => {
     navigate('/input?mode=single');
@@ -40,7 +45,10 @@ export default function Home() {
             />
             <span className="text-lg font-bold tracking-tight text-ink">城市补贴雷达</span>
           </div>
-          <FavoritesButton />
+          <div className="flex items-center gap-1">
+            <HistoryButton />
+            <FavoritesButton />
+          </div>
         </div>
       </header>
 
@@ -83,7 +91,32 @@ export default function Home() {
                   城市补贴
                 </div>
               </div>
-            </div>
+          </div>
+
+            {/* 最近查询预览 */}
+            {lastPreview && lastRecord && (
+              <button
+                onClick={() => navigate('/history')}
+                className="mt-5 flex w-full items-center gap-3 rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-left shadow-sm backdrop-blur-sm transition-all hover:border-civic-blue/30 hover:shadow-md"
+              >
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-civic-blue/10 text-civic-blue">
+                  <ClockIcon className="h-4 w-4" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-medium text-slate-400">最近查询</p>
+                  <p className="truncate text-sm font-semibold text-ink">{lastPreview}</p>
+                </div>
+                <div className="shrink-0 text-right">
+                  <p className="font-data text-sm font-bold text-civic-blue">
+                    {lastRecord.resultSummary.matchedCount} 项
+                  </p>
+                  <p className="text-xs text-slate-400">
+                    {lastRecord.resultSummary.totalAmount.toLocaleString()}元
+                  </p>
+                </div>
+                <ChevronRightIcon className="h-4 w-4 shrink-0 text-slate-300" />
+              </button>
+            )}
 
             {/* Path entries */}
             <div className="mt-8 flex shrink-0 flex-col justify-center space-y-3.5 lg:mt-5 lg:space-y-3">

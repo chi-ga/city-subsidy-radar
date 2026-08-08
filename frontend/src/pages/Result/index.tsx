@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useResultStore, useUserStore } from '../../stores';
+import { useResultStore, useUserStore, useHistoryStore, extractSnapshot, summarizeSingleResult } from '../../stores';
 import { useAIInterpret, useSubsidyMatch } from '../../hooks';
 import { useConfigStore } from '../../stores';
 import { clearFormCache } from '../../utils/formCache';
@@ -21,7 +21,7 @@ import {
 import { AnimatedNumber } from '../../components/AnimatedNumber';
 import { RadarSpinner } from '../../components/RadarSpinner';
 import { createPortal } from 'react-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { UserProfile } from '../../types';
 
 export default function Result() {
@@ -31,6 +31,26 @@ export default function Result() {
   const { apiConfig } = useConfigStore();
   const { interpret, isLoading: aiLoading, error: aiError } = useAIInterpret();
   const { getProfessionalChannels } = useSubsidyMatch();
+  const { addRecord } = useHistoryStore();
+
+  // 防止同一结果重复写入历史
+  const recordedResultRef = useRef<typeof result>(null);
+
+  // 监听 result 变化写入查询历史（queryType=single）
+  useEffect(() => {
+    if (!result || !profile) return;
+    // 用对象引用去重：只有新 result 对象才写入
+    if (recordedResultRef.current === result) return;
+    recordedResultRef.current = result;
+
+    const snapshot = extractSnapshot(profile);
+    const summary = summarizeSingleResult(result);
+    addRecord({
+      queryType: 'single',
+      profileSnapshot: snapshot,
+      resultSummary: summary,
+    });
+  }, [result, profile, addRecord]);
 
   // tier 3 专业通道政策：不参与自动金额汇总，仅展示入口
   const professionalChannels = profile?.city

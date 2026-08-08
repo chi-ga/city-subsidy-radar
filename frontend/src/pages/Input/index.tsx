@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { RadarSpinner } from '../../components/RadarSpinner';
-import { useResultStore, useUserStore } from '../../stores';
+import { useResultStore, useUserStore, useHistoryStore } from '../../stores';
 import { useSchoolSearch, useSubsidyMatch, useMajorSearch } from '../../hooks';
 import { getEffectiveConditions, checkShenzhenKeyIndustryMajor } from '../../data';
 import { getCachedFlatMajors } from '../../data/lazyMajors';
 import { isDoubleFirstClassDiscipline, loadDoubleFirstClassDisciplines, loadTopStudentPlanBases, schoolHasTopStudentPlan, getBasesForSchool, isOverseasSchool } from '../../data/lazyTalent';
 import { deduplicateLevels } from '../../constants';
 import { loadFormCache, saveFormCache, clearFormCache } from '../../utils/formCache';
+import { HistoryIcon } from '../../components/icons';
+import { getLastQueryPreview } from '../../components/HistoryButton';
 import type { CityCode, SchoolLevel } from '../../constants';
 import type { UserProfile } from '../../types';
 import type { TopStudentPlanBase } from '../../data/lazyTalent';
@@ -33,6 +35,7 @@ export default function Input() {
 
   const { setLoading, setResult, setCompareResults, setError, error: matchError, isLoading } = useResultStore();
   const { setProfile, resetProfile } = useUserStore();
+  const { records: historyRecords } = useHistoryStore();
   const { clear } = useSchoolSearch();
   const { clear: clearMajors } = useMajorSearch();
 
@@ -373,6 +376,67 @@ export default function Input() {
               : '输入你的信息，智能匹配可申领的补贴'}
           </p>
         </div>
+
+        {/* 上次查询恢复提示条 */}
+        {(() => {
+          const lastRecord = historyRecords[0];
+          if (!lastRecord) return null;
+          const preview = getLastQueryPreview(lastRecord);
+          if (!preview) return null;
+          // 如果当前表单已与上次查询一致，不显示
+          const { profileSnapshot: s } = lastRecord;
+          if (s.school && formData.school === s.school && s.degree === formData.degree) return null;
+
+          const handleRestore = () => {
+            setFormData((prev) => ({
+              ...prev,
+              city: s.city ?? prev.city,
+              school: s.school || prev.school,
+              degree: s.degree || prev.degree,
+              major: s.major || prev.major,
+              age: s.age ?? prev.age,
+              graduationYear: s.graduationYear ?? prev.graduationYear,
+              householdStatus: s.householdStatus ?? prev.householdStatus,
+              employmentStatus: s.employmentStatus ?? prev.employmentStatus,
+              district: s.district ?? prev.district,
+            }));
+            setProfile({
+              city: s.city,
+              school: s.school,
+              degree: s.degree,
+              major: s.major,
+              age: s.age,
+              graduationYear: s.graduationYear,
+              householdStatus: s.householdStatus,
+              employmentStatus: s.employmentStatus,
+              district: s.district,
+            });
+            saveFormCache({
+              city: s.city,
+              school: s.school,
+              degree: s.degree,
+              major: s.major,
+              age: s.age,
+              graduationYear: s.graduationYear,
+              householdStatus: s.householdStatus,
+              employmentStatus: s.employmentStatus,
+              district: s.district,
+            });
+          };
+
+          return (
+            <button
+              onClick={handleRestore}
+              className="mt-4 flex w-full items-center gap-2.5 rounded-xl border border-civic-blue/15 bg-civic-blue/5 px-4 py-2.5 text-left transition-all hover:border-civic-blue/30 hover:bg-civic-blue/10"
+            >
+              <HistoryIcon className="h-4 w-4 shrink-0 text-civic-blue" />
+              <span className="flex-1 text-sm text-slate-600">
+                上次查询：<span className="font-semibold text-ink">{preview}</span>
+              </span>
+              <span className="shrink-0 text-xs font-bold text-civic-blue">点击恢复 →</span>
+            </button>
+          );
+        })()}
 
         <div className="mt-8 space-y-6 sm:mt-10 sm:space-y-8">
           {/* 城市选择 */}
