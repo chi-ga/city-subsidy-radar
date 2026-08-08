@@ -578,7 +578,7 @@ export default function Input() {
                 {isLoading ? (
                   <span className="inline-flex items-center gap-2">
                     <RadarSpinner />
-                    {mode === 'compare' ? '正在核对 64 城政策…' : '正在匹配政策…'}
+                    {mode === 'compare' ? '正在核对多城政策…' : '正在匹配政策…'}
                   </span>
                 ) : (
                   mode === 'compare' ? '开始对比' : '开始匹配'
