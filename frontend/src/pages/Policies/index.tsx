@@ -15,7 +15,11 @@ export default function Policies() {
   const from = searchParams.get('from') || '';
   const backLabel = from === 'compare' ? '返回对比' : '返回首页';
   const initialCity = searchParams.get('city') as CityCode | null;
-  const allSubsidies = useMemo(() => getAllSubsidies(), []);
+  const [allSubsidies, setAllSubsidies] = useState<Subsidy[]>([]);
+
+  useEffect(() => {
+    getAllSubsidies().then(setAllSubsidies);
+  }, []);
   const [city, setCity] = useState<CityCode | ''>(initialCity && CITY_NAMES[initialCity] ? initialCity : '');
   const [district, setDistrict] = useState<string>('');
   const [categoryFilter, setCategoryFilter] = useState<string>('');
@@ -36,7 +40,15 @@ export default function Policies() {
     setSearchParams(params);
   }, [city, from]);
 
-  const districts = useMemo(() => (city ? getLocationsForCity(city) : []), [city]);
+  const [districts, setDistricts] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (!city) {
+      setDistricts([]);
+      return;
+    }
+    getLocationsForCity(city).then(setDistricts);
+  }, [city]);
 
   // 唯一的展示标签列表（去重）
   const uniqueCategoryLabels = useMemo(() => {

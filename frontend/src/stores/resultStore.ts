@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import type { MatchResult } from '../types';
 import type { SubsidyCategory } from '../constants';
 
@@ -19,42 +20,56 @@ interface ResultState {
   reset: () => void;
 }
 
-const createToggle = (key: 'compareExcludedCategories' | 'excludedCategories') =>
-  (category: SubsidyCategory, get: () => ResultState, set: (state: Partial<ResultState>) => void) => {
-    const current = get()[key];
-    const next = current.includes(category)
-      ? current.filter((c) => c !== category)
-      : [...current, category];
-    set({ [key]: next } as Partial<ResultState>);
-  };
-
-const toggleCompareExcludedCategoryImpl = createToggle('compareExcludedCategories');
-const toggleExcludedCategoryImpl = createToggle('excludedCategories');
-
-export const useResultStore = create<ResultState>((set, get) => ({
-  result: null,
-  compareResults: null,
-  compareExcludedCategories: [],
-  excludedCategories: [],
-  isLoading: false,
-  error: null,
-  setResult: (result) => set({ result, isLoading: false, error: null }),
-  setCompareResults: (compareResults) => set({ compareResults, isLoading: false, error: null }),
-  setLoading: (isLoading) => set({ isLoading }),
-  setError: (error) => set({ error, isLoading: false }),
-  toggleCompareExcludedCategory: (category) => toggleCompareExcludedCategoryImpl(category, get, set),
-  toggleExcludedCategory: (category) => toggleExcludedCategoryImpl(category, get, set),
-  toggleTodo: (todoId: string) => {
-    const { result } = get();
-    if (!result) return;
-    set({
-      result: {
-        ...result,
-        todoList: result.todoList.map((t) =>
-          t.id === todoId ? { ...t, completed: !t.completed } : t
-        ),
+export const useResultStore = create<ResultState>()(
+  persist(
+    (set, get) => ({
+      result: null,
+      compareResults: null,
+      compareExcludedCategories: [],
+      excludedCategories: [],
+      isLoading: false,
+      error: null,
+      setResult: (result) => set({ result, isLoading: false, error: null }),
+      setCompareResults: (compareResults) => set({ compareResults, isLoading: false, error: null }),
+      setLoading: (isLoading) => set({ isLoading }),
+      setError: (error) => set({ error, isLoading: false }),
+      toggleCompareExcludedCategory: (category) => {
+        const current = get().compareExcludedCategories;
+        const next = current.includes(category)
+          ? current.filter((c) => c !== category)
+          : [...current, category];
+        set({ compareExcludedCategories: next });
       },
-    });
-  },
-  reset: () => set({ result: null, compareResults: null, compareExcludedCategories: [], isLoading: false, error: null }),
-}));
+      toggleExcludedCategory: (category) => {
+        const current = get().excludedCategories;
+        const next = current.includes(category)
+          ? current.filter((c) => c !== category)
+          : [...current, category];
+        set({ excludedCategories: next });
+      },
+      toggleTodo: (todoId: string) => {
+        const { result } = get();
+        if (!result) return;
+        set({
+          result: {
+            ...result,
+            todoList: result.todoList.map((t) =>
+              t.id === todoId ? { ...t, completed: !t.completed } : t
+            ),
+          },
+        });
+      },
+      reset: () => set({ result: null, compareResults: null, compareExcludedCategories: [], excludedCategories: [], isLoading: false, error: null }),
+    }),
+    {
+      name: 'subsidy-radar-result',
+      storage: createJSONStorage(() => sessionStorage),
+      partialize: (state) => ({
+        result: state.result,
+        compareResults: state.compareResults,
+        compareExcludedCategories: state.compareExcludedCategories,
+        excludedCategories: state.excludedCategories,
+      }),
+    }
+  )
+);

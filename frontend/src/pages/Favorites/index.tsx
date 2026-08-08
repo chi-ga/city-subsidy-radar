@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useFavoritesStore } from '../../stores';
 import { CITY_NAMES } from '../../constants';
@@ -7,18 +8,30 @@ import { EmptyState } from '../../components/EmptyState';
 import { PinIcon } from '../../components/icons';
 import { getSubsidiesByCity } from '../../data';
 import type { CityCode } from '../../constants';
+import type { Subsidy } from '../../types';
 
 export default function Favorites() {
   const navigate = useNavigate();
   const { favorites, clearFavorites } = useFavoritesStore();
 
   // 从收藏项还原完整 Subsidy 对象（用于 PolicyCard 渲染）
-  const favoriteSubsidies = favorites
-    .map((fav) => {
-      const cityData = getSubsidiesByCity(fav.city);
-      return cityData.find((s) => s.id === fav.id);
-    })
-    .filter(Boolean);
+  const [favoriteSubsidies, setFavoriteSubsidies] = useState<(Subsidy | undefined)[]>([]);
+
+  useEffect(() => {
+    if (favorites.length === 0) {
+      setFavoriteSubsidies([]);
+      return;
+    }
+    (async () => {
+      const results = await Promise.all(
+        favorites.map(async (fav) => {
+          const cityData = await getSubsidiesByCity(fav.city);
+          return cityData.find((s) => s.id === fav.id);
+        })
+      );
+      setFavoriteSubsidies(results);
+    })();
+  }, [favorites]);
 
   return (
     <div className="min-h-screen bg-paper">

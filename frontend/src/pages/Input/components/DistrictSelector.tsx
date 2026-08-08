@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { CITY_NAMES } from '../../../constants';
 import { getLocationsForCity } from '../../../data';
 import type { CityCode } from '../../../constants';
@@ -13,7 +14,15 @@ interface DistrictSelectorProps {
  * 根据城市动态加载区域列表
  */
 export function DistrictSelector({ city, value, onChange }: DistrictSelectorProps) {
-  const districts = city ? getLocationsForCity(city) : [];
+  const [districts, setDistricts] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (!city) {
+      setDistricts([]);
+      return;
+    }
+    getLocationsForCity(city).then(setDistricts);
+  }, [city]);
 
   return (
     <section>

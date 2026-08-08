@@ -22,7 +22,7 @@ import { AnimatedNumber } from '../../components/AnimatedNumber';
 import { RadarSpinner } from '../../components/RadarSpinner';
 import { createPortal } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
-import type { UserProfile } from '../../types';
+import type { UserProfile, Subsidy } from '../../types';
 
 export default function Result() {
   const navigate = useNavigate();
@@ -53,9 +53,14 @@ export default function Result() {
   }, [result, profile, addRecord]);
 
   // tier 3 专业通道政策：不参与自动金额汇总，仅展示入口
-  const professionalChannels = profile?.city
-    ? getProfessionalChannels(profile as UserProfile)
-    : [];
+  const [professionalChannels, setProfessionalChannels] = useState<Subsidy[]>([]);
+  useEffect(() => {
+    if (!profile?.city) {
+      setProfessionalChannels([]);
+      return;
+    }
+    getProfessionalChannels(profile as UserProfile).then(setProfessionalChannels);
+  }, [profile, getProfessionalChannels]);
 
   const [aiData, setAiData] = useState<{
     interpretation?: string;

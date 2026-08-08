@@ -1,247 +1,69 @@
-import beijing from './subsidies/beijing.json';
-import shanghai from './subsidies/shanghai.json';
-import shenzhen from './subsidies/shenzhen.json';
-import guangzhou from './subsidies/guangzhou.json';
-import hefei from './subsidies/hefei.json';
-import hangzhou from './subsidies/hangzhou.json';
-import jiaxing from './subsidies/jiaxing.json';
-import nanjing from './subsidies/nanjing.json';
-import chongqing from './subsidies/chongqing.json';
-import quanzhou from './subsidies/quanzhou.json';
-import wuhan from './subsidies/wuhan.json';
-import wenzhou from './subsidies/wenzhou.json';
-import ningbo from './subsidies/ningbo.json';
-import changsha from './subsidies/changsha.json';
-import chengdu from './subsidies/chengdu.json';
-import jinan from './subsidies/jinan.json';
-import shaoxing from './subsidies/shaoxing.json';
-import zhuhai from './subsidies/zhuhai.json';
-import nanning from './subsidies/nanning.json';
-import zhengzhou from './subsidies/zhengzhou.json';
-import qingdao from './subsidies/qingdao.json';
-import wuxi from './subsidies/wuxi.json';
-import fuzhou from './subsidies/fuzhou.json';
-import xiamen from './subsidies/xiamen.json';
-import nanchang from './subsidies/nanchang.json';
-import kunming from './subsidies/kunming.json';
-import tianjin from './subsidies/tianjin.json';
-import suzhou from './subsidies/suzhou.json';
-import xian from './subsidies/xian.json';
-import dongguan from './subsidies/dongguan.json';
-import foshan from './subsidies/foshan.json';
-import huizhou from './subsidies/huizhou.json';
-import zhongshan from './subsidies/zhongshan.json';
-import haikou from './subsidies/haikou.json';
-import sanya from './subsidies/sanya.json';
-import guiyang from './subsidies/guiyang.json';
-import shenyang from './subsidies/shenyang.json';
-import dalian from './subsidies/dalian.json';
-import changchun from './subsidies/changchun.json';
-import harbin from './subsidies/harbin.json';
-import shijiazhuang from './subsidies/shijiazhuang.json';
-import yantai from './subsidies/yantai.json';
-import nantong from './subsidies/nantong.json';
-import changzhou from './subsidies/changzhou.json';
-import xuzhou from './subsidies/xuzhou.json';
-import tangshan from './subsidies/tangshan.json';
-import wuhu from './subsidies/wuhu.json';
-import taiyuan from './subsidies/taiyuan.json';
-import lanzhou from './subsidies/lanzhou.json';
-import luoyang from './subsidies/luoyang.json';
-import weifang from './subsidies/weifang.json';
-import ganzhou from './subsidies/ganzhou.json';
-import yinchuan from './subsidies/yinchuan.json';
-import huhehaote from './subsidies/huhehaote.json';
-import linyi from './subsidies/linyi.json';
-import jinhua from './subsidies/jinhua.json';
-import taizhou from './subsidies/taizhou.json';
-import baoding from './subsidies/baoding.json';
-import yancheng from './subsidies/yancheng.json';
-import yangzhou from './subsidies/yangzhou.json';
-import taizhoujs from './subsidies/taizhoujs.json';
-import zhenjiang from './subsidies/zhenjiang.json';
-import lianyungang from './subsidies/lianyungang.json';
-import huaian from './subsidies/huaian.json';
-import suqian from './subsidies/suqian.json';
-import wulumuqi from './subsidies/wulumuqi.json';
-import xining from './subsidies/xining.json';
-import lasa from './subsidies/lasa.json';
-import zibo from './subsidies/zibo.json';
-import mianyang from './subsidies/mianyang.json';
-import guilin from './subsidies/guilin.json';
-import shantou from './subsidies/shantou.json';
-import zhanjiang from './subsidies/zhanjiang.json';
-import jiujiang from './subsidies/jiujiang.json';
-import yichang from './subsidies/yichang.json';
-import xiangyang from './subsidies/xiangyang.json';
-import zhuzhou from './subsidies/zhuzhou.json';
-import yueyang from './subsidies/yueyang.json';
-import bengbu from './subsidies/bengbu.json';
-import maanshan from './subsidies/maanshan.json';
-import zhangzhou from './subsidies/zhangzhou.json';
-import huainan from './subsidies/huainan.json';
-import huaibei from './subsidies/huaibei.json';
-import tongling from './subsidies/tongling.json';
-import anqing from './subsidies/anqing.json';
-import huangshan from './subsidies/huangshan.json';
-import chuzhou from './subsidies/chuzhou.json';
-import fuyang from './subsidies/fuyang.json';
-import suzhouah from './subsidies/suzhouah.json';
-import liuan from './subsidies/liuan.json';
-import bozhou from './subsidies/bozhou.json';
-import chizhou from './subsidies/chizhou.json';
-import xuancheng from './subsidies/xuancheng.json';
-import jingzhou from './subsidies/jingzhou.json';
-import jingmen from './subsidies/jingmen.json';
-import ezhou from './subsidies/ezhou.json';
-import huanggang from './subsidies/huanggang.json';
-import weihai from './subsidies/weihai.json';
-import cangzhou from './subsidies/cangzhou.json';
-import nanyang from './subsidies/nanyang.json';
-import anshan from './subsidies/anshan.json';
-import jilin from './subsidies/jilin.json';
-import eerduosi from './subsidies/eerduosi.json';
-import jiaozuo from './subsidies/jiaozuo.json';
-import jining from './subsidies/jining.json';
-import hengyang from './subsidies/hengyang.json';
-import xinxiang from './subsidies/xinxiang.json';
-import panjin from './subsidies/panjin.json';
-import daqing from './subsidies/daqing.json';
-import ningde from './subsidies/ningde.json';
-import kaifeng from './subsidies/kaifeng.json';
-import zhoukou from './subsidies/zhoukou.json';
-import deyang from './subsidies/deyang.json';
-import baoji from './subsidies/baoji.json';
-import zigong from './subsidies/zigong.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet, Tier2Question } from './lazySchools';
 
-export const subsidiesData: Record<string, Subsidy[]> = {
-  beijing: beijing as Subsidy[],
-  shanghai: shanghai as Subsidy[],
-  shenzhen: shenzhen as Subsidy[],
-  guangzhou: guangzhou as Subsidy[],
-  hefei: hefei as Subsidy[],
-  hangzhou: hangzhou as Subsidy[],
-  jiaxing: jiaxing as Subsidy[],
-  nanjing: nanjing as Subsidy[],
-  chongqing: chongqing as Subsidy[],
-  quanzhou: quanzhou as Subsidy[],
-  wuhan: wuhan as Subsidy[],
-  wenzhou: wenzhou as Subsidy[],
-  ningbo: ningbo as Subsidy[],
-  changsha: changsha as Subsidy[],
-  chengdu: chengdu as Subsidy[],
-  jinan: jinan as Subsidy[],
-  shaoxing: shaoxing as Subsidy[],
-  zhuhai: zhuhai as Subsidy[],
-  nanning: nanning as Subsidy[],
-  zhengzhou: zhengzhou as Subsidy[],
-  qingdao: qingdao as Subsidy[],
-  wuxi: wuxi as Subsidy[],
-  fuzhou: fuzhou as Subsidy[],
-  xiamen: xiamen as Subsidy[],
-  nanchang: nanchang as Subsidy[],
-  kunming: kunming as Subsidy[],
-  tianjin: tianjin as Subsidy[],
-  suzhou: suzhou as Subsidy[],
-  xian: xian as Subsidy[],
-  dongguan: dongguan as Subsidy[],
-  foshan: foshan as Subsidy[],
-  huizhou: huizhou as Subsidy[],
-  zhongshan: zhongshan as Subsidy[],
-  haikou: haikou as Subsidy[],
-  sanya: sanya as Subsidy[],
-  guiyang: guiyang as Subsidy[],
-  shenyang: shenyang as Subsidy[],
-  dalian: dalian as Subsidy[],
-  changchun: changchun as Subsidy[],
-  harbin: harbin as Subsidy[],
-  shijiazhuang: shijiazhuang as Subsidy[],
-  yantai: yantai as Subsidy[],
-  nantong: nantong as Subsidy[],
-  changzhou: changzhou as Subsidy[],
-  xuzhou: xuzhou as Subsidy[],
-  tangshan: tangshan as Subsidy[],
-  wuhu: wuhu as Subsidy[],
-  taiyuan: taiyuan as Subsidy[],
-  lanzhou: lanzhou as Subsidy[],
-  luoyang: luoyang as Subsidy[],
-  weifang: weifang as Subsidy[],
-  ganzhou: ganzhou as Subsidy[],
-  yinchuan: yinchuan as Subsidy[],
-  huhehaote: huhehaote as Subsidy[],
-  linyi: linyi as Subsidy[],
-  jinhua: jinhua as Subsidy[],
-  taizhou: taizhou as Subsidy[],
-  baoding: baoding as Subsidy[],
-  yancheng: yancheng as Subsidy[],
-  yangzhou: yangzhou as Subsidy[],
-  taizhoujs: taizhoujs as Subsidy[],
-  zhenjiang: zhenjiang as Subsidy[],
-  lianyungang: lianyungang as Subsidy[],
-  huaian: huaian as Subsidy[],
-  suqian: suqian as Subsidy[],
-  wulumuqi: wulumuqi as Subsidy[],
-  xining: xining as Subsidy[],
-  lasa: lasa as Subsidy[],
-  zibo: zibo as Subsidy[],
-  mianyang: mianyang as Subsidy[],
-  guilin: guilin as Subsidy[],
-  shantou: shantou as Subsidy[],
-  zhanjiang: zhanjiang as Subsidy[],
-  jiujiang: jiujiang as Subsidy[],
-  yichang: yichang as Subsidy[],
-  xiangyang: xiangyang as Subsidy[],
-  zhuzhou: zhuzhou as Subsidy[],
-  yueyang: yueyang as Subsidy[],
-  bengbu: bengbu as Subsidy[],
-  maanshan: maanshan as Subsidy[],
-  zhangzhou: zhangzhou as Subsidy[],
-  huainan: huainan as Subsidy[],
-  huaibei: huaibei as Subsidy[],
-  tongling: tongling as Subsidy[],
-  anqing: anqing as Subsidy[],
-  huangshan: huangshan as Subsidy[],
-  chuzhou: chuzhou as Subsidy[],
-  fuyang: fuyang as Subsidy[],
-  suzhouah: suzhouah as Subsidy[],
-  liuan: liuan as Subsidy[],
-  bozhou: bozhou as Subsidy[],
-  chizhou: chizhou as Subsidy[],
-  xuancheng: xuancheng as Subsidy[],
-  jingzhou: jingzhou as Subsidy[],
-  jingmen: jingmen as Subsidy[],
-  ezhou: ezhou as Subsidy[],
-  huanggang: huanggang as Subsidy[],
-  weihai: weihai as Subsidy[],
-  cangzhou: cangzhou as Subsidy[],
-  nanyang: nanyang as Subsidy[],
-  anshan: anshan as Subsidy[],
-  jilin: jilin as Subsidy[],
-  eerduosi: eerduosi as Subsidy[],
-  jiaozuo: jiaozuo as Subsidy[],
-  jining: jining as Subsidy[],
-  hengyang: hengyang as Subsidy[],
-  xinxiang: xinxiang as Subsidy[],
-  panjin: panjin as Subsidy[],
-  daqing: daqing as Subsidy[],
-  ningde: ningde as Subsidy[],
-  kaifeng: kaifeng as Subsidy[],
-  zhoukou: zhoukou as Subsidy[],
-  deyang: deyang as Subsidy[],
-  baoji: baoji as Subsidy[],
-  zigong: zigong as Subsidy[],
-};
+// ─── 数据懒加载 ───────────────────────────────────────────
+// Vite 动态导入所有城市补贴 JSON 文件（按需加载，不打包进初始 bundle）
+const cityModules = import.meta.glob('./subsidies/*.json') as Record<
+  string,
+  () => Promise<{ default: Subsidy[] }>
+>;
 
-export function getSubsidiesByCity(city: string): Subsidy[] {
-  return subsidiesData[city] || [];
+// 城市键列表（从 glob 路径中提取，保持与文件同步）
+const CITY_KEYS: string[] = Object.keys(cityModules)
+  .map((path) => path.replace('./subsidies/', '').replace('.json', ''))
+  .sort();
+
+// 内存缓存：已加载的城市数据
+const cache = new Map<string, Subsidy[]>();
+
+/**
+ * 按需加载单个城市的补贴数据（带内存缓存）
+ */
+async function loadCityData(city: string): Promise<Subsidy[]> {
+  const cached = cache.get(city);
+  if (cached) return cached;
+  const loader = cityModules[`./subsidies/${city}.json`];
+  if (!loader) return [];
+  const mod = await loader();
+  const data = mod.default;
+  cache.set(city, data);
+  return data;
 }
 
-export function getAllSubsidies(): Subsidy[] {
-  return Object.values(subsidiesData).flat();
+/**
+ * 获取城市键列表
+ */
+export function getCityKeys(): string[] {
+  return CITY_KEYS;
 }
+
+/**
+ * 加载全部城市补贴数据（返回 Record 形式，供测试等场景使用）
+ */
+export async function loadAllSubsidiesData(): Promise<Record<string, Subsidy[]>> {
+  const entries = await Promise.all(
+    CITY_KEYS.map(async (city) => [city, await loadCityData(city)] as const)
+  );
+  return Object.fromEntries(entries);
+}
+
+/**
+ * 按城市获取补贴数据（异步，按需加载）
+ */
+export async function getSubsidiesByCity(city: string): Promise<Subsidy[]> {
+  return loadCityData(city);
+}
+
+/**
+ * 获取全部城市的补贴数据（异步，按需加载）
+ */
+export async function getAllSubsidies(): Promise<Subsidy[]> {
+  const allData = await Promise.all(CITY_KEYS.map((city) => loadCityData(city)));
+  return allData.flat();
+}
+
+// ─── 城市条件配置 ─────────────────────────────────────────
 
 const cityConditionsConfig = cityConditions.cities as Record<string, CityConditionsConfig>;
 
@@ -363,13 +185,14 @@ export function getTier2Questions(city?: string): Tier2Question[] {
  * - city 传了 = 该市的全部区集合
  * 同时从补贴数据的 application.location 和 city-conditions.json 的 districts 中获取
  */
-export function getLocationsForCity(city?: string): string[] {
-  const cities = city ? [city] : Object.keys(subsidiesData);
+export async function getLocationsForCity(city?: string): Promise<string[]> {
+  const cities = city ? [city] : CITY_KEYS;
   const set = new Set<string>();
 
-  // 从补贴数据的 application.location 中获取
-  for (const c of cities) {
-    for (const s of subsidiesData[c] || []) {
+  // 从补贴数据的 application.location 中获取（并行加载）
+  const cityDataList = await Promise.all(cities.map((c) => loadCityData(c)));
+  for (const cityData of cityDataList) {
+    for (const s of cityData) {
       const loc = s.application?.location;
       // application.location 存的就是 "嘉定区"、"徐汇区" 这种纯区名
       if (loc && loc !== '市级' && !loc.endsWith('市')) {

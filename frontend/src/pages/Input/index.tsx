@@ -318,11 +318,11 @@ export default function Input() {
           'jiaozuo', 'jining', 'hengyang', 'xinxiang', 'panjin', 'daqing',
           'ningde', 'kaifeng', 'zhoukou', 'deyang', 'baoji', 'zigong',
         ];
-        const compareResults = matchMultipleCities(userProfile, cities);
+        const compareResults = await matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);
         navigate('/compare');
       } else {
-        const result = match(userProfile);
+        const result = await match(userProfile);
         setResult(result);
         navigate('/result');
       }

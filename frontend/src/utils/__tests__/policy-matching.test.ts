@@ -12,7 +12,7 @@
 import { describe, it, expect } from 'vitest'
 import { beforeAll } from 'vitest'
 import { matchSubsidy, matchAllSubsidies, groupExclusiveItems, calculateTotalAmount } from '../matcher'
-import { subsidiesData, getAllSubsidies, loadSchoolsData } from '../../data'
+import { loadAllSubsidiesData, loadSchoolsData } from '../../data'
 import type { Subsidy, UserProfile } from '../../types'
 import type { Degree, SchoolLevel } from '../../constants'
 
@@ -20,6 +20,10 @@ import type { Degree, SchoolLevel } from '../../constants'
 beforeAll(async () => {
   await loadSchoolsData()
 })
+
+// 加载全部城市补贴数据（用于测试数据遍历）
+const subsidiesData = await loadAllSubsidiesData()
+const allSubsidies = Object.values(subsidiesData).flat()
 
 // ========== 辅助函数 ==========
 
@@ -243,7 +247,6 @@ function buildPerfectProfileForCriterionSets(subsidy: Subsidy): UserProfile {
 // ========== 测试 ==========
 
 describe('政策数据完整性', () => {
-  const allSubsidies = getAllSubsidies()
 
   it(`共加载 ${allSubsidies.length} 条政策`, () => {
     expect(allSubsidies.length).toBeGreaterThan(300)
@@ -392,7 +395,7 @@ describe('逐城市政策匹配测试', () => {
 })
 
 describe('criterionSets 专项测试', () => {
-  const subsidiesWithCriterionSets = getAllSubsidies().filter(
+  const subsidiesWithCriterionSets = allSubsidies.filter(
     (s) => s.conditions.criterionSets && s.conditions.criterionSets.length > 0
   )
 
