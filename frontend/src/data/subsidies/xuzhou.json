@@ -100,7 +100,7 @@
     },
     "tieredAmount": {},
     "conditions": {
-      "degree": ["博士", "硕士", "本科", "大专"],
+      "degree": ["博士", "硕士", "本科", "专科"],
       "ageLimit": 40,
       "ageLimitExclusive": false,
       "employmentRequired": true,
@@ -143,7 +143,7 @@
         {
           "id": "dazhuan",
           "name": "大专5万元购房券",
-          "degree": ["大专"],
+          "degree": ["专科"],
           "amount": {
             "min": 50000,
             "max": 50000,

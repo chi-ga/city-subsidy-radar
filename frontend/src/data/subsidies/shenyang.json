@@ -222,7 +222,7 @@
       "durationMonths": 36
     },
     "tieredAmount": {
-      "大专": {
+      "专科": {
         "min": 300,
         "max": 300,
         "unit": "元",
@@ -253,7 +253,7 @@
     },
     "conditions": {
       "degree": [
-        "大专",
+        "专科",
         "本科",
         "硕士",
         "博士"
@@ -299,7 +299,7 @@
       "durationMonths": 36
     },
     "tieredAmount": {
-      "大专": {
+      "专科": {
         "min": 500,
         "max": 500,
         "unit": "元",
@@ -330,7 +330,7 @@
     },
     "conditions": {
       "degree": [
-        "大专",
+        "专科",
         "本科",
         "硕士",
         "博士"

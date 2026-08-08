@@ -19,7 +19,7 @@ function isImmutable(condition: string): boolean {
 }
 
 // 学历层级（用于 minDegree 比较）
-const DEGREE_ORDER: Record<string, number> = { 专科: 0, 本科: 1, 硕士: 2, 博士: 3 };
+const DEGREE_ORDER: Record<string, number> = { 中专: -1, 专科: 0, 本科: 1, 硕士: 2, 博士: 3 };
 
 /**
  * 计算补贴的实际总金额（非年化），并返回明细文本

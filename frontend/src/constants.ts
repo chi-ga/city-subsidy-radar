@@ -7,7 +7,7 @@
 export const IMMUTABLE_CONDITION_PREFIXES = ['学历要求', '院校要求', '专业要求', '专业限制', '身份要求', '人才层次', '全日制要求'] as const;
 
 // 学历类型（含专科，用于前海等政策）
-export type Degree = '专科' | '本科' | '硕士' | '博士';
+export type Degree = '中专' | '专科' | '本科' | '硕士' | '博士';
 
 // 学校层次联合类型
 export type SchoolLevel =

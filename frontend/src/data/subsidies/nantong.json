@@ -12,7 +12,7 @@
     },
     "tieredAmount": {},
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": ["专科", "本科", "硕士", "博士"],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true,
@@ -20,7 +20,7 @@
         {
           "id": "dazhuan",
           "name": "全日制大专（或高级工）8万元",
-          "degree": ["大专"],
+          "degree": ["专科"],
           "amount": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" }
         },
         {
@@ -146,7 +146,7 @@
     },
     "tieredAmount": {},
     "conditions": {
-      "degree": ["大专", "本科"],
+      "degree": ["专科", "本科"],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true,
@@ -154,7 +154,7 @@
         {
           "id": "dazhuan",
           "name": "全日制大专（或技工院校高级工班）500元/月",
-          "degree": ["大专"],
+          "degree": ["专科"],
           "amount": { "min": 500, "max": 500, "unit": "元", "period": "每月", "durationMonths": 36 }
         },
         {
@@ -242,7 +242,7 @@
     },
     "tieredAmount": {},
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": ["专科", "本科", "硕士", "博士"],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true,
@@ -250,7 +250,7 @@
         {
           "id": "dazhuan",
           "name": "全日制大专（或高级工）10万元",
-          "degree": ["大专"],
+          "degree": ["专科"],
           "amount": { "min": 100000, "max": 100000, "unit": "元", "period": "一次性" }
         },
         {
@@ -321,7 +321,7 @@
     },
     "tieredAmount": {},
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": ["专科", "本科", "硕士", "博士"],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true,
@@ -329,7 +329,7 @@
         {
           "id": "dazhuan",
           "name": "全日制大专（含技工院校）300元/㎡",
-          "degree": ["大专"],
+          "degree": ["专科"],
           "amount": { "min": 300, "max": 300, "unit": "元/㎡", "period": "一次性" }
         },
         {
@@ -385,7 +385,7 @@
     },
     "tieredAmount": {},
     "conditions": {
-      "degree": ["大专"],
+      "degree": ["专科"],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true
@@ -438,7 +438,7 @@
         {
           "id": "dazhuan",
           "name": "全日制大专生（或高级工）8万元",
-          "degree": ["大专"],
+          "degree": ["专科"],
           "requiresFullTime": true,
           "amount": { "min": 80000, "max": 80000, "unit": "元", "period": "一次性" }
         },

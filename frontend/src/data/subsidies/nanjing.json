@@ -76,7 +76,7 @@
       "durationMonths": 36
     },
     "tieredAmount": {
-      "大专": {
+      "专科": {
         "min": 600,
         "max": 600,
         "unit": "元",
@@ -106,7 +106,7 @@
       }
     },
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": ["专科", "本科", "硕士", "博士"],
       "employmentRequired": true,
       "householdRequired": false,
       "requiresFullTime": true,

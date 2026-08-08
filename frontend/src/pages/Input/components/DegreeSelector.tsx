@@ -1,7 +1,7 @@
 import type { UserProfile } from '../../../types';
 import { CheckboxField } from '../shared/CheckboxField';
 
-const DEGREES = ['专科', '本科', '硕士', '博士'] as const;
+const DEGREES = ['中专', '专科', '本科', '硕士', '博士'] as const;
 
 interface DegreeSelectorProps {
   value?: string;
@@ -82,7 +82,7 @@ export function DegreeSelector({
       )}
 
       {/* 全日制/非全日制复选框：本科及以上时显示 */}
-      {value && value !== '专科' && showFullTime && (
+      {value && value !== '专科' && value !== '中专' && showFullTime && (
         <div className="mt-2">
           <CheckboxField
             checked={isFullTime === true}
